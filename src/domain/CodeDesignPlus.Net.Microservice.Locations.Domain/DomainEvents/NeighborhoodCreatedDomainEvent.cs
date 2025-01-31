@@ -2,14 +2,23 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Domain.DomainEvents;
 
 [EventKey<NeighborhoodAggregate>(1, "NeighborhoodCreatedDomainEvent")]
 public class NeighborhoodCreatedDomainEvent(
-     Guid aggregateId,
-     Guid? eventId = null,
-     Instant? occurredAt = null,
-     Dictionary<string, object>? metadata = null
+    Guid aggregateId,
+    string name,
+    Guid idLocality,
+    bool isActive = true,
+    Guid? eventId = null,
+    Instant? occurredAt = null,
+    Dictionary<string, object>? metadata = null
 ) : DomainEvent(aggregateId, eventId, occurredAt, metadata)
 {
-    public static NeighborhoodCreatedDomainEvent Create(Guid aggregateId)
+    public string Name { get; private set; } = name;
+
+    public Guid IdLocality { get; private set; } = idLocality;
+
+    public bool IsActive { get; private set; } = isActive;
+
+    public static NeighborhoodCreatedDomainEvent Create(Guid aggregateId, string name, Guid idLocality, bool isActive = true)
     {
-        return new NeighborhoodCreatedDomainEvent(aggregateId);
+        return new NeighborhoodCreatedDomainEvent(aggregateId, name, idLocality, isActive);
     }
 }
