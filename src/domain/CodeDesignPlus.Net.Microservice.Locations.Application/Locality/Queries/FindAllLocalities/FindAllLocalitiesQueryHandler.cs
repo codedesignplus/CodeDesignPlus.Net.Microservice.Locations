@@ -1,9 +1,13 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Locality.Queries.FindAllLocalities;
 
-public class FindAllLocalitiesQueryHandler(ILocalityRepository repository, IMapper mapper, IUserContext user) : IRequestHandler<FindAllLocalitiesQuery, LocalityDto>
+public class FindAllLocalitiesQueryHandler(ILocalityRepository repository, IMapper mapper) : IRequestHandler<FindAllLocalitiesQuery, List<LocalityDto>>
 {
-    public Task<LocalityDto> Handle(FindAllLocalitiesQuery request, CancellationToken cancellationToken)
+    public async Task<List<LocalityDto>> Handle(FindAllLocalitiesQuery request, CancellationToken cancellationToken)
     {
-        return Task.FromResult<LocalityDto>(default!);
+        ApplicationGuard.IsNull(request, Errors.InvalidRequest);
+
+        var localities = await repository.MatchingAsync<LocalityAggregate>(request.Criteria, cancellationToken);
+
+        return mapper.Map<List<LocalityDto>>(localities);
     }
 }

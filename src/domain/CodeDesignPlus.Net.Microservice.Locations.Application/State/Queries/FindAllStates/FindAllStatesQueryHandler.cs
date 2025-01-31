@@ -1,9 +1,13 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.State.Queries.FindAllStates;
 
-public class FindAllStatesQueryHandler(IStateRepository repository, IMapper mapper, IUserContext user) : IRequestHandler<FindAllStatesQuery, StateDto>
+public class FindAllStatesQueryHandler(IStateRepository repository, IMapper mapper) : IRequestHandler<FindAllStatesQuery, List<StateDto>>
 {
-    public Task<StateDto> Handle(FindAllStatesQuery request, CancellationToken cancellationToken)
+    public async Task<List<StateDto>> Handle(FindAllStatesQuery request, CancellationToken cancellationToken)
     {
-        return Task.FromResult<StateDto>(default!);
+        ApplicationGuard.IsNull(request, Errors.InvalidRequest);
+
+        var states = await repository.MatchingAsync<StateAggregate>(request.Criteria, cancellationToken);
+
+        return mapper.Map<List<StateDto>>(states);
     }
 }

@@ -1,9 +1,13 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.Queries.FindAllTimezones;
 
-public class FindAllTimezonesQueryHandler(ITimezoneRepository repository, IMapper mapper, IUserContext user) : IRequestHandler<FindAllTimezonesQuery, TimezoneDto>
+public class FindAllTimezonesQueryHandler(ITimezoneRepository repository, IMapper mapper) : IRequestHandler<FindAllTimezonesQuery, List<TimezoneDto>>
 {
-    public Task<TimezoneDto> Handle(FindAllTimezonesQuery request, CancellationToken cancellationToken)
+    public async Task<List<TimezoneDto>> Handle(FindAllTimezonesQuery request, CancellationToken cancellationToken)
     {
-        return Task.FromResult<TimezoneDto>(default!);
+        ApplicationGuard.IsNull(request, Errors.InvalidRequest);
+
+        var timezones = await repository.MatchingAsync<TimezoneAggregate>(request.Criteria, cancellationToken);
+
+        return mapper.Map<List<TimezoneDto>>(timezones);
     }
 }

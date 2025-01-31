@@ -1,9 +1,13 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.City.Queries.FindAllCities;
 
-public class FindAllCitiesQueryHandler(ICityRepository repository, IMapper mapper, IUserContext user) : IRequestHandler<FindAllCitiesQuery, CityDto>
+public class FindAllCitiesQueryHandler(ICityRepository repository, IMapper mapper) : IRequestHandler<FindAllCitiesQuery, List<CityDto>>
 {
-    public Task<CityDto> Handle(FindAllCitiesQuery request, CancellationToken cancellationToken)
+    public async Task<List<CityDto>> Handle(FindAllCitiesQuery request, CancellationToken cancellationToken)
     {
-        return Task.FromResult<CityDto>(default!);
+        ApplicationGuard.IsNull(request, Errors.InvalidRequest);
+
+        var cities = await repository.MatchingAsync<CityAggregate>(request.Criteria, cancellationToken);
+
+        return mapper.Map<List<CityDto>>(cities);
     }
 }
