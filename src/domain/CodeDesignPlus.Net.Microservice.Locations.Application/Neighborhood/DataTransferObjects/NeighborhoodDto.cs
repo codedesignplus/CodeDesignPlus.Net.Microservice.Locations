@@ -3,4 +3,6 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.Dat
 public class NeighborhoodDto: IDtoBase
 {
     public required Guid Id { get; set; }
+    public Guid IdLocality { get; set; }
+    public required string Name { get; set; }
 }

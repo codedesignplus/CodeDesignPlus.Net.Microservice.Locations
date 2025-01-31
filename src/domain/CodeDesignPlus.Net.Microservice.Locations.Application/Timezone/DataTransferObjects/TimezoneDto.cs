@@ -3,4 +3,6 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.DataTra
 public class TimezoneDto: IDtoBase
 {
     public required Guid Id { get; set; }
+    
+    public required string Name { get; set; } 
 }

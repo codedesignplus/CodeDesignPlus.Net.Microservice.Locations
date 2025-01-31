@@ -3,4 +3,10 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.City.DataTransfe
 public class CityDto: IDtoBase
 {
     public required Guid Id { get; set; }
+
+    public required Guid IdState { get; set; }
+
+    public required string Name { get; set; }
+
+    public required string TimeZone { get; set; }
 }
