@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Domain;
 
-public class LocalityAggregate(Guid id) : AggregateRoot(id)
+public class LocalityAggregate(Guid id) : AggregateRootBase(id)
 
 {
     public Guid IdCity { get; private set; } = Guid.Empty;

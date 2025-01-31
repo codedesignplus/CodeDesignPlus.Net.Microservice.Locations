@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Domain;
 
-public class CountryAggregate(Guid id) : AggregateRoot(id)
+public class CountryAggregate(Guid id) : AggregateRootBase(id)
 {
     public string Name { get; private set; } = string.Empty;
 

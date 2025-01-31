@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Domain;
 
-public class CurrencyAggregate(Guid id) : AggregateRoot(id)
+public class CurrencyAggregate(Guid id) : AggregateRootBase(id)
 {
     public string Code { get; private set; } = string.Empty;
 
