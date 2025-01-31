@@ -1,9 +1,13 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.Queries.FindAllNeighborhoods;
 
-public class FindAllNeighborhoodsQueryHandler(INeighborhoodRepository repository, IMapper mapper, IUserContext user) : IRequestHandler<FindAllNeighborhoodsQuery, NeighborhoodDto>
+public class FindAllNeighborhoodsQueryHandler(INeighborhoodRepository repository, IMapper mapper) : IRequestHandler<FindAllNeighborhoodsQuery, List<NeighborhoodDto>>
 {
-    public Task<NeighborhoodDto> Handle(FindAllNeighborhoodsQuery request, CancellationToken cancellationToken)
+    public async Task<List<NeighborhoodDto>> Handle(FindAllNeighborhoodsQuery request, CancellationToken cancellationToken)
     {
-        return Task.FromResult<NeighborhoodDto>(default!);
+        ApplicationGuard.IsNull(request, Errors.InvalidRequest);
+
+        var neighborhoods = await repository.MatchingAsync<NeighborhoodAggregate>(request.Criteria, cancellationToken);
+
+        return mapper.Map<List<NeighborhoodDto>>(neighborhoods);
     }
 }
