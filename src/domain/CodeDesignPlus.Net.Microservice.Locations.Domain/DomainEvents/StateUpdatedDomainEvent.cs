@@ -6,7 +6,7 @@ public class StateUpdatedDomainEvent(
     Guid idCountry,
     string code,
     string name,
-    bool isActive = true,
+    bool isActive,
     Guid? eventId = null,
     Instant? occurredAt = null,
     Dictionary<string, object>? metadata = null
@@ -20,7 +20,7 @@ public class StateUpdatedDomainEvent(
 
     public bool IsActive { get; private set; } = isActive;
 
-    public static StateUpdatedDomainEvent Create(Guid aggregateId, Guid idCountry, string code, string name, bool isActive = true)
+    public static StateUpdatedDomainEvent Create(Guid aggregateId, Guid idCountry, string code, string name, bool isActive)
     {
         return new StateUpdatedDomainEvent(aggregateId, idCountry, code, name, isActive);
     }

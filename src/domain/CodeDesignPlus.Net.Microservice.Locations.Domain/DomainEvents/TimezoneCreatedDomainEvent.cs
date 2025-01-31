@@ -4,7 +4,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Domain.DomainEvents;
 public class TimezoneCreatedDomainEvent(
     Guid aggregateId,
     string name,
-    bool isActive = true,
+    bool isActive,
     Guid? eventId = null,
     Instant? occurredAt = null,
     Dictionary<string, object>? metadata = null
@@ -13,8 +13,8 @@ public class TimezoneCreatedDomainEvent(
     public string Name { get; private set; } = name;
 
     public bool IsActive { get; private set; } = isActive;
-    
-    public static TimezoneCreatedDomainEvent Create(Guid aggregateId, string name, bool isActive = true)
+
+    public static TimezoneCreatedDomainEvent Create(Guid aggregateId, string name, bool isActive)
     {
         return new TimezoneCreatedDomainEvent(aggregateId, name, isActive);
     }

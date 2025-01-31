@@ -4,7 +4,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Domain.DomainEvents;
 public class TimezoneDeletedDomainEvent(
     Guid aggregateId,
     string name,
-    bool isActive = true,
+    bool isActive,
     Guid? eventId = null,
     Instant? occurredAt = null,
     Dictionary<string, object>? metadata = null
@@ -14,7 +14,7 @@ public class TimezoneDeletedDomainEvent(
 
     public bool IsActive { get; private set; } = isActive;
     
-    public static TimezoneDeletedDomainEvent Create(Guid aggregateId, string name, bool isActive = true)
+    public static TimezoneDeletedDomainEvent Create(Guid aggregateId, string name, bool isActive)
     {
         return new TimezoneDeletedDomainEvent(aggregateId, name, isActive);
     }

@@ -5,7 +5,7 @@ public class NeighborhoodUpdatedDomainEvent(
     Guid aggregateId,
     string name,
     Guid idLocality,
-    bool isActive = true,
+    bool isActive,
     Guid? eventId = null,
     Instant? occurredAt = null,
     Dictionary<string, object>? metadata = null
@@ -17,7 +17,7 @@ public class NeighborhoodUpdatedDomainEvent(
 
     public bool IsActive { get; private set; } = isActive;
 
-    public static NeighborhoodUpdatedDomainEvent Create(Guid aggregateId, string name, Guid idLocality, bool isActive = true)
+    public static NeighborhoodUpdatedDomainEvent Create(Guid aggregateId, string name, Guid idLocality, bool isActive)
     {
         return new NeighborhoodUpdatedDomainEvent(aggregateId, name, idLocality, isActive);
     }

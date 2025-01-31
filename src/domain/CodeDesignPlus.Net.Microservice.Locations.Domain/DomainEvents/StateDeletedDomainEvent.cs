@@ -6,7 +6,7 @@ public class StateDeletedDomainEvent(
     Guid idCountry,
     string code,
     string name,
-    bool isActive = true,
+    bool isActive,
     Guid? eventId = null,
     Instant? occurredAt = null,
     Dictionary<string, object>? metadata = null
@@ -20,7 +20,7 @@ public class StateDeletedDomainEvent(
 
     public bool IsActive { get; private set; } = isActive;
 
-    public static StateDeletedDomainEvent Create(Guid aggregateId, Guid idCountry, string code, string name, bool isActive = true)
+    public static StateDeletedDomainEvent Create(Guid aggregateId, Guid idCountry, string code, string name, bool isActive)
     {
         return new StateDeletedDomainEvent(aggregateId, idCountry, code, name, isActive);
     }
