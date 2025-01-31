@@ -6,7 +6,7 @@ public class CreateLocalityCommandHandler(ILocalityRepository repository, IUserC
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
         
-        var exist = await repository.ExistsAsync<TimezoneAggregate>(request.Id, user.Tenant, cancellationToken);
+        var exist = await repository.ExistsAsync<LocalityAggregate>(request.Id, user.Tenant, cancellationToken);
 
         ApplicationGuard.IsTrue(exist, Errors.LocalityAlreadyExists);
 

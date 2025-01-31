@@ -11,7 +11,7 @@ public class FindTimezoneByIdQueryHandler(ITimezoneRepository repository, IMappe
         if (exists)
             return await cacheManager.GetAsync<TimezoneDto>(request.Id.ToString());
 
-        var timezone = await repository.FindAsync<CityAggregate>(request.Id, cancellationToken);
+        var timezone = await repository.FindAsync<TimezoneAggregate>(request.Id, cancellationToken);
 
         ApplicationGuard.IsNull(timezone, Errors.TimezoneNotFound);
 
