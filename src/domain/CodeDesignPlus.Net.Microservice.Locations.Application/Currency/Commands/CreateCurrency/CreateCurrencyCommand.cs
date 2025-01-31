@@ -1,7 +1,7 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Commands.CreateCurrency;
 
 [DtoGenerator]
-public record CreateCurrencyCommand(Guid Id, string Name, string Code, string Symbol) : IRequest<Guid>;
+public record CreateCurrencyCommand(Guid Id, string Name, string Code, string Symbol) : IRequest;
 
 public class Validator : AbstractValidator<CreateCurrencyCommand>
 {

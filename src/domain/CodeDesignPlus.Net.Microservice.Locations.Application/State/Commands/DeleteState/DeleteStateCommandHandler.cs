@@ -2,8 +2,18 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.State.Commands.D
 
 public class DeleteStateCommandHandler(IStateRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<DeleteStateCommand>
 {
-    public Task Handle(DeleteStateCommand request, CancellationToken cancellationToken)
+    public async Task Handle(DeleteStateCommand request, CancellationToken cancellationToken)
     {
-        return Task.CompletedTask;
+        ApplicationGuard.IsNull(request, Errors.InvalidRequest);
+
+        var aggregate = await repository.FindAsync<StateAggregate>(request.Id, user.Tenant, cancellationToken);
+
+        ApplicationGuard.IsNull(aggregate, Errors.StateNotFound);
+
+        aggregate.Delete(user.IdUser);
+
+        await repository.DeleteAsync<StateAggregate>(aggregate.Id, user.Tenant, cancellationToken);
+
+        await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }
 }

@@ -1,7 +1,7 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Country.Commands.CreateCountry;
 
 [DtoGenerator]
-public record CreateCountryCommand(Guid Id, string Name, string Code, Guid IdCurrency, string TimeZone) : IRequest<Guid>;
+public record CreateCountryCommand(Guid Id, string Name, string Code, Guid IdCurrency, string TimeZone) : IRequest;
 
 public class Validator : AbstractValidator<CreateCountryCommand>
 {

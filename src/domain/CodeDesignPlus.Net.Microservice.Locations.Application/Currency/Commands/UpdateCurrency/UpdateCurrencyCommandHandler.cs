@@ -2,8 +2,18 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Command
 
 public class UpdateCurrencyCommandHandler(ICurrencyRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<UpdateCurrencyCommand>
 {
-    public Task Handle(UpdateCurrencyCommand request, CancellationToken cancellationToken)
+    public async Task Handle(UpdateCurrencyCommand request, CancellationToken cancellationToken)
     {
-        return Task.CompletedTask;
+        ApplicationGuard.IsNull(request, Errors.InvalidRequest);
+
+        var aggregate = await repository.FindAsync<CurrencyAggregate>(request.Id, user.Tenant, cancellationToken);
+
+        ApplicationGuard.IsNull(aggregate, Errors.CurrencyNotFound);
+
+        aggregate.Update(request.Name, request.Code, request.Symbol, request.IsActive, user.IdUser);
+
+        await repository.UpdateAsync<CurrencyAggregate>(aggregate, cancellationToken);
+
+        await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }
 }

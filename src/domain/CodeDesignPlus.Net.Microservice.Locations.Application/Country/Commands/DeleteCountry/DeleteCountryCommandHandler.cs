@@ -2,8 +2,18 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Country.Commands
 
 public class DeleteCountryCommandHandler(ICountryRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<DeleteCountryCommand>
 {
-    public Task Handle(DeleteCountryCommand request, CancellationToken cancellationToken)
+    public async Task Handle(DeleteCountryCommand request, CancellationToken cancellationToken)
     {
-        return Task.CompletedTask;
+        ApplicationGuard.IsNull(request, Errors.InvalidRequest);
+
+        var aggregate = await repository.FindAsync<CountryAggregate>(request.Id, user.Tenant, cancellationToken);
+
+        ApplicationGuard.IsNull(aggregate, Errors.CountryNotFound);
+
+        aggregate.Delete(user.IdUser);
+
+        await repository.DeleteAsync<CountryAggregate>(aggregate.Id, user.Tenant, cancellationToken);
+
+        await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }
 }

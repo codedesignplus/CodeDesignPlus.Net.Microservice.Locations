@@ -2,8 +2,18 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.Com
 
 public class CreateNeighborhoodCommandHandler(INeighborhoodRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<CreateNeighborhoodCommand>
 {
-    public Task Handle(CreateNeighborhoodCommand request, CancellationToken cancellationToken)
+    public async Task Handle(CreateNeighborhoodCommand request, CancellationToken cancellationToken)
     {
-        return Task.CompletedTask;
+        ApplicationGuard.IsNull(request, Errors.InvalidRequest);
+
+        var exist = await repository.ExistsAsync<TimezoneAggregate>(request.Id, user.Tenant, cancellationToken);
+
+        ApplicationGuard.IsTrue(exist, Errors.NeighborhoodAlreadyExists);
+
+        var aggregate = NeighborhoodAggregate.Create(request.Id, request.IdLocality, request.Name, user.IdUser);
+
+        await repository.CreateAsync(aggregate, cancellationToken);
+
+        await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }
 }

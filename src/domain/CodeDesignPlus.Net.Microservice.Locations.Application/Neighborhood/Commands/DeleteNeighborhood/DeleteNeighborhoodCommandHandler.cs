@@ -2,8 +2,18 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.Com
 
 public class DeleteNeighborhoodCommandHandler(INeighborhoodRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<DeleteNeighborhoodCommand>
 {
-    public Task Handle(DeleteNeighborhoodCommand request, CancellationToken cancellationToken)
+    public async Task Handle(DeleteNeighborhoodCommand request, CancellationToken cancellationToken)
     {
-        return Task.CompletedTask;
+        ApplicationGuard.IsNull(request, Errors.InvalidRequest);
+
+        var aggregate = await repository.FindAsync<NeighborhoodAggregate>(request.Id, user.Tenant, cancellationToken);
+
+        ApplicationGuard.IsNull(aggregate, Errors.NeighborhoodNotFound);
+
+        aggregate.Delete(user.IdUser);
+
+        await repository.DeleteAsync<NeighborhoodAggregate>(aggregate.Id, user.Tenant, cancellationToken);
+
+        await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }
 }

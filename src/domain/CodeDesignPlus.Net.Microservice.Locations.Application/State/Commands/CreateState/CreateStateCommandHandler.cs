@@ -2,8 +2,18 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.State.Commands.C
 
 public class CreateStateCommandHandler(IStateRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<CreateStateCommand>
 {
-    public Task Handle(CreateStateCommand request, CancellationToken cancellationToken)
+    public async Task Handle(CreateStateCommand request, CancellationToken cancellationToken)
     {
-        return Task.CompletedTask;
+        ApplicationGuard.IsNull(request, Errors.InvalidRequest);
+
+        var exist = await repository.ExistsAsync<TimezoneAggregate>(request.Id, user.Tenant, cancellationToken);
+
+        ApplicationGuard.IsTrue(exist, Errors.StateAlreadyExists);
+
+        var state = StateAggregate.Create(request.Id, request.IdCountry, request.Code, request.Name, user.IdUser);
+
+        await repository.CreateAsync(state, cancellationToken);
+
+        await pubsub.PublishAsync(state.GetAndClearEvents(), cancellationToken);
     }
 }

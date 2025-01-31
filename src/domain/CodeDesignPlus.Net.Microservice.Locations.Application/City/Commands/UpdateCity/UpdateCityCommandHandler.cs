@@ -2,8 +2,18 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.City.Commands.Up
 
 public class UpdateCityCommandHandler(ICityRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<UpdateCityCommand>
 {
-    public Task Handle(UpdateCityCommand request, CancellationToken cancellationToken)
+    public async Task Handle(UpdateCityCommand request, CancellationToken cancellationToken)
     {
-        return Task.CompletedTask;
+        ApplicationGuard.IsNull(request, Errors.InvalidRequest);
+
+        var city = await repository.FindAsync<CityAggregate>(request.Id, user.Tenant, cancellationToken);
+
+        ApplicationGuard.IsNull(city, Errors.CityNotFound);
+
+        city.Update(request.IdState, request.Name, request.TimeZone, request.IsActive, user.IdUser);
+
+        await repository.UpdateAsync(city, cancellationToken);
+
+        await pubsub.PublishAsync(city.GetAndClearEvents(), cancellationToken);
     }
 }
