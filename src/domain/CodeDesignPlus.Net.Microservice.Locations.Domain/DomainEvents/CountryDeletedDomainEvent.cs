@@ -4,7 +4,10 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Domain.DomainEvents;
 public class CountryDeletedDomainEvent(
     Guid aggregateId,
     string name,
-    string code,
+    string alpha2,
+    string alpha3,
+    ushort code,
+    string? capital,
     Guid idCurrency,
     string timeZone,
     bool isActive,
@@ -15,7 +18,13 @@ public class CountryDeletedDomainEvent(
 {
     public string Name { get; private set; } = name;
 
-    public string Code { get; private set; } = code;
+    public string Alpha2 { get; private set; } = alpha2;
+
+    public string Alpha3 { get; private set; } = alpha3;
+
+    public ushort Code { get; private set; } = code;
+
+    public string? Capital { get; private set; } = capital;
 
     public Guid IdCurrency { get; private set; } = idCurrency;
 
@@ -23,8 +32,8 @@ public class CountryDeletedDomainEvent(
 
     public bool IsActive { get; private set; } = isActive;
 
-    public static CountryDeletedDomainEvent Create(Guid aggregateId, string name, string code, Guid idCurrency, string timeZone, bool isActive)
+    public static CountryDeletedDomainEvent Create(Guid aggregateId, string name, string alpha2, string alpha3, ushort code, string? capital, Guid idCurrency, string timeZone, bool isActive)
     {
-        return new CountryDeletedDomainEvent(aggregateId, name, code, idCurrency, timeZone, isActive);
+        return new CountryDeletedDomainEvent(aggregateId, name, alpha2, alpha3, code, capital, idCurrency, timeZone, isActive);
     }
 }
