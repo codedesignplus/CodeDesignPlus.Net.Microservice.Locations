@@ -1,10 +1,10 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Domain;
 
 public class TimezoneAggregate(Guid id) : AggregateRootBase(id)
-{    
+{
     public string Name { get; private set; } = string.Empty;
 
-    private TimezoneAggregate(Guid id, string name, Guid createdBy): this(id)
+    private TimezoneAggregate(Guid id, string name, Guid createdBy) : this(id)
     {
         this.Name = name;
         this.IsActive = true;
@@ -23,12 +23,13 @@ public class TimezoneAggregate(Guid id) : AggregateRootBase(id)
         return new TimezoneAggregate(id, name, createdBy);
     }
 
-    public void Update(string name, Guid updatedBy)
+    public void Update(string name, bool isActive, Guid updatedBy)
     {
         DomainGuard.IsNullOrEmpty(name, Errors.NameIsInvalid);
         DomainGuard.GuidIsEmpty(updatedBy, Errors.UpdateByIsInvalid);
 
         this.Name = name;
+        this.IsActive = isActive;
         this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
         this.UpdatedBy = updatedBy;
 
@@ -46,5 +47,5 @@ public class TimezoneAggregate(Guid id) : AggregateRootBase(id)
         AddEvent(TimezoneDeletedDomainEvent.Create(Id, Name, IsActive));
     }
 
-    
+
 }

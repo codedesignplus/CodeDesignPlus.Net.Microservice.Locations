@@ -32,7 +32,7 @@ public class CityAggregate(Guid id) : AggregateRootBase(id)
         return new CityAggregate(id, idState, name, timeZone, createdBy);
     }
 
-    public void Update(Guid idState, string name, string timeZone, Guid updatedBy)
+    public void Update(Guid idState, string name, string timeZone, bool isActive, Guid updatedBy)
     {
         DomainGuard.GuidIsEmpty(idState, Errors.IdStateIsInvalid);
         DomainGuard.IsNullOrEmpty(name, Errors.NameIsInvalid);
@@ -42,6 +42,7 @@ public class CityAggregate(Guid id) : AggregateRootBase(id)
         this.IdState = idState;
         this.Name = name;
         this.TimeZone = timeZone;
+        this.IsActive = isActive;
         this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
         this.UpdatedBy = updatedBy;
 

@@ -1,7 +1,7 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.State.Commands.UpdateState;
 
 [DtoGenerator]
-public record UpdateStateCommand(Guid Id) : IRequest;
+public record UpdateStateCommand(Guid Id, Guid IdCountry, string Code, string Name, bool IsActive) : IRequest<Guid>;
 
 public class Validator : AbstractValidator<UpdateStateCommand>
 {

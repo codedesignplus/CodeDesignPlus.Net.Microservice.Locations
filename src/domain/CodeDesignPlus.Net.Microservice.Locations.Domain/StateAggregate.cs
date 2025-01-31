@@ -31,7 +31,7 @@ public class StateAggregate(Guid id) : AggregateRoot(id)
         return new StateAggregate(id, idCountry, code, name, createdBy);
     }
 
-    public void Update(Guid idCountry, string code, string name, Guid updatedBy)
+    public void Update(Guid idCountry, string code, string name, bool isActive, Guid updatedBy)
     {
         DomainGuard.GuidIsEmpty(idCountry, Errors.IdCountryIsInvalid);
         DomainGuard.IsNullOrEmpty(code, Errors.StateCodeIsInvalid);
@@ -41,6 +41,7 @@ public class StateAggregate(Guid id) : AggregateRoot(id)
         this.IdCountry = idCountry;
         this.Code = code;
         this.Name = name;
+        this.IsActive = isActive;
         this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
         this.UpdatedBy = updatedBy;
 

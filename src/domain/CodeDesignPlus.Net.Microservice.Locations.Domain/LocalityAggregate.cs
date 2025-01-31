@@ -28,7 +28,7 @@ public class LocalityAggregate(Guid id) : AggregateRoot(id)
         return new LocalityAggregate(id, idCity, name, createdBy);
     }
 
-    public void Update(Guid idCity, string name, Guid updatedBy)
+    public void Update(Guid idCity, string name, bool isActive,Guid updatedBy)
     {
         DomainGuard.GuidIsEmpty(idCity, Errors.IdCityIsInvalid);
         DomainGuard.IsNullOrEmpty(name, Errors.NameIsInvalid);
@@ -36,6 +36,7 @@ public class LocalityAggregate(Guid id) : AggregateRoot(id)
 
         this.IdCity = idCity;
         this.Name = name;
+        this.IsActive = isActive;
         this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
         this.UpdatedBy = updatedBy;
 

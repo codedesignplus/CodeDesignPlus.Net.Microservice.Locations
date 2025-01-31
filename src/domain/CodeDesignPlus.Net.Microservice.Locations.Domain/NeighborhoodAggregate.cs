@@ -27,7 +27,7 @@ public class NeighborhoodAggregate(Guid id) : AggregateRoot(id)
         return new NeighborhoodAggregate(id, idLocality, name, createdBy);
     }
 
-    public void Update(Guid idLocality, string name, Guid updatedBy)
+    public void Update(Guid idLocality, string name, bool isActive,Guid updatedBy)
     {
         DomainGuard.GuidIsEmpty(idLocality, Errors.IdLocalityIsInvalid);
         DomainGuard.IsNullOrEmpty(name, Errors.NameIsInvalid);
@@ -35,6 +35,7 @@ public class NeighborhoodAggregate(Guid id) : AggregateRoot(id)
 
         this.IdLocality = idLocality;
         this.Name = name;
+        this.IsActive = isActive;
         this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
         this.UpdatedBy = updatedBy;
 

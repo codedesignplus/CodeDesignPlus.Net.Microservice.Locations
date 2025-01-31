@@ -35,7 +35,7 @@ public class CountryAggregate(Guid id) : AggregateRoot(id)
         return new CountryAggregate(id, name, code, idCurrency, timeZone, createdBy);
     }
 
-    public void Update(string name, string code, Guid idCurrency, string timeZone, Guid updatedBy)
+    public void Update(string name, string code, Guid idCurrency, string timeZone, bool isActive, Guid updatedBy)
     {
         DomainGuard.IsNullOrEmpty(name, Errors.NameIsInvalid);
         DomainGuard.IsNullOrEmpty(code, Errors.CountryCodeIsInvalid);
@@ -47,6 +47,7 @@ public class CountryAggregate(Guid id) : AggregateRoot(id)
         this.Code = code;
         this.IdCurrency = idCurrency;
         this.TimeZone = timeZone;
+        this.IsActive = isActive;
         this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
         this.UpdatedBy = updatedBy;
 
