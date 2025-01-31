@@ -1,4 +1,4 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries.FindAllCurrencies;
 
-public record FindAllCurrenciesQuery(Guid Id) : IRequest<CurrencyDto>;
+public record FindAllCurrenciesQuery(C.Criteria Criteria) : IRequest<CurrencyDto>;
 
