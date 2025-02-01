@@ -19,17 +19,6 @@ builder.Services
     .AddControllers()
     .AddJsonOptions(opt => opt.JsonSerializerOptions.ConfigureForNodaTime(DateTimeZoneProviders.Tzdb));
 
-builder.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(policy =>
-    {
-        policy.AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader();
-    });
-});
-
-
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddVault(builder.Configuration);
@@ -49,8 +38,6 @@ builder.Services.AddCache(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-app.UseCors();
-
 app.UseCoreSwagger();
 
 app.UseMiddleware<ExceptionMiddleware>();
