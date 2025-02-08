@@ -31,4 +31,25 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\domain\CodeDesignPlus.Net.Microservice.Locations.Application\CodeDesignPlus.Net.Microservice.Locations.Application.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Currency\Commands\" />
+    <Folder Include="Currency\Commands\CreateCurrency\" />
+    <Folder Include="Currency\Commands\DeleteCurrency\" />
+    <Folder Include="Currency\Commands\UpdateCurrency\" />
+    <Folder Include="Currency\Queries\" />
+    <Folder Include="Currency\Queries\FindAllCurrencies\" />
+    <Folder Include="Currency\Queries\FindCurrencyById\" />
+    <Folder Include="Locality\" />
+    <Folder Include="Locality\Commands\" />
+    <Folder Include="Locality\Queries\" />
+    <Folder Include="Neighborhood\" />
+    <Folder Include="Neighborhood\Commands\" />
+    <Folder Include="Neighborhood\Queries\" />
+    <Folder Include="State\" />
+    <Folder Include="State\Commands\" />
+    <Folder Include="State\Queries\" />
+    <Folder Include="Timezone\" />
+    <Folder Include="Timezone\Commands\" />
+    <Folder Include="Timezone\Queries\" />
+  </ItemGroup>
 </Project>
