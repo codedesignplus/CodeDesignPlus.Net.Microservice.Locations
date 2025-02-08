@@ -32,7 +32,7 @@ public class CountryAggregate(Guid id) : AggregateRootBase(id)
         DomainGuard.IsNullOrEmpty(name, Errors.NameIsInvalid);
         DomainGuard.IsNullOrEmpty(alpha2, Errors.CountryAlpha2IsInvalid);
         DomainGuard.IsNullOrEmpty(alpha3, Errors.Alpha3IsInvalid);
-        DomainGuard.IsInRange(code, 1, 999, Errors.CodeRangeIsInvalid);
+        //DomainGuard.IsInRange((int)code, 1, 999, Errors.CodeRangeIsInvalid);
         DomainGuard.GuidIsEmpty(idCurrency, Errors.IdCurrencyIsInvalid);
         DomainGuard.IsNullOrEmpty(timeZone, Errors.TimeZoneIsInvalid);
         DomainGuard.GuidIsEmpty(createdBy, Errors.CreatedByIsInvalid);
@@ -45,7 +45,7 @@ public class CountryAggregate(Guid id) : AggregateRootBase(id)
         DomainGuard.IsNullOrEmpty(name, Errors.NameIsInvalid);
         DomainGuard.IsNullOrEmpty(alpha2, Errors.CountryAlpha2IsInvalid);
         DomainGuard.IsNullOrEmpty(alpha3, Errors.Alpha3IsInvalid);
-        DomainGuard.IsInRange(code, 1, 999, Errors.CodeRangeIsInvalid);
+        //DomainGuard.IsInRange(code, 1, 999, Errors.CodeRangeIsInvalid);
         DomainGuard.GuidIsEmpty(idCurrency, Errors.IdCurrencyIsInvalid);
         DomainGuard.IsNullOrEmpty(timeZone, Errors.TimeZoneIsInvalid);
         DomainGuard.GuidIsEmpty(updatedBy, Errors.UpdateByIsInvalid);
