@@ -10,7 +10,7 @@ public class CreateCountryCommandHandler(ICountryRepository repository, IUserCon
 
         ApplicationGuard.IsTrue(exist, Errors.CountryAlreadyExists);
 
-        var country = CountryAggregate.Create(request.Id, request.Name, request.Code, request.IdCurrency, request.TimeZone, user.IdUser);
+        var country = CountryAggregate.Create(request.Id, request.Name, request.Alpha2, request.Alpha3, request.Code, request.Capital, request.IdCurrency, request.TimeZone, user.IdUser);
 
         await repository.CreateAsync(country, cancellationToken);
 

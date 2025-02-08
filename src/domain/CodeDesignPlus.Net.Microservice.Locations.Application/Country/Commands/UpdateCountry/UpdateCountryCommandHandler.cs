@@ -10,7 +10,7 @@ public class UpdateCountryCommandHandler(ICountryRepository repository, IUserCon
 
         ApplicationGuard.IsNull(aggregate, Errors.CountryNotFound);
 
-        aggregate.Update(request.Name, request.Code, request.IdCurrency, request.TimeZone, request.IsActive, user.IdUser);
+        aggregate.Update(request.Name, request.Alpha2, request.Alpha3, request.Code, request.Capital, request.IdCurrency, request.TimeZone, request.IsActive, user.IdUser);
 
         await repository.UpdateAsync(aggregate, cancellationToken);
 
