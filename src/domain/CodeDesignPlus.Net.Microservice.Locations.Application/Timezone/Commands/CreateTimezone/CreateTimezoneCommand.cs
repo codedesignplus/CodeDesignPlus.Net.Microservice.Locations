@@ -8,6 +8,6 @@ public class Validator : AbstractValidator<CreateTimezoneCommand>
     public Validator()
     {
         RuleFor(x => x.Id).NotEmpty().NotNull();
-        RuleFor(x => x.Name).NotEmpty().NotNull().MaximumLength(100);
+        RuleFor(x => x.Name).NotEmpty().NotNull().MaximumLength(128);
     }
 }

@@ -22,6 +22,9 @@ using CodeDesignPlus.Net.Microservice.Locations.Application.State.Commands.Creat
 using CodeDesignPlus.Net.Microservice.Locations.Application.State.Commands.DeleteState;
 using CodeDesignPlus.Net.Microservice.Locations.Application.State.Commands.UpdateState;
 using CodeDesignPlus.Net.Microservice.Locations.Application.State.DataTransferObjects;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.Commands.CreateTimezone;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.Commands.UpdateTimezone;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.DataTransferObjects;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Helpers;
 
@@ -33,12 +36,15 @@ public class Utils
     public readonly CityDto City;
     public readonly LocalityDto Locality;
     public readonly NeighborhoodDto Neighborhood;
+    public readonly TimezoneDto Timezone;
+
     public readonly CreateCurrencyDto CreateCurrency;
     public readonly CreateCountryDto CreateCountry;
     public readonly CreateStateDto CreateState;
     public readonly CreateCityDto CreateCity;
     public readonly CreateLocalityDto CreateLocality;
     public readonly CreateNeighborhoodDto CreateNeighborhood;
+    public readonly CreateTimezoneDto CreateTimezone;
 
     public readonly UpdateCurrencyDto UpdateCurrency;
     public readonly UpdateCountryDto UpdateCountry;
@@ -46,6 +52,7 @@ public class Utils
     public readonly UpdateCityDto UpdateCity;
     public readonly UpdateLocalityDto UpdateLocality;
     public readonly UpdateNeighborhoodDto UpdateNeighborhood;
+    public readonly UpdateTimezoneDto UpdateTimezone;
 
     public readonly CreateCurrencyCommand CreateCurrencyCommand;
     public readonly CreateCountryCommand CreateCountryCommand;
@@ -53,6 +60,7 @@ public class Utils
     public readonly CreateCityCommand CreateCityCommand;
     public readonly CreateLocalityCommand CreateLocalityCommand;
     public readonly CreateNeighborhoodCommand CreateNeighborhoodCommand;
+    public readonly CreateTimezoneCommand CreateTimezoneCommand;
 
     public readonly UpdateCurrencyCommand UpdateCurrencyCommand;
     public readonly UpdateCountryCommand UpdateCountryCommand;
@@ -60,6 +68,7 @@ public class Utils
     public readonly UpdateCityCommand UpdateCityCommand;
     public readonly UpdateLocalityCommand UpdateLocalityCommand;
     public readonly UpdateNeighborhoodCommand UpdateNeighborhoodCommand;
+    public readonly UpdateTimezoneCommand UpdateTimezoneCommand;
 
     public Utils()
     {
@@ -114,9 +123,16 @@ public class Utils
             IdLocality = Locality.Id
         };
 
+        Timezone = new()
+        {
+            Id = Guid.NewGuid(),
+            Name = "America/New_York"
+        };
+
 
         CreateCurrency = new()
         {
+            Id = Currency.Id,
             Name = "Dollar",
             Code = "USD",
             Symbol = "$"
@@ -137,6 +153,7 @@ public class Utils
 
         CreateState = new()
         {
+            Id = State.Id,
             Name = State.Name,
             Code = State.Code,
             IdCountry = State.IdCountry
@@ -164,6 +181,11 @@ public class Utils
             IdLocality = Neighborhood.IdLocality
         };
 
+        CreateTimezone = new()
+        {
+            Id = Timezone.Id,
+            Name = Timezone.Name
+        };
 
         UpdateCurrency = new()
         {
@@ -222,6 +244,12 @@ public class Utils
             IsActive = true
         };
 
+        UpdateTimezone = new()
+        {
+            Id = Timezone.Id,
+            Name = "America/Bogota"
+        };
+
         CreateCurrencyCommand = new(Currency.Id, CreateCurrency.Name, CreateCurrency.Code, CreateCurrency.Symbol);
 
         CreateCountryCommand = new(Country.Id, CreateCountry.Name, CreateCountry.Alpha2, CreateCountry.Alpha3, CreateCountry.Code, CreateCountry.Capital, CreateCountry.IdCurrency, CreateCountry.TimeZone);
@@ -233,6 +261,8 @@ public class Utils
         CreateLocalityCommand = new(Locality.Id, Locality.Name, Locality.IdCity);
 
         CreateNeighborhoodCommand = new(Neighborhood.Id, Neighborhood.Name, Neighborhood.IdLocality);
+
+        CreateTimezoneCommand = new(Timezone.Id, Timezone.Name);
 
 
         UpdateCurrencyCommand = new(UpdateCurrency.Id, UpdateCurrency.Name, UpdateCurrency.Code, UpdateCurrency.Symbol, UpdateCurrency.IsActive);
@@ -247,191 +277,7 @@ public class Utils
 
         UpdateNeighborhoodCommand = new(UpdateNeighborhood.Id, UpdateNeighborhood.Name, UpdateNeighborhood.IdLocality, UpdateNeighborhood.IsActive);
 
-
+        UpdateTimezoneCommand = new(UpdateTimezone.Id, UpdateTimezone.Name, true);
     }
-
-    // public readonly CurrencyDto Currency = new()
-    // {
-    //     Id = Guid.NewGuid(),
-    //     Name = "Dollar",
-    //     Code = "USD",
-    //     Symbol = "$"
-    // };
-
-    // public readonly CountryDto Country = new()
-    // {
-    //     Id = Guid.NewGuid(),
-    //     Name = "United States",
-    //     Alpha2 = "US",
-    //     Alpha3 = "USA",
-    //     Capital = "Washington",
-    //     IdCurrency = Currency.Id,
-    //     Code = 103,
-    //     TimeZone = "America/New_York",
-    // };
-
-    // public readonly StateDto State = new()
-    // {
-    //     Id = Guid.NewGuid(),
-    //     Name = "New York",
-    //     Code = "NY",
-    //     IdCountry = Country.Id
-    // };
-
-    // public readonly CityDto City = new()
-    // {
-    //     Id = Guid.NewGuid(),
-    //     Name = "New York City",
-    //     TimeZone = "America/New_York",
-    //     IdState = State.Id
-    // };
-
-    // public readonly LocalityDto Locality = new()
-    // {
-    //     Id = Guid.NewGuid(),
-    //     Name = "Manhattan",
-    //     IdCity = City.Id
-    // };
-
-    // public readonly NeighborhoodDto Neighborhood = new()
-    // {
-    //     Id = Guid.NewGuid(),
-    //     Name = "Upper East Side",
-    //     IdLocality = Locality.Id
-    // };
-
-
-    // public readonly CreateCurrencyDto CreateCurrency = new()
-    // {
-    //     Name = "Dollar",
-    //     Code = "USD",
-    //     Symbol = "$"
-    // };
-
-
-    // public readonly CreateCountryDto CreateCountry = new()
-    // {
-    //     Id = Country.Id,
-    //     Name = Country.Name,
-    //     Alpha2 = Country.Alpha2,
-    //     Alpha3 = Country.Alpha3,
-    //     Capital = Country.Capital,
-    //     IdCurrency = Country.IdCurrency,
-    //     Code = Country.Code,
-    //     TimeZone = Country.TimeZone
-    // };
-
-    // public readonly CreateStateDto CreateState = new()
-    // {
-    //     Name = State.Name,
-    //     Code = State.Code,
-    //     IdCountry = State.IdCountry
-    // };
-
-    // public readonly CreateCityDto CreateCity = new()
-    // {
-    //     Id = City.Id,
-    //     Name = City.Name,
-    //     TimeZone = City.TimeZone,
-    //     IdState = City.IdState
-    // };
-
-    // public readonly CreateLocalityDto CreateLocality = new()
-    // {
-    //     Name = Locality.Name,
-    //     Id = Locality.Id,
-    //     IdCity = Locality.IdCity
-    // };
-
-    // public readonly CreateNeighborhoodDto CreateNeighborhood = new()
-    // {
-    //     Name = Neighborhood.Name,
-    //     Id = Neighborhood.Id,
-    //     IdLocality = Neighborhood.IdLocality
-    // };
-
-
-    // public readonly UpdateCurrencyDto UpdateCurrency = new()
-    // {
-    //     Id = Currency.Id,
-    //     Name = "Pesos",
-    //     Code = "COP",
-    //     Symbol = "$",
-    //     IsActive = true
-    // };
-
-
-    // public readonly UpdateCountryDto UpdateCountry = new()
-    // {
-    //     Id = Country.Id,
-    //     Name = "Colombia",
-    //     Alpha2 = "CO",
-    //     Alpha3 = "COL",
-    //     Capital = "Bogotá",
-    //     Code = 106,
-    //     IdCurrency = Country.IdCurrency,
-    //     TimeZone = "America/Bogota",
-    //     IsActive = true
-    // };
-
-    // public readonly UpdateStateDto UpdateState = new()
-    // {
-    //     Id = State.Id,
-    //     Name = "Bogotá",
-    //     Code = "BO",
-    //     IdCountry = State.IdCountry,
-    //     IsActive = true
-    // };
-
-    // public readonly UpdateCityDto UpdateCity = new()
-    // {
-    //     Id = City.Id,
-    //     Name = "Bogotá",
-    //     IdState = City.IdState,
-    //     TimeZone = "America/Bogota",
-    //     IsActive = true,
-    // };
-
-    // public readonly UpdateLocalityDto UpdateLocality = new()
-    // {
-    //     Id = Locality.Id,
-    //     Name = "Puente Aranda",
-    //     IdCity = Locality.IdCity,
-    //     IsActive = true
-    // };
-
-    // public readonly UpdateNeighborhoodDto UpdateNeighborhood = new()
-    // {
-    //     Id = Neighborhood.Id,
-    //     Name = "Galán",
-    //     IdLocality = Neighborhood.IdLocality,
-    //     IsActive = true
-    // };
-
-    // public readonly CreateCurrencyCommand CreateCurrencyCommand = new(Currency.Id, CreateCurrency.Name, CreateCurrency.Code, CreateCurrency.Symbol);
-
-    // public readonly CreateCountryCommand CreateCountryCommand = new(Country.Id, CreateCountry.Name, CreateCountry.Alpha2, CreateCountry.Alpha3, CreateCountry.Code, CreateCountry.Capital, CreateCountry.IdCurrency, CreateCountry.TimeZone);
-
-    // public readonly CreateStateCommand CreateStateCommand = new(State.Id, State.IdCountry, CreateState.Code, CreateState.Name);
-
-    // public readonly CreateCityCommand CreateCityCommand = new(City.Id, State.Id, City.Name, City.TimeZone);
-
-    // public readonly CreateLocalityCommand CreateLocalityCommand = new(Locality.Id, Locality.Name, Locality.IdCity);
-
-    // public readonly CreateNeighborhoodCommand CreateNeighborhoodCommand = new(Neighborhood.Id, Neighborhood.Name, Neighborhood.IdLocality);
-
-
-    // public readonly UpdateCurrencyCommand UpdateCurrencyCommand = new(UpdateCurrency.Id, UpdateCurrency.Name, UpdateCurrency.Code, UpdateCurrency.Symbol, UpdateCurrency.IsActive);
-
-    // public readonly UpdateCountryCommand UpdateCountryCommand = new(UpdateCountry.Id, UpdateCountry.Name, UpdateCountry.Alpha2, UpdateCountry.Alpha3, UpdateCountry.Code, UpdateCountry.Capital, UpdateCountry.IdCurrency, UpdateCountry.TimeZone, UpdateCountry.IsActive);
-
-    // public readonly UpdateStateCommand UpdateStateCommand = new(UpdateState.Id, UpdateState.IdCountry, UpdateState.Code, UpdateState.Name, UpdateState.IsActive);
-
-    // public readonly UpdateCityCommand UpdateCityCommand = new(UpdateCity.Id, UpdateCity.Id, UpdateCity.Name, UpdateCity.TimeZone, UpdateCity.IsActive);
-
-    // public readonly UpdateLocalityCommand UpdateLocalityCommand = new(UpdateLocality.Id, UpdateLocality.Name, UpdateLocality.IdCity, UpdateLocality.IsActive);
-
-    // public readonly UpdateNeighborhoodCommand UpdateNeighborhoodCommand = new(UpdateNeighborhood.Id, UpdateNeighborhood.Name, UpdateNeighborhood.IdLocality, UpdateNeighborhood.IsActive);
-
 
 }
