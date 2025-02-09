@@ -1,8 +1,5 @@
-using System;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Locality.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Helpers;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
-using NodaTime.Serialization.SystemTextJson;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Controllers;
 
@@ -28,9 +25,9 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task GetLocalities_ReturnOk()
     {
-        await this.CreateLocalityAsync();
+        await Client.CreateLocaliyAsync(fakeData);
 
-        var response = await this.RequestAsync("http://localhost/api/Locality", null, HttpMethod.Get);
+        var response = await Client.RequestAsync("http://localhost/api/Locality", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
@@ -41,15 +38,15 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
 
         Assert.NotNull(Localities);
         Assert.NotEmpty(Localities);
-        Assert.Contains(Localities, x => x.Id == data.Id);
+        Assert.Contains(Localities, x => x.Id == fakeData.CreateLocality.Id);
     }
 
     [Fact]
     public async Task GetLocalityById_ReturnOk()
     {
-        await this.CreateLocalityAsync();
+        await Client.CreateLocaliyAsync(fakeData);
 
-        var response = await this.RequestAsync($"http://localhost/api/Locality/{data.Id}", null, HttpMethod.Get);
+        var response = await Client.RequestAsync($"http://localhost/api/Locality/{fakeData.CreateLocality.Id}", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
@@ -59,15 +56,15 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
         var locality = System.Text.Json.JsonSerializer.Deserialize<LocalityDto>(json, Utils.Options);
 
         Assert.NotNull(locality);
-        Assert.Equal(data.Id, locality.Id);
-        Assert.Equal(data.Name, locality.Name);
-        Assert.Equal(data.IdCity, locality.IdCity);
+        Assert.Equal(fakeData.CreateLocality.Id, locality.Id);
+        Assert.Equal(fakeData.CreateLocality.Name, locality.Name);
+        Assert.Equal(fakeData.CreateLocality.IdCity, locality.IdCity);
     }
 
     [Fact]
     public async Task CreateLocality_ReturnNoContent()
     {
-        await this.CreateCityAsync();
+        await Client.CreateCityAsync(fakeData);
         
         var data = fakeData.CreateLocality;
 
@@ -75,9 +72,9 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        var response = await this.RequestAsync("http://localhost/api/Locality", content, HttpMethod.Post);
+        var response = await Client.RequestAsync("http://localhost/api/Locality", content, HttpMethod.Post);
 
-        var locality = await this.GetRecordAsync(data.Id);
+        var locality = await Client.GetRecordAsync<LocalityDto>("Locality", data.Id);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
@@ -91,7 +88,7 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task UpdateLocality_ReturnNoContent()
     {
-        await this.CreateLocalityAsync();
+        await Client.CreateLocaliyAsync(fakeData);
 
         var data = fakeData.UpdateLocality;
 
@@ -99,9 +96,9 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        var response = await this.RequestAsync($"http://localhost/api/Locality/{localityCreated.Id}", content, HttpMethod.Put);
+        var response = await Client.RequestAsync($"http://localhost/api/Locality/{fakeData.CreateLocality.Id}", content, HttpMethod.Put);
 
-        var locality = await this.GetRecordAsync(data.Id);
+        var locality = await Client.GetRecordAsync<LocalityDto>("Locality", data.Id);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
@@ -115,9 +112,9 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task DeleteLocality_ReturnNoContent()
     {
-        await this.CreateLocalityAsync();
+        await Client.CreateLocaliyAsync(fakeData);
 
-        var response = await this.RequestAsync($"http://localhost/api/Locality/{localityCreated.Id}", null, HttpMethod.Delete);
+        var response = await Client.RequestAsync($"http://localhost/api/Locality/{fakeData.CreateLocality.Id}", null, HttpMethod.Delete);
 
         Assert.NotNull(response);
         Assert.True(response.IsSuccessStatusCode);

@@ -11,6 +11,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="4.12.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.3.0" />
     <PackageReference Include="CodeDesignPlus.Net.xUnit.Microservice" Version="0.6.0-beta.10" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.1" />

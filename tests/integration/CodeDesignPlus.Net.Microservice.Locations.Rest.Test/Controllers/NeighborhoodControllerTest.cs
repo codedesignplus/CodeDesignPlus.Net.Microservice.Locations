@@ -33,9 +33,9 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
     [Fact]
     public async Task GetNeighborhoods_ReturnOk()
     {
-        var data = await this.CreateNeighborhoodAsync();
+        await Client.CreateNeighborhoodAsync(fakeData);
 
-        var response = await this.RequestAsync("http://localhost/api/Neighborhood", null, HttpMethod.Get);
+        var response = await Client.RequestAsync("http://localhost/api/Neighborhood", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
@@ -46,15 +46,15 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
 
         Assert.NotNull(Neighborhoods);
         Assert.NotEmpty(Neighborhoods);
-        Assert.Contains(Neighborhoods, x => x.Id == data.Id);
+        Assert.Contains(Neighborhoods, x => x.Id == fakeData.CreateNeighborhood.Id);
     }
 
     [Fact]
     public async Task GetNeighborhoodById_ReturnOk()
     {
-        var data = await this.CreateNeighborhoodAsync();
+        await Client.CreateNeighborhoodAsync(fakeData);
 
-        var response = await this.RequestAsync($"http://localhost/api/Neighborhood/{data.Id}", null, HttpMethod.Get);
+        var response = await Client.RequestAsync($"http://localhost/api/Neighborhood/{fakeData.CreateNeighborhood.Id}", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
@@ -64,23 +64,25 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
         var neighborhood = System.Text.Json.JsonSerializer.Deserialize<NeighborhoodDto>(json, Utils.Options);
 
         Assert.NotNull(neighborhood);
-        Assert.Equal(data.Id, neighborhood.Id);
-        Assert.Equal(data.Name, neighborhood.Name);
-        Assert.Equal(data.IdLocality, neighborhood.IdLocality);
+        Assert.Equal(fakeData.CreateNeighborhood.Id, neighborhood.Id);
+        Assert.Equal(fakeData.CreateNeighborhood.Name, neighborhood.Name);
+        Assert.Equal(fakeData.CreateNeighborhood.IdLocality, neighborhood.IdLocality);
     }
 
     [Fact]
     public async Task CreateNeighborhood_ReturnNoContent()
     {
+        await Client.CreateLocaliyAsync(fakeData);
+
         var data = fakeData.CreateNeighborhood;
 
         var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        var response = await this.RequestAsync("http://localhost/api/Neighborhood", content, HttpMethod.Post);
+        var response = await Client.RequestAsync("http://localhost/api/Neighborhood", content, HttpMethod.Post);
 
-        var neighborhood = await this.GetRecordAsync(data.Id);
+        var neighborhood = await Client.GetRecordAsync<NeighborhoodDto>("Neighborhood", data.Id);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
@@ -94,7 +96,7 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
     [Fact]
     public async Task UpdateNeighborhood_ReturnNoContent()
     {
-        var NeighborhoodCreated = await this.CreateNeighborhoodAsync();
+        await Client.CreateNeighborhoodAsync(fakeData);
 
         var data = fakeData.UpdateNeighborhood;
 
@@ -102,9 +104,9 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        var response = await this.RequestAsync($"http://localhost/api/Neighborhood/{NeighborhoodCreated.Id}", content, HttpMethod.Put);
+        var response = await Client.RequestAsync($"http://localhost/api/Neighborhood/{fakeData.CreateNeighborhood.Id}", content, HttpMethod.Put);
 
-        var neighborhood = await this.GetRecordAsync(data.Id);
+        var neighborhood = await Client.GetRecordAsync<NeighborhoodDto>("Neighborhood", data.Id);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
@@ -118,56 +120,14 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
     [Fact]
     public async Task DeleteNeighborhood_ReturnNoContent()
     {
-        var NeighborhoodCreated = await this.CreateNeighborhoodAsync();
+        await Client.CreateNeighborhoodAsync(fakeData);
 
-        var response = await this.RequestAsync($"http://localhost/api/Neighborhood/{NeighborhoodCreated.Id}", null, HttpMethod.Delete);
+        var response = await Client.RequestAsync($"http://localhost/api/Neighborhood/{fakeData.CreateNeighborhood.Id}", null, HttpMethod.Delete);
 
         Assert.NotNull(response);
         Assert.True(response.IsSuccessStatusCode);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
     }
 
-    private async Task<CreateNeighborhoodDto> CreateNeighborhoodAsync()
-    {
-        var data = fakeData.CreateNeighborhood;
-
-        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
-
-        var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-        await this.RequestAsync("http://localhost/api/Neighborhood", content, HttpMethod.Post);
-
-        return data;
-    }
-
-    private async Task<NeighborhoodDto> GetRecordAsync(Guid id)
-    {
-        var response = await this.RequestAsync($"http://localhost/api/Neighborhood/{id}", null, HttpMethod.Get);
-
-        var json = await response.Content.ReadAsStringAsync();
-
-        return System.Text.Json.JsonSerializer.Deserialize<NeighborhoodDto>(json, Utils.Options)!;
-    }
-
-    private async Task<HttpResponseMessage> RequestAsync(string uri, HttpContent? content, HttpMethod method)
-    {
-        var httpRequestMessage = new HttpRequestMessage()
-        {
-            RequestUri = new Uri(uri),
-            Content = content,
-            Method = method
-        };
-        httpRequestMessage.Headers.Authorization = new AuthenticationHeaderValue("TestAuth");
-
-        var response = await Client.SendAsync(httpRequestMessage);
-
-        if (!response.IsSuccessStatusCode)
-        {
-            var data = await response.Content.ReadAsStringAsync();
-            throw new Exception(data);
-        }
-
-        return response;
-    }
 
 }
