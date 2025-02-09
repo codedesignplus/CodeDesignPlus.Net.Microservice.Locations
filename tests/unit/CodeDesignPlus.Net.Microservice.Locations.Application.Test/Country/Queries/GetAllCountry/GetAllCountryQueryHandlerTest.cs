@@ -1,8 +1,60 @@
-using System;
 
-namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Currency.Queries.GetAllCountry;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Country.Queries.GetAllCountry;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Test.Helpers;
+using Moq;
+using Xunit;
 
+namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Queries.GetAllCountry;
 public class GetAllCountryQueryHandlerTest
 {
+    private readonly Mock<ICountryRepository> _repositoryMock;
+    private readonly Mock<IMapper> _mapperMock;
+    private readonly GetAllCountryQueryHandler _handler;
+    private readonly FakeData fakeData = new();
 
+    public GetAllCountryQueryHandlerTest()
+    {
+        _repositoryMock = new Mock<ICountryRepository>();
+        _mapperMock = new Mock<IMapper>();
+        _handler = new GetAllCountryQueryHandler(_repositoryMock.Object, _mapperMock.Object);
+    }
+
+    [Fact]
+    public async Task Handle_RequestIsNull_ThrowsCodeDesignPlusException()
+    {
+        // Arrange
+        GetAllCountryQuery request = null!;
+        var cancellationToken = CancellationToken.None;
+
+        // Act & Assert
+        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => _handler.Handle(request, cancellationToken));
+
+        Assert.Equal(Errors.InvalidRequest.GetMessage(), exception.Message);
+        Assert.Equal(Errors.InvalidRequest.GetCode(), exception.Code);
+        Assert.Equal(Layer.Application, exception.Layer);
+    }
+
+    [Fact]
+    public async Task Handle_ValidRequest_ReturnsCountryDtoList()
+    {
+        // Arrange
+        var request = new GetAllCountryQuery(null!);
+        var cancellationToken = CancellationToken.None;
+        var countries = new List<CountryAggregate> { fakeData.CountryAggregate };
+        var countryDtos = new List<CountryDto> { fakeData.Country };
+
+        _repositoryMock
+            .Setup(repo => repo.MatchingAsync<CountryAggregate>(request.Criteria, cancellationToken))
+            .ReturnsAsync(countries);
+        _mapperMock
+            .Setup(mapper => mapper.Map<List<CountryDto>>(countries))
+            .Returns(countryDtos);
+
+        // Act
+        var result = await _handler.Handle(request, cancellationToken);
+
+        // Assert
+        Assert.NotNull(result);
+        Assert.Equal(countryDtos, result);
+    }
 }
