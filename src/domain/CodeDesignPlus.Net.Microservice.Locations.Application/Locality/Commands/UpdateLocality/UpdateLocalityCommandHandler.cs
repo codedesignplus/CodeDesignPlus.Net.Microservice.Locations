@@ -6,9 +6,13 @@ public class UpdateLocalityCommandHandler(ILocalityRepository repository, IUserC
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var aggregate = await repository.FindAsync<LocalityAggregate>(request.Id, user.Tenant, cancellationToken);
+        var aggregate = await repository.FindAsync<LocalityAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsNull(aggregate, Errors.LocalityNotFound);
+
+        var existCity = await repository.ExistsAsync<CityAggregate>(request.IdCity,  cancellationToken);
+
+        ApplicationGuard.IsFalse(existCity, Errors.CityNotFound);
 
         aggregate.Update(request.IdCity, request.Name, request.IsActive, user.IdUser);
 

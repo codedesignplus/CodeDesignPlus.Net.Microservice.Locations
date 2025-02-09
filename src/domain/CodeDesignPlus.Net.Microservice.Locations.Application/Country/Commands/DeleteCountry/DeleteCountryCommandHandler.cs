@@ -6,13 +6,13 @@ public class DeleteCountryCommandHandler(ICountryRepository repository, IUserCon
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var aggregate = await repository.FindAsync<CountryAggregate>(request.Id, user.Tenant, cancellationToken);
+        var aggregate = await repository.FindAsync<CountryAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsNull(aggregate, Errors.CountryNotFound);
 
         aggregate.Delete(user.IdUser);
 
-        await repository.DeleteAsync<CountryAggregate>(aggregate.Id, user.Tenant, cancellationToken);
+        await repository.DeleteAsync<CountryAggregate>(aggregate.Id,  cancellationToken);
 
         await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }

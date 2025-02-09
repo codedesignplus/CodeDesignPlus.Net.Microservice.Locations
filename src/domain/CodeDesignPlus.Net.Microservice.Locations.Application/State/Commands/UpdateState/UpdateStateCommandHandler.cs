@@ -6,9 +6,13 @@ public class UpdateStateCommandHandler(IStateRepository repository, IUserContext
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var aggregate = await repository.FindAsync<StateAggregate>(request.Id, user.Tenant, cancellationToken);
+        var aggregate = await repository.FindAsync<StateAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsNull(aggregate, Errors.StateNotFound);
+
+        var existCountry = await repository.ExistsAsync<CountryAggregate>(request.IdCountry,  cancellationToken);
+
+        ApplicationGuard.IsFalse(existCountry, Errors.CountryNotFound);
 
         aggregate.Update(request.IdCountry, request.Code, request.Name, request.IsActive, user.IdUser);
 

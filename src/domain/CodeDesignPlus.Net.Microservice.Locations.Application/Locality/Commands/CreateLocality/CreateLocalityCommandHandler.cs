@@ -6,11 +6,15 @@ public class CreateLocalityCommandHandler(ILocalityRepository repository, IUserC
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
         
-        var exist = await repository.ExistsAsync<LocalityAggregate>(request.Id, user.Tenant, cancellationToken);
+        var exist = await repository.ExistsAsync<LocalityAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsTrue(exist, Errors.LocalityAlreadyExists);
 
         var aggregate = LocalityAggregate.Create(request.Id, request.IdCity, request.Name, user.IdUser);
+
+        var cityExist = await repository.ExistsAsync<CityAggregate>(request.IdCity, cancellationToken);
+
+        ApplicationGuard.IsFalse(cityExist, Errors.CityNotFound);
 
         await repository.CreateAsync(aggregate, cancellationToken);
 

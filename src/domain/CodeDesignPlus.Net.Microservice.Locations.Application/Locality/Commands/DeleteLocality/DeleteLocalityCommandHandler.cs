@@ -6,13 +6,13 @@ public class DeleteLocalityCommandHandler(ILocalityRepository repository, IUserC
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var aggregate = await repository.FindAsync<LocalityAggregate>(request.Id, user.Tenant, cancellationToken);
+        var aggregate = await repository.FindAsync<LocalityAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsNull(aggregate, Errors.LocalityNotFound);
 
         aggregate.Delete(user.IdUser);
 
-        await repository.DeleteAsync<LocalityAggregate>(aggregate.Id, user.Tenant, cancellationToken);
+        await repository.DeleteAsync<LocalityAggregate>(aggregate.Id,  cancellationToken);
 
         await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }

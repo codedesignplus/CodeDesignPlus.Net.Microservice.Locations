@@ -6,9 +6,13 @@ public class CreateCityCommandHandler(ICityRepository repository, IUserContext u
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
         
-        var exist = await repository.ExistsAsync<CityAggregate>(request.Id, user.Tenant, cancellationToken);
+        var exist = await repository.ExistsAsync<CityAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsTrue(exist, Errors.CityAlreadyExists);
+
+        var existState = await repository.ExistsAsync<StateAggregate>(request.IdState,  cancellationToken);
+
+        ApplicationGuard.IsFalse(existState, Errors.StateNotFound);
 
         var city = CityAggregate.Create(request.Id, request.IdState, request.Name, request.TimeZone,user.IdUser);
 

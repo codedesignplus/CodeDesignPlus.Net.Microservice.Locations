@@ -6,9 +6,13 @@ public class CreateNeighborhoodCommandHandler(INeighborhoodRepository repository
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var exist = await repository.ExistsAsync<NeighborhoodAggregate>(request.Id, user.Tenant, cancellationToken);
+        var exist = await repository.ExistsAsync<NeighborhoodAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsTrue(exist, Errors.NeighborhoodAlreadyExists);
+
+        var existLocality = await repository.ExistsAsync<LocalityAggregate>(request.IdLocality,  cancellationToken);
+
+        ApplicationGuard.IsFalse(existLocality, Errors.LocalityNotFound);
 
         var aggregate = NeighborhoodAggregate.Create(request.Id, request.IdLocality, request.Name, user.IdUser);
 

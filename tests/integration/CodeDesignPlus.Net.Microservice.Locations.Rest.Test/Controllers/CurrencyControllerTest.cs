@@ -1,19 +1,12 @@
-using System;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Helpers;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 using NodaTime.Serialization.SystemTextJson;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Controllers;
 
 public class CurrencyControllerTest : ServerBase<Program>, IClassFixture<Server<Program>>
 {
-    private readonly System.Text.Json.JsonSerializerOptions options = new System.Text.Json.JsonSerializerOptions()
-    {
-        PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase,
-    }.ConfigureForNodaTime(DateTimeZoneProviders.Tzdb);
-
-    private readonly Utils Utils = new();
+    private readonly FakeData fakeData = new();
 
     public CurrencyControllerTest(Server<Program> server) : base(server)
     {
@@ -33,56 +26,56 @@ public class CurrencyControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task GetCurrencies_ReturnOk()
     {
-        var data = await this.CreateCurrencyAsync();
+        await Client.CreateCurrencyAsync(fakeData);
 
-        var response = await this.RequestAsync("http://localhost/api/Currency", null, HttpMethod.Get);
+        var response = await Client.RequestAsync("http://localhost/api/Currency", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var currencies = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<CurrencyDto>>(json, this.options);
+        var currencies = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<CurrencyDto>>(json, Utils.Options);
 
         Assert.NotNull(currencies);
         Assert.NotEmpty(currencies);
-        Assert.Contains(currencies, x => x.Id == data.Id);
+        Assert.Contains(currencies, x => x.Id == fakeData.CreateCurrency.Id);
     }
 
     [Fact]
     public async Task GetCurrencyById_ReturnOk()
     {
-        var data = await this.CreateCurrencyAsync();
+        await Client.CreateCurrencyAsync(fakeData);
 
-        var response = await this.RequestAsync($"http://localhost/api/Currency/{data.Id}", null, HttpMethod.Get);
+        var response = await Client.RequestAsync($"http://localhost/api/Currency/{fakeData.CreateCurrency.Id}", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var currency = System.Text.Json.JsonSerializer.Deserialize<CurrencyDto>(json, this.options);
+        var currency = System.Text.Json.JsonSerializer.Deserialize<CurrencyDto>(json, Utils.Options);
 
         Assert.NotNull(currency);
-        Assert.Equal(data.Id, currency.Id);
-        Assert.Equal(data.Name, currency.Name);
-        Assert.Equal(data.Code, currency.Code);
-        Assert.Equal(data.Symbol, currency.Symbol);
+        Assert.Equal(fakeData.CreateCurrency.Id, currency.Id);
+        Assert.Equal(fakeData.CreateCurrency.Name, currency.Name);
+        Assert.Equal(fakeData.CreateCurrency.Code, currency.Code);
+        Assert.Equal(fakeData.CreateCurrency.Symbol, currency.Symbol);
 
     }
 
     [Fact]
     public async Task CreateCurrency_ReturnNoContent()
     {
-        var data = Utils.CreateCurrency;
+        var data = fakeData.CreateCurrency;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        var response = await this.RequestAsync("http://localhost/api/Currency", content, HttpMethod.Post);
+        var response = await Client.RequestAsync("http://localhost/api/Currency", content, HttpMethod.Post);
 
-        var currency = await this.GetRecordAsync(data.Id);
+        var currency = await Client.GetRecordAsync<CurrencyDto>("Currency", data.Id);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
@@ -96,17 +89,17 @@ public class CurrencyControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task UpdateCurrency_ReturnNoContent()
     {
-        var currencyCreated = await this.CreateCurrencyAsync();
+        await Client.CreateCurrencyAsync(fakeData);
 
-        var data = Utils.UpdateCurrency;
+        var data = fakeData.UpdateCurrency;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        var response = await this.RequestAsync($"http://localhost/api/Currency/{currencyCreated.Id}", content, HttpMethod.Put);
+        var response = await Client.RequestAsync($"http://localhost/api/Currency/{fakeData.CreateCurrency.Id}", content, HttpMethod.Put);
 
-        var currency = await this.GetRecordAsync(data.Id);
+        var currency = await Client.GetRecordAsync<CurrencyDto>("Currency", data.Id);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
@@ -120,56 +113,12 @@ public class CurrencyControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task DeleteCurrency_ReturnNoContent()
     {
-        var currencyCreated = await this.CreateCurrencyAsync();
+        await Client.CreateCurrencyAsync(fakeData);
 
-        var response = await this.RequestAsync($"http://localhost/api/Currency/{currencyCreated.Id}", null, HttpMethod.Delete);
+        var response = await Client.RequestAsync($"http://localhost/api/Currency/{fakeData.CreateCurrency.Id}", null, HttpMethod.Delete);
 
         Assert.NotNull(response);
         Assert.True(response.IsSuccessStatusCode);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
     }
-
-    private async Task<CreateCurrencyDto> CreateCurrencyAsync()
-    {
-        var data = Utils.CreateCurrency;
-
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
-
-        var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-        await this.RequestAsync("http://localhost/api/Currency", content, HttpMethod.Post);
-
-        return data;
-    }
-
-    private async Task<CurrencyDto> GetRecordAsync(Guid id)
-    {
-        var response = await this.RequestAsync($"http://localhost/api/Currency/{id}", null, HttpMethod.Get);
-
-        var json = await response.Content.ReadAsStringAsync();
-
-        return System.Text.Json.JsonSerializer.Deserialize<CurrencyDto>(json, this.options)!;
-    }
-
-    private async Task<HttpResponseMessage> RequestAsync(string uri, HttpContent? content, HttpMethod method)
-    {
-        var httpRequestMessage = new HttpRequestMessage()
-        {
-            RequestUri = new Uri(uri),
-            Content = content,
-            Method = method
-        };
-        httpRequestMessage.Headers.Authorization = new AuthenticationHeaderValue("TestAuth");
-
-        var response = await Client.SendAsync(httpRequestMessage);
-
-        if (!response.IsSuccessStatusCode)
-        {
-            var data = await response.Content.ReadAsStringAsync();
-            throw new Exception(data);
-        }
-
-        return response;
-    }
-
 }

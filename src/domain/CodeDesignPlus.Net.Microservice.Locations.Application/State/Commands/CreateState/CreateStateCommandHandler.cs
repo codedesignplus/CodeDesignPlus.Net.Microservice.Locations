@@ -6,9 +6,13 @@ public class CreateStateCommandHandler(IStateRepository repository, IUserContext
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var exist = await repository.ExistsAsync<StateAggregate>(request.Id, user.Tenant, cancellationToken);
+        var exist = await repository.ExistsAsync<StateAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsTrue(exist, Errors.StateAlreadyExists);
+
+        var existCountry = await repository.ExistsAsync<CountryAggregate>(request.IdCountry,  cancellationToken);
+
+        ApplicationGuard.IsFalse(existCountry, Errors.CountryNotFound);
 
         var state = StateAggregate.Create(request.Id, request.IdCountry, request.Code, request.Name, user.IdUser);
 

@@ -6,9 +6,13 @@ public class UpdateNeighborhoodCommandHandler(INeighborhoodRepository repository
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var aggregate = await repository.FindAsync<NeighborhoodAggregate>(request.Id, user.Tenant, cancellationToken);
+        var aggregate = await repository.FindAsync<NeighborhoodAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsNull(aggregate, Errors.NeighborhoodNotFound);
+
+        var existLocality = await repository.ExistsAsync<LocalityAggregate>(request.IdLocality,  cancellationToken);
+
+        ApplicationGuard.IsFalse(existLocality, Errors.LocalityNotFound);
 
         aggregate.Update(request.IdLocality, request.Name, request.IsActive, user.IdUser);
 

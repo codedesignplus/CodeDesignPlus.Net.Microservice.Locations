@@ -6,7 +6,7 @@ public class UpdateTimezoneCommandHandler(ITimezoneRepository repository, IUserC
     {        
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var client = await repository.FindAsync<TimezoneAggregate>(request.Id, user.Tenant, cancellationToken);
+        var client = await repository.FindAsync<TimezoneAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsNull(client, Errors.TimezoneNotFound);
 

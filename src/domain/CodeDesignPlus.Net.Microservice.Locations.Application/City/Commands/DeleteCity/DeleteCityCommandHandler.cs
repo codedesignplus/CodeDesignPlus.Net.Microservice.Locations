@@ -6,13 +6,13 @@ public class DeleteCityCommandHandler(ICityRepository repository, IUserContext u
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var aggregate = await repository.FindAsync<CityAggregate>(request.Id, user.Tenant, cancellationToken);
+        var aggregate = await repository.FindAsync<CityAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsNull(aggregate, Errors.CityNotFound);
 
         aggregate.Delete(user.IdUser);
 
-        await repository.DeleteAsync<CityAggregate>(aggregate.Id, user.Tenant, cancellationToken);
+        await repository.DeleteAsync<CityAggregate>(aggregate.Id,  cancellationToken);
 
         await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }

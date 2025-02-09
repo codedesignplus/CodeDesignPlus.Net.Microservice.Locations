@@ -6,13 +6,13 @@ public class DeleteStateCommandHandler(IStateRepository repository, IUserContext
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var aggregate = await repository.FindAsync<StateAggregate>(request.Id, user.Tenant, cancellationToken);
+        var aggregate = await repository.FindAsync<StateAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsNull(aggregate, Errors.StateNotFound);
 
         aggregate.Delete(user.IdUser);
 
-        await repository.DeleteAsync<StateAggregate>(aggregate.Id, user.Tenant, cancellationToken);
+        await repository.DeleteAsync<StateAggregate>(aggregate.Id,  cancellationToken);
 
         await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }

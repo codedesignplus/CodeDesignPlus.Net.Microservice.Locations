@@ -6,7 +6,7 @@ public class CreateCurrencyCommandHandler(ICurrencyRepository repository, IUserC
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var exist = await repository.ExistsAsync<CurrencyAggregate>(request.Id, user.Tenant, cancellationToken);
+        var exist = await repository.ExistsAsync<CurrencyAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsTrue(exist, Errors.CurrencyAlreadyExists);
 

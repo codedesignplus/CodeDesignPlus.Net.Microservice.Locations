@@ -6,9 +6,13 @@ public class UpdateCountryCommandHandler(ICountryRepository repository, IUserCon
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var aggregate = await repository.FindAsync<CountryAggregate>(request.Id, user.Tenant, cancellationToken);
+        var aggregate = await repository.FindAsync<CountryAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsNull(aggregate, Errors.CountryNotFound);
+
+        var existCurrency = await repository.ExistsAsync<CurrencyAggregate>(request.IdCurrency,  cancellationToken);
+
+        ApplicationGuard.IsFalse(existCurrency, Errors.CurrencyNotFound);
 
         aggregate.Update(request.Name, request.Alpha2, request.Alpha3, request.Code, request.Capital, request.IdCurrency, request.TimeZone, request.IsActive, user.IdUser);
 

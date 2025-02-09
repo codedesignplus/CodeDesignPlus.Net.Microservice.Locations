@@ -13,7 +13,7 @@ public class TimezoneControllerTest : ServerBase<Program>, IClassFixture<Server<
         PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase,
     }.ConfigureForNodaTime(DateTimeZoneProviders.Tzdb);
 
-    private readonly Utils Utils = new();
+    private readonly FakeData fakeData = new();
 
     public TimezoneControllerTest(Server<Program> server) : base(server)
     {
@@ -42,7 +42,7 @@ public class TimezoneControllerTest : ServerBase<Program>, IClassFixture<Server<
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var Timezones = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<TimezoneDto>>(json, this.options);
+        var Timezones = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<TimezoneDto>>(json, Utils.Options);
 
         Assert.NotNull(Timezones);
         Assert.NotEmpty(Timezones);
@@ -61,7 +61,7 @@ public class TimezoneControllerTest : ServerBase<Program>, IClassFixture<Server<
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var timezone = System.Text.Json.JsonSerializer.Deserialize<TimezoneDto>(json, this.options);
+        var timezone = System.Text.Json.JsonSerializer.Deserialize<TimezoneDto>(json, Utils.Options);
 
         Assert.NotNull(timezone);
         Assert.Equal(data.Id, timezone.Id);
@@ -71,9 +71,9 @@ public class TimezoneControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task CreateTimezone_ReturnNoContent()
     {
-        var data = Utils.CreateTimezone;
+        var data = fakeData.CreateTimezone;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -93,9 +93,9 @@ public class TimezoneControllerTest : ServerBase<Program>, IClassFixture<Server<
     {
         var TimezoneCreated = await this.CreateTimezoneAsync();
 
-        var data = Utils.UpdateTimezone;
+        var data = fakeData.UpdateTimezone;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -124,9 +124,9 @@ public class TimezoneControllerTest : ServerBase<Program>, IClassFixture<Server<
 
     private async Task<CreateTimezoneDto> CreateTimezoneAsync()
     {
-        var data = Utils.CreateTimezone;
+        var data = fakeData.CreateTimezone;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -141,7 +141,7 @@ public class TimezoneControllerTest : ServerBase<Program>, IClassFixture<Server<
 
         var json = await response.Content.ReadAsStringAsync();
 
-        return System.Text.Json.JsonSerializer.Deserialize<TimezoneDto>(json, this.options)!;
+        return System.Text.Json.JsonSerializer.Deserialize<TimezoneDto>(json, Utils.Options)!;
     }
 
     private async Task<HttpResponseMessage> RequestAsync(string uri, HttpContent? content, HttpMethod method)

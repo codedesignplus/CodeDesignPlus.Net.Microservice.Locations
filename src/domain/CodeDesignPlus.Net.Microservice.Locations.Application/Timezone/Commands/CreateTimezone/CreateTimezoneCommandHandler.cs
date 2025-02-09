@@ -6,7 +6,7 @@ public class CreateTimezoneCommandHandler(ITimezoneRepository repository, IUserC
     {        
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var exist = await repository.ExistsAsync<TimezoneAggregate>(request.Id, user.Tenant, cancellationToken);
+        var exist = await repository.ExistsAsync<TimezoneAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsTrue(exist, Errors.TimezoneAlreadyExists);
 

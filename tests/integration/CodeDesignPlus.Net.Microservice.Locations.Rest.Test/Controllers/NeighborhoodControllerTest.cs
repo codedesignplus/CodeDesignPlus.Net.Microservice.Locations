@@ -13,7 +13,7 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
         PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase,
     }.ConfigureForNodaTime(DateTimeZoneProviders.Tzdb);
 
-    private readonly Utils Utils = new();
+    private readonly FakeData fakeData = new();
 
     public NeighborhoodControllerTest(Server<Program> server) : base(server)
     {
@@ -42,7 +42,7 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var Neighborhoods = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<NeighborhoodDto>>(json, this.options);
+        var Neighborhoods = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<NeighborhoodDto>>(json, Utils.Options);
 
         Assert.NotNull(Neighborhoods);
         Assert.NotEmpty(Neighborhoods);
@@ -61,7 +61,7 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var neighborhood = System.Text.Json.JsonSerializer.Deserialize<NeighborhoodDto>(json, this.options);
+        var neighborhood = System.Text.Json.JsonSerializer.Deserialize<NeighborhoodDto>(json, Utils.Options);
 
         Assert.NotNull(neighborhood);
         Assert.Equal(data.Id, neighborhood.Id);
@@ -72,9 +72,9 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
     [Fact]
     public async Task CreateNeighborhood_ReturnNoContent()
     {
-        var data = Utils.CreateNeighborhood;
+        var data = fakeData.CreateNeighborhood;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -96,9 +96,9 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
     {
         var NeighborhoodCreated = await this.CreateNeighborhoodAsync();
 
-        var data = Utils.UpdateNeighborhood;
+        var data = fakeData.UpdateNeighborhood;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -129,9 +129,9 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
 
     private async Task<CreateNeighborhoodDto> CreateNeighborhoodAsync()
     {
-        var data = Utils.CreateNeighborhood;
+        var data = fakeData.CreateNeighborhood;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -146,7 +146,7 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
 
         var json = await response.Content.ReadAsStringAsync();
 
-        return System.Text.Json.JsonSerializer.Deserialize<NeighborhoodDto>(json, this.options)!;
+        return System.Text.Json.JsonSerializer.Deserialize<NeighborhoodDto>(json, Utils.Options)!;
     }
 
     private async Task<HttpResponseMessage> RequestAsync(string uri, HttpContent? content, HttpMethod method)

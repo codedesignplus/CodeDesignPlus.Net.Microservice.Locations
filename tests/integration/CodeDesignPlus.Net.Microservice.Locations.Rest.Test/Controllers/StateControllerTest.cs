@@ -8,12 +8,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Controllers;
 
 public class StateControllerTest : ServerBase<Program>, IClassFixture<Server<Program>>
 {
-    private readonly System.Text.Json.JsonSerializerOptions options = new System.Text.Json.JsonSerializerOptions()
-    {
-        PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase,
-    }.ConfigureForNodaTime(DateTimeZoneProviders.Tzdb);
-
-    private readonly Utils Utils = new();
+    private readonly FakeData fakeData = new();
 
     public StateControllerTest(Server<Program> server) : base(server)
     {
@@ -33,55 +28,57 @@ public class StateControllerTest : ServerBase<Program>, IClassFixture<Server<Pro
     [Fact]
     public async Task GetStates_ReturnOk()
     {
-        var data = await this.CreateStateAsync();
+        await Client.CreateStateAsync(fakeData);
 
-        var response = await this.RequestAsync("http://localhost/api/State", null, HttpMethod.Get);
+        var response = await Client.RequestAsync("http://localhost/api/State", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var states = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<StateDto>>(json, this.options);
+        var states = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<StateDto>>(json, Utils.Options);
 
         Assert.NotNull(states);
         Assert.NotEmpty(states);
-        Assert.Contains(states, x => x.Id == data.Id);
+        Assert.Contains(states, x => x.Id == fakeData.CreateState.Id);
     }
 
     [Fact]
     public async Task GetStateById_ReturnOk()
     {
-        var data = await this.CreateStateAsync();
+        await Client.CreateStateAsync(fakeData);
 
-        var response = await this.RequestAsync($"http://localhost/api/State/{data.Id}", null, HttpMethod.Get);
+        var response = await Client.RequestAsync($"http://localhost/api/State/{fakeData.CreateState.Id}", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var state = System.Text.Json.JsonSerializer.Deserialize<StateDto>(json, this.options);
+        var state = System.Text.Json.JsonSerializer.Deserialize<StateDto>(json, Utils.Options);
 
         Assert.NotNull(state);
-        Assert.Equal(data.Id, state.Id);
-        Assert.Equal(data.Name, state.Name);
-        Assert.Equal(data.IdCountry, state.IdCountry);
-        Assert.Equal(data.Code, state.Code);
+        Assert.Equal(fakeData.CreateState.Id, state.Id);
+        Assert.Equal(fakeData.CreateState.Name, state.Name);
+        Assert.Equal(fakeData.CreateState.IdCountry, state.IdCountry);
+        Assert.Equal(fakeData.CreateState.Code, state.Code);
     }
 
     [Fact]
     public async Task CreateState_ReturnNoContent()
     {
-        var data = Utils.CreateState;
+        await Client.CreateCountryAsync(fakeData);
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var data = fakeData.CreateState;
+
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        var response = await this.RequestAsync("http://localhost/api/State", content, HttpMethod.Post);
+        var response = await Client.RequestAsync("http://localhost/api/State", content, HttpMethod.Post);
 
-        var state = await this.GetRecordAsync(data.Id);
+        var state = await Client.GetRecordAsync<StateDto>("State", data.Id);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
@@ -95,17 +92,17 @@ public class StateControllerTest : ServerBase<Program>, IClassFixture<Server<Pro
     [Fact]
     public async Task UpdateState_ReturnNoContent()
     {
-        var stateCreated = await this.CreateStateAsync();
+        await Client.CreateStateAsync(fakeData);
 
-        var data = Utils.UpdateState;
+        var data = fakeData.UpdateState;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        var response = await this.RequestAsync($"http://localhost/api/State/{stateCreated.Id}", content, HttpMethod.Put);
+        var response = await Client.RequestAsync($"http://localhost/api/State/{fakeData.CreateState.Id}", content, HttpMethod.Put);
 
-        var state = await this.GetRecordAsync(data.Id);
+        var state = await Client.GetRecordAsync<StateDto>("State", data.Id);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
@@ -119,56 +116,13 @@ public class StateControllerTest : ServerBase<Program>, IClassFixture<Server<Pro
     [Fact]
     public async Task DeleteState_ReturnNoContent()
     {
-        var stateCreated = await this.CreateStateAsync();
+        await Client.CreateStateAsync(fakeData);
 
-        var response = await this.RequestAsync($"http://localhost/api/State/{stateCreated.Id}", null, HttpMethod.Delete);
+        var response = await Client.RequestAsync($"http://localhost/api/State/{fakeData.CreateState.Id}", null, HttpMethod.Delete);
 
         Assert.NotNull(response);
         Assert.True(response.IsSuccessStatusCode);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
-    }
-
-    private async Task<CreateStateDto> CreateStateAsync()
-    {
-        var data = Utils.CreateState;
-
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
-
-        var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-        await this.RequestAsync("http://localhost/api/State", content, HttpMethod.Post);
-
-        return data;
-    }
-
-    private async Task<StateDto> GetRecordAsync(Guid id)
-    {
-        var response = await this.RequestAsync($"http://localhost/api/State/{id}", null, HttpMethod.Get);
-
-        var json = await response.Content.ReadAsStringAsync();
-
-        return System.Text.Json.JsonSerializer.Deserialize<StateDto>(json, this.options)!;
-    }
-
-    private async Task<HttpResponseMessage> RequestAsync(string uri, HttpContent? content, HttpMethod method)
-    {
-        var httpRequestMessage = new HttpRequestMessage()
-        {
-            RequestUri = new Uri(uri),
-            Content = content,
-            Method = method
-        };
-        httpRequestMessage.Headers.Authorization = new AuthenticationHeaderValue("TestAuth");
-
-        var response = await Client.SendAsync(httpRequestMessage);
-
-        if (!response.IsSuccessStatusCode)
-        {
-            var data = await response.Content.ReadAsStringAsync();
-            throw new Exception(data);
-        }
-
-        return response;
     }
 
 }

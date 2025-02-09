@@ -6,9 +6,13 @@ public class UpdateCityCommandHandler(ICityRepository repository, IUserContext u
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var city = await repository.FindAsync<CityAggregate>(request.Id, user.Tenant, cancellationToken);
+        var city = await repository.FindAsync<CityAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsNull(city, Errors.CityNotFound);
+
+        var existState = await repository.ExistsAsync<StateAggregate>(request.IdState,  cancellationToken);
+
+        ApplicationGuard.IsFalse(existState, Errors.StateNotFound);
 
         city.Update(request.IdState, request.Name, request.TimeZone, request.IsActive, user.IdUser);
 

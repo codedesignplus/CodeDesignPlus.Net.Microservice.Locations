@@ -6,13 +6,13 @@ public class DeleteNeighborhoodCommandHandler(INeighborhoodRepository repository
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var aggregate = await repository.FindAsync<NeighborhoodAggregate>(request.Id, user.Tenant, cancellationToken);
+        var aggregate = await repository.FindAsync<NeighborhoodAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsNull(aggregate, Errors.NeighborhoodNotFound);
 
         aggregate.Delete(user.IdUser);
 
-        await repository.DeleteAsync<NeighborhoodAggregate>(aggregate.Id, user.Tenant, cancellationToken);
+        await repository.DeleteAsync<NeighborhoodAggregate>(aggregate.Id,  cancellationToken);
 
         await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }

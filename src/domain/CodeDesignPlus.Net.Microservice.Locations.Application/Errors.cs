@@ -18,5 +18,4 @@ public class Errors: IErrorCodes
     public const string CityAlreadyExists = "213 : The city already exists.";
     public const string StateAlreadyExists = "214 : The state already exists.";
     public const string StateNotFound = "215 : The state was not found.";
-
 }

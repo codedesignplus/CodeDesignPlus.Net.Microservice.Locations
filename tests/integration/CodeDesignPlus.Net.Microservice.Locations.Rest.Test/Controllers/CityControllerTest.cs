@@ -1,6 +1,7 @@
 using System;
 using CodeDesignPlus.Net.Microservice.Locations.Application.City.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Helpers;
+using Ductus.FluentDocker.Commands;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using NodaTime.Serialization.SystemTextJson;
 
@@ -8,12 +9,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Controllers;
 
 public class CityControllerTest : ServerBase<Program>, IClassFixture<Server<Program>>
 {
-    private readonly System.Text.Json.JsonSerializerOptions options = new System.Text.Json.JsonSerializerOptions()
-    {
-        PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase,
-    }.ConfigureForNodaTime(DateTimeZoneProviders.Tzdb);
-
-    private readonly Utils Utils = new();
+    private readonly FakeData fakeData = new();
 
     public CityControllerTest(Server<Program> server) : base(server)
     {
@@ -33,55 +29,57 @@ public class CityControllerTest : ServerBase<Program>, IClassFixture<Server<Prog
     [Fact]
     public async Task GetCities_ReturnOk()
     {
-        var city = await this.CreateCityAsync();
+        await Client.CreateCityAsync(fakeData);
 
-        var response = await this.RequestAsync("http://localhost/api/City", null, HttpMethod.Get);
+        var response = await Client.RequestAsync("http://localhost/api/City", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var cities = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<CityDto>>(json, this.options);
+        var cities = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<CityDto>>(json, Utils.Options);
 
         Assert.NotNull(cities);
         Assert.NotEmpty(cities);
-        Assert.Contains(cities, x => x.Id == city.Id);
+        Assert.Contains(cities, x => x.Id == fakeData.CreateCity.Id);
     }
 
     [Fact]
     public async Task GetCityById_ReturnOk()
     {
-        var cityCreated = await this.CreateCityAsync();
+        await Client.CreateCityAsync(fakeData);
 
-        var response = await this.RequestAsync($"http://localhost/api/City/{cityCreated.Id}", null, HttpMethod.Get);
+        var response = await Client.RequestAsync($"http://localhost/api/City/{fakeData.CreateCity.Id}", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var city = System.Text.Json.JsonSerializer.Deserialize<CityDto>(json, this.options);
+        var city = System.Text.Json.JsonSerializer.Deserialize<CityDto>(json, Utils.Options);
 
         Assert.NotNull(city);
-        Assert.Equal(cityCreated.Id, city.Id);
-        Assert.Equal(cityCreated.Name, city.Name);
-        Assert.Equal(cityCreated.IdState, city.IdState);
-        Assert.Equal(cityCreated.TimeZone, city.TimeZone);
+        Assert.Equal(fakeData.CreateCity.Id, city.Id);
+        Assert.Equal(fakeData.CreateCity.Name, city.Name);
+        Assert.Equal(fakeData.CreateCity.IdState, city.IdState);
+        Assert.Equal(fakeData.CreateCity.TimeZone, city.TimeZone);
     }
 
     [Fact]
     public async Task CreateCity_ReturnNoContent()
     {
-        var data = Utils.CreateCity;
+        await Client.CreateStateAsync(fakeData);
+        
+        var data = fakeData.CreateCity;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        var response = await this.RequestAsync("http://localhost/api/City", content, HttpMethod.Post);
+        var response = await Client.RequestAsync("http://localhost/api/City", content, HttpMethod.Post);
 
-        var city = await this.GetRecordAsync(data.Id);
+        var city = await Client.GetRecordAsync<CityDto>("City", data.Id);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
@@ -95,17 +93,17 @@ public class CityControllerTest : ServerBase<Program>, IClassFixture<Server<Prog
     [Fact]
     public async Task UpdateCity_ReturnNoContent()
     {
-        var cityCreated = await this.CreateCityAsync();
+        await Client.CreateCityAsync(fakeData);
 
-        var data = Utils.UpdateCity;
+        var data = fakeData.UpdateCity;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        var response = await this.RequestAsync($"http://localhost/api/City/{cityCreated.Id}", content, HttpMethod.Put);
+        var response = await Client.RequestAsync($"http://localhost/api/City/{fakeData.CreateCity.Id}", content, HttpMethod.Put);
 
-        var city = await this.GetRecordAsync(data.Id);
+        var city = await Client.GetRecordAsync<CityDto>("City", data.Id);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
@@ -119,56 +117,12 @@ public class CityControllerTest : ServerBase<Program>, IClassFixture<Server<Prog
     [Fact]
     public async Task DeleteCity_ReturnNoContent()
     {
-        var cityCreated = await this.CreateCityAsync();
+        await Client.CreateCityAsync(fakeData);
 
-        var response = await this.RequestAsync($"http://localhost/api/City/{cityCreated.Id}", null, HttpMethod.Delete);
+        var response = await Client.RequestAsync($"http://localhost/api/City/{fakeData.CreateCity.Id}", null, HttpMethod.Delete);
 
         Assert.NotNull(response);
         Assert.True(response.IsSuccessStatusCode);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
     }
-
-    private async Task<CreateCityDto> CreateCityAsync()
-    {
-        var data = Utils.CreateCity;
-
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
-
-        var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-        await this.RequestAsync("http://localhost/api/City", content, HttpMethod.Post);
-
-        return data;
-    }
-
-    private async Task<CityDto> GetRecordAsync(Guid id)
-    {
-        var response = await this.RequestAsync($"http://localhost/api/City/{id}", null, HttpMethod.Get);
-
-        var json = await response.Content.ReadAsStringAsync();
-
-        return System.Text.Json.JsonSerializer.Deserialize<CityDto>(json, this.options)!;
-    }
-
-    private async Task<HttpResponseMessage> RequestAsync(string uri, HttpContent? content, HttpMethod method)
-    {
-        var httpRequestMessage = new HttpRequestMessage()
-        {
-            RequestUri = new Uri(uri),
-            Content = content,
-            Method = method
-        };
-        httpRequestMessage.Headers.Authorization = new AuthenticationHeaderValue("TestAuth");
-
-        var response = await Client.SendAsync(httpRequestMessage);
-
-        if (!response.IsSuccessStatusCode)
-        {
-            var data = await response.Content.ReadAsStringAsync();
-            throw new Exception(data);
-        }
-
-        return response;
-    }
-
 }

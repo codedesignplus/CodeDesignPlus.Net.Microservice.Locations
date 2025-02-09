@@ -6,7 +6,7 @@ public class UpdateCurrencyCommandHandler(ICurrencyRepository repository, IUserC
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var aggregate = await repository.FindAsync<CurrencyAggregate>(request.Id, user.Tenant, cancellationToken);
+        var aggregate = await repository.FindAsync<CurrencyAggregate>(request.Id,  cancellationToken);
 
         ApplicationGuard.IsNull(aggregate, Errors.CurrencyNotFound);
 

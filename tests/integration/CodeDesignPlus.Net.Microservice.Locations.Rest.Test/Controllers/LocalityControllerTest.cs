@@ -8,12 +8,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Controllers;
 
 public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<Program>>
 {
-    private readonly System.Text.Json.JsonSerializerOptions options = new System.Text.Json.JsonSerializerOptions()
-    {
-        PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase,
-    }.ConfigureForNodaTime(DateTimeZoneProviders.Tzdb);
-
-    private readonly Utils Utils = new();
+    private readonly FakeData fakeData = new();
 
     public LocalityControllerTest(Server<Program> server) : base(server)
     {
@@ -33,7 +28,7 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task GetLocalities_ReturnOk()
     {
-        var data = await this.CreateLocalityAsync();
+        await this.CreateLocalityAsync();
 
         var response = await this.RequestAsync("http://localhost/api/Locality", null, HttpMethod.Get);
 
@@ -42,7 +37,7 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var Localities = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<LocalityDto>>(json, this.options);
+        var Localities = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<LocalityDto>>(json, Utils.Options);
 
         Assert.NotNull(Localities);
         Assert.NotEmpty(Localities);
@@ -52,7 +47,7 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task GetLocalityById_ReturnOk()
     {
-        var data = await this.CreateLocalityAsync();
+        await this.CreateLocalityAsync();
 
         var response = await this.RequestAsync($"http://localhost/api/Locality/{data.Id}", null, HttpMethod.Get);
 
@@ -61,7 +56,7 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var locality = System.Text.Json.JsonSerializer.Deserialize<LocalityDto>(json, this.options);
+        var locality = System.Text.Json.JsonSerializer.Deserialize<LocalityDto>(json, Utils.Options);
 
         Assert.NotNull(locality);
         Assert.Equal(data.Id, locality.Id);
@@ -72,9 +67,11 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task CreateLocality_ReturnNoContent()
     {
-        var data = Utils.CreateLocality;
+        await this.CreateCityAsync();
+        
+        var data = fakeData.CreateLocality;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -94,11 +91,11 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task UpdateLocality_ReturnNoContent()
     {
-        var localityCreated = await this.CreateLocalityAsync();
+        await this.CreateLocalityAsync();
 
-        var data = Utils.UpdateLocality;
+        var data = fakeData.UpdateLocality;
 
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
+        var json = System.Text.Json.JsonSerializer.Serialize(data, Utils.Options);
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -118,7 +115,7 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task DeleteLocality_ReturnNoContent()
     {
-        var localityCreated = await this.CreateLocalityAsync();
+        await this.CreateLocalityAsync();
 
         var response = await this.RequestAsync($"http://localhost/api/Locality/{localityCreated.Id}", null, HttpMethod.Delete);
 
@@ -126,48 +123,4 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
         Assert.True(response.IsSuccessStatusCode);
         Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
     }
-
-    private async Task<CreateLocalityDto> CreateLocalityAsync()
-    {
-        var data = Utils.CreateLocality;
-
-        var json = System.Text.Json.JsonSerializer.Serialize(data, this.options);
-
-        var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-        await this.RequestAsync("http://localhost/api/Locality", content, HttpMethod.Post);
-
-        return data;
-    }
-
-    private async Task<LocalityDto> GetRecordAsync(Guid id)
-    {
-        var response = await this.RequestAsync($"http://localhost/api/Locality/{id}", null, HttpMethod.Get);
-
-        var json = await response.Content.ReadAsStringAsync();
-
-        return System.Text.Json.JsonSerializer.Deserialize<LocalityDto>(json, this.options)!;
-    }
-
-    private async Task<HttpResponseMessage> RequestAsync(string uri, HttpContent? content, HttpMethod method)
-    {
-        var httpRequestMessage = new HttpRequestMessage()
-        {
-            RequestUri = new Uri(uri),
-            Content = content,
-            Method = method
-        };
-        httpRequestMessage.Headers.Authorization = new AuthenticationHeaderValue("TestAuth");
-
-        var response = await Client.SendAsync(httpRequestMessage);
-
-        if (!response.IsSuccessStatusCode)
-        {
-            var data = await response.Content.ReadAsStringAsync();
-            throw new Exception(data);
-        }
-
-        return response;
-    }
-
 }
