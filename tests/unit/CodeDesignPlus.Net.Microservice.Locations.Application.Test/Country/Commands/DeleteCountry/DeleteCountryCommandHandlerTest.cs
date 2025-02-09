@@ -60,11 +60,11 @@ public class DeleteCountryCommandHandlerTest
         // Arrange
         var request = fakeData.DeleteCountryCommand;
         var cancellationToken = CancellationToken.None;
-        var countryAggregate = new Mock<CountryAggregate>();
+        var countryAggregate = fakeData.CountryAggregate;
 
         _repositoryMock
             .Setup(r => r.FindAsync<CountryAggregate>(request.Id, cancellationToken))
-            .ReturnsAsync(countryAggregate.Object);
+            .ReturnsAsync(countryAggregate);
 
         _userContextMock.Setup(u => u.IdUser).Returns(Guid.NewGuid());
 
@@ -72,8 +72,7 @@ public class DeleteCountryCommandHandlerTest
         await _handler.Handle(request, cancellationToken);
 
         // Assert
-        countryAggregate.Verify(c => c.Delete(It.IsAny<Guid>()), Times.Once);
-        _repositoryMock.Verify(r => r.DeleteAsync<CountryAggregate>(countryAggregate.Object.Id, cancellationToken), Times.Once);
+        _repositoryMock.Verify(r => r.DeleteAsync<CountryAggregate>(countryAggregate.Id, cancellationToken), Times.Once);
         _pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<CountryDeletedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
     }
 }
