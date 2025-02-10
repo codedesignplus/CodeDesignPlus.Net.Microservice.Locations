@@ -11,17 +11,17 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Comman
 public class CreateCityCommandHandlerTest
 {
     private readonly Mock<ICityRepository> repositoryMock;
-    private readonly Mock<IUserContext> _userContextMock;
-    private readonly Mock<IPubSub> _pubSubMock;
+    private readonly Mock<IUserContext> userContextMock;
+    private readonly Mock<IPubSub> pubSubMock;
     private readonly CreateCityCommandHandler handler;
     private readonly FakeData fakeData = new();
 
     public CreateCityCommandHandlerTest()
     {
         repositoryMock = new Mock<ICityRepository>();
-        _userContextMock = new Mock<IUserContext>();
-        _pubSubMock = new Mock<IPubSub>();
-        handler = new CreateCityCommandHandler(repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
+        userContextMock = new Mock<IUserContext>();
+        pubSubMock = new Mock<IPubSub>();
+        handler = new CreateCityCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
     }
 
     [Fact]
@@ -84,13 +84,13 @@ public class CreateCityCommandHandlerTest
 
         repositoryMock.Setup(r => r.ExistsAsync<CityAggregate>(request.Id, cancellationToken)).ReturnsAsync(false);
         repositoryMock.Setup(r => r.ExistsAsync<StateAggregate>(request.IdState, cancellationToken)).ReturnsAsync(true);
-        _userContextMock.Setup(u => u.IdUser).Returns(userId);
+        userContextMock.Setup(u => u.IdUser).Returns(userId);
 
         // Act
         await handler.Handle(request, cancellationToken);
 
         // Assert
         repositoryMock.Verify(r => r.CreateAsync(It.IsAny<CityAggregate>(), cancellationToken), Times.Once);
-        _pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<CityCreatedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
+        pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<CityCreatedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
     }
 }

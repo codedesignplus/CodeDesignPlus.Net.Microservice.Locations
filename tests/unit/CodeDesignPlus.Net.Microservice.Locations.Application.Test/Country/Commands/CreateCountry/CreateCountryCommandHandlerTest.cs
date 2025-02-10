@@ -6,17 +6,17 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Com
     public class CreateCountryCommandHandlerTest
     {
         private readonly Mock<ICountryRepository> repositoryMock;
-        private readonly Mock<IUserContext> _userContextMock;
-        private readonly Mock<IPubSub> _pubSubMock;
+        private readonly Mock<IUserContext> userContextMock;
+        private readonly Mock<IPubSub> pubSubMock;
         private readonly CreateCountryCommandHandler handler;
         private readonly FakeData fakeData = new();
 
         public CreateCountryCommandHandlerTest()
         {
             repositoryMock = new Mock<ICountryRepository>();
-            _userContextMock = new Mock<IUserContext>();
-            _pubSubMock = new Mock<IPubSub>();
-            handler = new CreateCountryCommandHandler(repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
+            userContextMock = new Mock<IUserContext>();
+            pubSubMock = new Mock<IPubSub>();
+            handler = new CreateCountryCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
         }
 
         [Fact]
@@ -63,11 +63,11 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Com
 
             repositoryMock.Setup(x => x.ExistsAsync<CountryAggregate>(command.Id, It.IsAny<CancellationToken>())).ReturnsAsync(false);
             repositoryMock.Setup(x => x.ExistsAsync<CurrencyAggregate>(command.IdCurrency, It.IsAny<CancellationToken>())).ReturnsAsync(true);
-            _userContextMock.Setup(x => x.IdUser).Returns(Guid.NewGuid());
+            userContextMock.Setup(x => x.IdUser).Returns(Guid.NewGuid());
 
             await handler.Handle(command, CancellationToken.None);
 
             repositoryMock.Verify(x => x.CreateAsync(It.IsAny<CountryAggregate>(), It.IsAny<CancellationToken>()), Times.Once);
-            _pubSubMock.Verify(x => x.PublishAsync(It.IsAny<List<IDomainEvent>>(), It.IsAny<CancellationToken>()), Times.AtMostOnce);
+            pubSubMock.Verify(x => x.PublishAsync(It.IsAny<List<IDomainEvent>>(), It.IsAny<CancellationToken>()), Times.AtMostOnce);
         }
     }

@@ -2,3 +2,10 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Locality.Queries
 
 public record FindLocalityByIdQuery(Guid Id) : IRequest<LocalityDto>;
 
+public class Validator : AbstractValidator<FindLocalityByIdQuery>
+{
+    public Validator()
+    {
+        this.RuleFor(x => x.Id).NotEmpty();
+    }
+}

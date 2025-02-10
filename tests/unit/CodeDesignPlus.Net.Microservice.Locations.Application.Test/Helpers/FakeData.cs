@@ -85,6 +85,7 @@ public class FakeData
     public readonly CityAggregate CityAggregate;
     public readonly LocalityAggregate LocalityAggregate;
     public readonly NeighborhoodAggregate NeighborhoodAggregate;
+    public readonly TimezoneAggregate TimezoneAggregate;
 
 
 
@@ -322,6 +323,7 @@ public class FakeData
 
         NeighborhoodAggregate = NeighborhoodAggregate.Create(Neighborhood.Id, Neighborhood.IdLocality, Neighborhood.Name, Guid.NewGuid());
 
+        TimezoneAggregate = TimezoneAggregate.Create(Timezone.Id, Timezone.Name, Guid.NewGuid());
 
     }
 

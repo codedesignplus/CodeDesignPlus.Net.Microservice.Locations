@@ -12,17 +12,17 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Currency.Co
     public class UpdateCurrencyCommandHandlerTest
     {
         private readonly Mock<ICurrencyRepository> repositoryMock;
-        private readonly Mock<IUserContext> _userContextMock;
-        private readonly Mock<IPubSub> _pubSubMock;
+        private readonly Mock<IUserContext> userContextMock;
+        private readonly Mock<IPubSub> pubSubMock;
         private readonly UpdateCurrencyCommandHandler handler;
         private readonly FakeData fakeData = new();
 
         public UpdateCurrencyCommandHandlerTest()
         {
             repositoryMock = new Mock<ICurrencyRepository>();
-            _userContextMock = new Mock<IUserContext>();
-            _pubSubMock = new Mock<IPubSub>();
-            handler = new UpdateCurrencyCommandHandler(repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
+            userContextMock = new Mock<IUserContext>();
+            pubSubMock = new Mock<IPubSub>();
+            handler = new UpdateCurrencyCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
         }
 
         [Fact]
@@ -70,14 +70,14 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Currency.Co
             repositoryMock
                 .Setup(repo => repo.FindAsync<CurrencyAggregate>(request.Id, cancellationToken))
                 .ReturnsAsync(aggregate);
-            _userContextMock.SetupGet(user => user.IdUser).Returns(Guid.NewGuid());
+            userContextMock.SetupGet(user => user.IdUser).Returns(Guid.NewGuid());
 
             // Act
             await handler.Handle(request, cancellationToken);
 
             // Assert
             repositoryMock.Verify(repo => repo.UpdateAsync(aggregate, cancellationToken), Times.Once);
-            _pubSubMock.Verify(pubsub => pubsub.PublishAsync(It.IsAny<List<CurrencyUpdatedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
+            pubSubMock.Verify(pubsub => pubsub.PublishAsync(It.IsAny<List<CurrencyUpdatedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
         }
     }
 }

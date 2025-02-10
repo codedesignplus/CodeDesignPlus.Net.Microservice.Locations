@@ -11,8 +11,8 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Comman
     public class DeleteCityCommandHandlerTest
     {
         private readonly Mock<ICityRepository> repositoryMock;
-        private readonly Mock<IUserContext> _userContextMock;
-        private readonly Mock<IPubSub> _pubSubMock;
+        private readonly Mock<IUserContext> userContextMock;
+        private readonly Mock<IPubSub> pubSubMock;
         private readonly DeleteCityCommandHandler handler;
         private readonly FakeData utils;
 
@@ -20,9 +20,9 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Comman
         {
             utils = new FakeData();
             repositoryMock = new Mock<ICityRepository>();
-            _userContextMock = new Mock<IUserContext>();
-            _pubSubMock = new Mock<IPubSub>();
-            handler = new DeleteCityCommandHandler(repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
+            userContextMock = new Mock<IUserContext>();
+            pubSubMock = new Mock<IPubSub>();
+            handler = new DeleteCityCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
         }
 
         [Fact]
@@ -61,14 +61,14 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Comman
             repositoryMock.Setup(r => r.FindAsync<CityAggregate>(It.IsAny<Guid>(), cancellationToken))
                 .ReturnsAsync(cityAggregate);
 
-            _userContextMock.Setup(u => u.IdUser).Returns(Guid.NewGuid());
+            userContextMock.Setup(u => u.IdUser).Returns(Guid.NewGuid());
 
             // Act
             await handler.Handle(request, cancellationToken);
 
             // Assert
             repositoryMock.Verify(r => r.DeleteAsync<CityAggregate>(cityAggregate.Id, cancellationToken), Times.Once);
-            _pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<CityDeletedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
+            pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<CityDeletedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
         }
     }
 }

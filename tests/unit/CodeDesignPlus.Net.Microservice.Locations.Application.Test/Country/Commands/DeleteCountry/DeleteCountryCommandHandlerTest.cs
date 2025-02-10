@@ -7,17 +7,17 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Com
 public class DeleteCountryCommandHandlerTest
 {
     private readonly Mock<ICountryRepository> repositoryMock;
-    private readonly Mock<IUserContext> _userContextMock;
-    private readonly Mock<IPubSub> _pubSubMock;
+    private readonly Mock<IUserContext> userContextMock;
+    private readonly Mock<IPubSub> pubSubMock;
     private readonly DeleteCountryCommandHandler handler;
     private readonly FakeData fakeData = new();
 
     public DeleteCountryCommandHandlerTest()
     {
         repositoryMock = new Mock<ICountryRepository>();
-        _userContextMock = new Mock<IUserContext>();
-        _pubSubMock = new Mock<IPubSub>();
-        handler = new DeleteCountryCommandHandler(repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
+        userContextMock = new Mock<IUserContext>();
+        pubSubMock = new Mock<IPubSub>();
+        handler = new DeleteCountryCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
     }
 
     [Fact]
@@ -66,13 +66,13 @@ public class DeleteCountryCommandHandlerTest
             .Setup(r => r.FindAsync<CountryAggregate>(request.Id, cancellationToken))
             .ReturnsAsync(countryAggregate);
 
-        _userContextMock.Setup(u => u.IdUser).Returns(Guid.NewGuid());
+        userContextMock.Setup(u => u.IdUser).Returns(Guid.NewGuid());
 
         // Act
         await handler.Handle(request, cancellationToken);
 
         // Assert
         repositoryMock.Verify(r => r.DeleteAsync<CountryAggregate>(countryAggregate.Id, cancellationToken), Times.Once);
-        _pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<CountryDeletedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
+        pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<CountryDeletedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
     }
 }

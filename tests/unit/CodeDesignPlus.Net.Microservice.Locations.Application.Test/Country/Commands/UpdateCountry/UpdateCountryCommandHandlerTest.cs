@@ -11,17 +11,17 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Com
 public class UpdateCountryCommandHandlerTest
 {
     private readonly Mock<ICountryRepository> repositoryMock;
-    private readonly Mock<IUserContext> _userContextMock;
-    private readonly Mock<IPubSub> _pubSubMock;
+    private readonly Mock<IUserContext> userContextMock;
+    private readonly Mock<IPubSub> pubSubMock;
     private readonly UpdateCountryCommandHandler handler;
     private readonly FakeData fakeData = new();
 
     public UpdateCountryCommandHandlerTest()
     {
         repositoryMock = new Mock<ICountryRepository>();
-        _userContextMock = new Mock<IUserContext>();
-        _pubSubMock = new Mock<IPubSub>();
-        handler = new UpdateCountryCommandHandler(repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
+        userContextMock = new Mock<IUserContext>();
+        pubSubMock = new Mock<IPubSub>();
+        handler = new UpdateCountryCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
     }
 
     [Fact]
@@ -96,7 +96,7 @@ public class UpdateCountryCommandHandlerTest
         repositoryMock
             .Setup(r => r.ExistsAsync<CurrencyAggregate>(request.IdCurrency, cancellationToken))
             .ReturnsAsync(true);
-        _userContextMock
+        userContextMock
             .Setup(u => u.IdUser).Returns(userId);
 
         // Act
@@ -104,6 +104,6 @@ public class UpdateCountryCommandHandlerTest
 
         // Assert
         repositoryMock.Verify(r => r.UpdateAsync(countryAggregate, cancellationToken), Times.Once);
-        _pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<CountryUpdatedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
+        pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<CountryUpdatedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
     }
 }

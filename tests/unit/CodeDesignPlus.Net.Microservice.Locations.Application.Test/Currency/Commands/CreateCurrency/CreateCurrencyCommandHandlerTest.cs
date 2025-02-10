@@ -11,17 +11,17 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Currency.Co
 public class CreateCurrencyCommandHandlerTest
 {
     private readonly Mock<ICurrencyRepository> repositoryMock;
-    private readonly Mock<IUserContext> _userContextMock;
-    private readonly Mock<IPubSub> _pubSubMock;
+    private readonly Mock<IUserContext> userContextMock;
+    private readonly Mock<IPubSub> pubSubMock;
     private readonly CreateCurrencyCommandHandler handler;
     private readonly FakeData fakeData = new();
 
     public CreateCurrencyCommandHandlerTest()
     {
         repositoryMock = new Mock<ICurrencyRepository>();
-        _userContextMock = new Mock<IUserContext>();
-        _pubSubMock = new Mock<IPubSub>();
-        handler = new CreateCurrencyCommandHandler(repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
+        userContextMock = new Mock<IUserContext>();
+        pubSubMock = new Mock<IPubSub>();
+        handler = new CreateCurrencyCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
     }
 
     [Fact]
@@ -52,11 +52,11 @@ public class CreateCurrencyCommandHandlerTest
     {
         var command = fakeData.CreateCurrencyCommand;
         repositoryMock.Setup(repo => repo.ExistsAsync<CurrencyAggregate>(command.Id, It.IsAny<CancellationToken>())).ReturnsAsync(false);
-        _userContextMock.Setup(user => user.IdUser).Returns(Guid.NewGuid());
+        userContextMock.Setup(user => user.IdUser).Returns(Guid.NewGuid());
 
         await handler.Handle(command, CancellationToken.None);
 
         repositoryMock.Verify(repo => repo.CreateAsync(It.IsAny<CurrencyAggregate>(), It.IsAny<CancellationToken>()), Times.Once);
-        _pubSubMock.Verify(pubsub => pubsub.PublishAsync(It.IsAny<List<CurrencyCreatedDomainEvent>>(), It.IsAny<CancellationToken>()), Times.AtMostOnce);
+        pubSubMock.Verify(pubsub => pubsub.PublishAsync(It.IsAny<List<CurrencyCreatedDomainEvent>>(), It.IsAny<CancellationToken>()), Times.AtMostOnce);
     }
 }
