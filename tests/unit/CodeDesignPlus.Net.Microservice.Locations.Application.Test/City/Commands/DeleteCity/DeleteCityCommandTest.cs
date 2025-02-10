@@ -7,18 +7,18 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Comman
 
 public class DeleteCityCommandTest
 {
-    private readonly Validator _validator;
+    private readonly Validator validator;
 
     public DeleteCityCommandTest()
     {
-        _validator = new Validator();
+        validator = new Validator();
     }
 
     [Fact]
     public void Should_Have_Error_When_Id_Is_Empty()
     {
         var command = new DeleteCityCommand(Guid.Empty);
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Id);
     }
 
@@ -26,7 +26,7 @@ public class DeleteCityCommandTest
     public void Should_Not_Have_Error_When_Id_Is_Valid()
     {
         var command = new DeleteCityCommand(Guid.NewGuid());
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldNotHaveValidationErrorFor(x => x.Id);
     }
 }

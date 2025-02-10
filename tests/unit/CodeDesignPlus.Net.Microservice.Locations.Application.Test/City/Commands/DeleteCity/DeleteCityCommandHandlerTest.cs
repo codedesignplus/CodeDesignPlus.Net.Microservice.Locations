@@ -10,19 +10,19 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Comman
 {
     public class DeleteCityCommandHandlerTest
     {
-        private readonly Mock<ICityRepository> _repositoryMock;
+        private readonly Mock<ICityRepository> repositoryMock;
         private readonly Mock<IUserContext> _userContextMock;
         private readonly Mock<IPubSub> _pubSubMock;
-        private readonly DeleteCityCommandHandler _handler;
+        private readonly DeleteCityCommandHandler handler;
         private readonly FakeData utils;
 
         public DeleteCityCommandHandlerTest()
         {
             utils = new FakeData();
-            _repositoryMock = new Mock<ICityRepository>();
+            repositoryMock = new Mock<ICityRepository>();
             _userContextMock = new Mock<IUserContext>();
             _pubSubMock = new Mock<IPubSub>();
-            _handler = new DeleteCityCommandHandler(_repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
+            handler = new DeleteCityCommandHandler(repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
         }
 
         [Fact]
@@ -33,7 +33,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Comman
             var cancellationToken = CancellationToken.None;
 
             // Act & Assert
-            await Assert.ThrowsAsync<CodeDesignPlusException>(() => _handler.Handle(request, cancellationToken));
+            await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(request, cancellationToken));
         }
 
         [Fact]
@@ -43,11 +43,11 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Comman
             var request = utils.DeleteCityCommand;
             var cancellationToken = CancellationToken.None;
 
-            _repositoryMock.Setup(r => r.FindAsync<CityAggregate>(It.IsAny<Guid>(), cancellationToken))
+            repositoryMock.Setup(r => r.FindAsync<CityAggregate>(It.IsAny<Guid>(), cancellationToken))
                 .ReturnsAsync((CityAggregate)null!);
 
             // Act & Assert
-            await Assert.ThrowsAsync<CodeDesignPlusException>(() => _handler.Handle(request, cancellationToken));
+            await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(request, cancellationToken));
         }
 
         [Fact]
@@ -58,16 +58,16 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Comman
             var cancellationToken = CancellationToken.None;
             var cityAggregate = utils.CityAggregate;
 
-            _repositoryMock.Setup(r => r.FindAsync<CityAggregate>(It.IsAny<Guid>(), cancellationToken))
+            repositoryMock.Setup(r => r.FindAsync<CityAggregate>(It.IsAny<Guid>(), cancellationToken))
                 .ReturnsAsync(cityAggregate);
 
             _userContextMock.Setup(u => u.IdUser).Returns(Guid.NewGuid());
 
             // Act
-            await _handler.Handle(request, cancellationToken);
+            await handler.Handle(request, cancellationToken);
 
             // Assert
-            _repositoryMock.Verify(r => r.DeleteAsync<CityAggregate>(cityAggregate.Id, cancellationToken), Times.Once);
+            repositoryMock.Verify(r => r.DeleteAsync<CityAggregate>(cityAggregate.Id, cancellationToken), Times.Once);
             _pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<CityDeletedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
         }
     }

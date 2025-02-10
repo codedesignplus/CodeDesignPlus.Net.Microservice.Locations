@@ -7,16 +7,16 @@ using Xunit;
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Queries.GetAllCountry;
 public class GetAllCountryQueryHandlerTest
 {
-    private readonly Mock<ICountryRepository> _repositoryMock;
-    private readonly Mock<IMapper> _mapperMock;
-    private readonly GetAllCountryQueryHandler _handler;
+    private readonly Mock<ICountryRepository> repositoryMock;
+    private readonly Mock<IMapper> mapperMock;
+    private readonly GetAllCountryQueryHandler handler;
     private readonly FakeData fakeData = new();
 
     public GetAllCountryQueryHandlerTest()
     {
-        _repositoryMock = new Mock<ICountryRepository>();
-        _mapperMock = new Mock<IMapper>();
-        _handler = new GetAllCountryQueryHandler(_repositoryMock.Object, _mapperMock.Object);
+        repositoryMock = new Mock<ICountryRepository>();
+        mapperMock = new Mock<IMapper>();
+        handler = new GetAllCountryQueryHandler(repositoryMock.Object, mapperMock.Object);
     }
 
     [Fact]
@@ -27,7 +27,7 @@ public class GetAllCountryQueryHandlerTest
         var cancellationToken = CancellationToken.None;
 
         // Act & Assert
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => _handler.Handle(request, cancellationToken));
+        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(request, cancellationToken));
 
         Assert.Equal(Errors.InvalidRequest.GetMessage(), exception.Message);
         Assert.Equal(Errors.InvalidRequest.GetCode(), exception.Code);
@@ -43,15 +43,15 @@ public class GetAllCountryQueryHandlerTest
         var countries = new List<CountryAggregate> { fakeData.CountryAggregate };
         var countryDtos = new List<CountryDto> { fakeData.Country };
 
-        _repositoryMock
+        repositoryMock
             .Setup(repo => repo.MatchingAsync<CountryAggregate>(request.Criteria, cancellationToken))
             .ReturnsAsync(countries);
-        _mapperMock
+        mapperMock
             .Setup(mapper => mapper.Map<List<CountryDto>>(countries))
             .Returns(countryDtos);
 
         // Act
-        var result = await _handler.Handle(request, cancellationToken);
+        var result = await handler.Handle(request, cancellationToken);
 
         // Assert
         Assert.NotNull(result);

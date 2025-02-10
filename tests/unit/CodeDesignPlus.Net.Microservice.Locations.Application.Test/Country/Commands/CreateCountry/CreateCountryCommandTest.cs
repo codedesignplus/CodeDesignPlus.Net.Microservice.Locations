@@ -5,18 +5,18 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Com
 
 public class CreateCountryCommandTest
 {
-    private readonly Validator _validator;
+    private readonly Validator validator;
 
     public CreateCountryCommandTest()
     {
-        _validator = new Validator();
+        validator = new Validator();
     }
 
     [Fact]
     public void Should_Have_Error_When_Id_Is_Empty()
     {
         var command = new CreateCountryCommand(Guid.Empty, "Name", "AL", "ALB", 1, "Capital", Guid.NewGuid(), "TimeZone");
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Id);
     }
 
@@ -24,7 +24,7 @@ public class CreateCountryCommandTest
     public void Should_Have_Error_When_Name_Is_Empty()
     {
         var command = new CreateCountryCommand(Guid.NewGuid(), "", "AL", "ALB", 1, "Capital", Guid.NewGuid(), "TimeZone");
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Name);
     }
 
@@ -32,7 +32,7 @@ public class CreateCountryCommandTest
     public void Should_Have_Error_When_Alpha2_Is_Empty()
     {
         var command = new CreateCountryCommand(Guid.NewGuid(), "Name", "", "ALB", 1, "Capital", Guid.NewGuid(), "TimeZone");
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Alpha2);
     }
 
@@ -40,7 +40,7 @@ public class CreateCountryCommandTest
     public void Should_Have_Error_When_Alpha3_Is_Empty()
     {
         var command = new CreateCountryCommand(Guid.NewGuid(), "Name", "AL", "", 1, "Capital", Guid.NewGuid(), "TimeZone");
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Alpha3);
     }
 
@@ -48,7 +48,7 @@ public class CreateCountryCommandTest
     public void Should_Have_Error_When_Code_Is_Zero()
     {
         var command = new CreateCountryCommand(Guid.NewGuid(), "Name", "AL", "ALB", 0, "Capital", Guid.NewGuid(), "TimeZone");
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Code);
     }
 
@@ -56,7 +56,7 @@ public class CreateCountryCommandTest
     public void Should_Have_Error_When_Capital_Exceeds_MaxLength()
     {
         var command = new CreateCountryCommand(Guid.NewGuid(), "Name", "AL", "ALB", 1, new string('A', 101), Guid.NewGuid(), "TimeZone");
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Capital);
     }
 
@@ -64,7 +64,7 @@ public class CreateCountryCommandTest
     public void Should_Have_Error_When_IdCurrency_Is_Empty()
     {
         var command = new CreateCountryCommand(Guid.NewGuid(), "Name", "AL", "ALB", 1, "Capital", Guid.Empty, "TimeZone");
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.IdCurrency);
     }
 
@@ -72,7 +72,7 @@ public class CreateCountryCommandTest
     public void Should_Have_Error_When_TimeZone_Is_Empty()
     {
         var command = new CreateCountryCommand(Guid.NewGuid(), "Name", "AL", "ALB", 1, "Capital", Guid.NewGuid(), "");
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.TimeZone);
     }
 
@@ -80,7 +80,7 @@ public class CreateCountryCommandTest
     public void Should_Not_Have_Error_When_Command_Is_Valid()
     {
         var command = new CreateCountryCommand(Guid.NewGuid(), "Name", "AL", "ALB", 1, "Capital", Guid.NewGuid(), "TimeZone");
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldNotHaveAnyValidationErrors();
     }
 }

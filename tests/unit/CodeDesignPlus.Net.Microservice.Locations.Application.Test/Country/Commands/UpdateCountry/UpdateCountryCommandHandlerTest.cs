@@ -10,18 +10,18 @@ using Xunit;
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Commands.UpdateCountry;
 public class UpdateCountryCommandHandlerTest
 {
-    private readonly Mock<ICountryRepository> _repositoryMock;
+    private readonly Mock<ICountryRepository> repositoryMock;
     private readonly Mock<IUserContext> _userContextMock;
     private readonly Mock<IPubSub> _pubSubMock;
-    private readonly UpdateCountryCommandHandler _handler;
+    private readonly UpdateCountryCommandHandler handler;
     private readonly FakeData fakeData = new();
 
     public UpdateCountryCommandHandlerTest()
     {
-        _repositoryMock = new Mock<ICountryRepository>();
+        repositoryMock = new Mock<ICountryRepository>();
         _userContextMock = new Mock<IUserContext>();
         _pubSubMock = new Mock<IPubSub>();
-        _handler = new UpdateCountryCommandHandler(_repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
+        handler = new UpdateCountryCommandHandler(repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
     }
 
     [Fact]
@@ -32,7 +32,7 @@ public class UpdateCountryCommandHandlerTest
         var cancellationToken = CancellationToken.None;
 
         // Act & Assert
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => _handler.Handle(request, cancellationToken));
+        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(request, cancellationToken));
 
         Assert.Equal(Errors.InvalidRequest.GetMessage(), exception.Message);
         Assert.Equal(Errors.InvalidRequest.GetCode(), exception.Code);
@@ -46,12 +46,12 @@ public class UpdateCountryCommandHandlerTest
         var request = fakeData.UpdateCountryCommand;
         var cancellationToken = CancellationToken.None;
 
-        _repositoryMock
+        repositoryMock
             .Setup(r => r.FindAsync<CountryAggregate>(request.Id, cancellationToken))
             .ReturnsAsync((CountryAggregate)null!);
 
         // Act & Assert
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => _handler.Handle(request, cancellationToken));
+        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(request, cancellationToken));
 
         Assert.Equal(Errors.CountryNotFound.GetMessage(), exception.Message);
         Assert.Equal(Errors.CountryNotFound.GetCode(), exception.Code);
@@ -66,15 +66,15 @@ public class UpdateCountryCommandHandlerTest
         var cancellationToken = CancellationToken.None;
         var countryAggregate = fakeData.CountryAggregate;
 
-        _repositoryMock
+        repositoryMock
             .Setup(r => r.FindAsync<CountryAggregate>(request.Id, cancellationToken))
             .ReturnsAsync(countryAggregate);
-        _repositoryMock
+        repositoryMock
             .Setup(r => r.ExistsAsync<CurrencyAggregate>(request.IdCurrency, cancellationToken))
             .ReturnsAsync(false);
 
         // Act & Assert
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => _handler.Handle(request, cancellationToken));
+        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(request, cancellationToken));
 
         Assert.Equal(Errors.CurrencyNotFound.GetMessage(), exception.Message);
         Assert.Equal(Errors.CurrencyNotFound.GetCode(), exception.Code);
@@ -90,20 +90,20 @@ public class UpdateCountryCommandHandlerTest
         var countryAggregate = fakeData.CountryAggregate;
         var userId = Guid.NewGuid();
 
-        _repositoryMock
+        repositoryMock
             .Setup(r => r.FindAsync<CountryAggregate>(request.Id, cancellationToken))
             .ReturnsAsync(countryAggregate);
-        _repositoryMock
+        repositoryMock
             .Setup(r => r.ExistsAsync<CurrencyAggregate>(request.IdCurrency, cancellationToken))
             .ReturnsAsync(true);
         _userContextMock
             .Setup(u => u.IdUser).Returns(userId);
 
         // Act
-        await _handler.Handle(request, cancellationToken);
+        await handler.Handle(request, cancellationToken);
 
         // Assert
-        _repositoryMock.Verify(r => r.UpdateAsync(countryAggregate, cancellationToken), Times.Once);
+        repositoryMock.Verify(r => r.UpdateAsync(countryAggregate, cancellationToken), Times.Once);
         _pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<CountryUpdatedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
     }
 }

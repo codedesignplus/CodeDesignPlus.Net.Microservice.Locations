@@ -6,18 +6,18 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Com
 
 public class DeleteCountryCommandHandlerTest
 {
-    private readonly Mock<ICountryRepository> _repositoryMock;
+    private readonly Mock<ICountryRepository> repositoryMock;
     private readonly Mock<IUserContext> _userContextMock;
     private readonly Mock<IPubSub> _pubSubMock;
-    private readonly DeleteCountryCommandHandler _handler;
+    private readonly DeleteCountryCommandHandler handler;
     private readonly FakeData fakeData = new();
 
     public DeleteCountryCommandHandlerTest()
     {
-        _repositoryMock = new Mock<ICountryRepository>();
+        repositoryMock = new Mock<ICountryRepository>();
         _userContextMock = new Mock<IUserContext>();
         _pubSubMock = new Mock<IPubSub>();
-        _handler = new DeleteCountryCommandHandler(_repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
+        handler = new DeleteCountryCommandHandler(repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
     }
 
     [Fact]
@@ -28,7 +28,7 @@ public class DeleteCountryCommandHandlerTest
         var cancellationToken = CancellationToken.None;
 
         // Act & Assert
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => _handler.Handle(request, cancellationToken));
+        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(request, cancellationToken));
 
         Assert.Equal(Errors.InvalidRequest.GetMessage(), exception.Message);
         Assert.Equal(Errors.InvalidRequest.GetCode(), exception.Code);
@@ -42,12 +42,12 @@ public class DeleteCountryCommandHandlerTest
         var request = fakeData.DeleteCountryCommand;
         var cancellationToken = CancellationToken.None;
 
-        _repositoryMock
+        repositoryMock
             .Setup(r => r.FindAsync<CountryAggregate>(request.Id, cancellationToken))
             .ReturnsAsync((CountryAggregate)null!);
 
         // Act & Assert
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => _handler.Handle(request, cancellationToken));
+        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(request, cancellationToken));
 
         Assert.Equal(Errors.CountryNotFound.GetMessage(), exception.Message);
         Assert.Equal(Errors.CountryNotFound.GetCode(), exception.Code);
@@ -62,17 +62,17 @@ public class DeleteCountryCommandHandlerTest
         var cancellationToken = CancellationToken.None;
         var countryAggregate = fakeData.CountryAggregate;
 
-        _repositoryMock
+        repositoryMock
             .Setup(r => r.FindAsync<CountryAggregate>(request.Id, cancellationToken))
             .ReturnsAsync(countryAggregate);
 
         _userContextMock.Setup(u => u.IdUser).Returns(Guid.NewGuid());
 
         // Act
-        await _handler.Handle(request, cancellationToken);
+        await handler.Handle(request, cancellationToken);
 
         // Assert
-        _repositoryMock.Verify(r => r.DeleteAsync<CountryAggregate>(countryAggregate.Id, cancellationToken), Times.Once);
+        repositoryMock.Verify(r => r.DeleteAsync<CountryAggregate>(countryAggregate.Id, cancellationToken), Times.Once);
         _pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<CountryDeletedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
     }
 }

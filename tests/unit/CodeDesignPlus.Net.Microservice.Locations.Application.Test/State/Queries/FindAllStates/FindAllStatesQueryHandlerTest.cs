@@ -6,16 +6,16 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.State.Queri
 
 public class FindAllStatesQueryHandlerTest
 {
-    private readonly Mock<IStateRepository> _repositoryMock;
-    private readonly Mock<IMapper> _mapperMock;
-    private readonly FindAllStatesQueryHandler _handler;
+    private readonly Mock<IStateRepository> repositoryMock;
+    private readonly Mock<IMapper> mapperMock;
+    private readonly FindAllStatesQueryHandler handler;
     private readonly FakeData fakeData = new();
 
     public FindAllStatesQueryHandlerTest()
     {
-        _repositoryMock = new Mock<IStateRepository>();
-        _mapperMock = new Mock<IMapper>();
-        _handler = new FindAllStatesQueryHandler(_repositoryMock.Object, _mapperMock.Object);
+        repositoryMock = new Mock<IStateRepository>();
+        mapperMock = new Mock<IMapper>();
+        handler = new FindAllStatesQueryHandler(repositoryMock.Object, mapperMock.Object);
     }
 
     [Fact]
@@ -26,7 +26,7 @@ public class FindAllStatesQueryHandlerTest
         var cancellationToken = CancellationToken.None;
 
         // Act & Assert
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => _handler.Handle(request, cancellationToken));
+        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(request, cancellationToken));
 
         Assert.Equal(Errors.InvalidRequest.GetMessage(), exception.Message);
         Assert.Equal(Errors.InvalidRequest.GetCode(), exception.Code);
@@ -42,15 +42,15 @@ public class FindAllStatesQueryHandlerTest
         var stateAggregates = new List<StateAggregate> { fakeData.StateAggregate };
         var stateDtos = new List<StateDto> { fakeData.State };
 
-        _repositoryMock
+        repositoryMock
             .Setup(repo => repo.MatchingAsync<StateAggregate>(request.Criteria, cancellationToken))
             .ReturnsAsync(stateAggregates);
-        _mapperMock
+        mapperMock
             .Setup(mapper => mapper.Map<List<StateDto>>(stateAggregates))
             .Returns(stateDtos);
 
         // Act
-        var result = await _handler.Handle(request, cancellationToken);
+        var result = await handler.Handle(request, cancellationToken);
 
         // Assert
         Assert.Equal(stateDtos, result);

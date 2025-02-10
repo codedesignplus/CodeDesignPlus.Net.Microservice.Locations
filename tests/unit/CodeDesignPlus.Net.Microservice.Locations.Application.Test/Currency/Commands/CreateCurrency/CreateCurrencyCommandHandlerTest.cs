@@ -10,24 +10,24 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Currency.Co
 
 public class CreateCurrencyCommandHandlerTest
 {
-    private readonly Mock<ICurrencyRepository> _repositoryMock;
+    private readonly Mock<ICurrencyRepository> repositoryMock;
     private readonly Mock<IUserContext> _userContextMock;
     private readonly Mock<IPubSub> _pubSubMock;
-    private readonly CreateCurrencyCommandHandler _handler;
+    private readonly CreateCurrencyCommandHandler handler;
     private readonly FakeData fakeData = new();
 
     public CreateCurrencyCommandHandlerTest()
     {
-        _repositoryMock = new Mock<ICurrencyRepository>();
+        repositoryMock = new Mock<ICurrencyRepository>();
         _userContextMock = new Mock<IUserContext>();
         _pubSubMock = new Mock<IPubSub>();
-        _handler = new CreateCurrencyCommandHandler(_repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
+        handler = new CreateCurrencyCommandHandler(repositoryMock.Object, _userContextMock.Object, _pubSubMock.Object);
     }
 
     [Fact]
     public async Task Handle_RequestIsNull_ThrowsCodeDesignPlusException()
     {
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => _handler.Handle(null!, CancellationToken.None));
+        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(null!, CancellationToken.None));
 
         Assert.Equal(Errors.InvalidRequest.GetMessage(), exception.Message);
         Assert.Equal(Errors.InvalidRequest.GetCode(), exception.Code);
@@ -38,9 +38,9 @@ public class CreateCurrencyCommandHandlerTest
     public async Task Handle_CurrencyAlreadyExists_ThrowsCodeDesignPlusException()
     {
         var command = fakeData.CreateCurrencyCommand;
-        _repositoryMock.Setup(repo => repo.ExistsAsync<CurrencyAggregate>(command.Id, It.IsAny<CancellationToken>())).ReturnsAsync(true);
+        repositoryMock.Setup(repo => repo.ExistsAsync<CurrencyAggregate>(command.Id, It.IsAny<CancellationToken>())).ReturnsAsync(true);
 
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => _handler.Handle(command, CancellationToken.None));
+        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(command, CancellationToken.None));
 
         Assert.Equal(Errors.CurrencyAlreadyExists.GetMessage(), exception.Message);
         Assert.Equal(Errors.CurrencyAlreadyExists.GetCode(), exception.Code);
@@ -51,12 +51,12 @@ public class CreateCurrencyCommandHandlerTest
     public async Task Handle_ValidRequest_CreatesCurrencyAndPublishesEvents()
     {
         var command = fakeData.CreateCurrencyCommand;
-        _repositoryMock.Setup(repo => repo.ExistsAsync<CurrencyAggregate>(command.Id, It.IsAny<CancellationToken>())).ReturnsAsync(false);
+        repositoryMock.Setup(repo => repo.ExistsAsync<CurrencyAggregate>(command.Id, It.IsAny<CancellationToken>())).ReturnsAsync(false);
         _userContextMock.Setup(user => user.IdUser).Returns(Guid.NewGuid());
 
-        await _handler.Handle(command, CancellationToken.None);
+        await handler.Handle(command, CancellationToken.None);
 
-        _repositoryMock.Verify(repo => repo.CreateAsync(It.IsAny<CurrencyAggregate>(), It.IsAny<CancellationToken>()), Times.Once);
+        repositoryMock.Verify(repo => repo.CreateAsync(It.IsAny<CurrencyAggregate>(), It.IsAny<CancellationToken>()), Times.Once);
         _pubSubMock.Verify(pubsub => pubsub.PublishAsync(It.IsAny<List<CurrencyCreatedDomainEvent>>(), It.IsAny<CancellationToken>()), Times.AtMostOnce);
     }
 }

@@ -7,18 +7,18 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Com
 
 public class DeleteCountryCommandTest
 {
-    private readonly Validator _validator;
+    private readonly Validator validator;
 
     public DeleteCountryCommandTest()
     {
-        _validator = new Validator();
+        validator = new Validator();
     }
 
     [Fact]
     public void Should_Have_Error_When_Id_Is_Empty()
     {
         var command = new DeleteCountryCommand(Guid.Empty);
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Id);
     }
 
@@ -26,7 +26,7 @@ public class DeleteCountryCommandTest
     public void Should_Have_Error_When_Id_Is_Null()
     {
         var command = new DeleteCountryCommand(Guid.Empty);
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Id);
     }
 
@@ -34,7 +34,7 @@ public class DeleteCountryCommandTest
     public void Should_Not_Have_Error_When_Id_Is_Valid()
     {
         var command = new DeleteCountryCommand(Guid.NewGuid());
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldNotHaveValidationErrorFor(x => x.Id);
     }
 }

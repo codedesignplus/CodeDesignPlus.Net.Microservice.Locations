@@ -7,18 +7,18 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Currency.Co
 
 public class UpdateCurrencyCommandTest
 {
-    private readonly Validator _validator;
+    private readonly Validator validator;
 
     public UpdateCurrencyCommandTest()
     {
-        _validator = new Validator();
+        validator = new Validator();
     }
 
     [Fact]
     public void Should_Have_Error_When_Id_Is_Empty()
     {
         var command = new UpdateCurrencyCommand(Guid.Empty, "USD", "USD", "$", true);
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Id);
     }
 
@@ -26,7 +26,7 @@ public class UpdateCurrencyCommandTest
     public void Should_Have_Error_When_Name_Is_Empty()
     {
         var command = new UpdateCurrencyCommand(Guid.NewGuid(), "", "USD", "$", true);
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Name);
     }
 
@@ -34,7 +34,7 @@ public class UpdateCurrencyCommandTest
     public void Should_Have_Error_When_Name_Exceeds_MaxLength()
     {
         var command = new UpdateCurrencyCommand(Guid.NewGuid(), new string('a', 101), "USD", "$", true);
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Name);
     }
 
@@ -42,7 +42,7 @@ public class UpdateCurrencyCommandTest
     public void Should_Have_Error_When_Code_Is_Empty()
     {
         var command = new UpdateCurrencyCommand(Guid.NewGuid(), "USD", "", "$", true);
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Code);
     }
 
@@ -50,7 +50,7 @@ public class UpdateCurrencyCommandTest
     public void Should_Have_Error_When_Code_Exceeds_MaxLength()
     {
         var command = new UpdateCurrencyCommand(Guid.NewGuid(), "USD", "USDE", "$", true);
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Code);
     }
 
@@ -58,7 +58,7 @@ public class UpdateCurrencyCommandTest
     public void Should_Not_Have_Error_When_Command_Is_Valid()
     {
         var command = new UpdateCurrencyCommand(Guid.NewGuid(), "USD", "USD", "$", true);
-        var result = _validator.TestValidate(command);
+        var result = validator.TestValidate(command);
         result.ShouldNotHaveAnyValidationErrors();
     }
 }
