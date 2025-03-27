@@ -9,6 +9,8 @@ using CodeDesignPlus.Net.Vault.Extensions;
 using NodaTime;
 using NodaTime.Serialization.SystemTextJson;
 
+try
+{
 var builder = WebApplication.CreateSlimBuilder(args);
 
 Serilog.Debugging.SelfLog.Enable(Console.Error);
@@ -59,6 +61,13 @@ app.UseAuth();
 app.MapControllers().RequireAuthorization();
 
 await app.RunAsync();
+    
+}
+catch (System.Exception e)
+{
+    
+    throw;
+}
 
 public partial class Program
 {
