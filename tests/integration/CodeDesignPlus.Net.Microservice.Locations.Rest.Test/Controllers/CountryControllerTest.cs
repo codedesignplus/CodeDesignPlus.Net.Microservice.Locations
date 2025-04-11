@@ -1,4 +1,5 @@
 using System;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Country.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Helpers;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
@@ -37,11 +38,11 @@ public class CountryControllerTest : ServerBase<Program>, IClassFixture<Server<P
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var countries = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<CountryDto>>(json, Utils.Options);
+        var countries = System.Text.Json.JsonSerializer.Deserialize<Pagination<CountryDto>>(json, Utils.Options);
 
         Assert.NotNull(countries);
-        Assert.NotEmpty(countries);
-        Assert.Contains(countries, x => x.Id == this.fakeData.CreateCountry.Id);
+        Assert.NotEmpty(countries.Data);
+        Assert.Contains(countries.Data, x => x.Id == this.fakeData.CreateCountry.Id);
     }
 
     [Fact]

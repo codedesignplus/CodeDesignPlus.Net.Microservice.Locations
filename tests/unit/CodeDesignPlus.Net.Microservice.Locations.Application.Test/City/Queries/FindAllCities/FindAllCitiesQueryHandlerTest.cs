@@ -1,3 +1,4 @@
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.City.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Application.City.Queries.FindAllCities;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Test.Helpers;
@@ -42,19 +43,21 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Querie
             var cityAggregates = new List<CityAggregate> { fakeData.CityAggregate };
             var cityDtos = new List<CityDto> { fakeData.City };
 
+            var pagination = Pagination<CityAggregate>.Create(cityAggregates, cityAggregates.Count, 10, 0);
+
             repositoryMock
                 .Setup(repo => repo.MatchingAsync<CityAggregate>(request.Criteria, cancellationToken))
-                .ReturnsAsync(cityAggregates);
+                .ReturnsAsync(pagination);
             mapperMock
-                .Setup(mapper => mapper.Map<List<CityDto>>(cityAggregates))
-                .Returns(cityDtos);
+                .Setup(mapper => mapper.Map<Pagination<CityDto>>(pagination))
+                .Returns(Pagination<CityDto>.Create(cityDtos, cityDtos.Count, 10, 0));
 
             // Act
             var result = await handler.Handle(request, cancellationToken);
 
             // Assert
             Assert.NotNull(result);
-            Assert.Equal(cityDtos, result);
+            Assert.Equal(cityDtos, result.Data);
         }
     }
 }

@@ -41,7 +41,7 @@ public class CreateTimezoneCommandTest
     [Fact]
     public void Should_Have_Error_When_Name_Is_Null()
     {
-        var command = new CreateTimezoneCommand(Guid.NewGuid(), null);
+        var command = new CreateTimezoneCommand(Guid.NewGuid(), null!);
         var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Name);
     }

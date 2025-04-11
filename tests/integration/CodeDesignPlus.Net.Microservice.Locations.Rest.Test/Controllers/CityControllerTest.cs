@@ -1,4 +1,5 @@
 using System;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.City.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Helpers;
 using Ductus.FluentDocker.Commands;
@@ -38,11 +39,11 @@ public class CityControllerTest : ServerBase<Program>, IClassFixture<Server<Prog
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var cities = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<CityDto>>(json, Utils.Options);
+        var cities = System.Text.Json.JsonSerializer.Deserialize<Pagination<CityDto>>(json, Utils.Options);
 
         Assert.NotNull(cities);
-        Assert.NotEmpty(cities);
-        Assert.Contains(cities, x => x.Id == fakeData.CreateCity.Id);
+        Assert.NotEmpty(cities.Data);
+        Assert.Contains(cities.Data, x => x.Id == fakeData.CreateCity.Id);
     }
 
     [Fact]

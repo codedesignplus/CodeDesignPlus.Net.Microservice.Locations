@@ -28,7 +28,7 @@ public class CreateStateCommandHandlerTest
     public async Task Handle_RequestIsNull_ThrowsCodeDesignPlusException()
     {
         // Arrange
-        CreateStateCommand request = null;
+        CreateStateCommand request = null!;
         var cancellationToken = CancellationToken.None;
 
         // Act & Assert

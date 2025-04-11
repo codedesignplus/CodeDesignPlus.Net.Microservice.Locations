@@ -33,7 +33,7 @@ public class UpdateNeighborhoodCommandTest
     [Fact]
     public void Should_Have_Error_When_Name_Is_Null()
     {
-        var command = new UpdateNeighborhoodCommand(Guid.NewGuid(), null, Guid.NewGuid(), true);
+        var command = new UpdateNeighborhoodCommand(Guid.NewGuid(), null!, Guid.NewGuid(), true);
         var result = validator.TestValidate(command);
         result.ShouldHaveValidationErrorFor(x => x.Name);
     }

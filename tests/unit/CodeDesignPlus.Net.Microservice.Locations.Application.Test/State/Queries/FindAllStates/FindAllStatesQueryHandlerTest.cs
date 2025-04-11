@@ -1,3 +1,4 @@
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.State.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Application.State.Queries.FindAllStates;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Test.Helpers;
@@ -42,17 +43,19 @@ public class FindAllStatesQueryHandlerTest
         var stateAggregates = new List<StateAggregate> { fakeData.StateAggregate };
         var stateDtos = new List<StateDto> { fakeData.State };
 
+        var pagination = Pagination<StateAggregate>.Create(stateAggregates, stateAggregates.Count, 10, 0);
+
         repositoryMock
             .Setup(repo => repo.MatchingAsync<StateAggregate>(request.Criteria, cancellationToken))
-            .ReturnsAsync(stateAggregates);
+            .ReturnsAsync(pagination);
         mapperMock
-            .Setup(mapper => mapper.Map<List<StateDto>>(stateAggregates))
-            .Returns(stateDtos);
+            .Setup(mapper => mapper.Map<Pagination<StateDto>>(pagination))
+            .Returns(Pagination<StateDto>.Create(stateDtos, stateDtos.Count, 10, 0));
 
         // Act
         var result = await handler.Handle(request, cancellationToken);
 
         // Assert
-        Assert.Equal(stateDtos, result);
+        Assert.Equal(stateDtos, result.Data);
     }
 }

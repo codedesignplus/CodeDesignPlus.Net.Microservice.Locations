@@ -1,4 +1,5 @@
 
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Country.Queries.GetAllCountry;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Test.Helpers;
 using Moq;
@@ -43,18 +44,20 @@ public class GetAllCountryQueryHandlerTest
         var countries = new List<CountryAggregate> { fakeData.CountryAggregate };
         var countryDtos = new List<CountryDto> { fakeData.Country };
 
+        var pagination = Pagination<CountryAggregate>.Create(countries, countries.Count, 10, 0);
+
         repositoryMock
             .Setup(repo => repo.MatchingAsync<CountryAggregate>(request.Criteria, cancellationToken))
-            .ReturnsAsync(countries);
+            .ReturnsAsync(pagination);
         mapperMock
-            .Setup(mapper => mapper.Map<List<CountryDto>>(countries))
-            .Returns(countryDtos);
+            .Setup(mapper => mapper.Map<Pagination<CountryDto>>(pagination))
+            .Returns(Pagination<CountryDto>.Create(countryDtos, countryDtos.Count, 10, 0));
 
         // Act
         var result = await handler.Handle(request, cancellationToken);
 
         // Assert
         Assert.NotNull(result);
-        Assert.Equal(countryDtos, result);
+        Assert.Equal(countryDtos, result.Data);
     }
 }

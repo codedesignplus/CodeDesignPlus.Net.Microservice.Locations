@@ -1,4 +1,5 @@
 using System;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Helpers;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
@@ -42,11 +43,11 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var Neighborhoods = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<NeighborhoodDto>>(json, Utils.Options);
+        var neighborhoods = System.Text.Json.JsonSerializer.Deserialize<Pagination<NeighborhoodDto>>(json, Utils.Options);
 
-        Assert.NotNull(Neighborhoods);
-        Assert.NotEmpty(Neighborhoods);
-        Assert.Contains(Neighborhoods, x => x.Id == fakeData.CreateNeighborhood.Id);
+        Assert.NotNull(neighborhoods);
+        Assert.NotEmpty(neighborhoods.Data);
+        Assert.Contains(neighborhoods.Data, x => x.Id == fakeData.CreateNeighborhood.Id);
     }
 
     [Fact]

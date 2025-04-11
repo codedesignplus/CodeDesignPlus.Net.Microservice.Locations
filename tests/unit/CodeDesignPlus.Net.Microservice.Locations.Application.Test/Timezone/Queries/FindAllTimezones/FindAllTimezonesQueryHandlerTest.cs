@@ -1,3 +1,4 @@
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Test.Helpers;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.Queries.FindAllTimezones;
@@ -43,18 +44,20 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Timezone.Qu
             var timezones = new List<TimezoneAggregate> { fakeData.TimezoneAggregate };
             var timezoneDtos = new List<TimezoneDto> { fakeData.Timezone };
 
+            var pagination = Pagination<TimezoneAggregate>.Create(timezones, timezones.Count, 10, 0);
+
             repositoryMock
                 .Setup(repo => repo.MatchingAsync<TimezoneAggregate>(request.Criteria, cancellationToken))
-                .ReturnsAsync(timezones);
+                .ReturnsAsync(pagination);
             _mapperMock
-                .Setup(mapper => mapper.Map<List<TimezoneDto>>(timezones))
-                .Returns(timezoneDtos);
+                .Setup(mapper => mapper.Map<Pagination<TimezoneDto>>(pagination))
+                .Returns(Pagination<TimezoneDto>.Create(timezoneDtos, timezoneDtos.Count, 10, 0));
 
             // Act
             var result = await handler.Handle(request, cancellationToken);
 
             // Assert
-            Assert.Equal(timezoneDtos, result);
+            Assert.Equal(timezoneDtos, result.Data);
         }
     }
 }

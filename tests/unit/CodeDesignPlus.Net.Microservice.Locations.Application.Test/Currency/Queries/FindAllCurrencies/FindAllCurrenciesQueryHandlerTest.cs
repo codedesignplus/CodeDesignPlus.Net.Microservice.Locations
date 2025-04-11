@@ -1,3 +1,4 @@
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries.FindAllCurrencies;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Test.Helpers;
@@ -40,18 +41,20 @@ public class FindAllCurrenciesQueryHandlerTest
         var currencyAggregates = new List<CurrencyAggregate> { fakeData.CurrencyAggregate };
         var currencyDtos = new List<CurrencyDto> { fakeData.Currency };
 
+        var pagination = Pagination<CurrencyAggregate>.Create(currencyAggregates, currencyAggregates.Count, 10, 0);
+
         repositoryMock
             .Setup(repo => repo.MatchingAsync<CurrencyAggregate>(request.Criteria, It.IsAny<CancellationToken>()))
-            .ReturnsAsync(currencyAggregates);
+            .ReturnsAsync(pagination);
 
         mapperMock
-            .Setup(mapper => mapper.Map<List<CurrencyDto>>(currencyAggregates))
-            .Returns(currencyDtos);
+            .Setup(mapper => mapper.Map<Pagination<CurrencyDto>>(pagination))
+            .Returns(Pagination<CurrencyDto>.Create(currencyDtos, currencyDtos.Count, 10, 0));
 
         // Act
         var result = await handler.Handle(request, CancellationToken.None);
 
         // Assert
-        Assert.Equal(currencyDtos, result);
+        Assert.Equal(currencyDtos, result.Data);
     }
 }

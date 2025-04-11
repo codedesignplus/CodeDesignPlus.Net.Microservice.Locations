@@ -33,7 +33,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Timezone.Co
         [Fact]
         public void Should_Have_Error_When_Name_Is_Null()
         {
-            var command = new UpdateTimezoneCommand(Guid.NewGuid(), null, true);
+            var command = new UpdateTimezoneCommand(Guid.NewGuid(), null!, true);
             var result = validator.TestValidate(command);
             result.ShouldHaveValidationErrorFor(x => x.Name);
         }

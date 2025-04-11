@@ -1,3 +1,4 @@
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.Queries.FindAllNeighborhoods;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Test.Helpers;
@@ -42,18 +43,20 @@ public class FindAllNeighborhoodsQueryHandlerTest
         var neighborhoods = new List<NeighborhoodAggregate> { fakeData.NeighborhoodAggregate };
         var neighborhoodDtos = new List<NeighborhoodDto> { fakeData.Neighborhood };
 
+        var pagination = Pagination<NeighborhoodAggregate>.Create(neighborhoods, neighborhoods.Count, 10, 0);
+
         repositoryMock
             .Setup(repo => repo.MatchingAsync<NeighborhoodAggregate>(request.Criteria, cancellationToken))
-            .ReturnsAsync(neighborhoods);
+            .ReturnsAsync(pagination);
         _mapperMock
-            .Setup(mapper => mapper.Map<List<NeighborhoodDto>>(neighborhoods))
-            .Returns(neighborhoodDtos);
+            .Setup(mapper => mapper.Map<Pagination<NeighborhoodDto>>(pagination))
+            .Returns(Pagination<NeighborhoodDto>.Create(neighborhoodDtos, neighborhoodDtos.Count, 10, 0));
 
         // Act
         var result = await handler.Handle(request, cancellationToken);
 
         // Assert
         Assert.NotNull(result);
-        Assert.Equal(neighborhoodDtos, result);
+        Assert.Equal(neighborhoodDtos, result.Data);
     }
 }

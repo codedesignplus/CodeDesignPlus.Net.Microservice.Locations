@@ -1,4 +1,5 @@
 using System;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Helpers;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
@@ -42,11 +43,11 @@ public class TimezoneControllerTest : ServerBase<Program>, IClassFixture<Server<
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var Timezones = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<TimezoneDto>>(json, Utils.Options);
+        var timezones = System.Text.Json.JsonSerializer.Deserialize<Pagination<TimezoneDto>>(json, Utils.Options);
 
-        Assert.NotNull(Timezones);
-        Assert.NotEmpty(Timezones);
-        Assert.Contains(Timezones, x => x.Id == data.Id);
+        Assert.NotNull(timezones);
+        Assert.NotEmpty(timezones.Data);
+        Assert.Contains(timezones.Data, x => x.Id == data.Id);
     }
 
     [Fact]

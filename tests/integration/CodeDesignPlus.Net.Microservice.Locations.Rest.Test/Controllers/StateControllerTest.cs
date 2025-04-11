@@ -1,4 +1,5 @@
 using System;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.State.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Helpers;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
@@ -37,11 +38,11 @@ public class StateControllerTest : ServerBase<Program>, IClassFixture<Server<Pro
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var states = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<StateDto>>(json, Utils.Options);
+        var states = System.Text.Json.JsonSerializer.Deserialize<Pagination<StateDto>>(json, Utils.Options);
 
         Assert.NotNull(states);
-        Assert.NotEmpty(states);
-        Assert.Contains(states, x => x.Id == fakeData.CreateState.Id);
+        Assert.NotEmpty(states.Data);
+        Assert.Contains(states.Data, x => x.Id == fakeData.CreateState.Id);
     }
 
     [Fact]

@@ -1,3 +1,4 @@
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Locality.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Helpers;
 
@@ -34,11 +35,11 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
 
         var json = await response.Content.ReadAsStringAsync();
 
-        var Localities = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<LocalityDto>>(json, Utils.Options);
+        var Localities = System.Text.Json.JsonSerializer.Deserialize<Pagination<LocalityDto>>(json, Utils.Options);
 
         Assert.NotNull(Localities);
-        Assert.NotEmpty(Localities);
-        Assert.Contains(Localities, x => x.Id == fakeData.CreateLocality.Id);
+        Assert.NotEmpty(Localities.Data);
+        Assert.Contains(Localities.Data, x => x.Id == fakeData.CreateLocality.Id);
     }
 
     [Fact]

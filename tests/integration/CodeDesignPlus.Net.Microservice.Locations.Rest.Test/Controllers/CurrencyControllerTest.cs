@@ -1,3 +1,4 @@
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Rest.Test.Helpers;
 using NodaTime.Serialization.SystemTextJson;
@@ -34,12 +35,12 @@ public class CurrencyControllerTest : ServerBase<Program>, IClassFixture<Server<
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
         var json = await response.Content.ReadAsStringAsync();
-
-        var currencies = System.Text.Json.JsonSerializer.Deserialize<IEnumerable<CurrencyDto>>(json, Utils.Options);
+        
+        var currencies = System.Text.Json.JsonSerializer.Deserialize<Pagination<CurrencyDto>>(json, Utils.Options);
 
         Assert.NotNull(currencies);
-        Assert.NotEmpty(currencies);
-        Assert.Contains(currencies, x => x.Id == fakeData.CreateCurrency.Id);
+        Assert.NotEmpty(currencies.Data);
+        Assert.Contains(currencies.Data, x => x.Id == fakeData.CreateCurrency.Id);
     }
 
     [Fact]
