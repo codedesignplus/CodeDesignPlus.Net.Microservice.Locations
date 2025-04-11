@@ -10,4 +10,5 @@ public class CountryDto: IDtoBase
     public string? Capital { get;  set; }
     public Guid IdCurrency { get;  set; } 
     public string TimeZone { get;  set; } = null!;
+    public bool IsActive { get; set; }
 }

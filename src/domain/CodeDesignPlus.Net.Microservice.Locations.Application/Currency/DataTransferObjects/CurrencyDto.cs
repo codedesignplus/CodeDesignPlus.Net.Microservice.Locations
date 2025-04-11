@@ -9,4 +9,5 @@ public class CurrencyDto : IDtoBase
     public required string Symbol { get; set; }
 
     public required string Name { get; set; }
+    public bool IsActive { get; set; }
 }
