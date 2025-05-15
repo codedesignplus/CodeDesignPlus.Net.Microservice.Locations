@@ -8,6 +8,9 @@ public class FindAllLocalitiesQueryHandler(ILocalityRepository repository, IMapp
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
+        if(string.IsNullOrEmpty(request.Criteria.Filters) || !request.Criteria.Filters.Contains(nameof(LocalityDto.IdCity)))
+            return new Pagination<LocalityDto>([], 0, 0, 0);
+
         var localities = await repository.MatchingAsync<LocalityAggregate>(request.Criteria, cancellationToken);
 
         return mapper.Map<Pagination<LocalityDto>>(localities);
