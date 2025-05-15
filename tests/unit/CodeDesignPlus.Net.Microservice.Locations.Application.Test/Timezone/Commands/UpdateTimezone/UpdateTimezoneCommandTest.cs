@@ -1,57 +1,97 @@
-using System;
-using Xunit;
 using FluentValidation.TestHelper;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.Commands.UpdateTimezone;
+using CodeDesignPlus.Net.Microservice.Locations.Domain.ValueObjects;
 
-namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Timezone.Commands.UpdateTimezone
+namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Timezone.Commands.UpdateTimezone;
+
+public class UpdateTimezoneCommandTest
 {
-    public class UpdateTimezoneCommandTest
+    private readonly Validator validator;
+
+    public UpdateTimezoneCommandTest()
     {
-        private readonly Validator validator;
+        validator = new Validator();
+    }
 
-        public UpdateTimezoneCommandTest()
-        {
-            validator = new Validator();
-        }
+    private UpdateTimezoneCommand CreateValidCommand()
+    {
+        return new UpdateTimezoneCommand(
+            Guid.NewGuid(),
+            "Test Timezone",
+            ["Alias1", "Alias2"],
+            Location.Create("CO", "Colombia", 1.0, 2.0),
+            ["+01:00", "+02:00"],
+            "+01:00",
+            true
+        );
+    }
 
-        [Fact]
-        public void Should_Have_Error_When_Id_Is_Empty()
-        {
-            var command = new UpdateTimezoneCommand(Guid.Empty, "Valid Name", true);
-            var result = validator.TestValidate(command);
-            result.ShouldHaveValidationErrorFor(x => x.Id);
-        }
+    [Fact]
+    public void Should_Pass_Validation_For_Valid_Command()
+    {
+        var command = CreateValidCommand();
+        var result = validator.TestValidate(command);
+        result.ShouldNotHaveAnyValidationErrors();
+    }
 
-        [Fact]
-        public void Should_Have_Error_When_Name_Is_Empty()
-        {
-            var command = new UpdateTimezoneCommand(Guid.NewGuid(), string.Empty, true);
-            var result = validator.TestValidate(command);
-            result.ShouldHaveValidationErrorFor(x => x.Name);
-        }
+    [Fact]
+    public void Should_Have_Error_When_Id_Is_Empty()
+    {
+        var command = CreateValidCommand() with { Id = Guid.Empty };
+        var result = validator.TestValidate(command);
+        result.ShouldHaveValidationErrorFor(x => x.Id);
+    }
 
-        [Fact]
-        public void Should_Have_Error_When_Name_Is_Null()
-        {
-            var command = new UpdateTimezoneCommand(Guid.NewGuid(), null!, true);
-            var result = validator.TestValidate(command);
-            result.ShouldHaveValidationErrorFor(x => x.Name);
-        }
+    [Fact]
+    public void Should_Have_Error_When_Name_Is_Null_Or_Empty()
+    {
+        var command1 = CreateValidCommand() with { Name = null! };
+        var command2 = CreateValidCommand() with { Name = "" };
+        validator.TestValidate(command1).ShouldHaveValidationErrorFor(x => x.Name);
+        validator.TestValidate(command2).ShouldHaveValidationErrorFor(x => x.Name);
+    }
 
-        [Fact]
-        public void Should_Have_Error_When_Name_Exceeds_Maximum_Length()
-        {
-            var command = new UpdateTimezoneCommand(Guid.NewGuid(), new string('a', 129), true);
-            var result = validator.TestValidate(command);
-            result.ShouldHaveValidationErrorFor(x => x.Name);
-        }
+    [Fact]
+    public void Should_Have_Error_When_Name_Exceeds_MaxLength()
+    {
+        var longName = new string('a', 129);
+        var command = CreateValidCommand() with { Name = longName };
+        var result = validator.TestValidate(command);
+        result.ShouldHaveValidationErrorFor(x => x.Name);
+    }
 
-        [Fact]
-        public void Should_Not_Have_Error_When_Command_Is_Valid()
-        {
-            var command = new UpdateTimezoneCommand(Guid.NewGuid(), "Valid Name", true);
-            var result = validator.TestValidate(command);
-            result.ShouldNotHaveAnyValidationErrors();
-        }
+    [Fact]
+    public void Should_Have_Error_When_Aliases_Is_Null_Or_Empty()
+    {
+        var command1 = CreateValidCommand() with { Aliases = null! };
+        var command2 = CreateValidCommand() with { Aliases = new List<string>() };
+        validator.TestValidate(command1).ShouldHaveValidationErrorFor(x => x.Aliases);
+        validator.TestValidate(command2).ShouldHaveValidationErrorFor(x => x.Aliases);
+    }
+
+    [Fact]
+    public void Should_Have_Error_When_Location_Is_Null()
+    {
+        var command = CreateValidCommand() with { Location = null! };
+        var result = validator.TestValidate(command);
+        result.ShouldHaveValidationErrorFor(x => x.Location);
+    }
+
+    [Fact]
+    public void Should_Have_Error_When_Offsets_Is_Null_Or_Empty()
+    {
+        var command1 = CreateValidCommand() with { Offsets = null! };
+        var command2 = CreateValidCommand() with { Offsets = new List<string>() };
+        validator.TestValidate(command1).ShouldHaveValidationErrorFor(x => x.Offsets);
+        validator.TestValidate(command2).ShouldHaveValidationErrorFor(x => x.Offsets);
+    }
+
+    [Fact]
+    public void Should_Have_Error_When_CurrentOffset_Is_Null_Or_Empty()
+    {
+        var command1 = CreateValidCommand() with { CurrentOffset = null! };
+        var command2 = CreateValidCommand() with { CurrentOffset = "" };
+        validator.TestValidate(command1).ShouldHaveValidationErrorFor(x => x.CurrentOffset);
+        validator.TestValidate(command2).ShouldHaveValidationErrorFor(x => x.CurrentOffset);
     }
 }

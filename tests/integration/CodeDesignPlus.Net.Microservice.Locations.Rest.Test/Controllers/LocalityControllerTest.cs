@@ -28,7 +28,7 @@ public class LocalityControllerTest : ServerBase<Program>, IClassFixture<Server<
     {
         await Client.CreateLocaliyAsync(fakeData);
 
-        var response = await Client.RequestAsync("http://localhost/api/Locality", null, HttpMethod.Get);
+        var response = await Client.RequestAsync($"http://localhost/api/Locality?filters=IdCity={fakeData.CreateLocality.IdCity}", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);

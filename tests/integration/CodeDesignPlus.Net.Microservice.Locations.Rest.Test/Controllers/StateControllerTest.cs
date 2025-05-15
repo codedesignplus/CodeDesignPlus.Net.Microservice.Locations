@@ -31,7 +31,7 @@ public class StateControllerTest : ServerBase<Program>, IClassFixture<Server<Pro
     {
         await Client.CreateStateAsync(fakeData);
 
-        var response = await Client.RequestAsync("http://localhost/api/State", null, HttpMethod.Get);
+        var response = await Client.RequestAsync($"http://localhost/api/State?filters=IdCountry={fakeData.CreateState.IdCountry}", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);

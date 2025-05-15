@@ -10,7 +10,7 @@ public class CreateTimezoneCommandHandler(ITimezoneRepository repository, IUserC
 
         ApplicationGuard.IsTrue(exist, Errors.TimezoneAlreadyExists);
 
-        var aggregate = TimezoneAggregate.Create(request.Id, request.Name, user.IdUser);
+        var aggregate = TimezoneAggregate.Create(request.Id, request.Name, request.Aliases, request.Location, request.Offsets, request.CurrentOffset, request.IsActive, user.IdUser);
 
         await repository.CreateAsync(aggregate, cancellationToken);
 

@@ -32,7 +32,7 @@ public class CityControllerTest : ServerBase<Program>, IClassFixture<Server<Prog
     {
         await Client.CreateCityAsync(fakeData);
 
-        var response = await Client.RequestAsync("http://localhost/api/City", null, HttpMethod.Get);
+        var response = await Client.RequestAsync($"http://localhost/api/City?filters=IdState={fakeData.CreateCity.IdState}", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);

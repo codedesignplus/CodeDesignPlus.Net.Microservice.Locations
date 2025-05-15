@@ -1,9 +1,15 @@
+using CodeDesignPlus.Net.Microservice.Locations.Domain.ValueObjects;
+
 namespace CodeDesignPlus.Net.Microservice.Locations.Domain.DomainEvents;
 
 [EventKey<TimezoneAggregate>(1, "TimezoneUpdatedDomainEvent")]
 public class TimezoneUpdatedDomainEvent(
     Guid aggregateId,
-    string name,
+    string name, 
+    List<string> aliases, 
+    Location location, 
+    List<string> offsets, 
+    string currentOffset, 
     bool isActive,
     Guid? eventId = null,
     Instant? occurredAt = null,
@@ -11,11 +17,14 @@ public class TimezoneUpdatedDomainEvent(
 ) : DomainEvent(aggregateId, eventId, occurredAt, metadata)
 {
     public string Name { get; private set; } = name;
-
+    public List<string> Aliases { get; private set; } = aliases;
+    public Location Location { get; private set; } = location;
+    public List<string> Offsets { get; private set; } = offsets;
+    public string CurrentOffset { get; private set; } = currentOffset;
     public bool IsActive { get; private set; } = isActive;
     
-    public static TimezoneUpdatedDomainEvent Create(Guid aggregateId, string name, bool isActive)
+    public static TimezoneUpdatedDomainEvent Create(Guid aggregateId, string name, List<string> aliases, Location location, List<string> offsets, string currentOffset, bool isActive)
     {
-        return new TimezoneUpdatedDomainEvent(aggregateId, name, isActive);
+        return new TimezoneUpdatedDomainEvent(aggregateId, name, aliases, location, offsets, currentOffset, isActive);
     }
 }

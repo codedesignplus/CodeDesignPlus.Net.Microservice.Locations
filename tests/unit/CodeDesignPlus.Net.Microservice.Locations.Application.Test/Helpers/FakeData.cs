@@ -26,6 +26,7 @@ using CodeDesignPlus.Net.Microservice.Locations.Application.State.DataTransferOb
 using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.Commands.CreateTimezone;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.Commands.UpdateTimezone;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.DataTransferObjects;
+using CodeDesignPlus.Net.Microservice.Locations.Domain.ValueObjects;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Helpers;
 
@@ -145,7 +146,12 @@ public class FakeData
         Timezone = new()
         {
             Id = Guid.NewGuid(),
-            Name = "America/New_York"
+            Name = "America/New_York",
+            Aliases = ["EST5EDT, US/Eastern"],
+            CurrentOffset = "-04 (EDT)",
+            Offsets = ["-05", "-04"],
+            IsActive = true,
+            Location = Location.Create("US", "United States", 40.7128, -74.0060)
         };
 
 
@@ -266,7 +272,10 @@ public class FakeData
         UpdateTimezone = new()
         {
             Id = Timezone.Id,
-            Name = "America/Bogota"
+            Name = "America/Bogota",
+            CurrentOffset = "-05 (-05)",
+            Location = Location.Create("CO", "Colombia", 4.5709, -74.2973),
+            Offsets = ["-05"]
         };
 
         CreateCurrencyCommand = new(Currency.Id, CreateCurrency.Name, CreateCurrency.Code, CreateCurrency.Symbol);
@@ -281,7 +290,7 @@ public class FakeData
 
         CreateNeighborhoodCommand = new(Neighborhood.Id, Neighborhood.Name, Neighborhood.IdLocality);
 
-        CreateTimezoneCommand = new(Timezone.Id, Timezone.Name);
+        CreateTimezoneCommand = new(Timezone.Id, Timezone.Name, Timezone.Aliases, Timezone.Location, Timezone.Offsets, Timezone.CurrentOffset, Timezone.IsActive);
 
 
         UpdateCurrencyCommand = new(UpdateCurrency.Id, UpdateCurrency.Name, UpdateCurrency.Code, UpdateCurrency.Symbol, UpdateCurrency.IsActive);
@@ -296,7 +305,7 @@ public class FakeData
 
         UpdateNeighborhoodCommand = new(UpdateNeighborhood.Id, UpdateNeighborhood.Name, UpdateNeighborhood.IdLocality, UpdateNeighborhood.IsActive);
 
-        UpdateTimezoneCommand = new(UpdateTimezone.Id, UpdateTimezone.Name, true);
+        UpdateTimezoneCommand = new(UpdateTimezone.Id, UpdateTimezone.Name, UpdateTimezone.Aliases, UpdateTimezone.Location, UpdateTimezone.Offsets, UpdateTimezone.CurrentOffset, true);
 
         DeleteCurrencyCommand = new(Currency.Id);
 
@@ -311,11 +320,11 @@ public class FakeData
         DeleteNeighborhoodCommand = new(Neighborhood.Id);
 
 
-        CurrencyAggregate = CurrencyAggregate.Create(Currency.Id,  Currency.Code, Currency.Symbol, Currency.Name, Guid.NewGuid());
+        CurrencyAggregate = CurrencyAggregate.Create(Currency.Id, Currency.Code, Currency.Symbol, Currency.Name, Guid.NewGuid());
 
         CountryAggregate = CountryAggregate.Create(Country.Id, Country.Name, Country.Alpha2, Country.Alpha3, Country.Code, Country.Capital, Country.IdCurrency, Country.TimeZone, Guid.NewGuid());
 
-        StateAggregate = StateAggregate.Create(State.Id, State.IdCountry, State.Code,State.Name, Guid.NewGuid());
+        StateAggregate = StateAggregate.Create(State.Id, State.IdCountry, State.Code, State.Name, Guid.NewGuid());
 
         CityAggregate = CityAggregate.Create(City.Id, City.IdState, City.Name, City.TimeZone, Guid.NewGuid());
 
@@ -323,7 +332,7 @@ public class FakeData
 
         NeighborhoodAggregate = NeighborhoodAggregate.Create(Neighborhood.Id, Neighborhood.IdLocality, Neighborhood.Name, Guid.NewGuid());
 
-        TimezoneAggregate = TimezoneAggregate.Create(Timezone.Id, Timezone.Name, Guid.NewGuid());
+        TimezoneAggregate = TimezoneAggregate.Create(Timezone.Id, Timezone.Name, Timezone.Aliases, Timezone.Location, Timezone.Offsets, Timezone.CurrentOffset, Timezone.IsActive, Guid.NewGuid());
 
     }
 

@@ -21,4 +21,11 @@ public class Errors: IErrorCodes
     public const string StateCodeIsInvalid = "115 : The StateCode is invalid"; 
     public const string CodeRangeIsInvalid = "116 : The Code is invalid";
     public const string Alpha3IsInvalid = "117 : The Alpha3 is invalid";
+
+    public const string CountryCodeIsRequired = "118 : The CountryCode is required";
+    public const string CountryNameIsRequired = "119 : The CountryName is required";
+    public const string CurrentOffsetIsInvalid  = "120 : The CurrentOffset is invalid";
+
+    public const string LocationIsInvalid = "122 : The Location is invalid"; 
+    public const string OffsetsCanNotBeEmpty = "123 : The Offsets can not be empty"; 
 }

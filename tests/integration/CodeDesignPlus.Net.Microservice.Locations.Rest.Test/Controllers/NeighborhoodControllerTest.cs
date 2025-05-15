@@ -36,7 +36,7 @@ public class NeighborhoodControllerTest : ServerBase<Program>, IClassFixture<Ser
     {
         await Client.CreateNeighborhoodAsync(fakeData);
 
-        var response = await Client.RequestAsync("http://localhost/api/Neighborhood", null, HttpMethod.Get);
+        var response = await Client.RequestAsync($"http://localhost/api/Neighborhood?filters=IdLocality={fakeData.CreateNeighborhood.IdLocality}", null, HttpMethod.Get);
 
         Assert.NotNull(response);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);

@@ -92,7 +92,7 @@ public class TimezoneControllerTest : ServerBase<Program>, IClassFixture<Server<
     [Fact]
     public async Task UpdateTimezone_ReturnNoContent()
     {
-        var TimezoneCreated = await this.CreateTimezoneAsync();
+        var timezoneCreated = await this.CreateTimezoneAsync();
 
         var data = fakeData.UpdateTimezone;
 
@@ -100,7 +100,7 @@ public class TimezoneControllerTest : ServerBase<Program>, IClassFixture<Server<
 
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        var response = await this.RequestAsync($"http://localhost/api/Timezone/{TimezoneCreated.Id}", content, HttpMethod.Put);
+        var response = await this.RequestAsync($"http://localhost/api/Timezone/{timezoneCreated.Id}", content, HttpMethod.Put);
 
         var Timezone = await this.GetRecordAsync(data.Id);
 
