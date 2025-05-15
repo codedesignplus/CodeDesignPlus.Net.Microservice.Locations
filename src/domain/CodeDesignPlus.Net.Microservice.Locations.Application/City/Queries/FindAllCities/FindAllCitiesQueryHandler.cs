@@ -8,7 +8,7 @@ public class FindAllCitiesQueryHandler(ICityRepository repository, IMapper mappe
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        if(string.IsNullOrEmpty(request.Criteria.Filters) || !request.Criteria.Filters.Contains(nameof(CityDto.IdState)))
+        if(string.IsNullOrEmpty(request.Criteria.Filters) || !request.Criteria.Filters.Contains(nameof(CityDto.IdState), StringComparison.OrdinalIgnoreCase))
             return new Pagination<CityDto>([], 0, 0, 0);
 
         var cities = await repository.MatchingAsync<CityAggregate>(request.Criteria, cancellationToken);

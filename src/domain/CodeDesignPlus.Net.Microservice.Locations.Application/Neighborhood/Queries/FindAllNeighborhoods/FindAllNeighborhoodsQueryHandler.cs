@@ -8,7 +8,7 @@ public class FindAllNeighborhoodsQueryHandler(INeighborhoodRepository repository
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        if(string.IsNullOrEmpty(request.Criteria.Filters) || !request.Criteria.Filters.Contains(nameof(NeighborhoodDto.IdLocality)))
+        if(string.IsNullOrEmpty(request.Criteria.Filters) || !request.Criteria.Filters.Contains(nameof(NeighborhoodDto.IdLocality), StringComparison.OrdinalIgnoreCase))
             return new Pagination<NeighborhoodDto>([], 0, 0, 0);
 
         var neighborhoods = await repository.MatchingAsync<NeighborhoodAggregate>(request.Criteria, cancellationToken);
