@@ -27,5 +27,13 @@ public class Errors: IErrorCodes
     public const string CurrentOffsetIsInvalid  = "120 : The CurrentOffset is invalid";
 
     public const string LocationIsInvalid = "122 : The Location is invalid"; 
-    public const string OffsetsCanNotBeEmpty = "123 : The Offsets can not be empty"; 
+    public const string OffsetsCanNotBeEmpty = "123 : The Offsets can not be empty";
+
+    public const string NameNativeIsInvalid = "124 : The NameNative is invalid"; 
+    public const string RegionIsInvalid = "125 : The Region is invalid"; 
+    public const string SubRegionIsInvalid = "126 : The SubRegion is invalid"; 
+    public const string LatitudeIsInvalid = "127 : The Latitude is invalid"; 
+    public const string LongitudeIsInvalid = "128 : The Longitude is invalid";
+
+    public const string NumericCodeIsInvalid = "129 : The NumericCode is invalid";
 }

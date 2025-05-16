@@ -61,12 +61,10 @@ public class CreateTimezoneCommandTest
     }
 
     [Fact]
-    public void Should_Have_Error_When_Aliases_Is_Null_Or_Empty()
+    public void Should_Have_Error_When_Aliases_Is_Null()
     {
         var command1 = CreateValidCommand() with { Aliases = null! };
-        var command2 = CreateValidCommand() with { Aliases = new List<string>() };
         validator.TestValidate(command1).ShouldHaveValidationErrorFor(x => x.Aliases);
-        validator.TestValidate(command2).ShouldHaveValidationErrorFor(x => x.Aliases);
     }
 
     [Fact]

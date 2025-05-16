@@ -14,7 +14,7 @@ public class UpdateCountryCommandHandler(ICountryRepository repository, IUserCon
 
         ApplicationGuard.IsFalse(existCurrency, Errors.CurrencyNotFound);
 
-        aggregate.Update(request.Name, request.Alpha2, request.Alpha3, request.Code, request.Capital, request.IdCurrency, request.TimeZone, request.IsActive, user.IdUser);
+        aggregate.Update(request.Name, request.Alpha2, request.Alpha3, request.Code, request.Capital, request.IdCurrency, request.TimeZone, request.NameNative, request.Region, request.SubRegion, request.Latitude, request.Longitude, request.Flag, request.IsActive, user.IdUser);
 
         await repository.UpdateAsync(aggregate, cancellationToken);
 

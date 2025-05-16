@@ -38,7 +38,10 @@ public class FindAllNeighborhoodsQueryHandlerTest
     public async Task Handle_ValidRequest_ReturnsNeighborhoods()
     {
         // Arrange
-        var request = new FindAllNeighborhoodsQuery(null!);
+        var request = new FindAllNeighborhoodsQuery(new C.Criteria
+        {
+            Filters = $"IdLocality={fakeData.City.IdState}"
+        });
         var cancellationToken = CancellationToken.None;
         var neighborhoods = new List<NeighborhoodAggregate> { fakeData.NeighborhoodAggregate };
         var neighborhoodDtos = new List<NeighborhoodDto> { fakeData.Neighborhood };

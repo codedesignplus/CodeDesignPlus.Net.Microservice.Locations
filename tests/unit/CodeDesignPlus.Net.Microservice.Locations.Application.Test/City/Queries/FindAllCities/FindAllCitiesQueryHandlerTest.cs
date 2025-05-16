@@ -38,7 +38,10 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Querie
         public async Task Handle_ValidRequest_ReturnsCityDtoList()
         {
             // Arrange
-            var request = new FindAllCitiesQuery(null!);
+            var request = new FindAllCitiesQuery(new C.Criteria
+            {
+                Filters = $"IdState={fakeData.City.IdState}"
+            });
             var cancellationToken = CancellationToken.None;
             var cityAggregates = new List<CityAggregate> { fakeData.CityAggregate };
             var cityDtos = new List<CityDto> { fakeData.City };

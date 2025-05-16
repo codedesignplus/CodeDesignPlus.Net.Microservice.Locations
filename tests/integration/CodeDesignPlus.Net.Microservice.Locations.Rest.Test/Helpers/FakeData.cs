@@ -90,8 +90,15 @@ public class FakeData
             Alpha3 = "USA",
             Capital = "Washington",
             IdCurrency = Currency.Id,
-            Code = 103,
+            Code = "103",
             TimeZone = "America/New_York",
+            NameNative = "United States",
+            Region = "Americas",
+            SubRegion = "North America",
+            Latitude = 37.0902,
+            Longitude = -95.7129,
+            Flag = "https://flagcdn.com/us.svg",
+            IsActive = true,
         };
 
         State = new()
@@ -154,7 +161,14 @@ public class FakeData
             Capital = Country.Capital,
             IdCurrency = Country.IdCurrency,
             Code = Country.Code,
-            TimeZone = Country.TimeZone
+            TimeZone = Country.TimeZone,
+            NameNative = Country.NameNative,
+            Region = Country.Region,
+            SubRegion = Country.SubRegion,
+            Latitude = Country.Latitude,
+            Longitude = Country.Longitude,
+            Flag = Country.Flag,
+            IsActive = Country.IsActive
         };
 
         CreateState = new()
@@ -215,9 +229,15 @@ public class FakeData
             Alpha2 = "CO",
             Alpha3 = "COL",
             Capital = "Bogotá",
-            Code = 106,
+            Code = "106",
             IdCurrency = Country.IdCurrency,
             TimeZone = "America/Bogota",
+            NameNative = "Colombia",
+            Region = "Americas",
+            SubRegion = "South America",
+            Latitude = 4.5709,
+            Longitude = -74.2973,
+            Flag = "https://flagcdn.com/co.svg",
             IsActive = true
         };
 
@@ -259,6 +279,7 @@ public class FakeData
         {
             Id = Timezone.Id,
             Name = "America/Bogota",
+            Aliases = [],
             CurrentOffset = "-05 (-05)",
             Location = Location.Create("CO", "Colombia", 4.5709, -74.2973),
             Offsets = ["-05"]
@@ -266,7 +287,7 @@ public class FakeData
 
         CreateCurrencyCommand = new(Currency.Id, CreateCurrency.Name, CreateCurrency.Code, CreateCurrency.Symbol);
 
-        CreateCountryCommand = new(Country.Id, CreateCountry.Name, CreateCountry.Alpha2, CreateCountry.Alpha3, CreateCountry.Code, CreateCountry.Capital, CreateCountry.IdCurrency, CreateCountry.TimeZone);
+        CreateCountryCommand = new(Country.Id, CreateCountry.Name, CreateCountry.Alpha2, CreateCountry.Alpha3, CreateCountry.Code, CreateCountry.Capital, CreateCountry.IdCurrency, CreateCountry.TimeZone, CreateCountry.NameNative, CreateCountry.Region, CreateCountry.SubRegion, CreateCountry.Latitude, CreateCountry.Longitude, CreateCountry.Flag, CreateCountry.IsActive);
 
         CreateStateCommand = new(State.Id, State.IdCountry, CreateState.Code, CreateState.Name);
 
@@ -281,7 +302,7 @@ public class FakeData
 
         UpdateCurrencyCommand = new(UpdateCurrency.Id, UpdateCurrency.Name, UpdateCurrency.Code, UpdateCurrency.Symbol, UpdateCurrency.IsActive);
 
-        UpdateCountryCommand = new(UpdateCountry.Id, UpdateCountry.Name, UpdateCountry.Alpha2, UpdateCountry.Alpha3, UpdateCountry.Code, UpdateCountry.Capital, UpdateCountry.IdCurrency, UpdateCountry.TimeZone, UpdateCountry.IsActive);
+        UpdateCountryCommand = new(UpdateCountry.Id, UpdateCountry.Name, UpdateCountry.Alpha2, UpdateCountry.Alpha3, UpdateCountry.Code, UpdateCountry.Capital, UpdateCountry.IdCurrency, UpdateCountry.TimeZone, UpdateCountry.NameNative, UpdateCountry.Region, UpdateCountry.SubRegion, UpdateCountry.Latitude, UpdateCountry.Longitude, UpdateCountry.Flag, UpdateCountry.IsActive);
 
         UpdateStateCommand = new(UpdateState.Id, UpdateState.IdCountry, UpdateState.Code, UpdateState.Name, UpdateState.IsActive);
 

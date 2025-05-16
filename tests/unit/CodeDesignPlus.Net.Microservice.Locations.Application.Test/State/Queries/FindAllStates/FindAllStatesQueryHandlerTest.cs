@@ -38,7 +38,10 @@ public class FindAllStatesQueryHandlerTest
     public async Task Handle_ValidRequest_ReturnsMappedStates()
     {
         // Arrange
-        var request = new FindAllStatesQuery(null!);
+        var request = new FindAllStatesQuery(new C.Criteria
+        {
+            Filters = $"IdCountry={fakeData.City.IdState}"
+        });
         var cancellationToken = CancellationToken.None;
         var stateAggregates = new List<StateAggregate> { fakeData.StateAggregate };
         var stateDtos = new List<StateDto> { fakeData.State };

@@ -14,5 +14,6 @@ public class Validator : AbstractValidator<UpdateTimezoneCommand>
         RuleFor(x => x.Location).NotEmpty().NotNull();
         RuleFor(x => x.Offsets).NotEmpty().NotNull();
         RuleFor(x => x.CurrentOffset).NotEmpty().NotNull();
+        RuleFor(x => x.Aliases).NotNull();
     }
 }
