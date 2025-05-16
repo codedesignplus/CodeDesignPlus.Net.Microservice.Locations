@@ -24,3 +24,4 @@ global using CodeDesignPlus.Net.Microservice.Locations.Application.Locality.Data
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.DataTransferObjects;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.DataTransferObjects;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.DataTransferObjects;
+global using CodeDesignPlus.Net.Microservice.Locations.Application.Region.DataTransferObjects;

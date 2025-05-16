@@ -56,3 +56,7 @@ global using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Quer
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries.FindAllCurrencies;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.Queries.FindNeighborhoodById;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.Queries.FindAllNeighborhoods;
+global using CodeDesignPlus.Net.Microservice.Locations.Application.Region.Commands.CreateRegion;
+global using CodeDesignPlus.Net.Microservice.Locations.Application.Region.Commands.UpdateRegion;
+global using CodeDesignPlus.Net.Microservice.Locations.Application.Region.Queries.GetAllRegions;
+global using CodeDesignPlus.Net.Microservice.Locations.Application.Region.Queries.GetRegionById;

@@ -36,4 +36,7 @@ public class Errors: IErrorCodes
     public const string LongitudeIsInvalid = "128 : The Longitude is invalid";
 
     public const string NumericCodeIsInvalid = "129 : The NumericCode is invalid";
+
+    public const string RegionNameIsRequired = "130 : The Region Name is required"; 
+    public const string SubRegionsAreRequired = "131 : The SubRegions are required"; 
 }
