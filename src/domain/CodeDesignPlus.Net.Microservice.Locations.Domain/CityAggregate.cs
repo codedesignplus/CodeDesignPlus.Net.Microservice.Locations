@@ -26,7 +26,6 @@ public class CityAggregate(Guid id) : AggregateRootBase(id)
         DomainGuard.GuidIsEmpty(id, Errors.IdIsInvalid);
         DomainGuard.GuidIsEmpty(idState, Errors.IdStateIsInvalid);
         DomainGuard.IsNullOrEmpty(name, Errors.NameIsInvalid);
-        DomainGuard.IsNullOrEmpty(timeZone, Errors.TimeZoneIsInvalid);
         DomainGuard.GuidIsEmpty(createdBy, Errors.CreatedByIsInvalid);
 
         return new CityAggregate(id, idState, name, timeZone, createdBy);
@@ -36,7 +35,6 @@ public class CityAggregate(Guid id) : AggregateRootBase(id)
     {
         DomainGuard.GuidIsEmpty(idState, Errors.IdStateIsInvalid);
         DomainGuard.IsNullOrEmpty(name, Errors.NameIsInvalid);
-        DomainGuard.IsNullOrEmpty(timeZone, Errors.TimeZoneIsInvalid);
         DomainGuard.GuidIsEmpty(updatedBy, Errors.UpdateByIsInvalid);
 
         this.IdState = idState;
