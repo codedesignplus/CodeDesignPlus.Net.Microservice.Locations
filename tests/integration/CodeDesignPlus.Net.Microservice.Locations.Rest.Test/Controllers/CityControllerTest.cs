@@ -64,7 +64,7 @@ public class CityControllerTest : ServerBase<Program>, IClassFixture<Server<Prog
         Assert.Equal(fakeData.CreateCity.Id, city.Id);
         Assert.Equal(fakeData.CreateCity.Name, city.Name);
         Assert.Equal(fakeData.CreateCity.IdState, city.IdState);
-        Assert.Equal(fakeData.CreateCity.TimeZone, city.TimeZone);
+        Assert.Equal(fakeData.CreateCity.Timezone, city.Timezone);
     }
 
     [Fact]
@@ -88,7 +88,7 @@ public class CityControllerTest : ServerBase<Program>, IClassFixture<Server<Prog
         Assert.Equal(data.Id, city.Id);
         Assert.Equal(data.Name, city.Name);
         Assert.Equal(data.IdState, city.IdState);
-        Assert.Equal(data.TimeZone, city.TimeZone);
+        Assert.Equal(data.Timezone, city.Timezone);
     }
 
     [Fact]
@@ -112,7 +112,7 @@ public class CityControllerTest : ServerBase<Program>, IClassFixture<Server<Prog
         Assert.Equal(data.Id, city.Id);
         Assert.Equal(data.Name, city.Name);
         Assert.Equal(data.IdState, city.IdState);
-        Assert.Equal(data.TimeZone, city.TimeZone);
+        Assert.Equal(data.Timezone, city.Timezone);
     }
 
     [Fact]

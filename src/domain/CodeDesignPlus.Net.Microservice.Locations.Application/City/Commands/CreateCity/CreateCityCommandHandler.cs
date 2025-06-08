@@ -14,7 +14,7 @@ public class CreateCityCommandHandler(ICityRepository repository, IUserContext u
 
         ApplicationGuard.IsFalse(existState, Errors.StateNotFound);
 
-        var city = CityAggregate.Create(request.Id, request.IdState, request.Name, request.TimeZone,user.IdUser);
+        var city = CityAggregate.Create(request.Id, request.IdState, request.Name, request.Timezone,user.IdUser);
 
         await repository.CreateAsync(city, cancellationToken);
 

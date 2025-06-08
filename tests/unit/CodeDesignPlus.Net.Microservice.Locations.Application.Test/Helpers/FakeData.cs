@@ -132,7 +132,7 @@ public class FakeData
         {
             Id = Guid.NewGuid(),
             Name = "New York City",
-            TimeZone = "America/New_York",
+            Timezone = "America/New_York",
             IdState = State.Id
         };
 
@@ -180,7 +180,7 @@ public class FakeData
             Capital = Country.Capital,
             IdCurrency = Country.IdCurrency,
             Code = Country.Code,
-            TimeZone = Country.Timezone,
+            Timezone = Country.Timezone,
             NameNative = Country.NameNative,
             Region = Country.Region,
             SubRegion = Country.SubRegion,
@@ -202,7 +202,7 @@ public class FakeData
         {
             Id = City.Id,
             Name = City.Name,
-            TimeZone = City.TimeZone,
+            Timezone = City.Timezone,
             IdState = City.IdState
         };
 
@@ -245,7 +245,7 @@ public class FakeData
             Capital = "Bogotá",
             Code = "106",
             IdCurrency = Country.IdCurrency,
-            TimeZone = "America/Bogota",
+            Timezone = "America/Bogota",
             NameNative = "Colombia",
             Region = "Americas",
             SubRegion = "South America",
@@ -269,7 +269,7 @@ public class FakeData
             Id = City.Id,
             Name = "Bogotá",
             IdState = City.IdState,
-            TimeZone = "America/Bogota",
+            Timezone = "America/Bogota",
             IsActive = true,
         };
 
@@ -300,11 +300,11 @@ public class FakeData
 
         CreateCurrencyCommand = new(Currency.Id, CreateCurrency.Name, CreateCurrency.Code, CreateCurrency.Symbol);
 
-        CreateCountryCommand = new(Country.Id, CreateCountry.Name, CreateCountry.Alpha2, CreateCountry.Alpha3, CreateCountry.Code, CreateCountry.Capital, CreateCountry.IdCurrency, CreateCountry.TimeZone, CreateCountry.NameNative, CreateCountry.Region, CreateCountry.SubRegion, CreateCountry.Latitude, CreateCountry.Longitude, CreateCountry.Flag, CreateCountry.IsActive);
+        CreateCountryCommand = new(Country.Id, CreateCountry.Name, CreateCountry.Alpha2, CreateCountry.Alpha3, CreateCountry.Code, CreateCountry.Capital, CreateCountry.IdCurrency, CreateCountry.Timezone, CreateCountry.NameNative, CreateCountry.Region, CreateCountry.SubRegion, CreateCountry.Latitude, CreateCountry.Longitude, CreateCountry.Flag, CreateCountry.IsActive);
 
         CreateStateCommand = new(State.Id, State.IdCountry, CreateState.Code, CreateState.Name);
 
-        CreateCityCommand = new(City.Id, State.Id, City.Name, City.TimeZone);
+        CreateCityCommand = new(City.Id, State.Id, City.Name, City.Timezone);
 
         CreateLocalityCommand = new(Locality.Id, Locality.Name, Locality.IdCity);
 
@@ -315,11 +315,11 @@ public class FakeData
 
         UpdateCurrencyCommand = new(UpdateCurrency.Id, UpdateCurrency.Name, UpdateCurrency.Code, UpdateCurrency.Symbol, UpdateCurrency.IsActive);
 
-        UpdateCountryCommand = new(UpdateCountry.Id, UpdateCountry.Name, UpdateCountry.Alpha2, UpdateCountry.Alpha3, UpdateCountry.Code, UpdateCountry.Capital, UpdateCountry.IdCurrency, UpdateCountry.TimeZone, UpdateCountry.NameNative, UpdateCountry.Region, UpdateCountry.SubRegion, UpdateCountry.Latitude, UpdateCountry.Longitude, UpdateCountry.Flag, UpdateCountry.IsActive);
+        UpdateCountryCommand = new(UpdateCountry.Id, UpdateCountry.Name, UpdateCountry.Alpha2, UpdateCountry.Alpha3, UpdateCountry.Code, UpdateCountry.Capital, UpdateCountry.IdCurrency, UpdateCountry.Timezone, UpdateCountry.NameNative, UpdateCountry.Region, UpdateCountry.SubRegion, UpdateCountry.Latitude, UpdateCountry.Longitude, UpdateCountry.Flag, UpdateCountry.IsActive);
 
         UpdateStateCommand = new(UpdateState.Id, UpdateState.IdCountry, UpdateState.Code, UpdateState.Name, UpdateState.IsActive);
 
-        UpdateCityCommand = new(UpdateCity.Id, UpdateCity.Id, UpdateCity.Name, UpdateCity.TimeZone, UpdateCity.IsActive);
+        UpdateCityCommand = new(UpdateCity.Id, UpdateCity.Id, UpdateCity.Name, UpdateCity.Timezone, UpdateCity.IsActive);
 
         UpdateLocalityCommand = new(UpdateLocality.Id, UpdateLocality.Name, UpdateLocality.IdCity, UpdateLocality.IsActive);
 
@@ -346,7 +346,7 @@ public class FakeData
 
         StateAggregate = StateAggregate.Create(State.Id, State.IdCountry, State.Code, State.Name, Guid.NewGuid());
 
-        CityAggregate = CityAggregate.Create(City.Id, City.IdState, City.Name, City.TimeZone, Guid.NewGuid());
+        CityAggregate = CityAggregate.Create(City.Id, City.IdState, City.Name, City.Timezone, Guid.NewGuid());
 
         LocalityAggregate = LocalityAggregate.Create(Locality.Id, Locality.IdCity, Locality.Name, Guid.NewGuid());
 

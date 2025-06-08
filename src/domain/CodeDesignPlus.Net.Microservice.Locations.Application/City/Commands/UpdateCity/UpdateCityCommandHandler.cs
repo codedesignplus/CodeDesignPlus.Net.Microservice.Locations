@@ -14,7 +14,7 @@ public class UpdateCityCommandHandler(ICityRepository repository, IUserContext u
 
         ApplicationGuard.IsFalse(existState, Errors.StateNotFound);
 
-        city.Update(request.IdState, request.Name, request.TimeZone, request.IsActive, user.IdUser);
+        city.Update(request.IdState, request.Name, request.Timezone, request.IsActive, user.IdUser);
 
         await repository.UpdateAsync(city, cancellationToken);
 

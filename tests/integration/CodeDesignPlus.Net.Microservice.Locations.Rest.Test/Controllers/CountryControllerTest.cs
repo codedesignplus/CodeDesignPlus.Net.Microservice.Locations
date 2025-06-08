@@ -67,7 +67,7 @@ public class CountryControllerTest : ServerBase<Program>, IClassFixture<Server<P
         Assert.Equal(this.fakeData.CreateCountry.Code, country.Code);
         Assert.Equal(this.fakeData.CreateCountry.Capital, country.Capital);
         Assert.Equal(this.fakeData.CreateCountry.IdCurrency, country.IdCurrency);
-        Assert.Equal(this.fakeData.CreateCountry.TimeZone, country.Timezone);
+        Assert.Equal(this.fakeData.CreateCountry.Timezone, country.Timezone);
 
     }
 
@@ -97,7 +97,7 @@ public class CountryControllerTest : ServerBase<Program>, IClassFixture<Server<P
         Assert.Equal(data.Code, country.Code);
         Assert.Equal(data.Capital, country.Capital);
         Assert.Equal(data.IdCurrency, country.IdCurrency);
-        Assert.Equal(data.TimeZone, country.Timezone);
+        Assert.Equal(data.Timezone, country.Timezone);
     }
 
     [Fact]
@@ -126,7 +126,7 @@ public class CountryControllerTest : ServerBase<Program>, IClassFixture<Server<P
         Assert.Equal(data.Code, country.Code);
         Assert.Equal(data.Capital, country.Capital);
         Assert.Equal(data.IdCurrency, country.IdCurrency);
-        Assert.Equal(data.TimeZone, country.Timezone);
+        Assert.Equal(data.Timezone, country.Timezone);
     }
 
     [Fact]

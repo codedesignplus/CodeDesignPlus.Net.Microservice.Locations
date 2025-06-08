@@ -7,18 +7,18 @@ public class CityAggregate(Guid id) : AggregateRootBase(id)
 
     public string Name { get; private set; } = string.Empty;
 
-    public string TimeZone { get; private set; } = string.Empty;
+    public string Timezone { get; private set; } = string.Empty;
 
     private CityAggregate(Guid id, Guid idState, string name, string timeZone, Guid createdBy): this(id)
     {
         this.IdState = idState;
         this.Name = name;
-        this.TimeZone = timeZone;
+        this.Timezone = timeZone;
         this.IsActive = true;
         this.CreatedBy = createdBy;
         this.CreatedAt = SystemClock.Instance.GetCurrentInstant();
 
-        AddEvent(CityCreatedDomainEvent.Create(Id, IdState, Name, TimeZone, IsActive));
+        AddEvent(CityCreatedDomainEvent.Create(Id, IdState, Name, Timezone, IsActive));
     }
 
     public static CityAggregate Create(Guid id, Guid idState, string name, string timeZone, Guid createdBy)
@@ -39,12 +39,12 @@ public class CityAggregate(Guid id) : AggregateRootBase(id)
 
         this.IdState = idState;
         this.Name = name;
-        this.TimeZone = timeZone;
+        this.Timezone = timeZone;
         this.IsActive = isActive;
         this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
         this.UpdatedBy = updatedBy;
 
-        AddEvent(CityUpdatedDomainEvent.Create(Id, IdState, Name, TimeZone, IsActive));
+        AddEvent(CityUpdatedDomainEvent.Create(Id, IdState, Name, Timezone, IsActive));
     }
 
     public void Delete(Guid deletedBy)
@@ -55,6 +55,6 @@ public class CityAggregate(Guid id) : AggregateRootBase(id)
         this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
         this.UpdatedBy = deletedBy;
 
-        AddEvent(CityDeletedDomainEvent.Create(Id, IdState, Name, TimeZone, IsActive));
+        AddEvent(CityDeletedDomainEvent.Create(Id, IdState, Name, Timezone, IsActive));
     }
 }

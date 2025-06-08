@@ -8,7 +8,7 @@ public class CountryAggregate(Guid id) : AggregateRootBase(id)
     public string Code { get; private set; } = null!;
     public string? Capital { get; private set; }
     public Guid IdCurrency { get; private set; } = Guid.Empty;
-    public string TimeZone { get; private set; } = null!;
+    public string Timezone { get; private set; } = null!;
     public string NameNative { get; private set; } = null!;
     public string Region { get; private set; } = null!;
     public string SubRegion { get; private set; } = null!;
@@ -24,7 +24,7 @@ public class CountryAggregate(Guid id) : AggregateRootBase(id)
         this.Code = code;
         this.Capital = capital;
         this.IdCurrency = idCurrency;
-        this.TimeZone = timeZone;
+        this.Timezone = timeZone;
         this.NameNative = nameNative;
         this.Region = region;
         this.SubRegion = subRegion;
@@ -35,7 +35,7 @@ public class CountryAggregate(Guid id) : AggregateRootBase(id)
         this.CreatedBy = createdBy;
         this.CreatedAt = SystemClock.Instance.GetCurrentInstant();
 
-        AddEvent(CountryCreatedDomainEvent.Create(Id, Name, Alpha2, Alpha3, Code, Capital, IdCurrency, TimeZone, NameNative, Region, SubRegion, Latitude, Longitude, Flag, IsActive));
+        AddEvent(CountryCreatedDomainEvent.Create(Id, Name, Alpha2, Alpha3, Code, Capital, IdCurrency, Timezone, NameNative, Region, SubRegion, Latitude, Longitude, Flag, IsActive));
     }
 
     public static CountryAggregate Create(Guid id, string name, string alpha2, string alpha3, string code, string? capital, Guid idCurrency, string timeZone, string nameNative, string region, string subRegion, double latitude, double longitude, string? flag, bool isActive, Guid createdBy)
@@ -46,7 +46,7 @@ public class CountryAggregate(Guid id) : AggregateRootBase(id)
         DomainGuard.IsNullOrEmpty(alpha3, Errors.Alpha3IsInvalid);
         DomainGuard.IsNullOrEmpty(code, Errors.NumericCodeIsInvalid);
         DomainGuard.GuidIsEmpty(idCurrency, Errors.IdCurrencyIsInvalid);
-        DomainGuard.IsNullOrEmpty(timeZone, Errors.TimeZoneIsInvalid);
+        DomainGuard.IsNullOrEmpty(timeZone, Errors.TimezoneIsInvalid);
         DomainGuard.GuidIsEmpty(createdBy, Errors.CreatedByIsInvalid);
         DomainGuard.IsNullOrEmpty(nameNative, Errors.NameNativeIsInvalid);
         DomainGuard.IsNullOrEmpty(region, Errors.RegionIsInvalid);
@@ -64,7 +64,7 @@ public class CountryAggregate(Guid id) : AggregateRootBase(id)
         DomainGuard.IsNullOrEmpty(alpha3, Errors.Alpha3IsInvalid);
         DomainGuard.IsNullOrEmpty(code, Errors.NumericCodeIsInvalid);
         DomainGuard.GuidIsEmpty(idCurrency, Errors.IdCurrencyIsInvalid);
-        DomainGuard.IsNullOrEmpty(timeZone, Errors.TimeZoneIsInvalid);
+        DomainGuard.IsNullOrEmpty(timeZone, Errors.TimezoneIsInvalid);
         DomainGuard.GuidIsEmpty(updatedBy, Errors.UpdateByIsInvalid);
         DomainGuard.IsNullOrEmpty(nameNative, Errors.NameNativeIsInvalid);
         DomainGuard.IsNullOrEmpty(region, Errors.RegionIsInvalid);
@@ -78,7 +78,7 @@ public class CountryAggregate(Guid id) : AggregateRootBase(id)
         this.Code = code;
         this.Capital = capital;
         this.IdCurrency = idCurrency;
-        this.TimeZone = timeZone;
+        this.Timezone = timeZone;
         this.NameNative = nameNative;
         this.Region = region;
         this.SubRegion = subRegion;
@@ -89,7 +89,7 @@ public class CountryAggregate(Guid id) : AggregateRootBase(id)
         this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
         this.UpdatedBy = updatedBy;
 
-        AddEvent(CountryUpdatedDomainEvent.Create(Id, Name, Alpha2, Alpha3, Code, Capital, IdCurrency, TimeZone, NameNative, Region, SubRegion, Latitude, Longitude, Flag, IsActive));
+        AddEvent(CountryUpdatedDomainEvent.Create(Id, Name, Alpha2, Alpha3, Code, Capital, IdCurrency, Timezone, NameNative, Region, SubRegion, Latitude, Longitude, Flag, IsActive));
     }
 
     public void Delete(Guid deletedBy)
@@ -100,6 +100,6 @@ public class CountryAggregate(Guid id) : AggregateRootBase(id)
         this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
         this.UpdatedBy = deletedBy;
 
-        AddEvent(CountryDeletedDomainEvent.Create(Id, Name, Alpha2, Alpha3, Code, Capital, IdCurrency, TimeZone, NameNative, Region, SubRegion, Latitude, Longitude, Flag, IsActive));
+        AddEvent(CountryDeletedDomainEvent.Create(Id, Name, Alpha2, Alpha3, Code, Capital, IdCurrency, Timezone, NameNative, Region, SubRegion, Latitude, Longitude, Flag, IsActive));
     }
 }

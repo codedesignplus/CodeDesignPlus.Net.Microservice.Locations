@@ -28,7 +28,7 @@ public class CountryCreatedDomainEvent(
     public string Code { get; private set; } = code;
     public string? Capital { get; private set; } = capital;
     public Guid IdCurrency { get; private set; } = idCurrency;
-    public string TimeZone { get; private set; } = timeZone;
+    public string Timezone { get; private set; } = timeZone;
     public string NameNative { get; private set; } = nameNative;
     public string Region { get; private set; } = region;
     public string SubRegion { get; private set; } = subRegion;

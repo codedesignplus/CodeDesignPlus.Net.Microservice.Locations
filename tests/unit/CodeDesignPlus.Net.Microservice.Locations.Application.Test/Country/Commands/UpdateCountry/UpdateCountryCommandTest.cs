@@ -26,7 +26,7 @@ public class UpdateCountryCommandTest
             Code: "170",
             Capital: "Bogotá",
             IdCurrency: Guid.NewGuid(),
-            TimeZone: "America/Bogota",
+            Timezone: "America/Bogota",
             NameNative: "Colombia",
             Region: "Americas",
             SubRegion: "South America",
@@ -52,7 +52,7 @@ public class UpdateCountryCommandTest
             Code: "",
             Capital: null,
             IdCurrency: Guid.Empty,
-            TimeZone: "",
+            Timezone: "",
             NameNative: "",
             Region: "",
             SubRegion: "",
@@ -70,7 +70,7 @@ public class UpdateCountryCommandTest
         result.ShouldHaveValidationErrorFor(x => x.Alpha3);
         result.ShouldHaveValidationErrorFor(x => x.Code);
         result.ShouldHaveValidationErrorFor(x => x.IdCurrency);
-        result.ShouldHaveValidationErrorFor(x => x.TimeZone);
+        result.ShouldHaveValidationErrorFor(x => x.Timezone);
         result.ShouldHaveValidationErrorFor(x => x.NameNative);
         result.ShouldHaveValidationErrorFor(x => x.Region);
         result.ShouldHaveValidationErrorFor(x => x.SubRegion);
@@ -89,7 +89,7 @@ public class UpdateCountryCommandTest
             Code: "170",
             Capital: "Bogotá",
             IdCurrency: Guid.NewGuid(),
-            TimeZone: "America/Bogota",
+            Timezone: "America/Bogota",
             NameNative: "Colombia",
             Region: "Americas",
             SubRegion: "South America",
@@ -115,7 +115,7 @@ public class UpdateCountryCommandTest
             Code: "170",
             Capital: "Bogotá",
             IdCurrency: Guid.NewGuid(),
-            TimeZone: "America/Bogota",
+            Timezone: "America/Bogota",
             NameNative: "Colombia",
             Region: "Americas",
             SubRegion: "South America",
@@ -141,7 +141,7 @@ public class UpdateCountryCommandTest
             Code: "170",
             Capital: "Bogotá",
             IdCurrency: Guid.NewGuid(),
-            TimeZone: "America/Bogota",
+            Timezone: "America/Bogota",
             NameNative: "Colombia",
             Region: "Americas",
             SubRegion: "South America",
@@ -167,7 +167,7 @@ public class UpdateCountryCommandTest
             Code: "170",
             Capital: new string('B', 101),
             IdCurrency: Guid.NewGuid(),
-            TimeZone: "America/Bogota",
+            Timezone: "America/Bogota",
             NameNative: "Colombia",
             Region: "Americas",
             SubRegion: "South America",
@@ -193,7 +193,7 @@ public class UpdateCountryCommandTest
             Code: "170",
             Capital: "Bogotá",
             IdCurrency: Guid.NewGuid(),
-            TimeZone: "America/Bogota",
+            Timezone: "America/Bogota",
             NameNative: "Colombia",
             Region: "Americas",
             SubRegion: "South America",

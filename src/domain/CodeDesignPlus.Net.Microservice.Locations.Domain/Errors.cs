@@ -10,7 +10,7 @@ public class Errors: IErrorCodes
     public const string UpdateByIsInvalid = "104 : The UpdateBy is invalid"; 
     public const string DeleteByIsInvalid = "105 : The DeleteBy is invalid"; 
     public const string IdStateIsInvalid = "106 : The IdState is invalid";
-    public const string TimeZoneIsInvalid = "107 : The TimeZone is invalid"; 
+    public const string TimezoneIsInvalid = "107 : The Timezone is invalid"; 
     public const string CountryAlpha2IsInvalid = "108 : The CountryAlpha2 is invalid";
     public const string IdCurrencyIsInvalid = "109 : The IdCurrency is invalid"; 
     public const string CurrencyCodeIsInvalid = "110 : The CurrencyCode is invalid"; 

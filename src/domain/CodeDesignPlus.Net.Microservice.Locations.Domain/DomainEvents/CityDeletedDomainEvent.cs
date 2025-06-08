@@ -16,7 +16,7 @@ public class CityDeletedDomainEvent(
 
     public string Name { get; private set; } = name;
 
-    public string TimeZone { get; private set; } = timeZone;
+    public string Timezone { get; private set; } = timeZone;
 
     public bool IsActive { get; private set; } = isActive;
 

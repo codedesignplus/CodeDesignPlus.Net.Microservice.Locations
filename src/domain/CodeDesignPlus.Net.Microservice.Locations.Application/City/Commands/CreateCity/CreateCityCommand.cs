@@ -1,7 +1,7 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.City.Commands.CreateCity;
 
 [DtoGenerator]
-public record CreateCityCommand(Guid Id, Guid IdState, string Name, string TimeZone) : IRequest;
+public record CreateCityCommand(Guid Id, Guid IdState, string Name, string Timezone) : IRequest;
 
 public class Validator : AbstractValidator<CreateCityCommand>
 {
@@ -10,6 +10,6 @@ public class Validator : AbstractValidator<CreateCityCommand>
         RuleFor(x => x.Id).NotEmpty().NotNull();
         RuleFor(x => x.IdState).NotEmpty().NotNull();
         RuleFor(x => x.Name).NotEmpty().NotNull().MaximumLength(100);
-        RuleFor(x => x.TimeZone).MaximumLength(100);
+        RuleFor(x => x.Timezone).MaximumLength(100);
     }
 }

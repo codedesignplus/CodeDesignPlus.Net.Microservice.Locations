@@ -68,7 +68,7 @@ public class CreateCountryCommandTest
         result.ShouldHaveValidationErrorFor(x => x.Alpha3);
         result.ShouldHaveValidationErrorFor(x => x.Code);
         result.ShouldHaveValidationErrorFor(x => x.IdCurrency);
-        result.ShouldHaveValidationErrorFor(x => x.TimeZone);
+        result.ShouldHaveValidationErrorFor(x => x.Timezone);
         result.ShouldHaveValidationErrorFor(x => x.NameNative);
         result.ShouldHaveValidationErrorFor(x => x.Region);
         result.ShouldHaveValidationErrorFor(x => x.SubRegion);
@@ -103,7 +103,7 @@ public class CreateCountryCommandTest
         result.ShouldHaveValidationErrorFor(x => x.Alpha2);
         result.ShouldHaveValidationErrorFor(x => x.Alpha3);
         result.ShouldHaveValidationErrorFor(x => x.Capital);
-        result.ShouldHaveValidationErrorFor(x => x.TimeZone);
+        result.ShouldHaveValidationErrorFor(x => x.Timezone);
         result.ShouldHaveValidationErrorFor(x => x.NameNative);
         result.ShouldHaveValidationErrorFor(x => x.Region);
         result.ShouldHaveValidationErrorFor(x => x.SubRegion);

@@ -8,6 +8,6 @@ public class CityDto: IDtoBase
 
     public required string Name { get; set; }
 
-    public required string TimeZone { get; set; }
+    public required string Timezone { get; set; }
     public bool IsActive { get; set; }
 }
