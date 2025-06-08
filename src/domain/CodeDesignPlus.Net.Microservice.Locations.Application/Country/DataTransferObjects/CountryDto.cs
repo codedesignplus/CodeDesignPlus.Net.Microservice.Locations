@@ -9,7 +9,7 @@ public class CountryDto: IDtoBase
     public string Code { get;  set; } = null!;
     public string? Capital { get;  set; }
     public Guid IdCurrency { get;  set; } 
-    public string TimeZone { get;  set; } = null!;
+    public string Timezone { get;  set; } = null!;
     public string NameNative { get; set; } = null!;
     public string Region { get; set; } = null!;
     public string SubRegion { get; set; } = null!;

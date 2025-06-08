@@ -110,7 +110,7 @@ public class FakeData
             Capital = "Washington",
             IdCurrency = Currency.Id,
             Code = "103",
-            TimeZone = "America/New_York",
+            Timezone = "America/New_York",
             NameNative = "United States",
             Region = "Americas",
             SubRegion = "North America",
@@ -180,7 +180,7 @@ public class FakeData
             Capital = Country.Capital,
             IdCurrency = Country.IdCurrency,
             Code = Country.Code,
-            TimeZone = Country.TimeZone,
+            TimeZone = Country.Timezone,
             NameNative = Country.NameNative,
             Region = Country.Region,
             SubRegion = Country.SubRegion,
@@ -342,7 +342,7 @@ public class FakeData
 
         CurrencyAggregate = CurrencyAggregate.Create(Currency.Id, Currency.Code, Currency.Symbol, Currency.Name, Guid.NewGuid());
 
-        CountryAggregate = CountryAggregate.Create(Country.Id, Country.Name, Country.Alpha2, Country.Alpha3, Country.Code, Country.Capital, Country.IdCurrency, Country.TimeZone, Country.NameNative, Country.Region, Country.SubRegion, Country.Latitude, Country.Longitude, Country.Flag, Country.IsActive, Guid.NewGuid());
+        CountryAggregate = CountryAggregate.Create(Country.Id, Country.Name, Country.Alpha2, Country.Alpha3, Country.Code, Country.Capital, Country.IdCurrency, Country.Timezone, Country.NameNative, Country.Region, Country.SubRegion, Country.Latitude, Country.Longitude, Country.Flag, Country.IsActive, Guid.NewGuid());
 
         StateAggregate = StateAggregate.Create(State.Id, State.IdCountry, State.Code, State.Name, Guid.NewGuid());
 
