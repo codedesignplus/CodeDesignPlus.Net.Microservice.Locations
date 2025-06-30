@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authorization;
+
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Controllers;
 
 /// <summary>
@@ -16,6 +18,7 @@ public class CityController(IMediator mediator, IMapper mapper) : ControllerBase
     /// <param name="cancellationToken">Cancellation token.</param>
     /// <returns>Collection of Cities.</returns>
     [HttpGet]
+    [AllowAnonymous]
     public async Task<IActionResult> GetCities([FromQuery] C.Criteria criteria, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindAllCitiesQuery(criteria), cancellationToken);
@@ -30,6 +33,7 @@ public class CityController(IMediator mediator, IMapper mapper) : ControllerBase
     /// <param name="cancellationToken">Cancellation token.</param>
     /// <returns>The City.</returns>
     [HttpGet("{id}")]
+    [AllowAnonymous]
     public async Task<IActionResult> GetCityById(Guid id, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindCityByIdQuery(id), cancellationToken);

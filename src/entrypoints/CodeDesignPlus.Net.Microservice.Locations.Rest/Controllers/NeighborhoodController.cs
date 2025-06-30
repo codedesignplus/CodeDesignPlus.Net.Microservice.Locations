@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authorization;
+
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Controllers;
 
 [Route("api/[controller]")]
@@ -11,6 +13,7 @@ public class NeighborhoodController(IMediator mediator, IMapper mapper) : Contro
     /// <param name="cancellationToken">Cancellation token.</param>
     /// <returns>Collection of Neighborhoods.</returns>
     [HttpGet]
+    [AllowAnonymous]
     public async Task<IActionResult> GetNeighborhoods([FromQuery] C.Criteria criteria, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindAllNeighborhoodsQuery(criteria), cancellationToken);
@@ -25,6 +28,7 @@ public class NeighborhoodController(IMediator mediator, IMapper mapper) : Contro
     /// <param name="cancellationToken">Cancellation token.</param>
     /// <returns>The Neighborhood.</returns>
     [HttpGet("{id}")]
+    [AllowAnonymous]
     public async Task<IActionResult> GetNeighborhoodById(Guid id, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindNeighborhoodByIdQuery(id), cancellationToken);

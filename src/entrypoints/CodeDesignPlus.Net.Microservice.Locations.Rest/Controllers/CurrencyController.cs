@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authorization;
+
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Controllers;
 
 /// <summary>
@@ -16,6 +18,7 @@ public class CurrencyController(IMediator mediator, IMapper mapper) : Controller
     /// <param name="cancellationToken">Cancellation token.</param>
     /// <returns>Collection of Currencies.</returns>
     [HttpGet]
+    [AllowAnonymous]
     public async Task<IActionResult> GetCurrencies([FromQuery] C.Criteria criteria, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindAllCurrenciesQuery(criteria), cancellationToken);
@@ -30,6 +33,7 @@ public class CurrencyController(IMediator mediator, IMapper mapper) : Controller
     /// <param name="cancellationToken">Cancellation token.</param>
     /// <returns>The Currency.</returns>
     [HttpGet("{id}")]
+    [AllowAnonymous]
     public async Task<IActionResult> GetCurrencyById(Guid id, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindCurrencyByIdQuery(id), cancellationToken);
