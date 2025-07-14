@@ -96,9 +96,10 @@ public class CountryAggregate(Guid id) : AggregateRootBase(id)
     {
         DomainGuard.GuidIsEmpty(deletedBy, Errors.DeleteByIsInvalid);
 
+        this.IsDeleted = true;
         this.IsActive = false;
-        this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
-        this.UpdatedBy = deletedBy;
+        this.DeletedAt = SystemClock.Instance.GetCurrentInstant();
+        this.DeletedBy = deletedBy;
 
         AddEvent(CountryDeletedDomainEvent.Create(Id, Name, Alpha2, Alpha3, Code, Capital, IdCurrency, Timezone, NameNative, Region, SubRegion, Latitude, Longitude, Flag, IsActive));
     }

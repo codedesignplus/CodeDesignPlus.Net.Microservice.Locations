@@ -52,9 +52,10 @@ public class StateAggregate(Guid id) : AggregateRootBase(id)
     {
         DomainGuard.GuidIsEmpty(deletedBy, Errors.DeleteByIsInvalid);
 
+        this.IsDeleted = true;
         this.IsActive = false;
-        this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
-        this.UpdatedBy = deletedBy;
+        this.DeletedAt = SystemClock.Instance.GetCurrentInstant();
+        this.DeletedBy = deletedBy;
 
         AddEvent(StateDeletedDomainEvent.Create(Id, IdCountry, Code, Name, IsActive));
     }

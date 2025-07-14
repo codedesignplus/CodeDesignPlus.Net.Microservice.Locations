@@ -51,9 +51,10 @@ public class CityAggregate(Guid id) : AggregateRootBase(id)
     {
         DomainGuard.GuidIsEmpty(deletedBy, Errors.DeleteByIsInvalid);
 
+        this.IsDeleted = true;
         this.IsActive = false;
-        this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
-        this.UpdatedBy = deletedBy;
+        this.DeletedAt = SystemClock.Instance.GetCurrentInstant();
+        this.DeletedBy = deletedBy;
 
         AddEvent(CityDeletedDomainEvent.Create(Id, IdState, Name, Timezone, IsActive));
     }
