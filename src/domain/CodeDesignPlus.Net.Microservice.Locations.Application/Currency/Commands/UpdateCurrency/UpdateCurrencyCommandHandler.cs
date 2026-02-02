@@ -10,7 +10,7 @@ public class UpdateCurrencyCommandHandler(ICurrencyRepository repository, IUserC
 
         ApplicationGuard.IsNull(aggregate, Errors.CurrencyNotFound);
 
-        aggregate.Update(request.Code, request.Symbol, request.Name, request.IsActive, user.IdUser);
+        aggregate.Update(request.Code, request.NumericCode, request.DecimalDigits, request.Symbol, request.Name, request.IsActive, user.IdUser);
 
         await repository.UpdateAsync(aggregate, cancellationToken);
 

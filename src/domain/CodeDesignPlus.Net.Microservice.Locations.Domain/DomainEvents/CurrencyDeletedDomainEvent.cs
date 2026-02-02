@@ -5,6 +5,8 @@ public class CurrencyDeletedDomainEvent(
     Guid aggregateId,
     string name,
     string code,
+    short numericCode,
+    short decimalDigits,
     string symbol,
     bool isActive,
     Guid? eventId = null,
@@ -12,16 +14,15 @@ public class CurrencyDeletedDomainEvent(
     Dictionary<string, object>? metadata = null
 ) : DomainEvent(aggregateId, eventId, occurredAt, metadata)
 {
-    public string Name { get; private set; } = name;
-
+    public string Name { get; private set; } = name;    
     public string Code { get; private set; } = code;
-
+    public short NumericCode { get; private set; } = numericCode;
+    public short DecimalDigits { get; private set; } = decimalDigits;
     public string Symbol { get; private set; } = symbol;
-
     public bool IsActive { get; private set; } = isActive;
 
-    public static CurrencyDeletedDomainEvent Create(Guid aggregateId, string name, string code, string symbol, bool isActive)
+    public static CurrencyDeletedDomainEvent Create(Guid aggregateId, string name, string code, short numericCode, short decimalDigits, string symbol, bool isActive)
     {
-        return new CurrencyDeletedDomainEvent(aggregateId, name, code, symbol, isActive);
+        return new CurrencyDeletedDomainEvent(aggregateId, name, code, numericCode, decimalDigits, symbol, isActive);
     }
 }

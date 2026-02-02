@@ -79,6 +79,8 @@ public class FakeData
             Id = Guid.NewGuid(),
             Name = "Dollar",
             Code = "USD",
+            NumericCode = 840,
+            DecimalDigits = 2,
             Symbol = "$"
         };
 
@@ -285,7 +287,7 @@ public class FakeData
             Offsets = ["-05"]
         };
 
-        CreateCurrencyCommand = new(Currency.Id, CreateCurrency.Name, CreateCurrency.Code, CreateCurrency.Symbol);
+        CreateCurrencyCommand = new(Currency.Id, Currency.Name, Currency.Code, Currency.NumericCode, Currency.DecimalDigits, Currency.Symbol);
 
         CreateCountryCommand = new(Country.Id, CreateCountry.Name, CreateCountry.Alpha2, CreateCountry.Alpha3, CreateCountry.Code, CreateCountry.Capital, CreateCountry.IdCurrency, CreateCountry.Timezone, CreateCountry.NameNative, CreateCountry.Region, CreateCountry.SubRegion, CreateCountry.Latitude, CreateCountry.Longitude, CreateCountry.Flag, CreateCountry.IsActive);
 
@@ -300,7 +302,7 @@ public class FakeData
         CreateTimezoneCommand = new(Timezone.Id, Timezone.Name, Timezone.Aliases, Timezone.Location, Timezone.Offsets, Timezone.CurrentOffset, Timezone.IsActive);
 
 
-        UpdateCurrencyCommand = new(UpdateCurrency.Id, UpdateCurrency.Name, UpdateCurrency.Code, UpdateCurrency.Symbol, UpdateCurrency.IsActive);
+        UpdateCurrencyCommand = new(UpdateCurrency.Id, UpdateCurrency.Name, UpdateCurrency.Code, UpdateCurrency.NumericCode, UpdateCurrency.DecimalDigits, UpdateCurrency.Symbol, UpdateCurrency.IsActive);
 
         UpdateCountryCommand = new(UpdateCountry.Id, UpdateCountry.Name, UpdateCountry.Alpha2, UpdateCountry.Alpha3, UpdateCountry.Code, UpdateCountry.Capital, UpdateCountry.IdCurrency, UpdateCountry.Timezone, UpdateCountry.NameNative, UpdateCountry.Region, UpdateCountry.SubRegion, UpdateCountry.Latitude, UpdateCountry.Longitude, UpdateCountry.Flag, UpdateCountry.IsActive);
 

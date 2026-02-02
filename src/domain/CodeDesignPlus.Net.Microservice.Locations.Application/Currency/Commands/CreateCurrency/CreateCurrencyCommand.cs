@@ -1,14 +1,33 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Commands.CreateCurrency;
 
 [DtoGenerator]
-public record CreateCurrencyCommand(Guid Id, string Name, string Code, string Symbol) : IRequest;
+public record CreateCurrencyCommand(Guid Id, string Name, string Code, short NumericCode, short DecimalDigits, string Symbol) : IRequest;
 
 public class Validator : AbstractValidator<CreateCurrencyCommand>
 {
     public Validator()
     {
-        RuleFor(x => x.Id).NotEmpty().NotNull();
-        RuleFor(x => x.Name).NotEmpty().NotNull().MaximumLength(100);
-        RuleFor(x => x.Code).NotEmpty().NotNull().MaximumLength(3);
+        RuleFor(x => x.Id).NotEmpty().WithMessage(Errors.IdIsRequired);
+
+        RuleFor(x => x.Name)
+            .NotEmpty().WithMessage(Errors.CurrencyNameIsRequired)
+            .MaximumLength(100).WithMessage(Errors.CurrencyNameMaxLengthExceeded);
+
+        RuleFor(x => x.Code)
+            .NotEmpty().WithMessage(Errors.CurrencyCodeIsRequired)
+            .Length(3).WithMessage(Errors.CurrencyCodeLengthInvalid)
+            .Matches(@"^[A-Z]{3}$").WithMessage(Errors.CurrencyCodeFormatInvalid);
+
+        RuleFor(x => x.NumericCode)
+            .InclusiveBetween((short)1, (short)999)
+            .WithMessage(Errors.CurrencyNumericCodeInvalid);
+
+        RuleFor(x => x.DecimalDigits)
+            .InclusiveBetween((short)0, (short)4)
+            .WithMessage(Errors.CurrencyDecimalDigitsInvalid);
+
+        RuleFor(x => x.Symbol)
+            .NotEmpty().WithMessage(Errors.CurrencySymbolIsRequired)
+            .MaximumLength(10).WithMessage(Errors.CurrencySymbolMaxLengthExceeded);
     }
 }

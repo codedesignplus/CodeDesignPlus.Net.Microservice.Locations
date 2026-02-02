@@ -10,7 +10,7 @@ public class CreateCurrencyCommandHandler(ICurrencyRepository repository, IUserC
 
         ApplicationGuard.IsTrue(exist, Errors.CurrencyAlreadyExists);
 
-        var currency = CurrencyAggregate.Create(request.Id, request.Code, request.Symbol, request.Name, user.IdUser);
+        var currency = CurrencyAggregate.Create(request.Id, request.Code, request.NumericCode, request.DecimalDigits, request.Symbol, request.Name, user.IdUser);
 
         await repository.CreateAsync(currency, cancellationToken);
 
