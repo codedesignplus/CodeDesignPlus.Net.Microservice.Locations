@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Domain.DomainEvents;
 
-[EventKey<CountryAggregate>(1, "CountryDeletedDomainEvent")]
+[EventKey<CountryAggregate>(1, "CountryDeletedDomainEvent", autoCreate: false)]
 public class CountryDeletedDomainEvent(
     Guid aggregateId,
     string name,

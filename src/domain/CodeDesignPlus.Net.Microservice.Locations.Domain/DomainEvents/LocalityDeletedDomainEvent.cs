@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Domain.DomainEvents;
 
-[EventKey<LocalityAggregate>(1, "LocalityDeletedDomainEvent")]
+[EventKey<LocalityAggregate>(1, "LocalityDeletedDomainEvent", autoCreate: false)]
 public class LocalityDeletedDomainEvent(
     Guid aggregateId,
     string name,

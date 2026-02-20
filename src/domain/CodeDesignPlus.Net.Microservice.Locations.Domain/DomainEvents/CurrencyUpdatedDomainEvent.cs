@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Domain.DomainEvents;
 
-[EventKey<CurrencyAggregate>(1, "CurrencyUpdatedDomainEvent")]
+[EventKey<CurrencyAggregate>(1, "CurrencyUpdatedDomainEvent", autoCreate: false)]
 public class CurrencyUpdatedDomainEvent(
     Guid aggregateId,    
     string name,

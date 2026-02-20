@@ -2,7 +2,7 @@ using CodeDesignPlus.Net.Microservice.Locations.Domain.ValueObjects;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Domain.DomainEvents;
 
-[EventKey<TimezoneAggregate>(1, "TimezoneUpdatedDomainEvent")]
+[EventKey<TimezoneAggregate>(1, "TimezoneUpdatedDomainEvent", autoCreate: false)]
 public class TimezoneUpdatedDomainEvent(
     Guid aggregateId,
     string name, 
