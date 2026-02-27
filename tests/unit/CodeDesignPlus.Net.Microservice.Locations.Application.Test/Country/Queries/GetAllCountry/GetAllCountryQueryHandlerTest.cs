@@ -1,4 +1,5 @@
 
+using CodeDesignPlus.Net.Cache.Abstractions;
 using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Country.Queries.GetAllCountry;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Test.Helpers;
@@ -10,6 +11,7 @@ public class GetAllCountryQueryHandlerTest
 {
     private readonly Mock<ICountryRepository> repositoryMock;
     private readonly Mock<IMapper> mapperMock;
+    private readonly Mock<ICacheManager> cacheMock;
     private readonly GetAllCountryQueryHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -17,7 +19,8 @@ public class GetAllCountryQueryHandlerTest
     {
         repositoryMock = new Mock<ICountryRepository>();
         mapperMock = new Mock<IMapper>();
-        handler = new GetAllCountryQueryHandler(repositoryMock.Object, mapperMock.Object);
+        cacheMock = new Mock<ICacheManager>();
+        handler = new GetAllCountryQueryHandler(repositoryMock.Object, mapperMock.Object, cacheMock.Object);
     }
 
     [Fact]

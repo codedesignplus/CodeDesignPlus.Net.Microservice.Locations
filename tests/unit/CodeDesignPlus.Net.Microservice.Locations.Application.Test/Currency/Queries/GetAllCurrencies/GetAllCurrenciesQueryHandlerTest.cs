@@ -1,22 +1,25 @@
+using CodeDesignPlus.Net.Cache.Abstractions;
 using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.DataTransferObjects;
-using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries.FindAllCurrencies;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries.GetAllCurrencies;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Test.Helpers;
 
-namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Currency.Queries.FindAllCurrencies;
+namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Currency.Queries.GetAllCurrencies;
 
-public class FindAllCurrenciesQueryHandlerTest
+public class GetAllCurrenciesQueryHandlerTest
 {
     private readonly Mock<ICurrencyRepository> repositoryMock;
     private readonly Mock<IMapper> mapperMock;
-    private readonly FindAllCurrenciesQueryHandler handler;
+    private readonly Mock<ICacheManager> cacheManagerMock;
+    private readonly GetAllCurrenciesQueryHandler handler;
     private readonly FakeData fakeData = new();
 
-    public FindAllCurrenciesQueryHandlerTest()
+    public GetAllCurrenciesQueryHandlerTest()
     {
         repositoryMock = new Mock<ICurrencyRepository>();
         mapperMock = new Mock<IMapper>();
-        handler = new FindAllCurrenciesQueryHandler(repositoryMock.Object, mapperMock.Object);
+        cacheManagerMock = new Mock<ICacheManager>();
+        handler = new GetAllCurrenciesQueryHandler(repositoryMock.Object, mapperMock.Object, cacheManagerMock.Object);
     }
 
     [Fact]
