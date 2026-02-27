@@ -1,3 +1,4 @@
+using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries.GetAllCurrencies;
 using Microsoft.AspNetCore.Authorization;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Controllers;
@@ -21,7 +22,7 @@ public class CurrencyController(IMediator mediator, IMapper mapper) : Controller
     [AllowAnonymous]
     public async Task<IActionResult> GetCurrencies([FromQuery] C.Criteria criteria, CancellationToken cancellationToken)
     {
-        var result = await mediator.Send(new FindAllCurrenciesQuery(criteria), cancellationToken);
+        var result = await mediator.Send(new GetAllCurrenciesQuery(criteria), cancellationToken);
 
         return Ok(result);
     }

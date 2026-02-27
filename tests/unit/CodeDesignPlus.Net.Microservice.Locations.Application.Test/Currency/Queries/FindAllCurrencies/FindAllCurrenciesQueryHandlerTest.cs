@@ -23,7 +23,7 @@ public class FindAllCurrenciesQueryHandlerTest
     public async Task Handle_RequestIsNull_ThrowsInvalidRequestException()
     {
         // Arrange
-        FindAllCurrenciesQuery request = null!;
+        GetAllCurrenciesQuery request = null!;
 
         // Act & Assert
         var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(request, CancellationToken.None));
@@ -37,7 +37,7 @@ public class FindAllCurrenciesQueryHandlerTest
     public async Task Handle_ValidRequest_ReturnsMappedCurrencies()
     {
         // Arrange
-        var request = new FindAllCurrenciesQuery(null!);
+        var request = new GetAllCurrenciesQuery(null!);
         var currencyAggregates = new List<CurrencyAggregate> { fakeData.CurrencyAggregate };
         var currencyDtos = new List<CurrencyDto> { fakeData.Currency };
 

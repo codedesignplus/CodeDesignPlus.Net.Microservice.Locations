@@ -4,4 +4,10 @@ public class CountryRepository(IServiceProvider serviceProvider, IOptions<MongoO
     : RepositoryBase(serviceProvider, mongoOptions, logger), ICountryRepository
 {
    
+    public Task<List<CountryAggregate>> GetAllAsync(CancellationToken cancellationToken)
+    {
+        var filter = Builders<CountryAggregate>.Filter.Eq(x => x.IsActive, true);
+
+        return GetCollection<CountryAggregate>().Find(filter).ToListAsync(cancellationToken);
+    }
 }

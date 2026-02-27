@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "CodeDesignPlus.Net.Microservice.Locations.gRpc.Test";
+
+package Country;
+
+
+service Country {
+  rpc GetCountry (stream GetCountryRequest) returns (stream GetCountryResponse);
+}
+
+message GetCountryRequest {
+  string Id = 1;
+}
+
+message GetCountryResponse {
+
+}

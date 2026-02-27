@@ -53,7 +53,6 @@ global using CodeDesignPlus.Net.Microservice.Locations.Application.Locality.Quer
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.Queries.FindTimezoneById;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.Queries.FindAllTimezones;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries.FindCurrencyById;
-global using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries.FindAllCurrencies;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.Queries.FindNeighborhoodById;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.Queries.FindAllNeighborhoods;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Region.Commands.CreateRegion;

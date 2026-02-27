@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Domain.DomainEvents;
 
-[EventKey<NeighborhoodAggregate>(1, "NeighborhoodDeletedDomainEvent", autoCreate: false)]
+[EventKey<NeighborhoodAggregate>(1, "NeighborhoodDeletedDomainEvent")]
 public class NeighborhoodDeletedDomainEvent(
     Guid aggregateId,
     string name,
