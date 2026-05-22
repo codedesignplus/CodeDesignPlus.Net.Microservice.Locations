@@ -44,41 +44,58 @@ public class LocationSeedService(
 
     private async Task SeedCurrenciesAsync(CancellationToken ct)
     {
+        var data = LoadResource<List<CurrencySeed>>("seed-currencies.json");
         var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
         var existing = await currencyRepository.MatchingAsync<CurrencyAggregate>(criteria, ct);
-        if (existing.TotalCount > 0) { logger.LogInformation("Currencies already seeded."); return; }
+        if (existing.TotalCount >= data.Count) { logger.LogInformation("Currencies already seeded ({Count}).", existing.TotalCount); return; }
 
-        var data = LoadResource<List<CurrencySeed>>("seed-currencies.json");
+        var inserted = 0;
         foreach (var item in data)
         {
-            var aggregate = CurrencyAggregate.Create(item.Id, item.Code, item.NumericCode, item.DecimalDigits, item.Symbol, item.Name, SystemUserId);
-            await currencyRepository.CreateAsync(aggregate, ct);
+            try
+            {
+                var aggregate = CurrencyAggregate.Create(item.Id, item.Code, item.NumericCode, item.DecimalDigits, item.Symbol ?? "$", item.Name ?? item.Code, SystemUserId);
+                await currencyRepository.CreateAsync(aggregate, ct);
+                inserted++;
+            }
+            catch (Exception ex)
+            {
+                logger.LogWarning(ex, "Failed to seed currency {Code}. Skipping.", item.Code);
+            }
         }
-        logger.LogInformation("Seeded {Count} currencies.", data.Count);
+        logger.LogInformation("Seeded {Inserted}/{Total} currencies.", inserted, data.Count);
     }
 
     private async Task SeedCountriesAsync(CancellationToken ct)
     {
+        var data = LoadResource<List<CountrySeed>>("seed-countries.json");
         var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
         var existing = await countryRepository.MatchingAsync<CountryAggregate>(criteria, ct);
-        if (existing.TotalCount > 0) { logger.LogInformation("Countries already seeded."); return; }
+        if (existing.TotalCount >= data.Count) { logger.LogInformation("Countries already seeded ({Count}).", existing.TotalCount); return; }
 
-        var data = LoadResource<List<CountrySeed>>("seed-countries.json");
+        var inserted = 0;
         foreach (var item in data)
         {
-            var aggregate = CountryAggregate.Create(item.Id, item.Name, item.Alpha2, item.Alpha3, item.Code, item.Capital, item.IdCurrency, item.Timezone, item.NameNative ?? item.Name, item.Region ?? "Unknown", item.SubRegion ?? "Unknown", item.Latitude, item.Longitude, item.Flag, true, SystemUserId);
-            await countryRepository.CreateAsync(aggregate, ct);
+            try
+            {
+                var aggregate = CountryAggregate.Create(item.Id, item.Name, item.Alpha2, item.Alpha3, item.Code ?? "000", item.Capital, item.IdCurrency, item.Timezone ?? "UTC", item.NameNative ?? item.Name ?? "Unknown", item.Region ?? "Unknown", item.SubRegion ?? "Unknown", item.Latitude, item.Longitude, item.Flag, true, SystemUserId);
+                await countryRepository.CreateAsync(aggregate, ct);
+                inserted++;
+            }
+            catch (Exception ex)
+            {
+                logger.LogWarning(ex, "Failed to seed country {Name} ({Alpha2}). Skipping.", item.Name, item.Alpha2);
+            }
         }
-        logger.LogInformation("Seeded {Count} countries.", data.Count);
+        logger.LogInformation("Seeded {Inserted}/{Total} countries.", inserted, data.Count);
     }
 
     private async Task SeedStatesAsync(CancellationToken ct)
     {
+        var data = LoadResource<List<StateSeed>>("seed-co-states.json");
         var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
         var existing = await stateRepository.MatchingAsync<StateAggregate>(criteria, ct);
-        if (existing.TotalCount > 0) { logger.LogInformation("States already seeded."); return; }
-
-        var data = LoadResource<List<StateSeed>>("seed-co-states.json");
+        if (existing.TotalCount >= data.Count) { logger.LogInformation("States already seeded ({Count}).", existing.TotalCount); return; }
         foreach (var item in data)
         {
             var aggregate = StateAggregate.Create(item.Id, item.IdCountry, item.Code, item.Name, SystemUserId);
@@ -89,11 +106,11 @@ public class LocationSeedService(
 
     private async Task SeedCitiesAsync(CancellationToken ct)
     {
+        var data = LoadResource<List<CitySeed>>("seed-co-cities.json");
         var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
         var existing = await cityRepository.MatchingAsync<CityAggregate>(criteria, ct);
-        if (existing.TotalCount > 0) { logger.LogInformation("Cities already seeded."); return; }
+        if (existing.TotalCount >= data.Count) { logger.LogInformation("Cities already seeded ({Count}).", existing.TotalCount); return; }
 
-        var data = LoadResource<List<CitySeed>>("seed-co-cities.json");
         foreach (var item in data)
         {
             var aggregate = CityAggregate.Create(item.Id, item.IdState, item.Name, item.Timezone, SystemUserId);
@@ -104,11 +121,11 @@ public class LocationSeedService(
 
     private async Task SeedLocalitiesAsync(CancellationToken ct)
     {
+        var data = LoadResource<List<LocalitySeed>>("seed-co-localities.json");
         var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
         var existing = await localityRepository.MatchingAsync<LocalityAggregate>(criteria, ct);
-        if (existing.TotalCount > 0) { logger.LogInformation("Localities already seeded."); return; }
+        if (existing.TotalCount >= data.Count) { logger.LogInformation("Localities already seeded ({Count}).", existing.TotalCount); return; }
 
-        var data = LoadResource<List<LocalitySeed>>("seed-co-localities.json");
         foreach (var item in data)
         {
             var aggregate = LocalityAggregate.Create(item.Id, item.IdCity, item.Name, SystemUserId);
@@ -119,11 +136,11 @@ public class LocationSeedService(
 
     private async Task SeedNeighborhoodsAsync(CancellationToken ct)
     {
+        var data = LoadResource<List<NeighborhoodSeed>>("seed-co-neighborhoods.json");
         var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
         var existing = await neighborhoodRepository.MatchingAsync<NeighborhoodAggregate>(criteria, ct);
-        if (existing.TotalCount > 0) { logger.LogInformation("Neighborhoods already seeded."); return; }
+        if (existing.TotalCount >= data.Count) { logger.LogInformation("Neighborhoods already seeded ({Count}).", existing.TotalCount); return; }
 
-        var data = LoadResource<List<NeighborhoodSeed>>("seed-co-neighborhoods.json");
         foreach (var item in data)
         {
             var aggregate = NeighborhoodAggregate.Create(item.Id, item.IdLocality, item.Name, SystemUserId);
