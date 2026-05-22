@@ -1,23 +1,36 @@
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Exceptions.Guards;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Country.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Country.Queries.GetAllCountry;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries.FindCurrencyById;
 using CodeDesignPlus.Net.Microservice.Locations.Infrastructure;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.gRpc.Services;
 
-public class CountryService(IMediator mediator, IMapper mapper) : gRpc.CountryService.CountryServiceBase
+public class CountryService(IMediator mediator, IMapper mapper, ILogger<CountryService> logger) : gRpc.CountryService.CountryServiceBase
 {
     public override async Task<GetCountryResponse> GetCountry(GetCountryRequest request, ServerCallContext context)
     {
         // Build a filter expression based on the provided request fields
         // Using Filters bypasses the shared cache and queries MongoDB directly
         var filter = BuildFilter(request);
+        logger.LogInformation("GetCountry request: Id={Id}, Alpha2={Alpha2}, Alpha3={Alpha3}, Code={Code}, Name={Name}, Filter={Filter}",
+            request.Id, request.Alpha2, request.Alpha3, request.Code, request.Name, filter);
 
-        var countries = await mediator.Send(new GetAllCountryQuery(new C.Criteria
+        Pagination<CountryDto> countries;
+        try
         {
-            Filters = filter,
-            Limit = 1
-        }));
+            countries = await mediator.Send(new GetAllCountryQuery(new C.Criteria
+            {
+                Filters = filter,
+                Limit = 500
+            }));
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, "Error executing GetAllCountryQuery with filter '{Filter}'", filter);
+            throw;
+        }
 
         var country = countries.Data.FirstOrDefault();
 
