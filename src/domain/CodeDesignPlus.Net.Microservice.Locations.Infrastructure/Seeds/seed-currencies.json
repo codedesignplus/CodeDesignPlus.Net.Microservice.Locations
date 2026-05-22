@@ -1,230 +1,230 @@
 [
   {
-    "id": "05f168ae-bb3b-4f9b-b32b-50e8e77cc88e",
+    "id": "88a3c30f-f9a6-4641-889b-990c568495dd",
     "code": "AED",
-    "numericCode": 0,
+    "numericCode": 784,
     "decimalDigits": 2,
     "symbol": "\u062F.\u0625",
     "name": "United Arab Emirates dirham"
   },
   {
-    "id": "cfbb7407-ed69-4cf9-b101-689a5b22d913",
+    "id": "ab1674d7-d77e-45a8-a8a5-b67daab75c09",
     "code": "AFN",
-    "numericCode": 0,
+    "numericCode": 971,
     "decimalDigits": 2,
     "symbol": "\u060B",
     "name": "Afghan afghani"
   },
   {
-    "id": "18fddb34-6a96-4159-8d32-097190a4457b",
+    "id": "c3e0c951-ed5c-4ba2-86fc-e1a773e83fe5",
     "code": "ALL",
-    "numericCode": 0,
+    "numericCode": 8,
     "decimalDigits": 2,
     "symbol": "L",
     "name": "Albanian lek"
   },
   {
-    "id": "5218ca0a-7b58-41ad-8d25-c2de9ab7bb13",
+    "id": "02ebac94-1ce2-4bf8-9a79-1f0c0a6ee1c7",
     "code": "AMD",
-    "numericCode": 0,
+    "numericCode": 51,
     "decimalDigits": 2,
     "symbol": "\u058F",
     "name": "Armenian dram"
   },
   {
-    "id": "78f86b16-f7bd-40c5-830a-13addca3f6d1",
+    "id": "9c633e57-3c28-4c95-a3a3-904f4f2437ff",
     "code": "ANG",
-    "numericCode": 0,
+    "numericCode": 532,
     "decimalDigits": 2,
     "symbol": "\u0192",
     "name": "Netherlands Antillean guilder"
   },
   {
-    "id": "223043b9-974b-400d-a575-148a8eb6eca5",
+    "id": "2dd7c469-c596-432e-aeff-9931b2ac0691",
     "code": "AOA",
-    "numericCode": 0,
+    "numericCode": 973,
     "decimalDigits": 2,
     "symbol": "Kz",
     "name": "Angolan kwanza"
   },
   {
-    "id": "d9361845-687f-475e-9fcd-073da77d5e15",
+    "id": "3ca4f2e4-01de-49ba-bba5-083b32d68cc6",
     "code": "ARS",
-    "numericCode": 0,
+    "numericCode": 32,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Argentine peso"
   },
   {
-    "id": "99b34062-324d-459f-99f0-705248aa2d35",
+    "id": "6a005a69-7373-4afa-a809-3e9ee706b39e",
     "code": "AUD",
-    "numericCode": 0,
+    "numericCode": 36,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Australian dollar"
   },
   {
-    "id": "d0ed5cf5-6c6c-4add-91cd-ed731b3ccd93",
+    "id": "d08c7321-7fa7-49cb-9139-27f24016467b",
     "code": "AWG",
-    "numericCode": 0,
+    "numericCode": 533,
     "decimalDigits": 2,
     "symbol": "\u0192",
     "name": "Aruban florin"
   },
   {
-    "id": "5250a14b-5dab-42e2-8204-5293267490a7",
+    "id": "68ca1796-8cd3-4895-aa71-7b571d4f6c86",
     "code": "AZN",
-    "numericCode": 0,
+    "numericCode": 944,
     "decimalDigits": 2,
     "symbol": "\u20BC",
     "name": "Azerbaijani manat"
   },
   {
-    "id": "6ed303fe-b7d9-4e57-8c3e-3eef3e01846f",
+    "id": "48935a91-4627-4c19-8e38-efe3a4915166",
     "code": "BAM",
-    "numericCode": 0,
+    "numericCode": 977,
     "decimalDigits": 2,
     "symbol": "KM",
     "name": "Bosnia and Herzegovina convertible mark"
   },
   {
-    "id": "195c4da9-65b0-45d7-bb30-8917d5e3c28e",
+    "id": "3f8d4d76-3c7d-4a36-99a0-9038df05d98c",
     "code": "BBD",
-    "numericCode": 0,
+    "numericCode": 52,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Barbadian dollar"
   },
   {
-    "id": "96a746ee-08b0-4ced-8720-5b2a83d727cb",
+    "id": "eaf7d86d-5001-427f-a92f-c1de1911013b",
     "code": "BDT",
-    "numericCode": 0,
+    "numericCode": 50,
     "decimalDigits": 2,
     "symbol": "\u09F3",
     "name": "Bangladeshi taka"
   },
   {
-    "id": "e7d5cba9-0c1f-4801-9d06-bbb2c98c7717",
+    "id": "c766100c-779c-4804-8c05-9006100c80ae",
     "code": "BGN",
-    "numericCode": 0,
+    "numericCode": 975,
     "decimalDigits": 2,
     "symbol": "\u043B\u0432",
     "name": "Bulgarian lev"
   },
   {
-    "id": "bb4cd354-3208-46c6-8bb7-f305e27ff455",
+    "id": "6c3a1713-c449-4573-b080-c04cb120b043",
     "code": "BHD",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 48,
+    "decimalDigits": 3,
     "symbol": ".\u062F.\u0628",
     "name": "Bahraini dinar"
   },
   {
-    "id": "bb3e6479-5293-4eff-a6d0-a5b0a40c1392",
+    "id": "2056d26d-97e3-4817-a4e0-e1b0f4392eca",
     "code": "BIF",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 108,
+    "decimalDigits": 0,
     "symbol": "Fr",
     "name": "Burundian franc"
   },
   {
-    "id": "d32ed63e-69a3-401a-99ae-a313128b3edc",
+    "id": "562aca65-b5fb-40bd-9bad-211516ef85e4",
     "code": "BMD",
-    "numericCode": 0,
+    "numericCode": 60,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Bermudian dollar"
   },
   {
-    "id": "c9a88c4a-4cf2-46fd-a044-9a3a20950d17",
+    "id": "f0205c21-5ae5-46b3-aa1c-529b878ba689",
     "code": "BND",
-    "numericCode": 0,
+    "numericCode": 96,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Brunei dollar"
   },
   {
-    "id": "d7c68c86-4e62-4394-b34b-8e90a193b967",
+    "id": "44fd0c72-72ae-43dd-8431-baf5571b23a4",
     "code": "BOB",
-    "numericCode": 0,
+    "numericCode": 68,
     "decimalDigits": 2,
     "symbol": "Bs.",
     "name": "Bolivian boliviano"
   },
   {
-    "id": "06f51a13-3df6-4301-8c08-ffdd0ab2404c",
+    "id": "52dc805f-6504-4385-8838-5af30139358f",
     "code": "BRL",
-    "numericCode": 0,
+    "numericCode": 986,
     "decimalDigits": 2,
     "symbol": "R$",
     "name": "Brazilian real"
   },
   {
-    "id": "9c505615-84b1-4c91-93da-841443ea6d26",
+    "id": "350ae542-a44f-46ea-8aaf-ddda535f7f6c",
     "code": "BSD",
-    "numericCode": 0,
+    "numericCode": 44,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Bahamian dollar"
   },
   {
-    "id": "9d12ce1e-ec7a-41ea-acdd-76d7bb7b2a10",
+    "id": "a6d61e86-fb61-46a2-8999-1d429ab6ecfb",
     "code": "BTN",
-    "numericCode": 0,
+    "numericCode": 64,
     "decimalDigits": 2,
     "symbol": "Nu.",
     "name": "Bhutanese ngultrum"
   },
   {
-    "id": "e87e4c66-7277-4e3b-8477-018e5b75b742",
+    "id": "251408e8-459c-4445-95dd-fe7a1b7eb6b5",
     "code": "BWP",
-    "numericCode": 0,
+    "numericCode": 72,
     "decimalDigits": 2,
     "symbol": "P",
     "name": "Botswana pula"
   },
   {
-    "id": "5c810944-a9d4-4add-b5ea-ee17db62bb9e",
+    "id": "a249d7c3-a8f7-448c-ab41-6f86d7fe6b1c",
     "code": "BYN",
-    "numericCode": 0,
+    "numericCode": 933,
     "decimalDigits": 2,
     "symbol": "Br",
     "name": "Belarusian ruble"
   },
   {
-    "id": "427bac33-91ff-4575-8572-4962f2280562",
+    "id": "1b5baadd-9ba9-4d65-bcce-dab2661cf7c5",
     "code": "BZD",
-    "numericCode": 0,
+    "numericCode": 84,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Belize dollar"
   },
   {
-    "id": "fd9573ab-e6f4-4d15-a2f4-26042e711004",
+    "id": "e112916e-cdd8-4c2f-9229-d8e9d1c71df0",
     "code": "CAD",
-    "numericCode": 0,
+    "numericCode": 124,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Canadian dollar"
   },
   {
-    "id": "ca0d2edc-6df6-48a4-a1c9-6412a6bfe227",
+    "id": "8943b998-de7c-4e77-a32f-cff4ea56d654",
     "code": "CDF",
-    "numericCode": 0,
+    "numericCode": 976,
     "decimalDigits": 2,
     "symbol": "FC",
     "name": "Congolese franc"
   },
   {
-    "id": "6d5a47fa-aeba-4a8e-a543-99acd5ea9646",
+    "id": "849aa470-834c-4e64-b040-18616fe5651e",
     "code": "CHF",
-    "numericCode": 0,
+    "numericCode": 756,
     "decimalDigits": 2,
     "symbol": "Fr.",
     "name": "Swiss franc"
   },
   {
-    "id": "e8915c28-a11b-4510-a8f2-5325aeb05a71",
+    "id": "4e1fe547-8084-43a3-973b-bd81facd09e6",
     "code": "CKD",
     "numericCode": 0,
     "decimalDigits": 2,
@@ -232,39 +232,39 @@
     "name": "Cook Islands dollar"
   },
   {
-    "id": "f2092de3-db8f-4dad-bb8b-32131a027768",
+    "id": "daf16c22-835a-4686-8b18-a93e6ef26e62",
     "code": "CLP",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 152,
+    "decimalDigits": 0,
     "symbol": "$",
     "name": "Chilean peso"
   },
   {
-    "id": "dc025809-0a7b-41d5-9a73-8aeba427b90d",
+    "id": "550077d9-95d8-4d5a-8fc5-30c95a54b030",
     "code": "CNY",
-    "numericCode": 0,
+    "numericCode": 156,
     "decimalDigits": 2,
     "symbol": "\u00A5",
     "name": "Chinese yuan"
   },
   {
-    "id": "5c3447aa-db4f-4f93-bd99-500923b49f89",
+    "id": "1e8f4d27-f5bf-4d93-92a8-ecc4719aba3b",
     "code": "COP",
-    "numericCode": 0,
+    "numericCode": 170,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Colombian peso"
   },
   {
-    "id": "33fcb9a1-e73d-4ac9-99ad-7f74239778ff",
+    "id": "a01d6f8c-5900-4818-a0b1-58f912343bdc",
     "code": "CRC",
-    "numericCode": 0,
+    "numericCode": 188,
     "decimalDigits": 2,
     "symbol": "\u20A1",
     "name": "Costa Rican col\u00F3n"
   },
   {
-    "id": "39c15441-ce1f-4097-8e92-15c88cd29a49",
+    "id": "14b4c7e0-ef2e-47ea-94e5-b5c3b8a90f41",
     "code": "CUC",
     "numericCode": 0,
     "decimalDigits": 2,
@@ -272,111 +272,111 @@
     "name": "Cuban convertible peso"
   },
   {
-    "id": "b47a97f2-0456-4658-aa5e-173e45816631",
+    "id": "1c2c49c5-b824-4a73-8d5d-c8ebf4f925c1",
     "code": "CUP",
-    "numericCode": 0,
+    "numericCode": 192,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Cuban peso"
   },
   {
-    "id": "19309560-25e3-454d-8f99-c2c2566969db",
+    "id": "6330cbc3-8ecd-4661-b09e-5148c5f8152e",
     "code": "CVE",
-    "numericCode": 0,
+    "numericCode": 132,
     "decimalDigits": 2,
     "symbol": "Esc",
     "name": "Cape Verdean escudo"
   },
   {
-    "id": "362be534-d374-4abb-bf5f-644feb6aa0f5",
+    "id": "fc535266-3a63-4a77-8900-cdfca47980fe",
     "code": "CZK",
-    "numericCode": 0,
+    "numericCode": 203,
     "decimalDigits": 2,
     "symbol": "K\u010D",
     "name": "Czech koruna"
   },
   {
-    "id": "7f987f63-2599-4264-865b-0ae86dd8f237",
+    "id": "926961fd-c03e-4e83-b705-8b8c0b0ef779",
     "code": "DJF",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 262,
+    "decimalDigits": 0,
     "symbol": "Fr",
     "name": "Djiboutian franc"
   },
   {
-    "id": "495f2cae-5775-44d1-ab13-03701b288038",
+    "id": "efe024a0-a76b-4131-bd90-3f96ab5a84b1",
     "code": "DKK",
-    "numericCode": 0,
+    "numericCode": 208,
     "decimalDigits": 2,
     "symbol": "kr",
     "name": "Danish krone"
   },
   {
-    "id": "bbe34247-4bc0-45ba-a5ca-644f042514e6",
+    "id": "79c59c4f-9f4e-41c2-ac9d-359cad98582f",
     "code": "DOP",
-    "numericCode": 0,
+    "numericCode": 214,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Dominican peso"
   },
   {
-    "id": "7c390a86-74e5-4250-bf48-b4ce31c3e1e5",
+    "id": "17eb2357-53ed-4f68-aa82-a6173cfe7692",
     "code": "DZD",
-    "numericCode": 0,
+    "numericCode": 12,
     "decimalDigits": 2,
     "symbol": "\u062F.\u062C",
     "name": "Algerian dinar"
   },
   {
-    "id": "868d6bef-9569-4848-9930-413b70de8b26",
+    "id": "50bf691e-26f0-4e1c-9e79-91b8c00334f5",
     "code": "EGP",
-    "numericCode": 0,
+    "numericCode": 818,
     "decimalDigits": 2,
     "symbol": "\u00A3",
     "name": "Egyptian pound"
   },
   {
-    "id": "68ee4472-f064-478a-9541-567d939a04d2",
+    "id": "9f1a9346-b228-4c66-9312-130b46ea98d1",
     "code": "ERN",
-    "numericCode": 0,
+    "numericCode": 232,
     "decimalDigits": 2,
     "symbol": "Nfk",
     "name": "Eritrean nakfa"
   },
   {
-    "id": "a8ba7571-6fd0-4306-aa35-48d37bbe000b",
+    "id": "144089cc-8fc8-4f23-b663-81d946ca0f81",
     "code": "ETB",
-    "numericCode": 0,
+    "numericCode": 230,
     "decimalDigits": 2,
     "symbol": "Br",
     "name": "Ethiopian birr"
   },
   {
-    "id": "82f774b2-5e33-4683-924b-1d828116e4df",
+    "id": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "code": "EUR",
-    "numericCode": 0,
+    "numericCode": 978,
     "decimalDigits": 2,
     "symbol": "\u20AC",
     "name": "Euro"
   },
   {
-    "id": "c71559b2-c7e3-45b3-a41c-891b0519db00",
+    "id": "f98db27b-3fe0-47a2-824b-69dc164b81df",
     "code": "FJD",
-    "numericCode": 0,
+    "numericCode": 242,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Fijian dollar"
   },
   {
-    "id": "ce94112f-7a95-46a8-bc87-6a976f9f6175",
+    "id": "2daa341c-7004-40b5-aea4-527b2e1edac3",
     "code": "FKP",
-    "numericCode": 0,
+    "numericCode": 238,
     "decimalDigits": 2,
     "symbol": "\u00A3",
     "name": "Falkland Islands pound"
   },
   {
-    "id": "d2dd54ad-459e-49e8-af96-33e57787a37b",
+    "id": "aac009ee-6816-4d3c-b227-950d7a89bdeb",
     "code": "FOK",
     "numericCode": 0,
     "decimalDigits": 2,
@@ -384,23 +384,23 @@
     "name": "Faroese kr\u00F3na"
   },
   {
-    "id": "71daa8ac-a62c-4a6a-a966-6c7243043903",
+    "id": "7d382442-fe7e-419b-bb25-2cb5828e66be",
     "code": "GBP",
-    "numericCode": 0,
+    "numericCode": 826,
     "decimalDigits": 2,
     "symbol": "\u00A3",
     "name": "Pound sterling"
   },
   {
-    "id": "6adb51c0-a949-46cc-b283-dbb17c05ff78",
+    "id": "8cb323a9-66fa-4f17-8783-ad1277975e23",
     "code": "GEL",
-    "numericCode": 0,
+    "numericCode": 981,
     "decimalDigits": 2,
     "symbol": "\u20BE",
     "name": "lari"
   },
   {
-    "id": "a9d94965-d82e-4b89-b66e-5e65b1d33238",
+    "id": "225d8e3d-e62e-4c1c-b0df-3f930c23f122",
     "code": "GGP",
     "numericCode": 0,
     "decimalDigits": 2,
@@ -408,103 +408,103 @@
     "name": "Guernsey pound"
   },
   {
-    "id": "1d95face-327e-4bdd-ae47-8584ef0e876e",
+    "id": "df89d993-8ed5-4506-8b25-d3aaf503e2d6",
     "code": "GHS",
-    "numericCode": 0,
+    "numericCode": 936,
     "decimalDigits": 2,
     "symbol": "\u20B5",
     "name": "Ghanaian cedi"
   },
   {
-    "id": "9ecc6033-a7ca-45c0-83b8-9fa9a07b8146",
+    "id": "e119fec8-f6ad-48e0-b511-d5a197bb5173",
     "code": "GIP",
-    "numericCode": 0,
+    "numericCode": 292,
     "decimalDigits": 2,
     "symbol": "\u00A3",
     "name": "Gibraltar pound"
   },
   {
-    "id": "f32674e5-a760-4fee-a73b-dbbeae404630",
+    "id": "656eca2a-8cb6-4474-9888-515e4b60de13",
     "code": "GMD",
-    "numericCode": 0,
+    "numericCode": 270,
     "decimalDigits": 2,
     "symbol": "D",
     "name": "dalasi"
   },
   {
-    "id": "73d1a44e-3556-41bb-b1a8-6b672541f017",
+    "id": "5a406e50-840d-4535-a21e-ccbce5c53e15",
     "code": "GNF",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 324,
+    "decimalDigits": 0,
     "symbol": "Fr",
     "name": "Guinean franc"
   },
   {
-    "id": "14e89a0e-7d1c-44f0-b831-a4c4cd4ba8c7",
+    "id": "67efdd1d-d740-4dac-8f79-e8ee72276b14",
     "code": "GTQ",
-    "numericCode": 0,
+    "numericCode": 320,
     "decimalDigits": 2,
     "symbol": "Q",
     "name": "Guatemalan quetzal"
   },
   {
-    "id": "934bc9f5-039c-458c-9f52-f3b31ec04bf4",
+    "id": "5885e0c6-6300-43ec-af8c-46554297a2f3",
     "code": "GYD",
-    "numericCode": 0,
+    "numericCode": 328,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Guyanese dollar"
   },
   {
-    "id": "a3a1d9fe-f8b6-47ce-9e76-2f593439383c",
+    "id": "4a8763f2-347e-49b2-9303-7e4ea7364af2",
     "code": "HKD",
-    "numericCode": 0,
+    "numericCode": 344,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Hong Kong dollar"
   },
   {
-    "id": "8d6c5a6d-97d8-43c4-b00d-643d1392b42c",
+    "id": "8ad6b9ba-da46-4c77-8459-bef069cc1c78",
     "code": "HNL",
-    "numericCode": 0,
+    "numericCode": 340,
     "decimalDigits": 2,
     "symbol": "L",
     "name": "Honduran lempira"
   },
   {
-    "id": "478e2366-526e-4e68-8dee-89d0246a7358",
+    "id": "f5034cd3-5a17-406b-88f1-ef0cc064b7f2",
     "code": "HTG",
-    "numericCode": 0,
+    "numericCode": 332,
     "decimalDigits": 2,
     "symbol": "G",
     "name": "Haitian gourde"
   },
   {
-    "id": "e0a6ad99-4c91-44ad-a632-1b1204b736df",
+    "id": "e6da3832-85b8-43e6-a60f-454beac13043",
     "code": "HUF",
-    "numericCode": 0,
+    "numericCode": 348,
     "decimalDigits": 2,
     "symbol": "Ft",
     "name": "Hungarian forint"
   },
   {
-    "id": "574b7ca2-b34b-48a1-ba37-84ce272b9290",
+    "id": "204fc059-3b78-440f-8992-27537d5afdf8",
     "code": "IDR",
-    "numericCode": 0,
+    "numericCode": 360,
     "decimalDigits": 2,
     "symbol": "Rp",
     "name": "Indonesian rupiah"
   },
   {
-    "id": "5e30b18d-ca26-4421-b1a6-d971ff5496e3",
+    "id": "cf862362-6a6a-4928-aeeb-a74ce4f8ad4b",
     "code": "ILS",
-    "numericCode": 0,
+    "numericCode": 376,
     "decimalDigits": 2,
     "symbol": "\u20AA",
     "name": "Israeli new shekel"
   },
   {
-    "id": "bea43098-6a74-4811-acf5-942cbbacf5d8",
+    "id": "5d98c321-3e12-40b6-8268-a94272b75e42",
     "code": "IMP",
     "numericCode": 0,
     "decimalDigits": 2,
@@ -512,39 +512,39 @@
     "name": "Manx pound"
   },
   {
-    "id": "a0eef2ba-a35e-4f45-88d9-984458a1520f",
+    "id": "0f3ba561-6205-4477-aa40-fcdb375161d8",
     "code": "INR",
-    "numericCode": 0,
+    "numericCode": 356,
     "decimalDigits": 2,
     "symbol": "\u20B9",
     "name": "Indian rupee"
   },
   {
-    "id": "0c9cfe4b-e420-4bf5-bb75-e82fcefecb78",
+    "id": "534d212f-51e9-4d0e-83b5-59eb950fd9ec",
     "code": "IQD",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 368,
+    "decimalDigits": 3,
     "symbol": "\u0639.\u062F",
     "name": "Iraqi dinar"
   },
   {
-    "id": "b14b3eee-9bba-4d4d-a26d-d83a9527befc",
+    "id": "d02e1e3c-0916-47bf-9960-eb7f072f62c8",
     "code": "IRR",
-    "numericCode": 0,
+    "numericCode": 364,
     "decimalDigits": 2,
     "symbol": "\uFDFC",
     "name": "Iranian rial"
   },
   {
-    "id": "9288d153-3b97-4432-a0d4-b1229d7435a4",
+    "id": "93b145ae-5284-41b9-ba0b-f415cb1558da",
     "code": "ISK",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 352,
+    "decimalDigits": 0,
     "symbol": "kr",
     "name": "Icelandic kr\u00F3na"
   },
   {
-    "id": "90e5e8d6-8b67-4676-87bc-fb05fbeb5981",
+    "id": "7363d79e-f89a-4b54-a63e-a0475c03bed7",
     "code": "JEP",
     "numericCode": 0,
     "decimalDigits": 2,
@@ -552,55 +552,55 @@
     "name": "Jersey pound"
   },
   {
-    "id": "6a93f7e5-f237-4396-831a-ded3c313708e",
+    "id": "acf4f0cc-c04f-44d1-9471-309f42e3dcef",
     "code": "JMD",
-    "numericCode": 0,
+    "numericCode": 388,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Jamaican dollar"
   },
   {
-    "id": "7640d3a7-195b-44f3-b271-a09196901d12",
+    "id": "9b49fdd1-458e-4704-9697-1b028852aeb4",
     "code": "JOD",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 400,
+    "decimalDigits": 3,
     "symbol": "\u062F.\u0627",
     "name": "Jordanian dinar"
   },
   {
-    "id": "645120df-63ff-4b24-a3b3-2e3854ab04b9",
+    "id": "4212ca72-99f1-4994-a2a3-1f86ab27c487",
     "code": "JPY",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 392,
+    "decimalDigits": 0,
     "symbol": "\u00A5",
     "name": "Japanese yen"
   },
   {
-    "id": "b009aaae-c4e7-4ccf-872c-7dd1bb85bd38",
+    "id": "710e6635-1cb1-4630-9562-37f0b49a2f61",
     "code": "KES",
-    "numericCode": 0,
+    "numericCode": 404,
     "decimalDigits": 2,
     "symbol": "Sh",
     "name": "Kenyan shilling"
   },
   {
-    "id": "7501a0ac-f036-4abc-8d91-8b867fb05cde",
+    "id": "64d106e7-cd14-4df6-aac8-1f2aab223571",
     "code": "KGS",
-    "numericCode": 0,
+    "numericCode": 417,
     "decimalDigits": 2,
     "symbol": "\u0441",
     "name": "Kyrgyzstani som"
   },
   {
-    "id": "87b6577c-1525-458a-95be-6ff572c2cadc",
+    "id": "6e500375-466d-4457-967c-1891b854f367",
     "code": "KHR",
-    "numericCode": 0,
+    "numericCode": 116,
     "decimalDigits": 2,
     "symbol": "\u17DB",
     "name": "Cambodian riel"
   },
   {
-    "id": "56d5bf7b-a95f-4ca9-95c5-b98a307e1dcf",
+    "id": "610c34c3-670e-42de-ac13-87828fa003c2",
     "code": "KID",
     "numericCode": 0,
     "decimalDigits": 2,
@@ -608,535 +608,535 @@
     "name": "Kiribati dollar"
   },
   {
-    "id": "44240de8-122a-473c-81e5-f07fc534f37c",
+    "id": "9ccc89f8-7cf7-43d9-8e4e-4e07915404b7",
     "code": "KMF",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 174,
+    "decimalDigits": 0,
     "symbol": "Fr",
     "name": "Comorian franc"
   },
   {
-    "id": "b01a53a0-b777-4ba4-8ef6-990f19377637",
+    "id": "10807ed9-546d-49fc-9f63-3bfc955dafbc",
     "code": "KPW",
-    "numericCode": 0,
+    "numericCode": 408,
     "decimalDigits": 2,
     "symbol": "\u20A9",
     "name": "North Korean won"
   },
   {
-    "id": "48a91cbb-2e20-4712-84c1-95c24f369f27",
+    "id": "85ea96cb-5f34-4d95-8e61-cf5a945075cb",
     "code": "KRW",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 410,
+    "decimalDigits": 0,
     "symbol": "\u20A9",
     "name": "South Korean won"
   },
   {
-    "id": "1af384f0-e0a5-40a8-9812-3d2eb876600c",
+    "id": "d5af8b2d-3fdb-4954-8926-f3b2f84a18d6",
     "code": "KWD",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 414,
+    "decimalDigits": 3,
     "symbol": "\u062F.\u0643",
     "name": "Kuwaiti dinar"
   },
   {
-    "id": "e34b63be-5017-4d74-a413-ff45212d0f6a",
+    "id": "673e7a46-d0e1-445e-9052-286478f8693b",
     "code": "KYD",
-    "numericCode": 0,
+    "numericCode": 136,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Cayman Islands dollar"
   },
   {
-    "id": "c9b45fc2-b7fe-46e6-af5e-fe9994703e70",
+    "id": "9e457916-fdc4-481e-859e-fd6ccec19523",
     "code": "KZT",
-    "numericCode": 0,
+    "numericCode": 398,
     "decimalDigits": 2,
     "symbol": "\u20B8",
     "name": "Kazakhstani tenge"
   },
   {
-    "id": "b44f7b46-b5c3-40e4-9876-5a8b4b2d3574",
+    "id": "479cfc1c-f24d-4361-b10f-df29f53448f6",
     "code": "LAK",
-    "numericCode": 0,
+    "numericCode": 418,
     "decimalDigits": 2,
     "symbol": "\u20AD",
     "name": "Lao kip"
   },
   {
-    "id": "69234e9b-6247-4d8a-94c4-01d6d70072da",
+    "id": "45a3e790-b77a-4b1a-bea0-a1c254d7393b",
     "code": "LBP",
-    "numericCode": 0,
+    "numericCode": 422,
     "decimalDigits": 2,
     "symbol": "\u0644.\u0644",
     "name": "Lebanese pound"
   },
   {
-    "id": "0374d646-421e-4348-b28a-11907888f12e",
+    "id": "0056997a-ca34-41ad-b60f-64aa55d143c6",
     "code": "LKR",
-    "numericCode": 0,
+    "numericCode": 144,
     "decimalDigits": 2,
     "symbol": "Rs \u0DBB\u0DD4",
     "name": "Sri Lankan rupee"
   },
   {
-    "id": "13b75701-f1d5-433a-83f4-4cf85dbfa593",
+    "id": "17cb6b41-a11d-4431-bd09-fb06d7e2788d",
     "code": "LRD",
-    "numericCode": 0,
+    "numericCode": 430,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Liberian dollar"
   },
   {
-    "id": "fa3ca73a-8137-457e-a51c-7e74f97890f0",
+    "id": "cdd75823-f039-47fa-bee3-fd41b2e89b22",
     "code": "LSL",
-    "numericCode": 0,
+    "numericCode": 426,
     "decimalDigits": 2,
     "symbol": "L",
     "name": "Lesotho loti"
   },
   {
-    "id": "fa3044e2-716e-4c87-8e20-fa97e602a041",
+    "id": "8031e815-428a-4573-a36d-ad0ea0f52c29",
     "code": "LYD",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 434,
+    "decimalDigits": 3,
     "symbol": "\u0644.\u062F",
     "name": "Libyan dinar"
   },
   {
-    "id": "446b4e73-517c-4bf0-bcc1-437c5992173e",
+    "id": "7eb5ec2f-f068-4665-b189-41d6d94b7d1f",
     "code": "MAD",
-    "numericCode": 0,
+    "numericCode": 504,
     "decimalDigits": 2,
     "symbol": "DH",
     "name": "Moroccan dirham"
   },
   {
-    "id": "7e99c26f-d291-489d-894d-fc61022229f4",
+    "id": "a9e2761f-29dd-4000-8040-8e5f4fdd73eb",
     "code": "MDL",
-    "numericCode": 0,
+    "numericCode": 498,
     "decimalDigits": 2,
     "symbol": "L",
     "name": "Moldovan leu"
   },
   {
-    "id": "4bce233d-80ce-4472-89e6-6052803eeef3",
+    "id": "2adad3ba-6033-49eb-9eef-0ff10af8371b",
     "code": "MGA",
-    "numericCode": 0,
+    "numericCode": 969,
     "decimalDigits": 2,
     "symbol": "Ar",
     "name": "Malagasy ariary"
   },
   {
-    "id": "763f1610-252f-4327-8f12-35aec20061af",
+    "id": "ce1142a5-bbb7-4902-a1ef-724c8aec62e2",
     "code": "MKD",
-    "numericCode": 0,
+    "numericCode": 807,
     "decimalDigits": 2,
     "symbol": "den",
     "name": "denar"
   },
   {
-    "id": "78957832-3d0e-4da9-953f-b50477fcb8f7",
+    "id": "5b702893-7b0c-4359-932d-60d5e927bc62",
     "code": "MMK",
-    "numericCode": 0,
+    "numericCode": 104,
     "decimalDigits": 2,
     "symbol": "Ks",
     "name": "Burmese kyat"
   },
   {
-    "id": "ad7a33db-fd66-4543-b186-186867e9e122",
+    "id": "81e91445-ed30-4987-a291-d854c43cdfdf",
     "code": "MNT",
-    "numericCode": 0,
+    "numericCode": 496,
     "decimalDigits": 2,
     "symbol": "\u20AE",
     "name": "Mongolian t\u00F6gr\u00F6g"
   },
   {
-    "id": "46cd224c-b2fa-4bda-b306-c70303853292",
+    "id": "2ea579c5-d5d8-4cae-bc68-944c1c94489a",
     "code": "MOP",
-    "numericCode": 0,
+    "numericCode": 446,
     "decimalDigits": 2,
     "symbol": "P",
     "name": "Macanese pataca"
   },
   {
-    "id": "15fc1f24-b3c8-49aa-b4ef-f13480c2fbc6",
+    "id": "e295598a-6a4a-4582-83f4-ba146cdf177f",
     "code": "MRU",
-    "numericCode": 0,
+    "numericCode": 929,
     "decimalDigits": 2,
     "symbol": "UM",
     "name": "Mauritanian ouguiya"
   },
   {
-    "id": "f871c0dc-f1f7-4e03-a937-3d2e15ac8fa5",
+    "id": "9aefdca1-198a-4320-aed8-9b55f7f1e7d9",
     "code": "MUR",
-    "numericCode": 0,
+    "numericCode": 480,
     "decimalDigits": 2,
     "symbol": "\u20A8",
     "name": "Mauritian rupee"
   },
   {
-    "id": "b8159a3f-bd5b-4eb2-a24d-2435ac6ecf4a",
+    "id": "9cca71a5-d3c7-4586-b4e5-7353cf8ec402",
     "code": "MVR",
-    "numericCode": 0,
+    "numericCode": 462,
     "decimalDigits": 2,
     "symbol": ".\u0783",
     "name": "Maldivian rufiyaa"
   },
   {
-    "id": "9e90a63e-9386-4ac5-a338-968b6d34b697",
+    "id": "20f18569-de8f-471a-ba27-335a4068a9ef",
     "code": "MWK",
-    "numericCode": 0,
+    "numericCode": 454,
     "decimalDigits": 2,
     "symbol": "MK",
     "name": "Malawian kwacha"
   },
   {
-    "id": "37d408bd-7d21-4a63-b200-8e5e4ebe4afa",
+    "id": "267f8ba4-a6da-4773-8467-fc035f41d8d5",
     "code": "MXN",
-    "numericCode": 0,
+    "numericCode": 484,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Mexican peso"
   },
   {
-    "id": "357f1499-90c5-4b2f-8b7b-2649bb341106",
+    "id": "d0d7c3b7-aed4-4382-8da4-43a55654e885",
     "code": "MYR",
-    "numericCode": 0,
+    "numericCode": 458,
     "decimalDigits": 2,
     "symbol": "RM",
     "name": "Malaysian ringgit"
   },
   {
-    "id": "e53fc8c5-de06-4530-a537-f968969281a3",
+    "id": "6f998bc2-ad5b-4b48-b6fa-24bc4bba608e",
     "code": "MZN",
-    "numericCode": 0,
+    "numericCode": 943,
     "decimalDigits": 2,
     "symbol": "MT",
     "name": "Mozambican metical"
   },
   {
-    "id": "7d6e67b1-80f8-4b9a-9fbb-2ec39dae2814",
+    "id": "6185fcd2-c615-4284-bfbf-33877cf48824",
     "code": "NAD",
-    "numericCode": 0,
+    "numericCode": 516,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Namibian dollar"
   },
   {
-    "id": "49b50c6e-6e74-4dd1-ba04-943c08c393ba",
+    "id": "6da7277a-6bc2-4b05-bd2d-d7343332216a",
     "code": "NGN",
-    "numericCode": 0,
+    "numericCode": 566,
     "decimalDigits": 2,
     "symbol": "\u20A6",
     "name": "Nigerian naira"
   },
   {
-    "id": "c1cad58e-7ae4-4c11-aa38-9d5dc965ca5d",
+    "id": "067cf520-37c8-45de-9e98-f0e9bc868ee7",
     "code": "NIO",
-    "numericCode": 0,
+    "numericCode": 558,
     "decimalDigits": 2,
     "symbol": "C$",
     "name": "Nicaraguan c\u00F3rdoba"
   },
   {
-    "id": "5d49e5bb-97d8-4fd8-b7d4-e2b8895b2fde",
+    "id": "b9997b37-04e9-43e8-800b-29e27a38dbf8",
     "code": "NOK",
-    "numericCode": 0,
+    "numericCode": 578,
     "decimalDigits": 2,
     "symbol": "kr",
     "name": "Norwegian krone"
   },
   {
-    "id": "e3cddeb0-8ff8-4a23-bf68-01be0cd04243",
+    "id": "78bad577-2963-48ef-8e6a-6ea78184350f",
     "code": "NPR",
-    "numericCode": 0,
+    "numericCode": 524,
     "decimalDigits": 2,
     "symbol": "\u20A8",
     "name": "Nepalese rupee"
   },
   {
-    "id": "256a72a1-4cd1-4e1e-8e9e-249b44f26925",
+    "id": "bf97d960-b9ad-4065-8c96-3e1567f178c9",
     "code": "NZD",
-    "numericCode": 0,
+    "numericCode": 554,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "New Zealand dollar"
   },
   {
-    "id": "3a960034-08b7-413c-ac69-8b7080997698",
+    "id": "2fe18921-120e-429d-a82a-0912895c5078",
     "code": "OMR",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 512,
+    "decimalDigits": 3,
     "symbol": "\u0631.\u0639.",
     "name": "Omani rial"
   },
   {
-    "id": "6f62898a-c403-4169-b405-ed7e317498d8",
+    "id": "f3850a4a-f211-430b-949a-5339a80473e3",
     "code": "PAB",
-    "numericCode": 0,
+    "numericCode": 590,
     "decimalDigits": 2,
     "symbol": "B/.",
     "name": "Panamanian balboa"
   },
   {
-    "id": "a35abefe-7965-4517-97ef-c78479595f77",
+    "id": "644899cd-264e-4235-8acd-8e5bdce0c024",
     "code": "PEN",
-    "numericCode": 0,
+    "numericCode": 604,
     "decimalDigits": 2,
     "symbol": "S/.",
     "name": "Peruvian sol"
   },
   {
-    "id": "83d504fc-b379-476b-bb2c-82ab78e24a85",
+    "id": "4f912c2e-84b6-4440-8acc-e5db0a20a4b8",
     "code": "PGK",
-    "numericCode": 0,
+    "numericCode": 598,
     "decimalDigits": 2,
     "symbol": "K",
     "name": "Papua New Guinean kina"
   },
   {
-    "id": "ab00df29-579f-4254-afd5-30f4ac32549c",
+    "id": "73134e71-4965-4ff1-8c92-fd40083b9cb6",
     "code": "PHP",
-    "numericCode": 0,
+    "numericCode": 608,
     "decimalDigits": 2,
     "symbol": "\u20B1",
     "name": "Philippine peso"
   },
   {
-    "id": "405011a2-7acc-4626-8fc1-cd393a71c678",
+    "id": "00d5808f-fc0d-4182-89d7-ab57d0070862",
     "code": "PKR",
-    "numericCode": 0,
+    "numericCode": 586,
     "decimalDigits": 2,
     "symbol": "\u20A8",
     "name": "Pakistani rupee"
   },
   {
-    "id": "77ff7d5c-0358-44d8-aa60-c3f62781bbf9",
+    "id": "480c9a47-3977-40e5-885d-08b1703c3f0d",
     "code": "PLN",
-    "numericCode": 0,
+    "numericCode": 985,
     "decimalDigits": 2,
     "symbol": "z\u0142",
     "name": "Polish z\u0142oty"
   },
   {
-    "id": "b060ce8b-331b-421c-b33d-dfc8daacb1b6",
+    "id": "fdd76789-38a4-4ed2-94db-5e640f190b57",
     "code": "PYG",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 600,
+    "decimalDigits": 0,
     "symbol": "\u20B2",
     "name": "Paraguayan guaran\u00ED"
   },
   {
-    "id": "35eae095-59ec-4e02-83f9-3690bec08ac1",
+    "id": "0289a10a-612c-4dfe-a3b0-3e3fb182a6dd",
     "code": "QAR",
-    "numericCode": 0,
+    "numericCode": 634,
     "decimalDigits": 2,
     "symbol": "\u0631.\u0642",
     "name": "Qatari riyal"
   },
   {
-    "id": "8e0e3ab3-9e4f-488d-a4cc-331c00622bf0",
+    "id": "78c22bcb-d302-41fe-84d3-8ba829ba0376",
     "code": "RON",
-    "numericCode": 0,
+    "numericCode": 946,
     "decimalDigits": 2,
     "symbol": "lei",
     "name": "Romanian leu"
   },
   {
-    "id": "6e5acb6a-1ef8-4a93-a17d-0cfc0073f519",
+    "id": "5cd77e49-f709-4e50-ad25-b02b10117e5f",
     "code": "RSD",
-    "numericCode": 0,
+    "numericCode": 941,
     "decimalDigits": 2,
     "symbol": "\u0434\u0438\u043D.",
     "name": "Serbian dinar"
   },
   {
-    "id": "bff461ed-e89f-42b9-99c2-3a7405485799",
+    "id": "35d48e07-2da5-47ec-bfb5-9eb9c41ac225",
     "code": "RUB",
-    "numericCode": 0,
+    "numericCode": 643,
     "decimalDigits": 2,
     "symbol": "\u20BD",
     "name": "Russian ruble"
   },
   {
-    "id": "0aa08834-86a9-49e1-ada4-a13313093ca6",
+    "id": "8252ff9b-aa6b-4924-81f1-ba57e9f922e1",
     "code": "RWF",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 646,
+    "decimalDigits": 0,
     "symbol": "Fr",
     "name": "Rwandan franc"
   },
   {
-    "id": "d3c0d7b9-817c-4367-b19f-1e962b137259",
+    "id": "2de87f88-c9c0-4743-91e2-fa600afcc000",
     "code": "SAR",
-    "numericCode": 0,
+    "numericCode": 682,
     "decimalDigits": 2,
     "symbol": "\u0631.\u0633",
     "name": "Saudi riyal"
   },
   {
-    "id": "1cb9f98e-ad9a-4c8d-bf85-50be072017ce",
+    "id": "4b425475-6731-487f-a90c-328ea2add986",
     "code": "SBD",
-    "numericCode": 0,
+    "numericCode": 90,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Solomon Islands dollar"
   },
   {
-    "id": "b1db3264-62d2-467b-9984-5519a1eef0b7",
+    "id": "608de557-944d-465b-9fce-6654360653b7",
     "code": "SCR",
-    "numericCode": 0,
+    "numericCode": 690,
     "decimalDigits": 2,
     "symbol": "\u20A8",
     "name": "Seychellois rupee"
   },
   {
-    "id": "043a1fad-a912-4028-9240-6f5720c95bda",
+    "id": "f0fb70f7-b539-40dc-9f57-b2b86634d0fa",
     "code": "SDG",
-    "numericCode": 0,
+    "numericCode": 938,
     "decimalDigits": 2,
     "symbol": "PT",
     "name": "Sudanese pound"
   },
   {
-    "id": "8082fa06-a489-4002-a4e9-025212f62476",
+    "id": "f2dc9bce-4369-4867-a7b0-b290e8b93d5b",
     "code": "SEK",
-    "numericCode": 0,
+    "numericCode": 752,
     "decimalDigits": 2,
     "symbol": "kr",
     "name": "Swedish krona"
   },
   {
-    "id": "8db3ba3f-86cf-4053-8650-4f48d8f3e0da",
+    "id": "26d5f579-115b-421a-a74a-956b45de5ee5",
     "code": "SGD",
-    "numericCode": 0,
+    "numericCode": 702,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Singapore dollar"
   },
   {
-    "id": "7059205f-9c14-47c8-93b5-21991bfe865d",
+    "id": "2e317500-1f13-4e6c-a015-ee40a383c137",
     "code": "SHP",
-    "numericCode": 0,
+    "numericCode": 654,
     "decimalDigits": 2,
     "symbol": "\u00A3",
     "name": "Saint Helena pound"
   },
   {
-    "id": "5d88b540-f09a-4b0a-ae7c-8ca79e70d24c",
+    "id": "dfcdd08a-caaf-4a79-9e31-510d304bfa82",
     "code": "SLL",
-    "numericCode": 0,
+    "numericCode": 694,
     "decimalDigits": 2,
     "symbol": "Le",
     "name": "Sierra Leonean leone"
   },
   {
-    "id": "63dd77b6-46d4-4394-8808-c309f77161fd",
+    "id": "f1893f20-cf01-45c4-80d9-53c7ad74473d",
     "code": "SOS",
-    "numericCode": 0,
+    "numericCode": 706,
     "decimalDigits": 2,
     "symbol": "Sh",
     "name": "Somali shilling"
   },
   {
-    "id": "b11f78f0-0c0e-4168-b71f-ccd731f8f8a7",
+    "id": "1d894328-453e-4a68-b414-a3d03838f0f1",
     "code": "SRD",
-    "numericCode": 0,
+    "numericCode": 968,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Surinamese dollar"
   },
   {
-    "id": "48f38052-67f5-4a74-8e99-3bde9969e9d7",
+    "id": "39593090-4f47-4d75-9788-5982b997c208",
     "code": "SSP",
-    "numericCode": 0,
+    "numericCode": 728,
     "decimalDigits": 2,
     "symbol": "\u00A3",
     "name": "South Sudanese pound"
   },
   {
-    "id": "90f08543-7ff9-4bd8-abe3-e421312133a9",
+    "id": "7a217258-01d9-4ce0-97f1-dce74835eaab",
     "code": "STN",
-    "numericCode": 0,
+    "numericCode": 930,
     "decimalDigits": 2,
     "symbol": "Db",
     "name": "S\u00E3o Tom\u00E9 and Pr\u00EDncipe dobra"
   },
   {
-    "id": "4636bb5a-0201-4d63-883e-8981ef07742e",
+    "id": "422a5344-a892-43ca-9a43-05ec0854ebf1",
     "code": "SYP",
-    "numericCode": 0,
+    "numericCode": 760,
     "decimalDigits": 2,
     "symbol": "\u00A3",
     "name": "Syrian pound"
   },
   {
-    "id": "b2a587e8-b1e8-46b1-9e40-5ae95dfe9d5d",
+    "id": "891e93af-cdfb-453e-b10a-fe508ffcd79a",
     "code": "SZL",
-    "numericCode": 0,
+    "numericCode": 748,
     "decimalDigits": 2,
     "symbol": "L",
     "name": "Swazi lilangeni"
   },
   {
-    "id": "d3cd24e0-b1b1-4c02-a277-ae8e34936ed1",
+    "id": "dbaf8e25-70b3-4ed4-bcf4-fcfc31427a7e",
     "code": "THB",
-    "numericCode": 0,
+    "numericCode": 764,
     "decimalDigits": 2,
     "symbol": "\u0E3F",
     "name": "Thai baht"
   },
   {
-    "id": "af7686e5-f668-483f-b98b-623f2bbe5e78",
+    "id": "361efbc8-c820-4fc3-a6a2-750519124124",
     "code": "TJS",
-    "numericCode": 0,
+    "numericCode": 972,
     "decimalDigits": 2,
     "symbol": "\u0405\u041C",
     "name": "Tajikistani somoni"
   },
   {
-    "id": "66c10670-2e8f-4f82-916a-753f5e55a841",
+    "id": "9ec7f641-3448-4af9-8925-a2de3e71ac67",
     "code": "TMT",
-    "numericCode": 0,
+    "numericCode": 934,
     "decimalDigits": 2,
     "symbol": "m",
     "name": "Turkmenistan manat"
   },
   {
-    "id": "0ce31a57-4218-4448-aa9a-4cd9234fbc7f",
+    "id": "084b195a-141c-4da9-bba8-1a9ac5e9ef8e",
     "code": "TND",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 788,
+    "decimalDigits": 3,
     "symbol": "\u062F.\u062A",
     "name": "Tunisian dinar"
   },
   {
-    "id": "553ccb1e-180d-47c3-b9b2-93b4a951d1ad",
+    "id": "4745dd16-2be1-4294-a9f3-1b374f252bab",
     "code": "TOP",
-    "numericCode": 0,
+    "numericCode": 776,
     "decimalDigits": 2,
     "symbol": "T$",
     "name": "Tongan pa\u02BBanga"
   },
   {
-    "id": "bc2fcdf9-3ffa-4d12-a24c-c8f142c39c8f",
+    "id": "14b538da-2f3e-40f2-a7ab-471fc0954f16",
     "code": "TRY",
-    "numericCode": 0,
+    "numericCode": 949,
     "decimalDigits": 2,
     "symbol": "\u20BA",
     "name": "Turkish lira"
   },
   {
-    "id": "a568b41f-c5fd-403e-8e33-3b801a7d985a",
+    "id": "3bf65f48-1e9c-4c94-bf8b-cfbb38155b02",
     "code": "TTD",
-    "numericCode": 0,
+    "numericCode": 780,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Trinidad and Tobago dollar"
   },
   {
-    "id": "880b3f5b-9a27-480b-8c84-43809c314b87",
+    "id": "b8b4276e-ae87-427f-8110-463d50def1e0",
     "code": "TVD",
     "numericCode": 0,
     "decimalDigits": 2,
@@ -1144,151 +1144,151 @@
     "name": "Tuvaluan dollar"
   },
   {
-    "id": "06a15e4a-b809-4a42-8c4b-1744787fd82a",
+    "id": "eade3fc3-2fa2-4835-b638-3f6c8f404978",
     "code": "TWD",
-    "numericCode": 0,
+    "numericCode": 901,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "New Taiwan dollar"
   },
   {
-    "id": "ccd11839-5aa6-4916-a6cd-c6979426da83",
+    "id": "238da063-a2a3-42b2-b680-0149fa369edb",
     "code": "TZS",
-    "numericCode": 0,
+    "numericCode": 834,
     "decimalDigits": 2,
     "symbol": "Sh",
     "name": "Tanzanian shilling"
   },
   {
-    "id": "01696dd6-e134-4820-9efc-06abcc7254c4",
+    "id": "434a4fa5-1afd-47e4-8d3b-e311bc981ed3",
     "code": "UAH",
-    "numericCode": 0,
+    "numericCode": 980,
     "decimalDigits": 2,
     "symbol": "\u20B4",
     "name": "Ukrainian hryvnia"
   },
   {
-    "id": "9f7dd1d7-5da5-446a-8f43-5c29d6aada4e",
+    "id": "0c7eafba-9036-4cee-93f0-2062dc18ba57",
     "code": "UGX",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 800,
+    "decimalDigits": 0,
     "symbol": "Sh",
     "name": "Ugandan shilling"
   },
   {
-    "id": "f9a62011-bfd0-4ad7-8735-515c2d0c1080",
+    "id": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "code": "USD",
-    "numericCode": 0,
+    "numericCode": 840,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "United States dollar"
   },
   {
-    "id": "10920d3f-16da-4fc2-94b4-29061b4315fa",
+    "id": "8879a997-d0a6-451d-817c-3c7e4f7438e8",
     "code": "UYU",
-    "numericCode": 0,
+    "numericCode": 858,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Uruguayan peso"
   },
   {
-    "id": "275df442-ccc1-42af-9aa3-361dc147fd8c",
+    "id": "586ca173-6928-4e20-94a1-4b6c3a634f28",
     "code": "UZS",
-    "numericCode": 0,
+    "numericCode": 860,
     "decimalDigits": 2,
     "symbol": "so\u0027m",
     "name": "Uzbekistani so\u02BBm"
   },
   {
-    "id": "17013de8-fa99-4579-9699-b86e861819b4",
+    "id": "dd5b8b3a-fbdb-4824-8de0-3fb7fee9a531",
     "code": "VES",
-    "numericCode": 0,
+    "numericCode": 928,
     "decimalDigits": 2,
     "symbol": "Bs.S.",
     "name": "Venezuelan bol\u00EDvar soberano"
   },
   {
-    "id": "a1428714-b92d-40d8-bbfa-7c9fcc49baf9",
+    "id": "73187888-8749-477c-ad10-d83bda96ba13",
     "code": "VND",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 704,
+    "decimalDigits": 0,
     "symbol": "\u20AB",
     "name": "Vietnamese \u0111\u1ED3ng"
   },
   {
-    "id": "22c45ed5-189b-45e5-95a6-6b16888e9182",
+    "id": "a0f5d3d8-2587-49c8-8ebc-4cbbaa899b94",
     "code": "VUV",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 548,
+    "decimalDigits": 0,
     "symbol": "Vt",
     "name": "Vanuatu vatu"
   },
   {
-    "id": "75f21643-e1a6-4168-8af3-764d71b81952",
+    "id": "1d1cbffd-23b2-4afc-9bb3-0278bed51ef8",
     "code": "WST",
-    "numericCode": 0,
+    "numericCode": 882,
     "decimalDigits": 2,
     "symbol": "T",
     "name": "Samoan t\u0101l\u0101"
   },
   {
-    "id": "096c8bbf-ef3a-4526-b54c-c85a1db88fc8",
+    "id": "4d2ad5c2-b43f-4328-b4da-bd4b78986f65",
     "code": "XAF",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 950,
+    "decimalDigits": 0,
     "symbol": "Fr",
     "name": "Central African CFA franc"
   },
   {
-    "id": "ae49fbf5-906c-4957-946f-97b8b7a855c1",
+    "id": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "code": "XCD",
-    "numericCode": 0,
+    "numericCode": 951,
     "decimalDigits": 2,
     "symbol": "$",
     "name": "Eastern Caribbean dollar"
   },
   {
-    "id": "a3dca3bf-b383-4f72-98bb-dd455ac14b5d",
+    "id": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "code": "XOF",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 952,
+    "decimalDigits": 0,
     "symbol": "Fr",
     "name": "West African CFA franc"
   },
   {
-    "id": "8ab513e1-a830-4ef9-8515-29f4d3553a28",
+    "id": "92bb96bd-b000-4a8a-a012-f3f7a032db66",
     "code": "XPF",
-    "numericCode": 0,
-    "decimalDigits": 2,
+    "numericCode": 953,
+    "decimalDigits": 0,
     "symbol": "\u20A3",
     "name": "CFP franc"
   },
   {
-    "id": "642b423c-41ef-4ea4-bb6a-6a84eea9c6be",
+    "id": "efa389c2-d109-42b3-beb4-edd2217d6bc6",
     "code": "YER",
-    "numericCode": 0,
+    "numericCode": 886,
     "decimalDigits": 2,
     "symbol": "\uFDFC",
     "name": "Yemeni rial"
   },
   {
-    "id": "d92d2852-778c-4ccf-aa0e-a079b5d7af42",
+    "id": "34045e5d-0be1-4722-9505-0bb651d12721",
     "code": "ZAR",
-    "numericCode": 0,
+    "numericCode": 710,
     "decimalDigits": 2,
     "symbol": "R",
     "name": "South African rand"
   },
   {
-    "id": "4110bbd5-79d5-4352-ba0b-f92007e273ac",
+    "id": "5b781545-6fbd-4c70-ab3e-4687e57e010b",
     "code": "ZMW",
-    "numericCode": 0,
+    "numericCode": 967,
     "decimalDigits": 2,
     "symbol": "ZK",
     "name": "Zambian kwacha"
   },
   {
-    "id": "c6fca072-acd7-441c-9cfa-73b01005b64e",
+    "id": "516d0a61-f615-48f4-8e8a-36ec53fa25d9",
     "code": "ZWB",
     "numericCode": 0,
     "decimalDigits": 2,
