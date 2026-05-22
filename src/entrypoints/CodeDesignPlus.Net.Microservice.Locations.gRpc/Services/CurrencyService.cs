@@ -14,13 +14,13 @@ public class CurrencyService(IMediator mediator, IMapper mapper) : gRpc.Currency
             Limit = 500
         }));
 
-        var currencyId = Guid.Parse(request.Id ?? Guid.Empty.ToString());
+        var currencyId = Guid.TryParse(request.Id, out var parsedId) ? parsedId : Guid.Empty;
 
         var currency = currencies.Data.FirstOrDefault(x =>
-            x.Id == currencyId ||
-            x.Name == request.Name ||
-            x.Code == request.Code ||
-            x.NumericCode == request.NumericCode
+            (currencyId != Guid.Empty && x.Id == currencyId) ||
+            (!string.IsNullOrEmpty(request.Name) && x.Name == request.Name) ||
+            (!string.IsNullOrEmpty(request.Code) && x.Code == request.Code) ||
+            (request.NumericCode != 0 && x.NumericCode == request.NumericCode)
         );
 
         InfrastructureGuard.IsNull(currency, Errors.CurrencyNotFound);

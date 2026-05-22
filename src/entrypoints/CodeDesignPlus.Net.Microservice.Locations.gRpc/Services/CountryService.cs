@@ -14,14 +14,14 @@ public class CountryService(IMediator mediator, IMapper mapper) : gRpc.CountrySe
             Limit = 500
         }));
 
-        var countryId = Guid.Parse(request.Id ?? Guid.Empty.ToString());
+        var countryId = Guid.TryParse(request.Id, out var parsedId) ? parsedId : Guid.Empty;
 
         var country = countries.Data.FirstOrDefault(x =>
-            x.Id == countryId ||
-            x.Name == request.Name ||
-            x.Code == request.Code ||
-            x.Alpha2 == request.Alpha2 ||
-            x.Alpha3 == request.Alpha3
+            (countryId != Guid.Empty && x.Id == countryId) ||
+            (!string.IsNullOrEmpty(request.Name) && x.Name == request.Name) ||
+            (!string.IsNullOrEmpty(request.Code) && x.Code == request.Code) ||
+            (!string.IsNullOrEmpty(request.Alpha2) && x.Alpha2 == request.Alpha2) ||
+            (!string.IsNullOrEmpty(request.Alpha3) && x.Alpha3 == request.Alpha3)
         );
 
         InfrastructureGuard.IsNull(country, Errors.CountryNotFound);
