@@ -1,0 +1,1072 @@
+[
+  {
+    "id": "8aac7a2b-d581-4436-92bd-1b2090c09488",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Usaquen"
+  },
+  {
+    "id": "c62060d8-5424-46c0-a71a-f9af63d1860f",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Chapinero"
+  },
+  {
+    "id": "af6de110-ba9d-4cca-875c-c12f37ca62ed",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Santa Fe"
+  },
+  {
+    "id": "16e2a91f-e993-43db-aa54-e77e4ebade4c",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "San Cristobal"
+  },
+  {
+    "id": "3d941112-df69-46e7-bb2d-a0a0bdb4c0c2",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Usme"
+  },
+  {
+    "id": "8afe34eb-e239-4536-b1f2-31f5dd9ecb6c",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Tunjuelito"
+  },
+  {
+    "id": "2b7e1dff-fb6f-4b03-9a89-0fba2c06afba",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Bosa"
+  },
+  {
+    "id": "da831761-682f-46c7-8a4b-1e1948b967e2",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Kennedy"
+  },
+  {
+    "id": "5e548ca6-32bf-4362-895a-f2a5f0bbedb0",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Fontibon"
+  },
+  {
+    "id": "d62eb0e6-bffd-45f7-b194-d44369a5e9d4",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Engativa"
+  },
+  {
+    "id": "0e593081-175e-43d7-a4fd-bff7eafb40ba",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Suba"
+  },
+  {
+    "id": "7c7527bc-ec51-4b9d-87c3-3a32ac17ebd2",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Barrios Unidos"
+  },
+  {
+    "id": "d99677f4-edfa-44aa-a02c-3e30e460367a",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Teusaquillo"
+  },
+  {
+    "id": "64ee7893-f8ae-4ef9-a8c3-5d93aae010b7",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Los Martires"
+  },
+  {
+    "id": "2626577e-64ef-4eb9-9ea7-aa4c1084522b",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Antonio Narino"
+  },
+  {
+    "id": "d590b056-7a48-4278-95ec-de80d89ffeab",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Puente Aranda"
+  },
+  {
+    "id": "b58180c9-d74a-4cf6-a127-a52f9aaf7ae5",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "La Candelaria"
+  },
+  {
+    "id": "b86b8697-faca-4031-bda5-40c94387202f",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Rafael Uribe Uribe"
+  },
+  {
+    "id": "f3cb965b-137f-4b93-9e44-07105f97820e",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Ciudad Bolivar"
+  },
+  {
+    "id": "021e223a-0b37-4820-997c-947e47d7d8cf",
+    "idCity": "95893be9-d02e-4919-916e-75953578abc2",
+    "name": "Sumapaz"
+  },
+  {
+    "id": "37ec814c-e2a6-43f1-8498-bf9603c7db03",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Popular"
+  },
+  {
+    "id": "77d73428-53f0-4924-8d7e-bbaf493e9b2d",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Santa Cruz"
+  },
+  {
+    "id": "b2f7650a-a2ce-49e1-aceb-fe8691ccd2e8",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Manrique"
+  },
+  {
+    "id": "b6e21883-8e0c-4c2e-a79f-3b79949bcfb7",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Aranjuez"
+  },
+  {
+    "id": "b61d0592-6588-4a90-9369-93dc2f9f8085",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Castilla"
+  },
+  {
+    "id": "796a3963-49cc-42ce-b958-f4c9c4904784",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Doce de Octubre"
+  },
+  {
+    "id": "f759d1ed-2652-47dd-8c26-800176f6e110",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Robledo"
+  },
+  {
+    "id": "8450a6d6-fd35-4dc4-9770-4b093814be0b",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Villa Hermosa"
+  },
+  {
+    "id": "e0f5fb1c-5be5-4b48-bf83-2c61bbafbd8d",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Buenos Aires"
+  },
+  {
+    "id": "1c59edb3-045a-4283-a294-39329c5d67db",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "La Candelaria"
+  },
+  {
+    "id": "a1c5cf4b-f370-4ae9-93dd-02956031b382",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Laureles-Estadio"
+  },
+  {
+    "id": "73a848a7-9042-4538-b637-038561d38ca3",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "La America"
+  },
+  {
+    "id": "6de8cab2-6d83-4022-980a-ec60f6423299",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "San Javier"
+  },
+  {
+    "id": "8c76db5d-8322-4b0e-8c56-5bff25cb1ee5",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "El Poblado"
+  },
+  {
+    "id": "d773ea90-0eb6-43a0-8d86-66974fad6321",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Guayabal"
+  },
+  {
+    "id": "d17318c7-37e8-480a-a647-66d14d3e5c46",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Belen"
+  },
+  {
+    "id": "9645a41e-b2bb-456a-b3df-48c0d1deb2e3",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Palmitas"
+  },
+  {
+    "id": "799824fc-75e2-4957-a3f6-d25960a1a47a",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "San Cristobal"
+  },
+  {
+    "id": "35ee0c17-3e99-426d-a45a-429d056dc9ab",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Altavista"
+  },
+  {
+    "id": "b24449b0-0fe1-4d87-b3f4-4e63734e0372",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "San Antonio de Prado"
+  },
+  {
+    "id": "d25b7e60-7851-48fb-b17b-d827ba5d2367",
+    "idCity": "2541819e-9371-4987-8c96-6c2adab3c0d0",
+    "name": "Santa Elena"
+  },
+  {
+    "id": "45401e51-53c4-4b5d-b5d2-692ca4c72788",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 1"
+  },
+  {
+    "id": "54081cef-5a6c-4ef4-8ea1-eaa8c84cae3b",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 2"
+  },
+  {
+    "id": "6b98dc0d-fbce-4858-8f1b-3c2589ae327b",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 3"
+  },
+  {
+    "id": "71dc9fc1-84bd-4a1f-9651-9867c9b9abae",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 4"
+  },
+  {
+    "id": "ddae42fa-1a58-4e55-b20a-9e280f1065d9",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 5"
+  },
+  {
+    "id": "0f876d2c-df8c-4946-bf31-84e120dca8bf",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 6"
+  },
+  {
+    "id": "2721d9b2-41d6-4ae0-8aa0-905cb4227c47",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 7"
+  },
+  {
+    "id": "b0afea80-06ae-4ab9-bd12-d790d5c56330",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 8"
+  },
+  {
+    "id": "6b5f9317-2294-4809-a7f3-14a76f11d6e6",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 9"
+  },
+  {
+    "id": "7c9a5017-0ba7-43b2-a4ac-9511d309fd9f",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 10"
+  },
+  {
+    "id": "92ad5093-b92c-4aac-aa84-315cbd37a29e",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 11"
+  },
+  {
+    "id": "0aab52b6-ceea-4874-aa64-cbdf1db49349",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 12"
+  },
+  {
+    "id": "5bb13c03-2576-4c44-9228-c43122b5da8e",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 13"
+  },
+  {
+    "id": "bb695990-2908-411e-b95f-035bf09dd7e0",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 14"
+  },
+  {
+    "id": "8263394d-b8c8-46a9-9d7b-43519b99409d",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 15"
+  },
+  {
+    "id": "3943c8db-1ce9-41e7-8c09-d4c4005e3024",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 16"
+  },
+  {
+    "id": "0bd3079f-a2e8-47a7-ab7d-30c5827a7c2f",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 17"
+  },
+  {
+    "id": "c40b4d5c-b221-41c5-b28b-8ec9ec74a381",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 18"
+  },
+  {
+    "id": "652f0097-6f59-4594-af41-b99a25bcc9fa",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 19"
+  },
+  {
+    "id": "15a39c7a-a209-4816-a2a8-6cf225b07927",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 20"
+  },
+  {
+    "id": "5cfafcc7-48bc-495a-95b7-624ac382b0e5",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 21"
+  },
+  {
+    "id": "aee6a522-31d3-4531-a96e-f22bae56b189",
+    "idCity": "3b121424-a04b-4861-b310-cb47218749e2",
+    "name": "Comuna 22"
+  },
+  {
+    "id": "417b5ae7-6ab0-4474-86c9-0c11e24bc204",
+    "idCity": "5255dfb9-75b2-410a-98e2-9b341d3e115e",
+    "name": "Norte-Centro Historico"
+  },
+  {
+    "id": "a0b53cb3-3cbd-42dd-96d2-2077492d1238",
+    "idCity": "5255dfb9-75b2-410a-98e2-9b341d3e115e",
+    "name": "Sur Occidente"
+  },
+  {
+    "id": "32dd4c97-99b5-4cb9-9338-e8cc5b6ffca5",
+    "idCity": "5255dfb9-75b2-410a-98e2-9b341d3e115e",
+    "name": "Sur Oriente"
+  },
+  {
+    "id": "94f4d2eb-73aa-4505-a500-26cc44de6f43",
+    "idCity": "5255dfb9-75b2-410a-98e2-9b341d3e115e",
+    "name": "Metropolitana"
+  },
+  {
+    "id": "50337f6a-b706-4b50-851d-0d876d5ab25e",
+    "idCity": "5255dfb9-75b2-410a-98e2-9b341d3e115e",
+    "name": "Riomar"
+  },
+  {
+    "id": "d2be3bb4-ffcb-47ee-9a5a-088d89194a30",
+    "idCity": "391a9c45-95fa-4c4b-8ddd-b45945bfed19",
+    "name": "Historica y del Caribe Norte"
+  },
+  {
+    "id": "e6ededb7-59ae-4c83-a507-e173ed6c8ea2",
+    "idCity": "391a9c45-95fa-4c4b-8ddd-b45945bfed19",
+    "name": "De la Virgen y Turistica"
+  },
+  {
+    "id": "51be4f84-7098-4fcd-bd6c-a9295dc3ea39",
+    "idCity": "391a9c45-95fa-4c4b-8ddd-b45945bfed19",
+    "name": "Industrial y de la Bahia"
+  },
+  {
+    "id": "c844d2cb-6496-4bf6-8787-ff91430d70b7",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 1"
+  },
+  {
+    "id": "62ad9aaa-a9fc-475c-aa47-1445690aa051",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 2"
+  },
+  {
+    "id": "c5d5d4ee-6f9f-4e5d-ab87-b3085f550639",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 3"
+  },
+  {
+    "id": "59dc89cc-33ac-45eb-8f4f-4d82d3cd64d4",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 4"
+  },
+  {
+    "id": "6fc3e4f4-014b-49a3-a467-ec2c24f8d226",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 5"
+  },
+  {
+    "id": "c93edb8c-088b-4851-8b17-254a2cd126b3",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 6"
+  },
+  {
+    "id": "8e89c566-9845-40d7-8c15-cb5526d2d036",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 7"
+  },
+  {
+    "id": "a9036478-a56d-443b-9ebb-160782a38e05",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 8"
+  },
+  {
+    "id": "5abdecf2-1984-4657-adc0-f7a892ee2a8a",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 9"
+  },
+  {
+    "id": "41f4d8e3-ae72-4e36-af83-b58637d8af50",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 10"
+  },
+  {
+    "id": "bce9e595-6d68-4189-a0da-5fda2637876f",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 11"
+  },
+  {
+    "id": "3652478b-0b81-42d3-86c8-82a49ecedd4c",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 12"
+  },
+  {
+    "id": "4f70b9ed-3a5b-41e4-a32f-77f6e995697d",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 13"
+  },
+  {
+    "id": "ef919bb0-3614-42a9-9592-aa8660f3dd48",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 14"
+  },
+  {
+    "id": "e07e50f6-b858-4d45-8d6a-56b33d8578d5",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 15"
+  },
+  {
+    "id": "b2777b8d-08c6-46a2-a681-3e1afc4de236",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 16"
+  },
+  {
+    "id": "4acce4b0-4c44-42a4-8723-571e5968302f",
+    "idCity": "01d5f609-23ea-46c7-9f05-bb1d2397c8dd",
+    "name": "Comuna 17"
+  },
+  {
+    "id": "16af07a8-1461-448a-bc18-6bbfdbc31df0",
+    "idCity": "d8ebddae-ee25-4b9c-82bb-bf58b1fe876b",
+    "name": "Comuna 1"
+  },
+  {
+    "id": "a0ca3b44-d9c7-4fb3-9680-4cbe1238bf70",
+    "idCity": "d8ebddae-ee25-4b9c-82bb-bf58b1fe876b",
+    "name": "Comuna 2"
+  },
+  {
+    "id": "d685665d-4a63-4181-8076-6735d03ca06b",
+    "idCity": "d8ebddae-ee25-4b9c-82bb-bf58b1fe876b",
+    "name": "Comuna 3"
+  },
+  {
+    "id": "61bd80e0-559c-4b6e-b239-6f6b66ebc3fd",
+    "idCity": "d8ebddae-ee25-4b9c-82bb-bf58b1fe876b",
+    "name": "Comuna 4"
+  },
+  {
+    "id": "4ebbcd80-ce08-4ff1-9e0e-f9d8acdfb30c",
+    "idCity": "d8ebddae-ee25-4b9c-82bb-bf58b1fe876b",
+    "name": "Comuna 5"
+  },
+  {
+    "id": "7ddb488d-913d-451d-a8ef-7acdc0c575c8",
+    "idCity": "d8ebddae-ee25-4b9c-82bb-bf58b1fe876b",
+    "name": "Comuna 6"
+  },
+  {
+    "id": "2e2a0f09-b17d-492e-ad9e-c2108e715ad0",
+    "idCity": "d8ebddae-ee25-4b9c-82bb-bf58b1fe876b",
+    "name": "Comuna 7"
+  },
+  {
+    "id": "cd9df6a5-4aa7-4d31-a0f6-2d49ca794df7",
+    "idCity": "d8ebddae-ee25-4b9c-82bb-bf58b1fe876b",
+    "name": "Comuna 8"
+  },
+  {
+    "id": "27b566c5-e321-4b76-a822-b7e2d02b53bf",
+    "idCity": "d8ebddae-ee25-4b9c-82bb-bf58b1fe876b",
+    "name": "Comuna 9"
+  },
+  {
+    "id": "21c77892-4c0d-47fd-bb8f-408ebc4fda5d",
+    "idCity": "d8ebddae-ee25-4b9c-82bb-bf58b1fe876b",
+    "name": "Comuna 10"
+  },
+  {
+    "id": "7954a108-9986-44eb-ba32-45df7686a705",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Centro"
+  },
+  {
+    "id": "9dee0232-8fef-4ef5-8eda-b5a63321565c",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Rio Otun"
+  },
+  {
+    "id": "f3ef0cfc-e91b-4eac-aef5-3dd727438b0e",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "San Joaquin"
+  },
+  {
+    "id": "6370d1b4-d27f-49a9-91d1-c6890f81954c",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Cuba"
+  },
+  {
+    "id": "27bba17c-fa48-432b-aaeb-fe759595ec91",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Del Cafe"
+  },
+  {
+    "id": "9bd51ba5-22a8-4d16-95cc-18e3f2d2d9f3",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "El Oso"
+  },
+  {
+    "id": "08c48e54-6f87-491a-ac01-fa3f1c9d84b7",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Perla del Otun"
+  },
+  {
+    "id": "97d4b135-551a-459b-9fce-5ff0778facaa",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Consota"
+  },
+  {
+    "id": "c4eb11fd-570d-4e93-8263-039335823644",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "El Rocio"
+  },
+  {
+    "id": "33e98782-6451-4373-b1a0-7fa8c0ddb632",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Universidad"
+  },
+  {
+    "id": "0e58e911-62ab-43b0-9944-4e37bc270db6",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Boston"
+  },
+  {
+    "id": "375c65b5-2ac2-4930-b7ef-943a249473fe",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Villavicencio"
+  },
+  {
+    "id": "9dae54f2-c7de-46a3-ad12-bc1e6a41b993",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Oriente"
+  },
+  {
+    "id": "8adbc1be-0291-43c2-84ca-618452bf2371",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "San Nicolas"
+  },
+  {
+    "id": "eb8fc705-9233-4eae-97a6-d2dc9e4736dd",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Villasantana"
+  },
+  {
+    "id": "0d952587-8cca-4ea2-a62a-0bb145c8be04",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Ferrocarril"
+  },
+  {
+    "id": "d1cad347-b834-4964-92b6-6b7273783012",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Ol\u00EDmpica"
+  },
+  {
+    "id": "f17f63dc-9a64-4b6e-9074-5abec4830bfa",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Belmonte"
+  },
+  {
+    "id": "77920f61-8a78-48b4-9a86-f8b64405c54a",
+    "idCity": "d44f90ec-ee74-47eb-9dcb-aaea0c1e9f8f",
+    "name": "Jard\u00EDn"
+  },
+  {
+    "id": "c0983f4d-5343-4fdb-84c3-7dd85784762a",
+    "idCity": "0ca81f0d-895c-465d-b2fa-50e0dcc88135",
+    "name": "Atardeceres"
+  },
+  {
+    "id": "ef2cb8f0-08ef-45fb-953b-2ab6dce6e2cc",
+    "idCity": "0ca81f0d-895c-465d-b2fa-50e0dcc88135",
+    "name": "San Jose"
+  },
+  {
+    "id": "08801536-60b8-47a3-a177-613175c6b31a",
+    "idCity": "0ca81f0d-895c-465d-b2fa-50e0dcc88135",
+    "name": "Cumanday"
+  },
+  {
+    "id": "413eb651-ca0d-411d-8895-9ae5274cc37f",
+    "idCity": "0ca81f0d-895c-465d-b2fa-50e0dcc88135",
+    "name": "La Estacion"
+  },
+  {
+    "id": "df35deee-8d9b-46cd-94e3-bf27282cb282",
+    "idCity": "0ca81f0d-895c-465d-b2fa-50e0dcc88135",
+    "name": "Ciudadela del Norte"
+  },
+  {
+    "id": "6037b576-eae4-4675-ab8c-a521246831e6",
+    "idCity": "0ca81f0d-895c-465d-b2fa-50e0dcc88135",
+    "name": "Cerro de Oro"
+  },
+  {
+    "id": "ad930ead-68bf-4e79-9f20-8afca0f801e3",
+    "idCity": "0ca81f0d-895c-465d-b2fa-50e0dcc88135",
+    "name": "Tesorito"
+  },
+  {
+    "id": "82befbe2-2753-4a7f-9aad-3b520300add7",
+    "idCity": "0ca81f0d-895c-465d-b2fa-50e0dcc88135",
+    "name": "Palogrande"
+  },
+  {
+    "id": "45d963c7-4b92-4046-92a9-d21f54a2094b",
+    "idCity": "0ca81f0d-895c-465d-b2fa-50e0dcc88135",
+    "name": "Universitaria"
+  },
+  {
+    "id": "0623a169-d3e4-477d-a1a9-1c0550b404f3",
+    "idCity": "0ca81f0d-895c-465d-b2fa-50e0dcc88135",
+    "name": "La Fuente"
+  },
+  {
+    "id": "e9f11716-4a34-4e17-8fed-b7317f90de50",
+    "idCity": "0ca81f0d-895c-465d-b2fa-50e0dcc88135",
+    "name": "La Macarena"
+  },
+  {
+    "id": "0505978d-772a-403c-8525-c0af19e8dd30",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 1"
+  },
+  {
+    "id": "646b2b04-3d37-4533-88d8-df51054dd851",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 2"
+  },
+  {
+    "id": "24f4cba4-4bb6-44d1-a156-2d244a1e6163",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 3"
+  },
+  {
+    "id": "5bf01681-318b-4806-9914-2f640682c50a",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 4"
+  },
+  {
+    "id": "2d99a1c0-9d2a-4475-b6d6-ced067a3545f",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 5"
+  },
+  {
+    "id": "345f6400-cbc8-439b-a263-561ef00d11b2",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 6"
+  },
+  {
+    "id": "0357d8dd-0797-463b-a48e-42e7f85c5ac3",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 7"
+  },
+  {
+    "id": "58c794f4-dd28-467d-ba9f-537b7d261373",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 8"
+  },
+  {
+    "id": "3f29ef6a-31c8-44ac-80e4-05fb98fc4ece",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 9"
+  },
+  {
+    "id": "2f2eedc6-d9d5-4e00-8f3b-d22ffa8fcc1e",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 10"
+  },
+  {
+    "id": "00fcfc3e-2f47-4818-ba94-af64c30bed3e",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 11"
+  },
+  {
+    "id": "926c8eb9-58de-4fe0-aeb8-156b86cf08e1",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 12"
+  },
+  {
+    "id": "47553513-fc50-4c7f-a110-f1f47f4b279d",
+    "idCity": "109303c1-84ad-4730-a148-36e7086cc8e0",
+    "name": "Comuna 13"
+  },
+  {
+    "id": "7ea241b4-d419-4604-9035-13d7ff2b8fc0",
+    "idCity": "0bad7643-5810-4ff7-9c5b-322b8c428840",
+    "name": "Comuna 1"
+  },
+  {
+    "id": "7403e923-329e-404d-8133-a94594cf9e2d",
+    "idCity": "0bad7643-5810-4ff7-9c5b-322b8c428840",
+    "name": "Comuna 2"
+  },
+  {
+    "id": "68601753-31f4-4802-9fbf-5158885e124d",
+    "idCity": "0bad7643-5810-4ff7-9c5b-322b8c428840",
+    "name": "Comuna 3"
+  },
+  {
+    "id": "2c2711f4-5402-4982-98e1-8c621f0aff50",
+    "idCity": "0bad7643-5810-4ff7-9c5b-322b8c428840",
+    "name": "Comuna 4"
+  },
+  {
+    "id": "de20dc3e-2e02-4df1-9c2f-364222d195dc",
+    "idCity": "0bad7643-5810-4ff7-9c5b-322b8c428840",
+    "name": "Comuna 5"
+  },
+  {
+    "id": "25bebcfe-b914-466d-b12a-8a724763c69b",
+    "idCity": "0bad7643-5810-4ff7-9c5b-322b8c428840",
+    "name": "Comuna 6"
+  },
+  {
+    "id": "61aad313-6c54-4eee-beee-c0f4dd4d3223",
+    "idCity": "0bad7643-5810-4ff7-9c5b-322b8c428840",
+    "name": "Comuna 7"
+  },
+  {
+    "id": "a526c0c5-a7a1-4b90-9f96-76f0796c3282",
+    "idCity": "0bad7643-5810-4ff7-9c5b-322b8c428840",
+    "name": "Comuna 8"
+  },
+  {
+    "id": "afbcee7f-0653-4216-b519-df00062951fa",
+    "idCity": "0f7a31b0-6cdd-40d2-a567-d9f417c3805e",
+    "name": "Comuna 1"
+  },
+  {
+    "id": "c4d4c810-fac4-441a-93c3-8fd7a38fb550",
+    "idCity": "0f7a31b0-6cdd-40d2-a567-d9f417c3805e",
+    "name": "Comuna 2"
+  },
+  {
+    "id": "32150d32-63f2-4a50-a856-ef2a4456d68e",
+    "idCity": "0f7a31b0-6cdd-40d2-a567-d9f417c3805e",
+    "name": "Comuna 3"
+  },
+  {
+    "id": "f4c049b1-a0a7-4d23-8dd5-48407f6ef570",
+    "idCity": "0f7a31b0-6cdd-40d2-a567-d9f417c3805e",
+    "name": "Comuna 4"
+  },
+  {
+    "id": "97a9dbf6-6203-4414-bc9a-06141c633f4c",
+    "idCity": "0f7a31b0-6cdd-40d2-a567-d9f417c3805e",
+    "name": "Comuna 5"
+  },
+  {
+    "id": "d236b592-241d-4cac-8048-613f73ea6f0c",
+    "idCity": "0f7a31b0-6cdd-40d2-a567-d9f417c3805e",
+    "name": "Comuna 6"
+  },
+  {
+    "id": "014573a7-f14a-49e4-9505-95ee43d85b25",
+    "idCity": "0f7a31b0-6cdd-40d2-a567-d9f417c3805e",
+    "name": "Comuna 7"
+  },
+  {
+    "id": "ffe84ddd-7a1b-46a2-8548-eb589919fa62",
+    "idCity": "0f7a31b0-6cdd-40d2-a567-d9f417c3805e",
+    "name": "Comuna 8"
+  },
+  {
+    "id": "b47398c3-9601-4681-b4ef-05fb4008fe39",
+    "idCity": "0f7a31b0-6cdd-40d2-a567-d9f417c3805e",
+    "name": "Comuna 9"
+  },
+  {
+    "id": "d352d48f-e3c2-4a5b-8e31-f1c7659ff709",
+    "idCity": "0f7a31b0-6cdd-40d2-a567-d9f417c3805e",
+    "name": "Comuna 10"
+  },
+  {
+    "id": "3c1a4bac-422b-4127-82d9-2633d246bb9a",
+    "idCity": "0f7a31b0-6cdd-40d2-a567-d9f417c3805e",
+    "name": "Comuna 11"
+  },
+  {
+    "id": "cc1e01bb-613a-4bb8-b8da-17d6a501de15",
+    "idCity": "0f7a31b0-6cdd-40d2-a567-d9f417c3805e",
+    "name": "Comuna 12"
+  },
+  {
+    "id": "893edf31-7510-4502-adfe-d4df514a3084",
+    "idCity": "07ddc433-bac4-4c5f-b524-6833caf4b588",
+    "name": "Comuna 1"
+  },
+  {
+    "id": "eb4c4e31-955b-4856-a405-95306612b608",
+    "idCity": "07ddc433-bac4-4c5f-b524-6833caf4b588",
+    "name": "Comuna 2"
+  },
+  {
+    "id": "629dc8c4-e552-4e21-982e-e76ee01c173a",
+    "idCity": "07ddc433-bac4-4c5f-b524-6833caf4b588",
+    "name": "Comuna 3"
+  },
+  {
+    "id": "c10f819e-e35e-4e83-8fb9-4fb97e50ce1d",
+    "idCity": "07ddc433-bac4-4c5f-b524-6833caf4b588",
+    "name": "Comuna 4"
+  },
+  {
+    "id": "96f1ee26-b5ae-42bd-929c-7ebd95b38b79",
+    "idCity": "07ddc433-bac4-4c5f-b524-6833caf4b588",
+    "name": "Comuna 5"
+  },
+  {
+    "id": "6790f701-386c-43a4-9044-755732ed756c",
+    "idCity": "07ddc433-bac4-4c5f-b524-6833caf4b588",
+    "name": "Comuna 6"
+  },
+  {
+    "id": "685933cf-4f89-450d-b0e7-7ea99a076182",
+    "idCity": "07ddc433-bac4-4c5f-b524-6833caf4b588",
+    "name": "Comuna 7"
+  },
+  {
+    "id": "bfcd64f2-1890-4410-bd91-a8928c27b7d9",
+    "idCity": "07ddc433-bac4-4c5f-b524-6833caf4b588",
+    "name": "Comuna 8"
+  },
+  {
+    "id": "5b063023-ba21-451c-864e-5719a37f635f",
+    "idCity": "07ddc433-bac4-4c5f-b524-6833caf4b588",
+    "name": "Comuna 9"
+  },
+  {
+    "id": "b32c9eab-63fb-48ac-a115-f9bac84d6ab8",
+    "idCity": "07ddc433-bac4-4c5f-b524-6833caf4b588",
+    "name": "Comuna 10"
+  },
+  {
+    "id": "d619227e-345a-40c6-92bc-bf4e85ceb5c0",
+    "idCity": "bf9974f4-effb-4d51-a393-06b6b1353fac",
+    "name": "Comuna 1"
+  },
+  {
+    "id": "d39da7b6-683e-443c-8dec-6b9d254e3a1e",
+    "idCity": "bf9974f4-effb-4d51-a393-06b6b1353fac",
+    "name": "Comuna 2"
+  },
+  {
+    "id": "f7a7d41f-6a18-49c9-aee4-1a330f158f2b",
+    "idCity": "bf9974f4-effb-4d51-a393-06b6b1353fac",
+    "name": "Comuna 3"
+  },
+  {
+    "id": "49ecb9d9-ff12-40d0-b342-cd0b03e9f613",
+    "idCity": "bf9974f4-effb-4d51-a393-06b6b1353fac",
+    "name": "Comuna 4"
+  },
+  {
+    "id": "fddb58a7-4b11-40a1-86dc-2e985af501b1",
+    "idCity": "bf9974f4-effb-4d51-a393-06b6b1353fac",
+    "name": "Comuna 5"
+  },
+  {
+    "id": "012d58ff-debe-44f5-a6bc-692a42a80306",
+    "idCity": "bf9974f4-effb-4d51-a393-06b6b1353fac",
+    "name": "Comuna 6"
+  },
+  {
+    "id": "39a8a762-2efa-48d7-b9a4-072b36971d12",
+    "idCity": "bf9974f4-effb-4d51-a393-06b6b1353fac",
+    "name": "Comuna 7"
+  },
+  {
+    "id": "088ddc5d-eef1-4b1b-9ee0-f6b5c48cfd65",
+    "idCity": "bf9974f4-effb-4d51-a393-06b6b1353fac",
+    "name": "Comuna 8"
+  },
+  {
+    "id": "7b374b2e-afd2-4aaa-b006-259a1ccc7fe0",
+    "idCity": "bf9974f4-effb-4d51-a393-06b6b1353fac",
+    "name": "Comuna 9"
+  },
+  {
+    "id": "ebdd45c7-c84a-4b84-bcc7-bd15c42156ee",
+    "idCity": "523ddbc4-10e3-43ad-943a-116b4fefe760",
+    "name": "Comuna 1"
+  },
+  {
+    "id": "7346bb5a-128a-4cfb-823c-beea832c1352",
+    "idCity": "523ddbc4-10e3-43ad-943a-116b4fefe760",
+    "name": "Comuna 2"
+  },
+  {
+    "id": "733e2e64-6958-42b0-ad05-0f65598ec2c8",
+    "idCity": "523ddbc4-10e3-43ad-943a-116b4fefe760",
+    "name": "Comuna 3"
+  },
+  {
+    "id": "86112d19-e900-4cf7-aef6-1482109b8ae6",
+    "idCity": "523ddbc4-10e3-43ad-943a-116b4fefe760",
+    "name": "Comuna 4"
+  },
+  {
+    "id": "3b088311-bec6-4ce9-af25-998d51bd4d0b",
+    "idCity": "523ddbc4-10e3-43ad-943a-116b4fefe760",
+    "name": "Comuna 5"
+  },
+  {
+    "id": "5bc8fd22-01a1-499b-beb4-71e14891fc80",
+    "idCity": "523ddbc4-10e3-43ad-943a-116b4fefe760",
+    "name": "Comuna 6"
+  },
+  {
+    "id": "e3c8dad7-dff3-4fc5-82e9-93ea3097b5ab",
+    "idCity": "523ddbc4-10e3-43ad-943a-116b4fefe760",
+    "name": "Comuna 7"
+  },
+  {
+    "id": "ff523805-73bc-4e0f-a5eb-862d6443065a",
+    "idCity": "523ddbc4-10e3-43ad-943a-116b4fefe760",
+    "name": "Comuna 8"
+  },
+  {
+    "id": "66bc8dbe-3d00-4dd5-82e4-d185daa5710a",
+    "idCity": "523ddbc4-10e3-43ad-943a-116b4fefe760",
+    "name": "Comuna 9"
+  },
+  {
+    "id": "2452feca-1378-4653-b6f8-165658280230",
+    "idCity": "523ddbc4-10e3-43ad-943a-116b4fefe760",
+    "name": "Comuna 10"
+  },
+  {
+    "id": "ce2ab558-f8f9-4e41-9173-dfd747bb9258",
+    "idCity": "94254956-442b-4dd3-b83d-9fcaaffc8eff",
+    "name": "Comuna 1"
+  },
+  {
+    "id": "652e9eee-379a-4e04-8c9f-dee45e238221",
+    "idCity": "94254956-442b-4dd3-b83d-9fcaaffc8eff",
+    "name": "Comuna 2"
+  },
+  {
+    "id": "4b48a532-14c2-4f57-a4dc-cafd159beed4",
+    "idCity": "94254956-442b-4dd3-b83d-9fcaaffc8eff",
+    "name": "Comuna 3"
+  },
+  {
+    "id": "ae0631e9-df37-4a67-878e-2c5cebf766c7",
+    "idCity": "94254956-442b-4dd3-b83d-9fcaaffc8eff",
+    "name": "Comuna 4"
+  },
+  {
+    "id": "06e2164d-a8e6-4726-89c9-6659c1d5b7dd",
+    "idCity": "94254956-442b-4dd3-b83d-9fcaaffc8eff",
+    "name": "Comuna 5"
+  },
+  {
+    "id": "4dda278c-7adb-4d79-8ea0-6f8744142ace",
+    "idCity": "94254956-442b-4dd3-b83d-9fcaaffc8eff",
+    "name": "Comuna 6"
+  },
+  {
+    "id": "db9a3982-4a99-497e-b412-b6a007b0c6b1",
+    "idCity": "94254956-442b-4dd3-b83d-9fcaaffc8eff",
+    "name": "Comuna 7"
+  },
+  {
+    "id": "e1ceef40-3a64-4b93-b327-efaf824e528c",
+    "idCity": "94254956-442b-4dd3-b83d-9fcaaffc8eff",
+    "name": "Comuna 8"
+  },
+  {
+    "id": "ef3085db-98e5-4b62-938e-2a53d0c2458e",
+    "idCity": "94254956-442b-4dd3-b83d-9fcaaffc8eff",
+    "name": "Comuna 9"
+  },
+  {
+    "id": "7f698042-8016-4a50-a6ef-d1b19372ec35",
+    "idCity": "dd6f24e4-71cb-4a75-a44f-76003d7830cb",
+    "name": "Comuna 1"
+  },
+  {
+    "id": "6bcf25a4-c8f6-460c-a833-6123edc95926",
+    "idCity": "dd6f24e4-71cb-4a75-a44f-76003d7830cb",
+    "name": "Comuna 2"
+  },
+  {
+    "id": "3b7b84d7-3c32-4c40-b566-379fa95e7eae",
+    "idCity": "dd6f24e4-71cb-4a75-a44f-76003d7830cb",
+    "name": "Comuna 3"
+  },
+  {
+    "id": "6b153e18-4715-4496-88ee-a662e19e392b",
+    "idCity": "dd6f24e4-71cb-4a75-a44f-76003d7830cb",
+    "name": "Comuna 4"
+  },
+  {
+    "id": "a0b55eec-4e11-42af-b9bc-d5bcc96e7b9b",
+    "idCity": "dd6f24e4-71cb-4a75-a44f-76003d7830cb",
+    "name": "Comuna 5"
+  },
+  {
+    "id": "e358b026-1d5d-4b0a-ac8a-2777a1363867",
+    "idCity": "dd6f24e4-71cb-4a75-a44f-76003d7830cb",
+    "name": "Comuna 6"
+  },
+  {
+    "id": "23c59a3f-b812-4189-ac9e-da74674555f2",
+    "idCity": "4ac40216-126e-4a5f-b9ac-4d1912b5691a",
+    "name": "Comuna 1"
+  },
+  {
+    "id": "b4561f19-f9e8-42e9-8473-da0f8fea1789",
+    "idCity": "4ac40216-126e-4a5f-b9ac-4d1912b5691a",
+    "name": "Comuna 2"
+  },
+  {
+    "id": "6743e505-eba6-4caa-b463-f7447575430a",
+    "idCity": "4ac40216-126e-4a5f-b9ac-4d1912b5691a",
+    "name": "Comuna 3"
+  },
+  {
+    "id": "d5f87e84-51c0-4876-9198-0c7c05cb59ce",
+    "idCity": "4ac40216-126e-4a5f-b9ac-4d1912b5691a",
+    "name": "Comuna 4"
+  },
+  {
+    "id": "3d7cd8d1-44e2-49c6-8f03-bc26d7074e9c",
+    "idCity": "4ac40216-126e-4a5f-b9ac-4d1912b5691a",
+    "name": "Comuna 5"
+  },
+  {
+    "id": "0d2a68cb-aca4-4a93-8137-3651db612907",
+    "idCity": "4ac40216-126e-4a5f-b9ac-4d1912b5691a",
+    "name": "Comuna 6"
+  },
+  {
+    "id": "d0c9e6c6-d213-4050-8925-744756666211",
+    "idCity": "4ac40216-126e-4a5f-b9ac-4d1912b5691a",
+    "name": "Comuna 7"
+  },
+  {
+    "id": "19ddd2a9-6d2d-4c3d-b9f3-a2a7a7ddc4c9",
+    "idCity": "4ac40216-126e-4a5f-b9ac-4d1912b5691a",
+    "name": "Comuna 8"
+  },
+  {
+    "id": "1f0d2396-9dba-4c15-9f0f-0c3aee3a288a",
+    "idCity": "4ac40216-126e-4a5f-b9ac-4d1912b5691a",
+    "name": "Comuna 9"
+  }
+]

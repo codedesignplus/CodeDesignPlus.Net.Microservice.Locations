@@ -210,6 +210,64 @@ Each level follows the same CRUD pattern with parent filtering support.
 
 - **Seed data architecture:** The geographic database is populated via seed scripts rather than user input, ensuring data quality and consistency.
 
+## Seed Data Generator
+
+The microservice includes a console app (`tools/SeedGenerator/`) that generates seed JSON files from authoritative external sources.
+
+### How to run
+
+```bash
+cd tools/SeedGenerator
+dotnet run
+```
+
+This generates 6 JSON files in `src/domain/.../Infrastructure/Seeds/`:
+
+| File | Records | Source |
+|------|---------|--------|
+| seed-currencies.json | 162 | ISO 4217 via [mledoze/countries](https://github.com/mledoze/countries) |
+| seed-countries.json | 250 | ISO 3166 via [mledoze/countries](https://github.com/mledoze/countries) |
+| seed-co-states.json | 33 | DANE (datos.gov.co/resource/gdxc-w37w) |
+| seed-co-cities.json | 1122 | DANE (datos.gov.co/resource/gdxc-w37w) |
+| seed-co-localities.json | 214 | Built-in (18 major cities with comunas) |
+| seed-co-neighborhoods.json | 1724 | Datos Abiertos Bogota (barriolegalizado.json) |
+
+### How it works
+
+1. Fetches all countries + currencies from GitHub (mledoze/countries - ISO data)
+2. Fetches all Colombian departments and municipalities from DANE open data API
+3. Generates localities for 18 major Colombian cities (built-in data)
+4. Downloads Bogota's official GeoJSON of legalized neighborhoods (1724 barrios with locality codes)
+5. The `LocationSeedService` (BackgroundService) loads these JSONs at startup and inserts into MongoDB if empty
+
+### Current coverage
+
+| Level | Colombia | Global |
+|-------|----------|--------|
+| Countries | 1 (Colombia) | 250 (all) |
+| States/Departments | 33 (all DANE) | Only Colombia |
+| Cities/Municipalities | 1122 (all DANE) | Only Colombia |
+| Localities/Comunas | 214 (18 cities) | Only Colombia |
+| Neighborhoods/Barrios | 1724 (Bogota only) | Only Bogota |
+
+### TODOs
+
+- [ ] Add localities (comunas) for remaining cities with >200k inhabitants (~30 more cities: Soacha, Bello, Envigado, Itagui, Floridablanca, Soledad, Dosquebradas, Palmira, Tunja, etc.)
+- [ ] Add neighborhoods for other major cities (Medellin, Cali, Barranquilla) when open data APIs are available
+- [ ] Add states/cities for other Latin American countries (Mexico, Peru, Chile, etc.) from their respective census APIs
+- [ ] Add timezones to countries (currently defaulting to "UTC" — mledoze/countries doesn't include timezone data)
+- [ ] Consider fetching from an alternative API that includes timezones (e.g., restcountries.com when available)
+- [ ] Evaluate adding DANE codes as City.Code field for municipality identification
+- [ ] Add postal codes when source data is available
+
+### External data sources
+
+| Source | URL | Data |
+|--------|-----|------|
+| mledoze/countries | github.com/mledoze/countries | ISO 3166 countries + ISO 4217 currencies |
+| DANE Colombia | datos.gov.co/resource/gdxc-w37w | All departments + municipalities |
+| Datos Abiertos Bogota | datosabiertos.bogota.gov.co | Barrios legalizados GeoJSON |
+
 ## Related Microservices
 
 | Microservice | Direction | Integration Point                                                   |

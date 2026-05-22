@@ -1,0 +1,200 @@
+[
+  {
+    "id": "e03ec727-3dc7-42c1-8617-274c4e15f4f8",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "05",
+    "name": "ANTIOQUIA"
+  },
+  {
+    "id": "1289788a-2409-466a-8424-368eca707585",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "08",
+    "name": "ATL\u00C1NTICO"
+  },
+  {
+    "id": "33483304-bff3-408e-8759-d2a92cba2e73",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "11",
+    "name": "BOGOT\u00C1, D.C."
+  },
+  {
+    "id": "f48e13df-309c-4c5c-a2a3-5cd5c5b80265",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "13",
+    "name": "BOL\u00CDVAR"
+  },
+  {
+    "id": "3278dc72-025f-4074-89d4-cb95c5462779",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "15",
+    "name": "BOYAC\u00C1"
+  },
+  {
+    "id": "0073423a-8a5e-4127-acb0-4b7dba31bbff",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "17",
+    "name": "CALDAS"
+  },
+  {
+    "id": "9079cda8-38ea-4312-8538-24a68f2ef441",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "18",
+    "name": "CAQUET\u00C1"
+  },
+  {
+    "id": "1fa95ad8-b61e-4335-be33-9d15590b692d",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "19",
+    "name": "CAUCA"
+  },
+  {
+    "id": "d9130ca9-39f3-4a1e-8750-96ebdb2104bd",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "20",
+    "name": "CESAR"
+  },
+  {
+    "id": "ed220f23-e52a-49b1-9efe-dfb05ff266ab",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "23",
+    "name": "C\u00D3RDOBA"
+  },
+  {
+    "id": "341042cf-dcb2-4191-8a34-3e5e4f19180f",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "25",
+    "name": "CUNDINAMARCA"
+  },
+  {
+    "id": "cbf9bd00-6e24-438d-98c1-0eb16ac1fc81",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "27",
+    "name": "CHOC\u00D3"
+  },
+  {
+    "id": "f89403b5-85c9-4761-a887-85b5118cb3c0",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "41",
+    "name": "HUILA"
+  },
+  {
+    "id": "3a261615-ce82-42e7-a910-a18799e0e91c",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "44",
+    "name": "LA GUAJIRA"
+  },
+  {
+    "id": "a69b371a-7929-4804-a59c-1cbaa3ca68b7",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "47",
+    "name": "MAGDALENA"
+  },
+  {
+    "id": "48162525-6286-4120-8e43-8d3c19305624",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "50",
+    "name": "META"
+  },
+  {
+    "id": "07449fa6-0daa-42c0-bfe1-5f5f9e8d8fd9",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "52",
+    "name": "NARI\u00D1O"
+  },
+  {
+    "id": "d6934fdd-94f2-43a3-88df-cce6d3196e2f",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "54",
+    "name": "NORTE DE SANTANDER"
+  },
+  {
+    "id": "042fb809-5c5a-469c-bf81-bec7aa2d8f8a",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "63",
+    "name": "QUIND\u00CDO"
+  },
+  {
+    "id": "7905f787-dfc0-4605-b780-10c5ff8cd796",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "66",
+    "name": "RISARALDA"
+  },
+  {
+    "id": "ce27fcd2-b7af-46c6-80fa-e47884792619",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "68",
+    "name": "SANTANDER"
+  },
+  {
+    "id": "218dc53c-9fe1-407c-8d93-4d4047161363",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "70",
+    "name": "SUCRE"
+  },
+  {
+    "id": "e17136bf-73a5-4ca0-aa67-ebbdf40bce1d",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "73",
+    "name": "TOLIMA"
+  },
+  {
+    "id": "f53b0672-03bb-410e-ae7c-0ea612eb6e9e",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "76",
+    "name": "VALLE DEL CAUCA"
+  },
+  {
+    "id": "6d1e6fe7-20ff-46e2-8885-5ef31b2eafce",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "81",
+    "name": "ARAUCA"
+  },
+  {
+    "id": "c1e5bd4e-4eaa-4223-8efd-85a242982ec9",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "85",
+    "name": "CASANARE"
+  },
+  {
+    "id": "532a16d0-9a3a-4365-a27c-324d1270d9f9",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "86",
+    "name": "PUTUMAYO"
+  },
+  {
+    "id": "831fbfcd-5de5-4981-9875-375bbb0abe2b",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "88",
+    "name": "ARCHIPI\u00C9LAGO DE SAN ANDR\u00C9S, PROVIDENCIA Y SANTA CATALINA"
+  },
+  {
+    "id": "229d1813-2cd5-4fec-a3a4-7ced2f82ccce",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "91",
+    "name": "AMAZONAS"
+  },
+  {
+    "id": "e9debdb2-839f-40cd-a3d8-51d4edaac698",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "94",
+    "name": "GUAIN\u00CDA"
+  },
+  {
+    "id": "c8641e74-3bd3-4142-9843-f0f36c1257ec",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "95",
+    "name": "GUAVIARE"
+  },
+  {
+    "id": "c7fcecdc-743e-4498-833a-dc230c8d61a2",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "97",
+    "name": "VAUP\u00C9S"
+  },
+  {
+    "id": "63698809-b726-4ba1-a2a5-d6fe524917ee",
+    "idCountry": "e4e05ab7-bdac-4f45-8dbd-1ac42ef96dc6",
+    "code": "99",
+    "name": "VICHADA"
+  }
+]
