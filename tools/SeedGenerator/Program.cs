@@ -102,7 +102,7 @@ var countries = new List<CountrySeed>();
 foreach (var c in countriesRaw.OrderBy(c => c.Name?.Common))
 {
     var currencyCode = c.Currencies?.Keys.FirstOrDefault();
-    var currencyId = currencyCode != null && currencyMap.ContainsKey(currencyCode) ? currencyMap[currencyCode].Id : Guid.Empty;
+    var currencyId = currencyCode != null && currencyMap.ContainsKey(currencyCode) ? currencyMap[currencyCode].Id : currencyMap.GetValueOrDefault("USD")?.Id ?? Guid.Empty;
 
     countries.Add(new CountrySeed(
         Guid.NewGuid(),
