@@ -9,24 +9,21 @@ public class CountryService(IMediator mediator, IMapper mapper) : gRpc.CountrySe
 {
     public override async Task<GetCountryResponse> GetCountry(GetCountryRequest request, ServerCallContext context)
     {
+        // Build a filter expression based on the provided request fields
+        // Using Filters bypasses the shared cache and queries MongoDB directly
+        var filter = BuildFilter(request);
+
         var countries = await mediator.Send(new GetAllCountryQuery(new C.Criteria
         {
-            Limit = 500
+            Filters = filter,
+            Limit = 1
         }));
 
-        var countryId = Guid.TryParse(request.Id, out var parsedId) ? parsedId : Guid.Empty;
-
-        var country = countries.Data.FirstOrDefault(x =>
-            (countryId != Guid.Empty && x.Id == countryId) ||
-            (!string.IsNullOrEmpty(request.Name) && x.Name == request.Name) ||
-            (!string.IsNullOrEmpty(request.Code) && x.Code == request.Code) ||
-            (!string.IsNullOrEmpty(request.Alpha2) && x.Alpha2 == request.Alpha2) ||
-            (!string.IsNullOrEmpty(request.Alpha3) && x.Alpha3 == request.Alpha3)
-        );
+        var country = countries.Data.FirstOrDefault();
 
         InfrastructureGuard.IsNull(country, Errors.CountryNotFound);
 
-        var currency = await mediator.Send(new FindCurrencyByIdQuery(country.IdCurrency));
+        var currency = await mediator.Send(new FindCurrencyByIdQuery(country!.IdCurrency));
 
         InfrastructureGuard.IsNull(currency, Errors.CurrencyNotFound);
 
@@ -34,5 +31,25 @@ public class CountryService(IMediator mediator, IMapper mapper) : gRpc.CountrySe
         response.Currency = mapper.Map<Currency>(currency);
 
         return response;
+    }
+
+    private static string BuildFilter(GetCountryRequest request)
+    {
+        if (!string.IsNullOrEmpty(request.Id) && Guid.TryParse(request.Id, out _))
+            return $"Id={request.Id}";
+
+        if (!string.IsNullOrEmpty(request.Alpha2))
+            return $"Alpha2={request.Alpha2}";
+
+        if (!string.IsNullOrEmpty(request.Alpha3))
+            return $"Alpha3={request.Alpha3}";
+
+        if (!string.IsNullOrEmpty(request.Code))
+            return $"Code={request.Code}";
+
+        if (!string.IsNullOrEmpty(request.Name))
+            return $"Name={request.Name}";
+
+        return "IsActive=true";
     }
 }
