@@ -1,0 +1,63 @@
+[
+  {
+    "id": "56967143-5b22-4fcd-80fa-6bbd31e50f9d",
+    "name": "Africa",
+    "subRegions": [
+      "Northern Africa",
+      "Western Africa",
+      "Middle Africa",
+      "Eastern Africa",
+      "Southern Africa"
+    ]
+  },
+  {
+    "id": "2083be70-3610-4e44-84a6-25246649f610",
+    "name": "Americas",
+    "subRegions": [
+      "North America",
+      "Central America",
+      "Caribbean",
+      "South America"
+    ]
+  },
+  {
+    "id": "91f9fba5-d050-481e-926b-eee9f9590ee6",
+    "name": "Asia",
+    "subRegions": [
+      "Central Asia",
+      "Eastern Asia",
+      "Southern Asia",
+      "South-Eastern Asia",
+      "Western Asia"
+    ]
+  },
+  {
+    "id": "a273c515-9a0d-4572-acc4-ece60f1e3173",
+    "name": "Europe",
+    "subRegions": [
+      "Northern Europe",
+      "Western Europe",
+      "Central Europe",
+      "Eastern Europe",
+      "Southern Europe",
+      "Southeast Europe"
+    ]
+  },
+  {
+    "id": "5d71a1a5-dca0-4644-8a79-10297e532e2d",
+    "name": "Oceania",
+    "subRegions": [
+      "Australia and New Zealand",
+      "Melanesia",
+      "Micronesia",
+      "Polynesia"
+    ]
+  },
+  {
+    "id": "710666f2-ce0b-46eb-979d-cc90037f10b1",
+    "name": "Antarctic",
+    "subRegions": [
+      "Antarctica"
+    ]
+  }
+]

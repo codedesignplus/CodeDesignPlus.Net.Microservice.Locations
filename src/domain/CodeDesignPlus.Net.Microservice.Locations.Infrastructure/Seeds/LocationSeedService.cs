@@ -18,6 +18,7 @@ public class LocationSeedService(
     ILocalityRepository localityRepository,
     INeighborhoodRepository neighborhoodRepository,
     ITimezoneRepository timezoneRepository,
+    IRegionRepository regionRepository,
     ILogger<LocationSeedService> logger
 ) : BackgroundService
 {
@@ -30,6 +31,7 @@ public class LocationSeedService(
         try
         {
             await SeedCurrenciesAsync(stoppingToken);
+            await SeedRegionsAsync(stoppingToken);
             await SeedCountriesAsync(stoppingToken);
             await SeedStatesAsync(stoppingToken);
             await SeedCitiesAsync(stoppingToken);
@@ -67,6 +69,41 @@ public class LocationSeedService(
             }
         }
         logger.LogInformation("Seeded {Inserted}/{Total} currencies.", inserted, data.Count);
+    }
+
+    private async Task SeedRegionsAsync(CancellationToken ct)
+    {
+        var data = LoadResource<List<RegionSeed>>("seed-regions.json");
+        var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
+        var existing = await regionRepository.MatchingAsync<RegionAggregate>(criteria, ct);
+        if (existing.TotalCount >= data.Count)
+        {
+            logger.LogInformation("Regions already seeded ({Count}).", existing.TotalCount);
+            return;
+        }
+
+        var inserted = 0;
+        foreach (var item in data)
+        {
+            try
+            {
+                var aggregate = RegionAggregate.Create(
+                    item.Id,
+                    item.Name,
+                    item.SubRegions,
+                    isActive: true,
+                    SystemUserId
+                );
+
+                await regionRepository.CreateAsync(aggregate, ct);
+                inserted++;
+            }
+            catch (Exception ex)
+            {
+                logger.LogWarning(ex, "Failed to seed region {Name}. Skipping.", item.Name);
+            }
+        }
+        logger.LogInformation("Seeded {Inserted}/{Total} regions.", inserted, data.Count);
     }
 
     private async Task SeedCountriesAsync(CancellationToken ct)
@@ -207,6 +244,7 @@ public class LocationSeedService(
 }
 
 public record CurrencySeed(Guid Id, string Code, short NumericCode, short DecimalDigits, string Symbol, string Name);
+public record RegionSeed(Guid Id, string Name, List<string> SubRegions);
 public record CountrySeed(Guid Id, string Name, string Alpha2, string Alpha3, string Code, string? Capital, Guid IdCurrency, string Timezone, string? NameNative, string? Region, string? SubRegion, double Latitude, double Longitude, string? Flag);
 public record StateSeed(Guid Id, Guid IdCountry, string Code, string Name);
 public record CitySeed(Guid Id, Guid IdState, string Name, string Timezone);
