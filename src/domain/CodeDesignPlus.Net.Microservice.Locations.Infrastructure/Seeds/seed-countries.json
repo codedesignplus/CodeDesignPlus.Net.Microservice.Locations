@@ -8,16 +8,16 @@
     "capital": "Kabul",
     "idCurrency": "ab1674d7-d77e-45a8-a8a5-b67daab75c09",
     "timezone": "UTC",
-    "nameNative": "Afganist\u00E1n",
+    "nameNative": "Afganistán",
     "region": "Asia",
     "subRegion": "Southern Asia",
     "latitude": 33,
     "longitude": 65,
-    "flag": "\uD83C\uDDE6\uD83C\uDDEB"
+    "flag": "🇦🇫"
   },
   {
     "id": "c7205a60-7b3a-4d6f-bfbc-f75d14feb2c8",
-    "name": "\u00C5land Islands",
+    "name": "Åland Islands",
     "alpha2": "AX",
     "alpha3": "ALA",
     "code": "248",
@@ -29,7 +29,7 @@
     "subRegion": "Northern Europe",
     "latitude": 60.116667,
     "longitude": 19.9,
-    "flag": "\uD83C\uDDE6\uD83C\uDDFD"
+    "flag": "🇦🇽"
   },
   {
     "id": "7d9f4aca-3817-445b-95b9-ebd40a029711",
@@ -45,7 +45,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 41,
     "longitude": 20,
-    "flag": "\uD83C\uDDE6\uD83C\uDDF1"
+    "flag": "🇦🇱"
   },
   {
     "id": "14310ddf-9725-413e-8a35-47dc17760c1c",
@@ -61,7 +61,7 @@
     "subRegion": "Northern Africa",
     "latitude": 28,
     "longitude": 3,
-    "flag": "\uD83C\uDDE9\uD83C\uDDFF"
+    "flag": "🇩🇿"
   },
   {
     "id": "1e692b45-7338-4d52-a397-864557127345",
@@ -77,7 +77,7 @@
     "subRegion": "Polynesia",
     "latitude": -14.33333333,
     "longitude": -170,
-    "flag": "\uD83C\uDDE6\uD83C\uDDF8"
+    "flag": "🇦🇸"
   },
   {
     "id": "eb7803c9-9aa8-430f-8b06-47543fb471a0",
@@ -93,7 +93,7 @@
     "subRegion": "Southern Europe",
     "latitude": 42.5,
     "longitude": 1.5,
-    "flag": "\uD83C\uDDE6\uD83C\uDDE9"
+    "flag": "🇦🇩"
   },
   {
     "id": "928662d7-a429-4c01-a390-49d2bb5aa04a",
@@ -109,7 +109,7 @@
     "subRegion": "Middle Africa",
     "latitude": -12.5,
     "longitude": 18.5,
-    "flag": "\uD83C\uDDE6\uD83C\uDDF4"
+    "flag": "🇦🇴"
   },
   {
     "id": "3852a0ec-6178-4cae-9c8f-4de795d454c2",
@@ -125,7 +125,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.25,
     "longitude": -63.16666666,
-    "flag": "\uD83C\uDDE6\uD83C\uDDEE"
+    "flag": "🇦🇮"
   },
   {
     "id": "688f20c6-93db-42cc-b759-492db19ff8f0",
@@ -135,12 +135,12 @@
     "code": "010",
     "idCurrency": "",
     "timezone": "UTC",
-    "nameNative": "Ant\u00E1rtida",
+    "nameNative": "Antártida",
     "region": "Antarctic",
     "subRegion": "Unknown",
     "latitude": -90,
     "longitude": 0,
-    "flag": "\uD83C\uDDE6\uD83C\uDDF6"
+    "flag": "🇦🇶"
   },
   {
     "id": "1ff24d46-c6bf-4d48-b8e4-14418be50b0e",
@@ -148,7 +148,7 @@
     "alpha2": "AG",
     "alpha3": "ATG",
     "code": "028",
-    "capital": "Saint John\u0027s",
+    "capital": "Saint John's",
     "idCurrency": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "timezone": "UTC",
     "nameNative": "Antigua y Barbuda",
@@ -156,7 +156,7 @@
     "subRegion": "Caribbean",
     "latitude": 17.05,
     "longitude": -61.8,
-    "flag": "\uD83C\uDDE6\uD83C\uDDEC"
+    "flag": "🇦🇬"
   },
   {
     "id": "81b8b9fd-9940-48fb-93dc-e6ec4adc5964",
@@ -172,7 +172,7 @@
     "subRegion": "South America",
     "latitude": -34,
     "longitude": -64,
-    "flag": "\uD83C\uDDE6\uD83C\uDDF7"
+    "flag": "🇦🇷"
   },
   {
     "id": "16b3ad66-1ff1-4e52-b3b1-b281a639a4b5",
@@ -188,7 +188,7 @@
     "subRegion": "Western Asia",
     "latitude": 40,
     "longitude": 45,
-    "flag": "\uD83C\uDDE6\uD83C\uDDF2"
+    "flag": "🇦🇲"
   },
   {
     "id": "2d1a2c09-4851-45b7-9eb4-aa2e96ab72eb",
@@ -204,7 +204,7 @@
     "subRegion": "Caribbean",
     "latitude": 12.5,
     "longitude": -69.96666666,
-    "flag": "\uD83C\uDDE6\uD83C\uDDFC"
+    "flag": "🇦🇼"
   },
   {
     "id": "1fbde378-807a-4dc1-9280-9b704c89a3b8",
@@ -220,7 +220,7 @@
     "subRegion": "Australia and New Zealand",
     "latitude": -27,
     "longitude": 133,
-    "flag": "\uD83C\uDDE6\uD83C\uDDFA"
+    "flag": "🇦🇺"
   },
   {
     "id": "75f2fe28-4e09-4390-adb0-4873b2973f34",
@@ -236,7 +236,7 @@
     "subRegion": "Central Europe",
     "latitude": 47.33333333,
     "longitude": 13.33333333,
-    "flag": "\uD83C\uDDE6\uD83C\uDDF9"
+    "flag": "🇦🇹"
   },
   {
     "id": "d7dbc3ea-4fa3-4658-801a-013d8df3ea24",
@@ -247,12 +247,12 @@
     "capital": "Baku",
     "idCurrency": "68ca1796-8cd3-4895-aa71-7b571d4f6c86",
     "timezone": "UTC",
-    "nameNative": "Azerbaiy\u00E1n",
+    "nameNative": "Azerbaiyán",
     "region": "Asia",
     "subRegion": "Western Asia",
     "latitude": 40.5,
     "longitude": 47.5,
-    "flag": "\uD83C\uDDE6\uD83C\uDDFF"
+    "flag": "🇦🇿"
   },
   {
     "id": "dd6a5ee2-b14f-4ce9-b263-17f2d37e4808",
@@ -268,7 +268,7 @@
     "subRegion": "Caribbean",
     "latitude": 24.25,
     "longitude": -76,
-    "flag": "\uD83C\uDDE7\uD83C\uDDF8"
+    "flag": "🇧🇸"
   },
   {
     "id": "b997bb4c-10dd-44af-8e04-22a6b52e23eb",
@@ -284,7 +284,7 @@
     "subRegion": "Western Asia",
     "latitude": 26,
     "longitude": 50.55,
-    "flag": "\uD83C\uDDE7\uD83C\uDDED"
+    "flag": "🇧🇭"
   },
   {
     "id": "304cc0c9-dd6e-4eba-9d44-fd4bd2e82800",
@@ -300,7 +300,7 @@
     "subRegion": "Southern Asia",
     "latitude": 24,
     "longitude": 90,
-    "flag": "\uD83C\uDDE7\uD83C\uDDE9"
+    "flag": "🇧🇩"
   },
   {
     "id": "e12b467d-807d-4a47-83bc-f90629f63965",
@@ -316,7 +316,7 @@
     "subRegion": "Caribbean",
     "latitude": 13.16666666,
     "longitude": -59.53333333,
-    "flag": "\uD83C\uDDE7\uD83C\uDDE7"
+    "flag": "🇧🇧"
   },
   {
     "id": "bd780d6c-c3f5-45f4-80f5-7b809674a9a5",
@@ -332,7 +332,7 @@
     "subRegion": "Eastern Europe",
     "latitude": 53,
     "longitude": 28,
-    "flag": "\uD83C\uDDE7\uD83C\uDDFE"
+    "flag": "🇧🇾"
   },
   {
     "id": "6158f9ed-697a-42ec-8b48-0769988a4920",
@@ -343,12 +343,12 @@
     "capital": "Brussels",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "UTC",
-    "nameNative": "B\u00E9lgica",
+    "nameNative": "Bélgica",
     "region": "Europe",
     "subRegion": "Western Europe",
     "latitude": 50.83333333,
     "longitude": 4,
-    "flag": "\uD83C\uDDE7\uD83C\uDDEA"
+    "flag": "🇧🇪"
   },
   {
     "id": "fd4cbafd-f842-4017-a171-289aec21d3f7",
@@ -364,7 +364,7 @@
     "subRegion": "Central America",
     "latitude": 17.25,
     "longitude": -88.75,
-    "flag": "\uD83C\uDDE7\uD83C\uDDFF"
+    "flag": "🇧🇿"
   },
   {
     "id": "bb273736-5414-40d8-91a4-6d735aebea1a",
@@ -375,12 +375,12 @@
     "capital": "Porto-Novo",
     "idCurrency": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "timezone": "UTC",
-    "nameNative": "Ben\u00EDn",
+    "nameNative": "Benín",
     "region": "Africa",
     "subRegion": "Western Africa",
     "latitude": 9.5,
     "longitude": 2.25,
-    "flag": "\uD83C\uDDE7\uD83C\uDDEF"
+    "flag": "🇧🇯"
   },
   {
     "id": "0d8d9b67-5d75-4860-b72b-0df126715504",
@@ -396,7 +396,7 @@
     "subRegion": "North America",
     "latitude": 32.33333333,
     "longitude": -64.75,
-    "flag": "\uD83C\uDDE7\uD83C\uDDF2"
+    "flag": "🇧🇲"
   },
   {
     "id": "c63da889-6316-4f7c-ae45-353b3da25cec",
@@ -407,12 +407,12 @@
     "capital": "Thimphu",
     "idCurrency": "a6d61e86-fb61-46a2-8999-1d429ab6ecfb",
     "timezone": "UTC",
-    "nameNative": "But\u00E1n",
+    "nameNative": "Bután",
     "region": "Asia",
     "subRegion": "Southern Asia",
     "latitude": 27.5,
     "longitude": 90.5,
-    "flag": "\uD83C\uDDE7\uD83C\uDDF9"
+    "flag": "🇧🇹"
   },
   {
     "id": "f7b143ba-cd05-414c-acf4-aa9c83d0745d",
@@ -428,7 +428,7 @@
     "subRegion": "South America",
     "latitude": -17,
     "longitude": -65,
-    "flag": "\uD83C\uDDE7\uD83C\uDDF4"
+    "flag": "🇧🇴"
   },
   {
     "id": "94458cc8-b912-4015-9141-dcf1f57e7f71",
@@ -444,7 +444,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 44,
     "longitude": 18,
-    "flag": "\uD83C\uDDE7\uD83C\uDDE6"
+    "flag": "🇧🇦"
   },
   {
     "id": "299d0668-b349-4aec-87f0-24ba3c28e843",
@@ -460,7 +460,7 @@
     "subRegion": "Southern Africa",
     "latitude": -22,
     "longitude": 24,
-    "flag": "\uD83C\uDDE7\uD83C\uDDFC"
+    "flag": "🇧🇼"
   },
   {
     "id": "03bfb8e4-938f-4cc0-9a17-e9bee92c59e3",
@@ -475,7 +475,7 @@
     "subRegion": "Unknown",
     "latitude": -54.43333333,
     "longitude": 3.4,
-    "flag": "\uD83C\uDDE7\uD83C\uDDFB"
+    "flag": "🇧🇻"
   },
   {
     "id": "1da59d41-1491-43a2-9738-6b64cd740c12",
@@ -483,7 +483,7 @@
     "alpha2": "BR",
     "alpha3": "BRA",
     "code": "076",
-    "capital": "Bras\u00EDlia",
+    "capital": "Brasília",
     "idCurrency": "52dc805f-6504-4385-8838-5af30139358f",
     "timezone": "UTC",
     "nameNative": "Brasil",
@@ -491,7 +491,7 @@
     "subRegion": "South America",
     "latitude": -10,
     "longitude": -55,
-    "flag": "\uD83C\uDDE7\uD83C\uDDF7"
+    "flag": "🇧🇷"
   },
   {
     "id": "265aeb41-9246-4854-9778-d6e507326004",
@@ -502,12 +502,12 @@
     "capital": "Diego Garcia",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "UTC",
-    "nameNative": "Territorio Brit\u00E1nico del Oc\u00E9ano \u00CDndico",
+    "nameNative": "Territorio Británico del Océano Índico",
     "region": "Africa",
     "subRegion": "Eastern Africa",
     "latitude": -6,
     "longitude": 71.5,
-    "flag": "\uD83C\uDDEE\uD83C\uDDF4"
+    "flag": "🇮🇴"
   },
   {
     "id": "37887b64-32f6-4b3e-8978-430c50500b23",
@@ -518,12 +518,12 @@
     "capital": "Road Town",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "UTC",
-    "nameNative": "Islas V\u00EDrgenes del Reino Unido",
+    "nameNative": "Islas Vírgenes del Reino Unido",
     "region": "Americas",
     "subRegion": "Caribbean",
     "latitude": 18.431383,
     "longitude": -64.62305,
-    "flag": "\uD83C\uDDFB\uD83C\uDDEC"
+    "flag": "🇻🇬"
   },
   {
     "id": "10b5d929-a231-4175-bc46-bd6def32b7f7",
@@ -539,7 +539,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 4.5,
     "longitude": 114.66666666,
-    "flag": "\uD83C\uDDE7\uD83C\uDDF3"
+    "flag": "🇧🇳"
   },
   {
     "id": "e718d7a2-f363-4153-8a67-f24b1cbd7f7c",
@@ -555,7 +555,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 43,
     "longitude": 25,
-    "flag": "\uD83C\uDDE7\uD83C\uDDEC"
+    "flag": "🇧🇬"
   },
   {
     "id": "eadf1c35-0a79-4756-8b49-8310488d6164",
@@ -571,7 +571,7 @@
     "subRegion": "Western Africa",
     "latitude": 13,
     "longitude": -2,
-    "flag": "\uD83C\uDDE7\uD83C\uDDEB"
+    "flag": "🇧🇫"
   },
   {
     "id": "15ca1a80-6a52-4833-a0c6-b2694dd73481",
@@ -587,7 +587,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -3.5,
     "longitude": 30,
-    "flag": "\uD83C\uDDE7\uD83C\uDDEE"
+    "flag": "🇧🇮"
   },
   {
     "id": "7513c020-3d3d-4d6d-86bf-8e485908c92f",
@@ -603,7 +603,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 13,
     "longitude": 105,
-    "flag": "\uD83C\uDDF0\uD83C\uDDED"
+    "flag": "🇰🇭"
   },
   {
     "id": "1b2cf125-eba7-4147-8b63-9c0ce8411c6d",
@@ -611,15 +611,15 @@
     "alpha2": "CM",
     "alpha3": "CMR",
     "code": "120",
-    "capital": "Yaound\u00E9",
+    "capital": "Yaoundé",
     "idCurrency": "4d2ad5c2-b43f-4328-b4da-bd4b78986f65",
     "timezone": "UTC",
-    "nameNative": "Camer\u00FAn",
+    "nameNative": "Camerún",
     "region": "Africa",
     "subRegion": "Middle Africa",
     "latitude": 6,
     "longitude": 12,
-    "flag": "\uD83C\uDDE8\uD83C\uDDF2"
+    "flag": "🇨🇲"
   },
   {
     "id": "5daafe2a-a2da-48f7-abe4-67c44666f08f",
@@ -630,12 +630,12 @@
     "capital": "Ottawa",
     "idCurrency": "e112916e-cdd8-4c2f-9229-d8e9d1c71df0",
     "timezone": "UTC",
-    "nameNative": "Canad\u00E1",
+    "nameNative": "Canadá",
     "region": "Americas",
     "subRegion": "North America",
     "latitude": 60,
     "longitude": -95,
-    "flag": "\uD83C\uDDE8\uD83C\uDDE6"
+    "flag": "🇨🇦"
   },
   {
     "id": "184bf292-0cab-4b40-b9bc-7cad22d75e5f",
@@ -651,7 +651,7 @@
     "subRegion": "Western Africa",
     "latitude": 16,
     "longitude": -24,
-    "flag": "\uD83C\uDDE8\uD83C\uDDFB"
+    "flag": "🇨🇻"
   },
   {
     "id": "4eaf1241-2a82-450b-8739-3f2ef2471807",
@@ -662,7 +662,7 @@
     "capital": "Kralendijk",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "UTC",
-    "nameNative": "Caribe Neerland\u00E9s",
+    "nameNative": "Caribe Neerlandés",
     "region": "Americas",
     "subRegion": "Caribbean",
     "latitude": 12.18,
@@ -678,12 +678,12 @@
     "capital": "George Town",
     "idCurrency": "673e7a46-d0e1-445e-9052-286478f8693b",
     "timezone": "UTC",
-    "nameNative": "Islas Caim\u00E1n",
+    "nameNative": "Islas Caimán",
     "region": "Americas",
     "subRegion": "Caribbean",
     "latitude": 19.5,
     "longitude": -80.5,
-    "flag": "\uD83C\uDDF0\uD83C\uDDFE"
+    "flag": "🇰🇾"
   },
   {
     "id": "69982846-50f2-47e3-b241-1a0b96eac5fb",
@@ -694,12 +694,12 @@
     "capital": "Bangui",
     "idCurrency": "4d2ad5c2-b43f-4328-b4da-bd4b78986f65",
     "timezone": "UTC",
-    "nameNative": "Rep\u00FAblica Centroafricana",
+    "nameNative": "República Centroafricana",
     "region": "Africa",
     "subRegion": "Middle Africa",
     "latitude": 7,
     "longitude": 21,
-    "flag": "\uD83C\uDDE8\uD83C\uDDEB"
+    "flag": "🇨🇫"
   },
   {
     "id": "c44219e6-2f61-411c-b6f3-e03f261d4ac2",
@@ -707,7 +707,7 @@
     "alpha2": "TD",
     "alpha3": "TCD",
     "code": "148",
-    "capital": "N\u0027Djamena",
+    "capital": "N'Djamena",
     "idCurrency": "4d2ad5c2-b43f-4328-b4da-bd4b78986f65",
     "timezone": "UTC",
     "nameNative": "Chad",
@@ -715,7 +715,7 @@
     "subRegion": "Middle Africa",
     "latitude": 15,
     "longitude": 19,
-    "flag": "\uD83C\uDDF9\uD83C\uDDE9"
+    "flag": "🇹🇩"
   },
   {
     "id": "97b4b681-e8ad-4e74-8bb2-7592cefa13f1",
@@ -731,7 +731,7 @@
     "subRegion": "South America",
     "latitude": -30,
     "longitude": -71,
-    "flag": "\uD83C\uDDE8\uD83C\uDDF1"
+    "flag": "🇨🇱"
   },
   {
     "id": "f39fcfaf-953a-435d-8558-cddf135debca",
@@ -747,7 +747,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 35,
     "longitude": 105,
-    "flag": "\uD83C\uDDE8\uD83C\uDDF3"
+    "flag": "🇨🇳"
   },
   {
     "id": "84cb85ea-f791-4d89-8d03-08eb5a92dceb",
@@ -763,7 +763,7 @@
     "subRegion": "Australia and New Zealand",
     "latitude": -10.5,
     "longitude": 105.66666666,
-    "flag": "\uD83C\uDDE8\uD83C\uDDFD"
+    "flag": "🇨🇽"
   },
   {
     "id": "30cadb39-216e-4c3e-bf36-21e0ab88463c",
@@ -779,7 +779,7 @@
     "subRegion": "Australia and New Zealand",
     "latitude": -12.5,
     "longitude": 96.83333333,
-    "flag": "\uD83C\uDDE8\uD83C\uDDE8"
+    "flag": "🇨🇨"
   },
   {
     "id": "69191570-f690-4b95-abcd-3c004fc24d8b",
@@ -787,7 +787,7 @@
     "alpha2": "CO",
     "alpha3": "COL",
     "code": "170",
-    "capital": "Bogot\u00E1",
+    "capital": "Bogotá",
     "idCurrency": "1e8f4d27-f5bf-4d93-92a8-ecc4719aba3b",
     "timezone": "UTC",
     "nameNative": "Colombia",
@@ -795,7 +795,7 @@
     "subRegion": "South America",
     "latitude": 4,
     "longitude": -72,
-    "flag": "\uD83C\uDDE8\uD83C\uDDF4"
+    "flag": "🇨🇴"
   },
   {
     "id": "d8463f76-2cba-4d25-bab7-a7fd3ca398f8",
@@ -811,7 +811,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -12.16666666,
     "longitude": 44.25,
-    "flag": "\uD83C\uDDF0\uD83C\uDDF2"
+    "flag": "🇰🇲"
   },
   {
     "id": "af01165a-592a-4c4c-b601-3410238247c5",
@@ -827,7 +827,7 @@
     "subRegion": "Middle Africa",
     "latitude": -1,
     "longitude": 15,
-    "flag": "\uD83C\uDDE8\uD83C\uDDEC"
+    "flag": "🇨🇬"
   },
   {
     "id": "410b108b-fa66-42fa-893f-e55aa74bcbf9",
@@ -843,7 +843,7 @@
     "subRegion": "Polynesia",
     "latitude": -21.23333333,
     "longitude": -159.76666666,
-    "flag": "\uD83C\uDDE8\uD83C\uDDF0"
+    "flag": "🇨🇰"
   },
   {
     "id": "779c0ce7-2f0d-443d-b115-9f4265443de3",
@@ -851,7 +851,7 @@
     "alpha2": "CR",
     "alpha3": "CRI",
     "code": "188",
-    "capital": "San Jos\u00E9",
+    "capital": "San José",
     "idCurrency": "a01d6f8c-5900-4818-a0b1-58f912343bdc",
     "timezone": "UTC",
     "nameNative": "Costa Rica",
@@ -859,7 +859,7 @@
     "subRegion": "Central America",
     "latitude": 10,
     "longitude": -84,
-    "flag": "\uD83C\uDDE8\uD83C\uDDF7"
+    "flag": "🇨🇷"
   },
   {
     "id": "e702466c-ad62-476d-95d2-df811d25efe8",
@@ -875,7 +875,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 45.16666666,
     "longitude": 15.5,
-    "flag": "\uD83C\uDDED\uD83C\uDDF7"
+    "flag": "🇭🇷"
   },
   {
     "id": "36b75278-7deb-45e8-95cf-3eff3c467e53",
@@ -891,11 +891,11 @@
     "subRegion": "Caribbean",
     "latitude": 21.5,
     "longitude": -80,
-    "flag": "\uD83C\uDDE8\uD83C\uDDFA"
+    "flag": "🇨🇺"
   },
   {
     "id": "edd04dea-4242-4c10-9630-9112db39e7e7",
-    "name": "Cura\u00E7ao",
+    "name": "Curaçao",
     "alpha2": "CW",
     "alpha3": "CUW",
     "code": "531",
@@ -907,7 +907,7 @@
     "subRegion": "Caribbean",
     "latitude": 12.116667,
     "longitude": -68.933333,
-    "flag": "\uD83C\uDDE8\uD83C\uDDFC"
+    "flag": "🇨🇼"
   },
   {
     "id": "9e5f8a3b-99e5-47db-9a44-bbca30382de2",
@@ -923,7 +923,7 @@
     "subRegion": "Southern Europe",
     "latitude": 35,
     "longitude": 33,
-    "flag": "\uD83C\uDDE8\uD83C\uDDFE"
+    "flag": "🇨🇾"
   },
   {
     "id": "cb94179f-ec61-4b78-a365-b2dbeb75e122",
@@ -939,7 +939,7 @@
     "subRegion": "Central Europe",
     "latitude": 49.75,
     "longitude": 15.5,
-    "flag": "\uD83C\uDDE8\uD83C\uDDFF"
+    "flag": "🇨🇿"
   },
   {
     "id": "6f761b4b-d0d9-48a6-a35d-8a2829ca261d",
@@ -955,7 +955,7 @@
     "subRegion": "Northern Europe",
     "latitude": 56,
     "longitude": 10,
-    "flag": "\uD83C\uDDE9\uD83C\uDDF0"
+    "flag": "🇩🇰"
   },
   {
     "id": "9b08e335-b809-47c5-a8e0-4b5837c32569",
@@ -971,7 +971,7 @@
     "subRegion": "Eastern Africa",
     "latitude": 11.5,
     "longitude": 43,
-    "flag": "\uD83C\uDDE9\uD83C\uDDEF"
+    "flag": "🇩🇯"
   },
   {
     "id": "a654691a-ec8d-40ff-ae36-4fcbcba47357",
@@ -987,7 +987,7 @@
     "subRegion": "Caribbean",
     "latitude": 15.41666666,
     "longitude": -61.33333333,
-    "flag": "\uD83C\uDDE9\uD83C\uDDF2"
+    "flag": "🇩🇲"
   },
   {
     "id": "87ca1778-b6f4-4415-b9b7-061851ced473",
@@ -998,12 +998,12 @@
     "capital": "Santo Domingo",
     "idCurrency": "79c59c4f-9f4e-41c2-ac9d-359cad98582f",
     "timezone": "UTC",
-    "nameNative": "Rep\u00FAblica Dominicana",
+    "nameNative": "República Dominicana",
     "region": "Americas",
     "subRegion": "Caribbean",
     "latitude": 19,
     "longitude": -70.66666666,
-    "flag": "\uD83C\uDDE9\uD83C\uDDF4"
+    "flag": "🇩🇴"
   },
   {
     "id": "bc9f77c2-2749-4255-9c3a-baaf6f0745ff",
@@ -1019,7 +1019,7 @@
     "subRegion": "Middle Africa",
     "latitude": 0,
     "longitude": 25,
-    "flag": "\uD83C\uDDE8\uD83C\uDDE9"
+    "flag": "🇨🇩"
   },
   {
     "id": "42393c51-3b1a-4c02-b4c2-198fda490abe",
@@ -1035,7 +1035,7 @@
     "subRegion": "South America",
     "latitude": -2,
     "longitude": -77.5,
-    "flag": "\uD83C\uDDEA\uD83C\uDDE8"
+    "flag": "🇪🇨"
   },
   {
     "id": "82c43bc7-ac22-4a84-9133-4386568fc374",
@@ -1051,7 +1051,7 @@
     "subRegion": "Northern Africa",
     "latitude": 27,
     "longitude": 30,
-    "flag": "\uD83C\uDDEA\uD83C\uDDEC"
+    "flag": "🇪🇬"
   },
   {
     "id": "e6accfa0-c725-447e-9d9d-c8c0e2c7632a",
@@ -1067,7 +1067,7 @@
     "subRegion": "Central America",
     "latitude": 13.83333333,
     "longitude": -88.91666666,
-    "flag": "\uD83C\uDDF8\uD83C\uDDFB"
+    "flag": "🇸🇻"
   },
   {
     "id": "54a40af3-bfb2-43de-aa4f-add9b144265b",
@@ -1083,7 +1083,7 @@
     "subRegion": "Middle Africa",
     "latitude": 2,
     "longitude": 10,
-    "flag": "\uD83C\uDDEC\uD83C\uDDF6"
+    "flag": "🇬🇶"
   },
   {
     "id": "c1d35bd4-c6ca-4945-94af-c42e1ed0808e",
@@ -1099,7 +1099,7 @@
     "subRegion": "Eastern Africa",
     "latitude": 15,
     "longitude": 39,
-    "flag": "\uD83C\uDDEA\uD83C\uDDF7"
+    "flag": "🇪🇷"
   },
   {
     "id": "2d33d1bb-b1a2-4d81-b545-357facb64735",
@@ -1115,7 +1115,7 @@
     "subRegion": "Northern Europe",
     "latitude": 59,
     "longitude": 26,
-    "flag": "\uD83C\uDDEA\uD83C\uDDEA"
+    "flag": "🇪🇪"
   },
   {
     "id": "cce31687-03b5-408b-b5e9-abd861d4c87e",
@@ -1131,7 +1131,7 @@
     "subRegion": "Southern Africa",
     "latitude": -26.5,
     "longitude": 31.5,
-    "flag": "\uD83C\uDDF8\uD83C\uDDFF"
+    "flag": "🇸🇿"
   },
   {
     "id": "86fd9662-0b03-49ce-a41e-efbbf31d6185",
@@ -1142,12 +1142,12 @@
     "capital": "Addis Ababa",
     "idCurrency": "144089cc-8fc8-4f23-b663-81d946ca0f81",
     "timezone": "UTC",
-    "nameNative": "Etiop\u00EDa",
+    "nameNative": "Etiopía",
     "region": "Africa",
     "subRegion": "Eastern Africa",
     "latitude": 8,
     "longitude": 38,
-    "flag": "\uD83C\uDDEA\uD83C\uDDF9"
+    "flag": "🇪🇹"
   },
   {
     "id": "801e9633-b517-4f34-be91-997b35de7216",
@@ -1163,7 +1163,7 @@
     "subRegion": "South America",
     "latitude": -51.75,
     "longitude": -59,
-    "flag": "\uD83C\uDDEB\uD83C\uDDF0"
+    "flag": "🇫🇰"
   },
   {
     "id": "760b6356-db87-4719-8fd2-55554c254bc9",
@@ -1171,7 +1171,7 @@
     "alpha2": "FO",
     "alpha3": "FRO",
     "code": "234",
-    "capital": "T\u00F3rshavn",
+    "capital": "Tórshavn",
     "idCurrency": "efe024a0-a76b-4131-bd90-3f96ab5a84b1",
     "timezone": "UTC",
     "nameNative": "Islas Faroe",
@@ -1179,7 +1179,7 @@
     "subRegion": "Northern Europe",
     "latitude": 62,
     "longitude": -7,
-    "flag": "\uD83C\uDDEB\uD83C\uDDF4"
+    "flag": "🇫🇴"
   },
   {
     "id": "082a0910-aaae-42ee-8de3-571a9cc8b5e2",
@@ -1195,7 +1195,7 @@
     "subRegion": "Melanesia",
     "latitude": -18,
     "longitude": 175,
-    "flag": "\uD83C\uDDEB\uD83C\uDDEF"
+    "flag": "🇫🇯"
   },
   {
     "id": "3a5b61cd-024a-479f-aa68-c9e54d3aea2b",
@@ -1211,7 +1211,7 @@
     "subRegion": "Northern Europe",
     "latitude": 64,
     "longitude": 26,
-    "flag": "\uD83C\uDDEB\uD83C\uDDEE"
+    "flag": "🇫🇮"
   },
   {
     "id": "9c3f796d-982c-4175-8a84-b34377f6c6f5",
@@ -1227,7 +1227,7 @@
     "subRegion": "Western Europe",
     "latitude": 46,
     "longitude": 2,
-    "flag": "\uD83C\uDDEB\uD83C\uDDF7"
+    "flag": "🇫🇷"
   },
   {
     "id": "79831629-c796-4cb5-9eba-7db2e5f615e4",
@@ -1243,7 +1243,7 @@
     "subRegion": "South America",
     "latitude": 4,
     "longitude": -53,
-    "flag": "\uD83C\uDDEC\uD83C\uDDEB"
+    "flag": "🇬🇫"
   },
   {
     "id": "49961199-1072-442e-aef9-8cdf25bbb249",
@@ -1251,7 +1251,7 @@
     "alpha2": "PF",
     "alpha3": "PYF",
     "code": "258",
-    "capital": "Papeet\u0113",
+    "capital": "Papeetē",
     "idCurrency": "92bb96bd-b000-4a8a-a012-f3f7a032db66",
     "timezone": "UTC",
     "nameNative": "Polinesia Francesa",
@@ -1259,7 +1259,7 @@
     "subRegion": "Polynesia",
     "latitude": -15,
     "longitude": -140,
-    "flag": "\uD83C\uDDF5\uD83C\uDDEB"
+    "flag": "🇵🇫"
   },
   {
     "id": "63f1ad5a-83b4-4f19-bcab-e4b95f79d3bc",
@@ -1267,15 +1267,15 @@
     "alpha2": "TF",
     "alpha3": "ATF",
     "code": "260",
-    "capital": "Port-aux-Fran\u00E7ais",
+    "capital": "Port-aux-Français",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "UTC",
-    "nameNative": "Tierras Australes y Ant\u00E1rticas Francesas",
+    "nameNative": "Tierras Australes y Antárticas Francesas",
     "region": "Antarctic",
     "subRegion": "Unknown",
     "latitude": -49.25,
     "longitude": 69.167,
-    "flag": "\uD83C\uDDF9\uD83C\uDDEB"
+    "flag": "🇹🇫"
   },
   {
     "id": "a8eadd06-6893-421f-91d4-5648b4534630",
@@ -1286,12 +1286,12 @@
     "capital": "Libreville",
     "idCurrency": "4d2ad5c2-b43f-4328-b4da-bd4b78986f65",
     "timezone": "UTC",
-    "nameNative": "Gab\u00F3n",
+    "nameNative": "Gabón",
     "region": "Africa",
     "subRegion": "Middle Africa",
     "latitude": -1,
     "longitude": 11.75,
-    "flag": "\uD83C\uDDEC\uD83C\uDDE6"
+    "flag": "🇬🇦"
   },
   {
     "id": "bcbe9485-4ace-48c2-a672-590d0fe5f398",
@@ -1307,7 +1307,7 @@
     "subRegion": "Western Africa",
     "latitude": 13.46666666,
     "longitude": -16.56666666,
-    "flag": "\uD83C\uDDEC\uD83C\uDDF2"
+    "flag": "🇬🇲"
   },
   {
     "id": "55771536-c9d4-49dd-a6b1-3c3b97d18166",
@@ -1323,7 +1323,7 @@
     "subRegion": "Western Asia",
     "latitude": 42,
     "longitude": 43.5,
-    "flag": "\uD83C\uDDEC\uD83C\uDDEA"
+    "flag": "🇬🇪"
   },
   {
     "id": "721034e9-d173-40b9-bcec-6c408e9a573f",
@@ -1339,7 +1339,7 @@
     "subRegion": "Western Europe",
     "latitude": 51,
     "longitude": 9,
-    "flag": "\uD83C\uDDE9\uD83C\uDDEA"
+    "flag": "🇩🇪"
   },
   {
     "id": "e429376f-f4f3-45b6-bfca-0cc7b0c0bea8",
@@ -1355,7 +1355,7 @@
     "subRegion": "Western Africa",
     "latitude": 8,
     "longitude": -2,
-    "flag": "\uD83C\uDDEC\uD83C\uDDED"
+    "flag": "🇬🇭"
   },
   {
     "id": "cc04caea-eb79-4b0c-a4e9-bda445659898",
@@ -1371,7 +1371,7 @@
     "subRegion": "Southern Europe",
     "latitude": 36.13333333,
     "longitude": -5.35,
-    "flag": "\uD83C\uDDEC\uD83C\uDDEE"
+    "flag": "🇬🇮"
   },
   {
     "id": "91064589-2507-41b0-8e71-f21b380718db",
@@ -1387,7 +1387,7 @@
     "subRegion": "Southern Europe",
     "latitude": 39,
     "longitude": 22,
-    "flag": "\uD83C\uDDEC\uD83C\uDDF7"
+    "flag": "🇬🇷"
   },
   {
     "id": "860d18ee-4dea-47c0-8995-fdb074b551af",
@@ -1403,7 +1403,7 @@
     "subRegion": "North America",
     "latitude": 72,
     "longitude": -40,
-    "flag": "\uD83C\uDDEC\uD83C\uDDF1"
+    "flag": "🇬🇱"
   },
   {
     "id": "89c615b7-0950-4e7d-9e24-665e8b792830",
@@ -1411,7 +1411,7 @@
     "alpha2": "GD",
     "alpha3": "GRD",
     "code": "308",
-    "capital": "St. George\u0027s",
+    "capital": "St. George's",
     "idCurrency": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "timezone": "UTC",
     "nameNative": "Grenada",
@@ -1419,7 +1419,7 @@
     "subRegion": "Caribbean",
     "latitude": 12.11666666,
     "longitude": -61.66666666,
-    "flag": "\uD83C\uDDEC\uD83C\uDDE9"
+    "flag": "🇬🇩"
   },
   {
     "id": "c38880b5-27f6-4ba6-8abf-7e99b4f45556",
@@ -1435,7 +1435,7 @@
     "subRegion": "Caribbean",
     "latitude": 16.25,
     "longitude": -61.583333,
-    "flag": "\uD83C\uDDEC\uD83C\uDDF5"
+    "flag": "🇬🇵"
   },
   {
     "id": "80b82977-7e62-42dd-aef9-88c9387b3c74",
@@ -1443,7 +1443,7 @@
     "alpha2": "GU",
     "alpha3": "GUM",
     "code": "316",
-    "capital": "Hag\u00E5t\u00F1a",
+    "capital": "Hagåtña",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "UTC",
     "nameNative": "Guam",
@@ -1451,7 +1451,7 @@
     "subRegion": "Micronesia",
     "latitude": 13.46666666,
     "longitude": 144.78333333,
-    "flag": "\uD83C\uDDEC\uD83C\uDDFA"
+    "flag": "🇬🇺"
   },
   {
     "id": "51748720-14d3-43e3-bef1-1ef11790df05",
@@ -1467,7 +1467,7 @@
     "subRegion": "Central America",
     "latitude": 15.5,
     "longitude": -90.25,
-    "flag": "\uD83C\uDDEC\uD83C\uDDF9"
+    "flag": "🇬🇹"
   },
   {
     "id": "53582686-4d2d-49a8-99d8-53531098f4bf",
@@ -1483,7 +1483,7 @@
     "subRegion": "Northern Europe",
     "latitude": 49.46666666,
     "longitude": -2.58333333,
-    "flag": "\uD83C\uDDEC\uD83C\uDDEC"
+    "flag": "🇬🇬"
   },
   {
     "id": "fe044e0f-213e-4fd5-a974-e3808ea7cdee",
@@ -1499,7 +1499,7 @@
     "subRegion": "Western Africa",
     "latitude": 11,
     "longitude": -10,
-    "flag": "\uD83C\uDDEC\uD83C\uDDF3"
+    "flag": "🇬🇳"
   },
   {
     "id": "ca6ed8e7-0a0b-482e-bf83-82324e121e3a",
@@ -1510,12 +1510,12 @@
     "capital": "Bissau",
     "idCurrency": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "timezone": "UTC",
-    "nameNative": "Guinea-Bis\u00E1u",
+    "nameNative": "Guinea-Bisáu",
     "region": "Africa",
     "subRegion": "Western Africa",
     "latitude": 12,
     "longitude": -15,
-    "flag": "\uD83C\uDDEC\uD83C\uDDFC"
+    "flag": "🇬🇼"
   },
   {
     "id": "968be864-40ef-4570-b2d4-a957d6252bfd",
@@ -1531,7 +1531,7 @@
     "subRegion": "South America",
     "latitude": 5,
     "longitude": -59,
-    "flag": "\uD83C\uDDEC\uD83C\uDDFE"
+    "flag": "🇬🇾"
   },
   {
     "id": "c185c6b1-0e01-4e0e-9ba5-b508ba96e7fc",
@@ -1542,12 +1542,12 @@
     "capital": "Port-au-Prince",
     "idCurrency": "f5034cd3-5a17-406b-88f1-ef0cc064b7f2",
     "timezone": "UTC",
-    "nameNative": "Hait\u00ED",
+    "nameNative": "Haití",
     "region": "Americas",
     "subRegion": "Caribbean",
     "latitude": 19,
     "longitude": -72.41666666,
-    "flag": "\uD83C\uDDED\uD83C\uDDF9"
+    "flag": "🇭🇹"
   },
   {
     "id": "ca5fad34-cec1-4284-8836-049c7107df15",
@@ -1562,7 +1562,7 @@
     "subRegion": "Unknown",
     "latitude": -53.1,
     "longitude": 72.51666666,
-    "flag": "\uD83C\uDDED\uD83C\uDDF2"
+    "flag": "🇭🇲"
   },
   {
     "id": "5fdb121d-c1eb-4ee5-a9cf-8d391df0d91f",
@@ -1578,7 +1578,7 @@
     "subRegion": "Central America",
     "latitude": 15,
     "longitude": -86.5,
-    "flag": "\uD83C\uDDED\uD83C\uDDF3"
+    "flag": "🇭🇳"
   },
   {
     "id": "7595a046-325f-4b66-a150-0eb22df88df7",
@@ -1594,7 +1594,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 22.267,
     "longitude": 114.188,
-    "flag": "\uD83C\uDDED\uD83C\uDDF0"
+    "flag": "🇭🇰"
   },
   {
     "id": "9f208e60-ac12-45b9-af4d-0d9f7f28cc75",
@@ -1605,12 +1605,12 @@
     "capital": "Budapest",
     "idCurrency": "e6da3832-85b8-43e6-a60f-454beac13043",
     "timezone": "UTC",
-    "nameNative": "Hungr\u00EDa",
+    "nameNative": "Hungría",
     "region": "Europe",
     "subRegion": "Central Europe",
     "latitude": 47,
     "longitude": 20,
-    "flag": "\uD83C\uDDED\uD83C\uDDFA"
+    "flag": "🇭🇺"
   },
   {
     "id": "b4ee25da-2cd3-4b25-a9b8-fa0d20ddd961",
@@ -1626,7 +1626,7 @@
     "subRegion": "Northern Europe",
     "latitude": 65,
     "longitude": -18,
-    "flag": "\uD83C\uDDEE\uD83C\uDDF8"
+    "flag": "🇮🇸"
   },
   {
     "id": "b7446283-6966-4a2e-80ed-66ce88d6b134",
@@ -1642,7 +1642,7 @@
     "subRegion": "Southern Asia",
     "latitude": 20,
     "longitude": 77,
-    "flag": "\uD83C\uDDEE\uD83C\uDDF3"
+    "flag": "🇮🇳"
   },
   {
     "id": "6bfdc666-ecf3-4cd9-8771-d6c4cc472672",
@@ -1658,7 +1658,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": -5,
     "longitude": 120,
-    "flag": "\uD83C\uDDEE\uD83C\uDDE9"
+    "flag": "🇮🇩"
   },
   {
     "id": "19cba712-21e8-4a17-a665-74e855c86d71",
@@ -1674,7 +1674,7 @@
     "subRegion": "Southern Asia",
     "latitude": 32,
     "longitude": 53,
-    "flag": "\uD83C\uDDEE\uD83C\uDDF7"
+    "flag": "🇮🇷"
   },
   {
     "id": "7c50326e-e43f-4d5d-baa2-ebc70c6a874b",
@@ -1690,7 +1690,7 @@
     "subRegion": "Western Asia",
     "latitude": 33,
     "longitude": 44,
-    "flag": "\uD83C\uDDEE\uD83C\uDDF6"
+    "flag": "🇮🇶"
   },
   {
     "id": "b322d81c-ee55-4a25-83d3-153024488938",
@@ -1706,7 +1706,7 @@
     "subRegion": "Northern Europe",
     "latitude": 53,
     "longitude": -8,
-    "flag": "\uD83C\uDDEE\uD83C\uDDEA"
+    "flag": "🇮🇪"
   },
   {
     "id": "9654c4f9-a7a3-4ce8-9bb9-4a24da80d2c2",
@@ -1722,7 +1722,7 @@
     "subRegion": "Northern Europe",
     "latitude": 54.25,
     "longitude": -4.5,
-    "flag": "\uD83C\uDDEE\uD83C\uDDF2"
+    "flag": "🇮🇲"
   },
   {
     "id": "e90949b7-b6fc-404d-bb34-64536301e87b",
@@ -1738,7 +1738,7 @@
     "subRegion": "Western Asia",
     "latitude": 31.47,
     "longitude": 35.13,
-    "flag": "\uD83C\uDDEE\uD83C\uDDF1"
+    "flag": "🇮🇱"
   },
   {
     "id": "ea56348f-a2a6-4295-bf6a-e5916cfb3924",
@@ -1754,7 +1754,7 @@
     "subRegion": "Southern Europe",
     "latitude": 42.83333333,
     "longitude": 12.83333333,
-    "flag": "\uD83C\uDDEE\uD83C\uDDF9"
+    "flag": "🇮🇹"
   },
   {
     "id": "5d36732a-e223-45b1-b161-788c33ccbfe7",
@@ -1770,7 +1770,7 @@
     "subRegion": "Western Africa",
     "latitude": 8,
     "longitude": -5,
-    "flag": "\uD83C\uDDE8\uD83C\uDDEE"
+    "flag": "🇨🇮"
   },
   {
     "id": "75adffd0-f04f-40bb-805e-ad02b9c54c14",
@@ -1786,7 +1786,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.25,
     "longitude": -77.5,
-    "flag": "\uD83C\uDDEF\uD83C\uDDF2"
+    "flag": "🇯🇲"
   },
   {
     "id": "9f2b5936-3867-4e6c-a643-27d79c575769",
@@ -1797,12 +1797,12 @@
     "capital": "Tokyo",
     "idCurrency": "4212ca72-99f1-4994-a2a3-1f86ab27c487",
     "timezone": "UTC",
-    "nameNative": "Jap\u00F3n",
+    "nameNative": "Japón",
     "region": "Asia",
     "subRegion": "Eastern Asia",
     "latitude": 36,
     "longitude": 138,
-    "flag": "\uD83C\uDDEF\uD83C\uDDF5"
+    "flag": "🇯🇵"
   },
   {
     "id": "cdc70af1-4545-4920-af59-6337404d7abd",
@@ -1818,7 +1818,7 @@
     "subRegion": "Northern Europe",
     "latitude": 49.25,
     "longitude": -2.16666666,
-    "flag": "\uD83C\uDDEF\uD83C\uDDEA"
+    "flag": "🇯🇪"
   },
   {
     "id": "c6ac4406-36fc-4699-b18d-1d27a5a0facd",
@@ -1834,7 +1834,7 @@
     "subRegion": "Western Asia",
     "latitude": 31,
     "longitude": 36,
-    "flag": "\uD83C\uDDEF\uD83C\uDDF4"
+    "flag": "🇯🇴"
   },
   {
     "id": "6ee28ecc-302b-42cf-b7d1-0d8d370f6cb9",
@@ -1845,12 +1845,12 @@
     "capital": "Astana",
     "idCurrency": "9e457916-fdc4-481e-859e-fd6ccec19523",
     "timezone": "UTC",
-    "nameNative": "Kazajist\u00E1n",
+    "nameNative": "Kazajistán",
     "region": "Asia",
     "subRegion": "Central Asia",
     "latitude": 48,
     "longitude": 68,
-    "flag": "\uD83C\uDDF0\uD83C\uDDFF"
+    "flag": "🇰🇿"
   },
   {
     "id": "b15bf665-55cd-49ba-ba9c-309542ac1f49",
@@ -1866,7 +1866,7 @@
     "subRegion": "Eastern Africa",
     "latitude": 1,
     "longitude": 38,
-    "flag": "\uD83C\uDDF0\uD83C\uDDEA"
+    "flag": "🇰🇪"
   },
   {
     "id": "8e317b00-1cd2-4b3d-8af2-7cd29171dab6",
@@ -1882,7 +1882,7 @@
     "subRegion": "Micronesia",
     "latitude": 1.41666666,
     "longitude": 173,
-    "flag": "\uD83C\uDDF0\uD83C\uDDEE"
+    "flag": "🇰🇮"
   },
   {
     "id": "c8dc0687-6ce1-4958-a8d1-6536db7f952c",
@@ -1898,7 +1898,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 42.666667,
     "longitude": 21.166667,
-    "flag": "\uD83C\uDDFD\uD83C\uDDF0"
+    "flag": "🇽🇰"
   },
   {
     "id": "92f8a2a6-65b5-40b1-b020-ebaa4a90f800",
@@ -1914,7 +1914,7 @@
     "subRegion": "Western Asia",
     "latitude": 29.5,
     "longitude": 45.75,
-    "flag": "\uD83C\uDDF0\uD83C\uDDFC"
+    "flag": "🇰🇼"
   },
   {
     "id": "30cc3650-e27e-4155-80a5-ecda62c86bad",
@@ -1925,12 +1925,12 @@
     "capital": "Bishkek",
     "idCurrency": "64d106e7-cd14-4df6-aac8-1f2aab223571",
     "timezone": "UTC",
-    "nameNative": "Kirguizist\u00E1n",
+    "nameNative": "Kirguizistán",
     "region": "Asia",
     "subRegion": "Central Asia",
     "latitude": 41,
     "longitude": 75,
-    "flag": "\uD83C\uDDF0\uD83C\uDDEC"
+    "flag": "🇰🇬"
   },
   {
     "id": "5e4714f0-2246-4b34-b5ed-1bab29bea553",
@@ -1946,7 +1946,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 18,
     "longitude": 105,
-    "flag": "\uD83C\uDDF1\uD83C\uDDE6"
+    "flag": "🇱🇦"
   },
   {
     "id": "5a6119d3-e1e1-4a31-bc10-d0aaf5e3375a",
@@ -1962,7 +1962,7 @@
     "subRegion": "Northern Europe",
     "latitude": 57,
     "longitude": 25,
-    "flag": "\uD83C\uDDF1\uD83C\uDDFB"
+    "flag": "🇱🇻"
   },
   {
     "id": "3e173d18-fa91-4f88-8e61-10e3a996f009",
@@ -1973,12 +1973,12 @@
     "capital": "Beirut",
     "idCurrency": "45a3e790-b77a-4b1a-bea0-a1c254d7393b",
     "timezone": "UTC",
-    "nameNative": "L\u00EDbano",
+    "nameNative": "Líbano",
     "region": "Asia",
     "subRegion": "Western Asia",
     "latitude": 33.83333333,
     "longitude": 35.83333333,
-    "flag": "\uD83C\uDDF1\uD83C\uDDE7"
+    "flag": "🇱🇧"
   },
   {
     "id": "7e102a61-72eb-4f0b-89e3-93d1f02b4a71",
@@ -1994,7 +1994,7 @@
     "subRegion": "Southern Africa",
     "latitude": -29.5,
     "longitude": 28.5,
-    "flag": "\uD83C\uDDF1\uD83C\uDDF8"
+    "flag": "🇱🇸"
   },
   {
     "id": "e149c83b-3563-46f4-b9f8-981b6787642e",
@@ -2010,7 +2010,7 @@
     "subRegion": "Western Africa",
     "latitude": 6.5,
     "longitude": -9.5,
-    "flag": "\uD83C\uDDF1\uD83C\uDDF7"
+    "flag": "🇱🇷"
   },
   {
     "id": "9d4e72e2-09e4-4536-9e9a-a52b822f8b3b",
@@ -2026,7 +2026,7 @@
     "subRegion": "Northern Africa",
     "latitude": 25,
     "longitude": 17,
-    "flag": "\uD83C\uDDF1\uD83C\uDDFE"
+    "flag": "🇱🇾"
   },
   {
     "id": "295dcaaf-6106-4937-bddb-11facfee4b82",
@@ -2042,7 +2042,7 @@
     "subRegion": "Western Europe",
     "latitude": 47.26666666,
     "longitude": 9.53333333,
-    "flag": "\uD83C\uDDF1\uD83C\uDDEE"
+    "flag": "🇱🇮"
   },
   {
     "id": "f6186ce7-c321-4189-9b4a-110018786f4e",
@@ -2058,7 +2058,7 @@
     "subRegion": "Northern Europe",
     "latitude": 56,
     "longitude": 24,
-    "flag": "\uD83C\uDDF1\uD83C\uDDF9"
+    "flag": "🇱🇹"
   },
   {
     "id": "a2a878ea-5023-4b9e-b009-ba0af6a31f83",
@@ -2074,7 +2074,7 @@
     "subRegion": "Western Europe",
     "latitude": 49.75,
     "longitude": 6.16666666,
-    "flag": "\uD83C\uDDF1\uD83C\uDDFA"
+    "flag": "🇱🇺"
   },
   {
     "id": "9e5826a7-9016-4f89-a147-928e8eca35ef",
@@ -2089,7 +2089,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 22.16666666,
     "longitude": 113.55,
-    "flag": "\uD83C\uDDF2\uD83C\uDDF4"
+    "flag": "🇲🇴"
   },
   {
     "id": "2470b328-3797-4dca-9b7a-f02b049e1e71",
@@ -2105,7 +2105,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -20,
     "longitude": 47,
-    "flag": "\uD83C\uDDF2\uD83C\uDDEC"
+    "flag": "🇲🇬"
   },
   {
     "id": "8487e0cc-8a6b-47fc-9e73-c9cdfbdbe500",
@@ -2121,7 +2121,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -13.5,
     "longitude": 34,
-    "flag": "\uD83C\uDDF2\uD83C\uDDFC"
+    "flag": "🇲🇼"
   },
   {
     "id": "860a5ff8-aac9-4e8c-8888-13a1cb7b0ee3",
@@ -2137,7 +2137,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 2.5,
     "longitude": 112.5,
-    "flag": "\uD83C\uDDF2\uD83C\uDDFE"
+    "flag": "🇲🇾"
   },
   {
     "id": "11d8a306-f70e-4b29-8088-68b6e131c6d1",
@@ -2145,7 +2145,7 @@
     "alpha2": "MV",
     "alpha3": "MDV",
     "code": "462",
-    "capital": "Mal\u00E9",
+    "capital": "Malé",
     "idCurrency": "9cca71a5-d3c7-4586-b4e5-7353cf8ec402",
     "timezone": "UTC",
     "nameNative": "Maldivas",
@@ -2153,7 +2153,7 @@
     "subRegion": "Southern Asia",
     "latitude": 3.25,
     "longitude": 73,
-    "flag": "\uD83C\uDDF2\uD83C\uDDFB"
+    "flag": "🇲🇻"
   },
   {
     "id": "2f9e885f-500d-4173-a4e1-4e44ede8a70c",
@@ -2169,7 +2169,7 @@
     "subRegion": "Western Africa",
     "latitude": 17,
     "longitude": -4,
-    "flag": "\uD83C\uDDF2\uD83C\uDDF1"
+    "flag": "🇲🇱"
   },
   {
     "id": "c5a77b87-ca19-4fa7-82df-6635d3e0a9bb",
@@ -2185,7 +2185,7 @@
     "subRegion": "Southern Europe",
     "latitude": 35.83333333,
     "longitude": 14.58333333,
-    "flag": "\uD83C\uDDF2\uD83C\uDDF9"
+    "flag": "🇲🇹"
   },
   {
     "id": "3587580a-b9dc-4130-946f-c274f4a3737d",
@@ -2201,7 +2201,7 @@
     "subRegion": "Micronesia",
     "latitude": 9,
     "longitude": 168,
-    "flag": "\uD83C\uDDF2\uD83C\uDDED"
+    "flag": "🇲🇭"
   },
   {
     "id": "1338770f-ea91-4042-abdb-612ab544b2e2",
@@ -2217,7 +2217,7 @@
     "subRegion": "Caribbean",
     "latitude": 14.666667,
     "longitude": -61,
-    "flag": "\uD83C\uDDF2\uD83C\uDDF6"
+    "flag": "🇲🇶"
   },
   {
     "id": "4dd1043a-a7d2-44f9-ab1b-f6e93e83621a",
@@ -2233,7 +2233,7 @@
     "subRegion": "Western Africa",
     "latitude": 20,
     "longitude": -12,
-    "flag": "\uD83C\uDDF2\uD83C\uDDF7"
+    "flag": "🇲🇷"
   },
   {
     "id": "3919e0b0-ac7a-47e0-b75a-22d8c1732bb4",
@@ -2249,7 +2249,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -20.28333333,
     "longitude": 57.55,
-    "flag": "\uD83C\uDDF2\uD83C\uDDFA"
+    "flag": "🇲🇺"
   },
   {
     "id": "60935fc4-281b-4ae1-b135-6de7a038f401",
@@ -2265,7 +2265,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -12.83333333,
     "longitude": 45.16666666,
-    "flag": "\uD83C\uDDFE\uD83C\uDDF9"
+    "flag": "🇾🇹"
   },
   {
     "id": "1ae50a7e-f2a5-4e69-adc8-0f98c5664ed3",
@@ -2276,12 +2276,12 @@
     "capital": "Mexico City",
     "idCurrency": "267f8ba4-a6da-4773-8467-fc035f41d8d5",
     "timezone": "UTC",
-    "nameNative": "M\u00E9xico",
+    "nameNative": "México",
     "region": "Americas",
     "subRegion": "North America",
     "latitude": 23,
     "longitude": -102,
-    "flag": "\uD83C\uDDF2\uD83C\uDDFD"
+    "flag": "🇲🇽"
   },
   {
     "id": "033c2aea-4c61-477a-9e56-49286d1e2a59",
@@ -2297,7 +2297,7 @@
     "subRegion": "Micronesia",
     "latitude": 6.91666666,
     "longitude": 158.25,
-    "flag": "\uD83C\uDDEB\uD83C\uDDF2"
+    "flag": "🇫🇲"
   },
   {
     "id": "c6896e52-80b5-4a28-8d3a-7cc87efcdfec",
@@ -2305,7 +2305,7 @@
     "alpha2": "MD",
     "alpha3": "MDA",
     "code": "498",
-    "capital": "Chi\u0219in\u0103u",
+    "capital": "Chișinău",
     "idCurrency": "a9e2761f-29dd-4000-8040-8e5f4fdd73eb",
     "timezone": "UTC",
     "nameNative": "Moldavia",
@@ -2313,7 +2313,7 @@
     "subRegion": "Eastern Europe",
     "latitude": 47,
     "longitude": 29,
-    "flag": "\uD83C\uDDF2\uD83C\uDDE9"
+    "flag": "🇲🇩"
   },
   {
     "id": "1420fdf5-913b-4bee-8586-ba5bb19f7ad2",
@@ -2324,12 +2324,12 @@
     "capital": "Monaco",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "UTC",
-    "nameNative": "M\u00F3naco",
+    "nameNative": "Mónaco",
     "region": "Europe",
     "subRegion": "Western Europe",
     "latitude": 43.73333333,
     "longitude": 7.4,
-    "flag": "\uD83C\uDDF2\uD83C\uDDE8"
+    "flag": "🇲🇨"
   },
   {
     "id": "06e2a53f-0462-4d1d-86ff-732931ceeb2d",
@@ -2345,7 +2345,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 46,
     "longitude": 105,
-    "flag": "\uD83C\uDDF2\uD83C\uDDF3"
+    "flag": "🇲🇳"
   },
   {
     "id": "7162e8f8-3e38-459c-bccf-ab6aa5a822f3",
@@ -2361,7 +2361,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 42.5,
     "longitude": 19.3,
-    "flag": "\uD83C\uDDF2\uD83C\uDDEA"
+    "flag": "🇲🇪"
   },
   {
     "id": "0230fa5a-7388-4956-b0e0-0d6dab6c8ca9",
@@ -2377,7 +2377,7 @@
     "subRegion": "Caribbean",
     "latitude": 16.75,
     "longitude": -62.2,
-    "flag": "\uD83C\uDDF2\uD83C\uDDF8"
+    "flag": "🇲🇸"
   },
   {
     "id": "523f5a07-f0d5-4ad7-9cee-15ca281a6747",
@@ -2393,7 +2393,7 @@
     "subRegion": "Northern Africa",
     "latitude": 32,
     "longitude": -5,
-    "flag": "\uD83C\uDDF2\uD83C\uDDE6"
+    "flag": "🇲🇦"
   },
   {
     "id": "2fb62a81-d8c1-40f3-9e52-dfd61269e3c8",
@@ -2409,7 +2409,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -18.25,
     "longitude": 35,
-    "flag": "\uD83C\uDDF2\uD83C\uDDFF"
+    "flag": "🇲🇿"
   },
   {
     "id": "f41b49a8-5d96-4160-9f59-8a04c2e16521",
@@ -2425,7 +2425,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 22,
     "longitude": 98,
-    "flag": "\uD83C\uDDF2\uD83C\uDDF2"
+    "flag": "🇲🇲"
   },
   {
     "id": "d865c492-d37f-4d52-9a79-6f2dde2f9556",
@@ -2441,7 +2441,7 @@
     "subRegion": "Southern Africa",
     "latitude": -22,
     "longitude": 17,
-    "flag": "\uD83C\uDDF3\uD83C\uDDE6"
+    "flag": "🇳🇦"
   },
   {
     "id": "cabf6af0-1a2f-4877-ab68-c69c8692cf95",
@@ -2457,7 +2457,7 @@
     "subRegion": "Micronesia",
     "latitude": -0.53333333,
     "longitude": 166.91666666,
-    "flag": "\uD83C\uDDF3\uD83C\uDDF7"
+    "flag": "🇳🇷"
   },
   {
     "id": "92083ae0-f57c-4dca-9ecf-797f4e7ddc1d",
@@ -2473,7 +2473,7 @@
     "subRegion": "Southern Asia",
     "latitude": 28,
     "longitude": 84,
-    "flag": "\uD83C\uDDF3\uD83C\uDDF5"
+    "flag": "🇳🇵"
   },
   {
     "id": "e1ad3695-60ef-4941-b594-7c79e7488f20",
@@ -2484,12 +2484,12 @@
     "capital": "Amsterdam",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "UTC",
-    "nameNative": "Pa\u00EDses Bajos",
+    "nameNative": "Países Bajos",
     "region": "Europe",
     "subRegion": "Western Europe",
     "latitude": 52.5,
     "longitude": 5.75,
-    "flag": "\uD83C\uDDF3\uD83C\uDDF1"
+    "flag": "🇳🇱"
   },
   {
     "id": "359b87c7-c22e-4bef-bbea-efa738ca976f",
@@ -2497,7 +2497,7 @@
     "alpha2": "NC",
     "alpha3": "NCL",
     "code": "540",
-    "capital": "Noum\u00E9a",
+    "capital": "Nouméa",
     "idCurrency": "92bb96bd-b000-4a8a-a012-f3f7a032db66",
     "timezone": "UTC",
     "nameNative": "Nueva Caledonia",
@@ -2505,7 +2505,7 @@
     "subRegion": "Melanesia",
     "latitude": -21.5,
     "longitude": 165.5,
-    "flag": "\uD83C\uDDF3\uD83C\uDDE8"
+    "flag": "🇳🇨"
   },
   {
     "id": "8d9acc54-107f-4ad5-ab38-aeacb4947406",
@@ -2521,7 +2521,7 @@
     "subRegion": "Australia and New Zealand",
     "latitude": -41,
     "longitude": 174,
-    "flag": "\uD83C\uDDF3\uD83C\uDDFF"
+    "flag": "🇳🇿"
   },
   {
     "id": "7a1fde17-8422-4227-90b3-e5d83468e419",
@@ -2537,7 +2537,7 @@
     "subRegion": "Central America",
     "latitude": 13,
     "longitude": -85,
-    "flag": "\uD83C\uDDF3\uD83C\uDDEE"
+    "flag": "🇳🇮"
   },
   {
     "id": "34da9179-17fb-4dfd-9d27-30ccaf5ba099",
@@ -2548,12 +2548,12 @@
     "capital": "Niamey",
     "idCurrency": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "timezone": "UTC",
-    "nameNative": "N\u00EDger",
+    "nameNative": "Níger",
     "region": "Africa",
     "subRegion": "Western Africa",
     "latitude": 16,
     "longitude": 8,
-    "flag": "\uD83C\uDDF3\uD83C\uDDEA"
+    "flag": "🇳🇪"
   },
   {
     "id": "78ab3bb1-adda-4dc8-9b4a-8af9d72c66d8",
@@ -2569,7 +2569,7 @@
     "subRegion": "Western Africa",
     "latitude": 10,
     "longitude": 8,
-    "flag": "\uD83C\uDDF3\uD83C\uDDEC"
+    "flag": "🇳🇬"
   },
   {
     "id": "76054311-422a-486f-8d28-cc3baba4e8e7",
@@ -2585,7 +2585,7 @@
     "subRegion": "Polynesia",
     "latitude": -19.03333333,
     "longitude": -169.86666666,
-    "flag": "\uD83C\uDDF3\uD83C\uDDFA"
+    "flag": "🇳🇺"
   },
   {
     "id": "77e87582-57f9-4497-8b18-64daf53dd761",
@@ -2601,7 +2601,7 @@
     "subRegion": "Australia and New Zealand",
     "latitude": -29.03333333,
     "longitude": 167.95,
-    "flag": "\uD83C\uDDF3\uD83C\uDDEB"
+    "flag": "🇳🇫"
   },
   {
     "id": "457041d1-1178-420c-a91e-a3863a8a1964",
@@ -2617,7 +2617,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 40,
     "longitude": 127,
-    "flag": "\uD83C\uDDF0\uD83C\uDDF5"
+    "flag": "🇰🇵"
   },
   {
     "id": "916a0244-2af2-4aef-aab9-67dc84e43706",
@@ -2633,7 +2633,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 41.83333333,
     "longitude": 22,
-    "flag": "\uD83C\uDDF2\uD83C\uDDF0"
+    "flag": "🇲🇰"
   },
   {
     "id": "a50d89ea-3419-4e90-8417-b3fdb2afce44",
@@ -2649,7 +2649,7 @@
     "subRegion": "Micronesia",
     "latitude": 15.2,
     "longitude": 145.75,
-    "flag": "\uD83C\uDDF2\uD83C\uDDF5"
+    "flag": "🇲🇵"
   },
   {
     "id": "eb07b880-da91-4097-b6a8-73cbe5626a2a",
@@ -2665,7 +2665,7 @@
     "subRegion": "Northern Europe",
     "latitude": 62,
     "longitude": 10,
-    "flag": "\uD83C\uDDF3\uD83C\uDDF4"
+    "flag": "🇳🇴"
   },
   {
     "id": "a322e798-2ad0-4170-9a9f-c28fa697710c",
@@ -2676,12 +2676,12 @@
     "capital": "Muscat",
     "idCurrency": "2fe18921-120e-429d-a82a-0912895c5078",
     "timezone": "UTC",
-    "nameNative": "Om\u00E1n",
+    "nameNative": "Omán",
     "region": "Asia",
     "subRegion": "Western Asia",
     "latitude": 21,
     "longitude": 57,
-    "flag": "\uD83C\uDDF4\uD83C\uDDF2"
+    "flag": "🇴🇲"
   },
   {
     "id": "9b7b5011-0984-402d-92a8-ee30e94b8adb",
@@ -2692,12 +2692,12 @@
     "capital": "Islamabad",
     "idCurrency": "00d5808f-fc0d-4182-89d7-ab57d0070862",
     "timezone": "UTC",
-    "nameNative": "Pakist\u00E1n",
+    "nameNative": "Pakistán",
     "region": "Asia",
     "subRegion": "Southern Asia",
     "latitude": 30,
     "longitude": 70,
-    "flag": "\uD83C\uDDF5\uD83C\uDDF0"
+    "flag": "🇵🇰"
   },
   {
     "id": "22ea2190-dd40-448e-a1a3-c2ebe2ca3354",
@@ -2713,7 +2713,7 @@
     "subRegion": "Micronesia",
     "latitude": 7.5,
     "longitude": 134.5,
-    "flag": "\uD83C\uDDF5\uD83C\uDDFC"
+    "flag": "🇵🇼"
   },
   {
     "id": "8632dc50-2428-45bf-89cb-6e514cd1d9d3",
@@ -2729,7 +2729,7 @@
     "subRegion": "Western Asia",
     "latitude": 31.9,
     "longitude": 35.2,
-    "flag": "\uD83C\uDDF5\uD83C\uDDF8"
+    "flag": "🇵🇸"
   },
   {
     "id": "6fafd33f-9ae3-4e22-8806-9d96d0c2c3da",
@@ -2740,12 +2740,12 @@
     "capital": "Panama City",
     "idCurrency": "f3850a4a-f211-430b-949a-5339a80473e3",
     "timezone": "UTC",
-    "nameNative": "Panam\u00E1",
+    "nameNative": "Panamá",
     "region": "Americas",
     "subRegion": "Central America",
     "latitude": 9,
     "longitude": -80,
-    "flag": "\uD83C\uDDF5\uD83C\uDDE6"
+    "flag": "🇵🇦"
   },
   {
     "id": "e224b563-b6fe-4647-ba14-daf5dbba2435",
@@ -2756,12 +2756,12 @@
     "capital": "Port Moresby",
     "idCurrency": "4f912c2e-84b6-4440-8acc-e5db0a20a4b8",
     "timezone": "UTC",
-    "nameNative": "Pap\u00FAa Nueva Guinea",
+    "nameNative": "Papúa Nueva Guinea",
     "region": "Oceania",
     "subRegion": "Melanesia",
     "latitude": -6,
     "longitude": 147,
-    "flag": "\uD83C\uDDF5\uD83C\uDDEC"
+    "flag": "🇵🇬"
   },
   {
     "id": "98c14999-8a5a-42fd-8ba4-aa6ba974328b",
@@ -2769,7 +2769,7 @@
     "alpha2": "PY",
     "alpha3": "PRY",
     "code": "600",
-    "capital": "Asunci\u00F3n",
+    "capital": "Asunción",
     "idCurrency": "fdd76789-38a4-4ed2-94db-5e640f190b57",
     "timezone": "UTC",
     "nameNative": "Paraguay",
@@ -2777,7 +2777,7 @@
     "subRegion": "South America",
     "latitude": -23,
     "longitude": -58,
-    "flag": "\uD83C\uDDF5\uD83C\uDDFE"
+    "flag": "🇵🇾"
   },
   {
     "id": "88355021-3e6f-4618-8b4f-01e57e13f2a2",
@@ -2788,12 +2788,12 @@
     "capital": "Lima",
     "idCurrency": "644899cd-264e-4235-8acd-8e5bdce0c024",
     "timezone": "UTC",
-    "nameNative": "Per\u00FA",
+    "nameNative": "Perú",
     "region": "Americas",
     "subRegion": "South America",
     "latitude": -10,
     "longitude": -76,
-    "flag": "\uD83C\uDDF5\uD83C\uDDEA"
+    "flag": "🇵🇪"
   },
   {
     "id": "c12747f8-fcf3-4eae-86cd-35ca113c8eab",
@@ -2809,7 +2809,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 13,
     "longitude": 122,
-    "flag": "\uD83C\uDDF5\uD83C\uDDED"
+    "flag": "🇵🇭"
   },
   {
     "id": "cddcb33e-a0f3-4a13-84f9-3d143fe68b16",
@@ -2825,7 +2825,7 @@
     "subRegion": "Polynesia",
     "latitude": -25.06666666,
     "longitude": -130.1,
-    "flag": "\uD83C\uDDF5\uD83C\uDDF3"
+    "flag": "🇵🇳"
   },
   {
     "id": "11790c90-08a1-4a03-9e84-0eae18a4cbd3",
@@ -2841,7 +2841,7 @@
     "subRegion": "Central Europe",
     "latitude": 52,
     "longitude": 20,
-    "flag": "\uD83C\uDDF5\uD83C\uDDF1"
+    "flag": "🇵🇱"
   },
   {
     "id": "6a3f8f25-cb5d-4957-a779-29c8880605ec",
@@ -2857,7 +2857,7 @@
     "subRegion": "Southern Europe",
     "latitude": 39.5,
     "longitude": -8,
-    "flag": "\uD83C\uDDF5\uD83C\uDDF9"
+    "flag": "🇵🇹"
   },
   {
     "id": "d3b61498-39e1-4935-b1ac-88e05fee8614",
@@ -2873,7 +2873,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.25,
     "longitude": -66.5,
-    "flag": "\uD83C\uDDF5\uD83C\uDDF7"
+    "flag": "🇵🇷"
   },
   {
     "id": "80db121d-143f-4fdd-9b1a-601ef418adf5",
@@ -2889,23 +2889,23 @@
     "subRegion": "Western Asia",
     "latitude": 25.5,
     "longitude": 51.25,
-    "flag": "\uD83C\uDDF6\uD83C\uDDE6"
+    "flag": "🇶🇦"
   },
   {
     "id": "260b4ee2-667d-4898-a42f-6e1df287b762",
-    "name": "R\u00E9union",
+    "name": "Réunion",
     "alpha2": "RE",
     "alpha3": "REU",
     "code": "638",
     "capital": "Saint-Denis",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "UTC",
-    "nameNative": "Reuni\u00F3n",
+    "nameNative": "Reunión",
     "region": "Africa",
     "subRegion": "Eastern Africa",
     "latitude": -21.15,
     "longitude": 55.5,
-    "flag": "\uD83C\uDDF7\uD83C\uDDEA"
+    "flag": "🇷🇪"
   },
   {
     "id": "da30cfd1-747d-44cc-8a7c-ce6883b314ce",
@@ -2921,7 +2921,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 46,
     "longitude": 25,
-    "flag": "\uD83C\uDDF7\uD83C\uDDF4"
+    "flag": "🇷🇴"
   },
   {
     "id": "5574cf95-f51d-48a4-860b-c8136db6f2be",
@@ -2937,7 +2937,7 @@
     "subRegion": "Eastern Europe",
     "latitude": 60,
     "longitude": 100,
-    "flag": "\uD83C\uDDF7\uD83C\uDDFA"
+    "flag": "🇷🇺"
   },
   {
     "id": "97260328-608b-4239-b05e-e03f4c7ed45b",
@@ -2953,23 +2953,23 @@
     "subRegion": "Eastern Africa",
     "latitude": -2,
     "longitude": 30,
-    "flag": "\uD83C\uDDF7\uD83C\uDDFC"
+    "flag": "🇷🇼"
   },
   {
     "id": "e197b2aa-e80b-48d8-9616-340f4bbefe3d",
-    "name": "Saint Barth\u00E9lemy",
+    "name": "Saint Barthélemy",
     "alpha2": "BL",
     "alpha3": "BLM",
     "code": "652",
     "capital": "Gustavia",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "UTC",
-    "nameNative": "San Bartolom\u00E9",
+    "nameNative": "San Bartolomé",
     "region": "Americas",
     "subRegion": "Caribbean",
     "latitude": 18.5,
     "longitude": -63.41666666,
-    "flag": "\uD83C\uDDE7\uD83C\uDDF1"
+    "flag": "🇧🇱"
   },
   {
     "id": "25e93e88-ee06-4222-8cd6-3432284ffd70",
@@ -2980,12 +2980,12 @@
     "capital": "Jamestown",
     "idCurrency": "7d382442-fe7e-419b-bb25-2cb5828e66be",
     "timezone": "UTC",
-    "nameNative": "Santa Elena, Ascensi\u00F3n y Trist\u00E1n de Acu\u00F1a",
+    "nameNative": "Santa Elena, Ascensión y Tristán de Acuña",
     "region": "Africa",
     "subRegion": "Western Africa",
     "latitude": -15.95,
     "longitude": -5.72,
-    "flag": "\uD83C\uDDF8\uD83C\uDDED"
+    "flag": "🇸🇭"
   },
   {
     "id": "dd316f2d-7663-41da-8646-881ab6494012",
@@ -2996,12 +2996,12 @@
     "capital": "Basseterre",
     "idCurrency": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "timezone": "UTC",
-    "nameNative": "San Crist\u00F3bal y Nieves",
+    "nameNative": "San Cristóbal y Nieves",
     "region": "Americas",
     "subRegion": "Caribbean",
     "latitude": 17.33333333,
     "longitude": -62.75,
-    "flag": "\uD83C\uDDF0\uD83C\uDDF3"
+    "flag": "🇰🇳"
   },
   {
     "id": "9ca59b07-36c0-411b-9927-78d5e33beda9",
@@ -3012,12 +3012,12 @@
     "capital": "Castries",
     "idCurrency": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "timezone": "UTC",
-    "nameNative": "Santa Luc\u00EDa",
+    "nameNative": "Santa Lucía",
     "region": "Americas",
     "subRegion": "Caribbean",
     "latitude": 13.88333333,
     "longitude": -60.96666666,
-    "flag": "\uD83C\uDDF1\uD83C\uDDE8"
+    "flag": "🇱🇨"
   },
   {
     "id": "ffdaf5e0-2600-45c7-bff4-87fbad52ef0d",
@@ -3033,7 +3033,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.08333333,
     "longitude": -63.95,
-    "flag": "\uD83C\uDDF2\uD83C\uDDEB"
+    "flag": "🇲🇫"
   },
   {
     "id": "bcbed2bc-3017-45ef-affa-55b38bb5c02c",
@@ -3044,12 +3044,12 @@
     "capital": "Saint-Pierre",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "UTC",
-    "nameNative": "San Pedro y Miquel\u00F3n",
+    "nameNative": "San Pedro y Miquelón",
     "region": "Americas",
     "subRegion": "North America",
     "latitude": 46.83333333,
     "longitude": -56.33333333,
-    "flag": "\uD83C\uDDF5\uD83C\uDDF2"
+    "flag": "🇵🇲"
   },
   {
     "id": "18b00b44-82b0-45ec-afdd-34864c8ea126",
@@ -3065,7 +3065,7 @@
     "subRegion": "Caribbean",
     "latitude": 13.25,
     "longitude": -61.2,
-    "flag": "\uD83C\uDDFB\uD83C\uDDE8"
+    "flag": "🇻🇨"
   },
   {
     "id": "43787308-3401-4978-9e66-abe43c3bfba2",
@@ -3081,7 +3081,7 @@
     "subRegion": "Polynesia",
     "latitude": -13.58333333,
     "longitude": -172.33333333,
-    "flag": "\uD83C\uDDFC\uD83C\uDDF8"
+    "flag": "🇼🇸"
   },
   {
     "id": "71c8c964-234f-46e1-8a38-e93bfd9777b2",
@@ -3097,23 +3097,23 @@
     "subRegion": "Southern Europe",
     "latitude": 43.76666666,
     "longitude": 12.41666666,
-    "flag": "\uD83C\uDDF8\uD83C\uDDF2"
+    "flag": "🇸🇲"
   },
   {
     "id": "700146b6-de9a-4047-8254-a4bccec7298d",
-    "name": "S\u00E3o Tom\u00E9 and Pr\u00EDncipe",
+    "name": "São Tomé and Príncipe",
     "alpha2": "ST",
     "alpha3": "STP",
     "code": "678",
-    "capital": "S\u00E3o Tom\u00E9",
+    "capital": "São Tomé",
     "idCurrency": "7a217258-01d9-4ce0-97f1-dce74835eaab",
     "timezone": "UTC",
-    "nameNative": "Santo Tom\u00E9 y Pr\u00EDncipe",
+    "nameNative": "Santo Tomé y Príncipe",
     "region": "Africa",
     "subRegion": "Middle Africa",
     "latitude": 1,
     "longitude": 7,
-    "flag": "\uD83C\uDDF8\uD83C\uDDF9"
+    "flag": "🇸🇹"
   },
   {
     "id": "9bb05be1-4821-4513-b5d6-3759bdcf5db9",
@@ -3124,12 +3124,12 @@
     "capital": "Riyadh",
     "idCurrency": "2de87f88-c9c0-4743-91e2-fa600afcc000",
     "timezone": "UTC",
-    "nameNative": "Arabia Saud\u00ED",
+    "nameNative": "Arabia Saudí",
     "region": "Asia",
     "subRegion": "Western Asia",
     "latitude": 25,
     "longitude": 45,
-    "flag": "\uD83C\uDDF8\uD83C\uDDE6"
+    "flag": "🇸🇦"
   },
   {
     "id": "f5c00923-4baf-425d-8e9f-f223318b4c4f",
@@ -3145,7 +3145,7 @@
     "subRegion": "Western Africa",
     "latitude": 14,
     "longitude": -14,
-    "flag": "\uD83C\uDDF8\uD83C\uDDF3"
+    "flag": "🇸🇳"
   },
   {
     "id": "3273e188-5400-4583-aa20-65460ab5c3b5",
@@ -3161,7 +3161,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 44,
     "longitude": 21,
-    "flag": "\uD83C\uDDF7\uD83C\uDDF8"
+    "flag": "🇷🇸"
   },
   {
     "id": "78619eed-d8f1-42ff-9770-ace9b52b5dc5",
@@ -3177,7 +3177,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -4.58333333,
     "longitude": 55.66666666,
-    "flag": "\uD83C\uDDF8\uD83C\uDDE8"
+    "flag": "🇸🇨"
   },
   {
     "id": "2f42e0fa-94ce-4746-96b6-13151382a835",
@@ -3193,7 +3193,7 @@
     "subRegion": "Western Africa",
     "latitude": 8.5,
     "longitude": -11.5,
-    "flag": "\uD83C\uDDF8\uD83C\uDDF1"
+    "flag": "🇸🇱"
   },
   {
     "id": "6581480c-cf70-4efa-94f3-020baf9bb635",
@@ -3209,7 +3209,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 1.36666666,
     "longitude": 103.8,
-    "flag": "\uD83C\uDDF8\uD83C\uDDEC"
+    "flag": "🇸🇬"
   },
   {
     "id": "97090b59-d480-48e7-a298-ab27340d6306",
@@ -3225,7 +3225,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.033333,
     "longitude": -63.05,
-    "flag": "\uD83C\uDDF8\uD83C\uDDFD"
+    "flag": "🇸🇽"
   },
   {
     "id": "911d9405-9985-49b1-8659-5043c4604b3c",
@@ -3241,7 +3241,7 @@
     "subRegion": "Central Europe",
     "latitude": 48.66666666,
     "longitude": 19.5,
-    "flag": "\uD83C\uDDF8\uD83C\uDDF0"
+    "flag": "🇸🇰"
   },
   {
     "id": "7a50868e-41b3-4c41-b99b-3e84429c1d8d",
@@ -3257,7 +3257,7 @@
     "subRegion": "Central Europe",
     "latitude": 46.11666666,
     "longitude": 14.81666666,
-    "flag": "\uD83C\uDDF8\uD83C\uDDEE"
+    "flag": "🇸🇮"
   },
   {
     "id": "c4dd5f86-71b2-413c-8265-7f72cfa0c4e4",
@@ -3268,12 +3268,12 @@
     "capital": "Honiara",
     "idCurrency": "4b425475-6731-487f-a90c-328ea2add986",
     "timezone": "UTC",
-    "nameNative": "Islas Salom\u00F3n",
+    "nameNative": "Islas Salomón",
     "region": "Oceania",
     "subRegion": "Melanesia",
     "latitude": -8,
     "longitude": 159,
-    "flag": "\uD83C\uDDF8\uD83C\uDDE7"
+    "flag": "🇸🇧"
   },
   {
     "id": "937d80dd-4664-4210-9b53-0f34da558eb3",
@@ -3289,7 +3289,7 @@
     "subRegion": "Eastern Africa",
     "latitude": 10,
     "longitude": 49,
-    "flag": "\uD83C\uDDF8\uD83C\uDDF4"
+    "flag": "🇸🇴"
   },
   {
     "id": "15da2bf5-e8f5-441b-b579-25116df26e7e",
@@ -3300,12 +3300,12 @@
     "capital": "Pretoria",
     "idCurrency": "34045e5d-0be1-4722-9505-0bb651d12721",
     "timezone": "UTC",
-    "nameNative": "Sud\u00E1frica",
+    "nameNative": "Sudáfrica",
     "region": "Africa",
     "subRegion": "Southern Africa",
     "latitude": -29,
     "longitude": 24,
-    "flag": "\uD83C\uDDFF\uD83C\uDDE6"
+    "flag": "🇿🇦"
   },
   {
     "id": "6c0f3f8f-a0c1-44e2-9b0b-9ea74626566b",
@@ -3321,7 +3321,7 @@
     "subRegion": "Unknown",
     "latitude": -54.5,
     "longitude": -37,
-    "flag": "\uD83C\uDDEC\uD83C\uDDF8"
+    "flag": "🇬🇸"
   },
   {
     "id": "666e784c-5057-4ea7-8b7d-16aa69ead731",
@@ -3337,7 +3337,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 37,
     "longitude": 127.5,
-    "flag": "\uD83C\uDDF0\uD83C\uDDF7"
+    "flag": "🇰🇷"
   },
   {
     "id": "420594a4-05c5-48df-9f2b-f0795e0b5f17",
@@ -3348,12 +3348,12 @@
     "capital": "Juba",
     "idCurrency": "39593090-4f47-4d75-9788-5982b997c208",
     "timezone": "UTC",
-    "nameNative": "Sud\u00E1n del Sur",
+    "nameNative": "Sudán del Sur",
     "region": "Africa",
     "subRegion": "Middle Africa",
     "latitude": 7,
     "longitude": 30,
-    "flag": "\uD83C\uDDF8\uD83C\uDDF8"
+    "flag": "🇸🇸"
   },
   {
     "id": "46add9a0-68a8-482a-bfe3-d58b4dae177c",
@@ -3364,12 +3364,12 @@
     "capital": "Madrid",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "UTC",
-    "nameNative": "Espa\u00F1a",
+    "nameNative": "España",
     "region": "Europe",
     "subRegion": "Southern Europe",
     "latitude": 40,
     "longitude": -4,
-    "flag": "\uD83C\uDDEA\uD83C\uDDF8"
+    "flag": "🇪🇸"
   },
   {
     "id": "0a44aab2-ab63-48be-becb-417f10c768e1",
@@ -3385,7 +3385,7 @@
     "subRegion": "Southern Asia",
     "latitude": 7,
     "longitude": 81,
-    "flag": "\uD83C\uDDF1\uD83C\uDDF0"
+    "flag": "🇱🇰"
   },
   {
     "id": "75ba5ce0-4367-4315-9399-1ceaaef21c6b",
@@ -3396,12 +3396,12 @@
     "capital": "Khartoum",
     "idCurrency": "f0fb70f7-b539-40dc-9f57-b2b86634d0fa",
     "timezone": "UTC",
-    "nameNative": "Sud\u00E1n",
+    "nameNative": "Sudán",
     "region": "Africa",
     "subRegion": "Northern Africa",
     "latitude": 15,
     "longitude": 30,
-    "flag": "\uD83C\uDDF8\uD83C\uDDE9"
+    "flag": "🇸🇩"
   },
   {
     "id": "5b12988b-1684-4709-8b30-92d22055c455",
@@ -3417,7 +3417,7 @@
     "subRegion": "South America",
     "latitude": 4,
     "longitude": -56,
-    "flag": "\uD83C\uDDF8\uD83C\uDDF7"
+    "flag": "🇸🇷"
   },
   {
     "id": "bb9eff5f-a974-4baa-b580-fc3508624fdc",
@@ -3433,7 +3433,7 @@
     "subRegion": "Northern Europe",
     "latitude": 78,
     "longitude": 20,
-    "flag": "\uD83C\uDDF8\uD83C\uDDEF"
+    "flag": "🇸🇯"
   },
   {
     "id": "ec957a89-0f6b-4258-a5c6-4cac94297e42",
@@ -3449,7 +3449,7 @@
     "subRegion": "Northern Europe",
     "latitude": 62,
     "longitude": 15,
-    "flag": "\uD83C\uDDF8\uD83C\uDDEA"
+    "flag": "🇸🇪"
   },
   {
     "id": "8b6ce038-75d2-47d5-9366-3076bb194374",
@@ -3465,7 +3465,7 @@
     "subRegion": "Western Europe",
     "latitude": 47,
     "longitude": 8,
-    "flag": "\uD83C\uDDE8\uD83C\uDDED"
+    "flag": "🇨🇭"
   },
   {
     "id": "c5cc414d-70e1-47d4-904b-d98c76cbc3ca",
@@ -3481,7 +3481,7 @@
     "subRegion": "Western Asia",
     "latitude": 35,
     "longitude": 38,
-    "flag": "\uD83C\uDDF8\uD83C\uDDFE"
+    "flag": "🇸🇾"
   },
   {
     "id": "7d6426cc-07c9-4540-8447-c1fc68865b01",
@@ -3492,12 +3492,12 @@
     "capital": "Taipei",
     "idCurrency": "eade3fc3-2fa2-4835-b638-3f6c8f404978",
     "timezone": "UTC",
-    "nameNative": "Taiw\u00E1n",
+    "nameNative": "Taiwán",
     "region": "Asia",
     "subRegion": "Eastern Asia",
     "latitude": 23.5,
     "longitude": 121,
-    "flag": "\uD83C\uDDF9\uD83C\uDDFC"
+    "flag": "🇹🇼"
   },
   {
     "id": "167cb421-bc33-4c08-b250-050f571d65cd",
@@ -3508,12 +3508,12 @@
     "capital": "Dushanbe",
     "idCurrency": "361efbc8-c820-4fc3-a6a2-750519124124",
     "timezone": "UTC",
-    "nameNative": "Tayikist\u00E1n",
+    "nameNative": "Tayikistán",
     "region": "Asia",
     "subRegion": "Central Asia",
     "latitude": 39,
     "longitude": 71,
-    "flag": "\uD83C\uDDF9\uD83C\uDDEF"
+    "flag": "🇹🇯"
   },
   {
     "id": "17378647-0481-4d94-815f-5dd416e66d70",
@@ -3529,7 +3529,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -6,
     "longitude": 35,
-    "flag": "\uD83C\uDDF9\uD83C\uDDFF"
+    "flag": "🇹🇿"
   },
   {
     "id": "91de6b29-966a-402d-8615-ea8d59976bcd",
@@ -3545,7 +3545,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 15,
     "longitude": 100,
-    "flag": "\uD83C\uDDF9\uD83C\uDDED"
+    "flag": "🇹🇭"
   },
   {
     "id": "4864ead1-ef87-4a33-8500-a04ceaddd571",
@@ -3561,7 +3561,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": -8.83333333,
     "longitude": 125.91666666,
-    "flag": "\uD83C\uDDF9\uD83C\uDDF1"
+    "flag": "🇹🇱"
   },
   {
     "id": "3f719e03-f37c-42b0-9602-02ee1ccd93e4",
@@ -3569,7 +3569,7 @@
     "alpha2": "TG",
     "alpha3": "TGO",
     "code": "768",
-    "capital": "Lom\u00E9",
+    "capital": "Lomé",
     "idCurrency": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "timezone": "UTC",
     "nameNative": "Togo",
@@ -3577,7 +3577,7 @@
     "subRegion": "Western Africa",
     "latitude": 8,
     "longitude": 1.16666666,
-    "flag": "\uD83C\uDDF9\uD83C\uDDEC"
+    "flag": "🇹🇬"
   },
   {
     "id": "b7ab57d6-e1af-42e4-bf3a-97f08a33f522",
@@ -3593,7 +3593,7 @@
     "subRegion": "Polynesia",
     "latitude": -9,
     "longitude": -172,
-    "flag": "\uD83C\uDDF9\uD83C\uDDF0"
+    "flag": "🇹🇰"
   },
   {
     "id": "0c2538fa-1e2b-4af9-a64a-bd576528a938",
@@ -3601,7 +3601,7 @@
     "alpha2": "TO",
     "alpha3": "TON",
     "code": "776",
-    "capital": "Nuku\u0027alofa",
+    "capital": "Nuku'alofa",
     "idCurrency": "4745dd16-2be1-4294-a9f3-1b374f252bab",
     "timezone": "UTC",
     "nameNative": "Tonga",
@@ -3609,7 +3609,7 @@
     "subRegion": "Polynesia",
     "latitude": -20,
     "longitude": -175,
-    "flag": "\uD83C\uDDF9\uD83C\uDDF4"
+    "flag": "🇹🇴"
   },
   {
     "id": "83324828-b048-4a4a-97a7-90196ff014ae",
@@ -3625,7 +3625,7 @@
     "subRegion": "Caribbean",
     "latitude": 11,
     "longitude": -61,
-    "flag": "\uD83C\uDDF9\uD83C\uDDF9"
+    "flag": "🇹🇹"
   },
   {
     "id": "2bcf6cf8-27cd-4f6e-9b2e-7e84271f1e1e",
@@ -3636,28 +3636,28 @@
     "capital": "Tunis",
     "idCurrency": "084b195a-141c-4da9-bba8-1a9ac5e9ef8e",
     "timezone": "UTC",
-    "nameNative": "T\u00FAnez",
+    "nameNative": "Túnez",
     "region": "Africa",
     "subRegion": "Northern Africa",
     "latitude": 34,
     "longitude": 9,
-    "flag": "\uD83C\uDDF9\uD83C\uDDF3"
+    "flag": "🇹🇳"
   },
   {
     "id": "592ae77f-00f1-478d-9932-a403cb5eae2f",
-    "name": "T\u00FCrkiye",
+    "name": "Türkiye",
     "alpha2": "TR",
     "alpha3": "TUR",
     "code": "792",
     "capital": "Ankara",
     "idCurrency": "14b538da-2f3e-40f2-a7ab-471fc0954f16",
     "timezone": "UTC",
-    "nameNative": "Turqu\u00EDa",
+    "nameNative": "Turquía",
     "region": "Asia",
     "subRegion": "Western Asia",
     "latitude": 39,
     "longitude": 35,
-    "flag": "\uD83C\uDDF9\uD83C\uDDF7"
+    "flag": "🇹🇷"
   },
   {
     "id": "f0362cfc-2235-4819-bee3-4f63aae1371a",
@@ -3668,12 +3668,12 @@
     "capital": "Ashgabat",
     "idCurrency": "9ec7f641-3448-4af9-8925-a2de3e71ac67",
     "timezone": "UTC",
-    "nameNative": "Turkmenist\u00E1n",
+    "nameNative": "Turkmenistán",
     "region": "Asia",
     "subRegion": "Central Asia",
     "latitude": 40,
     "longitude": 60,
-    "flag": "\uD83C\uDDF9\uD83C\uDDF2"
+    "flag": "🇹🇲"
   },
   {
     "id": "a472d872-4097-4b62-aebc-1d71308488e9",
@@ -3689,7 +3689,7 @@
     "subRegion": "Caribbean",
     "latitude": 21.75,
     "longitude": -71.58333333,
-    "flag": "\uD83C\uDDF9\uD83C\uDDE8"
+    "flag": "🇹🇨"
   },
   {
     "id": "b1b29dcf-ccf9-4ee9-9c3f-8aa5ab855b36",
@@ -3705,7 +3705,7 @@
     "subRegion": "Polynesia",
     "latitude": -8,
     "longitude": 178,
-    "flag": "\uD83C\uDDF9\uD83C\uDDFB"
+    "flag": "🇹🇻"
   },
   {
     "id": "dcae966a-7b06-474c-a7ce-611f93caf7ad",
@@ -3721,7 +3721,7 @@
     "subRegion": "Eastern Africa",
     "latitude": 1,
     "longitude": 32,
-    "flag": "\uD83C\uDDFA\uD83C\uDDEC"
+    "flag": "🇺🇬"
   },
   {
     "id": "baef695a-998a-49ba-85e1-600bed34b54e",
@@ -3737,7 +3737,7 @@
     "subRegion": "Eastern Europe",
     "latitude": 49,
     "longitude": 32,
-    "flag": "\uD83C\uDDFA\uD83C\uDDE6"
+    "flag": "🇺🇦"
   },
   {
     "id": "23ab50ed-5ad7-4a01-891f-37783271ba63",
@@ -3748,12 +3748,12 @@
     "capital": "Abu Dhabi",
     "idCurrency": "88a3c30f-f9a6-4641-889b-990c568495dd",
     "timezone": "UTC",
-    "nameNative": "Emiratos \u00C1rabes Unidos",
+    "nameNative": "Emiratos Árabes Unidos",
     "region": "Asia",
     "subRegion": "Western Asia",
     "latitude": 24,
     "longitude": 54,
-    "flag": "\uD83C\uDDE6\uD83C\uDDEA"
+    "flag": "🇦🇪"
   },
   {
     "id": "1249120c-20c9-4bf4-b608-0ff6236da1a1",
@@ -3769,7 +3769,7 @@
     "subRegion": "Northern Europe",
     "latitude": 54,
     "longitude": -2,
-    "flag": "\uD83C\uDDEC\uD83C\uDDE7"
+    "flag": "🇬🇧"
   },
   {
     "id": "51650207-cb6f-4f5e-97b6-6072f1338fd5",
@@ -3785,7 +3785,7 @@
     "subRegion": "North America",
     "latitude": 38,
     "longitude": -97,
-    "flag": "\uD83C\uDDFA\uD83C\uDDF8"
+    "flag": "🇺🇸"
   },
   {
     "id": "4dcf0d23-3476-4f6a-a4f6-3f3f67a3a4cb",
@@ -3800,7 +3800,7 @@
     "subRegion": "North America",
     "latitude": 19.3,
     "longitude": 166.633333,
-    "flag": "\uD83C\uDDFA\uD83C\uDDF2"
+    "flag": "🇺🇲"
   },
   {
     "id": "06062a2b-dc32-4f97-9bae-cf45f982eeaa",
@@ -3811,12 +3811,12 @@
     "capital": "Charlotte Amalie",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "UTC",
-    "nameNative": "Islas V\u00EDrgenes de los Estados Unidos",
+    "nameNative": "Islas Vírgenes de los Estados Unidos",
     "region": "Americas",
     "subRegion": "Caribbean",
     "latitude": 18.35,
     "longitude": -64.933333,
-    "flag": "\uD83C\uDDFB\uD83C\uDDEE"
+    "flag": "🇻🇮"
   },
   {
     "id": "0a2d193c-c67b-447b-ab0b-30a770073eb4",
@@ -3832,7 +3832,7 @@
     "subRegion": "South America",
     "latitude": -33,
     "longitude": -56,
-    "flag": "\uD83C\uDDFA\uD83C\uDDFE"
+    "flag": "🇺🇾"
   },
   {
     "id": "b9d13e22-d2f2-4b2e-b601-ab6429a87ffb",
@@ -3843,12 +3843,12 @@
     "capital": "Tashkent",
     "idCurrency": "586ca173-6928-4e20-94a1-4b6c3a634f28",
     "timezone": "UTC",
-    "nameNative": "Uzbekist\u00E1n",
+    "nameNative": "Uzbekistán",
     "region": "Asia",
     "subRegion": "Central Asia",
     "latitude": 41,
     "longitude": 64,
-    "flag": "\uD83C\uDDFA\uD83C\uDDFF"
+    "flag": "🇺🇿"
   },
   {
     "id": "94e253a9-61ea-47b3-8128-d6911ef9364f",
@@ -3864,7 +3864,7 @@
     "subRegion": "Melanesia",
     "latitude": -16,
     "longitude": 167,
-    "flag": "\uD83C\uDDFB\uD83C\uDDFA"
+    "flag": "🇻🇺"
   },
   {
     "id": "e3dd1ef0-e955-41e8-84b9-c4c9fc5d95e8",
@@ -3880,7 +3880,7 @@
     "subRegion": "Southern Europe",
     "latitude": 41.9,
     "longitude": 12.45,
-    "flag": "\uD83C\uDDFB\uD83C\uDDE6"
+    "flag": "🇻🇦"
   },
   {
     "id": "046226ee-f6b3-4e9c-ba35-1404ffac10ed",
@@ -3896,7 +3896,7 @@
     "subRegion": "South America",
     "latitude": 8,
     "longitude": -66,
-    "flag": "\uD83C\uDDFB\uD83C\uDDEA"
+    "flag": "🇻🇪"
   },
   {
     "id": "6525071a-e26e-4c34-8ae8-dda377db3a11",
@@ -3912,7 +3912,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 16.16666666,
     "longitude": 107.83333333,
-    "flag": "\uD83C\uDDFB\uD83C\uDDF3"
+    "flag": "🇻🇳"
   },
   {
     "id": "5b69e5c8-95b7-4f93-a8e6-d18f78d9e10d",
@@ -3928,7 +3928,7 @@
     "subRegion": "Polynesia",
     "latitude": -13.3,
     "longitude": -176.2,
-    "flag": "\uD83C\uDDFC\uD83C\uDDEB"
+    "flag": "🇼🇫"
   },
   {
     "id": "57cc450c-5d98-44b1-a0a9-04f7b8409e34",
@@ -3936,7 +3936,7 @@
     "alpha2": "EH",
     "alpha3": "ESH",
     "code": "732",
-    "capital": "El Aai\u00FAn",
+    "capital": "El Aaiún",
     "idCurrency": "17eb2357-53ed-4f68-aa82-a6173cfe7692",
     "timezone": "UTC",
     "nameNative": "Sahara Occidental",
@@ -3944,7 +3944,7 @@
     "subRegion": "Northern Africa",
     "latitude": 24.5,
     "longitude": -13,
-    "flag": "\uD83C\uDDEA\uD83C\uDDED"
+    "flag": "🇪🇭"
   },
   {
     "id": "e60ae372-8275-46b4-855d-369d8f8d617d",
@@ -3952,7 +3952,7 @@
     "alpha2": "YE",
     "alpha3": "YEM",
     "code": "887",
-    "capital": "Sana\u0027a",
+    "capital": "Sana'a",
     "idCurrency": "efa389c2-d109-42b3-beb4-edd2217d6bc6",
     "timezone": "UTC",
     "nameNative": "Yemen",
@@ -3960,7 +3960,7 @@
     "subRegion": "Western Asia",
     "latitude": 15,
     "longitude": 48,
-    "flag": "\uD83C\uDDFE\uD83C\uDDEA"
+    "flag": "🇾🇪"
   },
   {
     "id": "779ad174-a45a-424f-978a-251795d8c353",
@@ -3976,7 +3976,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -15,
     "longitude": 30,
-    "flag": "\uD83C\uDDFF\uD83C\uDDF2"
+    "flag": "🇿🇲"
   },
   {
     "id": "c449e779-166a-4317-bbf5-d96bb49020bf",
@@ -3992,6 +3992,6 @@
     "subRegion": "Eastern Africa",
     "latitude": -20,
     "longitude": 30,
-    "flag": "\uD83C\uDDFF\uD83C\uDDFC"
+    "flag": "🇿🇼"
   }
 ]

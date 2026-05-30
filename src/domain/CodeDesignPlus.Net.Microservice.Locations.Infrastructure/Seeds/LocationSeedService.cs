@@ -3,6 +3,7 @@ using JsonSerializer = System.Text.Json.JsonSerializer;
 using JsonSerializerOptions = System.Text.Json.JsonSerializerOptions;
 using CodeDesignPlus.Net.Microservice.Locations.Domain;
 using CodeDesignPlus.Net.Microservice.Locations.Domain.Repositories;
+using CodeDesignPlus.Net.Microservice.Locations.Domain.ValueObjects;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using C = CodeDesignPlus.Net.Core.Abstractions.Models.Criteria;
@@ -16,6 +17,7 @@ public class LocationSeedService(
     ICityRepository cityRepository,
     ILocalityRepository localityRepository,
     INeighborhoodRepository neighborhoodRepository,
+    ITimezoneRepository timezoneRepository,
     ILogger<LocationSeedService> logger
 ) : BackgroundService
 {
@@ -33,6 +35,7 @@ public class LocationSeedService(
             await SeedCitiesAsync(stoppingToken);
             await SeedLocalitiesAsync(stoppingToken);
             await SeedNeighborhoodsAsync(stoppingToken);
+            await SeedTimezonesAsync(stoppingToken);
 
             logger.LogInformation("Location seed completed successfully.");
         }
@@ -149,6 +152,51 @@ public class LocationSeedService(
         logger.LogInformation("Seeded {Count} neighborhoods.", data.Count);
     }
 
+    private async Task SeedTimezonesAsync(CancellationToken ct)
+    {
+        var data = LoadResource<List<TimezoneSeed>>("seed-timezones.json");
+        var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
+        var existing = await timezoneRepository.MatchingAsync<TimezoneAggregate>(criteria, ct);
+        if (existing.TotalCount >= data.Count)
+        {
+            logger.LogInformation("Timezones already seeded ({Count}).", existing.TotalCount);
+            return;
+        }
+
+        var inserted = 0;
+        foreach (var item in data)
+        {
+            try
+            {
+                var location = Location.Create(
+                    item.Location.CountryCode,
+                    item.Location.CountryName,
+                    item.Location.Latitude,
+                    item.Location.Longitude
+                );
+
+                var aggregate = TimezoneAggregate.Create(
+                    item.Id,
+                    item.Name,
+                    item.Aliases,
+                    location,
+                    item.Offsets,
+                    item.CurrentOffset,
+                    isActive: true,
+                    SystemUserId
+                );
+
+                await timezoneRepository.CreateAsync(aggregate, ct);
+                inserted++;
+            }
+            catch (Exception ex)
+            {
+                logger.LogWarning(ex, "Failed to seed timezone {Name}. Skipping.", item.Name);
+            }
+        }
+        logger.LogInformation("Seeded {Inserted}/{Total} timezones.", inserted, data.Count);
+    }
+
     private static T LoadResource<T>(string fileName)
     {
         var assembly = Assembly.GetExecutingAssembly();
@@ -164,3 +212,5 @@ public record StateSeed(Guid Id, Guid IdCountry, string Code, string Name);
 public record CitySeed(Guid Id, Guid IdState, string Name, string Timezone);
 public record LocalitySeed(Guid Id, Guid IdCity, string Name);
 public record NeighborhoodSeed(Guid Id, Guid IdLocality, string Name);
+public record TimezoneSeed(Guid Id, string Name, List<string> Aliases, LocationSeed Location, List<string> Offsets, string CurrentOffset);
+public record LocationSeed(string CountryCode, string CountryName, double Latitude, double Longitude);

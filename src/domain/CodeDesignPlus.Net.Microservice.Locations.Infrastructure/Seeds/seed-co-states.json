@@ -9,25 +9,25 @@
     "id": "ce47d9cc-0f6f-4476-91d8-205baeab9ed8",
     "idCountry": "69191570-f690-4b95-abcd-3c004fc24d8b",
     "code": "08",
-    "name": "ATL\u00C1NTICO"
+    "name": "ATLÁNTICO"
   },
   {
     "id": "aeaffded-b93a-41d6-b7bd-af8203eb6dcb",
     "idCountry": "69191570-f690-4b95-abcd-3c004fc24d8b",
     "code": "11",
-    "name": "BOGOT\u00C1, D.C."
+    "name": "BOGOTÁ, D.C."
   },
   {
     "id": "6fca605c-b610-4f37-80fa-4629f6b91b71",
     "idCountry": "69191570-f690-4b95-abcd-3c004fc24d8b",
     "code": "13",
-    "name": "BOL\u00CDVAR"
+    "name": "BOLÍVAR"
   },
   {
     "id": "efec49cb-9dfc-4962-9710-b35bc7c3f452",
     "idCountry": "69191570-f690-4b95-abcd-3c004fc24d8b",
     "code": "15",
-    "name": "BOYAC\u00C1"
+    "name": "BOYACÁ"
   },
   {
     "id": "364e7939-b57d-4406-8a07-6cfaca5c46ff",
@@ -39,7 +39,7 @@
     "id": "08acdec6-b6df-4adc-a4c7-3420a0c650ab",
     "idCountry": "69191570-f690-4b95-abcd-3c004fc24d8b",
     "code": "18",
-    "name": "CAQUET\u00C1"
+    "name": "CAQUETÁ"
   },
   {
     "id": "ee6ad457-a4c7-4701-bff8-dda2cab03a67",
@@ -57,7 +57,7 @@
     "id": "d21e74d2-20e8-47f9-b4d7-20ee83c166ff",
     "idCountry": "69191570-f690-4b95-abcd-3c004fc24d8b",
     "code": "23",
-    "name": "C\u00D3RDOBA"
+    "name": "CÓRDOBA"
   },
   {
     "id": "153c810c-2cad-4046-9920-6d4bd40445a0",
@@ -69,7 +69,7 @@
     "id": "8a726f1e-12ef-4299-949b-732c18f872f1",
     "idCountry": "69191570-f690-4b95-abcd-3c004fc24d8b",
     "code": "27",
-    "name": "CHOC\u00D3"
+    "name": "CHOCÓ"
   },
   {
     "id": "61b08ae9-bd59-4568-8e1b-9c43986b13bd",
@@ -99,7 +99,7 @@
     "id": "8f00d69a-8dc6-46ad-a002-1c7f4f747aa1",
     "idCountry": "69191570-f690-4b95-abcd-3c004fc24d8b",
     "code": "52",
-    "name": "NARI\u00D1O"
+    "name": "NARIÑO"
   },
   {
     "id": "79badaaf-60c0-4774-b376-01e60e6fdce8",
@@ -111,7 +111,7 @@
     "id": "a5505626-b49b-4203-98ea-2f177166a261",
     "idCountry": "69191570-f690-4b95-abcd-3c004fc24d8b",
     "code": "63",
-    "name": "QUIND\u00CDO"
+    "name": "QUINDÍO"
   },
   {
     "id": "445f12d2-bb8c-4874-a1ff-1b5c169111e3",
@@ -165,7 +165,7 @@
     "id": "048b3481-85b7-486d-ae51-dd65d0c7c561",
     "idCountry": "69191570-f690-4b95-abcd-3c004fc24d8b",
     "code": "88",
-    "name": "ARCHIPI\u00C9LAGO DE SAN ANDR\u00C9S, PROVIDENCIA Y SANTA CATALINA"
+    "name": "ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA"
   },
   {
     "id": "68a3f956-de2c-4860-b421-e948bebf2f1b",
@@ -177,7 +177,7 @@
     "id": "2fcfd89b-2872-44aa-9dc2-65876f77e072",
     "idCountry": "69191570-f690-4b95-abcd-3c004fc24d8b",
     "code": "94",
-    "name": "GUAIN\u00CDA"
+    "name": "GUAINÍA"
   },
   {
     "id": "2425f84c-73c9-4344-a2d5-340be5ba2f87",
@@ -189,7 +189,7 @@
     "id": "a1fd643b-c384-499b-95dd-d33abcf8df80",
     "idCountry": "69191570-f690-4b95-abcd-3c004fc24d8b",
     "code": "97",
-    "name": "VAUP\u00C9S"
+    "name": "VAUPÉS"
   },
   {
     "id": "0f6989f7-9b5d-4218-bf3a-b661ec09c27e",
