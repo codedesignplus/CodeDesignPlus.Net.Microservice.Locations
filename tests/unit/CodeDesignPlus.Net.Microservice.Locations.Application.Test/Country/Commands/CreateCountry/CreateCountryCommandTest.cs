@@ -22,6 +22,7 @@ public class CreateCountryCommandTest
             "CO",
             "COL",
             "170",
+            "+57",
             "Bogotá",
             Guid.NewGuid(),
             "America/Bogota",
@@ -48,6 +49,7 @@ public class CreateCountryCommandTest
             "",
             "",
             "",
+            "",
             null,
             Guid.Empty,
             "",
@@ -67,6 +69,7 @@ public class CreateCountryCommandTest
         result.ShouldHaveValidationErrorFor(x => x.Alpha2);
         result.ShouldHaveValidationErrorFor(x => x.Alpha3);
         result.ShouldHaveValidationErrorFor(x => x.Code);
+        result.ShouldHaveValidationErrorFor(x => x.PhoneCode);
         result.ShouldHaveValidationErrorFor(x => x.IdCurrency);
         result.ShouldHaveValidationErrorFor(x => x.Timezone);
         result.ShouldHaveValidationErrorFor(x => x.NameNative);
@@ -85,6 +88,7 @@ public class CreateCountryCommandTest
             "ABC",
             "ABCD",
             "123",
+            "+12345",
             new string('B', 101),
             Guid.NewGuid(),
             new string('C', 101),
@@ -102,6 +106,7 @@ public class CreateCountryCommandTest
         result.ShouldHaveValidationErrorFor(x => x.Name);
         result.ShouldHaveValidationErrorFor(x => x.Alpha2);
         result.ShouldHaveValidationErrorFor(x => x.Alpha3);
+        result.ShouldHaveValidationErrorFor(x => x.PhoneCode);
         result.ShouldHaveValidationErrorFor(x => x.Capital);
         result.ShouldHaveValidationErrorFor(x => x.Timezone);
         result.ShouldHaveValidationErrorFor(x => x.NameNative);

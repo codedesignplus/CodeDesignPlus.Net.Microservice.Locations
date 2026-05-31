@@ -7,6 +7,7 @@ public class CountryCreatedDomainEvent(
     string alpha2,
     string alpha3,
     string code,
+    string phoneCode,
     string? capital,
     Guid idCurrency,
     string timeZone,
@@ -26,6 +27,7 @@ public class CountryCreatedDomainEvent(
     public string Alpha2 { get; private set; } = alpha2;
     public string Alpha3 { get; private set; } = alpha3;
     public string Code { get; private set; } = code;
+    public string PhoneCode { get; private set; } = phoneCode;
     public string? Capital { get; private set; } = capital;
     public Guid IdCurrency { get; private set; } = idCurrency;
     public string Timezone { get; private set; } = timeZone;
@@ -37,8 +39,8 @@ public class CountryCreatedDomainEvent(
     public string? Flag { get; private set; } = flag;
     public bool IsActive { get; private set; } = isActive;
 
-    public static CountryCreatedDomainEvent Create(Guid aggregateId, string name, string alpha2, string alpha3, string code, string? capital, Guid idCurrency, string timeZone,string nameNative, string region, string subRegion, double latitude, double longitude, string? flag, bool isActive)
+    public static CountryCreatedDomainEvent Create(Guid aggregateId, string name, string alpha2, string alpha3, string code, string phoneCode, string? capital, Guid idCurrency, string timeZone,string nameNative, string region, string subRegion, double latitude, double longitude, string? flag, bool isActive)
     {
-        return new CountryCreatedDomainEvent(aggregateId, name, alpha2, alpha3, code, capital, idCurrency, timeZone, nameNative, region, subRegion, latitude, longitude, flag, isActive);
+        return new CountryCreatedDomainEvent(aggregateId, name, alpha2, alpha3, code, phoneCode, capital, idCurrency, timeZone, nameNative, region, subRegion, latitude, longitude, flag, isActive);
     }
 }

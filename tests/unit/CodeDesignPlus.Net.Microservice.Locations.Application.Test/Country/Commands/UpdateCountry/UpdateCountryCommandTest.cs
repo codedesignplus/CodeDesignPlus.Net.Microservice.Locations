@@ -24,6 +24,7 @@ public class UpdateCountryCommandTest
             Alpha2: "CO",
             Alpha3: "COL",
             Code: "170",
+            PhoneCode: "+57",
             Capital: "Bogotá",
             IdCurrency: Guid.NewGuid(),
             Timezone: "America/Bogota",
@@ -50,6 +51,7 @@ public class UpdateCountryCommandTest
             Alpha2: "",
             Alpha3: "",
             Code: "",
+            PhoneCode: "",
             Capital: null,
             IdCurrency: Guid.Empty,
             Timezone: "",
@@ -69,6 +71,7 @@ public class UpdateCountryCommandTest
         result.ShouldHaveValidationErrorFor(x => x.Alpha2);
         result.ShouldHaveValidationErrorFor(x => x.Alpha3);
         result.ShouldHaveValidationErrorFor(x => x.Code);
+        result.ShouldHaveValidationErrorFor(x => x.PhoneCode);
         result.ShouldHaveValidationErrorFor(x => x.IdCurrency);
         result.ShouldHaveValidationErrorFor(x => x.Timezone);
         result.ShouldHaveValidationErrorFor(x => x.NameNative);
@@ -87,6 +90,7 @@ public class UpdateCountryCommandTest
             Alpha2: "C",
             Alpha3: "COL",
             Code: "170",
+            PhoneCode: "+57",
             Capital: "Bogotá",
             IdCurrency: Guid.NewGuid(),
             Timezone: "America/Bogota",
@@ -113,6 +117,7 @@ public class UpdateCountryCommandTest
             Alpha2: "CO",
             Alpha3: "CO",
             Code: "170",
+            PhoneCode: "+57",
             Capital: "Bogotá",
             IdCurrency: Guid.NewGuid(),
             Timezone: "America/Bogota",
@@ -139,6 +144,7 @@ public class UpdateCountryCommandTest
             Alpha2: "CO",
             Alpha3: "COL",
             Code: "170",
+            PhoneCode: "+57",
             Capital: "Bogotá",
             IdCurrency: Guid.NewGuid(),
             Timezone: "America/Bogota",
@@ -165,6 +171,7 @@ public class UpdateCountryCommandTest
             Alpha2: "CO",
             Alpha3: "COL",
             Code: "170",
+            PhoneCode: "+57",
             Capital: new string('B', 101),
             IdCurrency: Guid.NewGuid(),
             Timezone: "America/Bogota",
@@ -191,6 +198,7 @@ public class UpdateCountryCommandTest
             Alpha2: "CO",
             Alpha3: "COL",
             Code: "170",
+            PhoneCode: "+57",
             Capital: "Bogotá",
             IdCurrency: Guid.NewGuid(),
             Timezone: "America/Bogota",

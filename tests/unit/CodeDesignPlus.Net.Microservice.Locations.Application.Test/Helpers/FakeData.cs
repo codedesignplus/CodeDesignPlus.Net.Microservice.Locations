@@ -112,6 +112,7 @@ public class FakeData
             Capital = "Washington",
             IdCurrency = Currency.Id,
             Code = "103",
+            PhoneCode = "+1",
             Timezone = "America/New_York",
             NameNative = "United States",
             Region = "Americas",
@@ -182,6 +183,7 @@ public class FakeData
             Capital = Country.Capital,
             IdCurrency = Country.IdCurrency,
             Code = Country.Code,
+            PhoneCode = Country.PhoneCode,
             Timezone = Country.Timezone,
             NameNative = Country.NameNative,
             Region = Country.Region,
@@ -246,6 +248,7 @@ public class FakeData
             Alpha3 = "COL",
             Capital = "Bogotá",
             Code = "106",
+            PhoneCode = "+57",
             IdCurrency = Country.IdCurrency,
             Timezone = "America/Bogota",
             NameNative = "Colombia",
@@ -302,7 +305,7 @@ public class FakeData
 
         CreateCurrencyCommand = new(Currency.Id, Currency.Name, Currency.Code, Currency.NumericCode, Currency.DecimalDigits, Currency.Symbol);
 
-        CreateCountryCommand = new(Country.Id, CreateCountry.Name, CreateCountry.Alpha2, CreateCountry.Alpha3, CreateCountry.Code, CreateCountry.Capital, CreateCountry.IdCurrency, CreateCountry.Timezone, CreateCountry.NameNative, CreateCountry.Region, CreateCountry.SubRegion, CreateCountry.Latitude, CreateCountry.Longitude, CreateCountry.Flag, CreateCountry.IsActive);
+        CreateCountryCommand = new(Country.Id, CreateCountry.Name, CreateCountry.Alpha2, CreateCountry.Alpha3, CreateCountry.Code, CreateCountry.PhoneCode, CreateCountry.Capital, CreateCountry.IdCurrency, CreateCountry.Timezone, CreateCountry.NameNative, CreateCountry.Region, CreateCountry.SubRegion, CreateCountry.Latitude, CreateCountry.Longitude, CreateCountry.Flag, CreateCountry.IsActive);
 
         CreateStateCommand = new(State.Id, State.IdCountry, CreateState.Code, CreateState.Name);
 
@@ -317,7 +320,7 @@ public class FakeData
 
         UpdateCurrencyCommand = new(UpdateCurrency.Id, UpdateCurrency.Name, UpdateCurrency.Code, UpdateCurrency.NumericCode, UpdateCurrency.DecimalDigits, UpdateCurrency.Symbol, UpdateCurrency.IsActive);
 
-        UpdateCountryCommand = new(UpdateCountry.Id, UpdateCountry.Name, UpdateCountry.Alpha2, UpdateCountry.Alpha3, UpdateCountry.Code, UpdateCountry.Capital, UpdateCountry.IdCurrency, UpdateCountry.Timezone, UpdateCountry.NameNative, UpdateCountry.Region, UpdateCountry.SubRegion, UpdateCountry.Latitude, UpdateCountry.Longitude, UpdateCountry.Flag, UpdateCountry.IsActive);
+        UpdateCountryCommand = new(UpdateCountry.Id, UpdateCountry.Name, UpdateCountry.Alpha2, UpdateCountry.Alpha3, UpdateCountry.Code, UpdateCountry.PhoneCode, UpdateCountry.Capital, UpdateCountry.IdCurrency, UpdateCountry.Timezone, UpdateCountry.NameNative, UpdateCountry.Region, UpdateCountry.SubRegion, UpdateCountry.Latitude, UpdateCountry.Longitude, UpdateCountry.Flag, UpdateCountry.IsActive);
 
         UpdateStateCommand = new(UpdateState.Id, UpdateState.IdCountry, UpdateState.Code, UpdateState.Name, UpdateState.IsActive);
 
@@ -344,7 +347,7 @@ public class FakeData
 
         CurrencyAggregate = CurrencyAggregate.Create(Currency.Id, Currency.Code, Currency.NumericCode, Currency.DecimalDigits, Currency.Symbol, Currency.Name, Guid.NewGuid());
 
-        CountryAggregate = CountryAggregate.Create(Country.Id, Country.Name, Country.Alpha2, Country.Alpha3, Country.Code, Country.Capital, Country.IdCurrency, Country.Timezone, Country.NameNative, Country.Region, Country.SubRegion, Country.Latitude, Country.Longitude, Country.Flag, Country.IsActive, Guid.NewGuid());
+        CountryAggregate = CountryAggregate.Create(Country.Id, Country.Name, Country.Alpha2, Country.Alpha3, Country.Code, Country.PhoneCode, Country.Capital, Country.IdCurrency, Country.Timezone, Country.NameNative, Country.Region, Country.SubRegion, Country.Latitude, Country.Longitude, Country.Flag, Country.IsActive, Guid.NewGuid());
 
         StateAggregate = StateAggregate.Create(State.Id, State.IdCountry, State.Code, State.Name, Guid.NewGuid());
 

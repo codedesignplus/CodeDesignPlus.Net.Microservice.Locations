@@ -2,11 +2,12 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Country.DataTran
 
 public class CountryDto: IDtoBase
 {
-    public Guid Id { get;  set; } 
+    public Guid Id { get;  set; }
     public string Name { get;  set; } = null!;
     public string Alpha2 { get;  set; } = null!;
     public string Alpha3 { get;  set; } = null!;
     public string Code { get;  set; } = null!;
+    public string PhoneCode { get;  set; } = null!;
     public string? Capital { get;  set; }
     public Guid IdCurrency { get;  set; } 
     public string Timezone { get;  set; } = null!;

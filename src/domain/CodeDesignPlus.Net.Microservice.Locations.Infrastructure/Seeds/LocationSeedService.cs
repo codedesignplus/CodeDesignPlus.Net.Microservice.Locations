@@ -118,7 +118,7 @@ public class LocationSeedService(
         {
             try
             {
-                var aggregate = CountryAggregate.Create(item.Id, item.Name, item.Alpha2, item.Alpha3, item.Code ?? "000", item.Capital, item.IdCurrency, item.Timezone ?? "UTC", item.NameNative ?? item.Name ?? "Unknown", item.Region ?? "Unknown", item.SubRegion ?? "Unknown", item.Latitude, item.Longitude, item.Flag, true, SystemUserId);
+                var aggregate = CountryAggregate.Create(item.Id, item.Name, item.Alpha2, item.Alpha3, item.Code ?? "000", item.PhoneCode ?? "+1", item.Capital, item.IdCurrency, item.Timezone ?? "UTC", item.NameNative ?? item.Name ?? "Unknown", item.Region ?? "Unknown", item.SubRegion ?? "Unknown", item.Latitude, item.Longitude, item.Flag, true, SystemUserId);
                 await countryRepository.CreateAsync(aggregate, ct);
                 inserted++;
             }
@@ -245,7 +245,7 @@ public class LocationSeedService(
 
 public record CurrencySeed(Guid Id, string Code, short NumericCode, short DecimalDigits, string Symbol, string Name);
 public record RegionSeed(Guid Id, string Name, List<string> SubRegions);
-public record CountrySeed(Guid Id, string Name, string Alpha2, string Alpha3, string Code, string? Capital, Guid IdCurrency, string Timezone, string? NameNative, string? Region, string? SubRegion, double Latitude, double Longitude, string? Flag);
+public record CountrySeed(Guid Id, string Name, string Alpha2, string Alpha3, string Code, string PhoneCode, string? Capital, Guid IdCurrency, string Timezone, string? NameNative, string? Region, string? SubRegion, double Latitude, double Longitude, string? Flag);
 public record StateSeed(Guid Id, Guid IdCountry, string Code, string Name);
 public record CitySeed(Guid Id, Guid IdState, string Name, string Timezone);
 public record LocalitySeed(Guid Id, Guid IdCity, string Name);
