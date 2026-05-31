@@ -5,6 +5,7 @@
     "alpha2": "AF",
     "alpha3": "AFG",
     "code": "004",
+    "phoneCode": "+93",
     "capital": "Kabul",
     "idCurrency": "ab1674d7-d77e-45a8-a8a5-b67daab75c09",
     "timezone": "Asia/Kabul",
@@ -13,8 +14,7 @@
     "subRegion": "Southern Asia",
     "latitude": 33,
     "longitude": 65,
-    "flag": "🇦🇫",
-    "phoneCode": "+93"
+    "flag": "🇦🇫"
   },
   {
     "id": "c7205a60-7b3a-4d6f-bfbc-f75d14feb2c8",
@@ -22,6 +22,7 @@
     "alpha2": "AX",
     "alpha3": "ALA",
     "code": "248",
+    "phoneCode": "+358",
     "capital": "Mariehamn",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Helsinki",
@@ -30,8 +31,7 @@
     "subRegion": "Northern Europe",
     "latitude": 60.116667,
     "longitude": 19.9,
-    "flag": "🇦🇽",
-    "phoneCode": "+358"
+    "flag": "🇦🇽"
   },
   {
     "id": "7d9f4aca-3817-445b-95b9-ebd40a029711",
@@ -39,6 +39,7 @@
     "alpha2": "AL",
     "alpha3": "ALB",
     "code": "008",
+    "phoneCode": "+355",
     "capital": "Tirana",
     "idCurrency": "c3e0c951-ed5c-4ba2-86fc-e1a773e83fe5",
     "timezone": "Europe/Tirane",
@@ -47,8 +48,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 41,
     "longitude": 20,
-    "flag": "🇦🇱",
-    "phoneCode": "+355"
+    "flag": "🇦🇱"
   },
   {
     "id": "14310ddf-9725-413e-8a35-47dc17760c1c",
@@ -56,6 +56,7 @@
     "alpha2": "DZ",
     "alpha3": "DZA",
     "code": "012",
+    "phoneCode": "+213",
     "capital": "Algiers",
     "idCurrency": "17eb2357-53ed-4f68-aa82-a6173cfe7692",
     "timezone": "Africa/Algiers",
@@ -64,8 +65,7 @@
     "subRegion": "Northern Africa",
     "latitude": 28,
     "longitude": 3,
-    "flag": "🇩🇿",
-    "phoneCode": "+213"
+    "flag": "🇩🇿"
   },
   {
     "id": "1e692b45-7338-4d52-a397-864557127345",
@@ -73,6 +73,7 @@
     "alpha2": "AS",
     "alpha3": "ASM",
     "code": "016",
+    "phoneCode": "+1",
     "capital": "Pago Pago",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "Pacific/Pago_Pago",
@@ -81,8 +82,7 @@
     "subRegion": "Polynesia",
     "latitude": -14.33333333,
     "longitude": -170,
-    "flag": "🇦🇸",
-    "phoneCode": "+1"
+    "flag": "🇦🇸"
   },
   {
     "id": "eb7803c9-9aa8-430f-8b06-47543fb471a0",
@@ -90,6 +90,7 @@
     "alpha2": "AD",
     "alpha3": "AND",
     "code": "020",
+    "phoneCode": "+376",
     "capital": "Andorra la Vella",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Andorra",
@@ -98,8 +99,7 @@
     "subRegion": "Southern Europe",
     "latitude": 42.5,
     "longitude": 1.5,
-    "flag": "🇦🇩",
-    "phoneCode": "+376"
+    "flag": "🇦🇩"
   },
   {
     "id": "928662d7-a429-4c01-a390-49d2bb5aa04a",
@@ -107,6 +107,7 @@
     "alpha2": "AO",
     "alpha3": "AGO",
     "code": "024",
+    "phoneCode": "+244",
     "capital": "Luanda",
     "idCurrency": "2dd7c469-c596-432e-aeff-9931b2ac0691",
     "timezone": "Africa/Luanda",
@@ -115,8 +116,7 @@
     "subRegion": "Middle Africa",
     "latitude": -12.5,
     "longitude": 18.5,
-    "flag": "🇦🇴",
-    "phoneCode": "+244"
+    "flag": "🇦🇴"
   },
   {
     "id": "3852a0ec-6178-4cae-9c8f-4de795d454c2",
@@ -124,6 +124,7 @@
     "alpha2": "AI",
     "alpha3": "AIA",
     "code": "660",
+    "phoneCode": "+1",
     "capital": "The Valley",
     "idCurrency": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "timezone": "America/Anguilla",
@@ -132,8 +133,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.25,
     "longitude": -63.16666666,
-    "flag": "🇦🇮",
-    "phoneCode": "+1"
+    "flag": "🇦🇮"
   },
   {
     "id": "688f20c6-93db-42cc-b759-492db19ff8f0",
@@ -141,15 +141,15 @@
     "alpha2": "AQ",
     "alpha3": "ATA",
     "code": "010",
-    "idCurrency": "",
+    "phoneCode": "+672",
+    "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "Antarctica/McMurdo",
     "nameNative": "Antártida",
     "region": "Antarctic",
     "subRegion": "Unknown",
     "latitude": -90,
     "longitude": 0,
-    "flag": "🇦🇶",
-    "phoneCode": "+672"
+    "flag": "🇦🇶"
   },
   {
     "id": "1ff24d46-c6bf-4d48-b8e4-14418be50b0e",
@@ -157,6 +157,7 @@
     "alpha2": "AG",
     "alpha3": "ATG",
     "code": "028",
+    "phoneCode": "+1",
     "capital": "Saint John's",
     "idCurrency": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "timezone": "America/Antigua",
@@ -165,8 +166,7 @@
     "subRegion": "Caribbean",
     "latitude": 17.05,
     "longitude": -61.8,
-    "flag": "🇦🇬",
-    "phoneCode": "+1"
+    "flag": "🇦🇬"
   },
   {
     "id": "81b8b9fd-9940-48fb-93dc-e6ec4adc5964",
@@ -174,6 +174,7 @@
     "alpha2": "AR",
     "alpha3": "ARG",
     "code": "032",
+    "phoneCode": "+54",
     "capital": "Buenos Aires",
     "idCurrency": "3ca4f2e4-01de-49ba-bba5-083b32d68cc6",
     "timezone": "America/Argentina/Buenos_Aires",
@@ -182,8 +183,7 @@
     "subRegion": "South America",
     "latitude": -34,
     "longitude": -64,
-    "flag": "🇦🇷",
-    "phoneCode": "+54"
+    "flag": "🇦🇷"
   },
   {
     "id": "16b3ad66-1ff1-4e52-b3b1-b281a639a4b5",
@@ -191,6 +191,7 @@
     "alpha2": "AM",
     "alpha3": "ARM",
     "code": "051",
+    "phoneCode": "+374",
     "capital": "Yerevan",
     "idCurrency": "02ebac94-1ce2-4bf8-9a79-1f0c0a6ee1c7",
     "timezone": "Asia/Yerevan",
@@ -199,8 +200,7 @@
     "subRegion": "Western Asia",
     "latitude": 40,
     "longitude": 45,
-    "flag": "🇦🇲",
-    "phoneCode": "+374"
+    "flag": "🇦🇲"
   },
   {
     "id": "2d1a2c09-4851-45b7-9eb4-aa2e96ab72eb",
@@ -208,6 +208,7 @@
     "alpha2": "AW",
     "alpha3": "ABW",
     "code": "533",
+    "phoneCode": "+297",
     "capital": "Oranjestad",
     "idCurrency": "d08c7321-7fa7-49cb-9139-27f24016467b",
     "timezone": "America/Aruba",
@@ -216,8 +217,7 @@
     "subRegion": "Caribbean",
     "latitude": 12.5,
     "longitude": -69.96666666,
-    "flag": "🇦🇼",
-    "phoneCode": "+297"
+    "flag": "🇦🇼"
   },
   {
     "id": "1fbde378-807a-4dc1-9280-9b704c89a3b8",
@@ -225,6 +225,7 @@
     "alpha2": "AU",
     "alpha3": "AUS",
     "code": "036",
+    "phoneCode": "+61",
     "capital": "Canberra",
     "idCurrency": "6a005a69-7373-4afa-a809-3e9ee706b39e",
     "timezone": "Australia/Sydney",
@@ -233,8 +234,7 @@
     "subRegion": "Australia and New Zealand",
     "latitude": -27,
     "longitude": 133,
-    "flag": "🇦🇺",
-    "phoneCode": "+61"
+    "flag": "🇦🇺"
   },
   {
     "id": "75f2fe28-4e09-4390-adb0-4873b2973f34",
@@ -242,6 +242,7 @@
     "alpha2": "AT",
     "alpha3": "AUT",
     "code": "040",
+    "phoneCode": "+43",
     "capital": "Vienna",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Vienna",
@@ -250,8 +251,7 @@
     "subRegion": "Central Europe",
     "latitude": 47.33333333,
     "longitude": 13.33333333,
-    "flag": "🇦🇹",
-    "phoneCode": "+43"
+    "flag": "🇦🇹"
   },
   {
     "id": "d7dbc3ea-4fa3-4658-801a-013d8df3ea24",
@@ -259,6 +259,7 @@
     "alpha2": "AZ",
     "alpha3": "AZE",
     "code": "031",
+    "phoneCode": "+994",
     "capital": "Baku",
     "idCurrency": "68ca1796-8cd3-4895-aa71-7b571d4f6c86",
     "timezone": "Asia/Baku",
@@ -267,8 +268,7 @@
     "subRegion": "Western Asia",
     "latitude": 40.5,
     "longitude": 47.5,
-    "flag": "🇦🇿",
-    "phoneCode": "+994"
+    "flag": "🇦🇿"
   },
   {
     "id": "dd6a5ee2-b14f-4ce9-b263-17f2d37e4808",
@@ -276,6 +276,7 @@
     "alpha2": "BS",
     "alpha3": "BHS",
     "code": "044",
+    "phoneCode": "+1",
     "capital": "Nassau",
     "idCurrency": "350ae542-a44f-46ea-8aaf-ddda535f7f6c",
     "timezone": "America/Nassau",
@@ -284,8 +285,7 @@
     "subRegion": "Caribbean",
     "latitude": 24.25,
     "longitude": -76,
-    "flag": "🇧🇸",
-    "phoneCode": "+1"
+    "flag": "🇧🇸"
   },
   {
     "id": "b997bb4c-10dd-44af-8e04-22a6b52e23eb",
@@ -293,6 +293,7 @@
     "alpha2": "BH",
     "alpha3": "BHR",
     "code": "048",
+    "phoneCode": "+973",
     "capital": "Manama",
     "idCurrency": "6c3a1713-c449-4573-b080-c04cb120b043",
     "timezone": "Asia/Bahrain",
@@ -301,8 +302,7 @@
     "subRegion": "Western Asia",
     "latitude": 26,
     "longitude": 50.55,
-    "flag": "🇧🇭",
-    "phoneCode": "+973"
+    "flag": "🇧🇭"
   },
   {
     "id": "304cc0c9-dd6e-4eba-9d44-fd4bd2e82800",
@@ -310,6 +310,7 @@
     "alpha2": "BD",
     "alpha3": "BGD",
     "code": "050",
+    "phoneCode": "+880",
     "capital": "Dhaka",
     "idCurrency": "eaf7d86d-5001-427f-a92f-c1de1911013b",
     "timezone": "Asia/Dhaka",
@@ -318,8 +319,7 @@
     "subRegion": "Southern Asia",
     "latitude": 24,
     "longitude": 90,
-    "flag": "🇧🇩",
-    "phoneCode": "+880"
+    "flag": "🇧🇩"
   },
   {
     "id": "e12b467d-807d-4a47-83bc-f90629f63965",
@@ -327,6 +327,7 @@
     "alpha2": "BB",
     "alpha3": "BRB",
     "code": "052",
+    "phoneCode": "+1",
     "capital": "Bridgetown",
     "idCurrency": "3f8d4d76-3c7d-4a36-99a0-9038df05d98c",
     "timezone": "America/Barbados",
@@ -335,8 +336,7 @@
     "subRegion": "Caribbean",
     "latitude": 13.16666666,
     "longitude": -59.53333333,
-    "flag": "🇧🇧",
-    "phoneCode": "+1"
+    "flag": "🇧🇧"
   },
   {
     "id": "bd780d6c-c3f5-45f4-80f5-7b809674a9a5",
@@ -344,6 +344,7 @@
     "alpha2": "BY",
     "alpha3": "BLR",
     "code": "112",
+    "phoneCode": "+375",
     "capital": "Minsk",
     "idCurrency": "a249d7c3-a8f7-448c-ab41-6f86d7fe6b1c",
     "timezone": "Europe/Minsk",
@@ -352,8 +353,7 @@
     "subRegion": "Eastern Europe",
     "latitude": 53,
     "longitude": 28,
-    "flag": "🇧🇾",
-    "phoneCode": "+375"
+    "flag": "🇧🇾"
   },
   {
     "id": "6158f9ed-697a-42ec-8b48-0769988a4920",
@@ -361,6 +361,7 @@
     "alpha2": "BE",
     "alpha3": "BEL",
     "code": "056",
+    "phoneCode": "+32",
     "capital": "Brussels",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Brussels",
@@ -369,8 +370,7 @@
     "subRegion": "Western Europe",
     "latitude": 50.83333333,
     "longitude": 4,
-    "flag": "🇧🇪",
-    "phoneCode": "+32"
+    "flag": "🇧🇪"
   },
   {
     "id": "fd4cbafd-f842-4017-a171-289aec21d3f7",
@@ -378,6 +378,7 @@
     "alpha2": "BZ",
     "alpha3": "BLZ",
     "code": "084",
+    "phoneCode": "+501",
     "capital": "Belmopan",
     "idCurrency": "1b5baadd-9ba9-4d65-bcce-dab2661cf7c5",
     "timezone": "America/Belize",
@@ -386,8 +387,7 @@
     "subRegion": "Central America",
     "latitude": 17.25,
     "longitude": -88.75,
-    "flag": "🇧🇿",
-    "phoneCode": "+501"
+    "flag": "🇧🇿"
   },
   {
     "id": "bb273736-5414-40d8-91a4-6d735aebea1a",
@@ -395,6 +395,7 @@
     "alpha2": "BJ",
     "alpha3": "BEN",
     "code": "204",
+    "phoneCode": "+229",
     "capital": "Porto-Novo",
     "idCurrency": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "timezone": "Africa/Porto-Novo",
@@ -403,8 +404,7 @@
     "subRegion": "Western Africa",
     "latitude": 9.5,
     "longitude": 2.25,
-    "flag": "🇧🇯",
-    "phoneCode": "+229"
+    "flag": "🇧🇯"
   },
   {
     "id": "0d8d9b67-5d75-4860-b72b-0df126715504",
@@ -412,6 +412,7 @@
     "alpha2": "BM",
     "alpha3": "BMU",
     "code": "060",
+    "phoneCode": "+1",
     "capital": "Hamilton",
     "idCurrency": "562aca65-b5fb-40bd-9bad-211516ef85e4",
     "timezone": "Atlantic/Bermuda",
@@ -420,8 +421,7 @@
     "subRegion": "North America",
     "latitude": 32.33333333,
     "longitude": -64.75,
-    "flag": "🇧🇲",
-    "phoneCode": "+1"
+    "flag": "🇧🇲"
   },
   {
     "id": "c63da889-6316-4f7c-ae45-353b3da25cec",
@@ -429,6 +429,7 @@
     "alpha2": "BT",
     "alpha3": "BTN",
     "code": "064",
+    "phoneCode": "+975",
     "capital": "Thimphu",
     "idCurrency": "a6d61e86-fb61-46a2-8999-1d429ab6ecfb",
     "timezone": "Asia/Thimphu",
@@ -437,8 +438,7 @@
     "subRegion": "Southern Asia",
     "latitude": 27.5,
     "longitude": 90.5,
-    "flag": "🇧🇹",
-    "phoneCode": "+975"
+    "flag": "🇧🇹"
   },
   {
     "id": "f7b143ba-cd05-414c-acf4-aa9c83d0745d",
@@ -446,6 +446,7 @@
     "alpha2": "BO",
     "alpha3": "BOL",
     "code": "068",
+    "phoneCode": "+591",
     "capital": "Sucre",
     "idCurrency": "44fd0c72-72ae-43dd-8431-baf5571b23a4",
     "timezone": "America/La_Paz",
@@ -454,8 +455,7 @@
     "subRegion": "South America",
     "latitude": -17,
     "longitude": -65,
-    "flag": "🇧🇴",
-    "phoneCode": "+591"
+    "flag": "🇧🇴"
   },
   {
     "id": "94458cc8-b912-4015-9141-dcf1f57e7f71",
@@ -463,6 +463,7 @@
     "alpha2": "BA",
     "alpha3": "BIH",
     "code": "070",
+    "phoneCode": "+387",
     "capital": "Sarajevo",
     "idCurrency": "48935a91-4627-4c19-8e38-efe3a4915166",
     "timezone": "Europe/Sarajevo",
@@ -471,8 +472,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 44,
     "longitude": 18,
-    "flag": "🇧🇦",
-    "phoneCode": "+387"
+    "flag": "🇧🇦"
   },
   {
     "id": "299d0668-b349-4aec-87f0-24ba3c28e843",
@@ -480,6 +480,7 @@
     "alpha2": "BW",
     "alpha3": "BWA",
     "code": "072",
+    "phoneCode": "+267",
     "capital": "Gaborone",
     "idCurrency": "251408e8-459c-4445-95dd-fe7a1b7eb6b5",
     "timezone": "Africa/Gaborone",
@@ -488,8 +489,7 @@
     "subRegion": "Southern Africa",
     "latitude": -22,
     "longitude": 24,
-    "flag": "🇧🇼",
-    "phoneCode": "+267"
+    "flag": "🇧🇼"
   },
   {
     "id": "03bfb8e4-938f-4cc0-9a17-e9bee92c59e3",
@@ -497,15 +497,15 @@
     "alpha2": "BV",
     "alpha3": "BVT",
     "code": "074",
-    "idCurrency": "",
+    "phoneCode": "+47",
+    "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "Europe/Oslo",
     "nameNative": "Isla Bouvet",
     "region": "Antarctic",
     "subRegion": "Unknown",
     "latitude": -54.43333333,
     "longitude": 3.4,
-    "flag": "🇧🇻",
-    "phoneCode": "+47"
+    "flag": "🇧🇻"
   },
   {
     "id": "1da59d41-1491-43a2-9738-6b64cd740c12",
@@ -513,6 +513,7 @@
     "alpha2": "BR",
     "alpha3": "BRA",
     "code": "076",
+    "phoneCode": "+55",
     "capital": "Brasília",
     "idCurrency": "52dc805f-6504-4385-8838-5af30139358f",
     "timezone": "America/Sao_Paulo",
@@ -521,8 +522,7 @@
     "subRegion": "South America",
     "latitude": -10,
     "longitude": -55,
-    "flag": "🇧🇷",
-    "phoneCode": "+55"
+    "flag": "🇧🇷"
   },
   {
     "id": "265aeb41-9246-4854-9778-d6e507326004",
@@ -530,6 +530,7 @@
     "alpha2": "IO",
     "alpha3": "IOT",
     "code": "086",
+    "phoneCode": "+246",
     "capital": "Diego Garcia",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "Indian/Chagos",
@@ -538,8 +539,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -6,
     "longitude": 71.5,
-    "flag": "🇮🇴",
-    "phoneCode": "+246"
+    "flag": "🇮🇴"
   },
   {
     "id": "37887b64-32f6-4b3e-8978-430c50500b23",
@@ -547,6 +547,7 @@
     "alpha2": "VG",
     "alpha3": "VGB",
     "code": "092",
+    "phoneCode": "+1",
     "capital": "Road Town",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "America/Tortola",
@@ -555,8 +556,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.431383,
     "longitude": -64.62305,
-    "flag": "🇻🇬",
-    "phoneCode": "+1"
+    "flag": "🇻🇬"
   },
   {
     "id": "10b5d929-a231-4175-bc46-bd6def32b7f7",
@@ -564,6 +564,7 @@
     "alpha2": "BN",
     "alpha3": "BRN",
     "code": "096",
+    "phoneCode": "+673",
     "capital": "Bandar Seri Begawan",
     "idCurrency": "f0205c21-5ae5-46b3-aa1c-529b878ba689",
     "timezone": "Asia/Brunei",
@@ -572,8 +573,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 4.5,
     "longitude": 114.66666666,
-    "flag": "🇧🇳",
-    "phoneCode": "+673"
+    "flag": "🇧🇳"
   },
   {
     "id": "e718d7a2-f363-4153-8a67-f24b1cbd7f7c",
@@ -581,6 +581,7 @@
     "alpha2": "BG",
     "alpha3": "BGR",
     "code": "100",
+    "phoneCode": "+359",
     "capital": "Sofia",
     "idCurrency": "c766100c-779c-4804-8c05-9006100c80ae",
     "timezone": "Europe/Sofia",
@@ -589,8 +590,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 43,
     "longitude": 25,
-    "flag": "🇧🇬",
-    "phoneCode": "+359"
+    "flag": "🇧🇬"
   },
   {
     "id": "eadf1c35-0a79-4756-8b49-8310488d6164",
@@ -598,6 +598,7 @@
     "alpha2": "BF",
     "alpha3": "BFA",
     "code": "854",
+    "phoneCode": "+226",
     "capital": "Ouagadougou",
     "idCurrency": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "timezone": "Africa/Ouagadougou",
@@ -606,8 +607,7 @@
     "subRegion": "Western Africa",
     "latitude": 13,
     "longitude": -2,
-    "flag": "🇧🇫",
-    "phoneCode": "+226"
+    "flag": "🇧🇫"
   },
   {
     "id": "15ca1a80-6a52-4833-a0c6-b2694dd73481",
@@ -615,6 +615,7 @@
     "alpha2": "BI",
     "alpha3": "BDI",
     "code": "108",
+    "phoneCode": "+257",
     "capital": "Gitega",
     "idCurrency": "2056d26d-97e3-4817-a4e0-e1b0f4392eca",
     "timezone": "Africa/Bujumbura",
@@ -623,8 +624,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -3.5,
     "longitude": 30,
-    "flag": "🇧🇮",
-    "phoneCode": "+257"
+    "flag": "🇧🇮"
   },
   {
     "id": "7513c020-3d3d-4d6d-86bf-8e485908c92f",
@@ -632,6 +632,7 @@
     "alpha2": "KH",
     "alpha3": "KHM",
     "code": "116",
+    "phoneCode": "+855",
     "capital": "Phnom Penh",
     "idCurrency": "6e500375-466d-4457-967c-1891b854f367",
     "timezone": "Asia/Phnom_Penh",
@@ -640,8 +641,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 13,
     "longitude": 105,
-    "flag": "🇰🇭",
-    "phoneCode": "+855"
+    "flag": "🇰🇭"
   },
   {
     "id": "1b2cf125-eba7-4147-8b63-9c0ce8411c6d",
@@ -649,6 +649,7 @@
     "alpha2": "CM",
     "alpha3": "CMR",
     "code": "120",
+    "phoneCode": "+237",
     "capital": "Yaoundé",
     "idCurrency": "4d2ad5c2-b43f-4328-b4da-bd4b78986f65",
     "timezone": "Africa/Douala",
@@ -657,8 +658,7 @@
     "subRegion": "Middle Africa",
     "latitude": 6,
     "longitude": 12,
-    "flag": "🇨🇲",
-    "phoneCode": "+237"
+    "flag": "🇨🇲"
   },
   {
     "id": "5daafe2a-a2da-48f7-abe4-67c44666f08f",
@@ -666,6 +666,7 @@
     "alpha2": "CA",
     "alpha3": "CAN",
     "code": "124",
+    "phoneCode": "+1",
     "capital": "Ottawa",
     "idCurrency": "e112916e-cdd8-4c2f-9229-d8e9d1c71df0",
     "timezone": "America/Toronto",
@@ -674,8 +675,7 @@
     "subRegion": "North America",
     "latitude": 60,
     "longitude": -95,
-    "flag": "🇨🇦",
-    "phoneCode": "+1"
+    "flag": "🇨🇦"
   },
   {
     "id": "184bf292-0cab-4b40-b9bc-7cad22d75e5f",
@@ -683,6 +683,7 @@
     "alpha2": "CV",
     "alpha3": "CPV",
     "code": "132",
+    "phoneCode": "+238",
     "capital": "Praia",
     "idCurrency": "6330cbc3-8ecd-4661-b09e-5148c5f8152e",
     "timezone": "Atlantic/Cape_Verde",
@@ -691,8 +692,7 @@
     "subRegion": "Western Africa",
     "latitude": 16,
     "longitude": -24,
-    "flag": "🇨🇻",
-    "phoneCode": "+238"
+    "flag": "🇨🇻"
   },
   {
     "id": "4eaf1241-2a82-450b-8739-3f2ef2471807",
@@ -700,6 +700,7 @@
     "alpha2": "BQ",
     "alpha3": "BES",
     "code": "535",
+    "phoneCode": "+599",
     "capital": "Kralendijk",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "America/Kralendijk",
@@ -708,8 +709,7 @@
     "subRegion": "Caribbean",
     "latitude": 12.18,
     "longitude": -68.25,
-    "flag": "",
-    "phoneCode": "+599"
+    "flag": ""
   },
   {
     "id": "621315d2-2e25-4078-a62d-94cde2b6f80c",
@@ -717,6 +717,7 @@
     "alpha2": "KY",
     "alpha3": "CYM",
     "code": "136",
+    "phoneCode": "+1",
     "capital": "George Town",
     "idCurrency": "673e7a46-d0e1-445e-9052-286478f8693b",
     "timezone": "America/Cayman",
@@ -725,8 +726,7 @@
     "subRegion": "Caribbean",
     "latitude": 19.5,
     "longitude": -80.5,
-    "flag": "🇰🇾",
-    "phoneCode": "+1"
+    "flag": "🇰🇾"
   },
   {
     "id": "69982846-50f2-47e3-b241-1a0b96eac5fb",
@@ -734,6 +734,7 @@
     "alpha2": "CF",
     "alpha3": "CAF",
     "code": "140",
+    "phoneCode": "+236",
     "capital": "Bangui",
     "idCurrency": "4d2ad5c2-b43f-4328-b4da-bd4b78986f65",
     "timezone": "Africa/Bangui",
@@ -742,8 +743,7 @@
     "subRegion": "Middle Africa",
     "latitude": 7,
     "longitude": 21,
-    "flag": "🇨🇫",
-    "phoneCode": "+236"
+    "flag": "🇨🇫"
   },
   {
     "id": "c44219e6-2f61-411c-b6f3-e03f261d4ac2",
@@ -751,6 +751,7 @@
     "alpha2": "TD",
     "alpha3": "TCD",
     "code": "148",
+    "phoneCode": "+235",
     "capital": "N'Djamena",
     "idCurrency": "4d2ad5c2-b43f-4328-b4da-bd4b78986f65",
     "timezone": "Africa/Ndjamena",
@@ -759,8 +760,7 @@
     "subRegion": "Middle Africa",
     "latitude": 15,
     "longitude": 19,
-    "flag": "🇹🇩",
-    "phoneCode": "+235"
+    "flag": "🇹🇩"
   },
   {
     "id": "97b4b681-e8ad-4e74-8bb2-7592cefa13f1",
@@ -768,6 +768,7 @@
     "alpha2": "CL",
     "alpha3": "CHL",
     "code": "152",
+    "phoneCode": "+56",
     "capital": "Santiago",
     "idCurrency": "daf16c22-835a-4686-8b18-a93e6ef26e62",
     "timezone": "America/Santiago",
@@ -776,8 +777,7 @@
     "subRegion": "South America",
     "latitude": -30,
     "longitude": -71,
-    "flag": "🇨🇱",
-    "phoneCode": "+56"
+    "flag": "🇨🇱"
   },
   {
     "id": "f39fcfaf-953a-435d-8558-cddf135debca",
@@ -785,6 +785,7 @@
     "alpha2": "CN",
     "alpha3": "CHN",
     "code": "156",
+    "phoneCode": "+86",
     "capital": "Beijing",
     "idCurrency": "550077d9-95d8-4d5a-8fc5-30c95a54b030",
     "timezone": "Asia/Shanghai",
@@ -793,8 +794,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 35,
     "longitude": 105,
-    "flag": "🇨🇳",
-    "phoneCode": "+86"
+    "flag": "🇨🇳"
   },
   {
     "id": "84cb85ea-f791-4d89-8d03-08eb5a92dceb",
@@ -802,6 +802,7 @@
     "alpha2": "CX",
     "alpha3": "CXR",
     "code": "162",
+    "phoneCode": "+61",
     "capital": "Flying Fish Cove",
     "idCurrency": "6a005a69-7373-4afa-a809-3e9ee706b39e",
     "timezone": "Indian/Christmas",
@@ -810,8 +811,7 @@
     "subRegion": "Australia and New Zealand",
     "latitude": -10.5,
     "longitude": 105.66666666,
-    "flag": "🇨🇽",
-    "phoneCode": "+61"
+    "flag": "🇨🇽"
   },
   {
     "id": "30cadb39-216e-4c3e-bf36-21e0ab88463c",
@@ -819,6 +819,7 @@
     "alpha2": "CC",
     "alpha3": "CCK",
     "code": "166",
+    "phoneCode": "+61",
     "capital": "West Island",
     "idCurrency": "6a005a69-7373-4afa-a809-3e9ee706b39e",
     "timezone": "Indian/Cocos",
@@ -827,8 +828,7 @@
     "subRegion": "Australia and New Zealand",
     "latitude": -12.5,
     "longitude": 96.83333333,
-    "flag": "🇨🇨",
-    "phoneCode": "+61"
+    "flag": "🇨🇨"
   },
   {
     "id": "69191570-f690-4b95-abcd-3c004fc24d8b",
@@ -836,6 +836,7 @@
     "alpha2": "CO",
     "alpha3": "COL",
     "code": "170",
+    "phoneCode": "+57",
     "capital": "Bogotá",
     "idCurrency": "1e8f4d27-f5bf-4d93-92a8-ecc4719aba3b",
     "timezone": "America/Bogota",
@@ -844,8 +845,7 @@
     "subRegion": "South America",
     "latitude": 4,
     "longitude": -72,
-    "flag": "🇨🇴",
-    "phoneCode": "+57"
+    "flag": "🇨🇴"
   },
   {
     "id": "d8463f76-2cba-4d25-bab7-a7fd3ca398f8",
@@ -853,6 +853,7 @@
     "alpha2": "KM",
     "alpha3": "COM",
     "code": "174",
+    "phoneCode": "+269",
     "capital": "Moroni",
     "idCurrency": "9ccc89f8-7cf7-43d9-8e4e-4e07915404b7",
     "timezone": "Indian/Comoro",
@@ -861,8 +862,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -12.16666666,
     "longitude": 44.25,
-    "flag": "🇰🇲",
-    "phoneCode": "+269"
+    "flag": "🇰🇲"
   },
   {
     "id": "af01165a-592a-4c4c-b601-3410238247c5",
@@ -870,6 +870,7 @@
     "alpha2": "CG",
     "alpha3": "COG",
     "code": "178",
+    "phoneCode": "+242",
     "capital": "Brazzaville",
     "idCurrency": "4d2ad5c2-b43f-4328-b4da-bd4b78986f65",
     "timezone": "Africa/Brazzaville",
@@ -878,8 +879,7 @@
     "subRegion": "Middle Africa",
     "latitude": -1,
     "longitude": 15,
-    "flag": "🇨🇬",
-    "phoneCode": "+242"
+    "flag": "🇨🇬"
   },
   {
     "id": "410b108b-fa66-42fa-893f-e55aa74bcbf9",
@@ -887,6 +887,7 @@
     "alpha2": "CK",
     "alpha3": "COK",
     "code": "184",
+    "phoneCode": "+682",
     "capital": "Avarua",
     "idCurrency": "4e1fe547-8084-43a3-973b-bd81facd09e6",
     "timezone": "Pacific/Rarotonga",
@@ -895,8 +896,7 @@
     "subRegion": "Polynesia",
     "latitude": -21.23333333,
     "longitude": -159.76666666,
-    "flag": "🇨🇰",
-    "phoneCode": "+682"
+    "flag": "🇨🇰"
   },
   {
     "id": "779c0ce7-2f0d-443d-b115-9f4265443de3",
@@ -904,6 +904,7 @@
     "alpha2": "CR",
     "alpha3": "CRI",
     "code": "188",
+    "phoneCode": "+506",
     "capital": "San José",
     "idCurrency": "a01d6f8c-5900-4818-a0b1-58f912343bdc",
     "timezone": "America/Costa_Rica",
@@ -912,8 +913,7 @@
     "subRegion": "Central America",
     "latitude": 10,
     "longitude": -84,
-    "flag": "🇨🇷",
-    "phoneCode": "+506"
+    "flag": "🇨🇷"
   },
   {
     "id": "e702466c-ad62-476d-95d2-df811d25efe8",
@@ -921,6 +921,7 @@
     "alpha2": "HR",
     "alpha3": "HRV",
     "code": "191",
+    "phoneCode": "+385",
     "capital": "Zagreb",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Zagreb",
@@ -929,8 +930,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 45.16666666,
     "longitude": 15.5,
-    "flag": "🇭🇷",
-    "phoneCode": "+385"
+    "flag": "🇭🇷"
   },
   {
     "id": "36b75278-7deb-45e8-95cf-3eff3c467e53",
@@ -938,6 +938,7 @@
     "alpha2": "CU",
     "alpha3": "CUB",
     "code": "192",
+    "phoneCode": "+53",
     "capital": "Havana",
     "idCurrency": "14b4c7e0-ef2e-47ea-94e5-b5c3b8a90f41",
     "timezone": "America/Havana",
@@ -946,8 +947,7 @@
     "subRegion": "Caribbean",
     "latitude": 21.5,
     "longitude": -80,
-    "flag": "🇨🇺",
-    "phoneCode": "+53"
+    "flag": "🇨🇺"
   },
   {
     "id": "edd04dea-4242-4c10-9630-9112db39e7e7",
@@ -955,6 +955,7 @@
     "alpha2": "CW",
     "alpha3": "CUW",
     "code": "531",
+    "phoneCode": "+599",
     "capital": "Willemstad",
     "idCurrency": "9c633e57-3c28-4c95-a3a3-904f4f2437ff",
     "timezone": "America/Curacao",
@@ -963,8 +964,7 @@
     "subRegion": "Caribbean",
     "latitude": 12.116667,
     "longitude": -68.933333,
-    "flag": "🇨🇼",
-    "phoneCode": "+599"
+    "flag": "🇨🇼"
   },
   {
     "id": "9e5f8a3b-99e5-47db-9a44-bbca30382de2",
@@ -972,6 +972,7 @@
     "alpha2": "CY",
     "alpha3": "CYP",
     "code": "196",
+    "phoneCode": "+357",
     "capital": "Nicosia",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Asia/Nicosia",
@@ -980,8 +981,7 @@
     "subRegion": "Southern Europe",
     "latitude": 35,
     "longitude": 33,
-    "flag": "🇨🇾",
-    "phoneCode": "+357"
+    "flag": "🇨🇾"
   },
   {
     "id": "cb94179f-ec61-4b78-a365-b2dbeb75e122",
@@ -989,6 +989,7 @@
     "alpha2": "CZ",
     "alpha3": "CZE",
     "code": "203",
+    "phoneCode": "+420",
     "capital": "Prague",
     "idCurrency": "fc535266-3a63-4a77-8900-cdfca47980fe",
     "timezone": "Europe/Prague",
@@ -997,8 +998,7 @@
     "subRegion": "Central Europe",
     "latitude": 49.75,
     "longitude": 15.5,
-    "flag": "🇨🇿",
-    "phoneCode": "+420"
+    "flag": "🇨🇿"
   },
   {
     "id": "6f761b4b-d0d9-48a6-a35d-8a2829ca261d",
@@ -1006,6 +1006,7 @@
     "alpha2": "DK",
     "alpha3": "DNK",
     "code": "208",
+    "phoneCode": "+45",
     "capital": "Copenhagen",
     "idCurrency": "efe024a0-a76b-4131-bd90-3f96ab5a84b1",
     "timezone": "Europe/Copenhagen",
@@ -1014,8 +1015,7 @@
     "subRegion": "Northern Europe",
     "latitude": 56,
     "longitude": 10,
-    "flag": "🇩🇰",
-    "phoneCode": "+45"
+    "flag": "🇩🇰"
   },
   {
     "id": "9b08e335-b809-47c5-a8e0-4b5837c32569",
@@ -1023,6 +1023,7 @@
     "alpha2": "DJ",
     "alpha3": "DJI",
     "code": "262",
+    "phoneCode": "+253",
     "capital": "Djibouti",
     "idCurrency": "926961fd-c03e-4e83-b705-8b8c0b0ef779",
     "timezone": "Africa/Djibouti",
@@ -1031,8 +1032,7 @@
     "subRegion": "Eastern Africa",
     "latitude": 11.5,
     "longitude": 43,
-    "flag": "🇩🇯",
-    "phoneCode": "+253"
+    "flag": "🇩🇯"
   },
   {
     "id": "a654691a-ec8d-40ff-ae36-4fcbcba47357",
@@ -1040,6 +1040,7 @@
     "alpha2": "DM",
     "alpha3": "DMA",
     "code": "212",
+    "phoneCode": "+1",
     "capital": "Roseau",
     "idCurrency": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "timezone": "America/Dominica",
@@ -1048,8 +1049,7 @@
     "subRegion": "Caribbean",
     "latitude": 15.41666666,
     "longitude": -61.33333333,
-    "flag": "🇩🇲",
-    "phoneCode": "+1"
+    "flag": "🇩🇲"
   },
   {
     "id": "87ca1778-b6f4-4415-b9b7-061851ced473",
@@ -1057,6 +1057,7 @@
     "alpha2": "DO",
     "alpha3": "DOM",
     "code": "214",
+    "phoneCode": "+1",
     "capital": "Santo Domingo",
     "idCurrency": "79c59c4f-9f4e-41c2-ac9d-359cad98582f",
     "timezone": "America/Santo_Domingo",
@@ -1065,8 +1066,7 @@
     "subRegion": "Caribbean",
     "latitude": 19,
     "longitude": -70.66666666,
-    "flag": "🇩🇴",
-    "phoneCode": "+1"
+    "flag": "🇩🇴"
   },
   {
     "id": "bc9f77c2-2749-4255-9c3a-baaf6f0745ff",
@@ -1074,6 +1074,7 @@
     "alpha2": "CD",
     "alpha3": "COD",
     "code": "180",
+    "phoneCode": "+243",
     "capital": "Kinshasa",
     "idCurrency": "8943b998-de7c-4e77-a32f-cff4ea56d654",
     "timezone": "Africa/Kinshasa",
@@ -1082,8 +1083,7 @@
     "subRegion": "Middle Africa",
     "latitude": 0,
     "longitude": 25,
-    "flag": "🇨🇩",
-    "phoneCode": "+243"
+    "flag": "🇨🇩"
   },
   {
     "id": "42393c51-3b1a-4c02-b4c2-198fda490abe",
@@ -1091,6 +1091,7 @@
     "alpha2": "EC",
     "alpha3": "ECU",
     "code": "218",
+    "phoneCode": "+593",
     "capital": "Quito",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "America/Guayaquil",
@@ -1099,8 +1100,7 @@
     "subRegion": "South America",
     "latitude": -2,
     "longitude": -77.5,
-    "flag": "🇪🇨",
-    "phoneCode": "+593"
+    "flag": "🇪🇨"
   },
   {
     "id": "82c43bc7-ac22-4a84-9133-4386568fc374",
@@ -1108,6 +1108,7 @@
     "alpha2": "EG",
     "alpha3": "EGY",
     "code": "818",
+    "phoneCode": "+20",
     "capital": "Cairo",
     "idCurrency": "50bf691e-26f0-4e1c-9e79-91b8c00334f5",
     "timezone": "Africa/Cairo",
@@ -1116,8 +1117,7 @@
     "subRegion": "Northern Africa",
     "latitude": 27,
     "longitude": 30,
-    "flag": "🇪🇬",
-    "phoneCode": "+20"
+    "flag": "🇪🇬"
   },
   {
     "id": "e6accfa0-c725-447e-9d9d-c8c0e2c7632a",
@@ -1125,6 +1125,7 @@
     "alpha2": "SV",
     "alpha3": "SLV",
     "code": "222",
+    "phoneCode": "+503",
     "capital": "San Salvador",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "America/El_Salvador",
@@ -1133,8 +1134,7 @@
     "subRegion": "Central America",
     "latitude": 13.83333333,
     "longitude": -88.91666666,
-    "flag": "🇸🇻",
-    "phoneCode": "+503"
+    "flag": "🇸🇻"
   },
   {
     "id": "54a40af3-bfb2-43de-aa4f-add9b144265b",
@@ -1142,6 +1142,7 @@
     "alpha2": "GQ",
     "alpha3": "GNQ",
     "code": "226",
+    "phoneCode": "+240",
     "capital": "Malabo",
     "idCurrency": "4d2ad5c2-b43f-4328-b4da-bd4b78986f65",
     "timezone": "Africa/Malabo",
@@ -1150,8 +1151,7 @@
     "subRegion": "Middle Africa",
     "latitude": 2,
     "longitude": 10,
-    "flag": "🇬🇶",
-    "phoneCode": "+240"
+    "flag": "🇬🇶"
   },
   {
     "id": "c1d35bd4-c6ca-4945-94af-c42e1ed0808e",
@@ -1159,6 +1159,7 @@
     "alpha2": "ER",
     "alpha3": "ERI",
     "code": "232",
+    "phoneCode": "+291",
     "capital": "Asmara",
     "idCurrency": "9f1a9346-b228-4c66-9312-130b46ea98d1",
     "timezone": "Africa/Asmara",
@@ -1167,8 +1168,7 @@
     "subRegion": "Eastern Africa",
     "latitude": 15,
     "longitude": 39,
-    "flag": "🇪🇷",
-    "phoneCode": "+291"
+    "flag": "🇪🇷"
   },
   {
     "id": "2d33d1bb-b1a2-4d81-b545-357facb64735",
@@ -1176,6 +1176,7 @@
     "alpha2": "EE",
     "alpha3": "EST",
     "code": "233",
+    "phoneCode": "+372",
     "capital": "Tallinn",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Tallinn",
@@ -1184,8 +1185,7 @@
     "subRegion": "Northern Europe",
     "latitude": 59,
     "longitude": 26,
-    "flag": "🇪🇪",
-    "phoneCode": "+372"
+    "flag": "🇪🇪"
   },
   {
     "id": "cce31687-03b5-408b-b5e9-abd861d4c87e",
@@ -1193,6 +1193,7 @@
     "alpha2": "SZ",
     "alpha3": "SWZ",
     "code": "748",
+    "phoneCode": "+268",
     "capital": "Lobamba",
     "idCurrency": "891e93af-cdfb-453e-b10a-fe508ffcd79a",
     "timezone": "Africa/Mbabane",
@@ -1201,8 +1202,7 @@
     "subRegion": "Southern Africa",
     "latitude": -26.5,
     "longitude": 31.5,
-    "flag": "🇸🇿",
-    "phoneCode": "+268"
+    "flag": "🇸🇿"
   },
   {
     "id": "86fd9662-0b03-49ce-a41e-efbbf31d6185",
@@ -1210,6 +1210,7 @@
     "alpha2": "ET",
     "alpha3": "ETH",
     "code": "231",
+    "phoneCode": "+251",
     "capital": "Addis Ababa",
     "idCurrency": "144089cc-8fc8-4f23-b663-81d946ca0f81",
     "timezone": "Africa/Addis_Ababa",
@@ -1218,8 +1219,7 @@
     "subRegion": "Eastern Africa",
     "latitude": 8,
     "longitude": 38,
-    "flag": "🇪🇹",
-    "phoneCode": "+251"
+    "flag": "🇪🇹"
   },
   {
     "id": "801e9633-b517-4f34-be91-997b35de7216",
@@ -1227,6 +1227,7 @@
     "alpha2": "FK",
     "alpha3": "FLK",
     "code": "238",
+    "phoneCode": "+500",
     "capital": "Stanley",
     "idCurrency": "2daa341c-7004-40b5-aea4-527b2e1edac3",
     "timezone": "Atlantic/Stanley",
@@ -1235,8 +1236,7 @@
     "subRegion": "South America",
     "latitude": -51.75,
     "longitude": -59,
-    "flag": "🇫🇰",
-    "phoneCode": "+500"
+    "flag": "🇫🇰"
   },
   {
     "id": "760b6356-db87-4719-8fd2-55554c254bc9",
@@ -1244,6 +1244,7 @@
     "alpha2": "FO",
     "alpha3": "FRO",
     "code": "234",
+    "phoneCode": "+298",
     "capital": "Tórshavn",
     "idCurrency": "efe024a0-a76b-4131-bd90-3f96ab5a84b1",
     "timezone": "Atlantic/Faroe",
@@ -1252,8 +1253,7 @@
     "subRegion": "Northern Europe",
     "latitude": 62,
     "longitude": -7,
-    "flag": "🇫🇴",
-    "phoneCode": "+298"
+    "flag": "🇫🇴"
   },
   {
     "id": "082a0910-aaae-42ee-8de3-571a9cc8b5e2",
@@ -1261,6 +1261,7 @@
     "alpha2": "FJ",
     "alpha3": "FJI",
     "code": "242",
+    "phoneCode": "+679",
     "capital": "Suva",
     "idCurrency": "f98db27b-3fe0-47a2-824b-69dc164b81df",
     "timezone": "Pacific/Fiji",
@@ -1269,8 +1270,7 @@
     "subRegion": "Melanesia",
     "latitude": -18,
     "longitude": 175,
-    "flag": "🇫🇯",
-    "phoneCode": "+679"
+    "flag": "🇫🇯"
   },
   {
     "id": "3a5b61cd-024a-479f-aa68-c9e54d3aea2b",
@@ -1278,6 +1278,7 @@
     "alpha2": "FI",
     "alpha3": "FIN",
     "code": "246",
+    "phoneCode": "+358",
     "capital": "Helsinki",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Helsinki",
@@ -1286,8 +1287,7 @@
     "subRegion": "Northern Europe",
     "latitude": 64,
     "longitude": 26,
-    "flag": "🇫🇮",
-    "phoneCode": "+358"
+    "flag": "🇫🇮"
   },
   {
     "id": "9c3f796d-982c-4175-8a84-b34377f6c6f5",
@@ -1295,6 +1295,7 @@
     "alpha2": "FR",
     "alpha3": "FRA",
     "code": "250",
+    "phoneCode": "+33",
     "capital": "Paris",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Paris",
@@ -1303,8 +1304,7 @@
     "subRegion": "Western Europe",
     "latitude": 46,
     "longitude": 2,
-    "flag": "🇫🇷",
-    "phoneCode": "+33"
+    "flag": "🇫🇷"
   },
   {
     "id": "79831629-c796-4cb5-9eba-7db2e5f615e4",
@@ -1312,6 +1312,7 @@
     "alpha2": "GF",
     "alpha3": "GUF",
     "code": "254",
+    "phoneCode": "+594",
     "capital": "Cayenne",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "America/Cayenne",
@@ -1320,8 +1321,7 @@
     "subRegion": "South America",
     "latitude": 4,
     "longitude": -53,
-    "flag": "🇬🇫",
-    "phoneCode": "+594"
+    "flag": "🇬🇫"
   },
   {
     "id": "49961199-1072-442e-aef9-8cdf25bbb249",
@@ -1329,6 +1329,7 @@
     "alpha2": "PF",
     "alpha3": "PYF",
     "code": "258",
+    "phoneCode": "+689",
     "capital": "Papeetē",
     "idCurrency": "92bb96bd-b000-4a8a-a012-f3f7a032db66",
     "timezone": "Pacific/Tahiti",
@@ -1337,8 +1338,7 @@
     "subRegion": "Polynesia",
     "latitude": -15,
     "longitude": -140,
-    "flag": "🇵🇫",
-    "phoneCode": "+689"
+    "flag": "🇵🇫"
   },
   {
     "id": "63f1ad5a-83b4-4f19-bcab-e4b95f79d3bc",
@@ -1346,6 +1346,7 @@
     "alpha2": "TF",
     "alpha3": "ATF",
     "code": "260",
+    "phoneCode": "+262",
     "capital": "Port-aux-Français",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Indian/Kerguelen",
@@ -1354,8 +1355,7 @@
     "subRegion": "Unknown",
     "latitude": -49.25,
     "longitude": 69.167,
-    "flag": "🇹🇫",
-    "phoneCode": "+262"
+    "flag": "🇹🇫"
   },
   {
     "id": "a8eadd06-6893-421f-91d4-5648b4534630",
@@ -1363,6 +1363,7 @@
     "alpha2": "GA",
     "alpha3": "GAB",
     "code": "266",
+    "phoneCode": "+241",
     "capital": "Libreville",
     "idCurrency": "4d2ad5c2-b43f-4328-b4da-bd4b78986f65",
     "timezone": "Africa/Libreville",
@@ -1371,8 +1372,7 @@
     "subRegion": "Middle Africa",
     "latitude": -1,
     "longitude": 11.75,
-    "flag": "🇬🇦",
-    "phoneCode": "+241"
+    "flag": "🇬🇦"
   },
   {
     "id": "bcbe9485-4ace-48c2-a672-590d0fe5f398",
@@ -1380,6 +1380,7 @@
     "alpha2": "GM",
     "alpha3": "GMB",
     "code": "270",
+    "phoneCode": "+220",
     "capital": "Banjul",
     "idCurrency": "656eca2a-8cb6-4474-9888-515e4b60de13",
     "timezone": "Africa/Banjul",
@@ -1388,8 +1389,7 @@
     "subRegion": "Western Africa",
     "latitude": 13.46666666,
     "longitude": -16.56666666,
-    "flag": "🇬🇲",
-    "phoneCode": "+220"
+    "flag": "🇬🇲"
   },
   {
     "id": "55771536-c9d4-49dd-a6b1-3c3b97d18166",
@@ -1397,6 +1397,7 @@
     "alpha2": "GE",
     "alpha3": "GEO",
     "code": "268",
+    "phoneCode": "+995",
     "capital": "Tbilisi",
     "idCurrency": "8cb323a9-66fa-4f17-8783-ad1277975e23",
     "timezone": "Asia/Tbilisi",
@@ -1405,8 +1406,7 @@
     "subRegion": "Western Asia",
     "latitude": 42,
     "longitude": 43.5,
-    "flag": "🇬🇪",
-    "phoneCode": "+995"
+    "flag": "🇬🇪"
   },
   {
     "id": "721034e9-d173-40b9-bcec-6c408e9a573f",
@@ -1414,6 +1414,7 @@
     "alpha2": "DE",
     "alpha3": "DEU",
     "code": "276",
+    "phoneCode": "+49",
     "capital": "Berlin",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Berlin",
@@ -1422,8 +1423,7 @@
     "subRegion": "Western Europe",
     "latitude": 51,
     "longitude": 9,
-    "flag": "🇩🇪",
-    "phoneCode": "+49"
+    "flag": "🇩🇪"
   },
   {
     "id": "e429376f-f4f3-45b6-bfca-0cc7b0c0bea8",
@@ -1431,6 +1431,7 @@
     "alpha2": "GH",
     "alpha3": "GHA",
     "code": "288",
+    "phoneCode": "+233",
     "capital": "Accra",
     "idCurrency": "df89d993-8ed5-4506-8b25-d3aaf503e2d6",
     "timezone": "Africa/Accra",
@@ -1439,8 +1440,7 @@
     "subRegion": "Western Africa",
     "latitude": 8,
     "longitude": -2,
-    "flag": "🇬🇭",
-    "phoneCode": "+233"
+    "flag": "🇬🇭"
   },
   {
     "id": "cc04caea-eb79-4b0c-a4e9-bda445659898",
@@ -1448,6 +1448,7 @@
     "alpha2": "GI",
     "alpha3": "GIB",
     "code": "292",
+    "phoneCode": "+350",
     "capital": "Gibraltar",
     "idCurrency": "e119fec8-f6ad-48e0-b511-d5a197bb5173",
     "timezone": "Europe/Gibraltar",
@@ -1456,8 +1457,7 @@
     "subRegion": "Southern Europe",
     "latitude": 36.13333333,
     "longitude": -5.35,
-    "flag": "🇬🇮",
-    "phoneCode": "+350"
+    "flag": "🇬🇮"
   },
   {
     "id": "91064589-2507-41b0-8e71-f21b380718db",
@@ -1465,6 +1465,7 @@
     "alpha2": "GR",
     "alpha3": "GRC",
     "code": "300",
+    "phoneCode": "+30",
     "capital": "Athens",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Athens",
@@ -1473,8 +1474,7 @@
     "subRegion": "Southern Europe",
     "latitude": 39,
     "longitude": 22,
-    "flag": "🇬🇷",
-    "phoneCode": "+30"
+    "flag": "🇬🇷"
   },
   {
     "id": "860d18ee-4dea-47c0-8995-fdb074b551af",
@@ -1482,6 +1482,7 @@
     "alpha2": "GL",
     "alpha3": "GRL",
     "code": "304",
+    "phoneCode": "+299",
     "capital": "Nuuk",
     "idCurrency": "efe024a0-a76b-4131-bd90-3f96ab5a84b1",
     "timezone": "America/Godthab",
@@ -1490,8 +1491,7 @@
     "subRegion": "North America",
     "latitude": 72,
     "longitude": -40,
-    "flag": "🇬🇱",
-    "phoneCode": "+299"
+    "flag": "🇬🇱"
   },
   {
     "id": "89c615b7-0950-4e7d-9e24-665e8b792830",
@@ -1499,6 +1499,7 @@
     "alpha2": "GD",
     "alpha3": "GRD",
     "code": "308",
+    "phoneCode": "+1",
     "capital": "St. George's",
     "idCurrency": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "timezone": "America/Grenada",
@@ -1507,8 +1508,7 @@
     "subRegion": "Caribbean",
     "latitude": 12.11666666,
     "longitude": -61.66666666,
-    "flag": "🇬🇩",
-    "phoneCode": "+1"
+    "flag": "🇬🇩"
   },
   {
     "id": "c38880b5-27f6-4ba6-8abf-7e99b4f45556",
@@ -1516,6 +1516,7 @@
     "alpha2": "GP",
     "alpha3": "GLP",
     "code": "312",
+    "phoneCode": "+590",
     "capital": "Basse-Terre",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "America/Guadeloupe",
@@ -1524,8 +1525,7 @@
     "subRegion": "Caribbean",
     "latitude": 16.25,
     "longitude": -61.583333,
-    "flag": "🇬🇵",
-    "phoneCode": "+590"
+    "flag": "🇬🇵"
   },
   {
     "id": "80b82977-7e62-42dd-aef9-88c9387b3c74",
@@ -1533,6 +1533,7 @@
     "alpha2": "GU",
     "alpha3": "GUM",
     "code": "316",
+    "phoneCode": "+1",
     "capital": "Hagåtña",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "Pacific/Guam",
@@ -1541,8 +1542,7 @@
     "subRegion": "Micronesia",
     "latitude": 13.46666666,
     "longitude": 144.78333333,
-    "flag": "🇬🇺",
-    "phoneCode": "+1"
+    "flag": "🇬🇺"
   },
   {
     "id": "51748720-14d3-43e3-bef1-1ef11790df05",
@@ -1550,6 +1550,7 @@
     "alpha2": "GT",
     "alpha3": "GTM",
     "code": "320",
+    "phoneCode": "+502",
     "capital": "Guatemala City",
     "idCurrency": "67efdd1d-d740-4dac-8f79-e8ee72276b14",
     "timezone": "America/Guatemala",
@@ -1558,8 +1559,7 @@
     "subRegion": "Central America",
     "latitude": 15.5,
     "longitude": -90.25,
-    "flag": "🇬🇹",
-    "phoneCode": "+502"
+    "flag": "🇬🇹"
   },
   {
     "id": "53582686-4d2d-49a8-99d8-53531098f4bf",
@@ -1567,6 +1567,7 @@
     "alpha2": "GG",
     "alpha3": "GGY",
     "code": "831",
+    "phoneCode": "+44",
     "capital": "St. Peter Port",
     "idCurrency": "7d382442-fe7e-419b-bb25-2cb5828e66be",
     "timezone": "Europe/Guernsey",
@@ -1575,8 +1576,7 @@
     "subRegion": "Northern Europe",
     "latitude": 49.46666666,
     "longitude": -2.58333333,
-    "flag": "🇬🇬",
-    "phoneCode": "+44"
+    "flag": "🇬🇬"
   },
   {
     "id": "fe044e0f-213e-4fd5-a974-e3808ea7cdee",
@@ -1584,6 +1584,7 @@
     "alpha2": "GN",
     "alpha3": "GIN",
     "code": "324",
+    "phoneCode": "+224",
     "capital": "Conakry",
     "idCurrency": "5a406e50-840d-4535-a21e-ccbce5c53e15",
     "timezone": "Africa/Conakry",
@@ -1592,8 +1593,7 @@
     "subRegion": "Western Africa",
     "latitude": 11,
     "longitude": -10,
-    "flag": "🇬🇳",
-    "phoneCode": "+224"
+    "flag": "🇬🇳"
   },
   {
     "id": "ca6ed8e7-0a0b-482e-bf83-82324e121e3a",
@@ -1601,6 +1601,7 @@
     "alpha2": "GW",
     "alpha3": "GNB",
     "code": "624",
+    "phoneCode": "+245",
     "capital": "Bissau",
     "idCurrency": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "timezone": "Africa/Bissau",
@@ -1609,8 +1610,7 @@
     "subRegion": "Western Africa",
     "latitude": 12,
     "longitude": -15,
-    "flag": "🇬🇼",
-    "phoneCode": "+245"
+    "flag": "🇬🇼"
   },
   {
     "id": "968be864-40ef-4570-b2d4-a957d6252bfd",
@@ -1618,6 +1618,7 @@
     "alpha2": "GY",
     "alpha3": "GUY",
     "code": "328",
+    "phoneCode": "+592",
     "capital": "Georgetown",
     "idCurrency": "5885e0c6-6300-43ec-af8c-46554297a2f3",
     "timezone": "America/Guyana",
@@ -1626,8 +1627,7 @@
     "subRegion": "South America",
     "latitude": 5,
     "longitude": -59,
-    "flag": "🇬🇾",
-    "phoneCode": "+592"
+    "flag": "🇬🇾"
   },
   {
     "id": "c185c6b1-0e01-4e0e-9ba5-b508ba96e7fc",
@@ -1635,6 +1635,7 @@
     "alpha2": "HT",
     "alpha3": "HTI",
     "code": "332",
+    "phoneCode": "+509",
     "capital": "Port-au-Prince",
     "idCurrency": "f5034cd3-5a17-406b-88f1-ef0cc064b7f2",
     "timezone": "America/Port-au-Prince",
@@ -1643,8 +1644,7 @@
     "subRegion": "Caribbean",
     "latitude": 19,
     "longitude": -72.41666666,
-    "flag": "🇭🇹",
-    "phoneCode": "+509"
+    "flag": "🇭🇹"
   },
   {
     "id": "ca5fad34-cec1-4284-8836-049c7107df15",
@@ -1652,15 +1652,15 @@
     "alpha2": "HM",
     "alpha3": "HMD",
     "code": "334",
-    "idCurrency": "",
+    "phoneCode": "+672",
+    "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "Indian/Kerguelen",
     "nameNative": "Islas Heard y McDonald",
     "region": "Antarctic",
     "subRegion": "Unknown",
     "latitude": -53.1,
     "longitude": 72.51666666,
-    "flag": "🇭🇲",
-    "phoneCode": "+672"
+    "flag": "🇭🇲"
   },
   {
     "id": "5fdb121d-c1eb-4ee5-a9cf-8d391df0d91f",
@@ -1668,6 +1668,7 @@
     "alpha2": "HN",
     "alpha3": "HND",
     "code": "340",
+    "phoneCode": "+504",
     "capital": "Tegucigalpa",
     "idCurrency": "8ad6b9ba-da46-4c77-8459-bef069cc1c78",
     "timezone": "America/Tegucigalpa",
@@ -1676,8 +1677,7 @@
     "subRegion": "Central America",
     "latitude": 15,
     "longitude": -86.5,
-    "flag": "🇭🇳",
-    "phoneCode": "+504"
+    "flag": "🇭🇳"
   },
   {
     "id": "7595a046-325f-4b66-a150-0eb22df88df7",
@@ -1685,6 +1685,7 @@
     "alpha2": "HK",
     "alpha3": "HKG",
     "code": "344",
+    "phoneCode": "+852",
     "capital": "City of Victoria",
     "idCurrency": "4a8763f2-347e-49b2-9303-7e4ea7364af2",
     "timezone": "Asia/Hong_Kong",
@@ -1693,8 +1694,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 22.267,
     "longitude": 114.188,
-    "flag": "🇭🇰",
-    "phoneCode": "+852"
+    "flag": "🇭🇰"
   },
   {
     "id": "9f208e60-ac12-45b9-af4d-0d9f7f28cc75",
@@ -1702,6 +1702,7 @@
     "alpha2": "HU",
     "alpha3": "HUN",
     "code": "348",
+    "phoneCode": "+36",
     "capital": "Budapest",
     "idCurrency": "e6da3832-85b8-43e6-a60f-454beac13043",
     "timezone": "Europe/Budapest",
@@ -1710,8 +1711,7 @@
     "subRegion": "Central Europe",
     "latitude": 47,
     "longitude": 20,
-    "flag": "🇭🇺",
-    "phoneCode": "+36"
+    "flag": "🇭🇺"
   },
   {
     "id": "b4ee25da-2cd3-4b25-a9b8-fa0d20ddd961",
@@ -1719,6 +1719,7 @@
     "alpha2": "IS",
     "alpha3": "ISL",
     "code": "352",
+    "phoneCode": "+354",
     "capital": "Reykjavik",
     "idCurrency": "93b145ae-5284-41b9-ba0b-f415cb1558da",
     "timezone": "Atlantic/Reykjavik",
@@ -1727,8 +1728,7 @@
     "subRegion": "Northern Europe",
     "latitude": 65,
     "longitude": -18,
-    "flag": "🇮🇸",
-    "phoneCode": "+354"
+    "flag": "🇮🇸"
   },
   {
     "id": "b7446283-6966-4a2e-80ed-66ce88d6b134",
@@ -1736,6 +1736,7 @@
     "alpha2": "IN",
     "alpha3": "IND",
     "code": "356",
+    "phoneCode": "+91",
     "capital": "New Delhi",
     "idCurrency": "0f3ba561-6205-4477-aa40-fcdb375161d8",
     "timezone": "Asia/Kolkata",
@@ -1744,8 +1745,7 @@
     "subRegion": "Southern Asia",
     "latitude": 20,
     "longitude": 77,
-    "flag": "🇮🇳",
-    "phoneCode": "+91"
+    "flag": "🇮🇳"
   },
   {
     "id": "6bfdc666-ecf3-4cd9-8771-d6c4cc472672",
@@ -1753,6 +1753,7 @@
     "alpha2": "ID",
     "alpha3": "IDN",
     "code": "360",
+    "phoneCode": "+62",
     "capital": "Jakarta",
     "idCurrency": "204fc059-3b78-440f-8992-27537d5afdf8",
     "timezone": "Asia/Jakarta",
@@ -1761,8 +1762,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": -5,
     "longitude": 120,
-    "flag": "🇮🇩",
-    "phoneCode": "+62"
+    "flag": "🇮🇩"
   },
   {
     "id": "19cba712-21e8-4a17-a665-74e855c86d71",
@@ -1770,6 +1770,7 @@
     "alpha2": "IR",
     "alpha3": "IRN",
     "code": "364",
+    "phoneCode": "+98",
     "capital": "Tehran",
     "idCurrency": "d02e1e3c-0916-47bf-9960-eb7f072f62c8",
     "timezone": "Asia/Tehran",
@@ -1778,8 +1779,7 @@
     "subRegion": "Southern Asia",
     "latitude": 32,
     "longitude": 53,
-    "flag": "🇮🇷",
-    "phoneCode": "+98"
+    "flag": "🇮🇷"
   },
   {
     "id": "7c50326e-e43f-4d5d-baa2-ebc70c6a874b",
@@ -1787,6 +1787,7 @@
     "alpha2": "IQ",
     "alpha3": "IRQ",
     "code": "368",
+    "phoneCode": "+964",
     "capital": "Baghdad",
     "idCurrency": "534d212f-51e9-4d0e-83b5-59eb950fd9ec",
     "timezone": "Asia/Baghdad",
@@ -1795,8 +1796,7 @@
     "subRegion": "Western Asia",
     "latitude": 33,
     "longitude": 44,
-    "flag": "🇮🇶",
-    "phoneCode": "+964"
+    "flag": "🇮🇶"
   },
   {
     "id": "b322d81c-ee55-4a25-83d3-153024488938",
@@ -1804,6 +1804,7 @@
     "alpha2": "IE",
     "alpha3": "IRL",
     "code": "372",
+    "phoneCode": "+353",
     "capital": "Dublin",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Dublin",
@@ -1812,8 +1813,7 @@
     "subRegion": "Northern Europe",
     "latitude": 53,
     "longitude": -8,
-    "flag": "🇮🇪",
-    "phoneCode": "+353"
+    "flag": "🇮🇪"
   },
   {
     "id": "9654c4f9-a7a3-4ce8-9bb9-4a24da80d2c2",
@@ -1821,6 +1821,7 @@
     "alpha2": "IM",
     "alpha3": "IMN",
     "code": "833",
+    "phoneCode": "+44",
     "capital": "Douglas",
     "idCurrency": "7d382442-fe7e-419b-bb25-2cb5828e66be",
     "timezone": "Europe/Isle_of_Man",
@@ -1829,8 +1830,7 @@
     "subRegion": "Northern Europe",
     "latitude": 54.25,
     "longitude": -4.5,
-    "flag": "🇮🇲",
-    "phoneCode": "+44"
+    "flag": "🇮🇲"
   },
   {
     "id": "e90949b7-b6fc-404d-bb34-64536301e87b",
@@ -1838,6 +1838,7 @@
     "alpha2": "IL",
     "alpha3": "ISR",
     "code": "376",
+    "phoneCode": "+972",
     "capital": "Jerusalem",
     "idCurrency": "cf862362-6a6a-4928-aeeb-a74ce4f8ad4b",
     "timezone": "Asia/Jerusalem",
@@ -1846,8 +1847,7 @@
     "subRegion": "Western Asia",
     "latitude": 31.47,
     "longitude": 35.13,
-    "flag": "🇮🇱",
-    "phoneCode": "+972"
+    "flag": "🇮🇱"
   },
   {
     "id": "ea56348f-a2a6-4295-bf6a-e5916cfb3924",
@@ -1855,6 +1855,7 @@
     "alpha2": "IT",
     "alpha3": "ITA",
     "code": "380",
+    "phoneCode": "+39",
     "capital": "Rome",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Rome",
@@ -1863,8 +1864,7 @@
     "subRegion": "Southern Europe",
     "latitude": 42.83333333,
     "longitude": 12.83333333,
-    "flag": "🇮🇹",
-    "phoneCode": "+39"
+    "flag": "🇮🇹"
   },
   {
     "id": "5d36732a-e223-45b1-b161-788c33ccbfe7",
@@ -1872,6 +1872,7 @@
     "alpha2": "CI",
     "alpha3": "CIV",
     "code": "384",
+    "phoneCode": "+225",
     "capital": "Yamoussoukro",
     "idCurrency": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "timezone": "Africa/Abidjan",
@@ -1880,8 +1881,7 @@
     "subRegion": "Western Africa",
     "latitude": 8,
     "longitude": -5,
-    "flag": "🇨🇮",
-    "phoneCode": "+225"
+    "flag": "🇨🇮"
   },
   {
     "id": "75adffd0-f04f-40bb-805e-ad02b9c54c14",
@@ -1889,6 +1889,7 @@
     "alpha2": "JM",
     "alpha3": "JAM",
     "code": "388",
+    "phoneCode": "+1",
     "capital": "Kingston",
     "idCurrency": "acf4f0cc-c04f-44d1-9471-309f42e3dcef",
     "timezone": "America/Jamaica",
@@ -1897,8 +1898,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.25,
     "longitude": -77.5,
-    "flag": "🇯🇲",
-    "phoneCode": "+1"
+    "flag": "🇯🇲"
   },
   {
     "id": "9f2b5936-3867-4e6c-a643-27d79c575769",
@@ -1906,6 +1906,7 @@
     "alpha2": "JP",
     "alpha3": "JPN",
     "code": "392",
+    "phoneCode": "+81",
     "capital": "Tokyo",
     "idCurrency": "4212ca72-99f1-4994-a2a3-1f86ab27c487",
     "timezone": "Asia/Tokyo",
@@ -1914,8 +1915,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 36,
     "longitude": 138,
-    "flag": "🇯🇵",
-    "phoneCode": "+81"
+    "flag": "🇯🇵"
   },
   {
     "id": "cdc70af1-4545-4920-af59-6337404d7abd",
@@ -1923,6 +1923,7 @@
     "alpha2": "JE",
     "alpha3": "JEY",
     "code": "832",
+    "phoneCode": "+44",
     "capital": "Saint Helier",
     "idCurrency": "7d382442-fe7e-419b-bb25-2cb5828e66be",
     "timezone": "Europe/Jersey",
@@ -1931,8 +1932,7 @@
     "subRegion": "Northern Europe",
     "latitude": 49.25,
     "longitude": -2.16666666,
-    "flag": "🇯🇪",
-    "phoneCode": "+44"
+    "flag": "🇯🇪"
   },
   {
     "id": "c6ac4406-36fc-4699-b18d-1d27a5a0facd",
@@ -1940,6 +1940,7 @@
     "alpha2": "JO",
     "alpha3": "JOR",
     "code": "400",
+    "phoneCode": "+962",
     "capital": "Amman",
     "idCurrency": "9b49fdd1-458e-4704-9697-1b028852aeb4",
     "timezone": "Asia/Amman",
@@ -1948,8 +1949,7 @@
     "subRegion": "Western Asia",
     "latitude": 31,
     "longitude": 36,
-    "flag": "🇯🇴",
-    "phoneCode": "+962"
+    "flag": "🇯🇴"
   },
   {
     "id": "6ee28ecc-302b-42cf-b7d1-0d8d370f6cb9",
@@ -1957,6 +1957,7 @@
     "alpha2": "KZ",
     "alpha3": "KAZ",
     "code": "398",
+    "phoneCode": "+7",
     "capital": "Astana",
     "idCurrency": "9e457916-fdc4-481e-859e-fd6ccec19523",
     "timezone": "Asia/Almaty",
@@ -1965,8 +1966,7 @@
     "subRegion": "Central Asia",
     "latitude": 48,
     "longitude": 68,
-    "flag": "🇰🇿",
-    "phoneCode": "+7"
+    "flag": "🇰🇿"
   },
   {
     "id": "b15bf665-55cd-49ba-ba9c-309542ac1f49",
@@ -1974,6 +1974,7 @@
     "alpha2": "KE",
     "alpha3": "KEN",
     "code": "404",
+    "phoneCode": "+254",
     "capital": "Nairobi",
     "idCurrency": "710e6635-1cb1-4630-9562-37f0b49a2f61",
     "timezone": "Africa/Nairobi",
@@ -1982,8 +1983,7 @@
     "subRegion": "Eastern Africa",
     "latitude": 1,
     "longitude": 38,
-    "flag": "🇰🇪",
-    "phoneCode": "+254"
+    "flag": "🇰🇪"
   },
   {
     "id": "8e317b00-1cd2-4b3d-8af2-7cd29171dab6",
@@ -1991,6 +1991,7 @@
     "alpha2": "KI",
     "alpha3": "KIR",
     "code": "296",
+    "phoneCode": "+686",
     "capital": "South Tarawa",
     "idCurrency": "6a005a69-7373-4afa-a809-3e9ee706b39e",
     "timezone": "Pacific/Tarawa",
@@ -1999,8 +2000,7 @@
     "subRegion": "Micronesia",
     "latitude": 1.41666666,
     "longitude": 173,
-    "flag": "🇰🇮",
-    "phoneCode": "+686"
+    "flag": "🇰🇮"
   },
   {
     "id": "c8dc0687-6ce1-4958-a8d1-6536db7f952c",
@@ -2008,6 +2008,7 @@
     "alpha2": "XK",
     "alpha3": "UNK",
     "code": "000",
+    "phoneCode": "+383",
     "capital": "Pristina",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Belgrade",
@@ -2016,8 +2017,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 42.666667,
     "longitude": 21.166667,
-    "flag": "🇽🇰",
-    "phoneCode": "+383"
+    "flag": "🇽🇰"
   },
   {
     "id": "92f8a2a6-65b5-40b1-b020-ebaa4a90f800",
@@ -2025,6 +2025,7 @@
     "alpha2": "KW",
     "alpha3": "KWT",
     "code": "414",
+    "phoneCode": "+965",
     "capital": "Kuwait City",
     "idCurrency": "d5af8b2d-3fdb-4954-8926-f3b2f84a18d6",
     "timezone": "Asia/Kuwait",
@@ -2033,8 +2034,7 @@
     "subRegion": "Western Asia",
     "latitude": 29.5,
     "longitude": 45.75,
-    "flag": "🇰🇼",
-    "phoneCode": "+965"
+    "flag": "🇰🇼"
   },
   {
     "id": "30cc3650-e27e-4155-80a5-ecda62c86bad",
@@ -2042,6 +2042,7 @@
     "alpha2": "KG",
     "alpha3": "KGZ",
     "code": "417",
+    "phoneCode": "+996",
     "capital": "Bishkek",
     "idCurrency": "64d106e7-cd14-4df6-aac8-1f2aab223571",
     "timezone": "Asia/Bishkek",
@@ -2050,8 +2051,7 @@
     "subRegion": "Central Asia",
     "latitude": 41,
     "longitude": 75,
-    "flag": "🇰🇬",
-    "phoneCode": "+996"
+    "flag": "🇰🇬"
   },
   {
     "id": "5e4714f0-2246-4b34-b5ed-1bab29bea553",
@@ -2059,6 +2059,7 @@
     "alpha2": "LA",
     "alpha3": "LAO",
     "code": "418",
+    "phoneCode": "+856",
     "capital": "Vientiane",
     "idCurrency": "479cfc1c-f24d-4361-b10f-df29f53448f6",
     "timezone": "Asia/Vientiane",
@@ -2067,8 +2068,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 18,
     "longitude": 105,
-    "flag": "🇱🇦",
-    "phoneCode": "+856"
+    "flag": "🇱🇦"
   },
   {
     "id": "5a6119d3-e1e1-4a31-bc10-d0aaf5e3375a",
@@ -2076,6 +2076,7 @@
     "alpha2": "LV",
     "alpha3": "LVA",
     "code": "428",
+    "phoneCode": "+371",
     "capital": "Riga",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Riga",
@@ -2084,8 +2085,7 @@
     "subRegion": "Northern Europe",
     "latitude": 57,
     "longitude": 25,
-    "flag": "🇱🇻",
-    "phoneCode": "+371"
+    "flag": "🇱🇻"
   },
   {
     "id": "3e173d18-fa91-4f88-8e61-10e3a996f009",
@@ -2093,6 +2093,7 @@
     "alpha2": "LB",
     "alpha3": "LBN",
     "code": "422",
+    "phoneCode": "+961",
     "capital": "Beirut",
     "idCurrency": "45a3e790-b77a-4b1a-bea0-a1c254d7393b",
     "timezone": "Asia/Beirut",
@@ -2101,8 +2102,7 @@
     "subRegion": "Western Asia",
     "latitude": 33.83333333,
     "longitude": 35.83333333,
-    "flag": "🇱🇧",
-    "phoneCode": "+961"
+    "flag": "🇱🇧"
   },
   {
     "id": "7e102a61-72eb-4f0b-89e3-93d1f02b4a71",
@@ -2110,6 +2110,7 @@
     "alpha2": "LS",
     "alpha3": "LSO",
     "code": "426",
+    "phoneCode": "+266",
     "capital": "Maseru",
     "idCurrency": "cdd75823-f039-47fa-bee3-fd41b2e89b22",
     "timezone": "Africa/Maseru",
@@ -2118,8 +2119,7 @@
     "subRegion": "Southern Africa",
     "latitude": -29.5,
     "longitude": 28.5,
-    "flag": "🇱🇸",
-    "phoneCode": "+266"
+    "flag": "🇱🇸"
   },
   {
     "id": "e149c83b-3563-46f4-b9f8-981b6787642e",
@@ -2127,6 +2127,7 @@
     "alpha2": "LR",
     "alpha3": "LBR",
     "code": "430",
+    "phoneCode": "+231",
     "capital": "Monrovia",
     "idCurrency": "17cb6b41-a11d-4431-bd09-fb06d7e2788d",
     "timezone": "Africa/Monrovia",
@@ -2135,8 +2136,7 @@
     "subRegion": "Western Africa",
     "latitude": 6.5,
     "longitude": -9.5,
-    "flag": "🇱🇷",
-    "phoneCode": "+231"
+    "flag": "🇱🇷"
   },
   {
     "id": "9d4e72e2-09e4-4536-9e9a-a52b822f8b3b",
@@ -2144,6 +2144,7 @@
     "alpha2": "LY",
     "alpha3": "LBY",
     "code": "434",
+    "phoneCode": "+218",
     "capital": "Tripoli",
     "idCurrency": "8031e815-428a-4573-a36d-ad0ea0f52c29",
     "timezone": "Africa/Tripoli",
@@ -2152,8 +2153,7 @@
     "subRegion": "Northern Africa",
     "latitude": 25,
     "longitude": 17,
-    "flag": "🇱🇾",
-    "phoneCode": "+218"
+    "flag": "🇱🇾"
   },
   {
     "id": "295dcaaf-6106-4937-bddb-11facfee4b82",
@@ -2161,6 +2161,7 @@
     "alpha2": "LI",
     "alpha3": "LIE",
     "code": "438",
+    "phoneCode": "+423",
     "capital": "Vaduz",
     "idCurrency": "849aa470-834c-4e64-b040-18616fe5651e",
     "timezone": "Europe/Vaduz",
@@ -2169,8 +2170,7 @@
     "subRegion": "Western Europe",
     "latitude": 47.26666666,
     "longitude": 9.53333333,
-    "flag": "🇱🇮",
-    "phoneCode": "+423"
+    "flag": "🇱🇮"
   },
   {
     "id": "f6186ce7-c321-4189-9b4a-110018786f4e",
@@ -2178,6 +2178,7 @@
     "alpha2": "LT",
     "alpha3": "LTU",
     "code": "440",
+    "phoneCode": "+370",
     "capital": "Vilnius",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Vilnius",
@@ -2186,8 +2187,7 @@
     "subRegion": "Northern Europe",
     "latitude": 56,
     "longitude": 24,
-    "flag": "🇱🇹",
-    "phoneCode": "+370"
+    "flag": "🇱🇹"
   },
   {
     "id": "a2a878ea-5023-4b9e-b009-ba0af6a31f83",
@@ -2195,6 +2195,7 @@
     "alpha2": "LU",
     "alpha3": "LUX",
     "code": "442",
+    "phoneCode": "+352",
     "capital": "Luxembourg",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Luxembourg",
@@ -2203,8 +2204,7 @@
     "subRegion": "Western Europe",
     "latitude": 49.75,
     "longitude": 6.16666666,
-    "flag": "🇱🇺",
-    "phoneCode": "+352"
+    "flag": "🇱🇺"
   },
   {
     "id": "9e5826a7-9016-4f89-a147-928e8eca35ef",
@@ -2212,6 +2212,7 @@
     "alpha2": "MO",
     "alpha3": "MAC",
     "code": "446",
+    "phoneCode": "+853",
     "idCurrency": "2ea579c5-d5d8-4cae-bc68-944c1c94489a",
     "timezone": "Asia/Macau",
     "nameNative": "Macao",
@@ -2219,8 +2220,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 22.16666666,
     "longitude": 113.55,
-    "flag": "🇲🇴",
-    "phoneCode": "+853"
+    "flag": "🇲🇴"
   },
   {
     "id": "2470b328-3797-4dca-9b7a-f02b049e1e71",
@@ -2228,6 +2228,7 @@
     "alpha2": "MG",
     "alpha3": "MDG",
     "code": "450",
+    "phoneCode": "+261",
     "capital": "Antananarivo",
     "idCurrency": "2adad3ba-6033-49eb-9eef-0ff10af8371b",
     "timezone": "Indian/Antananarivo",
@@ -2236,8 +2237,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -20,
     "longitude": 47,
-    "flag": "🇲🇬",
-    "phoneCode": "+261"
+    "flag": "🇲🇬"
   },
   {
     "id": "8487e0cc-8a6b-47fc-9e73-c9cdfbdbe500",
@@ -2245,6 +2245,7 @@
     "alpha2": "MW",
     "alpha3": "MWI",
     "code": "454",
+    "phoneCode": "+265",
     "capital": "Lilongwe",
     "idCurrency": "20f18569-de8f-471a-ba27-335a4068a9ef",
     "timezone": "Africa/Blantyre",
@@ -2253,8 +2254,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -13.5,
     "longitude": 34,
-    "flag": "🇲🇼",
-    "phoneCode": "+265"
+    "flag": "🇲🇼"
   },
   {
     "id": "860a5ff8-aac9-4e8c-8888-13a1cb7b0ee3",
@@ -2262,6 +2262,7 @@
     "alpha2": "MY",
     "alpha3": "MYS",
     "code": "458",
+    "phoneCode": "+60",
     "capital": "Kuala Lumpur",
     "idCurrency": "d0d7c3b7-aed4-4382-8da4-43a55654e885",
     "timezone": "Asia/Kuala_Lumpur",
@@ -2270,8 +2271,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 2.5,
     "longitude": 112.5,
-    "flag": "🇲🇾",
-    "phoneCode": "+60"
+    "flag": "🇲🇾"
   },
   {
     "id": "11d8a306-f70e-4b29-8088-68b6e131c6d1",
@@ -2279,6 +2279,7 @@
     "alpha2": "MV",
     "alpha3": "MDV",
     "code": "462",
+    "phoneCode": "+960",
     "capital": "Malé",
     "idCurrency": "9cca71a5-d3c7-4586-b4e5-7353cf8ec402",
     "timezone": "Indian/Maldives",
@@ -2287,8 +2288,7 @@
     "subRegion": "Southern Asia",
     "latitude": 3.25,
     "longitude": 73,
-    "flag": "🇲🇻",
-    "phoneCode": "+960"
+    "flag": "🇲🇻"
   },
   {
     "id": "2f9e885f-500d-4173-a4e1-4e44ede8a70c",
@@ -2296,6 +2296,7 @@
     "alpha2": "ML",
     "alpha3": "MLI",
     "code": "466",
+    "phoneCode": "+223",
     "capital": "Bamako",
     "idCurrency": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "timezone": "Africa/Bamako",
@@ -2304,8 +2305,7 @@
     "subRegion": "Western Africa",
     "latitude": 17,
     "longitude": -4,
-    "flag": "🇲🇱",
-    "phoneCode": "+223"
+    "flag": "🇲🇱"
   },
   {
     "id": "c5a77b87-ca19-4fa7-82df-6635d3e0a9bb",
@@ -2313,6 +2313,7 @@
     "alpha2": "MT",
     "alpha3": "MLT",
     "code": "470",
+    "phoneCode": "+356",
     "capital": "Valletta",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Malta",
@@ -2321,8 +2322,7 @@
     "subRegion": "Southern Europe",
     "latitude": 35.83333333,
     "longitude": 14.58333333,
-    "flag": "🇲🇹",
-    "phoneCode": "+356"
+    "flag": "🇲🇹"
   },
   {
     "id": "3587580a-b9dc-4130-946f-c274f4a3737d",
@@ -2330,6 +2330,7 @@
     "alpha2": "MH",
     "alpha3": "MHL",
     "code": "584",
+    "phoneCode": "+692",
     "capital": "Majuro",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "Pacific/Majuro",
@@ -2338,8 +2339,7 @@
     "subRegion": "Micronesia",
     "latitude": 9,
     "longitude": 168,
-    "flag": "🇲🇭",
-    "phoneCode": "+692"
+    "flag": "🇲🇭"
   },
   {
     "id": "1338770f-ea91-4042-abdb-612ab544b2e2",
@@ -2347,6 +2347,7 @@
     "alpha2": "MQ",
     "alpha3": "MTQ",
     "code": "474",
+    "phoneCode": "+596",
     "capital": "Fort-de-France",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "America/Martinique",
@@ -2355,8 +2356,7 @@
     "subRegion": "Caribbean",
     "latitude": 14.666667,
     "longitude": -61,
-    "flag": "🇲🇶",
-    "phoneCode": "+596"
+    "flag": "🇲🇶"
   },
   {
     "id": "4dd1043a-a7d2-44f9-ab1b-f6e93e83621a",
@@ -2364,6 +2364,7 @@
     "alpha2": "MR",
     "alpha3": "MRT",
     "code": "478",
+    "phoneCode": "+222",
     "capital": "Nouakchott",
     "idCurrency": "e295598a-6a4a-4582-83f4-ba146cdf177f",
     "timezone": "Africa/Nouakchott",
@@ -2372,8 +2373,7 @@
     "subRegion": "Western Africa",
     "latitude": 20,
     "longitude": -12,
-    "flag": "🇲🇷",
-    "phoneCode": "+222"
+    "flag": "🇲🇷"
   },
   {
     "id": "3919e0b0-ac7a-47e0-b75a-22d8c1732bb4",
@@ -2381,6 +2381,7 @@
     "alpha2": "MU",
     "alpha3": "MUS",
     "code": "480",
+    "phoneCode": "+230",
     "capital": "Port Louis",
     "idCurrency": "9aefdca1-198a-4320-aed8-9b55f7f1e7d9",
     "timezone": "Indian/Mauritius",
@@ -2389,8 +2390,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -20.28333333,
     "longitude": 57.55,
-    "flag": "🇲🇺",
-    "phoneCode": "+230"
+    "flag": "🇲🇺"
   },
   {
     "id": "60935fc4-281b-4ae1-b135-6de7a038f401",
@@ -2398,6 +2398,7 @@
     "alpha2": "YT",
     "alpha3": "MYT",
     "code": "175",
+    "phoneCode": "+262",
     "capital": "Mamoudzou",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Indian/Mayotte",
@@ -2406,8 +2407,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -12.83333333,
     "longitude": 45.16666666,
-    "flag": "🇾🇹",
-    "phoneCode": "+262"
+    "flag": "🇾🇹"
   },
   {
     "id": "1ae50a7e-f2a5-4e69-adc8-0f98c5664ed3",
@@ -2415,6 +2415,7 @@
     "alpha2": "MX",
     "alpha3": "MEX",
     "code": "484",
+    "phoneCode": "+52",
     "capital": "Mexico City",
     "idCurrency": "267f8ba4-a6da-4773-8467-fc035f41d8d5",
     "timezone": "America/Mexico_City",
@@ -2423,8 +2424,7 @@
     "subRegion": "North America",
     "latitude": 23,
     "longitude": -102,
-    "flag": "🇲🇽",
-    "phoneCode": "+52"
+    "flag": "🇲🇽"
   },
   {
     "id": "033c2aea-4c61-477a-9e56-49286d1e2a59",
@@ -2432,16 +2432,16 @@
     "alpha2": "FM",
     "alpha3": "FSM",
     "code": "583",
+    "phoneCode": "+691",
     "capital": "Palikir",
-    "idCurrency": "",
+    "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "Pacific/Pohnpei",
     "nameNative": "Micronesia",
     "region": "Oceania",
     "subRegion": "Micronesia",
     "latitude": 6.91666666,
     "longitude": 158.25,
-    "flag": "🇫🇲",
-    "phoneCode": "+691"
+    "flag": "🇫🇲"
   },
   {
     "id": "c6896e52-80b5-4a28-8d3a-7cc87efcdfec",
@@ -2449,6 +2449,7 @@
     "alpha2": "MD",
     "alpha3": "MDA",
     "code": "498",
+    "phoneCode": "+373",
     "capital": "Chișinău",
     "idCurrency": "a9e2761f-29dd-4000-8040-8e5f4fdd73eb",
     "timezone": "Europe/Chisinau",
@@ -2457,8 +2458,7 @@
     "subRegion": "Eastern Europe",
     "latitude": 47,
     "longitude": 29,
-    "flag": "🇲🇩",
-    "phoneCode": "+373"
+    "flag": "🇲🇩"
   },
   {
     "id": "1420fdf5-913b-4bee-8586-ba5bb19f7ad2",
@@ -2466,6 +2466,7 @@
     "alpha2": "MC",
     "alpha3": "MCO",
     "code": "492",
+    "phoneCode": "+377",
     "capital": "Monaco",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Monaco",
@@ -2474,8 +2475,7 @@
     "subRegion": "Western Europe",
     "latitude": 43.73333333,
     "longitude": 7.4,
-    "flag": "🇲🇨",
-    "phoneCode": "+377"
+    "flag": "🇲🇨"
   },
   {
     "id": "06e2a53f-0462-4d1d-86ff-732931ceeb2d",
@@ -2483,6 +2483,7 @@
     "alpha2": "MN",
     "alpha3": "MNG",
     "code": "496",
+    "phoneCode": "+976",
     "capital": "Ulan Bator",
     "idCurrency": "81e91445-ed30-4987-a291-d854c43cdfdf",
     "timezone": "Asia/Ulaanbaatar",
@@ -2491,8 +2492,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 46,
     "longitude": 105,
-    "flag": "🇲🇳",
-    "phoneCode": "+976"
+    "flag": "🇲🇳"
   },
   {
     "id": "7162e8f8-3e38-459c-bccf-ab6aa5a822f3",
@@ -2500,6 +2500,7 @@
     "alpha2": "ME",
     "alpha3": "MNE",
     "code": "499",
+    "phoneCode": "+382",
     "capital": "Podgorica",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Podgorica",
@@ -2508,8 +2509,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 42.5,
     "longitude": 19.3,
-    "flag": "🇲🇪",
-    "phoneCode": "+382"
+    "flag": "🇲🇪"
   },
   {
     "id": "0230fa5a-7388-4956-b0e0-0d6dab6c8ca9",
@@ -2517,6 +2517,7 @@
     "alpha2": "MS",
     "alpha3": "MSR",
     "code": "500",
+    "phoneCode": "+1",
     "capital": "Plymouth",
     "idCurrency": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "timezone": "America/Montserrat",
@@ -2525,8 +2526,7 @@
     "subRegion": "Caribbean",
     "latitude": 16.75,
     "longitude": -62.2,
-    "flag": "🇲🇸",
-    "phoneCode": "+1"
+    "flag": "🇲🇸"
   },
   {
     "id": "523f5a07-f0d5-4ad7-9cee-15ca281a6747",
@@ -2534,6 +2534,7 @@
     "alpha2": "MA",
     "alpha3": "MAR",
     "code": "504",
+    "phoneCode": "+212",
     "capital": "Rabat",
     "idCurrency": "7eb5ec2f-f068-4665-b189-41d6d94b7d1f",
     "timezone": "Africa/Casablanca",
@@ -2542,8 +2543,7 @@
     "subRegion": "Northern Africa",
     "latitude": 32,
     "longitude": -5,
-    "flag": "🇲🇦",
-    "phoneCode": "+212"
+    "flag": "🇲🇦"
   },
   {
     "id": "2fb62a81-d8c1-40f3-9e52-dfd61269e3c8",
@@ -2551,6 +2551,7 @@
     "alpha2": "MZ",
     "alpha3": "MOZ",
     "code": "508",
+    "phoneCode": "+258",
     "capital": "Maputo",
     "idCurrency": "6f998bc2-ad5b-4b48-b6fa-24bc4bba608e",
     "timezone": "Africa/Maputo",
@@ -2559,8 +2560,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -18.25,
     "longitude": 35,
-    "flag": "🇲🇿",
-    "phoneCode": "+258"
+    "flag": "🇲🇿"
   },
   {
     "id": "f41b49a8-5d96-4160-9f59-8a04c2e16521",
@@ -2568,6 +2568,7 @@
     "alpha2": "MM",
     "alpha3": "MMR",
     "code": "104",
+    "phoneCode": "+95",
     "capital": "Naypyidaw",
     "idCurrency": "5b702893-7b0c-4359-932d-60d5e927bc62",
     "timezone": "Asia/Yangon",
@@ -2576,8 +2577,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 22,
     "longitude": 98,
-    "flag": "🇲🇲",
-    "phoneCode": "+95"
+    "flag": "🇲🇲"
   },
   {
     "id": "d865c492-d37f-4d52-9a79-6f2dde2f9556",
@@ -2585,6 +2585,7 @@
     "alpha2": "NA",
     "alpha3": "NAM",
     "code": "516",
+    "phoneCode": "+264",
     "capital": "Windhoek",
     "idCurrency": "6185fcd2-c615-4284-bfbf-33877cf48824",
     "timezone": "Africa/Windhoek",
@@ -2593,8 +2594,7 @@
     "subRegion": "Southern Africa",
     "latitude": -22,
     "longitude": 17,
-    "flag": "🇳🇦",
-    "phoneCode": "+264"
+    "flag": "🇳🇦"
   },
   {
     "id": "cabf6af0-1a2f-4877-ab68-c69c8692cf95",
@@ -2602,6 +2602,7 @@
     "alpha2": "NR",
     "alpha3": "NRU",
     "code": "520",
+    "phoneCode": "+674",
     "capital": "Yaren",
     "idCurrency": "6a005a69-7373-4afa-a809-3e9ee706b39e",
     "timezone": "Pacific/Nauru",
@@ -2610,8 +2611,7 @@
     "subRegion": "Micronesia",
     "latitude": -0.53333333,
     "longitude": 166.91666666,
-    "flag": "🇳🇷",
-    "phoneCode": "+674"
+    "flag": "🇳🇷"
   },
   {
     "id": "92083ae0-f57c-4dca-9ecf-797f4e7ddc1d",
@@ -2619,6 +2619,7 @@
     "alpha2": "NP",
     "alpha3": "NPL",
     "code": "524",
+    "phoneCode": "+977",
     "capital": "Kathmandu",
     "idCurrency": "78bad577-2963-48ef-8e6a-6ea78184350f",
     "timezone": "Asia/Kathmandu",
@@ -2627,8 +2628,7 @@
     "subRegion": "Southern Asia",
     "latitude": 28,
     "longitude": 84,
-    "flag": "🇳🇵",
-    "phoneCode": "+977"
+    "flag": "🇳🇵"
   },
   {
     "id": "e1ad3695-60ef-4941-b594-7c79e7488f20",
@@ -2636,6 +2636,7 @@
     "alpha2": "NL",
     "alpha3": "NLD",
     "code": "528",
+    "phoneCode": "+31",
     "capital": "Amsterdam",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Amsterdam",
@@ -2644,8 +2645,7 @@
     "subRegion": "Western Europe",
     "latitude": 52.5,
     "longitude": 5.75,
-    "flag": "🇳🇱",
-    "phoneCode": "+31"
+    "flag": "🇳🇱"
   },
   {
     "id": "359b87c7-c22e-4bef-bbea-efa738ca976f",
@@ -2653,6 +2653,7 @@
     "alpha2": "NC",
     "alpha3": "NCL",
     "code": "540",
+    "phoneCode": "+687",
     "capital": "Nouméa",
     "idCurrency": "92bb96bd-b000-4a8a-a012-f3f7a032db66",
     "timezone": "Pacific/Noumea",
@@ -2661,8 +2662,7 @@
     "subRegion": "Melanesia",
     "latitude": -21.5,
     "longitude": 165.5,
-    "flag": "🇳🇨",
-    "phoneCode": "+687"
+    "flag": "🇳🇨"
   },
   {
     "id": "8d9acc54-107f-4ad5-ab38-aeacb4947406",
@@ -2670,6 +2670,7 @@
     "alpha2": "NZ",
     "alpha3": "NZL",
     "code": "554",
+    "phoneCode": "+64",
     "capital": "Wellington",
     "idCurrency": "bf97d960-b9ad-4065-8c96-3e1567f178c9",
     "timezone": "Pacific/Auckland",
@@ -2678,8 +2679,7 @@
     "subRegion": "Australia and New Zealand",
     "latitude": -41,
     "longitude": 174,
-    "flag": "🇳🇿",
-    "phoneCode": "+64"
+    "flag": "🇳🇿"
   },
   {
     "id": "7a1fde17-8422-4227-90b3-e5d83468e419",
@@ -2687,6 +2687,7 @@
     "alpha2": "NI",
     "alpha3": "NIC",
     "code": "558",
+    "phoneCode": "+505",
     "capital": "Managua",
     "idCurrency": "067cf520-37c8-45de-9e98-f0e9bc868ee7",
     "timezone": "America/Managua",
@@ -2695,8 +2696,7 @@
     "subRegion": "Central America",
     "latitude": 13,
     "longitude": -85,
-    "flag": "🇳🇮",
-    "phoneCode": "+505"
+    "flag": "🇳🇮"
   },
   {
     "id": "34da9179-17fb-4dfd-9d27-30ccaf5ba099",
@@ -2704,6 +2704,7 @@
     "alpha2": "NE",
     "alpha3": "NER",
     "code": "562",
+    "phoneCode": "+227",
     "capital": "Niamey",
     "idCurrency": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "timezone": "Africa/Niamey",
@@ -2712,8 +2713,7 @@
     "subRegion": "Western Africa",
     "latitude": 16,
     "longitude": 8,
-    "flag": "🇳🇪",
-    "phoneCode": "+227"
+    "flag": "🇳🇪"
   },
   {
     "id": "78ab3bb1-adda-4dc8-9b4a-8af9d72c66d8",
@@ -2721,6 +2721,7 @@
     "alpha2": "NG",
     "alpha3": "NGA",
     "code": "566",
+    "phoneCode": "+234",
     "capital": "Abuja",
     "idCurrency": "6da7277a-6bc2-4b05-bd2d-d7343332216a",
     "timezone": "Africa/Lagos",
@@ -2729,8 +2730,7 @@
     "subRegion": "Western Africa",
     "latitude": 10,
     "longitude": 8,
-    "flag": "🇳🇬",
-    "phoneCode": "+234"
+    "flag": "🇳🇬"
   },
   {
     "id": "76054311-422a-486f-8d28-cc3baba4e8e7",
@@ -2738,6 +2738,7 @@
     "alpha2": "NU",
     "alpha3": "NIU",
     "code": "570",
+    "phoneCode": "+683",
     "capital": "Alofi",
     "idCurrency": "bf97d960-b9ad-4065-8c96-3e1567f178c9",
     "timezone": "Pacific/Niue",
@@ -2746,8 +2747,7 @@
     "subRegion": "Polynesia",
     "latitude": -19.03333333,
     "longitude": -169.86666666,
-    "flag": "🇳🇺",
-    "phoneCode": "+683"
+    "flag": "🇳🇺"
   },
   {
     "id": "77e87582-57f9-4497-8b18-64daf53dd761",
@@ -2755,6 +2755,7 @@
     "alpha2": "NF",
     "alpha3": "NFK",
     "code": "574",
+    "phoneCode": "+672",
     "capital": "Kingston",
     "idCurrency": "6a005a69-7373-4afa-a809-3e9ee706b39e",
     "timezone": "Pacific/Norfolk",
@@ -2763,8 +2764,7 @@
     "subRegion": "Australia and New Zealand",
     "latitude": -29.03333333,
     "longitude": 167.95,
-    "flag": "🇳🇫",
-    "phoneCode": "+672"
+    "flag": "🇳🇫"
   },
   {
     "id": "457041d1-1178-420c-a91e-a3863a8a1964",
@@ -2772,6 +2772,7 @@
     "alpha2": "KP",
     "alpha3": "PRK",
     "code": "408",
+    "phoneCode": "+850",
     "capital": "Pyongyang",
     "idCurrency": "10807ed9-546d-49fc-9f63-3bfc955dafbc",
     "timezone": "Asia/Pyongyang",
@@ -2780,8 +2781,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 40,
     "longitude": 127,
-    "flag": "🇰🇵",
-    "phoneCode": "+850"
+    "flag": "🇰🇵"
   },
   {
     "id": "916a0244-2af2-4aef-aab9-67dc84e43706",
@@ -2789,6 +2789,7 @@
     "alpha2": "MK",
     "alpha3": "MKD",
     "code": "807",
+    "phoneCode": "+389",
     "capital": "Skopje",
     "idCurrency": "ce1142a5-bbb7-4902-a1ef-724c8aec62e2",
     "timezone": "Europe/Skopje",
@@ -2797,8 +2798,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 41.83333333,
     "longitude": 22,
-    "flag": "🇲🇰",
-    "phoneCode": "+389"
+    "flag": "🇲🇰"
   },
   {
     "id": "a50d89ea-3419-4e90-8417-b3fdb2afce44",
@@ -2806,6 +2806,7 @@
     "alpha2": "MP",
     "alpha3": "MNP",
     "code": "580",
+    "phoneCode": "+1",
     "capital": "Saipan",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "Pacific/Saipan",
@@ -2814,8 +2815,7 @@
     "subRegion": "Micronesia",
     "latitude": 15.2,
     "longitude": 145.75,
-    "flag": "🇲🇵",
-    "phoneCode": "+1"
+    "flag": "🇲🇵"
   },
   {
     "id": "eb07b880-da91-4097-b6a8-73cbe5626a2a",
@@ -2823,6 +2823,7 @@
     "alpha2": "NO",
     "alpha3": "NOR",
     "code": "578",
+    "phoneCode": "+47",
     "capital": "Oslo",
     "idCurrency": "b9997b37-04e9-43e8-800b-29e27a38dbf8",
     "timezone": "Europe/Oslo",
@@ -2831,8 +2832,7 @@
     "subRegion": "Northern Europe",
     "latitude": 62,
     "longitude": 10,
-    "flag": "🇳🇴",
-    "phoneCode": "+47"
+    "flag": "🇳🇴"
   },
   {
     "id": "a322e798-2ad0-4170-9a9f-c28fa697710c",
@@ -2840,6 +2840,7 @@
     "alpha2": "OM",
     "alpha3": "OMN",
     "code": "512",
+    "phoneCode": "+968",
     "capital": "Muscat",
     "idCurrency": "2fe18921-120e-429d-a82a-0912895c5078",
     "timezone": "Asia/Muscat",
@@ -2848,8 +2849,7 @@
     "subRegion": "Western Asia",
     "latitude": 21,
     "longitude": 57,
-    "flag": "🇴🇲",
-    "phoneCode": "+968"
+    "flag": "🇴🇲"
   },
   {
     "id": "9b7b5011-0984-402d-92a8-ee30e94b8adb",
@@ -2857,6 +2857,7 @@
     "alpha2": "PK",
     "alpha3": "PAK",
     "code": "586",
+    "phoneCode": "+92",
     "capital": "Islamabad",
     "idCurrency": "00d5808f-fc0d-4182-89d7-ab57d0070862",
     "timezone": "Asia/Karachi",
@@ -2865,8 +2866,7 @@
     "subRegion": "Southern Asia",
     "latitude": 30,
     "longitude": 70,
-    "flag": "🇵🇰",
-    "phoneCode": "+92"
+    "flag": "🇵🇰"
   },
   {
     "id": "22ea2190-dd40-448e-a1a3-c2ebe2ca3354",
@@ -2874,6 +2874,7 @@
     "alpha2": "PW",
     "alpha3": "PLW",
     "code": "585",
+    "phoneCode": "+680",
     "capital": "Ngerulmud",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "Pacific/Palau",
@@ -2882,8 +2883,7 @@
     "subRegion": "Micronesia",
     "latitude": 7.5,
     "longitude": 134.5,
-    "flag": "🇵🇼",
-    "phoneCode": "+680"
+    "flag": "🇵🇼"
   },
   {
     "id": "8632dc50-2428-45bf-89cb-6e514cd1d9d3",
@@ -2891,6 +2891,7 @@
     "alpha2": "PS",
     "alpha3": "PSE",
     "code": "275",
+    "phoneCode": "+970",
     "capital": "Ramallah",
     "idCurrency": "50bf691e-26f0-4e1c-9e79-91b8c00334f5",
     "timezone": "Asia/Gaza",
@@ -2899,8 +2900,7 @@
     "subRegion": "Western Asia",
     "latitude": 31.9,
     "longitude": 35.2,
-    "flag": "🇵🇸",
-    "phoneCode": "+970"
+    "flag": "🇵🇸"
   },
   {
     "id": "6fafd33f-9ae3-4e22-8806-9d96d0c2c3da",
@@ -2908,6 +2908,7 @@
     "alpha2": "PA",
     "alpha3": "PAN",
     "code": "591",
+    "phoneCode": "+507",
     "capital": "Panama City",
     "idCurrency": "f3850a4a-f211-430b-949a-5339a80473e3",
     "timezone": "America/Panama",
@@ -2916,8 +2917,7 @@
     "subRegion": "Central America",
     "latitude": 9,
     "longitude": -80,
-    "flag": "🇵🇦",
-    "phoneCode": "+507"
+    "flag": "🇵🇦"
   },
   {
     "id": "e224b563-b6fe-4647-ba14-daf5dbba2435",
@@ -2925,6 +2925,7 @@
     "alpha2": "PG",
     "alpha3": "PNG",
     "code": "598",
+    "phoneCode": "+675",
     "capital": "Port Moresby",
     "idCurrency": "4f912c2e-84b6-4440-8acc-e5db0a20a4b8",
     "timezone": "Pacific/Port_Moresby",
@@ -2933,8 +2934,7 @@
     "subRegion": "Melanesia",
     "latitude": -6,
     "longitude": 147,
-    "flag": "🇵🇬",
-    "phoneCode": "+675"
+    "flag": "🇵🇬"
   },
   {
     "id": "98c14999-8a5a-42fd-8ba4-aa6ba974328b",
@@ -2942,6 +2942,7 @@
     "alpha2": "PY",
     "alpha3": "PRY",
     "code": "600",
+    "phoneCode": "+595",
     "capital": "Asunción",
     "idCurrency": "fdd76789-38a4-4ed2-94db-5e640f190b57",
     "timezone": "America/Asuncion",
@@ -2950,8 +2951,7 @@
     "subRegion": "South America",
     "latitude": -23,
     "longitude": -58,
-    "flag": "🇵🇾",
-    "phoneCode": "+595"
+    "flag": "🇵🇾"
   },
   {
     "id": "88355021-3e6f-4618-8b4f-01e57e13f2a2",
@@ -2959,6 +2959,7 @@
     "alpha2": "PE",
     "alpha3": "PER",
     "code": "604",
+    "phoneCode": "+51",
     "capital": "Lima",
     "idCurrency": "644899cd-264e-4235-8acd-8e5bdce0c024",
     "timezone": "America/Lima",
@@ -2967,8 +2968,7 @@
     "subRegion": "South America",
     "latitude": -10,
     "longitude": -76,
-    "flag": "🇵🇪",
-    "phoneCode": "+51"
+    "flag": "🇵🇪"
   },
   {
     "id": "c12747f8-fcf3-4eae-86cd-35ca113c8eab",
@@ -2976,6 +2976,7 @@
     "alpha2": "PH",
     "alpha3": "PHL",
     "code": "608",
+    "phoneCode": "+63",
     "capital": "Manila",
     "idCurrency": "73134e71-4965-4ff1-8c92-fd40083b9cb6",
     "timezone": "Asia/Manila",
@@ -2984,8 +2985,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 13,
     "longitude": 122,
-    "flag": "🇵🇭",
-    "phoneCode": "+63"
+    "flag": "🇵🇭"
   },
   {
     "id": "cddcb33e-a0f3-4a13-84f9-3d143fe68b16",
@@ -2993,6 +2993,7 @@
     "alpha2": "PN",
     "alpha3": "PCN",
     "code": "612",
+    "phoneCode": "+64",
     "capital": "Adamstown",
     "idCurrency": "bf97d960-b9ad-4065-8c96-3e1567f178c9",
     "timezone": "Pacific/Pitcairn",
@@ -3001,8 +3002,7 @@
     "subRegion": "Polynesia",
     "latitude": -25.06666666,
     "longitude": -130.1,
-    "flag": "🇵🇳",
-    "phoneCode": "+64"
+    "flag": "🇵🇳"
   },
   {
     "id": "11790c90-08a1-4a03-9e84-0eae18a4cbd3",
@@ -3010,6 +3010,7 @@
     "alpha2": "PL",
     "alpha3": "POL",
     "code": "616",
+    "phoneCode": "+48",
     "capital": "Warsaw",
     "idCurrency": "480c9a47-3977-40e5-885d-08b1703c3f0d",
     "timezone": "Europe/Warsaw",
@@ -3018,8 +3019,7 @@
     "subRegion": "Central Europe",
     "latitude": 52,
     "longitude": 20,
-    "flag": "🇵🇱",
-    "phoneCode": "+48"
+    "flag": "🇵🇱"
   },
   {
     "id": "6a3f8f25-cb5d-4957-a779-29c8880605ec",
@@ -3027,6 +3027,7 @@
     "alpha2": "PT",
     "alpha3": "PRT",
     "code": "620",
+    "phoneCode": "+351",
     "capital": "Lisbon",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Lisbon",
@@ -3035,8 +3036,7 @@
     "subRegion": "Southern Europe",
     "latitude": 39.5,
     "longitude": -8,
-    "flag": "🇵🇹",
-    "phoneCode": "+351"
+    "flag": "🇵🇹"
   },
   {
     "id": "d3b61498-39e1-4935-b1ac-88e05fee8614",
@@ -3044,6 +3044,7 @@
     "alpha2": "PR",
     "alpha3": "PRI",
     "code": "630",
+    "phoneCode": "+1",
     "capital": "San Juan",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "America/Puerto_Rico",
@@ -3052,8 +3053,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.25,
     "longitude": -66.5,
-    "flag": "🇵🇷",
-    "phoneCode": "+1"
+    "flag": "🇵🇷"
   },
   {
     "id": "80db121d-143f-4fdd-9b1a-601ef418adf5",
@@ -3061,6 +3061,7 @@
     "alpha2": "QA",
     "alpha3": "QAT",
     "code": "634",
+    "phoneCode": "+974",
     "capital": "Doha",
     "idCurrency": "0289a10a-612c-4dfe-a3b0-3e3fb182a6dd",
     "timezone": "Asia/Qatar",
@@ -3069,8 +3070,7 @@
     "subRegion": "Western Asia",
     "latitude": 25.5,
     "longitude": 51.25,
-    "flag": "🇶🇦",
-    "phoneCode": "+974"
+    "flag": "🇶🇦"
   },
   {
     "id": "260b4ee2-667d-4898-a42f-6e1df287b762",
@@ -3078,6 +3078,7 @@
     "alpha2": "RE",
     "alpha3": "REU",
     "code": "638",
+    "phoneCode": "+262",
     "capital": "Saint-Denis",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Indian/Reunion",
@@ -3086,8 +3087,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -21.15,
     "longitude": 55.5,
-    "flag": "🇷🇪",
-    "phoneCode": "+262"
+    "flag": "🇷🇪"
   },
   {
     "id": "da30cfd1-747d-44cc-8a7c-ce6883b314ce",
@@ -3095,6 +3095,7 @@
     "alpha2": "RO",
     "alpha3": "ROU",
     "code": "642",
+    "phoneCode": "+40",
     "capital": "Bucharest",
     "idCurrency": "78c22bcb-d302-41fe-84d3-8ba829ba0376",
     "timezone": "Europe/Bucharest",
@@ -3103,8 +3104,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 46,
     "longitude": 25,
-    "flag": "🇷🇴",
-    "phoneCode": "+40"
+    "flag": "🇷🇴"
   },
   {
     "id": "5574cf95-f51d-48a4-860b-c8136db6f2be",
@@ -3112,6 +3112,7 @@
     "alpha2": "RU",
     "alpha3": "RUS",
     "code": "643",
+    "phoneCode": "+7",
     "capital": "Moscow",
     "idCurrency": "35d48e07-2da5-47ec-bfb5-9eb9c41ac225",
     "timezone": "Europe/Moscow",
@@ -3120,8 +3121,7 @@
     "subRegion": "Eastern Europe",
     "latitude": 60,
     "longitude": 100,
-    "flag": "🇷🇺",
-    "phoneCode": "+7"
+    "flag": "🇷🇺"
   },
   {
     "id": "97260328-608b-4239-b05e-e03f4c7ed45b",
@@ -3129,6 +3129,7 @@
     "alpha2": "RW",
     "alpha3": "RWA",
     "code": "646",
+    "phoneCode": "+250",
     "capital": "Kigali",
     "idCurrency": "8252ff9b-aa6b-4924-81f1-ba57e9f922e1",
     "timezone": "Africa/Kigali",
@@ -3137,8 +3138,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -2,
     "longitude": 30,
-    "flag": "🇷🇼",
-    "phoneCode": "+250"
+    "flag": "🇷🇼"
   },
   {
     "id": "e197b2aa-e80b-48d8-9616-340f4bbefe3d",
@@ -3146,6 +3146,7 @@
     "alpha2": "BL",
     "alpha3": "BLM",
     "code": "652",
+    "phoneCode": "+590",
     "capital": "Gustavia",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "America/St_Barthelemy",
@@ -3154,8 +3155,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.5,
     "longitude": -63.41666666,
-    "flag": "🇧🇱",
-    "phoneCode": "+590"
+    "flag": "🇧🇱"
   },
   {
     "id": "25e93e88-ee06-4222-8cd6-3432284ffd70",
@@ -3163,6 +3163,7 @@
     "alpha2": "SH",
     "alpha3": "SHN",
     "code": "654",
+    "phoneCode": "+290",
     "capital": "Jamestown",
     "idCurrency": "7d382442-fe7e-419b-bb25-2cb5828e66be",
     "timezone": "Atlantic/St_Helena",
@@ -3171,8 +3172,7 @@
     "subRegion": "Western Africa",
     "latitude": -15.95,
     "longitude": -5.72,
-    "flag": "🇸🇭",
-    "phoneCode": "+290"
+    "flag": "🇸🇭"
   },
   {
     "id": "dd316f2d-7663-41da-8646-881ab6494012",
@@ -3180,6 +3180,7 @@
     "alpha2": "KN",
     "alpha3": "KNA",
     "code": "659",
+    "phoneCode": "+1",
     "capital": "Basseterre",
     "idCurrency": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "timezone": "America/St_Kitts",
@@ -3188,8 +3189,7 @@
     "subRegion": "Caribbean",
     "latitude": 17.33333333,
     "longitude": -62.75,
-    "flag": "🇰🇳",
-    "phoneCode": "+1"
+    "flag": "🇰🇳"
   },
   {
     "id": "9ca59b07-36c0-411b-9927-78d5e33beda9",
@@ -3197,6 +3197,7 @@
     "alpha2": "LC",
     "alpha3": "LCA",
     "code": "662",
+    "phoneCode": "+1",
     "capital": "Castries",
     "idCurrency": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "timezone": "America/St_Lucia",
@@ -3205,8 +3206,7 @@
     "subRegion": "Caribbean",
     "latitude": 13.88333333,
     "longitude": -60.96666666,
-    "flag": "🇱🇨",
-    "phoneCode": "+1"
+    "flag": "🇱🇨"
   },
   {
     "id": "ffdaf5e0-2600-45c7-bff4-87fbad52ef0d",
@@ -3214,6 +3214,7 @@
     "alpha2": "MF",
     "alpha3": "MAF",
     "code": "663",
+    "phoneCode": "+590",
     "capital": "Marigot",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "America/Marigot",
@@ -3222,8 +3223,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.08333333,
     "longitude": -63.95,
-    "flag": "🇲🇫",
-    "phoneCode": "+590"
+    "flag": "🇲🇫"
   },
   {
     "id": "bcbed2bc-3017-45ef-affa-55b38bb5c02c",
@@ -3231,6 +3231,7 @@
     "alpha2": "PM",
     "alpha3": "SPM",
     "code": "666",
+    "phoneCode": "+508",
     "capital": "Saint-Pierre",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "America/Miquelon",
@@ -3239,8 +3240,7 @@
     "subRegion": "North America",
     "latitude": 46.83333333,
     "longitude": -56.33333333,
-    "flag": "🇵🇲",
-    "phoneCode": "+508"
+    "flag": "🇵🇲"
   },
   {
     "id": "18b00b44-82b0-45ec-afdd-34864c8ea126",
@@ -3248,6 +3248,7 @@
     "alpha2": "VC",
     "alpha3": "VCT",
     "code": "670",
+    "phoneCode": "+1",
     "capital": "Kingstown",
     "idCurrency": "997c2667-54dc-4dc6-b822-eacbc01faf57",
     "timezone": "America/St_Vincent",
@@ -3256,8 +3257,7 @@
     "subRegion": "Caribbean",
     "latitude": 13.25,
     "longitude": -61.2,
-    "flag": "🇻🇨",
-    "phoneCode": "+1"
+    "flag": "🇻🇨"
   },
   {
     "id": "43787308-3401-4978-9e66-abe43c3bfba2",
@@ -3265,6 +3265,7 @@
     "alpha2": "WS",
     "alpha3": "WSM",
     "code": "882",
+    "phoneCode": "+685",
     "capital": "Apia",
     "idCurrency": "1d1cbffd-23b2-4afc-9bb3-0278bed51ef8",
     "timezone": "Pacific/Apia",
@@ -3273,8 +3274,7 @@
     "subRegion": "Polynesia",
     "latitude": -13.58333333,
     "longitude": -172.33333333,
-    "flag": "🇼🇸",
-    "phoneCode": "+685"
+    "flag": "🇼🇸"
   },
   {
     "id": "71c8c964-234f-46e1-8a38-e93bfd9777b2",
@@ -3282,6 +3282,7 @@
     "alpha2": "SM",
     "alpha3": "SMR",
     "code": "674",
+    "phoneCode": "+378",
     "capital": "City of San Marino",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/San_Marino",
@@ -3290,8 +3291,7 @@
     "subRegion": "Southern Europe",
     "latitude": 43.76666666,
     "longitude": 12.41666666,
-    "flag": "🇸🇲",
-    "phoneCode": "+378"
+    "flag": "🇸🇲"
   },
   {
     "id": "700146b6-de9a-4047-8254-a4bccec7298d",
@@ -3299,6 +3299,7 @@
     "alpha2": "ST",
     "alpha3": "STP",
     "code": "678",
+    "phoneCode": "+239",
     "capital": "São Tomé",
     "idCurrency": "7a217258-01d9-4ce0-97f1-dce74835eaab",
     "timezone": "Africa/Sao_Tome",
@@ -3307,8 +3308,7 @@
     "subRegion": "Middle Africa",
     "latitude": 1,
     "longitude": 7,
-    "flag": "🇸🇹",
-    "phoneCode": "+239"
+    "flag": "🇸🇹"
   },
   {
     "id": "9bb05be1-4821-4513-b5d6-3759bdcf5db9",
@@ -3316,6 +3316,7 @@
     "alpha2": "SA",
     "alpha3": "SAU",
     "code": "682",
+    "phoneCode": "+966",
     "capital": "Riyadh",
     "idCurrency": "2de87f88-c9c0-4743-91e2-fa600afcc000",
     "timezone": "Asia/Riyadh",
@@ -3324,8 +3325,7 @@
     "subRegion": "Western Asia",
     "latitude": 25,
     "longitude": 45,
-    "flag": "🇸🇦",
-    "phoneCode": "+966"
+    "flag": "🇸🇦"
   },
   {
     "id": "f5c00923-4baf-425d-8e9f-f223318b4c4f",
@@ -3333,6 +3333,7 @@
     "alpha2": "SN",
     "alpha3": "SEN",
     "code": "686",
+    "phoneCode": "+221",
     "capital": "Dakar",
     "idCurrency": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "timezone": "Africa/Dakar",
@@ -3341,8 +3342,7 @@
     "subRegion": "Western Africa",
     "latitude": 14,
     "longitude": -14,
-    "flag": "🇸🇳",
-    "phoneCode": "+221"
+    "flag": "🇸🇳"
   },
   {
     "id": "3273e188-5400-4583-aa20-65460ab5c3b5",
@@ -3350,6 +3350,7 @@
     "alpha2": "RS",
     "alpha3": "SRB",
     "code": "688",
+    "phoneCode": "+381",
     "capital": "Belgrade",
     "idCurrency": "5cd77e49-f709-4e50-ad25-b02b10117e5f",
     "timezone": "Europe/Belgrade",
@@ -3358,8 +3359,7 @@
     "subRegion": "Southeast Europe",
     "latitude": 44,
     "longitude": 21,
-    "flag": "🇷🇸",
-    "phoneCode": "+381"
+    "flag": "🇷🇸"
   },
   {
     "id": "78619eed-d8f1-42ff-9770-ace9b52b5dc5",
@@ -3367,6 +3367,7 @@
     "alpha2": "SC",
     "alpha3": "SYC",
     "code": "690",
+    "phoneCode": "+248",
     "capital": "Victoria",
     "idCurrency": "608de557-944d-465b-9fce-6654360653b7",
     "timezone": "Indian/Mahe",
@@ -3375,8 +3376,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -4.58333333,
     "longitude": 55.66666666,
-    "flag": "🇸🇨",
-    "phoneCode": "+248"
+    "flag": "🇸🇨"
   },
   {
     "id": "2f42e0fa-94ce-4746-96b6-13151382a835",
@@ -3384,6 +3384,7 @@
     "alpha2": "SL",
     "alpha3": "SLE",
     "code": "694",
+    "phoneCode": "+232",
     "capital": "Freetown",
     "idCurrency": "dfcdd08a-caaf-4a79-9e31-510d304bfa82",
     "timezone": "Africa/Freetown",
@@ -3392,8 +3393,7 @@
     "subRegion": "Western Africa",
     "latitude": 8.5,
     "longitude": -11.5,
-    "flag": "🇸🇱",
-    "phoneCode": "+232"
+    "flag": "🇸🇱"
   },
   {
     "id": "6581480c-cf70-4efa-94f3-020baf9bb635",
@@ -3401,6 +3401,7 @@
     "alpha2": "SG",
     "alpha3": "SGP",
     "code": "702",
+    "phoneCode": "+65",
     "capital": "Singapore",
     "idCurrency": "26d5f579-115b-421a-a74a-956b45de5ee5",
     "timezone": "Asia/Singapore",
@@ -3409,8 +3410,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 1.36666666,
     "longitude": 103.8,
-    "flag": "🇸🇬",
-    "phoneCode": "+65"
+    "flag": "🇸🇬"
   },
   {
     "id": "97090b59-d480-48e7-a298-ab27340d6306",
@@ -3418,6 +3418,7 @@
     "alpha2": "SX",
     "alpha3": "SXM",
     "code": "534",
+    "phoneCode": "+1",
     "capital": "Philipsburg",
     "idCurrency": "9c633e57-3c28-4c95-a3a3-904f4f2437ff",
     "timezone": "America/Lower_Princes",
@@ -3426,8 +3427,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.033333,
     "longitude": -63.05,
-    "flag": "🇸🇽",
-    "phoneCode": "+1"
+    "flag": "🇸🇽"
   },
   {
     "id": "911d9405-9985-49b1-8659-5043c4604b3c",
@@ -3435,6 +3435,7 @@
     "alpha2": "SK",
     "alpha3": "SVK",
     "code": "703",
+    "phoneCode": "+421",
     "capital": "Bratislava",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Bratislava",
@@ -3443,8 +3444,7 @@
     "subRegion": "Central Europe",
     "latitude": 48.66666666,
     "longitude": 19.5,
-    "flag": "🇸🇰",
-    "phoneCode": "+421"
+    "flag": "🇸🇰"
   },
   {
     "id": "7a50868e-41b3-4c41-b99b-3e84429c1d8d",
@@ -3452,6 +3452,7 @@
     "alpha2": "SI",
     "alpha3": "SVN",
     "code": "705",
+    "phoneCode": "+386",
     "capital": "Ljubljana",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Ljubljana",
@@ -3460,8 +3461,7 @@
     "subRegion": "Central Europe",
     "latitude": 46.11666666,
     "longitude": 14.81666666,
-    "flag": "🇸🇮",
-    "phoneCode": "+386"
+    "flag": "🇸🇮"
   },
   {
     "id": "c4dd5f86-71b2-413c-8265-7f72cfa0c4e4",
@@ -3469,6 +3469,7 @@
     "alpha2": "SB",
     "alpha3": "SLB",
     "code": "090",
+    "phoneCode": "+677",
     "capital": "Honiara",
     "idCurrency": "4b425475-6731-487f-a90c-328ea2add986",
     "timezone": "Pacific/Guadalcanal",
@@ -3477,8 +3478,7 @@
     "subRegion": "Melanesia",
     "latitude": -8,
     "longitude": 159,
-    "flag": "🇸🇧",
-    "phoneCode": "+677"
+    "flag": "🇸🇧"
   },
   {
     "id": "937d80dd-4664-4210-9b53-0f34da558eb3",
@@ -3486,6 +3486,7 @@
     "alpha2": "SO",
     "alpha3": "SOM",
     "code": "706",
+    "phoneCode": "+252",
     "capital": "Mogadishu",
     "idCurrency": "f1893f20-cf01-45c4-80d9-53c7ad74473d",
     "timezone": "Africa/Mogadishu",
@@ -3494,8 +3495,7 @@
     "subRegion": "Eastern Africa",
     "latitude": 10,
     "longitude": 49,
-    "flag": "🇸🇴",
-    "phoneCode": "+252"
+    "flag": "🇸🇴"
   },
   {
     "id": "15da2bf5-e8f5-441b-b579-25116df26e7e",
@@ -3503,6 +3503,7 @@
     "alpha2": "ZA",
     "alpha3": "ZAF",
     "code": "710",
+    "phoneCode": "+27",
     "capital": "Pretoria",
     "idCurrency": "34045e5d-0be1-4722-9505-0bb651d12721",
     "timezone": "Africa/Johannesburg",
@@ -3511,8 +3512,7 @@
     "subRegion": "Southern Africa",
     "latitude": -29,
     "longitude": 24,
-    "flag": "🇿🇦",
-    "phoneCode": "+27"
+    "flag": "🇿🇦"
   },
   {
     "id": "6c0f3f8f-a0c1-44e2-9b0b-9ea74626566b",
@@ -3520,6 +3520,7 @@
     "alpha2": "GS",
     "alpha3": "SGS",
     "code": "239",
+    "phoneCode": "+500",
     "capital": "King Edward Point",
     "idCurrency": "2e317500-1f13-4e6c-a015-ee40a383c137",
     "timezone": "Atlantic/South_Georgia",
@@ -3528,8 +3529,7 @@
     "subRegion": "Unknown",
     "latitude": -54.5,
     "longitude": -37,
-    "flag": "🇬🇸",
-    "phoneCode": "+500"
+    "flag": "🇬🇸"
   },
   {
     "id": "666e784c-5057-4ea7-8b7d-16aa69ead731",
@@ -3537,6 +3537,7 @@
     "alpha2": "KR",
     "alpha3": "KOR",
     "code": "410",
+    "phoneCode": "+82",
     "capital": "Seoul",
     "idCurrency": "85ea96cb-5f34-4d95-8e61-cf5a945075cb",
     "timezone": "Asia/Seoul",
@@ -3545,8 +3546,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 37,
     "longitude": 127.5,
-    "flag": "🇰🇷",
-    "phoneCode": "+82"
+    "flag": "🇰🇷"
   },
   {
     "id": "420594a4-05c5-48df-9f2b-f0795e0b5f17",
@@ -3554,6 +3554,7 @@
     "alpha2": "SS",
     "alpha3": "SSD",
     "code": "728",
+    "phoneCode": "+211",
     "capital": "Juba",
     "idCurrency": "39593090-4f47-4d75-9788-5982b997c208",
     "timezone": "Africa/Juba",
@@ -3562,8 +3563,7 @@
     "subRegion": "Middle Africa",
     "latitude": 7,
     "longitude": 30,
-    "flag": "🇸🇸",
-    "phoneCode": "+211"
+    "flag": "🇸🇸"
   },
   {
     "id": "46add9a0-68a8-482a-bfe3-d58b4dae177c",
@@ -3571,6 +3571,7 @@
     "alpha2": "ES",
     "alpha3": "ESP",
     "code": "724",
+    "phoneCode": "+34",
     "capital": "Madrid",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Madrid",
@@ -3579,8 +3580,7 @@
     "subRegion": "Southern Europe",
     "latitude": 40,
     "longitude": -4,
-    "flag": "🇪🇸",
-    "phoneCode": "+34"
+    "flag": "🇪🇸"
   },
   {
     "id": "0a44aab2-ab63-48be-becb-417f10c768e1",
@@ -3588,6 +3588,7 @@
     "alpha2": "LK",
     "alpha3": "LKA",
     "code": "144",
+    "phoneCode": "+94",
     "capital": "Colombo",
     "idCurrency": "0056997a-ca34-41ad-b60f-64aa55d143c6",
     "timezone": "Asia/Colombo",
@@ -3596,8 +3597,7 @@
     "subRegion": "Southern Asia",
     "latitude": 7,
     "longitude": 81,
-    "flag": "🇱🇰",
-    "phoneCode": "+94"
+    "flag": "🇱🇰"
   },
   {
     "id": "75ba5ce0-4367-4315-9399-1ceaaef21c6b",
@@ -3605,6 +3605,7 @@
     "alpha2": "SD",
     "alpha3": "SDN",
     "code": "729",
+    "phoneCode": "+249",
     "capital": "Khartoum",
     "idCurrency": "f0fb70f7-b539-40dc-9f57-b2b86634d0fa",
     "timezone": "Africa/Khartoum",
@@ -3613,8 +3614,7 @@
     "subRegion": "Northern Africa",
     "latitude": 15,
     "longitude": 30,
-    "flag": "🇸🇩",
-    "phoneCode": "+249"
+    "flag": "🇸🇩"
   },
   {
     "id": "5b12988b-1684-4709-8b30-92d22055c455",
@@ -3622,6 +3622,7 @@
     "alpha2": "SR",
     "alpha3": "SUR",
     "code": "740",
+    "phoneCode": "+597",
     "capital": "Paramaribo",
     "idCurrency": "1d894328-453e-4a68-b414-a3d03838f0f1",
     "timezone": "America/Paramaribo",
@@ -3630,8 +3631,7 @@
     "subRegion": "South America",
     "latitude": 4,
     "longitude": -56,
-    "flag": "🇸🇷",
-    "phoneCode": "+597"
+    "flag": "🇸🇷"
   },
   {
     "id": "bb9eff5f-a974-4baa-b580-fc3508624fdc",
@@ -3639,6 +3639,7 @@
     "alpha2": "SJ",
     "alpha3": "SJM",
     "code": "744",
+    "phoneCode": "+47",
     "capital": "Longyearbyen",
     "idCurrency": "b9997b37-04e9-43e8-800b-29e27a38dbf8",
     "timezone": "Arctic/Longyearbyen",
@@ -3647,8 +3648,7 @@
     "subRegion": "Northern Europe",
     "latitude": 78,
     "longitude": 20,
-    "flag": "🇸🇯",
-    "phoneCode": "+47"
+    "flag": "🇸🇯"
   },
   {
     "id": "ec957a89-0f6b-4258-a5c6-4cac94297e42",
@@ -3656,6 +3656,7 @@
     "alpha2": "SE",
     "alpha3": "SWE",
     "code": "752",
+    "phoneCode": "+46",
     "capital": "Stockholm",
     "idCurrency": "f2dc9bce-4369-4867-a7b0-b290e8b93d5b",
     "timezone": "Europe/Stockholm",
@@ -3664,8 +3665,7 @@
     "subRegion": "Northern Europe",
     "latitude": 62,
     "longitude": 15,
-    "flag": "🇸🇪",
-    "phoneCode": "+46"
+    "flag": "🇸🇪"
   },
   {
     "id": "8b6ce038-75d2-47d5-9366-3076bb194374",
@@ -3673,6 +3673,7 @@
     "alpha2": "CH",
     "alpha3": "CHE",
     "code": "756",
+    "phoneCode": "+41",
     "capital": "Bern",
     "idCurrency": "849aa470-834c-4e64-b040-18616fe5651e",
     "timezone": "Europe/Zurich",
@@ -3681,8 +3682,7 @@
     "subRegion": "Western Europe",
     "latitude": 47,
     "longitude": 8,
-    "flag": "🇨🇭",
-    "phoneCode": "+41"
+    "flag": "🇨🇭"
   },
   {
     "id": "c5cc414d-70e1-47d4-904b-d98c76cbc3ca",
@@ -3690,6 +3690,7 @@
     "alpha2": "SY",
     "alpha3": "SYR",
     "code": "760",
+    "phoneCode": "+963",
     "capital": "Damascus",
     "idCurrency": "422a5344-a892-43ca-9a43-05ec0854ebf1",
     "timezone": "Asia/Damascus",
@@ -3698,8 +3699,7 @@
     "subRegion": "Western Asia",
     "latitude": 35,
     "longitude": 38,
-    "flag": "🇸🇾",
-    "phoneCode": "+963"
+    "flag": "🇸🇾"
   },
   {
     "id": "7d6426cc-07c9-4540-8447-c1fc68865b01",
@@ -3707,6 +3707,7 @@
     "alpha2": "TW",
     "alpha3": "TWN",
     "code": "158",
+    "phoneCode": "+886",
     "capital": "Taipei",
     "idCurrency": "eade3fc3-2fa2-4835-b638-3f6c8f404978",
     "timezone": "Asia/Taipei",
@@ -3715,8 +3716,7 @@
     "subRegion": "Eastern Asia",
     "latitude": 23.5,
     "longitude": 121,
-    "flag": "🇹🇼",
-    "phoneCode": "+886"
+    "flag": "🇹🇼"
   },
   {
     "id": "167cb421-bc33-4c08-b250-050f571d65cd",
@@ -3724,6 +3724,7 @@
     "alpha2": "TJ",
     "alpha3": "TJK",
     "code": "762",
+    "phoneCode": "+992",
     "capital": "Dushanbe",
     "idCurrency": "361efbc8-c820-4fc3-a6a2-750519124124",
     "timezone": "Asia/Dushanbe",
@@ -3732,8 +3733,7 @@
     "subRegion": "Central Asia",
     "latitude": 39,
     "longitude": 71,
-    "flag": "🇹🇯",
-    "phoneCode": "+992"
+    "flag": "🇹🇯"
   },
   {
     "id": "17378647-0481-4d94-815f-5dd416e66d70",
@@ -3741,6 +3741,7 @@
     "alpha2": "TZ",
     "alpha3": "TZA",
     "code": "834",
+    "phoneCode": "+255",
     "capital": "Dodoma",
     "idCurrency": "238da063-a2a3-42b2-b680-0149fa369edb",
     "timezone": "Africa/Dar_es_Salaam",
@@ -3749,8 +3750,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -6,
     "longitude": 35,
-    "flag": "🇹🇿",
-    "phoneCode": "+255"
+    "flag": "🇹🇿"
   },
   {
     "id": "91de6b29-966a-402d-8615-ea8d59976bcd",
@@ -3758,6 +3758,7 @@
     "alpha2": "TH",
     "alpha3": "THA",
     "code": "764",
+    "phoneCode": "+66",
     "capital": "Bangkok",
     "idCurrency": "dbaf8e25-70b3-4ed4-bcf4-fcfc31427a7e",
     "timezone": "Asia/Bangkok",
@@ -3766,8 +3767,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 15,
     "longitude": 100,
-    "flag": "🇹🇭",
-    "phoneCode": "+66"
+    "flag": "🇹🇭"
   },
   {
     "id": "4864ead1-ef87-4a33-8500-a04ceaddd571",
@@ -3775,6 +3775,7 @@
     "alpha2": "TL",
     "alpha3": "TLS",
     "code": "626",
+    "phoneCode": "+670",
     "capital": "Dili",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "Asia/Dili",
@@ -3783,8 +3784,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": -8.83333333,
     "longitude": 125.91666666,
-    "flag": "🇹🇱",
-    "phoneCode": "+670"
+    "flag": "🇹🇱"
   },
   {
     "id": "3f719e03-f37c-42b0-9602-02ee1ccd93e4",
@@ -3792,6 +3792,7 @@
     "alpha2": "TG",
     "alpha3": "TGO",
     "code": "768",
+    "phoneCode": "+228",
     "capital": "Lomé",
     "idCurrency": "1b412e3b-19dc-4404-8058-f6768d0a0946",
     "timezone": "Africa/Lome",
@@ -3800,8 +3801,7 @@
     "subRegion": "Western Africa",
     "latitude": 8,
     "longitude": 1.16666666,
-    "flag": "🇹🇬",
-    "phoneCode": "+228"
+    "flag": "🇹🇬"
   },
   {
     "id": "b7ab57d6-e1af-42e4-bf3a-97f08a33f522",
@@ -3809,6 +3809,7 @@
     "alpha2": "TK",
     "alpha3": "TKL",
     "code": "772",
+    "phoneCode": "+690",
     "capital": "Fakaofo",
     "idCurrency": "bf97d960-b9ad-4065-8c96-3e1567f178c9",
     "timezone": "Pacific/Fakaofo",
@@ -3817,8 +3818,7 @@
     "subRegion": "Polynesia",
     "latitude": -9,
     "longitude": -172,
-    "flag": "🇹🇰",
-    "phoneCode": "+690"
+    "flag": "🇹🇰"
   },
   {
     "id": "0c2538fa-1e2b-4af9-a64a-bd576528a938",
@@ -3826,6 +3826,7 @@
     "alpha2": "TO",
     "alpha3": "TON",
     "code": "776",
+    "phoneCode": "+676",
     "capital": "Nuku'alofa",
     "idCurrency": "4745dd16-2be1-4294-a9f3-1b374f252bab",
     "timezone": "Pacific/Tongatapu",
@@ -3834,8 +3835,7 @@
     "subRegion": "Polynesia",
     "latitude": -20,
     "longitude": -175,
-    "flag": "🇹🇴",
-    "phoneCode": "+676"
+    "flag": "🇹🇴"
   },
   {
     "id": "83324828-b048-4a4a-97a7-90196ff014ae",
@@ -3843,6 +3843,7 @@
     "alpha2": "TT",
     "alpha3": "TTO",
     "code": "780",
+    "phoneCode": "+1",
     "capital": "Port of Spain",
     "idCurrency": "3bf65f48-1e9c-4c94-bf8b-cfbb38155b02",
     "timezone": "America/Port_of_Spain",
@@ -3851,8 +3852,7 @@
     "subRegion": "Caribbean",
     "latitude": 11,
     "longitude": -61,
-    "flag": "🇹🇹",
-    "phoneCode": "+1"
+    "flag": "🇹🇹"
   },
   {
     "id": "2bcf6cf8-27cd-4f6e-9b2e-7e84271f1e1e",
@@ -3860,6 +3860,7 @@
     "alpha2": "TN",
     "alpha3": "TUN",
     "code": "788",
+    "phoneCode": "+216",
     "capital": "Tunis",
     "idCurrency": "084b195a-141c-4da9-bba8-1a9ac5e9ef8e",
     "timezone": "Africa/Tunis",
@@ -3868,8 +3869,7 @@
     "subRegion": "Northern Africa",
     "latitude": 34,
     "longitude": 9,
-    "flag": "🇹🇳",
-    "phoneCode": "+216"
+    "flag": "🇹🇳"
   },
   {
     "id": "592ae77f-00f1-478d-9932-a403cb5eae2f",
@@ -3877,6 +3877,7 @@
     "alpha2": "TR",
     "alpha3": "TUR",
     "code": "792",
+    "phoneCode": "+90",
     "capital": "Ankara",
     "idCurrency": "14b538da-2f3e-40f2-a7ab-471fc0954f16",
     "timezone": "Europe/Istanbul",
@@ -3885,8 +3886,7 @@
     "subRegion": "Western Asia",
     "latitude": 39,
     "longitude": 35,
-    "flag": "🇹🇷",
-    "phoneCode": "+90"
+    "flag": "🇹🇷"
   },
   {
     "id": "f0362cfc-2235-4819-bee3-4f63aae1371a",
@@ -3894,6 +3894,7 @@
     "alpha2": "TM",
     "alpha3": "TKM",
     "code": "795",
+    "phoneCode": "+993",
     "capital": "Ashgabat",
     "idCurrency": "9ec7f641-3448-4af9-8925-a2de3e71ac67",
     "timezone": "Asia/Ashgabat",
@@ -3902,8 +3903,7 @@
     "subRegion": "Central Asia",
     "latitude": 40,
     "longitude": 60,
-    "flag": "🇹🇲",
-    "phoneCode": "+993"
+    "flag": "🇹🇲"
   },
   {
     "id": "a472d872-4097-4b62-aebc-1d71308488e9",
@@ -3911,6 +3911,7 @@
     "alpha2": "TC",
     "alpha3": "TCA",
     "code": "796",
+    "phoneCode": "+1",
     "capital": "Cockburn Town",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "America/Grand_Turk",
@@ -3919,8 +3920,7 @@
     "subRegion": "Caribbean",
     "latitude": 21.75,
     "longitude": -71.58333333,
-    "flag": "🇹🇨",
-    "phoneCode": "+1"
+    "flag": "🇹🇨"
   },
   {
     "id": "b1b29dcf-ccf9-4ee9-9c3f-8aa5ab855b36",
@@ -3928,6 +3928,7 @@
     "alpha2": "TV",
     "alpha3": "TUV",
     "code": "798",
+    "phoneCode": "+688",
     "capital": "Funafuti",
     "idCurrency": "6a005a69-7373-4afa-a809-3e9ee706b39e",
     "timezone": "Pacific/Funafuti",
@@ -3936,8 +3937,7 @@
     "subRegion": "Polynesia",
     "latitude": -8,
     "longitude": 178,
-    "flag": "🇹🇻",
-    "phoneCode": "+688"
+    "flag": "🇹🇻"
   },
   {
     "id": "dcae966a-7b06-474c-a7ce-611f93caf7ad",
@@ -3945,6 +3945,7 @@
     "alpha2": "UG",
     "alpha3": "UGA",
     "code": "800",
+    "phoneCode": "+256",
     "capital": "Kampala",
     "idCurrency": "0c7eafba-9036-4cee-93f0-2062dc18ba57",
     "timezone": "Africa/Kampala",
@@ -3953,8 +3954,7 @@
     "subRegion": "Eastern Africa",
     "latitude": 1,
     "longitude": 32,
-    "flag": "🇺🇬",
-    "phoneCode": "+256"
+    "flag": "🇺🇬"
   },
   {
     "id": "baef695a-998a-49ba-85e1-600bed34b54e",
@@ -3962,6 +3962,7 @@
     "alpha2": "UA",
     "alpha3": "UKR",
     "code": "804",
+    "phoneCode": "+380",
     "capital": "Kyiv",
     "idCurrency": "434a4fa5-1afd-47e4-8d3b-e311bc981ed3",
     "timezone": "Europe/Kiev",
@@ -3970,8 +3971,7 @@
     "subRegion": "Eastern Europe",
     "latitude": 49,
     "longitude": 32,
-    "flag": "🇺🇦",
-    "phoneCode": "+380"
+    "flag": "🇺🇦"
   },
   {
     "id": "23ab50ed-5ad7-4a01-891f-37783271ba63",
@@ -3979,6 +3979,7 @@
     "alpha2": "AE",
     "alpha3": "ARE",
     "code": "784",
+    "phoneCode": "+971",
     "capital": "Abu Dhabi",
     "idCurrency": "88a3c30f-f9a6-4641-889b-990c568495dd",
     "timezone": "Asia/Dubai",
@@ -3987,8 +3988,7 @@
     "subRegion": "Western Asia",
     "latitude": 24,
     "longitude": 54,
-    "flag": "🇦🇪",
-    "phoneCode": "+971"
+    "flag": "🇦🇪"
   },
   {
     "id": "1249120c-20c9-4bf4-b608-0ff6236da1a1",
@@ -3996,6 +3996,7 @@
     "alpha2": "GB",
     "alpha3": "GBR",
     "code": "826",
+    "phoneCode": "+44",
     "capital": "London",
     "idCurrency": "7d382442-fe7e-419b-bb25-2cb5828e66be",
     "timezone": "Europe/London",
@@ -4004,8 +4005,7 @@
     "subRegion": "Northern Europe",
     "latitude": 54,
     "longitude": -2,
-    "flag": "🇬🇧",
-    "phoneCode": "+44"
+    "flag": "🇬🇧"
   },
   {
     "id": "51650207-cb6f-4f5e-97b6-6072f1338fd5",
@@ -4013,6 +4013,7 @@
     "alpha2": "US",
     "alpha3": "USA",
     "code": "840",
+    "phoneCode": "+1",
     "capital": "Washington D.C.",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "America/New_York",
@@ -4021,8 +4022,7 @@
     "subRegion": "North America",
     "latitude": 38,
     "longitude": -97,
-    "flag": "🇺🇸",
-    "phoneCode": "+1"
+    "flag": "🇺🇸"
   },
   {
     "id": "4dcf0d23-3476-4f6a-a4f6-3f3f67a3a4cb",
@@ -4030,6 +4030,7 @@
     "alpha2": "UM",
     "alpha3": "UMI",
     "code": "581",
+    "phoneCode": "+1",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "Pacific/Wake",
     "nameNative": "Islas Ultramarinas Menores de Estados Unidos",
@@ -4037,8 +4038,7 @@
     "subRegion": "North America",
     "latitude": 19.3,
     "longitude": 166.633333,
-    "flag": "🇺🇲",
-    "phoneCode": "+1"
+    "flag": "🇺🇲"
   },
   {
     "id": "06062a2b-dc32-4f97-9bae-cf45f982eeaa",
@@ -4046,6 +4046,7 @@
     "alpha2": "VI",
     "alpha3": "VIR",
     "code": "850",
+    "phoneCode": "+1",
     "capital": "Charlotte Amalie",
     "idCurrency": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
     "timezone": "America/St_Thomas",
@@ -4054,8 +4055,7 @@
     "subRegion": "Caribbean",
     "latitude": 18.35,
     "longitude": -64.933333,
-    "flag": "🇻🇮",
-    "phoneCode": "+1"
+    "flag": "🇻🇮"
   },
   {
     "id": "0a2d193c-c67b-447b-ab0b-30a770073eb4",
@@ -4063,6 +4063,7 @@
     "alpha2": "UY",
     "alpha3": "URY",
     "code": "858",
+    "phoneCode": "+598",
     "capital": "Montevideo",
     "idCurrency": "8879a997-d0a6-451d-817c-3c7e4f7438e8",
     "timezone": "America/Montevideo",
@@ -4071,8 +4072,7 @@
     "subRegion": "South America",
     "latitude": -33,
     "longitude": -56,
-    "flag": "🇺🇾",
-    "phoneCode": "+598"
+    "flag": "🇺🇾"
   },
   {
     "id": "b9d13e22-d2f2-4b2e-b601-ab6429a87ffb",
@@ -4080,6 +4080,7 @@
     "alpha2": "UZ",
     "alpha3": "UZB",
     "code": "860",
+    "phoneCode": "+998",
     "capital": "Tashkent",
     "idCurrency": "586ca173-6928-4e20-94a1-4b6c3a634f28",
     "timezone": "Asia/Tashkent",
@@ -4088,8 +4089,7 @@
     "subRegion": "Central Asia",
     "latitude": 41,
     "longitude": 64,
-    "flag": "🇺🇿",
-    "phoneCode": "+998"
+    "flag": "🇺🇿"
   },
   {
     "id": "94e253a9-61ea-47b3-8128-d6911ef9364f",
@@ -4097,6 +4097,7 @@
     "alpha2": "VU",
     "alpha3": "VUT",
     "code": "548",
+    "phoneCode": "+678",
     "capital": "Port Vila",
     "idCurrency": "a0f5d3d8-2587-49c8-8ebc-4cbbaa899b94",
     "timezone": "Pacific/Efate",
@@ -4105,8 +4106,7 @@
     "subRegion": "Melanesia",
     "latitude": -16,
     "longitude": 167,
-    "flag": "🇻🇺",
-    "phoneCode": "+678"
+    "flag": "🇻🇺"
   },
   {
     "id": "e3dd1ef0-e955-41e8-84b9-c4c9fc5d95e8",
@@ -4114,6 +4114,7 @@
     "alpha2": "VA",
     "alpha3": "VAT",
     "code": "336",
+    "phoneCode": "+39",
     "capital": "Vatican City",
     "idCurrency": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
     "timezone": "Europe/Vatican",
@@ -4122,8 +4123,7 @@
     "subRegion": "Southern Europe",
     "latitude": 41.9,
     "longitude": 12.45,
-    "flag": "🇻🇦",
-    "phoneCode": "+39"
+    "flag": "🇻🇦"
   },
   {
     "id": "046226ee-f6b3-4e9c-ba35-1404ffac10ed",
@@ -4131,6 +4131,7 @@
     "alpha2": "VE",
     "alpha3": "VEN",
     "code": "862",
+    "phoneCode": "+58",
     "capital": "Caracas",
     "idCurrency": "dd5b8b3a-fbdb-4824-8de0-3fb7fee9a531",
     "timezone": "America/Caracas",
@@ -4139,8 +4140,7 @@
     "subRegion": "South America",
     "latitude": 8,
     "longitude": -66,
-    "flag": "🇻🇪",
-    "phoneCode": "+58"
+    "flag": "🇻🇪"
   },
   {
     "id": "6525071a-e26e-4c34-8ae8-dda377db3a11",
@@ -4148,6 +4148,7 @@
     "alpha2": "VN",
     "alpha3": "VNM",
     "code": "704",
+    "phoneCode": "+84",
     "capital": "Hanoi",
     "idCurrency": "73187888-8749-477c-ad10-d83bda96ba13",
     "timezone": "Asia/Ho_Chi_Minh",
@@ -4156,8 +4157,7 @@
     "subRegion": "South-Eastern Asia",
     "latitude": 16.16666666,
     "longitude": 107.83333333,
-    "flag": "🇻🇳",
-    "phoneCode": "+84"
+    "flag": "🇻🇳"
   },
   {
     "id": "5b69e5c8-95b7-4f93-a8e6-d18f78d9e10d",
@@ -4165,6 +4165,7 @@
     "alpha2": "WF",
     "alpha3": "WLF",
     "code": "876",
+    "phoneCode": "+681",
     "capital": "Mata-Utu",
     "idCurrency": "92bb96bd-b000-4a8a-a012-f3f7a032db66",
     "timezone": "Pacific/Wallis",
@@ -4173,8 +4174,7 @@
     "subRegion": "Polynesia",
     "latitude": -13.3,
     "longitude": -176.2,
-    "flag": "🇼🇫",
-    "phoneCode": "+681"
+    "flag": "🇼🇫"
   },
   {
     "id": "57cc450c-5d98-44b1-a0a9-04f7b8409e34",
@@ -4182,6 +4182,7 @@
     "alpha2": "EH",
     "alpha3": "ESH",
     "code": "732",
+    "phoneCode": "+212",
     "capital": "El Aaiún",
     "idCurrency": "17eb2357-53ed-4f68-aa82-a6173cfe7692",
     "timezone": "Africa/El_Aaiun",
@@ -4190,8 +4191,7 @@
     "subRegion": "Northern Africa",
     "latitude": 24.5,
     "longitude": -13,
-    "flag": "🇪🇭",
-    "phoneCode": "+212"
+    "flag": "🇪🇭"
   },
   {
     "id": "e60ae372-8275-46b4-855d-369d8f8d617d",
@@ -4199,6 +4199,7 @@
     "alpha2": "YE",
     "alpha3": "YEM",
     "code": "887",
+    "phoneCode": "+967",
     "capital": "Sana'a",
     "idCurrency": "efa389c2-d109-42b3-beb4-edd2217d6bc6",
     "timezone": "Asia/Aden",
@@ -4207,8 +4208,7 @@
     "subRegion": "Western Asia",
     "latitude": 15,
     "longitude": 48,
-    "flag": "🇾🇪",
-    "phoneCode": "+967"
+    "flag": "🇾🇪"
   },
   {
     "id": "779ad174-a45a-424f-978a-251795d8c353",
@@ -4216,6 +4216,7 @@
     "alpha2": "ZM",
     "alpha3": "ZMB",
     "code": "894",
+    "phoneCode": "+260",
     "capital": "Lusaka",
     "idCurrency": "5b781545-6fbd-4c70-ab3e-4687e57e010b",
     "timezone": "Africa/Lusaka",
@@ -4224,8 +4225,7 @@
     "subRegion": "Eastern Africa",
     "latitude": -15,
     "longitude": 30,
-    "flag": "🇿🇲",
-    "phoneCode": "+260"
+    "flag": "🇿🇲"
   },
   {
     "id": "c449e779-166a-4317-bbf5-d96bb49020bf",
@@ -4233,6 +4233,7 @@
     "alpha2": "ZW",
     "alpha3": "ZWE",
     "code": "716",
+    "phoneCode": "+263",
     "capital": "Harare",
     "idCurrency": "251408e8-459c-4445-95dd-fe7a1b7eb6b5",
     "timezone": "Africa/Harare",
@@ -4241,7 +4242,6 @@
     "subRegion": "Eastern Africa",
     "latitude": -20,
     "longitude": 30,
-    "flag": "🇿🇼",
-    "phoneCode": "+263"
+    "flag": "🇿🇼"
   }
 ]
