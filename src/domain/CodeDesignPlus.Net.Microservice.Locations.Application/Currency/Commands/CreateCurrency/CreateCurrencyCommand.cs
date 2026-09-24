@@ -7,27 +7,27 @@ public class Validator : AbstractValidator<CreateCurrencyCommand>
 {
     public Validator()
     {
-        RuleFor(x => x.Id).NotEmpty().WithMessage(Errors.IdIsRequired);
+        RuleFor(x => x.Id).NotEmpty().WithMessage(_ => Errors.IdIsRequired.GetMessage());
 
         RuleFor(x => x.Name)
-            .NotEmpty().WithMessage(Errors.CurrencyNameIsRequired)
-            .MaximumLength(100).WithMessage(Errors.CurrencyNameMaxLengthExceeded);
+            .NotEmpty().WithMessage(_ => Errors.CurrencyNameIsRequired.GetMessage())
+            .MaximumLength(100).WithMessage(_ => Errors.CurrencyNameMaxLengthExceeded.GetMessage());
 
         RuleFor(x => x.Code)
-            .NotEmpty().WithMessage(Errors.CurrencyCodeIsRequired)
-            .Length(3).WithMessage(Errors.CurrencyCodeLengthInvalid)
-            .Matches(@"^[A-Z]{3}$").WithMessage(Errors.CurrencyCodeFormatInvalid);
+            .NotEmpty().WithMessage(_ => Errors.CurrencyCodeIsRequired.GetMessage())
+            .Length(3).WithMessage(_ => Errors.CurrencyCodeLengthInvalid.GetMessage())
+            .Matches(@"^[A-Z]{3}$").WithMessage(_ => Errors.CurrencyCodeFormatInvalid.GetMessage());
 
         RuleFor(x => x.NumericCode)
             .InclusiveBetween((short)1, (short)999)
-            .WithMessage(Errors.CurrencyNumericCodeInvalid);
+            .WithMessage(_ => Errors.CurrencyNumericCodeInvalid.GetMessage());
 
         RuleFor(x => x.DecimalDigits)
             .InclusiveBetween((short)0, (short)4)
-            .WithMessage(Errors.CurrencyDecimalDigitsInvalid);
+            .WithMessage(_ => Errors.CurrencyDecimalDigitsInvalid.GetMessage());
 
         RuleFor(x => x.Symbol)
-            .NotEmpty().WithMessage(Errors.CurrencySymbolIsRequired)
-            .MaximumLength(10).WithMessage(Errors.CurrencySymbolMaxLengthExceeded);
+            .NotEmpty().WithMessage(_ => Errors.CurrencySymbolIsRequired.GetMessage())
+            .MaximumLength(10).WithMessage(_ => Errors.CurrencySymbolMaxLengthExceeded.GetMessage());
     }
 }
