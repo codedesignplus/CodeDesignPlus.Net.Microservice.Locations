@@ -1,8 +1,8 @@
 {
   "language": "es",
   "errors": {
-    "300": "",
-    "301": "",
-    "302": ""
+    "300": "Error desconocido.",
+    "301": "No encontramos ese país.",
+    "302": "No encontramos esa moneda."
   }
 }

@@ -1,0 +1,33 @@
+{
+  "language": "fr",
+  "errors": {
+    "200": "Erreur inconnue.",
+    "201": "La requête n'est pas valide.",
+    "202": "Ce fuseau horaire existe déjà.",
+    "203": "Fuseau horaire introuvable.",
+    "204": "Ville introuvable.",
+    "205": "Pays introuvable.",
+    "206": "Cette devise existe déjà.",
+    "207": "Devise introuvable.",
+    "208": "Localité introuvable.",
+    "209": "Quartier introuvable.",
+    "210": "Ce quartier existe déjà.",
+    "211": "Cette localité existe déjà.",
+    "212": "Ce pays existe déjà.",
+    "213": "Cette ville existe déjà.",
+    "214": "Cette région existe déjà.",
+    "215": "Région introuvable.",
+    "216": "Cette région existe déjà.",
+    "217": "Région introuvable.",
+    "220": "L'identifiant est obligatoire.",
+    "221": "Le nom de la devise est obligatoire.",
+    "222": "Le nom de la devise ne peut pas dépasser 100 caractères.",
+    "223": "Le code ISO alphabétique est obligatoire.",
+    "224": "Le code ISO doit comporter exactement 3 lettres majuscules.",
+    "225": "Le code ISO n'accepte que des lettres majuscules de À à Z.",
+    "226": "Le code ISO numérique doit être compris entre 1 et 999.",
+    "227": "Le nombre de décimales doit être compris entre 0 et 4.",
+    "228": "Le symbole de la devise est obligatoire.",
+    "229": "Le symbole de la devise ne peut pas dépasser 10 caractères."
+  }
+}
