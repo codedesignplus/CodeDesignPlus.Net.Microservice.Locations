@@ -1,0 +1,33 @@
+{
+  "language": "en",
+  "errors": {
+    "200": "UnknownError",
+    "201": "The request is invalid.",
+    "202": "The timezone already exists.",
+    "203": "The timezone was not found.",
+    "204": "The city was not found.",
+    "205": "The country was not found.",
+    "206": "The currency already exists.",
+    "207": "The currency was not found.",
+    "208": "The locality was not found.",
+    "209": "The neighborhood was not found.",
+    "210": "The neighborhood already exists.",
+    "211": "The locality already exists.",
+    "212": "The country already exists.",
+    "213": "The city already exists.",
+    "214": "The state already exists.",
+    "215": "The state was not found.",
+    "216": "The region already exists.",
+    "217": "The region was not found.",
+    "220": "Id is required.",
+    "221": "Currency name is required.",
+    "222": "Currency name must not exceed 100 characters.",
+    "223": "ISO Alpha code is required.",
+    "224": "ISO Alpha code must be exactly 3 uppercase letters.",
+    "225": "ISO Alpha code must consist of only uppercase letters (A-Z).",
+    "226": "ISO Numeric code must be between 1 and 999.",
+    "227": "Decimal digits must be between 0 and 4.",
+    "228": "Currency symbol is required.",
+    "229": "Currency symbol must not exceed 10 characters."
+  }
+}

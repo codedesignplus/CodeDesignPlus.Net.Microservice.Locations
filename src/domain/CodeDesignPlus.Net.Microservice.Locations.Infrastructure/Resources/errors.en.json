@@ -1,0 +1,8 @@
+{
+  "language": "en",
+  "errors": {
+    "300": "UnknownError",
+    "301": "CountryNotFound",
+    "302": "CurrencyNotFound"
+  }
+}

@@ -4,9 +4,9 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Infrastructure;
 
 public class Errors: IErrorCodes
 {    
-    public static readonly Error UnknownError = new("300", "UnknownError");
+    public static readonly Error UnknownError = new("300");
 
-    public static readonly Error CountryNotFound = new("301", "CountryNotFound");
+    public static readonly Error CountryNotFound = new("301");
 
-    public static readonly Error CurrencyNotFound = new("302", "CurrencyNotFound");
+    public static readonly Error CurrencyNotFound = new("302");
 }
