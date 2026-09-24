@@ -28,6 +28,7 @@
     "226": "Le code ISO numérique doit être compris entre 1 et 999.",
     "227": "Le nombre de décimales doit être compris entre 0 et 4.",
     "228": "Le symbole de la devise est obligatoire.",
-    "229": "Le symbole de la devise ne peut pas dépasser 10 caractères."
+    "229": "Le symbole de la devise ne peut pas dépasser 10 caractères.",
+    "230": "L'indicatif téléphonique doit suivre le format +XXX, par exemple +57, +1 ou +44."
   }
 }

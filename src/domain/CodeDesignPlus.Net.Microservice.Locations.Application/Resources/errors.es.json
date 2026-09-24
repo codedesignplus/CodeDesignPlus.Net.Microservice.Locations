@@ -28,6 +28,7 @@
     "226": "El código ISO numérico debe estar entre 1 y 999.",
     "227": "Los decimales deben estar entre 0 y 4.",
     "228": "El símbolo de la moneda es obligatorio.",
-    "229": "El símbolo de la moneda no puede superar los 10 caracteres."
+    "229": "El símbolo de la moneda no puede superar los 10 caracteres.",
+    "230": "El indicativo telefónico debe seguir el formato +XXX, por ejemplo +57, +1 o +44."
   }
 }

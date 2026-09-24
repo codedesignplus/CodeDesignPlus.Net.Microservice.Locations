@@ -28,6 +28,7 @@
     "226": "ISO Numeric code must be between 1 and 999.",
     "227": "Decimal digits must be between 0 and 4.",
     "228": "Currency symbol is required.",
-    "229": "Currency symbol must not exceed 10 characters."
+    "229": "Currency symbol must not exceed 10 characters.",
+    "230": "The phone code must follow the +XXX format, for example +57, +1 or +44."
   }
 }

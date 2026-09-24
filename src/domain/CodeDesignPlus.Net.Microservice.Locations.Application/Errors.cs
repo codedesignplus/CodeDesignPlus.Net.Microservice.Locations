@@ -35,4 +35,7 @@ public class Errors: IErrorCodes
     public static readonly Error CurrencyDecimalDigitsInvalid = new("227");
     public static readonly Error CurrencySymbolIsRequired = new("228");
     public static readonly Error CurrencySymbolMaxLengthExceeded = new("229");
+
+    /// <summary>El indicativo telefónico debe seguir el formato +XXX, por ejemplo +57, +1 o +44.</summary>
+    public static readonly Error PhoneCodeFormatIsInvalid = new("230");
 }

@@ -11,7 +11,7 @@ public class Validator : AbstractValidator<UpdateCountryCommand>
         RuleFor(x => x.Name).NotEmpty().NotNull().MaximumLength(100);
         RuleFor(x => x.Alpha2).NotEmpty().NotNull().Length(2);
         RuleFor(x => x.Alpha3).NotEmpty().NotNull().Length(3);
-        RuleFor(x => x.PhoneCode).NotEmpty().NotNull().Matches(@"^\+[0-9]{1,4}$").WithMessage("Phone code must be in +XXX format (e.g., +57, +1, +44)");
+        RuleFor(x => x.PhoneCode).NotEmpty().NotNull().Matches(@"^\+[0-9]{1,4}$").WithErrorCode(Errors.PhoneCodeFormatIsInvalid.Code);
         RuleFor(x => x.Capital).MaximumLength(100);
         RuleFor(x => x.IdCurrency).NotEmpty().NotNull();
         RuleFor(x => x.Timezone).NotEmpty().NotNull().MaximumLength(100);
