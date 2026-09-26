@@ -2,40 +2,20 @@ using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries.GetAllCurrencies;
 
-public class GetAllCurrenciesQueryHandler(ICurrencyRepository repository, IMapper mapper, ICacheManager cache) : IRequestHandler<GetAllCurrenciesQuery, Pagination<CurrencyDto>>
+/// <summary>
+/// Respeta siempre el criterio: filtro, página, límite y orden. Sin filtro devolvía la lista entera desde una caché de
+/// 6 horas, y la pantalla que pedía 10 ordenados recibía las 162 monedas de golpe y sin orden (plan 038 de pendings).
+/// Quien necesita la lista completa (los desplegables) la pide con un límite alto. Sin caché a propósito, como
+/// Regiones: son pocos documentos, y una clave por combinación de filtro, página y orden cuesta más de lo que ahorra.
+/// </summary>
+public class GetAllCurrenciesQueryHandler(ICurrencyRepository repository, IMapper mapper) : IRequestHandler<GetAllCurrenciesQuery, Pagination<CurrencyDto>>
 {
-    public const string Key = CacheKeys.AllCurrencies;
-
     public async Task<Pagination<CurrencyDto>> Handle(GetAllCurrenciesQuery request, CancellationToken cancellationToken)
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        if (!string.IsNullOrEmpty(request.Criteria.Filters))
-            return await SearchCountryAsync(request, cancellationToken);
+        var result = await repository.MatchingAsync<CurrencyAggregate>(request.Criteria, cancellationToken);
 
-        return await GetAllAsync(cancellationToken);
-    }
-
-    private async Task<Pagination<CurrencyDto>> GetAllAsync(CancellationToken cancellationToken)
-    {
-        var exists = await cache.ExistsAsync(Key);
-
-        if (exists)
-            return await cache.GetAsync<Pagination<CurrencyDto>>(Key);
-
-        var currencies = await repository.GetAllAsync(cancellationToken);
-
-        var currencyDtos = mapper.Map<Pagination<CurrencyDto>>(Pagination<CurrencyAggregate>.Create(currencies, currencies.Count, currencies.Count, 0));
-
-        await cache.SetAsync(Key, currencyDtos, TimeSpan.FromHours(6));
-
-        return currencyDtos;
-    }
-
-    private async Task<Pagination<CurrencyDto>> SearchCountryAsync(GetAllCurrenciesQuery request, CancellationToken cancellationToken)
-    {
-        var currencies = await repository.MatchingAsync<CurrencyAggregate>(request.Criteria, cancellationToken);
-
-        return mapper.Map<Pagination<CurrencyDto>>(currencies);
+        return mapper.Map<Pagination<CurrencyDto>>(result);
     }
 }

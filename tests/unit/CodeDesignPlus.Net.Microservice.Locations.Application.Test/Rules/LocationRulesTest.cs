@@ -26,7 +26,7 @@ public class LocationRulesTest
     }
 
     [Fact]
-    public async Task UpdateCurrency_RemovesTheDetailAndTheListFromTheCache()
+    public async Task UpdateCurrency_RemovesTheDetailFromTheCache()
     {
         // Plan 037: sin esto, un cambio de dígitos decimales tardaba hasta 6 h en llegar al gRPC de conversión.
         var request = fakeData.UpdateCurrencyCommand;
@@ -39,7 +39,6 @@ public class LocationRulesTest
         await handler.Handle(request, CancellationToken.None);
 
         cache.Verify(c => c.RemoveAsync(CacheKeys.CurrencyById(request.Id)), Times.Once);
-        cache.Verify(c => c.RemoveAsync(CacheKeys.AllCurrencies), Times.Once);
     }
 
     [Fact]

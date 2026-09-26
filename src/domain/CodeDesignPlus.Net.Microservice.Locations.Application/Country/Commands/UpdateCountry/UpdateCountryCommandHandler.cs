@@ -20,7 +20,6 @@ public class UpdateCountryCommandHandler(ICountryRepository repository, IUserCon
 
         await cache.RemoveAsync(CacheKeys.CountryById(aggregate.Id));
 
-        await cache.RemoveAsync(CacheKeys.AllCountries);
 
         await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }

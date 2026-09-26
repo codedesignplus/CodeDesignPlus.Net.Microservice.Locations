@@ -1,5 +1,4 @@
 
-using CodeDesignPlus.Net.Cache.Abstractions;
 using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Country.Queries.GetAllCountry;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Test.Helpers;
@@ -11,7 +10,6 @@ public class GetAllCountryQueryHandlerTest
 {
     private readonly Mock<ICountryRepository> repositoryMock;
     private readonly Mock<IMapper> mapperMock;
-    private readonly Mock<ICacheManager> cacheMock;
     private readonly GetAllCountryQueryHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -19,8 +17,7 @@ public class GetAllCountryQueryHandlerTest
     {
         repositoryMock = new Mock<ICountryRepository>();
         mapperMock = new Mock<IMapper>();
-        cacheMock = new Mock<ICacheManager>();
-        handler = new GetAllCountryQueryHandler(repositoryMock.Object, mapperMock.Object, cacheMock.Object);
+        handler = new GetAllCountryQueryHandler(repositoryMock.Object, mapperMock.Object);
     }
 
     [Fact]
@@ -62,5 +59,22 @@ public class GetAllCountryQueryHandlerTest
         // Assert
         Assert.NotNull(result);
         Assert.Equal(countryDtos, result.Data);
+    }
+
+    [Fact]
+    public async Task Handle_WithoutFilter_RespectsPageLimitAndOrder()
+    {
+        // Plan 038: sin filtro devolvía toda la lista desde la caché, ignorando skip, limit y orderBy.
+        var criteria = new C.Criteria { Limit = 10, Skip = 0, OrderBy = "name" };
+        var page = Pagination<CountryAggregate>.Create([], 0, 10, 0);
+
+        repositoryMock
+            .Setup(repo => repo.MatchingAsync<CountryAggregate>(criteria, It.IsAny<CancellationToken>()))
+            .ReturnsAsync(page);
+
+        await handler.Handle(new GetAllCountryQuery(criteria), CancellationToken.None);
+
+        repositoryMock.Verify(repo => repo.MatchingAsync<CountryAggregate>(criteria, It.IsAny<CancellationToken>()), Times.Once);
+        repositoryMock.Verify(repo => repo.GetAllAsync(It.IsAny<CancellationToken>()), Times.Never);
     }
 }

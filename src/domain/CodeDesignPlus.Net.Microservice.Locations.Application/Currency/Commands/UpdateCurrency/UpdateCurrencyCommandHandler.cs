@@ -16,7 +16,6 @@ public class UpdateCurrencyCommandHandler(ICurrencyRepository repository, IUserC
 
         await cache.RemoveAsync(CacheKeys.CurrencyById(aggregate.Id));
 
-        await cache.RemoveAsync(CacheKeys.AllCurrencies);
 
         await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }

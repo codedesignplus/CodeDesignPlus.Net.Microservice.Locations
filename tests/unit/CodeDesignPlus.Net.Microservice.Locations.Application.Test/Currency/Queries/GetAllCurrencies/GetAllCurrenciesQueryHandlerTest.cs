@@ -1,4 +1,3 @@
-using CodeDesignPlus.Net.Cache.Abstractions;
 using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.DataTransferObjects;
 using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries.GetAllCurrencies;
@@ -10,7 +9,6 @@ public class GetAllCurrenciesQueryHandlerTest
 {
     private readonly Mock<ICurrencyRepository> repositoryMock;
     private readonly Mock<IMapper> mapperMock;
-    private readonly Mock<ICacheManager> cacheManagerMock;
     private readonly GetAllCurrenciesQueryHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -18,8 +16,7 @@ public class GetAllCurrenciesQueryHandlerTest
     {
         repositoryMock = new Mock<ICurrencyRepository>();
         mapperMock = new Mock<IMapper>();
-        cacheManagerMock = new Mock<ICacheManager>();
-        handler = new GetAllCurrenciesQueryHandler(repositoryMock.Object, mapperMock.Object, cacheManagerMock.Object);
+        handler = new GetAllCurrenciesQueryHandler(repositoryMock.Object, mapperMock.Object);
     }
 
     [Fact]
@@ -59,5 +56,22 @@ public class GetAllCurrenciesQueryHandlerTest
 
         // Assert
         Assert.Equal(currencyDtos, result.Data);
+    }
+
+    [Fact]
+    public async Task Handle_WithoutFilter_RespectsPageLimitAndOrder()
+    {
+        // Plan 038: sin filtro devolvía toda la lista desde la caché, ignorando skip, limit y orderBy.
+        var criteria = new C.Criteria { Limit = 10, Skip = 0, OrderBy = "name" };
+        var page = Pagination<CurrencyAggregate>.Create([], 0, 10, 0);
+
+        repositoryMock
+            .Setup(repo => repo.MatchingAsync<CurrencyAggregate>(criteria, It.IsAny<CancellationToken>()))
+            .ReturnsAsync(page);
+
+        await handler.Handle(new GetAllCurrenciesQuery(criteria), CancellationToken.None);
+
+        repositoryMock.Verify(repo => repo.MatchingAsync<CurrencyAggregate>(criteria, It.IsAny<CancellationToken>()), Times.Once);
+        repositoryMock.Verify(repo => repo.GetAllAsync(It.IsAny<CancellationToken>()), Times.Never);
     }
 }
