@@ -25,16 +25,7 @@ public class Errors: IErrorCodes
     public static readonly Error RegionAlreadyExists = new("216");
     public static readonly Error RegionNotFound = new("217");
 
-    public static readonly Error IdIsRequired = new("220");
-    public static readonly Error CurrencyNameIsRequired = new("221");
-    public static readonly Error CurrencyNameMaxLengthExceeded = new("222");
-    public static readonly Error CurrencyCodeIsRequired = new("223");
-    public static readonly Error CurrencyCodeLengthInvalid = new("224");
     public static readonly Error CurrencyCodeFormatInvalid = new("225");
-    public static readonly Error CurrencyNumericCodeInvalid = new("226");
-    public static readonly Error CurrencyDecimalDigitsInvalid = new("227");
-    public static readonly Error CurrencySymbolIsRequired = new("228");
-    public static readonly Error CurrencySymbolMaxLengthExceeded = new("229");
 
     /// <summary>El indicativo telefónico debe seguir el formato +XXX, por ejemplo +57, +1 o +44.</summary>
     public static readonly Error PhoneCodeFormatIsInvalid = new("230");

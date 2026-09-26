@@ -45,6 +45,17 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Currency.Co
         }
 
         [Theory]
+        [InlineData("usd")]
+        [InlineData("U1D")]
+        public void Validator_BadCodeFormat_CarriesItsOwnErrorCode(string code)
+        {
+            // Regla 35: el formato ISO 4217 lleva su código de catálogo (WithErrorCode), que el borde traduce al idioma
+            // del usuario. Con WithMessage el SDK lo descartaba y salía la plantilla genérica.
+            var result = new Validator().TestValidate(new CreateCurrencyCommand(Guid.NewGuid(), "Dollar", code, 840, 2, "$"));
+            result.ShouldHaveValidationErrorFor(x => x.Code).WithErrorCode(Errors.CurrencyCodeFormatInvalid.Code);
+        }
+
+        [Theory]
         [InlineData(0)]
         [InlineData(1000)]
         public void Validator_Should_Have_Error_When_NumericCode_Is_Out_Of_Range(short numericCode)
