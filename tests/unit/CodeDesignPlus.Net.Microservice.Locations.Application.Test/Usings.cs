@@ -16,3 +16,4 @@ global using CodeDesignPlus.Net.Microservice.Locations.Application.Country.DataT
 
 global using CodeDesignPlus.Net.Microservice.Locations.Domain;
 global using CodeDesignPlus.Net.Microservice.Locations.Domain.Repositories;
+global using CodeDesignPlus.Net.Cache.Abstractions;

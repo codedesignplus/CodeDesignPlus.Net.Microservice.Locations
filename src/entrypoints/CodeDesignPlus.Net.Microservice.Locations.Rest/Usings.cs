@@ -1,4 +1,4 @@
-﻿global using CodeDesignPlus.Microservice.Api.Dtos;
+global using CodeDesignPlus.Microservice.Api.Dtos;
 global using CodeDesignPlus.Net.Logger.Extensions;
 global using CodeDesignPlus.Net.Mongo.Extensions;
 global using CodeDesignPlus.Net.Observability.Extensions;
@@ -58,5 +58,6 @@ global using CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.Queries.FindAllNeighborhoods;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Region.Commands.CreateRegion;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Region.Commands.UpdateRegion;
+global using CodeDesignPlus.Net.Microservice.Locations.Application.Region.Commands.DeleteRegion;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Region.Queries.GetAllRegions;
 global using CodeDesignPlus.Net.Microservice.Locations.Application.Region.Queries.GetRegionById;

@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.City.Commands.CreateCity;
 
-public class CreateCityCommandHandler(ICityRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<CreateCityCommand>
+public class CreateCityCommandHandler(ICityRepository repository, IUserContext user, IPubSub pubsub, ICacheManager cache) : IRequestHandler<CreateCityCommand>
 {
     public async Task Handle(CreateCityCommand request, CancellationToken cancellationToken)
     {
@@ -17,6 +17,8 @@ public class CreateCityCommandHandler(ICityRepository repository, IUserContext u
         var city = CityAggregate.Create(request.Id, request.IdState, request.Name, request.Timezone,user.IdUser);
 
         await repository.CreateAsync(city, cancellationToken);
+
+        await cache.RemoveAsync(CacheKeys.ById(city.Id));
 
         await pubsub.PublishAsync(city.GetAndClearEvents(), cancellationToken);
     }

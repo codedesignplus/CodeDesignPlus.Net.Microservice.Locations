@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.Commands.CreateNeighborhood;
 
-public class CreateNeighborhoodCommandHandler(INeighborhoodRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<CreateNeighborhoodCommand>
+public class CreateNeighborhoodCommandHandler(INeighborhoodRepository repository, IUserContext user, IPubSub pubsub, ICacheManager cache) : IRequestHandler<CreateNeighborhoodCommand>
 {
     public async Task Handle(CreateNeighborhoodCommand request, CancellationToken cancellationToken)
     {
@@ -17,6 +17,8 @@ public class CreateNeighborhoodCommandHandler(INeighborhoodRepository repository
         var aggregate = NeighborhoodAggregate.Create(request.Id, request.IdLocality, request.Name, user.IdUser);
 
         await repository.CreateAsync(aggregate, cancellationToken);
+
+        await cache.RemoveAsync(CacheKeys.ById(aggregate.Id));
 
         await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }

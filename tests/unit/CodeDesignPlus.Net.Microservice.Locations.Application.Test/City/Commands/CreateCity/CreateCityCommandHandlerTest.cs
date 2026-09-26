@@ -13,6 +13,7 @@ public class CreateCityCommandHandlerTest
     private readonly Mock<ICityRepository> repositoryMock;
     private readonly Mock<IUserContext> userContextMock;
     private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<ICacheManager> cacheMock = new();
     private readonly CreateCityCommandHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -21,7 +22,7 @@ public class CreateCityCommandHandlerTest
         repositoryMock = new Mock<ICityRepository>();
         userContextMock = new Mock<IUserContext>();
         pubSubMock = new Mock<IPubSub>();
-        handler = new CreateCityCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+        handler = new CreateCityCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, cacheMock.Object);
     }
 
     [Fact]

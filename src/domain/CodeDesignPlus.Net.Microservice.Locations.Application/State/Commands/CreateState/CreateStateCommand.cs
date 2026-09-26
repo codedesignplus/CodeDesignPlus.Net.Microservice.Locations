@@ -7,9 +7,9 @@ public class Validator : AbstractValidator<CreateStateCommand>
 {
     public Validator()
     {
-        RuleFor(x => x.Id).NotEmpty().NotNull();
-        RuleFor(x => x.IdCountry).NotEmpty().NotNull();
-        RuleFor(x => x.Code).NotEmpty().NotNull().MaximumLength(3);
-        RuleFor(x => x.Name).NotEmpty().NotNull().MaximumLength(128);
+        RuleFor(x => x.Id).NotEmpty();
+        RuleFor(x => x.IdCountry).NotEmpty();
+        RuleFor(x => x.Code).NotEmpty().MaximumLength(3);
+        RuleFor(x => x.Name).NotEmpty().MaximumLength(128);
     }
 }

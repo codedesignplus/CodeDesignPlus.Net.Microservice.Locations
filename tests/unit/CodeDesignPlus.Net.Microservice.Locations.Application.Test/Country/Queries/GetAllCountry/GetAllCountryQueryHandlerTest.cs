@@ -42,7 +42,7 @@ public class GetAllCountryQueryHandlerTest
     public async Task Handle_ValidRequest_ReturnsCountryDtoList()
     {
         // Arrange
-        var request = new GetAllCountryQuery(null!);
+        var request = new GetAllCountryQuery(new C.Criteria { Filters = "Alpha2=CO", Limit = 10 });
         var cancellationToken = CancellationToken.None;
         var countries = new List<CountryAggregate> { fakeData.CountryAggregate };
         var countryDtos = new List<CountryDto> { fakeData.Country };

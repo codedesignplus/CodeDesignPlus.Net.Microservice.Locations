@@ -13,6 +13,8 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Comman
         private readonly Mock<ICityRepository> repositoryMock;
         private readonly Mock<IUserContext> userContextMock;
         private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<ILocalityRepository> localitiesMock = new();
+        private readonly Mock<ICacheManager> cacheMock = new();
         private readonly DeleteCityCommandHandler handler;
         private readonly FakeData utils;
 
@@ -22,7 +24,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.City.Comman
             repositoryMock = new Mock<ICityRepository>();
             userContextMock = new Mock<IUserContext>();
             pubSubMock = new Mock<IPubSub>();
-            handler = new DeleteCityCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+            handler = new DeleteCityCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, localitiesMock.Object, cacheMock.Object);
         }
 
         [Fact]

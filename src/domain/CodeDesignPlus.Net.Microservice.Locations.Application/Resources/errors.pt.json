@@ -29,6 +29,13 @@
     "227": "As casas decimais devem estar entre 0 e 4.",
     "228": "O símbolo da moeda é obrigatório.",
     "229": "O símbolo da moeda não pode ultrapassar 10 caracteres.",
-    "230": "O código telefônico deve seguir o formato +XXX, por exemplo +57, +1 ou +44."
+    "230": "O código telefônico deve seguir o formato +XXX, por exemplo +57, +1 ou +44.",
+    "231": "Não é possível excluir este país: ele tem estados. Exclua-os primeiro.",
+    "232": "Não é possível excluir este estado: ele tem cidades. Exclua-as primeiro.",
+    "233": "Não é possível excluir esta cidade: ela tem localidades. Exclua-as primeiro.",
+    "234": "Não é possível excluir esta localidade: ela tem bairros. Exclua-os primeiro.",
+    "235": "Não é possível excluir esta moeda: ao menos um país a usa.",
+    "236": "Não é possível excluir este fuso horário: ao menos um país ou uma cidade o usa.",
+    "237": "Não é possível excluir esta região: ao menos um país a usa."
   }
 }

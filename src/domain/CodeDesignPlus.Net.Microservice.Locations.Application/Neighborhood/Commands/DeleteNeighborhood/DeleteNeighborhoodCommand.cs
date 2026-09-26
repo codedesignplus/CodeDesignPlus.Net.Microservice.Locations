@@ -7,6 +7,6 @@ public class Validator : AbstractValidator<DeleteNeighborhoodCommand>
 {
     public Validator()
     {
-        RuleFor(x => x.Id).NotEmpty().NotNull();
+        RuleFor(x => x.Id).NotEmpty();
     }
 }

@@ -7,6 +7,6 @@ public class Validator : AbstractValidator<DeleteLocalityCommand>
 {
     public Validator()
     {
-        RuleFor(x => x.Id).NotEmpty().NotNull();
+        RuleFor(x => x.Id).NotEmpty();
     }
 }

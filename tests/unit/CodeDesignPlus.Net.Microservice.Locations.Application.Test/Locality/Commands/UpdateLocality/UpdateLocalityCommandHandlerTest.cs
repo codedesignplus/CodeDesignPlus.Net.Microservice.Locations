@@ -14,6 +14,7 @@ public class UpdateLocalityCommandHandlerTest
     private readonly Mock<ILocalityRepository> repositoryMock;
     private readonly Mock<IUserContext> userContextMock;
     private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<ICacheManager> cacheMock = new();
     private readonly UpdateLocalityCommandHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -22,7 +23,7 @@ public class UpdateLocalityCommandHandlerTest
         repositoryMock = new Mock<ILocalityRepository>();
         userContextMock = new Mock<IUserContext>();
         pubSubMock = new Mock<IPubSub>();
-        handler = new UpdateLocalityCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+        handler = new UpdateLocalityCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, cacheMock.Object);
     }
 
     [Fact]

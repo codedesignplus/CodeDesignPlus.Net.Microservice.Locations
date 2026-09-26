@@ -9,11 +9,11 @@ public class Validator : AbstractValidator<UpdateTimezoneCommand>
 {
     public Validator()
     {
-        RuleFor(x => x.Id).NotEmpty().NotNull();
-        RuleFor(x => x.Name).NotEmpty().NotNull().MaximumLength(128);
-        RuleFor(x => x.Location).NotEmpty().NotNull();
-        RuleFor(x => x.Offsets).NotEmpty().NotNull();
-        RuleFor(x => x.CurrentOffset).NotEmpty().NotNull();
+        RuleFor(x => x.Id).NotEmpty();
+        RuleFor(x => x.Name).NotEmpty().MaximumLength(128);
+        RuleFor(x => x.Location).NotEmpty();
+        RuleFor(x => x.Offsets).NotEmpty();
+        RuleFor(x => x.CurrentOffset).NotEmpty();
         RuleFor(x => x.Aliases).NotNull();
     }
 }

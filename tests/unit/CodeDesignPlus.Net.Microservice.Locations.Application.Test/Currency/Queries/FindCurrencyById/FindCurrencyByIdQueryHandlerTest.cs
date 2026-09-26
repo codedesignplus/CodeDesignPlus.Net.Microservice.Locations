@@ -41,8 +41,8 @@ public class FindCurrencyByIdQueryHandlerTest
         // Arrange
         var request = new FindCurrencyByIdQuery(fakeData.Currency.Id);
         var currencyDto = fakeData.Currency;
-        cacheManagerMock.Setup(x => x.ExistsAsync(request.Id.ToString())).ReturnsAsync(true);
-        cacheManagerMock.Setup(x => x.GetAsync<CurrencyDto>(request.Id.ToString())).ReturnsAsync(currencyDto);
+        cacheManagerMock.Setup(x => x.ExistsAsync(CacheKeys.CurrencyById(request.Id))).ReturnsAsync(true);
+        cacheManagerMock.Setup(x => x.GetAsync<CurrencyDto>(CacheKeys.CurrencyById(request.Id))).ReturnsAsync(currencyDto);
 
         // Act
         var result = await handler.Handle(request, CancellationToken.None);
@@ -59,7 +59,7 @@ public class FindCurrencyByIdQueryHandlerTest
         var request = new FindCurrencyByIdQuery(fakeData.Currency.Id);
         var currency = fakeData.CurrencyAggregate;
         var currencyDto = fakeData.Currency;
-        cacheManagerMock.Setup(x => x.ExistsAsync(request.Id.ToString())).ReturnsAsync(false);
+        cacheManagerMock.Setup(x => x.ExistsAsync(CacheKeys.CurrencyById(request.Id))).ReturnsAsync(false);
         repositoryMock.Setup(x => x.FindAsync<CurrencyAggregate>(request.Id, It.IsAny<CancellationToken>())).ReturnsAsync(currency);
         mapperMock.Setup(x => x.Map<CurrencyDto>(currency)).Returns(currencyDto);
 
@@ -68,7 +68,7 @@ public class FindCurrencyByIdQueryHandlerTest
 
         // Assert
         Assert.Equal(currencyDto, result);
-        cacheManagerMock.Verify(x => x.SetAsync(request.Id.ToString(), currencyDto, It.IsAny<TimeSpan?>()), Times.Once);
+        cacheManagerMock.Verify(x => x.SetAsync(CacheKeys.CurrencyById(request.Id), currencyDto, It.IsAny<TimeSpan?>()), Times.Once);
     }
 
     [Fact]
@@ -76,7 +76,7 @@ public class FindCurrencyByIdQueryHandlerTest
     {
         // Arrange
         var request = new FindCurrencyByIdQuery(fakeData.Currency.Id);
-        cacheManagerMock.Setup(x => x.ExistsAsync(request.Id.ToString())).ReturnsAsync(false);
+        cacheManagerMock.Setup(x => x.ExistsAsync(CacheKeys.CurrencyById(request.Id))).ReturnsAsync(false);
         repositoryMock.Setup(x => x.FindAsync<CurrencyAggregate>(request.Id, It.IsAny<CancellationToken>())).ReturnsAsync((CurrencyAggregate)null!);
 
         // Act & Assert

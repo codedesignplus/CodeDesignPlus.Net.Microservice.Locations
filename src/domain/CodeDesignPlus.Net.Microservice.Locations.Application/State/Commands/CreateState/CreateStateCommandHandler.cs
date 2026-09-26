@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.State.Commands.CreateState;
 
-public class CreateStateCommandHandler(IStateRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<CreateStateCommand>
+public class CreateStateCommandHandler(IStateRepository repository, IUserContext user, IPubSub pubsub, ICacheManager cache) : IRequestHandler<CreateStateCommand>
 {
     public async Task Handle(CreateStateCommand request, CancellationToken cancellationToken)
     {
@@ -17,6 +17,8 @@ public class CreateStateCommandHandler(IStateRepository repository, IUserContext
         var state = StateAggregate.Create(request.Id, request.IdCountry, request.Code, request.Name, user.IdUser);
 
         await repository.CreateAsync(state, cancellationToken);
+
+        await cache.RemoveAsync(CacheKeys.ById(state.Id));
 
         await pubsub.PublishAsync(state.GetAndClearEvents(), cancellationToken);
     }

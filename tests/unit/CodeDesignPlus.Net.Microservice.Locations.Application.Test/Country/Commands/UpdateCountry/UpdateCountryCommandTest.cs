@@ -77,8 +77,6 @@ public class UpdateCountryCommandTest
         result.ShouldHaveValidationErrorFor(x => x.NameNative);
         result.ShouldHaveValidationErrorFor(x => x.Region);
         result.ShouldHaveValidationErrorFor(x => x.SubRegion);
-        result.ShouldHaveValidationErrorFor(x => x.Latitude);
-        result.ShouldHaveValidationErrorFor(x => x.Longitude);
     }
 
     [Fact]
@@ -215,4 +213,45 @@ public class UpdateCountryCommandTest
 
         result.ShouldHaveValidationErrorFor(x => x.Flag);
     }
+
+    [Theory]
+    [InlineData(0, 0, true)]
+    [InlineData(90, 180, true)]
+    [InlineData(-90, -180, true)]
+    [InlineData(90.1, 0, false)]
+    [InlineData(0, -180.1, false)]
+    public void Validator_Coordinates_AreValidatedByRange_AndZeroIsValid(double latitude, double longitude, bool valid)
+    {
+        // El ecuador y el meridiano de Greenwich son coordenadas reales: NotEmpty las rechazaba (plan 042 de pendings).
+        var command = ValidCommand() with { Latitude = latitude, Longitude = longitude };
+
+        var result = validator.TestValidate(command);
+
+        if (valid)
+        {
+            result.ShouldNotHaveValidationErrorFor(x => x.Latitude);
+            result.ShouldNotHaveValidationErrorFor(x => x.Longitude);
+        }
+        else
+            Assert.False(result.IsValid);
+    }
+
+    private static UpdateCountryCommand ValidCommand() => new UpdateCountryCommand(
+            Id: Guid.NewGuid(),
+            Name: "Colombia",
+            Alpha2: "CO",
+            Alpha3: "COL",
+            Code: "170",
+            PhoneCode: "+57",
+            Capital: "Bogotá",
+            IdCurrency: Guid.NewGuid(),
+            Timezone: "America/Bogota",
+            NameNative: "Colombia",
+            Region: "Americas",
+            SubRegion: "South America",
+            Latitude: 4.5709,
+            Longitude: -74.2973,
+            Flag: "🇨🇴",
+            IsActive: true
+        );
 }

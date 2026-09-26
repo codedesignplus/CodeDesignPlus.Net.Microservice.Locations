@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.Commands.UpdateTimezone;
 
-public class UpdateTimezoneCommandHandler(ITimezoneRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<UpdateTimezoneCommand>
+public class UpdateTimezoneCommandHandler(ITimezoneRepository repository, IUserContext user, IPubSub pubsub, ICacheManager cache) : IRequestHandler<UpdateTimezoneCommand>
 {
     public async Task Handle(UpdateTimezoneCommand request, CancellationToken cancellationToken)
     {
@@ -13,6 +13,8 @@ public class UpdateTimezoneCommandHandler(ITimezoneRepository repository, IUserC
         client.Update(request.Name, request.Aliases, request.Location, request.Offsets, request.CurrentOffset, request.IsActive, user.IdUser);
 
         await repository.UpdateAsync(client, cancellationToken);
+
+        await cache.RemoveAsync(CacheKeys.ById(client.Id));
 
         await pubsub.PublishAsync(client.GetAndClearEvents(), cancellationToken);
     }

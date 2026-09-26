@@ -5,7 +5,7 @@
     "numericCode": 784,
     "decimalDigits": 2,
     "symbol": "د.إ",
-    "name": "United Arab Emirates dirham"
+    "name": "Dírham de los Emiratos Árabes Unidos"
   },
   {
     "id": "ab1674d7-d77e-45a8-a8a5-b67daab75c09",
@@ -13,7 +13,7 @@
     "numericCode": 971,
     "decimalDigits": 2,
     "symbol": "؋",
-    "name": "Afghan afghani"
+    "name": "Afgani afgano"
   },
   {
     "id": "c3e0c951-ed5c-4ba2-86fc-e1a773e83fe5",
@@ -21,7 +21,7 @@
     "numericCode": 8,
     "decimalDigits": 2,
     "symbol": "L",
-    "name": "Albanian lek"
+    "name": "Lek albanés"
   },
   {
     "id": "02ebac94-1ce2-4bf8-9a79-1f0c0a6ee1c7",
@@ -29,7 +29,7 @@
     "numericCode": 51,
     "decimalDigits": 2,
     "symbol": "֏",
-    "name": "Armenian dram"
+    "name": "Dram armenio"
   },
   {
     "id": "9c633e57-3c28-4c95-a3a3-904f4f2437ff",
@@ -37,7 +37,7 @@
     "numericCode": 532,
     "decimalDigits": 2,
     "symbol": "ƒ",
-    "name": "Netherlands Antillean guilder"
+    "name": "Florín antillano"
   },
   {
     "id": "2dd7c469-c596-432e-aeff-9931b2ac0691",
@@ -45,7 +45,7 @@
     "numericCode": 973,
     "decimalDigits": 2,
     "symbol": "Kz",
-    "name": "Angolan kwanza"
+    "name": "Kuanza angoleño"
   },
   {
     "id": "3ca4f2e4-01de-49ba-bba5-083b32d68cc6",
@@ -53,7 +53,7 @@
     "numericCode": 32,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Argentine peso"
+    "name": "Peso argentino"
   },
   {
     "id": "6a005a69-7373-4afa-a809-3e9ee706b39e",
@@ -61,7 +61,7 @@
     "numericCode": 36,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Australian dollar"
+    "name": "Dólar australiano"
   },
   {
     "id": "d08c7321-7fa7-49cb-9139-27f24016467b",
@@ -69,7 +69,7 @@
     "numericCode": 533,
     "decimalDigits": 2,
     "symbol": "ƒ",
-    "name": "Aruban florin"
+    "name": "Florín arubeño"
   },
   {
     "id": "68ca1796-8cd3-4895-aa71-7b571d4f6c86",
@@ -77,7 +77,7 @@
     "numericCode": 944,
     "decimalDigits": 2,
     "symbol": "₼",
-    "name": "Azerbaijani manat"
+    "name": "Manat azerbaiyano"
   },
   {
     "id": "48935a91-4627-4c19-8e38-efe3a4915166",
@@ -85,7 +85,7 @@
     "numericCode": 977,
     "decimalDigits": 2,
     "symbol": "KM",
-    "name": "Bosnia and Herzegovina convertible mark"
+    "name": "Marco convertible de Bosnia y Herzegovina"
   },
   {
     "id": "3f8d4d76-3c7d-4a36-99a0-9038df05d98c",
@@ -93,7 +93,7 @@
     "numericCode": 52,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Barbadian dollar"
+    "name": "Dólar barbadense"
   },
   {
     "id": "eaf7d86d-5001-427f-a92f-c1de1911013b",
@@ -101,7 +101,7 @@
     "numericCode": 50,
     "decimalDigits": 2,
     "symbol": "৳",
-    "name": "Bangladeshi taka"
+    "name": "Taka bangladesí"
   },
   {
     "id": "c766100c-779c-4804-8c05-9006100c80ae",
@@ -109,7 +109,7 @@
     "numericCode": 975,
     "decimalDigits": 2,
     "symbol": "лв",
-    "name": "Bulgarian lev"
+    "name": "Leva búlgara"
   },
   {
     "id": "6c3a1713-c449-4573-b080-c04cb120b043",
@@ -117,7 +117,7 @@
     "numericCode": 48,
     "decimalDigits": 3,
     "symbol": ".د.ب",
-    "name": "Bahraini dinar"
+    "name": "Dinar bareiní"
   },
   {
     "id": "2056d26d-97e3-4817-a4e0-e1b0f4392eca",
@@ -125,7 +125,7 @@
     "numericCode": 108,
     "decimalDigits": 0,
     "symbol": "Fr",
-    "name": "Burundian franc"
+    "name": "Franco burundés"
   },
   {
     "id": "562aca65-b5fb-40bd-9bad-211516ef85e4",
@@ -133,7 +133,7 @@
     "numericCode": 60,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Bermudian dollar"
+    "name": "Dólar bermudeño"
   },
   {
     "id": "f0205c21-5ae5-46b3-aa1c-529b878ba689",
@@ -141,7 +141,7 @@
     "numericCode": 96,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Brunei dollar"
+    "name": "Dólar bruneano"
   },
   {
     "id": "44fd0c72-72ae-43dd-8431-baf5571b23a4",
@@ -149,7 +149,7 @@
     "numericCode": 68,
     "decimalDigits": 2,
     "symbol": "Bs.",
-    "name": "Bolivian boliviano"
+    "name": "Boliviano"
   },
   {
     "id": "52dc805f-6504-4385-8838-5af30139358f",
@@ -157,7 +157,7 @@
     "numericCode": 986,
     "decimalDigits": 2,
     "symbol": "R$",
-    "name": "Brazilian real"
+    "name": "Real brasileño"
   },
   {
     "id": "350ae542-a44f-46ea-8aaf-ddda535f7f6c",
@@ -165,7 +165,7 @@
     "numericCode": 44,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Bahamian dollar"
+    "name": "Dólar bahameño"
   },
   {
     "id": "a6d61e86-fb61-46a2-8999-1d429ab6ecfb",
@@ -173,7 +173,7 @@
     "numericCode": 64,
     "decimalDigits": 2,
     "symbol": "Nu.",
-    "name": "Bhutanese ngultrum"
+    "name": "Gultrum butanés"
   },
   {
     "id": "251408e8-459c-4445-95dd-fe7a1b7eb6b5",
@@ -181,7 +181,7 @@
     "numericCode": 72,
     "decimalDigits": 2,
     "symbol": "P",
-    "name": "Botswana pula"
+    "name": "Pula botsuano"
   },
   {
     "id": "a249d7c3-a8f7-448c-ab41-6f86d7fe6b1c",
@@ -189,7 +189,7 @@
     "numericCode": 933,
     "decimalDigits": 2,
     "symbol": "Br",
-    "name": "Belarusian ruble"
+    "name": "Rublo bielorruso"
   },
   {
     "id": "1b5baadd-9ba9-4d65-bcce-dab2661cf7c5",
@@ -197,7 +197,7 @@
     "numericCode": 84,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Belize dollar"
+    "name": "Dólar beliceño"
   },
   {
     "id": "e112916e-cdd8-4c2f-9229-d8e9d1c71df0",
@@ -205,7 +205,7 @@
     "numericCode": 124,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Canadian dollar"
+    "name": "Dólar canadiense"
   },
   {
     "id": "8943b998-de7c-4e77-a32f-cff4ea56d654",
@@ -213,7 +213,7 @@
     "numericCode": 976,
     "decimalDigits": 2,
     "symbol": "FC",
-    "name": "Congolese franc"
+    "name": "Franco congoleño"
   },
   {
     "id": "849aa470-834c-4e64-b040-18616fe5651e",
@@ -221,7 +221,7 @@
     "numericCode": 756,
     "decimalDigits": 2,
     "symbol": "Fr.",
-    "name": "Swiss franc"
+    "name": "Franco suizo"
   },
   {
     "id": "4e1fe547-8084-43a3-973b-bd81facd09e6",
@@ -229,7 +229,7 @@
     "numericCode": 0,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Cook Islands dollar"
+    "name": "Dólar de las Islas Cook"
   },
   {
     "id": "daf16c22-835a-4686-8b18-a93e6ef26e62",
@@ -237,7 +237,7 @@
     "numericCode": 152,
     "decimalDigits": 0,
     "symbol": "$",
-    "name": "Chilean peso"
+    "name": "Peso chileno"
   },
   {
     "id": "550077d9-95d8-4d5a-8fc5-30c95a54b030",
@@ -245,7 +245,7 @@
     "numericCode": 156,
     "decimalDigits": 2,
     "symbol": "¥",
-    "name": "Chinese yuan"
+    "name": "Yuan renminbi"
   },
   {
     "id": "1e8f4d27-f5bf-4d93-92a8-ecc4719aba3b",
@@ -253,7 +253,7 @@
     "numericCode": 170,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Colombian peso"
+    "name": "Peso colombiano"
   },
   {
     "id": "a01d6f8c-5900-4818-a0b1-58f912343bdc",
@@ -261,7 +261,7 @@
     "numericCode": 188,
     "decimalDigits": 2,
     "symbol": "₡",
-    "name": "Costa Rican colón"
+    "name": "Colón costarricense"
   },
   {
     "id": "14b4c7e0-ef2e-47ea-94e5-b5c3b8a90f41",
@@ -269,7 +269,7 @@
     "numericCode": 0,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Cuban convertible peso"
+    "name": "Peso cubano convertible"
   },
   {
     "id": "1c2c49c5-b824-4a73-8d5d-c8ebf4f925c1",
@@ -277,7 +277,7 @@
     "numericCode": 192,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Cuban peso"
+    "name": "Peso cubano"
   },
   {
     "id": "6330cbc3-8ecd-4661-b09e-5148c5f8152e",
@@ -285,7 +285,7 @@
     "numericCode": 132,
     "decimalDigits": 2,
     "symbol": "Esc",
-    "name": "Cape Verdean escudo"
+    "name": "Escudo de Cabo Verde"
   },
   {
     "id": "fc535266-3a63-4a77-8900-cdfca47980fe",
@@ -293,7 +293,7 @@
     "numericCode": 203,
     "decimalDigits": 2,
     "symbol": "Kč",
-    "name": "Czech koruna"
+    "name": "Corona checa"
   },
   {
     "id": "926961fd-c03e-4e83-b705-8b8c0b0ef779",
@@ -301,7 +301,7 @@
     "numericCode": 262,
     "decimalDigits": 0,
     "symbol": "Fr",
-    "name": "Djiboutian franc"
+    "name": "Franco yibutiano"
   },
   {
     "id": "efe024a0-a76b-4131-bd90-3f96ab5a84b1",
@@ -309,7 +309,7 @@
     "numericCode": 208,
     "decimalDigits": 2,
     "symbol": "kr",
-    "name": "Danish krone"
+    "name": "Corona danesa"
   },
   {
     "id": "79c59c4f-9f4e-41c2-ac9d-359cad98582f",
@@ -317,7 +317,7 @@
     "numericCode": 214,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Dominican peso"
+    "name": "Peso dominicano"
   },
   {
     "id": "17eb2357-53ed-4f68-aa82-a6173cfe7692",
@@ -325,7 +325,7 @@
     "numericCode": 12,
     "decimalDigits": 2,
     "symbol": "د.ج",
-    "name": "Algerian dinar"
+    "name": "Dinar argelino"
   },
   {
     "id": "50bf691e-26f0-4e1c-9e79-91b8c00334f5",
@@ -333,7 +333,7 @@
     "numericCode": 818,
     "decimalDigits": 2,
     "symbol": "£",
-    "name": "Egyptian pound"
+    "name": "Libra egipcia"
   },
   {
     "id": "9f1a9346-b228-4c66-9312-130b46ea98d1",
@@ -341,7 +341,7 @@
     "numericCode": 232,
     "decimalDigits": 2,
     "symbol": "Nfk",
-    "name": "Eritrean nakfa"
+    "name": "Nakfa eritreo"
   },
   {
     "id": "144089cc-8fc8-4f23-b663-81d946ca0f81",
@@ -349,7 +349,7 @@
     "numericCode": 230,
     "decimalDigits": 2,
     "symbol": "Br",
-    "name": "Ethiopian birr"
+    "name": "Bir etíope"
   },
   {
     "id": "685be7ab-9f0c-44e8-a046-dc8cc5889002",
@@ -365,7 +365,7 @@
     "numericCode": 242,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Fijian dollar"
+    "name": "Dólar fiyiano"
   },
   {
     "id": "2daa341c-7004-40b5-aea4-527b2e1edac3",
@@ -373,7 +373,7 @@
     "numericCode": 238,
     "decimalDigits": 2,
     "symbol": "£",
-    "name": "Falkland Islands pound"
+    "name": "Libra malvinense"
   },
   {
     "id": "aac009ee-6816-4d3c-b227-950d7a89bdeb",
@@ -381,7 +381,7 @@
     "numericCode": 0,
     "decimalDigits": 2,
     "symbol": "kr",
-    "name": "Faroese króna"
+    "name": "Corona feroesa"
   },
   {
     "id": "7d382442-fe7e-419b-bb25-2cb5828e66be",
@@ -389,7 +389,7 @@
     "numericCode": 826,
     "decimalDigits": 2,
     "symbol": "£",
-    "name": "Pound sterling"
+    "name": "Libra esterlina"
   },
   {
     "id": "8cb323a9-66fa-4f17-8783-ad1277975e23",
@@ -397,7 +397,7 @@
     "numericCode": 981,
     "decimalDigits": 2,
     "symbol": "₾",
-    "name": "lari"
+    "name": "Lari georgiano"
   },
   {
     "id": "225d8e3d-e62e-4c1c-b0df-3f930c23f122",
@@ -405,7 +405,7 @@
     "numericCode": 0,
     "decimalDigits": 2,
     "symbol": "£",
-    "name": "Guernsey pound"
+    "name": "Libra de Guernsey"
   },
   {
     "id": "df89d993-8ed5-4506-8b25-d3aaf503e2d6",
@@ -413,7 +413,7 @@
     "numericCode": 936,
     "decimalDigits": 2,
     "symbol": "₵",
-    "name": "Ghanaian cedi"
+    "name": "Cedi ghanés"
   },
   {
     "id": "e119fec8-f6ad-48e0-b511-d5a197bb5173",
@@ -421,7 +421,7 @@
     "numericCode": 292,
     "decimalDigits": 2,
     "symbol": "£",
-    "name": "Gibraltar pound"
+    "name": "Libra gibraltareña"
   },
   {
     "id": "656eca2a-8cb6-4474-9888-515e4b60de13",
@@ -429,7 +429,7 @@
     "numericCode": 270,
     "decimalDigits": 2,
     "symbol": "D",
-    "name": "dalasi"
+    "name": "Dalasi gambiano"
   },
   {
     "id": "5a406e50-840d-4535-a21e-ccbce5c53e15",
@@ -437,7 +437,7 @@
     "numericCode": 324,
     "decimalDigits": 0,
     "symbol": "Fr",
-    "name": "Guinean franc"
+    "name": "Franco guineano"
   },
   {
     "id": "67efdd1d-d740-4dac-8f79-e8ee72276b14",
@@ -445,7 +445,7 @@
     "numericCode": 320,
     "decimalDigits": 2,
     "symbol": "Q",
-    "name": "Guatemalan quetzal"
+    "name": "Quetzal guatemalteco"
   },
   {
     "id": "5885e0c6-6300-43ec-af8c-46554297a2f3",
@@ -453,7 +453,7 @@
     "numericCode": 328,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Guyanese dollar"
+    "name": "Dólar guyanés"
   },
   {
     "id": "4a8763f2-347e-49b2-9303-7e4ea7364af2",
@@ -461,7 +461,7 @@
     "numericCode": 344,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Hong Kong dollar"
+    "name": "Dólar hongkonés"
   },
   {
     "id": "8ad6b9ba-da46-4c77-8459-bef069cc1c78",
@@ -469,7 +469,7 @@
     "numericCode": 340,
     "decimalDigits": 2,
     "symbol": "L",
-    "name": "Honduran lempira"
+    "name": "Lempira hondureño"
   },
   {
     "id": "f5034cd3-5a17-406b-88f1-ef0cc064b7f2",
@@ -477,7 +477,7 @@
     "numericCode": 332,
     "decimalDigits": 2,
     "symbol": "G",
-    "name": "Haitian gourde"
+    "name": "Gurde haitiano"
   },
   {
     "id": "e6da3832-85b8-43e6-a60f-454beac13043",
@@ -485,7 +485,7 @@
     "numericCode": 348,
     "decimalDigits": 2,
     "symbol": "Ft",
-    "name": "Hungarian forint"
+    "name": "Forinto húngaro"
   },
   {
     "id": "204fc059-3b78-440f-8992-27537d5afdf8",
@@ -493,7 +493,7 @@
     "numericCode": 360,
     "decimalDigits": 2,
     "symbol": "Rp",
-    "name": "Indonesian rupiah"
+    "name": "Rupia indonesia"
   },
   {
     "id": "cf862362-6a6a-4928-aeeb-a74ce4f8ad4b",
@@ -501,7 +501,7 @@
     "numericCode": 376,
     "decimalDigits": 2,
     "symbol": "₪",
-    "name": "Israeli new shekel"
+    "name": "Nuevo séquel israelí"
   },
   {
     "id": "5d98c321-3e12-40b6-8268-a94272b75e42",
@@ -509,7 +509,7 @@
     "numericCode": 0,
     "decimalDigits": 2,
     "symbol": "£",
-    "name": "Manx pound"
+    "name": "Libra de la Isla de Man"
   },
   {
     "id": "0f3ba561-6205-4477-aa40-fcdb375161d8",
@@ -517,7 +517,7 @@
     "numericCode": 356,
     "decimalDigits": 2,
     "symbol": "₹",
-    "name": "Indian rupee"
+    "name": "Rupia india"
   },
   {
     "id": "534d212f-51e9-4d0e-83b5-59eb950fd9ec",
@@ -525,7 +525,7 @@
     "numericCode": 368,
     "decimalDigits": 3,
     "symbol": "ع.د",
-    "name": "Iraqi dinar"
+    "name": "Dinar iraquí"
   },
   {
     "id": "d02e1e3c-0916-47bf-9960-eb7f072f62c8",
@@ -533,7 +533,7 @@
     "numericCode": 364,
     "decimalDigits": 2,
     "symbol": "﷼",
-    "name": "Iranian rial"
+    "name": "Rial iraní"
   },
   {
     "id": "93b145ae-5284-41b9-ba0b-f415cb1558da",
@@ -541,7 +541,7 @@
     "numericCode": 352,
     "decimalDigits": 0,
     "symbol": "kr",
-    "name": "Icelandic króna"
+    "name": "Corona islandesa"
   },
   {
     "id": "7363d79e-f89a-4b54-a63e-a0475c03bed7",
@@ -549,7 +549,7 @@
     "numericCode": 0,
     "decimalDigits": 2,
     "symbol": "£",
-    "name": "Jersey pound"
+    "name": "Libra de Jersey"
   },
   {
     "id": "acf4f0cc-c04f-44d1-9471-309f42e3dcef",
@@ -557,7 +557,7 @@
     "numericCode": 388,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Jamaican dollar"
+    "name": "Dólar jamaicano"
   },
   {
     "id": "9b49fdd1-458e-4704-9697-1b028852aeb4",
@@ -565,7 +565,7 @@
     "numericCode": 400,
     "decimalDigits": 3,
     "symbol": "د.ا",
-    "name": "Jordanian dinar"
+    "name": "Dinar jordano"
   },
   {
     "id": "4212ca72-99f1-4994-a2a3-1f86ab27c487",
@@ -573,7 +573,7 @@
     "numericCode": 392,
     "decimalDigits": 0,
     "symbol": "¥",
-    "name": "Japanese yen"
+    "name": "Yen japonés"
   },
   {
     "id": "710e6635-1cb1-4630-9562-37f0b49a2f61",
@@ -581,7 +581,7 @@
     "numericCode": 404,
     "decimalDigits": 2,
     "symbol": "Sh",
-    "name": "Kenyan shilling"
+    "name": "Chelín keniano"
   },
   {
     "id": "64d106e7-cd14-4df6-aac8-1f2aab223571",
@@ -589,7 +589,7 @@
     "numericCode": 417,
     "decimalDigits": 2,
     "symbol": "с",
-    "name": "Kyrgyzstani som"
+    "name": "Som kirguís"
   },
   {
     "id": "6e500375-466d-4457-967c-1891b854f367",
@@ -597,7 +597,7 @@
     "numericCode": 116,
     "decimalDigits": 2,
     "symbol": "៛",
-    "name": "Cambodian riel"
+    "name": "Riel camboyano"
   },
   {
     "id": "610c34c3-670e-42de-ac13-87828fa003c2",
@@ -605,7 +605,7 @@
     "numericCode": 0,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Kiribati dollar"
+    "name": "Dólar de Kiribati"
   },
   {
     "id": "9ccc89f8-7cf7-43d9-8e4e-4e07915404b7",
@@ -613,7 +613,7 @@
     "numericCode": 174,
     "decimalDigits": 0,
     "symbol": "Fr",
-    "name": "Comorian franc"
+    "name": "Franco comorense"
   },
   {
     "id": "10807ed9-546d-49fc-9f63-3bfc955dafbc",
@@ -621,7 +621,7 @@
     "numericCode": 408,
     "decimalDigits": 2,
     "symbol": "₩",
-    "name": "North Korean won"
+    "name": "Won norcoreano"
   },
   {
     "id": "85ea96cb-5f34-4d95-8e61-cf5a945075cb",
@@ -629,7 +629,7 @@
     "numericCode": 410,
     "decimalDigits": 0,
     "symbol": "₩",
-    "name": "South Korean won"
+    "name": "Won surcoreano"
   },
   {
     "id": "d5af8b2d-3fdb-4954-8926-f3b2f84a18d6",
@@ -637,7 +637,7 @@
     "numericCode": 414,
     "decimalDigits": 3,
     "symbol": "د.ك",
-    "name": "Kuwaiti dinar"
+    "name": "Dinar kuwaití"
   },
   {
     "id": "673e7a46-d0e1-445e-9052-286478f8693b",
@@ -645,7 +645,7 @@
     "numericCode": 136,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Cayman Islands dollar"
+    "name": "Dólar de las Islas Caimán"
   },
   {
     "id": "9e457916-fdc4-481e-859e-fd6ccec19523",
@@ -653,7 +653,7 @@
     "numericCode": 398,
     "decimalDigits": 2,
     "symbol": "₸",
-    "name": "Kazakhstani tenge"
+    "name": "Tengue kazajo"
   },
   {
     "id": "479cfc1c-f24d-4361-b10f-df29f53448f6",
@@ -661,7 +661,7 @@
     "numericCode": 418,
     "decimalDigits": 2,
     "symbol": "₭",
-    "name": "Lao kip"
+    "name": "Kip laosiano"
   },
   {
     "id": "45a3e790-b77a-4b1a-bea0-a1c254d7393b",
@@ -669,7 +669,7 @@
     "numericCode": 422,
     "decimalDigits": 2,
     "symbol": "ل.ل",
-    "name": "Lebanese pound"
+    "name": "Libra libanesa"
   },
   {
     "id": "0056997a-ca34-41ad-b60f-64aa55d143c6",
@@ -677,7 +677,7 @@
     "numericCode": 144,
     "decimalDigits": 2,
     "symbol": "Rs රු",
-    "name": "Sri Lankan rupee"
+    "name": "Rupia esrilanquesa"
   },
   {
     "id": "17cb6b41-a11d-4431-bd09-fb06d7e2788d",
@@ -685,7 +685,7 @@
     "numericCode": 430,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Liberian dollar"
+    "name": "Dólar liberiano"
   },
   {
     "id": "cdd75823-f039-47fa-bee3-fd41b2e89b22",
@@ -693,7 +693,7 @@
     "numericCode": 426,
     "decimalDigits": 2,
     "symbol": "L",
-    "name": "Lesotho loti"
+    "name": "Loti lesotense"
   },
   {
     "id": "8031e815-428a-4573-a36d-ad0ea0f52c29",
@@ -701,7 +701,7 @@
     "numericCode": 434,
     "decimalDigits": 3,
     "symbol": "ل.د",
-    "name": "Libyan dinar"
+    "name": "Dinar libio"
   },
   {
     "id": "7eb5ec2f-f068-4665-b189-41d6d94b7d1f",
@@ -709,7 +709,7 @@
     "numericCode": 504,
     "decimalDigits": 2,
     "symbol": "DH",
-    "name": "Moroccan dirham"
+    "name": "Dírham marroquí"
   },
   {
     "id": "a9e2761f-29dd-4000-8040-8e5f4fdd73eb",
@@ -717,7 +717,7 @@
     "numericCode": 498,
     "decimalDigits": 2,
     "symbol": "L",
-    "name": "Moldovan leu"
+    "name": "Leu moldavo"
   },
   {
     "id": "2adad3ba-6033-49eb-9eef-0ff10af8371b",
@@ -725,7 +725,7 @@
     "numericCode": 969,
     "decimalDigits": 2,
     "symbol": "Ar",
-    "name": "Malagasy ariary"
+    "name": "Ariari malgache"
   },
   {
     "id": "ce1142a5-bbb7-4902-a1ef-724c8aec62e2",
@@ -733,7 +733,7 @@
     "numericCode": 807,
     "decimalDigits": 2,
     "symbol": "den",
-    "name": "denar"
+    "name": "Dinar macedonio"
   },
   {
     "id": "5b702893-7b0c-4359-932d-60d5e927bc62",
@@ -741,7 +741,7 @@
     "numericCode": 104,
     "decimalDigits": 2,
     "symbol": "Ks",
-    "name": "Burmese kyat"
+    "name": "Kiat de Myanmar"
   },
   {
     "id": "81e91445-ed30-4987-a291-d854c43cdfdf",
@@ -749,7 +749,7 @@
     "numericCode": 496,
     "decimalDigits": 2,
     "symbol": "₮",
-    "name": "Mongolian tögrög"
+    "name": "Tugrik mongol"
   },
   {
     "id": "2ea579c5-d5d8-4cae-bc68-944c1c94489a",
@@ -757,7 +757,7 @@
     "numericCode": 446,
     "decimalDigits": 2,
     "symbol": "P",
-    "name": "Macanese pataca"
+    "name": "Pataca macaense"
   },
   {
     "id": "e295598a-6a4a-4582-83f4-ba146cdf177f",
@@ -765,7 +765,7 @@
     "numericCode": 929,
     "decimalDigits": 2,
     "symbol": "UM",
-    "name": "Mauritanian ouguiya"
+    "name": "Uguiya mauritano"
   },
   {
     "id": "9aefdca1-198a-4320-aed8-9b55f7f1e7d9",
@@ -773,7 +773,7 @@
     "numericCode": 480,
     "decimalDigits": 2,
     "symbol": "₨",
-    "name": "Mauritian rupee"
+    "name": "Rupia mauriciana"
   },
   {
     "id": "9cca71a5-d3c7-4586-b4e5-7353cf8ec402",
@@ -781,7 +781,7 @@
     "numericCode": 462,
     "decimalDigits": 2,
     "symbol": ".ރ",
-    "name": "Maldivian rufiyaa"
+    "name": "Rufiya maldiva"
   },
   {
     "id": "20f18569-de8f-471a-ba27-335a4068a9ef",
@@ -789,7 +789,7 @@
     "numericCode": 454,
     "decimalDigits": 2,
     "symbol": "MK",
-    "name": "Malawian kwacha"
+    "name": "Kuacha malauí"
   },
   {
     "id": "267f8ba4-a6da-4773-8467-fc035f41d8d5",
@@ -797,7 +797,7 @@
     "numericCode": 484,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Mexican peso"
+    "name": "Peso mexicano"
   },
   {
     "id": "d0d7c3b7-aed4-4382-8da4-43a55654e885",
@@ -805,7 +805,7 @@
     "numericCode": 458,
     "decimalDigits": 2,
     "symbol": "RM",
-    "name": "Malaysian ringgit"
+    "name": "Ringit malasio"
   },
   {
     "id": "6f998bc2-ad5b-4b48-b6fa-24bc4bba608e",
@@ -813,7 +813,7 @@
     "numericCode": 943,
     "decimalDigits": 2,
     "symbol": "MT",
-    "name": "Mozambican metical"
+    "name": "Metical mozambiqueño"
   },
   {
     "id": "6185fcd2-c615-4284-bfbf-33877cf48824",
@@ -821,7 +821,7 @@
     "numericCode": 516,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Namibian dollar"
+    "name": "Dólar namibio"
   },
   {
     "id": "6da7277a-6bc2-4b05-bd2d-d7343332216a",
@@ -829,7 +829,7 @@
     "numericCode": 566,
     "decimalDigits": 2,
     "symbol": "₦",
-    "name": "Nigerian naira"
+    "name": "Naira nigeriano"
   },
   {
     "id": "067cf520-37c8-45de-9e98-f0e9bc868ee7",
@@ -837,7 +837,7 @@
     "numericCode": 558,
     "decimalDigits": 2,
     "symbol": "C$",
-    "name": "Nicaraguan córdoba"
+    "name": "Córdoba oro"
   },
   {
     "id": "b9997b37-04e9-43e8-800b-29e27a38dbf8",
@@ -845,7 +845,7 @@
     "numericCode": 578,
     "decimalDigits": 2,
     "symbol": "kr",
-    "name": "Norwegian krone"
+    "name": "Corona noruega"
   },
   {
     "id": "78bad577-2963-48ef-8e6a-6ea78184350f",
@@ -853,7 +853,7 @@
     "numericCode": 524,
     "decimalDigits": 2,
     "symbol": "₨",
-    "name": "Nepalese rupee"
+    "name": "Rupia nepalí"
   },
   {
     "id": "bf97d960-b9ad-4065-8c96-3e1567f178c9",
@@ -861,7 +861,7 @@
     "numericCode": 554,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "New Zealand dollar"
+    "name": "Dólar neozelandés"
   },
   {
     "id": "2fe18921-120e-429d-a82a-0912895c5078",
@@ -869,7 +869,7 @@
     "numericCode": 512,
     "decimalDigits": 3,
     "symbol": "ر.ع.",
-    "name": "Omani rial"
+    "name": "Rial omaní"
   },
   {
     "id": "f3850a4a-f211-430b-949a-5339a80473e3",
@@ -877,7 +877,7 @@
     "numericCode": 590,
     "decimalDigits": 2,
     "symbol": "B/.",
-    "name": "Panamanian balboa"
+    "name": "Balboa panameño"
   },
   {
     "id": "644899cd-264e-4235-8acd-8e5bdce0c024",
@@ -885,7 +885,7 @@
     "numericCode": 604,
     "decimalDigits": 2,
     "symbol": "S/.",
-    "name": "Peruvian sol"
+    "name": "Sol peruano"
   },
   {
     "id": "4f912c2e-84b6-4440-8acc-e5db0a20a4b8",
@@ -893,7 +893,7 @@
     "numericCode": 598,
     "decimalDigits": 2,
     "symbol": "K",
-    "name": "Papua New Guinean kina"
+    "name": "Kina papú"
   },
   {
     "id": "73134e71-4965-4ff1-8c92-fd40083b9cb6",
@@ -901,7 +901,7 @@
     "numericCode": 608,
     "decimalDigits": 2,
     "symbol": "₱",
-    "name": "Philippine peso"
+    "name": "Peso filipino"
   },
   {
     "id": "00d5808f-fc0d-4182-89d7-ab57d0070862",
@@ -909,7 +909,7 @@
     "numericCode": 586,
     "decimalDigits": 2,
     "symbol": "₨",
-    "name": "Pakistani rupee"
+    "name": "Rupia pakistaní"
   },
   {
     "id": "480c9a47-3977-40e5-885d-08b1703c3f0d",
@@ -917,7 +917,7 @@
     "numericCode": 985,
     "decimalDigits": 2,
     "symbol": "zł",
-    "name": "Polish złoty"
+    "name": "Esloti polaco"
   },
   {
     "id": "fdd76789-38a4-4ed2-94db-5e640f190b57",
@@ -925,7 +925,7 @@
     "numericCode": 600,
     "decimalDigits": 0,
     "symbol": "₲",
-    "name": "Paraguayan guaraní"
+    "name": "Guaraní paraguayo"
   },
   {
     "id": "0289a10a-612c-4dfe-a3b0-3e3fb182a6dd",
@@ -933,7 +933,7 @@
     "numericCode": 634,
     "decimalDigits": 2,
     "symbol": "ر.ق",
-    "name": "Qatari riyal"
+    "name": "Rial catarí"
   },
   {
     "id": "78c22bcb-d302-41fe-84d3-8ba829ba0376",
@@ -941,7 +941,7 @@
     "numericCode": 946,
     "decimalDigits": 2,
     "symbol": "lei",
-    "name": "Romanian leu"
+    "name": "Leu rumano"
   },
   {
     "id": "5cd77e49-f709-4e50-ad25-b02b10117e5f",
@@ -949,7 +949,7 @@
     "numericCode": 941,
     "decimalDigits": 2,
     "symbol": "дин.",
-    "name": "Serbian dinar"
+    "name": "Dinar serbio"
   },
   {
     "id": "35d48e07-2da5-47ec-bfb5-9eb9c41ac225",
@@ -957,7 +957,7 @@
     "numericCode": 643,
     "decimalDigits": 2,
     "symbol": "₽",
-    "name": "Russian ruble"
+    "name": "Rublo ruso"
   },
   {
     "id": "8252ff9b-aa6b-4924-81f1-ba57e9f922e1",
@@ -965,7 +965,7 @@
     "numericCode": 646,
     "decimalDigits": 0,
     "symbol": "Fr",
-    "name": "Rwandan franc"
+    "name": "Franco ruandés"
   },
   {
     "id": "2de87f88-c9c0-4743-91e2-fa600afcc000",
@@ -973,7 +973,7 @@
     "numericCode": 682,
     "decimalDigits": 2,
     "symbol": "ر.س",
-    "name": "Saudi riyal"
+    "name": "Rial saudí"
   },
   {
     "id": "4b425475-6731-487f-a90c-328ea2add986",
@@ -981,7 +981,7 @@
     "numericCode": 90,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Solomon Islands dollar"
+    "name": "Dólar salomonense"
   },
   {
     "id": "608de557-944d-465b-9fce-6654360653b7",
@@ -989,7 +989,7 @@
     "numericCode": 690,
     "decimalDigits": 2,
     "symbol": "₨",
-    "name": "Seychellois rupee"
+    "name": "Rupia seychellense"
   },
   {
     "id": "f0fb70f7-b539-40dc-9f57-b2b86634d0fa",
@@ -997,7 +997,7 @@
     "numericCode": 938,
     "decimalDigits": 2,
     "symbol": "PT",
-    "name": "Sudanese pound"
+    "name": "Libra sudanesa"
   },
   {
     "id": "f2dc9bce-4369-4867-a7b0-b290e8b93d5b",
@@ -1005,7 +1005,7 @@
     "numericCode": 752,
     "decimalDigits": 2,
     "symbol": "kr",
-    "name": "Swedish krona"
+    "name": "Corona sueca"
   },
   {
     "id": "26d5f579-115b-421a-a74a-956b45de5ee5",
@@ -1013,7 +1013,7 @@
     "numericCode": 702,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Singapore dollar"
+    "name": "Dólar singapurense"
   },
   {
     "id": "2e317500-1f13-4e6c-a015-ee40a383c137",
@@ -1021,7 +1021,7 @@
     "numericCode": 654,
     "decimalDigits": 2,
     "symbol": "£",
-    "name": "Saint Helena pound"
+    "name": "Libra de Santa Elena"
   },
   {
     "id": "dfcdd08a-caaf-4a79-9e31-510d304bfa82",
@@ -1029,7 +1029,7 @@
     "numericCode": 694,
     "decimalDigits": 2,
     "symbol": "Le",
-    "name": "Sierra Leonean leone"
+    "name": "Leona sierraleonesa (1964–2022)"
   },
   {
     "id": "f1893f20-cf01-45c4-80d9-53c7ad74473d",
@@ -1037,7 +1037,7 @@
     "numericCode": 706,
     "decimalDigits": 2,
     "symbol": "Sh",
-    "name": "Somali shilling"
+    "name": "Chelín somalí"
   },
   {
     "id": "1d894328-453e-4a68-b414-a3d03838f0f1",
@@ -1045,7 +1045,7 @@
     "numericCode": 968,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Surinamese dollar"
+    "name": "Dólar surinamés"
   },
   {
     "id": "39593090-4f47-4d75-9788-5982b997c208",
@@ -1053,7 +1053,7 @@
     "numericCode": 728,
     "decimalDigits": 2,
     "symbol": "£",
-    "name": "South Sudanese pound"
+    "name": "Libra sursudanesa"
   },
   {
     "id": "7a217258-01d9-4ce0-97f1-dce74835eaab",
@@ -1061,7 +1061,7 @@
     "numericCode": 930,
     "decimalDigits": 2,
     "symbol": "Db",
-    "name": "São Tomé and Príncipe dobra"
+    "name": "Dobra santotomense"
   },
   {
     "id": "422a5344-a892-43ca-9a43-05ec0854ebf1",
@@ -1069,7 +1069,7 @@
     "numericCode": 760,
     "decimalDigits": 2,
     "symbol": "£",
-    "name": "Syrian pound"
+    "name": "Libra siria"
   },
   {
     "id": "891e93af-cdfb-453e-b10a-fe508ffcd79a",
@@ -1077,7 +1077,7 @@
     "numericCode": 748,
     "decimalDigits": 2,
     "symbol": "L",
-    "name": "Swazi lilangeni"
+    "name": "Lilangeni esuatiní"
   },
   {
     "id": "dbaf8e25-70b3-4ed4-bcf4-fcfc31427a7e",
@@ -1085,7 +1085,7 @@
     "numericCode": 764,
     "decimalDigits": 2,
     "symbol": "฿",
-    "name": "Thai baht"
+    "name": "Bat tailandés"
   },
   {
     "id": "361efbc8-c820-4fc3-a6a2-750519124124",
@@ -1093,7 +1093,7 @@
     "numericCode": 972,
     "decimalDigits": 2,
     "symbol": "ЅМ",
-    "name": "Tajikistani somoni"
+    "name": "Somoni tayiko"
   },
   {
     "id": "9ec7f641-3448-4af9-8925-a2de3e71ac67",
@@ -1101,7 +1101,7 @@
     "numericCode": 934,
     "decimalDigits": 2,
     "symbol": "m",
-    "name": "Turkmenistan manat"
+    "name": "Manat turcomano"
   },
   {
     "id": "084b195a-141c-4da9-bba8-1a9ac5e9ef8e",
@@ -1109,7 +1109,7 @@
     "numericCode": 788,
     "decimalDigits": 3,
     "symbol": "د.ت",
-    "name": "Tunisian dinar"
+    "name": "Dinar tunecino"
   },
   {
     "id": "4745dd16-2be1-4294-a9f3-1b374f252bab",
@@ -1117,7 +1117,7 @@
     "numericCode": 776,
     "decimalDigits": 2,
     "symbol": "T$",
-    "name": "Tongan paʻanga"
+    "name": "Paanga tongano"
   },
   {
     "id": "14b538da-2f3e-40f2-a7ab-471fc0954f16",
@@ -1125,7 +1125,7 @@
     "numericCode": 949,
     "decimalDigits": 2,
     "symbol": "₺",
-    "name": "Turkish lira"
+    "name": "Lira turca"
   },
   {
     "id": "3bf65f48-1e9c-4c94-bf8b-cfbb38155b02",
@@ -1133,7 +1133,7 @@
     "numericCode": 780,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Trinidad and Tobago dollar"
+    "name": "Dólar de Trinidad y Tobago"
   },
   {
     "id": "b8b4276e-ae87-427f-8110-463d50def1e0",
@@ -1141,7 +1141,7 @@
     "numericCode": 0,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Tuvaluan dollar"
+    "name": "Dólar tuvaluano"
   },
   {
     "id": "eade3fc3-2fa2-4835-b638-3f6c8f404978",
@@ -1149,7 +1149,7 @@
     "numericCode": 901,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "New Taiwan dollar"
+    "name": "Nuevo dólar taiwanés"
   },
   {
     "id": "238da063-a2a3-42b2-b680-0149fa369edb",
@@ -1157,7 +1157,7 @@
     "numericCode": 834,
     "decimalDigits": 2,
     "symbol": "Sh",
-    "name": "Tanzanian shilling"
+    "name": "Chelín tanzano"
   },
   {
     "id": "434a4fa5-1afd-47e4-8d3b-e311bc981ed3",
@@ -1165,7 +1165,7 @@
     "numericCode": 980,
     "decimalDigits": 2,
     "symbol": "₴",
-    "name": "Ukrainian hryvnia"
+    "name": "Grivna ucraniana"
   },
   {
     "id": "0c7eafba-9036-4cee-93f0-2062dc18ba57",
@@ -1173,7 +1173,7 @@
     "numericCode": 800,
     "decimalDigits": 0,
     "symbol": "Sh",
-    "name": "Ugandan shilling"
+    "name": "Chelín ugandés"
   },
   {
     "id": "fd17b405-8f03-474e-b7af-5b5c8a017b6f",
@@ -1181,7 +1181,7 @@
     "numericCode": 840,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "United States dollar"
+    "name": "Dólar estadounidense"
   },
   {
     "id": "8879a997-d0a6-451d-817c-3c7e4f7438e8",
@@ -1189,7 +1189,7 @@
     "numericCode": 858,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Uruguayan peso"
+    "name": "Peso uruguayo"
   },
   {
     "id": "586ca173-6928-4e20-94a1-4b6c3a634f28",
@@ -1197,7 +1197,7 @@
     "numericCode": 860,
     "decimalDigits": 2,
     "symbol": "so'm",
-    "name": "Uzbekistani soʻm"
+    "name": "Sum uzbeko"
   },
   {
     "id": "dd5b8b3a-fbdb-4824-8de0-3fb7fee9a531",
@@ -1205,7 +1205,7 @@
     "numericCode": 928,
     "decimalDigits": 2,
     "symbol": "Bs.S.",
-    "name": "Venezuelan bolívar soberano"
+    "name": "Bolívar venezolano"
   },
   {
     "id": "73187888-8749-477c-ad10-d83bda96ba13",
@@ -1213,7 +1213,7 @@
     "numericCode": 704,
     "decimalDigits": 0,
     "symbol": "₫",
-    "name": "Vietnamese đồng"
+    "name": "Dong vietnamita"
   },
   {
     "id": "a0f5d3d8-2587-49c8-8ebc-4cbbaa899b94",
@@ -1221,7 +1221,7 @@
     "numericCode": 548,
     "decimalDigits": 0,
     "symbol": "Vt",
-    "name": "Vanuatu vatu"
+    "name": "Vatu vanuatense"
   },
   {
     "id": "1d1cbffd-23b2-4afc-9bb3-0278bed51ef8",
@@ -1229,7 +1229,7 @@
     "numericCode": 882,
     "decimalDigits": 2,
     "symbol": "T",
-    "name": "Samoan tālā"
+    "name": "Tala samoano"
   },
   {
     "id": "4d2ad5c2-b43f-4328-b4da-bd4b78986f65",
@@ -1237,7 +1237,7 @@
     "numericCode": 950,
     "decimalDigits": 0,
     "symbol": "Fr",
-    "name": "Central African CFA franc"
+    "name": "Franco CFA de África Central"
   },
   {
     "id": "997c2667-54dc-4dc6-b822-eacbc01faf57",
@@ -1245,7 +1245,7 @@
     "numericCode": 951,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Eastern Caribbean dollar"
+    "name": "Dólar del Caribe Oriental"
   },
   {
     "id": "1b412e3b-19dc-4404-8058-f6768d0a0946",
@@ -1253,7 +1253,7 @@
     "numericCode": 952,
     "decimalDigits": 0,
     "symbol": "Fr",
-    "name": "West African CFA franc"
+    "name": "Franco CFA de África Occidental"
   },
   {
     "id": "92bb96bd-b000-4a8a-a012-f3f7a032db66",
@@ -1261,7 +1261,7 @@
     "numericCode": 953,
     "decimalDigits": 0,
     "symbol": "₣",
-    "name": "CFP franc"
+    "name": "Franco CFP"
   },
   {
     "id": "efa389c2-d109-42b3-beb4-edd2217d6bc6",
@@ -1269,7 +1269,7 @@
     "numericCode": 886,
     "decimalDigits": 2,
     "symbol": "﷼",
-    "name": "Yemeni rial"
+    "name": "Rial yemení"
   },
   {
     "id": "34045e5d-0be1-4722-9505-0bb651d12721",
@@ -1277,7 +1277,7 @@
     "numericCode": 710,
     "decimalDigits": 2,
     "symbol": "R",
-    "name": "South African rand"
+    "name": "Rand sudafricano"
   },
   {
     "id": "5b781545-6fbd-4c70-ab3e-4687e57e010b",
@@ -1285,7 +1285,7 @@
     "numericCode": 967,
     "decimalDigits": 2,
     "symbol": "ZK",
-    "name": "Zambian kwacha"
+    "name": "Kuacha zambiano"
   },
   {
     "id": "516d0a61-f615-48f4-8e8a-36ec53fa25d9",
@@ -1293,6 +1293,6 @@
     "numericCode": 0,
     "decimalDigits": 2,
     "symbol": "$",
-    "name": "Zimbabwean bonds"
+    "name": "Bonos de Zimbabue"
   }
 ]

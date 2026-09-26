@@ -4,7 +4,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Country.Queries.
 
 public class GetAllCountryQueryHandler(ICountryRepository repository, IMapper mapper, ICacheManager cache) : IRequestHandler<GetAllCountryQuery, Pagination<CountryDto>>
 {
-    public const string Key = "GetAllCountryQuery";
+    public const string Key = CacheKeys.AllCountries;
 
     public async Task<Pagination<CountryDto>> Handle(GetAllCountryQuery request, CancellationToken cancellationToken)
     {

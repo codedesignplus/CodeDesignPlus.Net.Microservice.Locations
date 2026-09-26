@@ -1,15 +1,36 @@
 using System.Reflection;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 using JsonSerializerOptions = System.Text.Json.JsonSerializerOptions;
+using CodeDesignPlus.Net.Core.Abstractions;
 using CodeDesignPlus.Net.Microservice.Locations.Domain;
 using CodeDesignPlus.Net.Microservice.Locations.Domain.Repositories;
 using CodeDesignPlus.Net.Microservice.Locations.Domain.ValueObjects;
+using CodeDesignPlus.Net.Mongo.Abstractions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using C = CodeDesignPlus.Net.Core.Abstractions.Models.Criteria;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Infrastructure.Seeds;
 
+/// <summary>
+/// Siembra los catálogos de ubicación al arrancar, a partir de los JSON embebidos en <c>Seeds/</c>.
+///
+/// <para><b>Se siembra por clave, registro a registro, y nunca se toca lo que ya existe</b> (regla 25 de
+/// <c>Microservices/rules/</c>, plan 039 de pendings). Por cada catálogo se leen los ids que ya hay en Mongo y se
+/// insertan solo los del JSON que faltan. Así, añadir un país, una ciudad o un barrio al JSON llega a una base que ya
+/// tiene datos, y lo que un administrador corrigió desde la pantalla no se pisa en el siguiente arranque.</para>
+///
+/// <para>Antes se comprobaba por conteo (<c>TotalCount &gt;= data.Count</c>): con un solo registro de más en Mongo, el
+/// catálogo entero se daba por sembrado y lo nuevo del JSON no llegaba nunca.</para>
+///
+/// <para><b>Sin valores inventados.</b> Si al JSON le falta un dato obligatorio, el agregado lo rechaza y ese
+/// registro se salta con un aviso en el log que dice cuál es. Antes se rellenaba con «000», «+1», «UTC», «$» o
+/// «Unknown», datos falsos que nadie veía.</para>
+///
+/// <para>Consecuencia: <b>corregir un registro que ya está en Mongo no se hace cambiando el JSON</b>, porque la siembra
+/// no actualiza. Se corrige desde la pantalla o, si es un error de la siembra en todas las bases, se borra el registro
+/// y el siguiente arranque lo vuelve a crear desde el JSON.</para>
+/// </summary>
 public class LocationSeedService(
     ICurrencyRepository currencyRepository,
     ICountryRepository countryRepository,
@@ -30,14 +51,40 @@ public class LocationSeedService(
 
         try
         {
-            await SeedCurrenciesAsync(stoppingToken);
-            await SeedRegionsAsync(stoppingToken);
-            await SeedCountriesAsync(stoppingToken);
-            await SeedStatesAsync(stoppingToken);
-            await SeedCitiesAsync(stoppingToken);
-            await SeedLocalitiesAsync(stoppingToken);
-            await SeedNeighborhoodsAsync(stoppingToken);
-            await SeedTimezonesAsync(stoppingToken);
+            // El orden importa: cada nivel necesita que exista su padre.
+            await SeedAsync(currencyRepository, "seed-currencies.json", "currencies",
+                (CurrencySeed x) => x.Id, x => x.Code,
+                x => CurrencyAggregate.Create(x.Id, x.Code, x.NumericCode, x.DecimalDigits, x.Symbol, x.Name, SystemUserId), stoppingToken);
+
+            await SeedAsync(regionRepository, "seed-regions.json", "regions",
+                (RegionSeed x) => x.Id, x => x.Name,
+                x => RegionAggregate.Create(x.Id, x.Name, x.SubRegions, isActive: true, SystemUserId), stoppingToken);
+
+            await SeedAsync(countryRepository, "seed-countries.json", "countries",
+                (CountrySeed x) => x.Id, x => $"{x.Name} ({x.Alpha2})",
+                x => CountryAggregate.Create(x.Id, x.Name, x.Alpha2, x.Alpha3, x.Code, x.PhoneCode, x.Capital, x.IdCurrency, x.Timezone, x.NameNative!, x.Region!, x.SubRegion!, x.Latitude, x.Longitude, x.Flag, true, SystemUserId), stoppingToken);
+
+            await SeedAsync(stateRepository, "seed-co-states.json", "states",
+                (StateSeed x) => x.Id, x => x.Name,
+                x => StateAggregate.Create(x.Id, x.IdCountry, x.Code, x.Name, SystemUserId), stoppingToken);
+
+            await SeedAsync(cityRepository, "seed-co-cities.json", "cities",
+                (CitySeed x) => x.Id, x => x.Name,
+                x => CityAggregate.Create(x.Id, x.IdState, x.Name, x.Timezone, SystemUserId), stoppingToken);
+
+            await SeedAsync(localityRepository, "seed-co-localities.json", "localities",
+                (LocalitySeed x) => x.Id, x => x.Name,
+                x => LocalityAggregate.Create(x.Id, x.IdCity, x.Name, SystemUserId), stoppingToken);
+
+            await SeedAsync(neighborhoodRepository, "seed-co-neighborhoods.json", "neighborhoods",
+                (NeighborhoodSeed x) => x.Id, x => x.Name,
+                x => NeighborhoodAggregate.Create(x.Id, x.IdLocality, x.Name, SystemUserId), stoppingToken);
+
+            await SeedAsync(timezoneRepository, "seed-timezones.json", "timezones",
+                (TimezoneSeed x) => x.Id, x => x.Name,
+                x => TimezoneAggregate.Create(x.Id, x.Name, x.Aliases,
+                    Location.Create(x.Location.CountryCode, x.Location.CountryName, x.Location.Latitude, x.Location.Longitude),
+                    x.Offsets, x.CurrentOffset, isActive: true, SystemUserId), stoppingToken);
 
             logger.LogInformation("Location seed completed successfully.");
         }
@@ -47,191 +94,49 @@ public class LocationSeedService(
         }
     }
 
-    private async Task SeedCurrenciesAsync(CancellationToken ct)
+    /// <summary>
+    /// Inserta los registros del JSON cuyo id todavía no está en Mongo. Lo que ya existe no se lee ni se toca.
+    /// </summary>
+    private async Task SeedAsync<TSeed, TAggregate>(
+        IRepositoryBase repository,
+        string file,
+        string catalog,
+        Func<TSeed, Guid> id,
+        Func<TSeed, string> label,
+        Func<TSeed, TAggregate> create,
+        CancellationToken ct)
+        where TAggregate : class, IEntityBase
     {
-        var data = LoadResource<List<CurrencySeed>>("seed-currencies.json");
-        var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
-        var existing = await currencyRepository.MatchingAsync<CurrencyAggregate>(criteria, ct);
-        if (existing.TotalCount >= data.Count) { logger.LogInformation("Currencies already seeded ({Count}).", existing.TotalCount); return; }
+        var data = LoadResource<List<TSeed>>(file);
 
-        var inserted = 0;
-        foreach (var item in data)
-        {
-            try
-            {
-                var aggregate = CurrencyAggregate.Create(item.Id, item.Code, item.NumericCode, item.DecimalDigits, item.Symbol ?? "$", item.Name ?? item.Code, SystemUserId);
-                await currencyRepository.CreateAsync(aggregate, ct);
-                inserted++;
-            }
-            catch (Exception ex)
-            {
-                logger.LogWarning(ex, "Failed to seed currency {Code}. Skipping.", item.Code);
-            }
-        }
-        logger.LogInformation("Seeded {Inserted}/{Total} currencies.", inserted, data.Count);
-    }
+        var existing = await repository.MatchingAsync<TAggregate, Guid>(new C.Criteria(), x => x.Id, ct);
+        var ids = existing.Data.ToHashSet();
 
-    private async Task SeedRegionsAsync(CancellationToken ct)
-    {
-        var data = LoadResource<List<RegionSeed>>("seed-regions.json");
-        var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
-        var existing = await regionRepository.MatchingAsync<RegionAggregate>(criteria, ct);
-        if (existing.TotalCount >= data.Count)
+        var missing = data.Where(x => !ids.Contains(id(x))).ToList();
+
+        if (missing.Count == 0)
         {
-            logger.LogInformation("Regions already seeded ({Count}).", existing.TotalCount);
+            logger.LogInformation("Seed of {Catalog}: nothing missing ({Existing} in Mongo, {Total} in {File}).", catalog, ids.Count, data.Count, file);
             return;
         }
 
         var inserted = 0;
-        foreach (var item in data)
+
+        foreach (var item in missing)
         {
             try
             {
-                var aggregate = RegionAggregate.Create(
-                    item.Id,
-                    item.Name,
-                    item.SubRegions,
-                    isActive: true,
-                    SystemUserId
-                );
-
-                await regionRepository.CreateAsync(aggregate, ct);
+                await repository.CreateAsync(create(item), ct);
                 inserted++;
             }
             catch (Exception ex)
             {
-                logger.LogWarning(ex, "Failed to seed region {Name}. Skipping.", item.Name);
+                // Un dato obligatorio que falta en el JSON: se salta el registro y se dice cuál, sin inventar el valor.
+                logger.LogWarning(ex, "Seed of {Catalog}: skipped {Label} ({Id}) because it is invalid.", catalog, label(item), id(item));
             }
         }
-        logger.LogInformation("Seeded {Inserted}/{Total} regions.", inserted, data.Count);
-    }
 
-    private async Task SeedCountriesAsync(CancellationToken ct)
-    {
-        var data = LoadResource<List<CountrySeed>>("seed-countries.json");
-        var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
-        var existing = await countryRepository.MatchingAsync<CountryAggregate>(criteria, ct);
-        if (existing.TotalCount >= data.Count) { logger.LogInformation("Countries already seeded ({Count}).", existing.TotalCount); return; }
-
-        var inserted = 0;
-        foreach (var item in data)
-        {
-            try
-            {
-                var aggregate = CountryAggregate.Create(item.Id, item.Name, item.Alpha2, item.Alpha3, item.Code ?? "000", item.PhoneCode ?? "+1", item.Capital, item.IdCurrency, item.Timezone ?? "UTC", item.NameNative ?? item.Name ?? "Unknown", item.Region ?? "Unknown", item.SubRegion ?? "Unknown", item.Latitude, item.Longitude, item.Flag, true, SystemUserId);
-                await countryRepository.CreateAsync(aggregate, ct);
-                inserted++;
-            }
-            catch (Exception ex)
-            {
-                logger.LogWarning(ex, "Failed to seed country {Name} ({Alpha2}). Skipping.", item.Name, item.Alpha2);
-            }
-        }
-        logger.LogInformation("Seeded {Inserted}/{Total} countries.", inserted, data.Count);
-    }
-
-    private async Task SeedStatesAsync(CancellationToken ct)
-    {
-        var data = LoadResource<List<StateSeed>>("seed-co-states.json");
-        var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
-        var existing = await stateRepository.MatchingAsync<StateAggregate>(criteria, ct);
-        if (existing.TotalCount >= data.Count) { logger.LogInformation("States already seeded ({Count}).", existing.TotalCount); return; }
-        foreach (var item in data)
-        {
-            var aggregate = StateAggregate.Create(item.Id, item.IdCountry, item.Code, item.Name, SystemUserId);
-            await stateRepository.CreateAsync(aggregate, ct);
-        }
-        logger.LogInformation("Seeded {Count} states.", data.Count);
-    }
-
-    private async Task SeedCitiesAsync(CancellationToken ct)
-    {
-        var data = LoadResource<List<CitySeed>>("seed-co-cities.json");
-        var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
-        var existing = await cityRepository.MatchingAsync<CityAggregate>(criteria, ct);
-        if (existing.TotalCount >= data.Count) { logger.LogInformation("Cities already seeded ({Count}).", existing.TotalCount); return; }
-
-        foreach (var item in data)
-        {
-            var aggregate = CityAggregate.Create(item.Id, item.IdState, item.Name, item.Timezone, SystemUserId);
-            await cityRepository.CreateAsync(aggregate, ct);
-        }
-        logger.LogInformation("Seeded {Count} cities.", data.Count);
-    }
-
-    private async Task SeedLocalitiesAsync(CancellationToken ct)
-    {
-        var data = LoadResource<List<LocalitySeed>>("seed-co-localities.json");
-        var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
-        var existing = await localityRepository.MatchingAsync<LocalityAggregate>(criteria, ct);
-        if (existing.TotalCount >= data.Count) { logger.LogInformation("Localities already seeded ({Count}).", existing.TotalCount); return; }
-
-        foreach (var item in data)
-        {
-            var aggregate = LocalityAggregate.Create(item.Id, item.IdCity, item.Name, SystemUserId);
-            await localityRepository.CreateAsync(aggregate, ct);
-        }
-        logger.LogInformation("Seeded {Count} localities.", data.Count);
-    }
-
-    private async Task SeedNeighborhoodsAsync(CancellationToken ct)
-    {
-        var data = LoadResource<List<NeighborhoodSeed>>("seed-co-neighborhoods.json");
-        var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
-        var existing = await neighborhoodRepository.MatchingAsync<NeighborhoodAggregate>(criteria, ct);
-        if (existing.TotalCount >= data.Count) { logger.LogInformation("Neighborhoods already seeded ({Count}).", existing.TotalCount); return; }
-
-        foreach (var item in data)
-        {
-            var aggregate = NeighborhoodAggregate.Create(item.Id, item.IdLocality, item.Name, SystemUserId);
-            await neighborhoodRepository.CreateAsync(aggregate, ct);
-        }
-        logger.LogInformation("Seeded {Count} neighborhoods.", data.Count);
-    }
-
-    private async Task SeedTimezonesAsync(CancellationToken ct)
-    {
-        var data = LoadResource<List<TimezoneSeed>>("seed-timezones.json");
-        var criteria = new C.Criteria { Filters = "IsActive=true", Limit = 1 };
-        var existing = await timezoneRepository.MatchingAsync<TimezoneAggregate>(criteria, ct);
-        if (existing.TotalCount >= data.Count)
-        {
-            logger.LogInformation("Timezones already seeded ({Count}).", existing.TotalCount);
-            return;
-        }
-
-        var inserted = 0;
-        foreach (var item in data)
-        {
-            try
-            {
-                var location = Location.Create(
-                    item.Location.CountryCode,
-                    item.Location.CountryName,
-                    item.Location.Latitude,
-                    item.Location.Longitude
-                );
-
-                var aggregate = TimezoneAggregate.Create(
-                    item.Id,
-                    item.Name,
-                    item.Aliases,
-                    location,
-                    item.Offsets,
-                    item.CurrentOffset,
-                    isActive: true,
-                    SystemUserId
-                );
-
-                await timezoneRepository.CreateAsync(aggregate, ct);
-                inserted++;
-            }
-            catch (Exception ex)
-            {
-                logger.LogWarning(ex, "Failed to seed timezone {Name}. Skipping.", item.Name);
-            }
-        }
-        logger.LogInformation("Seeded {Inserted}/{Total} timezones.", inserted, data.Count);
+        logger.LogInformation("Seed of {Catalog}: inserted {Inserted} of {Missing} missing ({Total} in {File}).", catalog, inserted, missing.Count, data.Count, file);
     }
 
     private static T LoadResource<T>(string fileName)

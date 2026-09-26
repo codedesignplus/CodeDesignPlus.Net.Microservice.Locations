@@ -13,6 +13,8 @@ public class DeleteLocalityCommandHandlerTest
     private readonly Mock<ILocalityRepository> repositoryMock;
     private readonly Mock<IUserContext> userContextMock;
     private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<INeighborhoodRepository> neighborhoodsMock = new();
+        private readonly Mock<ICacheManager> cacheMock = new();
     private readonly DeleteLocalityCommandHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -21,7 +23,7 @@ public class DeleteLocalityCommandHandlerTest
         repositoryMock = new Mock<ILocalityRepository>();
         userContextMock = new Mock<IUserContext>();
         pubSubMock = new Mock<IPubSub>();
-        handler = new DeleteLocalityCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+        handler = new DeleteLocalityCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, neighborhoodsMock.Object, cacheMock.Object);
     }
 
     [Fact]

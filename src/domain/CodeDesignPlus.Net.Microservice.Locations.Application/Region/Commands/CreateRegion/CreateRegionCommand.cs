@@ -7,8 +7,8 @@ public class Validator : AbstractValidator<CreateRegionCommand>
 {
     public Validator()
     {
-        RuleFor(x => x.Id).NotEmpty().NotNull();
-        RuleFor(x => x.Name).NotEmpty().NotNull();
-        RuleFor(x => x.SubRegions).NotEmpty().NotNull();
+        RuleFor(x => x.Id).NotEmpty();
+        RuleFor(x => x.Name).NotEmpty();
+        RuleFor(x => x.SubRegions).NotEmpty();
     }
 }

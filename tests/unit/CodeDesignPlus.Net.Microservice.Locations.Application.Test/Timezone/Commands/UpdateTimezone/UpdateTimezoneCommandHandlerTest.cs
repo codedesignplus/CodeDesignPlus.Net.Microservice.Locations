@@ -13,6 +13,7 @@ public class UpdateTimezoneCommandHandlerTest
     private readonly Mock<ITimezoneRepository> repositoryMock;
     private readonly Mock<IUserContext> userContextMock;
     private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<ICacheManager> cacheMock = new();
     private readonly UpdateTimezoneCommandHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -21,7 +22,7 @@ public class UpdateTimezoneCommandHandlerTest
         repositoryMock = new Mock<ITimezoneRepository>();
         userContextMock = new Mock<IUserContext>();
         pubSubMock = new Mock<IPubSub>();
-        handler = new UpdateTimezoneCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+        handler = new UpdateTimezoneCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, cacheMock.Object);
     }
 
     [Fact]

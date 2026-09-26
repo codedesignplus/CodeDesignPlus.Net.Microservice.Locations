@@ -8,6 +8,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Com
         private readonly Mock<ICountryRepository> repositoryMock;
         private readonly Mock<IUserContext> userContextMock;
         private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<ICacheManager> cacheMock = new();
         private readonly CreateCountryCommandHandler handler;
         private readonly FakeData fakeData = new();
 
@@ -16,7 +17,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Com
             repositoryMock = new Mock<ICountryRepository>();
             userContextMock = new Mock<IUserContext>();
             pubSubMock = new Mock<IPubSub>();
-            handler = new CreateCountryCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+            handler = new CreateCountryCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, cacheMock.Object);
         }
 
         [Fact]

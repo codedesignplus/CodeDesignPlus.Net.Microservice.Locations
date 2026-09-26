@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Country.Commands.CreateCountry;
 
-public class CreateCountryCommandHandler(ICountryRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<CreateCountryCommand>
+public class CreateCountryCommandHandler(ICountryRepository repository, IUserContext user, IPubSub pubsub, ICacheManager cache) : IRequestHandler<CreateCountryCommand>
 {
     public async Task Handle(CreateCountryCommand request, CancellationToken cancellationToken)
     {
@@ -17,6 +17,10 @@ public class CreateCountryCommandHandler(ICountryRepository repository, IUserCon
         var country = CountryAggregate.Create(request.Id, request.Name, request.Alpha2, request.Alpha3, request.Code, request.PhoneCode, request.Capital, request.IdCurrency, request.Timezone, request.NameNative, request.Region, request.SubRegion, request.Latitude, request.Longitude, request.Flag, request.IsActive, user.IdUser);
 
         await repository.CreateAsync(country, cancellationToken);
+
+        await cache.RemoveAsync(CacheKeys.CountryById(country.Id));
+
+        await cache.RemoveAsync(CacheKeys.AllCountries);
 
         await pubsub.PublishAsync(country.GetAndClearEvents(), cancellationToken);
     }

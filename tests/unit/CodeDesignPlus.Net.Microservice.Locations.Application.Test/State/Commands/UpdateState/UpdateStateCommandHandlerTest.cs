@@ -14,6 +14,7 @@ public class UpdateStateCommandHandlerTest
     private readonly Mock<IStateRepository> repositoryMock;
     private readonly Mock<IUserContext> userContextMock;
     private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<ICacheManager> cacheMock = new();
     private readonly UpdateStateCommandHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -22,7 +23,7 @@ public class UpdateStateCommandHandlerTest
         repositoryMock = new Mock<IStateRepository>();
         userContextMock = new Mock<IUserContext>();
         pubSubMock = new Mock<IPubSub>();
-        handler = new UpdateStateCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+        handler = new UpdateStateCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, cacheMock.Object);
     }
 
     [Fact]

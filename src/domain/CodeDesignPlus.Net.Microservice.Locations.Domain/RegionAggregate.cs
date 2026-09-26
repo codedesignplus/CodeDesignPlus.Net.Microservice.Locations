@@ -34,4 +34,18 @@ public class RegionAggregate(Guid id) : AggregateRootBase(id)
         this.UpdatedBy = updatedBy;
         this.UpdatedAt = SystemClock.Instance.GetCurrentInstant();
     }
+
+    /// <summary>
+    /// Marca la región como borrada. Las regiones no publican eventos: los países guardan su nombre como texto y
+    /// nadie más la escucha.
+    /// </summary>
+    public void Delete(Guid deletedBy)
+    {
+        DomainGuard.GuidIsEmpty(deletedBy, Errors.DeleteByIsInvalid);
+
+        this.IsDeleted = true;
+        this.IsActive = false;
+        this.DeletedAt = SystemClock.Instance.GetCurrentInstant();
+        this.DeletedBy = deletedBy;
+    }
 }

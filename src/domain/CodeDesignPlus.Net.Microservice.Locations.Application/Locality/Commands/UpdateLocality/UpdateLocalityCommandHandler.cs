@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Locality.Commands.UpdateLocality;
 
-public class UpdateLocalityCommandHandler(ILocalityRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<UpdateLocalityCommand>
+public class UpdateLocalityCommandHandler(ILocalityRepository repository, IUserContext user, IPubSub pubsub, ICacheManager cache) : IRequestHandler<UpdateLocalityCommand>
 {
     public async Task Handle(UpdateLocalityCommand request, CancellationToken cancellationToken)
     {
@@ -17,6 +17,8 @@ public class UpdateLocalityCommandHandler(ILocalityRepository repository, IUserC
         aggregate.Update(request.IdCity, request.Name, request.IsActive, user.IdUser);
 
         await repository.UpdateAsync(aggregate, cancellationToken);
+
+        await cache.RemoveAsync(CacheKeys.ById(aggregate.Id));
 
         await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }

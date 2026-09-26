@@ -10,4 +10,13 @@ public class CountryRepository(IServiceProvider serviceProvider, IOptions<MongoO
 
         return GetCollection<CountryAggregate>().Find(filter).ToListAsync(cancellationToken);
     }
+
+    public Task<bool> AnyByCurrencyAsync(Guid idCurrency, CancellationToken cancellationToken)
+        => GetCollection<CountryAggregate>().Find(x => x.IdCurrency == idCurrency).AnyAsync(cancellationToken);
+
+    public Task<bool> AnyByTimezoneAsync(string timezone, CancellationToken cancellationToken)
+        => GetCollection<CountryAggregate>().Find(x => x.Timezone == timezone).AnyAsync(cancellationToken);
+
+    public Task<bool> AnyByRegionAsync(string region, CancellationToken cancellationToken)
+        => GetCollection<CountryAggregate>().Find(x => x.Region == region).AnyAsync(cancellationToken);
 }

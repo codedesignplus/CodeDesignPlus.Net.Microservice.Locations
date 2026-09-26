@@ -14,6 +14,7 @@ public class DeleteNeighborhoodCommandHandlerTest
     private readonly Mock<INeighborhoodRepository> repositoryMock;
     private readonly Mock<IUserContext> userContextMock;
     private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<ICacheManager> cacheMock = new();
     private readonly DeleteNeighborhoodCommandHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -22,7 +23,7 @@ public class DeleteNeighborhoodCommandHandlerTest
         repositoryMock = new Mock<INeighborhoodRepository>();
         userContextMock = new Mock<IUserContext>();
         pubSubMock = new Mock<IPubSub>();
-        handler = new DeleteNeighborhoodCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+        handler = new DeleteNeighborhoodCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, cacheMock.Object);
     }
 
     [Fact]

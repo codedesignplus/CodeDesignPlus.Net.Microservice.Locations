@@ -69,4 +69,18 @@ public class RegionController(IMediator mediator, IMapper mapper) : ControllerBa
 
         return NoContent();
     }
+
+    /// <summary>
+    /// Delete an existing Region. It fails if any country uses it.
+    /// </summary>
+    /// <param name="id">The unique identifier of the Region.</param>
+    /// <param name="cancellationToken">Cancellation token.</param>
+    /// <returns>HTTP status code 204 (No Content).</returns>
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteRegion(Guid id, CancellationToken cancellationToken)
+    {
+        await mediator.Send(new DeleteRegionCommand(id), cancellationToken);
+
+        return NoContent();
+    }
 }

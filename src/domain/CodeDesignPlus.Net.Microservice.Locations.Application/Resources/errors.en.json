@@ -29,6 +29,13 @@
     "227": "Decimal digits must be between 0 and 4.",
     "228": "Currency symbol is required.",
     "229": "Currency symbol must not exceed 10 characters.",
-    "230": "The phone code must follow the +XXX format, for example +57, +1 or +44."
+    "230": "The phone code must follow the +XXX format, for example +57, +1 or +44.",
+    "231": "You can't delete this country: it has states. Delete them first.",
+    "232": "You can't delete this state: it has cities. Delete them first.",
+    "233": "You can't delete this city: it has localities. Delete them first.",
+    "234": "You can't delete this locality: it has neighborhoods. Delete them first.",
+    "235": "You can't delete this currency: at least one country uses it.",
+    "236": "You can't delete this time zone: at least one country or city uses it.",
+    "237": "You can't delete this region: at least one country uses it."
   }
 }

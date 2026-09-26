@@ -38,4 +38,13 @@ public class Errors: IErrorCodes
 
     /// <summary>El indicativo telefónico debe seguir el formato +XXX, por ejemplo +57, +1 o +44.</summary>
     public static readonly Error PhoneCodeFormatIsInvalid = new("230");
+
+    /// <summary>Borrar un padre con hijos los dejaba huérfanos (plan 043 de pendings).</summary>
+    public static readonly Error CountryHasStates = new("231");
+    public static readonly Error StateHasCities = new("232");
+    public static readonly Error CityHasLocalities = new("233");
+    public static readonly Error LocalityHasNeighborhoods = new("234");
+    public static readonly Error CurrencyIsInUse = new("235");
+    public static readonly Error TimezoneIsInUse = new("236");
+    public static readonly Error RegionIsInUse = new("237");
 }

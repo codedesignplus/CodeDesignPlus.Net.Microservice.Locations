@@ -9,6 +9,8 @@ public class DeleteStateCommandHandlerTest
     private readonly Mock<IStateRepository> repositoryMock;
     private readonly Mock<IUserContext> userContextMock;
     private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<ICityRepository> citiesMock = new();
+        private readonly Mock<ICacheManager> cacheMock = new();
     private readonly DeleteStateCommandHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -17,7 +19,7 @@ public class DeleteStateCommandHandlerTest
         repositoryMock = new Mock<IStateRepository>();
         userContextMock = new Mock<IUserContext>();
         pubSubMock = new Mock<IPubSub>();
-        handler = new DeleteStateCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+        handler = new DeleteStateCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, citiesMock.Object, cacheMock.Object);
     }
 
     [Fact]

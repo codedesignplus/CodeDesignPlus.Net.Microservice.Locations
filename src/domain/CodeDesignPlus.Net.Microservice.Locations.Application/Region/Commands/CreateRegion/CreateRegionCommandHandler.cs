@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Region.Commands.CreateRegion;
 
-public class CreateRegionCommandHandler(IRegionRepository repository, IUserContext user) : IRequestHandler<CreateRegionCommand>
+public class CreateRegionCommandHandler(IRegionRepository repository, IUserContext user, ICacheManager cache) : IRequestHandler<CreateRegionCommand>
 {
     public async Task Handle(CreateRegionCommand request, CancellationToken cancellationToken)
     {
@@ -13,5 +13,7 @@ public class CreateRegionCommandHandler(IRegionRepository repository, IUserConte
         var region = RegionAggregate.Create(request.Id, request.Name, request.SubRegions, request.IsActive, user.IdUser);
 
         await repository.CreateAsync(region, cancellationToken);
+
+        await cache.RemoveAsync(CacheKeys.ById(region.Id));
     }
 }

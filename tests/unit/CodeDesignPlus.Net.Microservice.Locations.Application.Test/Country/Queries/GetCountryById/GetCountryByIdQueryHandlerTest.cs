@@ -40,8 +40,8 @@ public class GetCountryByIdQueryHandlerTest
         // Arrange
         var request = new GetCountryByIdQuery(fakeData.Country.Id);
         var cachedCountry = new CountryDto();
-        cacheManagerMock.Setup(x => x.ExistsAsync(request.Id.ToString())).ReturnsAsync(true);
-        cacheManagerMock.Setup(x => x.GetAsync<CountryDto>(request.Id.ToString())).ReturnsAsync(cachedCountry);
+        cacheManagerMock.Setup(x => x.ExistsAsync(CacheKeys.CountryById(request.Id))).ReturnsAsync(true);
+        cacheManagerMock.Setup(x => x.GetAsync<CountryDto>(CacheKeys.CountryById(request.Id))).ReturnsAsync(cachedCountry);
 
         // Act
         var result = await handler.Handle(request, CancellationToken.None);
@@ -58,7 +58,7 @@ public class GetCountryByIdQueryHandlerTest
         var request = new GetCountryByIdQuery(fakeData.Country.Id);
         var countryAggregate = fakeData.CountryAggregate;
         var countryDto = fakeData.Country;
-        cacheManagerMock.Setup(x => x.ExistsAsync(request.Id.ToString())).ReturnsAsync(false);
+        cacheManagerMock.Setup(x => x.ExistsAsync(CacheKeys.CountryById(request.Id))).ReturnsAsync(false);
         repositoryMock.Setup(x => x.FindAsync<CountryAggregate>(request.Id, It.IsAny<CancellationToken>())).ReturnsAsync(countryAggregate);
         mapperMock.Setup(x => x.Map<CountryDto>(countryAggregate)).Returns(countryDto);
 
@@ -67,7 +67,7 @@ public class GetCountryByIdQueryHandlerTest
 
         // Assert
         Assert.Equal(countryDto, result);
-        cacheManagerMock.Verify(x => x.SetAsync(request.Id.ToString(), countryDto, It.IsAny<TimeSpan?>()), Times.Once);
+        cacheManagerMock.Verify(x => x.SetAsync(CacheKeys.CountryById(request.Id), countryDto, It.IsAny<TimeSpan?>()), Times.Once);
     }
 
     [Fact]
@@ -75,7 +75,7 @@ public class GetCountryByIdQueryHandlerTest
     {
         // Arrange
         var request = new GetCountryByIdQuery(fakeData.Country.Id);
-        cacheManagerMock.Setup(x => x.ExistsAsync(request.Id.ToString())).ReturnsAsync(false);
+        cacheManagerMock.Setup(x => x.ExistsAsync(CacheKeys.CountryById(request.Id))).ReturnsAsync(false);
         repositoryMock.Setup(x => x.FindAsync<CountryAggregate>(request.Id, It.IsAny<CancellationToken>())).ReturnsAsync((CountryAggregate)null!);
 
         // Act & Assert

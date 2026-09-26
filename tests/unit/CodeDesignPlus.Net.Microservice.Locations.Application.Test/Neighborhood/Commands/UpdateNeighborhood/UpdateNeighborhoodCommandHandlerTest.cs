@@ -9,6 +9,7 @@ public class UpdateNeighborhoodCommandHandlerTest
     private readonly Mock<INeighborhoodRepository> repositoryMock;
     private readonly Mock<IUserContext> userContextMock;
     private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<ICacheManager> cacheMock = new();
     private readonly UpdateNeighborhoodCommandHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -17,7 +18,7 @@ public class UpdateNeighborhoodCommandHandlerTest
         repositoryMock = new Mock<INeighborhoodRepository>();
         userContextMock = new Mock<IUserContext>();
         pubSubMock = new Mock<IPubSub>();
-        handler = new UpdateNeighborhoodCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+        handler = new UpdateNeighborhoodCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, cacheMock.Object);
     }
 
     [Fact]

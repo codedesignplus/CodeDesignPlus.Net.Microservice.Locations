@@ -40,7 +40,7 @@ public class GetAllCurrenciesQueryHandlerTest
     public async Task Handle_ValidRequest_ReturnsMappedCurrencies()
     {
         // Arrange
-        var request = new GetAllCurrenciesQuery(null!);
+        var request = new GetAllCurrenciesQuery(new C.Criteria { Filters = "Code=COP", Limit = 10 });
         var currencyAggregates = new List<CurrencyAggregate> { fakeData.CurrencyAggregate };
         var currencyDtos = new List<CurrencyDto> { fakeData.Currency };
 

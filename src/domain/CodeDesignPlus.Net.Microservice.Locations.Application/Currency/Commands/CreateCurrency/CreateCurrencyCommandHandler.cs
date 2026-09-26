@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Commands.CreateCurrency;
 
-public class CreateCurrencyCommandHandler(ICurrencyRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<CreateCurrencyCommand>
+public class CreateCurrencyCommandHandler(ICurrencyRepository repository, IUserContext user, IPubSub pubsub, ICacheManager cache) : IRequestHandler<CreateCurrencyCommand>
 {
     public async Task Handle(CreateCurrencyCommand request, CancellationToken cancellationToken)
     {
@@ -13,6 +13,10 @@ public class CreateCurrencyCommandHandler(ICurrencyRepository repository, IUserC
         var currency = CurrencyAggregate.Create(request.Id, request.Code, request.NumericCode, request.DecimalDigits, request.Symbol, request.Name, user.IdUser);
 
         await repository.CreateAsync(currency, cancellationToken);
+
+        await cache.RemoveAsync(CacheKeys.CurrencyById(currency.Id));
+
+        await cache.RemoveAsync(CacheKeys.AllCurrencies);
 
         await pubsub.PublishAsync(currency.GetAndClearEvents(), cancellationToken);
     }

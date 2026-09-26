@@ -9,6 +9,8 @@ public class DeleteCountryCommandHandlerTest
     private readonly Mock<ICountryRepository> repositoryMock;
     private readonly Mock<IUserContext> userContextMock;
     private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<IStateRepository> statesMock = new();
+        private readonly Mock<ICacheManager> cacheMock = new();
     private readonly DeleteCountryCommandHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -17,7 +19,7 @@ public class DeleteCountryCommandHandlerTest
         repositoryMock = new Mock<ICountryRepository>();
         userContextMock = new Mock<IUserContext>();
         pubSubMock = new Mock<IPubSub>();
-        handler = new DeleteCountryCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+        handler = new DeleteCountryCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, statesMock.Object, cacheMock.Object);
     }
 
     [Fact]

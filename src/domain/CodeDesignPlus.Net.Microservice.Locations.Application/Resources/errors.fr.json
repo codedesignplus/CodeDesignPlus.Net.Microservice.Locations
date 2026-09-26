@@ -29,6 +29,13 @@
     "227": "Le nombre de décimales doit être compris entre 0 et 4.",
     "228": "Le symbole de la devise est obligatoire.",
     "229": "Le symbole de la devise ne peut pas dépasser 10 caractères.",
-    "230": "L'indicatif téléphonique doit suivre le format +XXX, par exemple +57, +1 ou +44."
+    "230": "L'indicatif téléphonique doit suivre le format +XXX, par exemple +57, +1 ou +44.",
+    "231": "Impossible de supprimer ce pays : il contient des états. Supprimez-les d'abord.",
+    "232": "Impossible de supprimer cet état : il contient des villes. Supprimez-les d'abord.",
+    "233": "Impossible de supprimer cette ville : elle contient des localités. Supprimez-les d'abord.",
+    "234": "Impossible de supprimer cette localité : elle contient des quartiers. Supprimez-les d'abord.",
+    "235": "Impossible de supprimer cette devise : au moins un pays l'utilise.",
+    "236": "Impossible de supprimer ce fuseau horaire : au moins un pays ou une ville l'utilise.",
+    "237": "Impossible de supprimer cette région : au moins un pays l'utilise."
   }
 }

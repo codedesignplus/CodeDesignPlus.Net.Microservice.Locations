@@ -13,6 +13,7 @@ public class CreateCurrencyCommandHandlerTest
     private readonly Mock<ICurrencyRepository> repositoryMock;
     private readonly Mock<IUserContext> userContextMock;
     private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<ICacheManager> cacheMock = new();
     private readonly CreateCurrencyCommandHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -21,7 +22,7 @@ public class CreateCurrencyCommandHandlerTest
         repositoryMock = new Mock<ICurrencyRepository>();
         userContextMock = new Mock<IUserContext>();
         pubSubMock = new Mock<IPubSub>();
-        handler = new CreateCurrencyCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+        handler = new CreateCurrencyCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, cacheMock.Object);
     }
 
     [Fact]

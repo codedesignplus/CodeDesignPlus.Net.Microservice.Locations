@@ -4,7 +4,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries
 
 public class GetAllCurrenciesQueryHandler(ICurrencyRepository repository, IMapper mapper, ICacheManager cache) : IRequestHandler<GetAllCurrenciesQuery, Pagination<CurrencyDto>>
 {
-    public const string Key = "GetAllCurrenciesQuery";
+    public const string Key = CacheKeys.AllCurrencies;
 
     public async Task<Pagination<CurrencyDto>> Handle(GetAllCurrenciesQuery request, CancellationToken cancellationToken)
     {

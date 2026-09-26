@@ -1,6 +1,6 @@
 namespace CodeDesignPlus.Net.Microservice.Locations.Application.Locality.Commands.CreateLocality;
 
-public class CreateLocalityCommandHandler(ILocalityRepository repository, IUserContext user, IPubSub pubsub) : IRequestHandler<CreateLocalityCommand>
+public class CreateLocalityCommandHandler(ILocalityRepository repository, IUserContext user, IPubSub pubsub, ICacheManager cache) : IRequestHandler<CreateLocalityCommand>
 {
     public async Task Handle(CreateLocalityCommand request, CancellationToken cancellationToken)
     {
@@ -17,6 +17,8 @@ public class CreateLocalityCommandHandler(ILocalityRepository repository, IUserC
         var aggregate = LocalityAggregate.Create(request.Id, request.IdCity, request.Name, user.IdUser);
 
         await repository.CreateAsync(aggregate, cancellationToken);
+
+        await cache.RemoveAsync(CacheKeys.ById(aggregate.Id));
 
         await pubsub.PublishAsync(aggregate.GetAndClearEvents(), cancellationToken);
     }

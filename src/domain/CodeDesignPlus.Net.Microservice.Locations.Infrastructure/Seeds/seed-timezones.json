@@ -1998,5 +1998,2064 @@
       "-11:00"
     ],
     "currentOffset": "-11:00"
+  },
+  {
+    "id": "c9c4454d-14ba-5b38-8797-600f593d8375",
+    "name": "Africa/Asmara",
+    "aliases": [],
+    "location": {
+      "countryCode": "ER",
+      "countryName": "Eritrea",
+      "latitude": 15.0,
+      "longitude": 39.0
+    },
+    "offsets": [
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "6d2eb0bf-bbfa-59d3-bf3b-9c685660c563",
+    "name": "Africa/Bamako",
+    "aliases": [],
+    "location": {
+      "countryCode": "ML",
+      "countryName": "Mali",
+      "latitude": 17.0,
+      "longitude": -4.0
+    },
+    "offsets": [
+      "+00:00"
+    ],
+    "currentOffset": "+00:00"
+  },
+  {
+    "id": "db5c6381-6d5c-5af9-83b7-3cc71dc6191a",
+    "name": "Africa/Bangui",
+    "aliases": [],
+    "location": {
+      "countryCode": "CF",
+      "countryName": "República Centroafricana",
+      "latitude": 7.0,
+      "longitude": 21.0
+    },
+    "offsets": [
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "eb331a08-6b2a-5011-98f2-fb51b2da1477",
+    "name": "Africa/Banjul",
+    "aliases": [],
+    "location": {
+      "countryCode": "GM",
+      "countryName": "Gambia",
+      "latitude": 13.46666666,
+      "longitude": -16.56666666
+    },
+    "offsets": [
+      "+00:00"
+    ],
+    "currentOffset": "+00:00"
+  },
+  {
+    "id": "3d988bb1-6603-5eb3-ab3a-d9ecdf149d89",
+    "name": "Africa/Bissau",
+    "aliases": [],
+    "location": {
+      "countryCode": "GW",
+      "countryName": "Guinea-Bisáu",
+      "latitude": 12.0,
+      "longitude": -15.0
+    },
+    "offsets": [
+      "+00:00"
+    ],
+    "currentOffset": "+00:00"
+  },
+  {
+    "id": "51c3b70e-8c7b-5103-967b-bcbb946adfd4",
+    "name": "Africa/Blantyre",
+    "aliases": [],
+    "location": {
+      "countryCode": "MW",
+      "countryName": "Malaui",
+      "latitude": -13.5,
+      "longitude": 34.0
+    },
+    "offsets": [
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "101f02db-4ece-59fa-967c-00be55a0587e",
+    "name": "Africa/Brazzaville",
+    "aliases": [],
+    "location": {
+      "countryCode": "CG",
+      "countryName": "Congo",
+      "latitude": -1.0,
+      "longitude": 15.0
+    },
+    "offsets": [
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "1eb71849-b602-5b55-9a9f-cb3b28ccc07c",
+    "name": "Africa/Bujumbura",
+    "aliases": [],
+    "location": {
+      "countryCode": "BI",
+      "countryName": "Burundi",
+      "latitude": -3.5,
+      "longitude": 30.0
+    },
+    "offsets": [
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "c56a24b9-e2b4-5dff-a82f-7e3d4d0cd6b2",
+    "name": "Africa/Conakry",
+    "aliases": [],
+    "location": {
+      "countryCode": "GN",
+      "countryName": "Guinea",
+      "latitude": 11.0,
+      "longitude": -10.0
+    },
+    "offsets": [
+      "+00:00"
+    ],
+    "currentOffset": "+00:00"
+  },
+  {
+    "id": "d10ff5d0-bbc4-52de-bee9-1fd87856e2b8",
+    "name": "Africa/Djibouti",
+    "aliases": [],
+    "location": {
+      "countryCode": "DJ",
+      "countryName": "Yibuti",
+      "latitude": 11.5,
+      "longitude": 43.0
+    },
+    "offsets": [
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "a0af3a44-d08f-577f-ad78-08b22ae183f4",
+    "name": "Africa/Douala",
+    "aliases": [],
+    "location": {
+      "countryCode": "CM",
+      "countryName": "Camerún",
+      "latitude": 6.0,
+      "longitude": 12.0
+    },
+    "offsets": [
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "dee1f89a-2dfc-50fa-b2e7-5e2bf2d72b48",
+    "name": "Africa/El_Aaiun",
+    "aliases": [],
+    "location": {
+      "countryCode": "EH",
+      "countryName": "Sáhara Occidental",
+      "latitude": 24.5,
+      "longitude": -13.0
+    },
+    "offsets": [
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "fd18a1cc-49a0-5241-96a9-04e1b08d81f5",
+    "name": "Africa/Freetown",
+    "aliases": [],
+    "location": {
+      "countryCode": "SL",
+      "countryName": "Sierra Leona",
+      "latitude": 8.5,
+      "longitude": -11.5
+    },
+    "offsets": [
+      "+00:00"
+    ],
+    "currentOffset": "+00:00"
+  },
+  {
+    "id": "f71635a7-9997-5560-b2fd-ebc84f020656",
+    "name": "Africa/Juba",
+    "aliases": [],
+    "location": {
+      "countryCode": "SS",
+      "countryName": "Sudán del Sur",
+      "latitude": 7.0,
+      "longitude": 30.0
+    },
+    "offsets": [
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "cb685fc7-780a-5cc6-8acf-e7367a496a3e",
+    "name": "Africa/Kigali",
+    "aliases": [],
+    "location": {
+      "countryCode": "RW",
+      "countryName": "Ruanda",
+      "latitude": -2.0,
+      "longitude": 30.0
+    },
+    "offsets": [
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "9b52a694-5e3b-5d2c-80b6-0f9ac77c5a59",
+    "name": "Africa/Kinshasa",
+    "aliases": [],
+    "location": {
+      "countryCode": "CD",
+      "countryName": "República Democrática del Congo",
+      "latitude": 0.0,
+      "longitude": 25.0
+    },
+    "offsets": [
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "7b54cd9f-d0e7-5097-9cfa-0dbb4c07cdd8",
+    "name": "Africa/Libreville",
+    "aliases": [],
+    "location": {
+      "countryCode": "GA",
+      "countryName": "Gabón",
+      "latitude": -1.0,
+      "longitude": 11.75
+    },
+    "offsets": [
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "af85a654-1bd8-5ad4-acbd-e15e056d69e2",
+    "name": "Africa/Lome",
+    "aliases": [],
+    "location": {
+      "countryCode": "TG",
+      "countryName": "Togo",
+      "latitude": 8.0,
+      "longitude": 1.16666666
+    },
+    "offsets": [
+      "+00:00"
+    ],
+    "currentOffset": "+00:00"
+  },
+  {
+    "id": "353da8e3-5c9f-50cf-9b90-bffc7e2b0819",
+    "name": "Africa/Luanda",
+    "aliases": [],
+    "location": {
+      "countryCode": "AO",
+      "countryName": "Angola",
+      "latitude": -12.5,
+      "longitude": 18.5
+    },
+    "offsets": [
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "e85c00f8-19c7-52dd-8656-563c0ccbbaca",
+    "name": "Africa/Malabo",
+    "aliases": [],
+    "location": {
+      "countryCode": "GQ",
+      "countryName": "Guinea Ecuatorial",
+      "latitude": 2.0,
+      "longitude": 10.0
+    },
+    "offsets": [
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "97b84157-38b6-533a-9b5a-1d41d04c3743",
+    "name": "Africa/Maseru",
+    "aliases": [],
+    "location": {
+      "countryCode": "LS",
+      "countryName": "Lesoto",
+      "latitude": -29.5,
+      "longitude": 28.5
+    },
+    "offsets": [
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "da571d14-713d-51da-bac8-75028a27885e",
+    "name": "Africa/Mbabane",
+    "aliases": [],
+    "location": {
+      "countryCode": "SZ",
+      "countryName": "Esuatini",
+      "latitude": -26.5,
+      "longitude": 31.5
+    },
+    "offsets": [
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "e9904a8a-1269-5a84-8f84-1ab373417feb",
+    "name": "Africa/Mogadishu",
+    "aliases": [],
+    "location": {
+      "countryCode": "SO",
+      "countryName": "Somalia",
+      "latitude": 10.0,
+      "longitude": 49.0
+    },
+    "offsets": [
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "ee1238cd-a35e-5a3b-9647-a790d0ad007f",
+    "name": "Africa/Monrovia",
+    "aliases": [],
+    "location": {
+      "countryCode": "LR",
+      "countryName": "Liberia",
+      "latitude": 6.5,
+      "longitude": -9.5
+    },
+    "offsets": [
+      "+00:00"
+    ],
+    "currentOffset": "+00:00"
+  },
+  {
+    "id": "b799297b-2ffa-5e5b-9e51-68c94bd23ac2",
+    "name": "Africa/Ndjamena",
+    "aliases": [],
+    "location": {
+      "countryCode": "TD",
+      "countryName": "Chad",
+      "latitude": 15.0,
+      "longitude": 19.0
+    },
+    "offsets": [
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "6d6576a5-7b72-58cd-a274-9ab8d241a070",
+    "name": "Africa/Niamey",
+    "aliases": [],
+    "location": {
+      "countryCode": "NE",
+      "countryName": "Níger",
+      "latitude": 16.0,
+      "longitude": 8.0
+    },
+    "offsets": [
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "ade01fdb-b587-515b-8e23-797775f5bbcf",
+    "name": "Africa/Nouakchott",
+    "aliases": [],
+    "location": {
+      "countryCode": "MR",
+      "countryName": "Mauritania",
+      "latitude": 20.0,
+      "longitude": -12.0
+    },
+    "offsets": [
+      "+00:00"
+    ],
+    "currentOffset": "+00:00"
+  },
+  {
+    "id": "c563ca73-eece-5202-ac75-bdefb118911f",
+    "name": "Africa/Ouagadougou",
+    "aliases": [],
+    "location": {
+      "countryCode": "BF",
+      "countryName": "Burkina Faso",
+      "latitude": 13.0,
+      "longitude": -2.0
+    },
+    "offsets": [
+      "+00:00"
+    ],
+    "currentOffset": "+00:00"
+  },
+  {
+    "id": "ae906bc7-4658-5b9e-bec9-3a0965102339",
+    "name": "Africa/Porto-Novo",
+    "aliases": [],
+    "location": {
+      "countryCode": "BJ",
+      "countryName": "Benín",
+      "latitude": 9.5,
+      "longitude": 2.25
+    },
+    "offsets": [
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "e8d76e44-45dc-5214-b547-fc2377d110ce",
+    "name": "Africa/Sao_Tome",
+    "aliases": [],
+    "location": {
+      "countryCode": "ST",
+      "countryName": "Santo Tomé y Príncipe",
+      "latitude": 1.0,
+      "longitude": 7.0
+    },
+    "offsets": [
+      "+00:00"
+    ],
+    "currentOffset": "+00:00"
+  },
+  {
+    "id": "ab6ff242-c497-58c7-872c-78a75de09f13",
+    "name": "America/Anguilla",
+    "aliases": [],
+    "location": {
+      "countryCode": "AI",
+      "countryName": "Anguila",
+      "latitude": 18.25,
+      "longitude": -63.16666666
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "5360b87a-ef2e-516d-9ae2-a4a507eb9ea0",
+    "name": "America/Antigua",
+    "aliases": [],
+    "location": {
+      "countryCode": "AG",
+      "countryName": "Antigua y Barbuda",
+      "latitude": 17.05,
+      "longitude": -61.8
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "e998afaa-9e98-569f-8a64-55a0ba4bee6d",
+    "name": "America/Aruba",
+    "aliases": [],
+    "location": {
+      "countryCode": "AW",
+      "countryName": "Aruba",
+      "latitude": 12.5,
+      "longitude": -69.96666666
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "2244a496-6f5b-5bb5-a763-6650927d0a39",
+    "name": "America/Barbados",
+    "aliases": [],
+    "location": {
+      "countryCode": "BB",
+      "countryName": "Barbados",
+      "latitude": 13.16666666,
+      "longitude": -59.53333333
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "aa67edef-c396-55bb-91a8-b85396296317",
+    "name": "America/Cayman",
+    "aliases": [],
+    "location": {
+      "countryCode": "KY",
+      "countryName": "Islas Caimán",
+      "latitude": 19.5,
+      "longitude": -80.5
+    },
+    "offsets": [
+      "-05:00"
+    ],
+    "currentOffset": "-05:00"
+  },
+  {
+    "id": "b5e7a18a-cfd2-559f-b34a-fbb111f73ed6",
+    "name": "America/Curacao",
+    "aliases": [],
+    "location": {
+      "countryCode": "CW",
+      "countryName": "Curazao",
+      "latitude": 12.116667,
+      "longitude": -68.933333
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "50b620ed-e933-5b6c-b926-c0a79262a1d9",
+    "name": "America/Dominica",
+    "aliases": [],
+    "location": {
+      "countryCode": "DM",
+      "countryName": "Dominica",
+      "latitude": 15.41666666,
+      "longitude": -61.33333333
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "970b4da7-dada-51d7-be8e-e7745d7fe1de",
+    "name": "America/Godthab",
+    "aliases": [],
+    "location": {
+      "countryCode": "GL",
+      "countryName": "Groenlandia",
+      "latitude": 72.0,
+      "longitude": -40.0
+    },
+    "offsets": [
+      "-02:00",
+      "-01:00"
+    ],
+    "currentOffset": "-01:00"
+  },
+  {
+    "id": "da10c90f-8ab4-5248-bcc8-d076d1b443cf",
+    "name": "America/Grand_Turk",
+    "aliases": [],
+    "location": {
+      "countryCode": "TC",
+      "countryName": "Islas Turcas y Caicos",
+      "latitude": 21.75,
+      "longitude": -71.58333333
+    },
+    "offsets": [
+      "-05:00",
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "4957e6be-2463-5888-932a-0abb4de1dffd",
+    "name": "America/Grenada",
+    "aliases": [],
+    "location": {
+      "countryCode": "GD",
+      "countryName": "Granada",
+      "latitude": 12.11666666,
+      "longitude": -61.66666666
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "1c85ad5a-8474-53f9-8403-278cbc3396a7",
+    "name": "America/Guadeloupe",
+    "aliases": [],
+    "location": {
+      "countryCode": "GP",
+      "countryName": "Guadalupe",
+      "latitude": 16.25,
+      "longitude": -61.583333
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "69437287-443f-5cdb-a7bc-355af25ed68c",
+    "name": "America/Kralendijk",
+    "aliases": [],
+    "location": {
+      "countryCode": "BQ",
+      "countryName": "Caribe neerlandés",
+      "latitude": 12.18,
+      "longitude": -68.25
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "61c997dc-ef99-5194-aa80-8b21ad11d130",
+    "name": "America/Lower_Princes",
+    "aliases": [],
+    "location": {
+      "countryCode": "SX",
+      "countryName": "Sint Maarten",
+      "latitude": 18.033333,
+      "longitude": -63.05
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "3d9b208a-582b-55f0-844f-499f9dcfb48a",
+    "name": "America/Marigot",
+    "aliases": [],
+    "location": {
+      "countryCode": "MF",
+      "countryName": "San Martín",
+      "latitude": 18.08333333,
+      "longitude": -63.95
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "a402c36a-0ba1-5da1-8a06-e6fdf0bc0d54",
+    "name": "America/Martinique",
+    "aliases": [],
+    "location": {
+      "countryCode": "MQ",
+      "countryName": "Martinica",
+      "latitude": 14.666667,
+      "longitude": -61.0
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "c8bacd32-77ef-5839-a817-54dcba0a3d57",
+    "name": "America/Miquelon",
+    "aliases": [],
+    "location": {
+      "countryCode": "PM",
+      "countryName": "San Pedro y Miquelón",
+      "latitude": 46.83333333,
+      "longitude": -56.33333333
+    },
+    "offsets": [
+      "-03:00",
+      "-02:00"
+    ],
+    "currentOffset": "-02:00"
+  },
+  {
+    "id": "77f2cfec-0a32-5385-a40a-efc56d316587",
+    "name": "America/Montserrat",
+    "aliases": [],
+    "location": {
+      "countryCode": "MS",
+      "countryName": "Montserrat",
+      "latitude": 16.75,
+      "longitude": -62.2
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "78b0ca7a-3b7c-5b1a-ba31-5368c9b25440",
+    "name": "America/Nassau",
+    "aliases": [],
+    "location": {
+      "countryCode": "BS",
+      "countryName": "Bahamas",
+      "latitude": 24.25,
+      "longitude": -76.0
+    },
+    "offsets": [
+      "-05:00",
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "3a445bbd-682d-5f78-af86-d588242f9f82",
+    "name": "America/Port_of_Spain",
+    "aliases": [],
+    "location": {
+      "countryCode": "TT",
+      "countryName": "Trinidad y Tobago",
+      "latitude": 11.0,
+      "longitude": -61.0
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "e78c21a4-c60b-5cb5-9523-14b261959de4",
+    "name": "America/Puerto_Rico",
+    "aliases": [],
+    "location": {
+      "countryCode": "PR",
+      "countryName": "Puerto Rico",
+      "latitude": 18.25,
+      "longitude": -66.5
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "48d03462-59c5-5942-a2d8-1b9a7d29dc2f",
+    "name": "America/St_Barthelemy",
+    "aliases": [],
+    "location": {
+      "countryCode": "BL",
+      "countryName": "San Bartolomé",
+      "latitude": 18.5,
+      "longitude": -63.41666666
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "2849207d-ecaa-5f36-a73b-11a2fd268d9b",
+    "name": "America/St_Kitts",
+    "aliases": [],
+    "location": {
+      "countryCode": "KN",
+      "countryName": "San Cristóbal y Nieves",
+      "latitude": 17.33333333,
+      "longitude": -62.75
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "452a76aa-fc8d-5961-8b6c-217a96030068",
+    "name": "America/St_Lucia",
+    "aliases": [],
+    "location": {
+      "countryCode": "LC",
+      "countryName": "Santa Lucía",
+      "latitude": 13.88333333,
+      "longitude": -60.96666666
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "5ca40453-286a-5933-957f-c6982a7fd9af",
+    "name": "America/St_Thomas",
+    "aliases": [],
+    "location": {
+      "countryCode": "VI",
+      "countryName": "Islas Vírgenes de EE. UU.",
+      "latitude": 18.35,
+      "longitude": -64.933333
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "aa72bd7b-de95-5479-b932-27e18564893a",
+    "name": "America/St_Vincent",
+    "aliases": [],
+    "location": {
+      "countryCode": "VC",
+      "countryName": "San Vicente y las Granadinas",
+      "latitude": 13.25,
+      "longitude": -61.2
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "213e2713-f76b-56a6-aaf5-55f80c5dc0b3",
+    "name": "America/Tortola",
+    "aliases": [],
+    "location": {
+      "countryCode": "VG",
+      "countryName": "Islas Vírgenes Británicas",
+      "latitude": 18.431383,
+      "longitude": -64.62305
+    },
+    "offsets": [
+      "-04:00"
+    ],
+    "currentOffset": "-04:00"
+  },
+  {
+    "id": "2c90154f-eac3-59f4-98db-1f5fe457a3d6",
+    "name": "Antarctica/McMurdo",
+    "aliases": [],
+    "location": {
+      "countryCode": "AQ",
+      "countryName": "Antártida",
+      "latitude": -90.0,
+      "longitude": 0.0
+    },
+    "offsets": [
+      "+13:00",
+      "+12:00"
+    ],
+    "currentOffset": "+12:00"
+  },
+  {
+    "id": "74997ad2-6c7a-54f3-8010-2fd42ac92048",
+    "name": "Arctic/Longyearbyen",
+    "aliases": [],
+    "location": {
+      "countryCode": "SJ",
+      "countryName": "Svalbard y Jan Mayen",
+      "latitude": 78.0,
+      "longitude": 20.0
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "d1d964f3-2a84-5d13-865d-f05f8b3550ef",
+    "name": "Asia/Aden",
+    "aliases": [],
+    "location": {
+      "countryCode": "YE",
+      "countryName": "Yemen",
+      "latitude": 15.0,
+      "longitude": 48.0
+    },
+    "offsets": [
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "8e8e9ae2-ac6f-52e8-b7f5-0005468ddaf2",
+    "name": "Asia/Ashgabat",
+    "aliases": [],
+    "location": {
+      "countryCode": "TM",
+      "countryName": "Turkmenistán",
+      "latitude": 40.0,
+      "longitude": 60.0
+    },
+    "offsets": [
+      "+05:00"
+    ],
+    "currentOffset": "+05:00"
+  },
+  {
+    "id": "44adc986-d2d9-5561-a4f4-ec3744f67184",
+    "name": "Asia/Baku",
+    "aliases": [],
+    "location": {
+      "countryCode": "AZ",
+      "countryName": "Azerbaiyán",
+      "latitude": 40.5,
+      "longitude": 47.5
+    },
+    "offsets": [
+      "+04:00"
+    ],
+    "currentOffset": "+04:00"
+  },
+  {
+    "id": "ad299f29-c406-5762-a3d0-d47b294171c1",
+    "name": "Asia/Bishkek",
+    "aliases": [],
+    "location": {
+      "countryCode": "KG",
+      "countryName": "Kirguistán",
+      "latitude": 41.0,
+      "longitude": 75.0
+    },
+    "offsets": [
+      "+06:00"
+    ],
+    "currentOffset": "+06:00"
+  },
+  {
+    "id": "fd944cbe-5225-5dba-b1b2-09d331c61227",
+    "name": "Asia/Brunei",
+    "aliases": [],
+    "location": {
+      "countryCode": "BN",
+      "countryName": "Brunéi",
+      "latitude": 4.5,
+      "longitude": 114.66666666
+    },
+    "offsets": [
+      "+08:00"
+    ],
+    "currentOffset": "+08:00"
+  },
+  {
+    "id": "bd5d0ee9-2b45-5c26-aed8-65c16b58e47f",
+    "name": "Asia/Dili",
+    "aliases": [],
+    "location": {
+      "countryCode": "TL",
+      "countryName": "Timor-Leste",
+      "latitude": -8.83333333,
+      "longitude": 125.91666666
+    },
+    "offsets": [
+      "+09:00"
+    ],
+    "currentOffset": "+09:00"
+  },
+  {
+    "id": "bb4b3d9d-1599-5ddc-b543-0d2a066ceda7",
+    "name": "Asia/Dushanbe",
+    "aliases": [],
+    "location": {
+      "countryCode": "TJ",
+      "countryName": "Tayikistán",
+      "latitude": 39.0,
+      "longitude": 71.0
+    },
+    "offsets": [
+      "+05:00"
+    ],
+    "currentOffset": "+05:00"
+  },
+  {
+    "id": "2d712116-e1f6-557d-b4cf-3d4a08e1d461",
+    "name": "Asia/Gaza",
+    "aliases": [],
+    "location": {
+      "countryCode": "PS",
+      "countryName": "Territorios Palestinos",
+      "latitude": 31.9,
+      "longitude": 35.2
+    },
+    "offsets": [
+      "+02:00",
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "f7898ffc-0869-58eb-92d3-6ce95cf0fbf1",
+    "name": "Asia/Macau",
+    "aliases": [],
+    "location": {
+      "countryCode": "MO",
+      "countryName": "RAE de Macao (China)",
+      "latitude": 22.16666666,
+      "longitude": 113.55
+    },
+    "offsets": [
+      "+08:00"
+    ],
+    "currentOffset": "+08:00"
+  },
+  {
+    "id": "65d376d0-735c-5597-97c4-81cea34d7bc8",
+    "name": "Asia/Nicosia",
+    "aliases": [],
+    "location": {
+      "countryCode": "CY",
+      "countryName": "Chipre",
+      "latitude": 35.0,
+      "longitude": 33.0
+    },
+    "offsets": [
+      "+02:00",
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "27a81c0c-e8d7-524f-9735-cc415f8aeaeb",
+    "name": "Asia/Phnom_Penh",
+    "aliases": [],
+    "location": {
+      "countryCode": "KH",
+      "countryName": "Camboya",
+      "latitude": 13.0,
+      "longitude": 105.0
+    },
+    "offsets": [
+      "+07:00"
+    ],
+    "currentOffset": "+07:00"
+  },
+  {
+    "id": "23ff03d6-560a-5880-8ab9-37ac84eb9a2c",
+    "name": "Asia/Pyongyang",
+    "aliases": [],
+    "location": {
+      "countryCode": "KP",
+      "countryName": "Corea del Norte",
+      "latitude": 40.0,
+      "longitude": 127.0
+    },
+    "offsets": [
+      "+09:00"
+    ],
+    "currentOffset": "+09:00"
+  },
+  {
+    "id": "bdcb42cb-ac19-5840-899c-39d11586d866",
+    "name": "Asia/Tbilisi",
+    "aliases": [],
+    "location": {
+      "countryCode": "GE",
+      "countryName": "Georgia",
+      "latitude": 42.0,
+      "longitude": 43.5
+    },
+    "offsets": [
+      "+04:00"
+    ],
+    "currentOffset": "+04:00"
+  },
+  {
+    "id": "83db820a-9df7-5c57-83c7-e2ce2faf1ee2",
+    "name": "Asia/Thimphu",
+    "aliases": [],
+    "location": {
+      "countryCode": "BT",
+      "countryName": "Bután",
+      "latitude": 27.5,
+      "longitude": 90.5
+    },
+    "offsets": [
+      "+06:00"
+    ],
+    "currentOffset": "+06:00"
+  },
+  {
+    "id": "3fe2e1af-33e5-57d9-b946-cac3977e5c0e",
+    "name": "Asia/Ulaanbaatar",
+    "aliases": [],
+    "location": {
+      "countryCode": "MN",
+      "countryName": "Mongolia",
+      "latitude": 46.0,
+      "longitude": 105.0
+    },
+    "offsets": [
+      "+08:00"
+    ],
+    "currentOffset": "+08:00"
+  },
+  {
+    "id": "0cdcb1fd-2ec0-5944-ab01-ff0a2b8d8765",
+    "name": "Asia/Vientiane",
+    "aliases": [],
+    "location": {
+      "countryCode": "LA",
+      "countryName": "Laos",
+      "latitude": 18.0,
+      "longitude": 105.0
+    },
+    "offsets": [
+      "+07:00"
+    ],
+    "currentOffset": "+07:00"
+  },
+  {
+    "id": "8e351944-826e-50ef-9fa8-9bcde777681c",
+    "name": "Asia/Yerevan",
+    "aliases": [],
+    "location": {
+      "countryCode": "AM",
+      "countryName": "Armenia",
+      "latitude": 40.0,
+      "longitude": 45.0
+    },
+    "offsets": [
+      "+04:00"
+    ],
+    "currentOffset": "+04:00"
+  },
+  {
+    "id": "014e0b51-f72d-57d3-aec9-31cdf3d20e39",
+    "name": "Atlantic/Bermuda",
+    "aliases": [],
+    "location": {
+      "countryCode": "BM",
+      "countryName": "Bermudas",
+      "latitude": 32.33333333,
+      "longitude": -64.75
+    },
+    "offsets": [
+      "-04:00",
+      "-03:00"
+    ],
+    "currentOffset": "-03:00"
+  },
+  {
+    "id": "93d789b0-9059-50d8-80e7-e92beb820831",
+    "name": "Atlantic/Cape_Verde",
+    "aliases": [],
+    "location": {
+      "countryCode": "CV",
+      "countryName": "Cabo Verde",
+      "latitude": 16.0,
+      "longitude": -24.0
+    },
+    "offsets": [
+      "-01:00"
+    ],
+    "currentOffset": "-01:00"
+  },
+  {
+    "id": "1c5d8b90-e8ee-5f86-be39-f2fdd565b228",
+    "name": "Atlantic/Faroe",
+    "aliases": [],
+    "location": {
+      "countryCode": "FO",
+      "countryName": "Islas Feroe",
+      "latitude": 62.0,
+      "longitude": -7.0
+    },
+    "offsets": [
+      "+00:00",
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "d6c89ff6-e0b4-5035-9584-d02642a7f601",
+    "name": "Atlantic/Reykjavik",
+    "aliases": [],
+    "location": {
+      "countryCode": "IS",
+      "countryName": "Islandia",
+      "latitude": 65.0,
+      "longitude": -18.0
+    },
+    "offsets": [
+      "+00:00"
+    ],
+    "currentOffset": "+00:00"
+  },
+  {
+    "id": "ad0484e6-2126-5479-9340-ec1d23e05a44",
+    "name": "Atlantic/South_Georgia",
+    "aliases": [],
+    "location": {
+      "countryCode": "GS",
+      "countryName": "Islas Georgia del Sur y Sandwich del Sur",
+      "latitude": -54.5,
+      "longitude": -37.0
+    },
+    "offsets": [
+      "-02:00"
+    ],
+    "currentOffset": "-02:00"
+  },
+  {
+    "id": "4035b2c7-ba00-5e44-acaf-00d87e35d1f6",
+    "name": "Atlantic/St_Helena",
+    "aliases": [],
+    "location": {
+      "countryCode": "SH",
+      "countryName": "Santa Elena",
+      "latitude": -15.95,
+      "longitude": -5.72
+    },
+    "offsets": [
+      "+00:00"
+    ],
+    "currentOffset": "+00:00"
+  },
+  {
+    "id": "9e618b97-9925-5beb-a94a-6c8a9e828d65",
+    "name": "Atlantic/Stanley",
+    "aliases": [],
+    "location": {
+      "countryCode": "FK",
+      "countryName": "Islas Malvinas",
+      "latitude": -51.75,
+      "longitude": -59.0
+    },
+    "offsets": [
+      "-03:00"
+    ],
+    "currentOffset": "-03:00"
+  },
+  {
+    "id": "4e9a8845-f336-566b-9761-2f1f1ba6993a",
+    "name": "Europe/Andorra",
+    "aliases": [],
+    "location": {
+      "countryCode": "AD",
+      "countryName": "Andorra",
+      "latitude": 42.5,
+      "longitude": 1.5
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "13154923-2f30-5af1-93c9-f54c8339dc03",
+    "name": "Europe/Belgrade",
+    "aliases": [],
+    "location": {
+      "countryCode": "XK",
+      "countryName": "Kosovo",
+      "latitude": 42.666667,
+      "longitude": 21.166667
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "da164fe4-31e2-582f-bfa8-3ccfb8d647bd",
+    "name": "Europe/Bratislava",
+    "aliases": [],
+    "location": {
+      "countryCode": "SK",
+      "countryName": "Eslovaquia",
+      "latitude": 48.66666666,
+      "longitude": 19.5
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "8b6853c7-fdae-5187-acde-74f16e188232",
+    "name": "Europe/Chisinau",
+    "aliases": [],
+    "location": {
+      "countryCode": "MD",
+      "countryName": "Moldavia",
+      "latitude": 47.0,
+      "longitude": 29.0
+    },
+    "offsets": [
+      "+02:00",
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "6c910eec-327d-5c35-8a7c-2039ee59579c",
+    "name": "Europe/Gibraltar",
+    "aliases": [],
+    "location": {
+      "countryCode": "GI",
+      "countryName": "Gibraltar",
+      "latitude": 36.13333333,
+      "longitude": -5.35
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "d887009c-5fc5-5c79-8e6d-370782f4089c",
+    "name": "Europe/Guernsey",
+    "aliases": [],
+    "location": {
+      "countryCode": "GG",
+      "countryName": "Guernesey",
+      "latitude": 49.46666666,
+      "longitude": -2.58333333
+    },
+    "offsets": [
+      "+00:00",
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "330399d9-4bd2-5db4-884f-ef888d018256",
+    "name": "Europe/Isle_of_Man",
+    "aliases": [],
+    "location": {
+      "countryCode": "IM",
+      "countryName": "Isla de Man",
+      "latitude": 54.25,
+      "longitude": -4.5
+    },
+    "offsets": [
+      "+00:00",
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "34a637b0-34d6-5b08-baec-b2f6dacaac1c",
+    "name": "Europe/Jersey",
+    "aliases": [],
+    "location": {
+      "countryCode": "JE",
+      "countryName": "Jersey",
+      "latitude": 49.25,
+      "longitude": -2.16666666
+    },
+    "offsets": [
+      "+00:00",
+      "+01:00"
+    ],
+    "currentOffset": "+01:00"
+  },
+  {
+    "id": "6aa9adbb-5652-5dfc-a69e-49b1f478f5f6",
+    "name": "Europe/Ljubljana",
+    "aliases": [],
+    "location": {
+      "countryCode": "SI",
+      "countryName": "Eslovenia",
+      "latitude": 46.11666666,
+      "longitude": 14.81666666
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "5f656d5c-8c88-5d52-9cfc-f1fbadbea1e1",
+    "name": "Europe/Luxembourg",
+    "aliases": [],
+    "location": {
+      "countryCode": "LU",
+      "countryName": "Luxemburgo",
+      "latitude": 49.75,
+      "longitude": 6.16666666
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "164d6c3a-6df7-54c9-a26b-7f75980b6c12",
+    "name": "Europe/Malta",
+    "aliases": [],
+    "location": {
+      "countryCode": "MT",
+      "countryName": "Malta",
+      "latitude": 35.83333333,
+      "longitude": 14.58333333
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "2545ba7e-52bb-51b1-a9a6-d3af26fb1d92",
+    "name": "Europe/Minsk",
+    "aliases": [],
+    "location": {
+      "countryCode": "BY",
+      "countryName": "Bielorrusia",
+      "latitude": 53.0,
+      "longitude": 28.0
+    },
+    "offsets": [
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "ab351c48-fa08-52ad-8df6-0cedd2dee3ab",
+    "name": "Europe/Monaco",
+    "aliases": [],
+    "location": {
+      "countryCode": "MC",
+      "countryName": "Mónaco",
+      "latitude": 43.73333333,
+      "longitude": 7.4
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "ed76fa62-9e21-5bff-b50d-f1cd1f745fed",
+    "name": "Europe/Podgorica",
+    "aliases": [],
+    "location": {
+      "countryCode": "ME",
+      "countryName": "Montenegro",
+      "latitude": 42.5,
+      "longitude": 19.3
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "bc44e958-4a79-54d3-bd8f-0dd3000c105f",
+    "name": "Europe/Riga",
+    "aliases": [],
+    "location": {
+      "countryCode": "LV",
+      "countryName": "Letonia",
+      "latitude": 57.0,
+      "longitude": 25.0
+    },
+    "offsets": [
+      "+02:00",
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "51651650-e422-5357-acd2-83ad9d465c95",
+    "name": "Europe/San_Marino",
+    "aliases": [],
+    "location": {
+      "countryCode": "SM",
+      "countryName": "San Marino",
+      "latitude": 43.76666666,
+      "longitude": 12.41666666
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "4d139b8e-475c-5d69-b877-4abfc8ea525c",
+    "name": "Europe/Sarajevo",
+    "aliases": [],
+    "location": {
+      "countryCode": "BA",
+      "countryName": "Bosnia y Herzegovina",
+      "latitude": 44.0,
+      "longitude": 18.0
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "23fd1bf1-ffdb-5795-bbb9-a2360ee67e9d",
+    "name": "Europe/Skopje",
+    "aliases": [],
+    "location": {
+      "countryCode": "MK",
+      "countryName": "Macedonia del Norte",
+      "latitude": 41.83333333,
+      "longitude": 22.0
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "9928879b-3f21-5e34-8f2c-1a9bd675e3e2",
+    "name": "Europe/Tallinn",
+    "aliases": [],
+    "location": {
+      "countryCode": "EE",
+      "countryName": "Estonia",
+      "latitude": 59.0,
+      "longitude": 26.0
+    },
+    "offsets": [
+      "+02:00",
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "0d442052-0d3c-58ff-8190-fbbdbb6400c1",
+    "name": "Europe/Tirane",
+    "aliases": [],
+    "location": {
+      "countryCode": "AL",
+      "countryName": "Albania",
+      "latitude": 41.0,
+      "longitude": 20.0
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "08fdc0d2-d77d-5a9c-8915-4bdacd6b57a2",
+    "name": "Europe/Vaduz",
+    "aliases": [],
+    "location": {
+      "countryCode": "LI",
+      "countryName": "Liechtenstein",
+      "latitude": 47.26666666,
+      "longitude": 9.53333333
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "47148bbc-c1fb-51ad-88ee-64f1f4d306eb",
+    "name": "Europe/Vatican",
+    "aliases": [],
+    "location": {
+      "countryCode": "VA",
+      "countryName": "Ciudad del Vaticano",
+      "latitude": 41.9,
+      "longitude": 12.45
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "04add59b-7d6e-56bd-bcb4-9cbfc5d1b68f",
+    "name": "Europe/Vilnius",
+    "aliases": [],
+    "location": {
+      "countryCode": "LT",
+      "countryName": "Lituania",
+      "latitude": 56.0,
+      "longitude": 24.0
+    },
+    "offsets": [
+      "+02:00",
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "b82d7946-a6ff-5318-a3ea-6f332784f75a",
+    "name": "Europe/Zagreb",
+    "aliases": [],
+    "location": {
+      "countryCode": "HR",
+      "countryName": "Croacia",
+      "latitude": 45.16666666,
+      "longitude": 15.5
+    },
+    "offsets": [
+      "+01:00",
+      "+02:00"
+    ],
+    "currentOffset": "+02:00"
+  },
+  {
+    "id": "09be4a58-3362-56e7-aa91-dddacc712898",
+    "name": "Indian/Antananarivo",
+    "aliases": [],
+    "location": {
+      "countryCode": "MG",
+      "countryName": "Madagascar",
+      "latitude": -20.0,
+      "longitude": 47.0
+    },
+    "offsets": [
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "e1cf8345-a212-566b-ab13-904fb251ee29",
+    "name": "Indian/Chagos",
+    "aliases": [],
+    "location": {
+      "countryCode": "IO",
+      "countryName": "Territorio Británico del Océano Índico",
+      "latitude": -6.0,
+      "longitude": 71.5
+    },
+    "offsets": [
+      "+06:00"
+    ],
+    "currentOffset": "+06:00"
+  },
+  {
+    "id": "c4e4a34e-cdff-5c46-ba6f-764d3e35cae6",
+    "name": "Indian/Christmas",
+    "aliases": [],
+    "location": {
+      "countryCode": "CX",
+      "countryName": "Isla de Navidad",
+      "latitude": -10.5,
+      "longitude": 105.66666666
+    },
+    "offsets": [
+      "+07:00"
+    ],
+    "currentOffset": "+07:00"
+  },
+  {
+    "id": "49c48dcc-32bd-5c7f-8cff-4905a4e60f3c",
+    "name": "Indian/Cocos",
+    "aliases": [],
+    "location": {
+      "countryCode": "CC",
+      "countryName": "Islas Cocos",
+      "latitude": -12.5,
+      "longitude": 96.83333333
+    },
+    "offsets": [
+      "+06:30"
+    ],
+    "currentOffset": "+06:30"
+  },
+  {
+    "id": "db2c23f8-f383-5653-a91b-13efc2bd9221",
+    "name": "Indian/Comoro",
+    "aliases": [],
+    "location": {
+      "countryCode": "KM",
+      "countryName": "Comoras",
+      "latitude": -12.16666666,
+      "longitude": 44.25
+    },
+    "offsets": [
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "c214cd3f-1713-56a0-9205-fe7724d4e702",
+    "name": "Indian/Kerguelen",
+    "aliases": [],
+    "location": {
+      "countryCode": "TF",
+      "countryName": "Territorios Australes Franceses",
+      "latitude": -49.25,
+      "longitude": 69.167
+    },
+    "offsets": [
+      "+05:00"
+    ],
+    "currentOffset": "+05:00"
+  },
+  {
+    "id": "5c0f6c6a-64d8-5b76-a6d3-7ffb62b2a518",
+    "name": "Indian/Mahe",
+    "aliases": [],
+    "location": {
+      "countryCode": "SC",
+      "countryName": "Seychelles",
+      "latitude": -4.58333333,
+      "longitude": 55.66666666
+    },
+    "offsets": [
+      "+04:00"
+    ],
+    "currentOffset": "+04:00"
+  },
+  {
+    "id": "ae9c1545-c9e1-5da2-a982-6b72a9fc7285",
+    "name": "Indian/Maldives",
+    "aliases": [],
+    "location": {
+      "countryCode": "MV",
+      "countryName": "Maldivas",
+      "latitude": 3.25,
+      "longitude": 73.0
+    },
+    "offsets": [
+      "+05:00"
+    ],
+    "currentOffset": "+05:00"
+  },
+  {
+    "id": "3a7d1958-4b6b-5406-b6a5-e2c7da2123a1",
+    "name": "Indian/Mauritius",
+    "aliases": [],
+    "location": {
+      "countryCode": "MU",
+      "countryName": "Mauricio",
+      "latitude": -20.28333333,
+      "longitude": 57.55
+    },
+    "offsets": [
+      "+04:00"
+    ],
+    "currentOffset": "+04:00"
+  },
+  {
+    "id": "36d88022-c857-5038-9a10-946f01e1928b",
+    "name": "Indian/Mayotte",
+    "aliases": [],
+    "location": {
+      "countryCode": "YT",
+      "countryName": "Mayotte",
+      "latitude": -12.83333333,
+      "longitude": 45.16666666
+    },
+    "offsets": [
+      "+03:00"
+    ],
+    "currentOffset": "+03:00"
+  },
+  {
+    "id": "9d741e22-3684-5f5e-aca7-9add2fcf73c7",
+    "name": "Indian/Reunion",
+    "aliases": [],
+    "location": {
+      "countryCode": "RE",
+      "countryName": "Reunión",
+      "latitude": -21.15,
+      "longitude": 55.5
+    },
+    "offsets": [
+      "+04:00"
+    ],
+    "currentOffset": "+04:00"
+  },
+  {
+    "id": "884869ba-c617-56e0-b109-3a9ca6324a22",
+    "name": "Pacific/Apia",
+    "aliases": [],
+    "location": {
+      "countryCode": "WS",
+      "countryName": "Samoa",
+      "latitude": -13.58333333,
+      "longitude": -172.33333333
+    },
+    "offsets": [
+      "+13:00"
+    ],
+    "currentOffset": "+13:00"
+  },
+  {
+    "id": "511544f5-ad42-50b6-870d-39a800f14180",
+    "name": "Pacific/Efate",
+    "aliases": [],
+    "location": {
+      "countryCode": "VU",
+      "countryName": "Vanuatu",
+      "latitude": -16.0,
+      "longitude": 167.0
+    },
+    "offsets": [
+      "+11:00"
+    ],
+    "currentOffset": "+11:00"
+  },
+  {
+    "id": "405d6fa3-de69-507d-9a5f-ff089886db01",
+    "name": "Pacific/Fakaofo",
+    "aliases": [],
+    "location": {
+      "countryCode": "TK",
+      "countryName": "Tokelau",
+      "latitude": -9.0,
+      "longitude": -172.0
+    },
+    "offsets": [
+      "+13:00"
+    ],
+    "currentOffset": "+13:00"
+  },
+  {
+    "id": "8189ca6f-ccef-5ca9-b4c4-09a8bf04db05",
+    "name": "Pacific/Funafuti",
+    "aliases": [],
+    "location": {
+      "countryCode": "TV",
+      "countryName": "Tuvalu",
+      "latitude": -8.0,
+      "longitude": 178.0
+    },
+    "offsets": [
+      "+12:00"
+    ],
+    "currentOffset": "+12:00"
+  },
+  {
+    "id": "d6295545-8fc6-5036-a3d5-a5433a8cea97",
+    "name": "Pacific/Guadalcanal",
+    "aliases": [],
+    "location": {
+      "countryCode": "SB",
+      "countryName": "Islas Salomón",
+      "latitude": -8.0,
+      "longitude": 159.0
+    },
+    "offsets": [
+      "+11:00"
+    ],
+    "currentOffset": "+11:00"
+  },
+  {
+    "id": "e30683b3-dc44-5e38-8809-3c1795aaab5f",
+    "name": "Pacific/Majuro",
+    "aliases": [],
+    "location": {
+      "countryCode": "MH",
+      "countryName": "Islas Marshall",
+      "latitude": 9.0,
+      "longitude": 168.0
+    },
+    "offsets": [
+      "+12:00"
+    ],
+    "currentOffset": "+12:00"
+  },
+  {
+    "id": "62df2c1c-43c5-58c8-a101-6bc78366852d",
+    "name": "Pacific/Nauru",
+    "aliases": [],
+    "location": {
+      "countryCode": "NR",
+      "countryName": "Nauru",
+      "latitude": -0.53333333,
+      "longitude": 166.91666666
+    },
+    "offsets": [
+      "+12:00"
+    ],
+    "currentOffset": "+12:00"
+  },
+  {
+    "id": "e18b9bc0-0282-5fc5-8fe9-c277dd414d8a",
+    "name": "Pacific/Niue",
+    "aliases": [],
+    "location": {
+      "countryCode": "NU",
+      "countryName": "Niue",
+      "latitude": -19.03333333,
+      "longitude": -169.86666666
+    },
+    "offsets": [
+      "-11:00"
+    ],
+    "currentOffset": "-11:00"
+  },
+  {
+    "id": "6096a576-f2b1-56db-92bc-e033091c7b3c",
+    "name": "Pacific/Norfolk",
+    "aliases": [],
+    "location": {
+      "countryCode": "NF",
+      "countryName": "Isla Norfolk",
+      "latitude": -29.03333333,
+      "longitude": 167.95
+    },
+    "offsets": [
+      "+12:00",
+      "+11:00"
+    ],
+    "currentOffset": "+11:00"
+  },
+  {
+    "id": "b4b7500f-ce7b-5db8-b046-70c28c72d34b",
+    "name": "Pacific/Palau",
+    "aliases": [],
+    "location": {
+      "countryCode": "PW",
+      "countryName": "Palaos",
+      "latitude": 7.5,
+      "longitude": 134.5
+    },
+    "offsets": [
+      "+09:00"
+    ],
+    "currentOffset": "+09:00"
+  },
+  {
+    "id": "04133e5b-81dd-51f2-ac96-80eecca8084e",
+    "name": "Pacific/Pitcairn",
+    "aliases": [],
+    "location": {
+      "countryCode": "PN",
+      "countryName": "Islas Pitcairn",
+      "latitude": -25.06666666,
+      "longitude": -130.1
+    },
+    "offsets": [
+      "-08:00"
+    ],
+    "currentOffset": "-08:00"
+  },
+  {
+    "id": "e13302e7-fd15-5a15-ba3b-c9d971ba340b",
+    "name": "Pacific/Pohnpei",
+    "aliases": [],
+    "location": {
+      "countryCode": "FM",
+      "countryName": "Micronesia",
+      "latitude": 6.91666666,
+      "longitude": 158.25
+    },
+    "offsets": [
+      "+11:00"
+    ],
+    "currentOffset": "+11:00"
+  },
+  {
+    "id": "7bbadd29-7984-5175-847b-2df355cb4dd9",
+    "name": "Pacific/Rarotonga",
+    "aliases": [],
+    "location": {
+      "countryCode": "CK",
+      "countryName": "Islas Cook",
+      "latitude": -21.23333333,
+      "longitude": -159.76666666
+    },
+    "offsets": [
+      "-10:00"
+    ],
+    "currentOffset": "-10:00"
+  },
+  {
+    "id": "e56d6bad-29eb-55e0-b068-a6de07785477",
+    "name": "Pacific/Saipan",
+    "aliases": [],
+    "location": {
+      "countryCode": "MP",
+      "countryName": "Islas Marianas del Norte",
+      "latitude": 15.2,
+      "longitude": 145.75
+    },
+    "offsets": [
+      "+10:00"
+    ],
+    "currentOffset": "+10:00"
+  },
+  {
+    "id": "61d9c540-58b6-585b-bc7e-08fc3dd35485",
+    "name": "Pacific/Tarawa",
+    "aliases": [],
+    "location": {
+      "countryCode": "KI",
+      "countryName": "Kiribati",
+      "latitude": 1.41666666,
+      "longitude": 173.0
+    },
+    "offsets": [
+      "+12:00"
+    ],
+    "currentOffset": "+12:00"
+  },
+  {
+    "id": "92a7da31-7620-51de-9849-b670ae3aae89",
+    "name": "Pacific/Tongatapu",
+    "aliases": [],
+    "location": {
+      "countryCode": "TO",
+      "countryName": "Tonga",
+      "latitude": -20.0,
+      "longitude": -175.0
+    },
+    "offsets": [
+      "+13:00"
+    ],
+    "currentOffset": "+13:00"
+  },
+  {
+    "id": "a0218c90-d127-5c35-a709-61210c2fd6fe",
+    "name": "Pacific/Wake",
+    "aliases": [],
+    "location": {
+      "countryCode": "UM",
+      "countryName": "Islas menores alejadas de EE. UU.",
+      "latitude": 19.3,
+      "longitude": 166.633333
+    },
+    "offsets": [
+      "+12:00"
+    ],
+    "currentOffset": "+12:00"
+  },
+  {
+    "id": "3375640a-a9f4-511f-afd9-61e98f4b041e",
+    "name": "Pacific/Wallis",
+    "aliases": [],
+    "location": {
+      "countryCode": "WF",
+      "countryName": "Wallis y Futuna",
+      "latitude": -13.3,
+      "longitude": -176.2
+    },
+    "offsets": [
+      "+12:00"
+    ],
+    "currentOffset": "+12:00"
   }
 ]

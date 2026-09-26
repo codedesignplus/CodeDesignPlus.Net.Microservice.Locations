@@ -14,6 +14,9 @@ public class DeleteTimezoneCommandHandlerTest
     private readonly Mock<ITimezoneRepository> repositoryMock;
     private readonly Mock<IUserContext> userContextMock;
     private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<ICountryRepository> countriesMock = new();
+        private readonly Mock<ICityRepository> citiesMock = new();
+        private readonly Mock<ICacheManager> cacheMock = new();
     private readonly DeleteTimezoneCommandHandler handler;
     private readonly FakeData fakeData = new();
 
@@ -22,7 +25,7 @@ public class DeleteTimezoneCommandHandlerTest
         repositoryMock = new Mock<ITimezoneRepository>();
         userContextMock = new Mock<IUserContext>();
         pubSubMock = new Mock<IPubSub>();
-        handler = new DeleteTimezoneCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+        handler = new DeleteTimezoneCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, countriesMock.Object, citiesMock.Object, cacheMock.Object);
     }
 
     [Fact]

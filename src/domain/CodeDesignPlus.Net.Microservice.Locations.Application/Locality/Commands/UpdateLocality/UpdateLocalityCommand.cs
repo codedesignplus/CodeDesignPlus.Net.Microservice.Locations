@@ -7,8 +7,8 @@ public class Validator : AbstractValidator<UpdateLocalityCommand>
 {
     public Validator()
     {
-        RuleFor(x => x.Id).NotEmpty().NotNull();
-        RuleFor(x => x.Name).NotEmpty().NotNull().MaximumLength(128);
-        RuleFor(x => x.IdCity).NotEmpty().NotNull();
+        RuleFor(x => x.Id).NotEmpty();
+        RuleFor(x => x.Name).NotEmpty().MaximumLength(128);
+        RuleFor(x => x.IdCity).NotEmpty();
     }
 }

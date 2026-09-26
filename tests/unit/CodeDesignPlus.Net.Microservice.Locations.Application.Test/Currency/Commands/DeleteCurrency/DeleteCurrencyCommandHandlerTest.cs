@@ -14,6 +14,8 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Currency.Co
         private readonly Mock<ICurrencyRepository> repositoryMock;
         private readonly Mock<IUserContext> userContextMock;
         private readonly Mock<IPubSub> pubSubMock;
+        private readonly Mock<ICountryRepository> countriesMock = new();
+        private readonly Mock<ICacheManager> cacheMock = new();
         private readonly DeleteCurrencyCommandHandler handler;
         private readonly FakeData fakeData = new();
 
@@ -22,7 +24,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Currency.Co
             repositoryMock = new Mock<ICurrencyRepository>();
             userContextMock = new Mock<IUserContext>();
             pubSubMock = new Mock<IPubSub>();
-            handler = new DeleteCurrencyCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object);
+            handler = new DeleteCurrencyCommandHandler(repositoryMock.Object, userContextMock.Object, pubSubMock.Object, countriesMock.Object, cacheMock.Object);
         }
 
         [Fact]
