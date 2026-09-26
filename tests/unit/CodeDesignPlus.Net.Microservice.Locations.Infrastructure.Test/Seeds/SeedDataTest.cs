@@ -106,4 +106,25 @@ public class SeedDataTest
         Assert.DoesNotContain(Countries, x => x.Region == "Unknown" || x.SubRegion == "Unknown");
         Assert.Contains(Localities, x => x.Name == "Usaquén");
     }
+
+    [Fact]
+    public void NeighborhoodNames_HaveAccentsAndUppercaseRomanNumerals()
+    {
+        // Los barrios los ve el comprador al elegir su dirección. La fuente venía sin tildes, con «Iii» por «III»,
+        // guiones bajos por espacios y espacios dobles (plan 053).
+        var sinTilde = new HashSet<string>
+        {
+            "Bogota", "Calderon", "Paraiso", "Jose", "Maria", "Cristobal", "Rincon", "Urbanizacion", "Jardin", "Belen",
+            "Bolivar", "Fontibon", "Engativa", "Usaquen", "Toberin", "Republica", "Lopez", "Gomez", "Martin", "Ines",
+        };
+        var romanoMal = new HashSet<string> { "Ii", "Iii", "Iv", "Vi", "Vii", "Ix" };
+
+        var palabras = Neighborhoods.SelectMany(x => x.Name.Split(' ', StringSplitOptions.RemoveEmptyEntries)
+            .Select(w => (x.Name, Word: w.Trim(',', '.', '(', ')', ':', '"'))));
+
+        Assert.Empty(palabras.Where(p => sinTilde.Contains(p.Word) || romanoMal.Contains(p.Word)).Select(p => p.Name));
+        Assert.Empty(Neighborhoods.Where(x => x.Name.Contains('_') || x.Name.Contains("  ") || x.Name != x.Name.Trim()).Select(x => x.Name));
+        Assert.Contains(Neighborhoods, x => x.Name == "Bosque Calderón Tejada");
+        Assert.Contains(Neighborhoods, x => x.Name == "El Paraíso");
+    }
 }
