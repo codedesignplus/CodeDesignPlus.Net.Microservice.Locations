@@ -11,7 +11,7 @@ public class Validator : AbstractValidator<UpdateCurrencyCommand>
 
         RuleFor(x => x.Name)
             .NotEmpty()
-            .MaximumLength(100);
+            .MaximumLength(FieldLength.Name);
 
         RuleFor(x => x.Code)
             .NotEmpty()

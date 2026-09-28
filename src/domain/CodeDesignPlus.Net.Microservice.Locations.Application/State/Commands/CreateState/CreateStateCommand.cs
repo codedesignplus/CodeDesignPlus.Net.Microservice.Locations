@@ -10,6 +10,6 @@ public class Validator : AbstractValidator<CreateStateCommand>
         RuleFor(x => x.Id).NotEmpty();
         RuleFor(x => x.IdCountry).NotEmpty();
         RuleFor(x => x.Code).NotEmpty().MaximumLength(3);
-        RuleFor(x => x.Name).NotEmpty().MaximumLength(128);
+        RuleFor(x => x.Name).NotEmpty().MaximumLength(FieldLength.Name);
     }
 }

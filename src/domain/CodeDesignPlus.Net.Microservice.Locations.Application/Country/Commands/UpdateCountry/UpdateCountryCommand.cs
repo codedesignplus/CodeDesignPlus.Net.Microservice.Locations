@@ -8,7 +8,7 @@ public class Validator : AbstractValidator<UpdateCountryCommand>
     public Validator()
     {
         RuleFor(x => x.Id).NotEmpty();
-        RuleFor(x => x.Name).NotEmpty().MaximumLength(100);
+        RuleFor(x => x.Name).NotEmpty().MaximumLength(FieldLength.Name);
         RuleFor(x => x.Alpha2).NotEmpty().Length(2);
         RuleFor(x => x.Alpha3).NotEmpty().Length(3);
         RuleFor(x => x.PhoneCode).NotEmpty().Matches(@"^\+[0-9]{1,4}$").WithErrorCode(Errors.PhoneCodeFormatIsInvalid.Code);

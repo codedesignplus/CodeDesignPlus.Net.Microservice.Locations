@@ -10,7 +10,7 @@ public class Validator : AbstractValidator<UpdateTimezoneCommand>
     public Validator()
     {
         RuleFor(x => x.Id).NotEmpty();
-        RuleFor(x => x.Name).NotEmpty().MaximumLength(128);
+        RuleFor(x => x.Name).NotEmpty().MaximumLength(FieldLength.Name);
         RuleFor(x => x.Location).NotEmpty();
         RuleFor(x => x.Offsets).NotEmpty();
         RuleFor(x => x.CurrentOffset).NotEmpty();

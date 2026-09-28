@@ -9,7 +9,7 @@ public class Validator : AbstractValidator<CreateCityCommand>
     {
         RuleFor(x => x.Id).NotEmpty();
         RuleFor(x => x.IdState).NotEmpty();
-        RuleFor(x => x.Name).NotEmpty().MaximumLength(100);
+        RuleFor(x => x.Name).NotEmpty().MaximumLength(FieldLength.Name);
         RuleFor(x => x.Timezone).NotEmpty().MaximumLength(100);
     }
 }

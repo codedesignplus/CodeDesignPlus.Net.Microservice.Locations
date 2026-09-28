@@ -8,7 +8,7 @@ public class Validator : AbstractValidator<CreateCountryCommand>
     public Validator()
     {
         RuleFor(x => x.Id).NotEmpty();
-        RuleFor(x => x.Name).NotEmpty().MaximumLength(100);
+        RuleFor(x => x.Name).NotEmpty().MaximumLength(FieldLength.Name);
         RuleFor(x => x.Alpha2).NotEmpty().MaximumLength(2);
         RuleFor(x => x.Alpha3).NotEmpty().MaximumLength(3);
         RuleFor(x => x.Code).NotEmpty();
