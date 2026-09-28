@@ -1,10 +1,14 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
+COPY ["nuget.config", "nuget.config"]
+COPY ["src/domain/CodeDesignPlus.Net.Microservice.Locations.Application/CodeDesignPlus.Net.Microservice.Locations.Application.csproj", "domain/CodeDesignPlus.Net.Microservice.Locations.Application/"]
+COPY ["src/domain/CodeDesignPlus.Net.Microservice.Locations.Domain/CodeDesignPlus.Net.Microservice.Locations.Domain.csproj", "domain/CodeDesignPlus.Net.Microservice.Locations.Domain/"]
+COPY ["src/domain/CodeDesignPlus.Net.Microservice.Locations.Infrastructure/CodeDesignPlus.Net.Microservice.Locations.Infrastructure.csproj", "domain/CodeDesignPlus.Net.Microservice.Locations.Infrastructure/"]
+COPY ["src/entrypoints/CodeDesignPlus.Net.Microservice.Locations.Rest/CodeDesignPlus.Net.Microservice.Locations.Rest.csproj", "entrypoints/CodeDesignPlus.Net.Microservice.Locations.Rest/"]
+RUN dotnet restore "./entrypoints/CodeDesignPlus.Net.Microservice.Locations.Rest/CodeDesignPlus.Net.Microservice.Locations.Rest.csproj" /p:PublishReadyToRun=true
 COPY ["src/domain/", "domain/"]
 COPY ["src/entrypoints/CodeDesignPlus.Net.Microservice.Locations.Rest/", "entrypoints/CodeDesignPlus.Net.Microservice.Locations.Rest/"]
-COPY ["nuget.config", "nuget.config"]
-RUN dotnet restore "./entrypoints/CodeDesignPlus.Net.Microservice.Locations.Rest/CodeDesignPlus.Net.Microservice.Locations.Rest.csproj"
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
