@@ -129,6 +129,50 @@ public class SeedDataTest
         Assert.True(In("Galerías", "Teusaquillo"));
     }
 
+    [Theory]
+    [InlineData("MEDELLÍN")]
+    [InlineData("SANTIAGO DE CALI")]
+    [InlineData("BARRANQUILLA")]
+    [InlineData("CARTAGENA DE INDIAS")]
+    [InlineData("BUCARAMANGA")]
+    [InlineData("PEREIRA")]
+    [InlineData("MANIZALES")]
+    [InlineData("IBAGUÉ")]
+    [InlineData("VILLAVICENCIO")]
+    [InlineData("PASTO")]
+    [InlineData("ARMENIA")]
+    [InlineData("POPAYÁN")]
+    [InlineData("VALLEDUPAR")]
+    public void CitiesWithOfficialSource_HaveNeighborhoodsInEveryComuna(string city)
+    {
+        // Solo Bogotá tenía barrios; las demás ciudades con comunas tenían cero (pendings/130). Neiva, Cúcuta, Santa
+        // Marta y Montería no publican una fuente oficial descargable y se quedan sin barrios a propósito.
+        var cityIds = Cities.Where(x => x.Name == city).Select(x => x.Id).ToHashSet();
+        var comunas = Localities.Where(x => cityIds.Contains(x.IdCity)).ToList();
+        var withNeighborhoods = Neighborhoods.Select(x => x.IdLocality).ToHashSet();
+
+        Assert.NotEmpty(comunas);
+        Assert.Empty(comunas.Where(x => !withNeighborhoods.Contains(x.Id)).Select(x => x.Name));
+    }
+
+    [Fact]
+    public void Comunas_MatchTheCurrentOfficialDivision()
+    {
+        // Pereira: la comuna 19 es El Poblado (Belmonte es un barrio de Olímpica). Manizales tiene 12 comunas y
+        // Villavicencio 10 desde el Acuerdo 03 de 2021 (pendings/130).
+        IEnumerable<string> ComunasOf(string city)
+        {
+            var ids = Cities.Where(x => x.Name == city).Select(x => x.Id).ToHashSet();
+            return Localities.Where(x => ids.Contains(x.IdCity)).Select(x => x.Name);
+        }
+
+        Assert.Contains("El Poblado", ComunasOf("PEREIRA"));
+        Assert.DoesNotContain("Belmonte", ComunasOf("PEREIRA"));
+        Assert.Equal(12, ComunasOf("MANIZALES").Count());
+        Assert.Contains("Nuevo Horizonte", ComunasOf("MANIZALES"));
+        Assert.Equal(10, ComunasOf("VILLAVICENCIO").Count());
+    }
+
     [Fact]
     public void NeighborhoodNames_HaveAccentsAndUppercaseRomanNumerals()
     {

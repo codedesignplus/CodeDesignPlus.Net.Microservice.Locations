@@ -577,7 +577,7 @@
   {
     "id": "f0a6c7ab-8118-45bf-bb7a-625c486e0b93",
     "idCity": "72e8571f-7435-4dd0-a51d-0d5905d9dbbf",
-    "name": "Belmonte"
+    "name": "El Poblado"
   },
   {
     "id": "18948f61-580e-45b1-ac96-7ecc038bad53",
@@ -1068,5 +1068,20 @@
     "id": "345a29d1-0804-446c-8dd0-5b0c5660f52d",
     "idCity": "7da00505-2fc7-481c-be0f-dd66ed8d7d25",
     "name": "Comuna 9"
+  },
+  {
+    "id": "e66d6f64-36ed-5120-84d1-e220d62f4174",
+    "idCity": "af9a4975-d879-4f57-976a-b40f8fccd192",
+    "name": "Nuevo Horizonte"
+  },
+  {
+    "id": "53e85123-6e31-5156-adce-e513dc6c6acf",
+    "idCity": "6d82ea3c-302c-4487-b45a-6cf556311898",
+    "name": "Comuna 9"
+  },
+  {
+    "id": "624c85f5-3ef6-5be7-8db0-8f4be3c46722",
+    "idCity": "6d82ea3c-302c-4487-b45a-6cf556311898",
+    "name": "Comuna 10"
   }
 ]
