@@ -108,6 +108,28 @@ public class SeedDataTest
     }
 
     [Fact]
+    public void BogotaLocalities_HaveTheirCadastralNeighborhoods()
+    {
+        // La siembra salía solo de «Barrio legalizado» (SDP), que cubre la periferia: Teusaquillo y La Candelaria tenían
+        // un barrio y el comprador no encontraba el suyo (plan 129). Ahora se suman los sectores catastrales de la UAECD.
+        var bogota = Guid.Parse("12c2e22b-87ec-4cc5-bc33-6899d4b43c38");
+        var localities = Localities.Where(x => x.IdCity == bogota).ToDictionary(x => x.Id, x => x.Name);
+        var counts = Neighborhoods.Where(x => localities.ContainsKey(x.IdLocality))
+            .GroupBy(x => localities[x.IdLocality]).ToDictionary(g => g.Key, g => g.Count());
+
+        Assert.Equal(20, localities.Count);
+        Assert.Empty(localities.Values.Where(name => counts.GetValueOrDefault(name) < 8));
+        Assert.True(counts["Teusaquillo"] >= 30);
+
+        bool In(string neighborhood, string locality) =>
+            Neighborhoods.Any(x => x.Name == neighborhood && localities.GetValueOrDefault(x.IdLocality) == locality);
+
+        Assert.True(In("Montevideo", "Fontibón"));
+        Assert.True(In("Chicó Norte", "Chapinero"));
+        Assert.True(In("Galerías", "Teusaquillo"));
+    }
+
+    [Fact]
     public void NeighborhoodNames_HaveAccentsAndUppercaseRomanNumerals()
     {
         // Los barrios los ve el comprador al elegir su dirección. La fuente venía sin tildes, con «Iii» por «III»,
