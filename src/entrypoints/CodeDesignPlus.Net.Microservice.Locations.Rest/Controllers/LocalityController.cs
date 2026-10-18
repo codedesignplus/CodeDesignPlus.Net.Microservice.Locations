@@ -65,6 +65,8 @@ public class LocalityController(IMediator mediator, IMapper mapper) : Controller
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateLocality(Guid id, [FromBody] UpdateLocalityDto data, CancellationToken cancellationToken)
     {
+        data.Id = id;
+
         await mediator.Send(mapper.Map<UpdateLocalityCommand>(data), cancellationToken);
 
         return NoContent();

@@ -65,6 +65,8 @@ public class StateController(IMediator mediator, IMapper mapper) : ControllerBas
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateState(Guid id, [FromBody] UpdateStateDto data, CancellationToken cancellationToken)
     {
+        data.Id = id;
+
         await mediator.Send(mapper.Map<UpdateStateCommand>(data), cancellationToken);
 
         return NoContent();

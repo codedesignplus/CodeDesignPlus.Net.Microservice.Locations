@@ -65,6 +65,8 @@ public class TimezoneController(IMediator mediator, IMapper mapper) : Controller
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateTimezone(Guid id, [FromBody] UpdateTimezoneDto data, CancellationToken cancellationToken)
     {
+        data.Id = id;
+
         await mediator.Send(mapper.Map<UpdateTimezoneCommand>(data), cancellationToken);
 
         return NoContent();

@@ -60,6 +60,8 @@ public class NeighborhoodController(IMediator mediator, IMapper mapper) : Contro
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateNeighborhood(Guid id, [FromBody] UpdateNeighborhoodDto data, CancellationToken cancellationToken)
     {
+        data.Id = id;
+
         await mediator.Send(mapper.Map<UpdateNeighborhoodCommand>(data), cancellationToken);
 
         return NoContent();

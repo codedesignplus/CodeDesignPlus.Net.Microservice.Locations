@@ -66,6 +66,8 @@ public class CurrencyController(IMediator mediator, IMapper mapper) : Controller
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateCurrency(Guid id, [FromBody] UpdateCurrencyDto data, CancellationToken cancellationToken)
     {
+        data.Id = id;
+
         await mediator.Send(mapper.Map<UpdateCurrencyCommand>(data), cancellationToken);
 
         return NoContent();

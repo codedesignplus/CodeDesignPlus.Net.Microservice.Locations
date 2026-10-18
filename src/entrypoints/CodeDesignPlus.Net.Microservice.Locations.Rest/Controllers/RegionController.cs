@@ -65,6 +65,8 @@ public class RegionController(IMediator mediator, IMapper mapper) : ControllerBa
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateRegion(Guid id, [FromBody] UpdateRegionDto data, CancellationToken cancellationToken)
     {
+        data.Id = id;
+
         await mediator.Send(mapper.Map<UpdateRegionCommand>(data), cancellationToken);
 
         return NoContent();
