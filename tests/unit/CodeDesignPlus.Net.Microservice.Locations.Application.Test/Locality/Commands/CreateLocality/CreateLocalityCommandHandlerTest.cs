@@ -41,7 +41,7 @@ public class CreateLocalityCommandHandlerTest
     }
 
     [Fact]
-    public async Task Handle_LocalityAlreadyExists_ThrowsCodeDesignPlusException()
+    public async Task Handle_LocalityAlreadyExists_IsTheRetryAndDoesNotCreateItAgain()
     {
         // Arrange
         var request = fakeData.CreateLocalityCommand;
@@ -49,12 +49,11 @@ public class CreateLocalityCommandHandlerTest
 
         repositoryMock.Setup(r => r.ExistsAsync<LocalityAggregate>(request.Id, cancellationToken)).ReturnsAsync(true);
 
-        // Act & Assert
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(request, cancellationToken));
+        // Act: el mismo id es el reintento del mismo formulario (pendings/589, regla 66), no un error.
+        await handler.Handle(request, cancellationToken);
 
-        Assert.Equal(Errors.LocalityAlreadyExists.GetMessage(), exception.Message);
-        Assert.Equal(Errors.LocalityAlreadyExists.GetCode(), exception.Code);
-        Assert.Equal(Layer.Application, exception.Layer);
+        // Assert
+        repositoryMock.Verify(x => x.CreateIfAbsentAsync(It.IsAny<LocalityAggregate>(), It.IsAny<CancellationToken>()), Times.Never);
     }
 
     [Fact]
@@ -90,7 +89,7 @@ public class CreateLocalityCommandHandlerTest
         await handler.Handle(request, cancellationToken);
 
         // Assert
-        repositoryMock.Verify(r => r.CreateAsync(It.IsAny<LocalityAggregate>(), cancellationToken), Times.Once);
+        repositoryMock.Verify(r => r.CreateIfAbsentAsync(It.IsAny<LocalityAggregate>(), cancellationToken), Times.Once);
         pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<LocalityCreatedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
     }
 }

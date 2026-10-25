@@ -36,16 +36,16 @@ public class CreateTimezoneCommandHandlerTest
     }
 
     [Fact]
-    public async Task Handle_TimezoneAlreadyExists_ThrowsCodeDesignPlusException()
+    public async Task Handle_TimezoneAlreadyExists_IsTheRetryAndDoesNotCreateItAgain()
     {
         var command = fakeData.CreateTimezoneCommand;
         repositoryMock.Setup(r => r.ExistsAsync<TimezoneAggregate>(command.Id, It.IsAny<CancellationToken>())).ReturnsAsync(true);
 
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(command, CancellationToken.None));
+        // Act: el mismo id es el reintento del mismo formulario (pendings/589, regla 66), no un error.
+        await handler.Handle(command, CancellationToken.None);
 
-        Assert.Equal(Errors.TimezoneAlreadyExists.GetMessage(), exception.Message);
-        Assert.Equal(Errors.TimezoneAlreadyExists.GetCode(), exception.Code);
-        Assert.Equal(Layer.Application, exception.Layer);
+        // Assert
+        repositoryMock.Verify(x => x.CreateIfAbsentAsync(It.IsAny<TimezoneAggregate>(), It.IsAny<CancellationToken>()), Times.Never);
     }
 
     [Fact]
@@ -57,7 +57,7 @@ public class CreateTimezoneCommandHandlerTest
 
         await handler.Handle(command, CancellationToken.None);
 
-        repositoryMock.Verify(r => r.CreateAsync(It.IsAny<TimezoneAggregate>(), It.IsAny<CancellationToken>()), Times.Once);
+        repositoryMock.Verify(r => r.CreateIfAbsentAsync(It.IsAny<TimezoneAggregate>(), It.IsAny<CancellationToken>()), Times.Once);
         pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<TimezoneCreatedDomainEvent>>(), It.IsAny<CancellationToken>()), Times.AtMostOnce);
     }
 }

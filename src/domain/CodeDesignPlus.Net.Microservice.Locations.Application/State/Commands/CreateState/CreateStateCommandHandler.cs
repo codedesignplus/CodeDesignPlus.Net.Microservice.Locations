@@ -6,9 +6,9 @@ public class CreateStateCommandHandler(IStateRepository repository, IUserContext
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var exist = await repository.ExistsAsync<StateAggregate>(request.Id,  cancellationToken);
-
-        ApplicationGuard.IsTrue(exist, Errors.StateAlreadyExists);
+        // Ya guardado por un envío anterior del mismo formulario: el reintento termina bien sin repetir nada (pendings/589).
+        if (await repository.ExistsAsync<StateAggregate>(request.Id, cancellationToken))
+            return;
 
         var existCountry = await repository.ExistsAsync<CountryAggregate>(request.IdCountry,  cancellationToken);
 
@@ -16,7 +16,9 @@ public class CreateStateCommandHandler(IStateRepository repository, IUserContext
 
         var state = StateAggregate.Create(request.Id, request.IdCountry, request.Code, request.Name, user.IdUser);
 
-        await repository.CreateAsync(state, cancellationToken);
+        // Dos envíos que llegan a la vez pasan los dos la comprobación de arriba; el segundo choca contra el id y no publica.
+        if (!await repository.CreateIfAbsentAsync(state, cancellationToken))
+            return;
 
         await cache.RemoveAsync(CacheKeys.ById(state.Id));
 

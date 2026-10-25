@@ -6,13 +6,15 @@ public class CreateCurrencyCommandHandler(ICurrencyRepository repository, IUserC
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var exist = await repository.ExistsAsync<CurrencyAggregate>(request.Id,  cancellationToken);
-
-        ApplicationGuard.IsTrue(exist, Errors.CurrencyAlreadyExists);
+        // Ya guardado por un envío anterior del mismo formulario: el reintento termina bien sin repetir nada (pendings/589).
+        if (await repository.ExistsAsync<CurrencyAggregate>(request.Id, cancellationToken))
+            return;
 
         var currency = CurrencyAggregate.Create(request.Id, request.Code, request.NumericCode, request.DecimalDigits, request.Symbol, request.Name, user.IdUser);
 
-        await repository.CreateAsync(currency, cancellationToken);
+        // Dos envíos que llegan a la vez pasan los dos la comprobación de arriba; el segundo choca contra el id y no publica.
+        if (!await repository.CreateIfAbsentAsync(currency, cancellationToken))
+            return;
 
         await cache.RemoveAsync(CacheKeys.CurrencyById(currency.Id));
 

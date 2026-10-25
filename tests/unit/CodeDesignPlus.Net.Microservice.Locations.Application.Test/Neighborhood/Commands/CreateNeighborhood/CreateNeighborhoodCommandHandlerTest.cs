@@ -36,16 +36,16 @@ public class CreateNeighborhoodCommandHandlerTest
     }
 
     [Fact]
-    public async Task Handle_NeighborhoodAlreadyExists_ThrowsCodeDesignPlusException()
+    public async Task Handle_NeighborhoodAlreadyExists_IsTheRetryAndDoesNotCreateItAgain()
     {
         var command = fakeData.CreateNeighborhoodCommand;
         repositoryMock.Setup(r => r.ExistsAsync<NeighborhoodAggregate>(command.Id, It.IsAny<CancellationToken>())).ReturnsAsync(true);
 
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(command, CancellationToken.None));
+        // Act: el mismo id es el reintento del mismo formulario (pendings/589, regla 66), no un error.
+        await handler.Handle(command, CancellationToken.None);
 
-        Assert.Equal(Errors.NeighborhoodAlreadyExists.GetMessage(), exception.Message);
-        Assert.Equal(Errors.NeighborhoodAlreadyExists.GetCode(), exception.Code);
-        Assert.Equal(Layer.Application, exception.Layer);
+        // Assert
+        repositoryMock.Verify(x => x.CreateIfAbsentAsync(It.IsAny<NeighborhoodAggregate>(), It.IsAny<CancellationToken>()), Times.Never);
     }
 
     [Fact]
@@ -72,7 +72,7 @@ public class CreateNeighborhoodCommandHandlerTest
 
         await handler.Handle(command, CancellationToken.None);
 
-        repositoryMock.Verify(r => r.CreateAsync(It.IsAny<NeighborhoodAggregate>(), It.IsAny<CancellationToken>()), Times.Once);
+        repositoryMock.Verify(r => r.CreateIfAbsentAsync(It.IsAny<NeighborhoodAggregate>(), It.IsAny<CancellationToken>()), Times.Once);
         pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<NeighborhoodCreatedDomainEvent>>(), It.IsAny<CancellationToken>()), Times.AtMostOnce);
     }
 }

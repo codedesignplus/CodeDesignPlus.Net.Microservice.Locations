@@ -41,7 +41,7 @@ public class CreateStateCommandHandlerTest
     }
 
     [Fact]
-    public async Task Handle_StateAlreadyExists_ThrowsCodeDesignPlusException()
+    public async Task Handle_StateAlreadyExists_IsTheRetryAndDoesNotCreateItAgain()
     {
         // Arrange
         var request = fakeData.CreateStateCommand;
@@ -49,12 +49,11 @@ public class CreateStateCommandHandlerTest
 
         repositoryMock.Setup(r => r.ExistsAsync<StateAggregate>(request.Id, cancellationToken)).ReturnsAsync(true);
 
-        // Act & Assert
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(request, cancellationToken));
+        // Act: el mismo id es el reintento del mismo formulario (pendings/589, regla 66), no un error.
+        await handler.Handle(request, cancellationToken);
 
-        Assert.Equal(Errors.StateAlreadyExists.GetMessage(), exception.Message);
-        Assert.Equal(Errors.StateAlreadyExists.GetCode(), exception.Code);
-        Assert.Equal(Layer.Application, exception.Layer);
+        // Assert
+        repositoryMock.Verify(x => x.CreateIfAbsentAsync(It.IsAny<StateAggregate>(), It.IsAny<CancellationToken>()), Times.Never);
     }
 
     [Fact]
@@ -91,7 +90,7 @@ public class CreateStateCommandHandlerTest
         await handler.Handle(request, cancellationToken);
 
         // Assert
-        repositoryMock.Verify(r => r.CreateAsync(It.IsAny<StateAggregate>(), cancellationToken), Times.Once);
+        repositoryMock.Verify(r => r.CreateIfAbsentAsync(It.IsAny<StateAggregate>(), cancellationToken), Times.Once);
         pubSubMock.Verify(p => p.PublishAsync(It.IsAny<List<StateCreatedDomainEvent>>(), cancellationToken), Times.AtMostOnce);
     }
 }

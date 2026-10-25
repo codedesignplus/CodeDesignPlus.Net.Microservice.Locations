@@ -12,4 +12,12 @@ public interface ICountryRepository : IRepositoryBase
 
     /// <summary>¿Algún país está en esta región (se guarda por nombre)?</summary>
     Task<bool> AnyByRegionAsync(string region, CancellationToken cancellationToken);
+
+    /// <summary>
+    /// Guarda el registro nuevo si su id no existe todavía (pendings/589, regla 66).
+    /// </summary>
+    /// <param name="country">El agregado nuevo.</param>
+    /// <param name="cancellationToken">Token de cancelación.</param>
+    /// <returns><c>false</c> si otro envío del mismo formulario ya lo guardó: el segundo choca contra la clave primaria.</returns>
+    Task<bool> CreateIfAbsentAsync(CountryAggregate country, CancellationToken cancellationToken);
 }

@@ -5,10 +5,10 @@ public class CreateCityCommandHandler(ICityRepository repository, IUserContext u
     public async Task Handle(CreateCityCommand request, CancellationToken cancellationToken)
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
-        
-        var exist = await repository.ExistsAsync<CityAggregate>(request.Id,  cancellationToken);
 
-        ApplicationGuard.IsTrue(exist, Errors.CityAlreadyExists);
+        // Ya guardado por un envío anterior del mismo formulario: el reintento termina bien sin repetir nada (pendings/589).
+        if (await repository.ExistsAsync<CityAggregate>(request.Id, cancellationToken))
+            return;
 
         var existState = await repository.ExistsAsync<StateAggregate>(request.IdState,  cancellationToken);
 
@@ -16,7 +16,9 @@ public class CreateCityCommandHandler(ICityRepository repository, IUserContext u
 
         var city = CityAggregate.Create(request.Id, request.IdState, request.Name, request.Timezone,user.IdUser);
 
-        await repository.CreateAsync(city, cancellationToken);
+        // Dos envíos que llegan a la vez pasan los dos la comprobación de arriba; el segundo choca contra el id y no publica.
+        if (!await repository.CreateIfAbsentAsync(city, cancellationToken))
+            return;
 
         await cache.RemoveAsync(CacheKeys.ById(city.Id));
 

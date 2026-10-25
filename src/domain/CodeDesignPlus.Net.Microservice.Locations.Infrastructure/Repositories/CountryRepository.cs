@@ -19,4 +19,19 @@ public class CountryRepository(IServiceProvider serviceProvider, IOptions<MongoO
 
     public Task<bool> AnyByRegionAsync(string region, CancellationToken cancellationToken)
         => GetCollection<CountryAggregate>().Find(x => x.Region == region).AnyAsync(cancellationToken);
+
+    /// <inheritdoc />
+    public async Task<bool> CreateIfAbsentAsync(CountryAggregate country, CancellationToken cancellationToken)
+    {
+        try
+        {
+            await CreateAsync(country, cancellationToken);
+
+            return true;
+        }
+        catch (MongoWriteException exception) when (exception.WriteError?.Category == ServerErrorCategory.DuplicateKey)
+        {
+            return false;
+        }
+    }
 }

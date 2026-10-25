@@ -31,16 +31,16 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Com
         } 
 
         [Fact]
-        public async Task Handle_CountryAlreadyExists_ThrowsCodeDesignPlusException()
+        public async Task Handle_CountryAlreadyExists_IsTheRetryAndDoesNotCreateItAgain()
         {
             var command = fakeData.CreateCountryCommand;
             repositoryMock.Setup(x => x.ExistsAsync<CountryAggregate>(command.Id, It.IsAny<CancellationToken>())).ReturnsAsync(true);
 
-            var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(command, CancellationToken.None));
+            // Act: el mismo id es el reintento del mismo formulario (pendings/589, regla 66), no un error.
+            await handler.Handle(command, CancellationToken.None);
 
-            Assert.Equal(Errors.CountryAlreadyExists.GetMessage(), exception.Message);
-            Assert.Equal(Errors.CountryAlreadyExists.GetCode(), exception.Code);
-            Assert.Equal(Layer.Application, exception.Layer);
+            // Assert
+            repositoryMock.Verify(x => x.CreateIfAbsentAsync(It.IsAny<CountryAggregate>(), It.IsAny<CancellationToken>()), Times.Never);
         }
 
         [Fact]
@@ -68,7 +68,7 @@ namespace CodeDesignPlus.Net.Microservice.Locations.Application.Test.Country.Com
 
             await handler.Handle(command, CancellationToken.None);
 
-            repositoryMock.Verify(x => x.CreateAsync(It.IsAny<CountryAggregate>(), It.IsAny<CancellationToken>()), Times.Once);
+            repositoryMock.Verify(x => x.CreateIfAbsentAsync(It.IsAny<CountryAggregate>(), It.IsAny<CancellationToken>()), Times.Once);
             pubSubMock.Verify(x => x.PublishAsync(It.IsAny<List<IDomainEvent>>(), It.IsAny<CancellationToken>()), Times.AtMostOnce);
         }
     }

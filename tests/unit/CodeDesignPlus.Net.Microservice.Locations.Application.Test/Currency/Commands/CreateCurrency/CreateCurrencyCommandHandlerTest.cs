@@ -36,16 +36,16 @@ public class CreateCurrencyCommandHandlerTest
     }
 
     [Fact]
-    public async Task Handle_CurrencyAlreadyExists_ThrowsCodeDesignPlusException()
+    public async Task Handle_CurrencyAlreadyExists_IsTheRetryAndDoesNotCreateItAgain()
     {
         var command = fakeData.CreateCurrencyCommand;
         repositoryMock.Setup(repo => repo.ExistsAsync<CurrencyAggregate>(command.Id, It.IsAny<CancellationToken>())).ReturnsAsync(true);
 
-        var exception = await Assert.ThrowsAsync<CodeDesignPlusException>(() => handler.Handle(command, CancellationToken.None));
+        // Act: el mismo id es el reintento del mismo formulario (pendings/589, regla 66), no un error.
+        await handler.Handle(command, CancellationToken.None);
 
-        Assert.Equal(Errors.CurrencyAlreadyExists.GetMessage(), exception.Message);
-        Assert.Equal(Errors.CurrencyAlreadyExists.GetCode(), exception.Code);
-        Assert.Equal(Layer.Application, exception.Layer);
+        // Assert
+        repositoryMock.Verify(x => x.CreateIfAbsentAsync(It.IsAny<CurrencyAggregate>(), It.IsAny<CancellationToken>()), Times.Never);
     }
 
     [Fact]
@@ -57,7 +57,7 @@ public class CreateCurrencyCommandHandlerTest
 
         await handler.Handle(command, CancellationToken.None);
 
-        repositoryMock.Verify(repo => repo.CreateAsync(It.IsAny<CurrencyAggregate>(), It.IsAny<CancellationToken>()), Times.Once);
+        repositoryMock.Verify(repo => repo.CreateIfAbsentAsync(It.IsAny<CurrencyAggregate>(), It.IsAny<CancellationToken>()), Times.Once);
         pubSubMock.Verify(pubsub => pubsub.PublishAsync(It.IsAny<List<CurrencyCreatedDomainEvent>>(), It.IsAny<CancellationToken>()), Times.AtMostOnce);
     }
 }

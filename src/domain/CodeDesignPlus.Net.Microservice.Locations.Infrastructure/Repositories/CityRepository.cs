@@ -9,4 +9,19 @@ public class CityRepository(IServiceProvider serviceProvider, IOptions<MongoOpti
 
     public Task<bool> AnyByTimezoneAsync(string timezone, CancellationToken cancellationToken)
         => GetCollection<CityAggregate>().Find(x => x.Timezone == timezone).AnyAsync(cancellationToken);
+
+    /// <inheritdoc />
+    public async Task<bool> CreateIfAbsentAsync(CityAggregate city, CancellationToken cancellationToken)
+    {
+        try
+        {
+            await CreateAsync(city, cancellationToken);
+
+            return true;
+        }
+        catch (MongoWriteException exception) when (exception.WriteError?.Category == ServerErrorCategory.DuplicateKey)
+        {
+            return false;
+        }
+    }
 }

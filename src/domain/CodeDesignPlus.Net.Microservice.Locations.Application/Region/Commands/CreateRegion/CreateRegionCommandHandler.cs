@@ -6,13 +6,15 @@ public class CreateRegionCommandHandler(IRegionRepository repository, IUserConte
     {
         ApplicationGuard.IsNull(request, Errors.InvalidRequest);
 
-        var exist = await repository.ExistsAsync<RegionAggregate>(request.Id, cancellationToken);
-
-        ApplicationGuard.IsTrue(exist, Errors.RegionAlreadyExists);
+        // Ya guardado por un envío anterior del mismo formulario: el reintento termina bien sin repetir nada (pendings/589).
+        if (await repository.ExistsAsync<RegionAggregate>(request.Id, cancellationToken))
+            return;
 
         var region = RegionAggregate.Create(request.Id, request.Name, request.SubRegions, request.IsActive, user.IdUser);
 
-        await repository.CreateAsync(region, cancellationToken);
+        // Dos envíos que llegan a la vez pasan los dos la comprobación de arriba; el segundo choca contra el id y no publica.
+        if (!await repository.CreateIfAbsentAsync(region, cancellationToken))
+            return;
 
         await cache.RemoveAsync(CacheKeys.ById(region.Id));
     }
