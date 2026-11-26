@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Locality.DataTransferObjects;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Controllers;
 
@@ -19,6 +21,7 @@ public class LocalityController(IMediator mediator, IMapper mapper) : Controller
     /// <returns>Collection of Localities.</returns>
     [HttpGet]
     [AllowAnonymous]
+    [ProducesResponseType<Pagination<LocalityDto>>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetLocalities([FromQuery] C.Criteria criteria, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindAllLocalitiesQuery(criteria), cancellationToken);
@@ -34,6 +37,7 @@ public class LocalityController(IMediator mediator, IMapper mapper) : Controller
     /// <returns>The Locality.</returns>
     [HttpGet("{id}")]
     [AllowAnonymous]
+    [ProducesResponseType<LocalityDto>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetLocalityById(Guid id, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindLocalityByIdQuery(id), cancellationToken);

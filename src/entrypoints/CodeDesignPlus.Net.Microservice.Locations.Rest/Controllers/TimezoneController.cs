@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Timezone.DataTransferObjects;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Controllers;
 
@@ -19,6 +21,7 @@ public class TimezoneController(IMediator mediator, IMapper mapper) : Controller
     /// <returns>Collection of Timezones.</returns>
     [HttpGet]
     [AllowAnonymous]
+    [ProducesResponseType<Pagination<TimezoneDto>>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetTimezones([FromQuery] C.Criteria criteria, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindAllTimezonesQuery(criteria), cancellationToken);
@@ -34,6 +37,7 @@ public class TimezoneController(IMediator mediator, IMapper mapper) : Controller
     /// <returns>The Timezone.</returns>
     [HttpGet("{id}")]
     [AllowAnonymous]
+    [ProducesResponseType<TimezoneDto>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetTimezoneById(Guid id, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindTimezoneByIdQuery(id), cancellationToken);

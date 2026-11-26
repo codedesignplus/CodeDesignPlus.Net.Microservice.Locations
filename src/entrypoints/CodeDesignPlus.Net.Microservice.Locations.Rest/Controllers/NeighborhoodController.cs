@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Neighborhood.DataTransferObjects;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Controllers;
 
@@ -14,6 +16,7 @@ public class NeighborhoodController(IMediator mediator, IMapper mapper) : Contro
     /// <returns>Collection of Neighborhoods.</returns>
     [HttpGet]
     [AllowAnonymous]
+    [ProducesResponseType<Pagination<NeighborhoodDto>>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetNeighborhoods([FromQuery] C.Criteria criteria, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindAllNeighborhoodsQuery(criteria), cancellationToken);
@@ -29,6 +32,7 @@ public class NeighborhoodController(IMediator mediator, IMapper mapper) : Contro
     /// <returns>The Neighborhood.</returns>
     [HttpGet("{id}")]
     [AllowAnonymous]
+    [ProducesResponseType<NeighborhoodDto>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetNeighborhoodById(Guid id, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindNeighborhoodByIdQuery(id), cancellationToken);

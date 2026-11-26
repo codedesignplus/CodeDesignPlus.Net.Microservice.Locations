@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
+using CodeDesignPlus.Net.Microservice.Locations.Application.State.DataTransferObjects;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Controllers;
 
@@ -19,6 +21,7 @@ public class StateController(IMediator mediator, IMapper mapper) : ControllerBas
     /// <returns>Collection of States.</returns>
     [HttpGet]
     [AllowAnonymous]
+    [ProducesResponseType<Pagination<StateDto>>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetStates([FromQuery] C.Criteria criteria, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindAllStatesQuery(criteria), cancellationToken);
@@ -34,6 +37,7 @@ public class StateController(IMediator mediator, IMapper mapper) : ControllerBas
     /// <returns>The State.</returns>
     [HttpGet("{id}")]
     [AllowAnonymous]
+    [ProducesResponseType<StateDto>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetStateById(Guid id, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindStateByIdQuery(id), cancellationToken);

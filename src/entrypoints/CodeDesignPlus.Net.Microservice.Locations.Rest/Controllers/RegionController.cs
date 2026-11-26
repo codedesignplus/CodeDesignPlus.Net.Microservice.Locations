@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Region.DataTransferObjects;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Controllers;
 
@@ -19,6 +21,7 @@ public class RegionController(IMediator mediator, IMapper mapper) : ControllerBa
     /// <returns>Collection of Regions.</returns>
     [HttpGet]
     [AllowAnonymous]
+    [ProducesResponseType<Pagination<RegionDto>>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetRegions([FromQuery] C.Criteria criteria, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new GetAllRegionsQuery(criteria), cancellationToken);
@@ -34,6 +37,7 @@ public class RegionController(IMediator mediator, IMapper mapper) : ControllerBa
     /// <returns>The Region.</returns>
     [HttpGet("{id}")]
     [AllowAnonymous]
+    [ProducesResponseType<RegionDto>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetRegionById(Guid id, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new GetRegionByIdQuery(id), cancellationToken);

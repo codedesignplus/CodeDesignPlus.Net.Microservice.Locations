@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Country.DataTransferObjects;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Controllers;
 
@@ -19,6 +21,7 @@ public class CountryController(IMediator mediator, IMapper mapper) : ControllerB
     /// <returns>Collection of Countries.</returns>
     [HttpGet]
     [AllowAnonymous]
+    [ProducesResponseType<Pagination<CountryDto>>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetCountries([FromQuery] C.Criteria criteria, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new GetAllCountryQuery(criteria), cancellationToken);
@@ -34,6 +37,7 @@ public class CountryController(IMediator mediator, IMapper mapper) : ControllerB
     /// <returns>The Country.</returns>
     [HttpGet("{id}")]
     [AllowAnonymous]
+    [ProducesResponseType<CountryDto>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetCountryById(Guid id, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new GetCountryByIdQuery(id), cancellationToken);

@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
+using CodeDesignPlus.Net.Microservice.Locations.Application.City.DataTransferObjects;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Controllers;
 
@@ -19,6 +21,7 @@ public class CityController(IMediator mediator, IMapper mapper) : ControllerBase
     /// <returns>Collection of Cities.</returns>
     [HttpGet]
     [AllowAnonymous]
+    [ProducesResponseType<Pagination<CityDto>>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetCities([FromQuery] C.Criteria criteria, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindAllCitiesQuery(criteria), cancellationToken);
@@ -34,6 +37,7 @@ public class CityController(IMediator mediator, IMapper mapper) : ControllerBase
     /// <returns>The City.</returns>
     [HttpGet("{id}")]
     [AllowAnonymous]
+    [ProducesResponseType<CityDto>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetCityById(Guid id, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindCityByIdQuery(id), cancellationToken);

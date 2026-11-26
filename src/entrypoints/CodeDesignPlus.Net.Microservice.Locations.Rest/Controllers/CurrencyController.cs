@@ -1,5 +1,7 @@
 using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.Queries.GetAllCurrencies;
 using Microsoft.AspNetCore.Authorization;
+using CodeDesignPlus.Net.Core.Abstractions.Models.Pager;
+using CodeDesignPlus.Net.Microservice.Locations.Application.Currency.DataTransferObjects;
 
 namespace CodeDesignPlus.Net.Microservice.Locations.Rest.Controllers;
 
@@ -20,6 +22,7 @@ public class CurrencyController(IMediator mediator, IMapper mapper) : Controller
     /// <returns>Collection of Currencies.</returns>
     [HttpGet]
     [AllowAnonymous]
+    [ProducesResponseType<Pagination<CurrencyDto>>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetCurrencies([FromQuery] C.Criteria criteria, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new GetAllCurrenciesQuery(criteria), cancellationToken);
@@ -35,6 +38,7 @@ public class CurrencyController(IMediator mediator, IMapper mapper) : Controller
     /// <returns>The Currency.</returns>
     [HttpGet("{id}")]
     [AllowAnonymous]
+    [ProducesResponseType<CurrencyDto>(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetCurrencyById(Guid id, CancellationToken cancellationToken)
     {
         var result = await mediator.Send(new FindCurrencyByIdQuery(id), cancellationToken);
